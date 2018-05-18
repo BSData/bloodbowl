@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="9" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="11" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -148,6 +148,7 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a439-42b9-74d1-75e4" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -662,6 +663,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -720,7 +724,7 @@
             <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="3"/>
             <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
             <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Right Stuff, Stunty, Swoop"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="60000"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="60,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -768,7 +772,7 @@
             <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="3"/>
             <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
             <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Disturbing Presence, Dodge, Fan Favourite, Right Stuff, Stunty"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="70000"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="70,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -816,7 +820,7 @@
             <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="3"/>
             <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
             <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Break Tackle, Claws, Leap, No Hands, Very Long Legs, Wild Animal"/>
-            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="170000"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="170,000"/>
           </characteristics>
         </profile>
       </profiles>
