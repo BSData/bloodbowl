@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" name="Underworld Denizens" revision="12" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" name="Underworld Denizens" revision="13" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -47,7 +47,7 @@
         <cost name="Gold" costTypeId="points" value="60000.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="d9df-9981-2c74-2d2e" name="Gobbler Grimlich" hidden="false" collective="false" type="model">
+    <selectionEntry id="d9df-9981-2c74-2d2e" name="Gobbler Grimlich" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="b560-f74d-6d7a-a0b3" name="Gobbler Grimlich" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
           <profiles/>
@@ -60,7 +60,7 @@
             <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
             <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="9"/>
             <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Big Hand, Disturbing Presence, Leap, Loner, Monstrous Mouth, Regeneration, Tentacles, Very Long Longs"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="230000"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="230,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -86,7 +86,7 @@
         <cost name="Gold" costTypeId="points" value="230000.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="2f97-5ca4-6a1c-7efe" name="Glart Smashrip" hidden="false" collective="false" type="model">
+    <selectionEntry id="2f97-5ca4-6a1c-7efe" name="Glart Smashrip" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="06e3-303f-1b37-9ec5" name="Glart Smashrip" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
           <profiles/>
@@ -99,7 +99,7 @@
             <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
             <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="8"/>
             <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Block, Claw, Grab, Juggernaut, Stand Firm"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="190000"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="190,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -201,115 +201,6 @@
       <entryLinks/>
       <costs>
         <cost name="Gold" costTypeId="points" value="210000.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="25190a4f-e5e8-30f6-2876-fc9771102bee" name="Misc" page="0" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="21f9-2bed-99f4-b3dc" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="2b420430-3283-4ce0-04b5-4534e9498fec" name="Cheerleaders" page="0" hidden="false" collective="false" type="model">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="Gold" costTypeId="points" value="10000.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ca9c7e7c-805c-3a88-ce54-ed77452b79a3" name="Assistant Coaches" page="0" hidden="false" collective="false" type="model">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="Gold" costTypeId="points" value="10000.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7a742447-5634-16a5-1d17-6e59670d37da" name="Apothecary" page="0" hidden="false" collective="false" type="model">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="Gold" costTypeId="points" value="50000.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="903bbda4-a488-0607-1ddb-09ef3add64ad" name="Gold" page="0" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          </selectionEntry>
-        <selectionEntry id="15441cf0-fce3-6d78-a596-57f3beb570ba" name="Rerolls" page="0" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="Gold" costTypeId="points" value="70000.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="017b791e-7e3e-66aa-494f-df4e607e0b48" name="Fan Factor" page="0" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="Gold" costTypeId="points" value="10000.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="Gold" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2521db20-2169-46ef-ac57-9b819ef4887c" name="Morg &apos;n&apos; Thorg" page="0" hidden="false" collective="false" type="model">
@@ -682,7 +573,7 @@
             <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
             <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="9"/>
             <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Ball &amp; Chain, Mighty Blow, No Hands, Very Long Legs, Wild Animal"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="170000"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="170,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -721,7 +612,7 @@
             <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="3"/>
             <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
             <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Break Tackle, Claws, Leap, No Hands, Very Long Legs, Wild Animal"/>
-            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="170000"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="170,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -746,6 +637,181 @@
       <costs>
         <cost name="Gold" costTypeId="points" value="170000.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="c9e9-48b6-ff2a-f634" name="Coaching Staff" page="0" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a77c-5436-96a3-9d6a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3e30-2424-c483-ce12" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="769e-9787-b9cc-50d6" name="Cheerleaders" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="10000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d9b1-371a-2b33-eb4b" name="Assistant Coaches" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="10000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4564-11a4-8585-4d82" name="Apothecary" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4375-93db-6e32-7184" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d7af-2b65-956b-6d19" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="98c8-de58-4646-17b9" name="Fan Factor" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="a93d-e95c-6964-0489" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9a80-a9b2-e5de-317f" name="Fan Factor" page="0" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="10000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="b8a3-b954-e8b8-6c6b" name="Gold" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="dea3-6859-bf9c-c77a" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1bfc-cb2e-417d-b1e7" name="Gold" page="0" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="44eb-4bc9-f1ae-9b6e" name="Rerolls" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="d717-f012-5ae9-87d8" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="36df-49e0-1d70-8972" name="Rerolls" page="0" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="70000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </selectionEntries>
   <entryLinks/>
