@@ -876,6 +876,59 @@
         <cost name="Gold" costTypeId="points" value="390000.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fdd1-db86-e2fd-ed22" name="Grak and Crumbleberry" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="7335-017a-3693-996d" name="Grak" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="5"/>
+            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
+            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="9"/>
+            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Bone-Head, Kick Team-Mate, Mighty Blow, Thick Skull"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+          </characteristics>
+        </profile>
+        <profile id="59b8-8862-49d2-8403" name="Crumbleberry" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="2"/>
+            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="3"/>
+            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="6"/>
+            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Dodge, Right Stuff, Stunty, Sure Hands"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163d-ca89-1fd1-09ff" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7e34-1052-4d03-267e" name="New CategoryLink" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="300000.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks/>
   <sharedSelectionEntries/>
@@ -1338,6 +1391,20 @@
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="fd13-8153-d38f-0529" name="Miss Next Game" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7934-f776-bbb2-2922" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
