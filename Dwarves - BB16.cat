@@ -615,6 +615,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -658,6 +661,59 @@
       <entryLinks/>
       <costs>
         <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f18b-25ce-a00a-be8f" name="Grak and Crumbleberry" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="0cd2-bd5f-c382-d3f6" name="Grak" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="5"/>
+            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
+            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="9"/>
+            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Bone-Head, Kick Team-Mate, Mighty Blow, Thick Skull"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+          </characteristics>
+        </profile>
+        <profile id="5bc4-03f4-74a5-1470" name="Crumbleberry" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="2"/>
+            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="3"/>
+            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="6"/>
+            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Dodge, Right Stuff, Stunty, Sure Hands"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f34-db93-0a36-4f59" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c507-c7e3-0dce-f539" name="New CategoryLink" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="300000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1374,6 +1430,20 @@
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="00ec-0379-1da9-dad7" name="Miss Next Game" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfc5-0a4f-5fb2-7c43" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
