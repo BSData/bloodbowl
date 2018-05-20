@@ -520,7 +520,9 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1118-9cb1-dd77-a010" name="Fan Factor" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -555,7 +557,9 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2b97-926f-709c-c9d8" name="Gold" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -590,7 +594,62 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6601-5d44-1a52-135c" name="Grak and Crumbleberry" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="29c5-3e40-c056-8598" name="Grak" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="5"/>
+            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
+            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="9"/>
+            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Bone-Head, Kick Team-Mate, Mighty Blow, Thick Skull"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+          </characteristics>
+        </profile>
+        <profile id="a032-26d7-fa7c-6dc4" name="Crumbleberry" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="2"/>
+            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="3"/>
+            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="6"/>
+            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Dodge, Right Stuff, Stunty, Sure Hands"/>
+            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b367-f50a-4550-3bfb" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1bc0-a754-22ed-a6d6" name="New CategoryLink" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="300000.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks/>
@@ -1306,6 +1365,20 @@
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="e4e0-0f5f-d0cf-3527" name="Miss Next Game" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e49-4843-635a-7f14" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
