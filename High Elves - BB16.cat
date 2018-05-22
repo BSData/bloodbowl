@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b666b61b-33cc-42b1-99e0-f06e24197e96" name="High Elves" revision="12" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b666b61b-33cc-42b1-99e0-f06e24197e96" name="High Elves" revision="14" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -487,178 +487,9 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="d35bdfed-246c-4c1c-a19f-6413269aba10" name="Skill" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="b0a09969-b4f7-401a-903a-ad81859f5279" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="decrement" field="points" value="20000.0">
-                  <repeats>
-                    <repeat field="selections" scope="b0a09969-b4f7-401a-903a-ad81859f5279" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69efbfc7-7691-4bff-9b67-c69ed07fe318" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="69efbfc7-7691-4bff-9b67-c69ed07fe318" name="Free Skill" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="Gold" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="20000.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="10f3c81d-dd32-4316-92d7-24b78ece202b" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="decrement" field="points" value="20000.0">
-                  <repeats>
-                    <repeat field="selections" scope="10f3c81d-dd32-4316-92d7-24b78ece202b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c56e20c1-818d-4476-9b27-1a07f5eab627" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="c56e20c1-818d-4476-9b27-1a07f5eab627" name="Free Skill" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="Gold" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="20000.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="42b303ff-b9ee-4b5b-a3a8-9b0e2826427c" name="General Skill" page="0" hidden="false" collective="false" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="decrement" field="points" value="20000.0">
-                  <repeats>
-                    <repeat field="selections" scope="42b303ff-b9ee-4b5b-a3a8-9b0e2826427c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8daa7390-bcbd-4136-8625-39df5520cc25" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="8daa7390-bcbd-4136-8625-39df5520cc25" name="Free Skill" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="Gold" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="20000.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3a34f3c6-9d45-45aa-b775-73445b36743d" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="decrement" field="points" value="30000.0">
-                  <repeats>
-                    <repeat field="selections" scope="3a34f3c6-9d45-45aa-b775-73445b36743d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfc73bb1-952b-480b-9032-505627b62b40" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="cfc73bb1-952b-480b-9032-505627b62b40" name="Free Skill" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="Gold" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="30000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="bb4f62f4-abfe-377e-4fcd-3c53975d7f1d" hidden="false" targetId="50e822e0-ad9e-aa42-6d81-77c403d1a56a" type="selectionEntryGroup">
+        <entryLink id="bb4f62f4-abfe-377e-4fcd-3c53975d7f1d" name="Advances and Injuries" hidden="false" targetId="50e822e0-ad9e-aa42-6d81-77c403d1a56a" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1401,10 +1232,27 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7934-f776-bbb2-2922" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries/>
+          <selectionEntries>
+            <selectionEntry id="7da6-f660-f0ba-63c7" name="Manual Cost Reduction" hidden="false" collective="false" type="unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="-10000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
