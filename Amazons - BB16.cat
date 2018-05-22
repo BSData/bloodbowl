@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="12" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="13" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -82,7 +82,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="41708c0e-f889-1890-e2ff-303948072211" hidden="false" targetId="e93e890f-6ae0-313e-473c-f914cf8f1bb6" type="selectionEntryGroup">
+        <entryLink id="41708c0e-f889-1890-e2ff-303948072211" name="Advances and Injuries" hidden="false" targetId="e93e890f-6ae0-313e-473c-f914cf8f1bb6" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -745,7 +745,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="decrement" field="points" value="20000.0">
+            <modifier type="decrement" field="points" value="20000">
               <repeats>
                 <repeat field="selections" scope="e93e890f-6ae0-313e-473c-f914cf8f1bb6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19de8adb-98c2-37fa-a32b-a9fcc83074c6" repeats="1" roundUp="false"/>
               </repeats>
@@ -1016,7 +1016,7 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="281b1b34-14f3-1645-144c-06e07890384a" hidden="false" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup">
+                <entryLink id="281b1b34-14f3-1645-144c-06e07890384a" name="Injuries" hidden="false" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1039,7 +1039,7 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="fb5ca064-c1bd-b297-e256-bdadecd3b3fb" hidden="false" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup">
+                <entryLink id="fb5ca064-c1bd-b297-e256-bdadecd3b3fb" name="Stat Advances" hidden="false" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1903,19 +1903,36 @@
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5c72-d1bc-fc97-3984" name="Miss Next Game" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="4984-b919-a11e-3d8f" name="Missing Next Game" hidden="false" collective="false" type="unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b688-40df-ce5d-a3ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c5-ea69-832c-8a67" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries/>
+          <selectionEntries>
+            <selectionEntry id="0615-4ce2-b25f-a2dc" name="Manual Cost Reduction" hidden="false" collective="false" type="unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="-10000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
