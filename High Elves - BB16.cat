@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b666b61b-33cc-42b1-99e0-f06e24197e96" name="High Elves" revision="14" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b666b61b-33cc-42b1-99e0-f06e24197e96" name="High Elves" revision="15" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -758,6 +758,45 @@
       <entryLinks/>
       <costs>
         <cost name="Gold" costTypeId="points" value="300000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6595-08b9-03d9-fcf6" name="Asperon Thorn" page="0" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="1b0d-b4a6-9127-5427" name="Asperon Thorn" book="Spike #2" page="6" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="6"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="4"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Hail Mary Pass, Kick-off Return, Pass, Safe Throw, Sure Hands"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="160,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e004-175f-da2c-7932" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="41bd-e356-c81b-8832" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="160000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
