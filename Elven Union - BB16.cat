@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="641d7e90-8271-47b2-a437-ccab1c28b7ae" name="Elven Union" revision="16" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="641d7e90-8271-47b2-a437-ccab1c28b7ae" name="Elven Union" revision="17" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -721,34 +721,20 @@
         <cost name="Gold" costTypeId="points" value="300000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fff2-5c57-20f5-48ea" name="Grak and Crumbleberry" hidden="false" collective="false" type="model">
+    <selectionEntry id="280f-5350-c656-43ef" name="Asperon Thorn" page="0" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="2d9f-fca9-0d29-b536" name="Grak" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+        <profile id="581a-0fdb-74a0-fea8" name="Asperon Thorn" book="Spike #2" page="6" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
-            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="5"/>
-            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="2"/>
-            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="9"/>
-            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Bone-Head, Kick Team-Mate, Mighty Blow, Thick Skull"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
-          </characteristics>
-        </profile>
-        <profile id="cc5e-4301-c08b-d5cc" name="Crumbleberry" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
-            <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="2"/>
-            <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="3"/>
-            <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="6"/>
-            <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Dodge, Right Stuff, Stunty, Sure Hands"/>
-            <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="6"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="4"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Hail Mary Pass, Kick-off Return, Pass, Safe Throw, Sure Hands"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="160,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -756,10 +742,10 @@
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e304-d20a-6a01-63db" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7136-7cfd-2bb4-df11" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="34c0-a221-6ea1-9f1a" name="New CategoryLink" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+        <categoryLink id="8dcc-b10b-f1f8-2af7" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -771,7 +757,85 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="Gold" costTypeId="points" value="300000.0"/>
+        <cost name="Gold" costTypeId="points" value="160000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c7e9-fee9-cd7c-8e6b" name="Elijah Doom" page="0" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="3946-882d-878b-4032" name="Elijah Doom" book="Spike #2" page="6" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="6"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="4"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="9"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Fend, Guard, Stand Firm, Wrestle"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="190,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fd97-6469-1d2e-d5f3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="597e-bcba-efab-90e2" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="190000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd66-a38b-eb01-f2f8" name="Kiroth Krakeneye" page="0" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="2ba1-54cd-58d8-7691" name="Kiroth Krakeneye" book="Spike #2" page="6" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="7"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="4"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Distrubing Presence, Foul Appearance, Pass Block, Tackle, Tentacles"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="170,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="35d4-5188-d7b1-9069" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="042b-202f-c716-dd5a" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="170000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
