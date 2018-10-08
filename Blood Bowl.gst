@@ -64,6 +64,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="48ab-ae31-9cc1-c8e8" name="Inducements" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5374616e6461726423232344415441232323" name="Standard" hidden="false">
@@ -110,6 +117,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="5374616e6461726423232344415441232323-436f616368696e6720537461666623232344415441232323" name="Coaching Staff" hidden="false" targetId="436f616368696e6720537461666623232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2123-f0cb-6a30-dc9f" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
