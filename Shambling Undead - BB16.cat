@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" name="Shambling Undead" revision="10" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" name="Shambling Undead" revision="11" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -699,14 +699,16 @@
         <cost name="Gold" costTypeId="points" value="300000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c7c-e109-860a-5ec3" name="Bloodweiser" hidden="false" collective="false" type="unit">
+    <selectionEntry id="14c3-2075-a890-52a3" name="Inducements" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="035e-8428-4513-f53f" type="max"/>
+      </constraints>
       <categoryLinks>
-        <categoryLink id="367d-b5a1-6e59-92a8" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+        <categoryLink id="c8c2-6574-2d33-7abc" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -715,176 +717,199 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d158-6045-53c6-75b6" name="Bloodweiser" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="17bc-7200-4a52-a796" name="Bloodweiser" hidden="false" collective="false" type="unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d224-159b-15de-68ae" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
+          <constraints/>
+          <categoryLinks>
+            <categoryLink id="c0a2-e130-abd9-7009" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="1978-a5ab-3e68-068f" name="Bloodweiser" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73cf-65b1-89fa-9ca3" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="50000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="50000.0"/>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="Gold" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="af52-36f5-797d-146c" name="Bribe" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="4c44-f87b-a1f4-9b3c" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+        <selectionEntry id="c648-05d3-bab6-4fde" name="Bribe" hidden="false" collective="false" type="unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </categoryLink>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="acde-b779-a4db-6fc2" name="Bribe" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af67-8d58-0094-de7c" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
+          <categoryLinks>
+            <categoryLink id="5cf8-c472-59b9-5598" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="223f-ebaa-1ebd-ae52" name="Bribe" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7b9-216f-f21e-b11e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="100000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="100000.0"/>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="Gold" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1527-ba71-f0f8-234d" name="Extra Team Training" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="f9e8-67d0-b0f6-bb07" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+        <selectionEntry id="3057-a534-ad8c-8980" name="Extra Team Training" hidden="false" collective="false" type="unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </categoryLink>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9187-c295-f138-53cd" name="Extra Team Training" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca29-6ce1-e49f-f741" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
+          <categoryLinks>
+            <categoryLink id="4873-04f6-1a6a-4908" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="aa39-5407-9c02-ac8d" name="Extra Team Training" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b3a-ea44-7b45-ec44" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="100000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="100000.0"/>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="Gold" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b0ba-552b-f58d-ef58" name="Halfling Chef" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="5937-eea0-54eb-1213" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+        <selectionEntry id="96a7-84a9-d663-6211" name="Halfling Chef" hidden="false" collective="false" type="unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </categoryLink>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d864-a96d-f06e-068d" name="Halfling Chef" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8f3-c245-44ab-c03f" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
+          <categoryLinks>
+            <categoryLink id="b5c9-0727-4a06-0a82" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="6132-7cfb-d8f7-af33" name="Halfling Chef" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd2-8f2b-cb4a-3550" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="300000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="300000.0"/>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="Gold" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8d7b-fb9e-5262-5df0" name="Igor" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="a043-e985-a571-da5e" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+        <selectionEntry id="012b-ea3a-f4ab-2c84" name="Igor" hidden="false" collective="false" type="unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </categoryLink>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0f60-78c5-d456-42d5" name="Igor" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aeb-7bff-cb0d-08b9" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
+          <categoryLinks>
+            <categoryLink id="843d-c311-5b8d-6a3c" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="d0f7-498f-bdf4-973e" name="Igor" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5506-b39e-2593-f9ca" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="100000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="100000.0"/>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
