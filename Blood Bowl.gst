@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="19" battleScribeVersion="2.01" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="20" battleScribeVersion="2.01" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -71,6 +71,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="8371-61bd-c561-01c6" name="(In)Famous Coaching Staff" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5374616e6461726423232344415441232323" name="Standard" hidden="false">
@@ -124,6 +131,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="2123-f0cb-6a30-dc9f" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7749-565c-f2eb-d3fb" name="(In)Famous Coaching Staff" hidden="false" targetId="8371-61bd-c561-01c6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
