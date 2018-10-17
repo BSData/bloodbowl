@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="10" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="11" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -668,16 +668,16 @@
         <cost name="Gold" costTypeId="points" value="300000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9aca-b01c-a3ef-d1c2" name="Inducements" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a202-84cc-0073-d4a4" name="Inducements" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fa02-e86c-26c0-dda4" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f1bd-e726-8ba1-741c" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="b294-7fec-11e6-956e" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
+        <categoryLink id="def1-4984-585b-d799" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -686,14 +686,16 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6ac8-8f4a-1324-8b62" name="Bloodweiser" hidden="false" collective="false" type="unit">
+        <selectionEntry id="aaf6-a8b7-9f4a-62a8" name="(In)Famous Coaching Staff" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a8b0-51e6-607d-db60" type="max"/>
+          </constraints>
           <categoryLinks>
-            <categoryLink id="1447-5b7e-221c-6917" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
+            <categoryLink id="1eaf-f63f-20bb-8b83" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -701,190 +703,346 @@
               <constraints/>
             </categoryLink>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="79cf-1184-f3ca-08b1" name="Bloodweiser" hidden="false" collective="false" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ef9a-4620-e478-5aa0" name="(In)Famous Coaching Staff" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="602f-8058-64b5-d7aa" type="max"/>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c454-58ce-a621-5f0b" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="3b7e-5688-e5a8-7ea3" name="Wizard" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks>
+                    <categoryLink id="7550-861d-aef0-16c7" name="(In)Famous Coaching Staff" hidden="false" targetId="8371-61bd-c561-01c6" primary="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                    </categoryLink>
+                  </categoryLinks>
+                  <selectionEntries/>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="7b13-2355-8853-c395" name="Wizard" hidden="false" collective="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2d2d-f0cd-19ed-752c" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e435-d46b-4633-3504" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fec1-91c4-9c9c-a93c" type="min"/>
+                      </constraints>
+                      <categoryLinks/>
+                      <selectionEntries>
+                        <selectionEntry id="88f0-cfbb-0c59-56b0" name="Hireling Sports-Wizard" book="Spike#1" page="32" hidden="false" collective="false" type="upgrade">
+                          <profiles>
+                            <profile id="c2a8-86d5-0eff-60b9" name="Frog" book="Zap!" page="" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                              <characteristics>
+                                <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="5"/>
+                                <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="1"/>
+                                <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="4"/>
+                                <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="4"/>
+                                <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs"/>
+                                <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="0"/>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <rules>
+                            <rule id="e7da-11e8-f692-84f8" name="Hireling Sports-Wizard" book="Spike#1" page="32" hidden="false">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                              <description>FIREBALL:
+Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Choose a target square anywhere on the pitch. Roll a D6 for each standing player (from either team) that is either in the target square or a squar adjacent to it. If the score is 4 or higher then the player has been hit by the fireball and is knocked down. If it is 3 or less the player manages to dodge the fireball&apos;s blast. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down, as if they had been knocked down by a player with the Mighty Blow skill. If a player on the moving team is knocked down by a fireball, then the moving team does not suffer a turnover unless the player was carrying the ball at the time.
+
+ZAP!:
+Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Target any opposition player and roll a D6. If the score is equal or higher than that player&apos;s ST, that player turns into a frog for the remainder of the drive, after whichthe coach will secure emergency magical assistance in the dugout to turn the player back into their original form. A natural roll of 1 always fails and a natural roll of 6 always succeeds, regardless of the target&apos;s ST.
+
+If the player was carrying the ball wen they were turned into a frog, it is dropped and will bounce once. If the frog is injured, it will be badly hurt and miss the rest of the game. At the end of the game, the player is returned to normal shape with no ill effects. The frog has the attached profile.</description>
+                            </rule>
+                          </rules>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8979-cc0c-ef1a-fed0" type="max"/>
+                          </constraints>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="Gold" costTypeId="points" value="150000.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="684c-2a38-aebb-f76b" name="Horatio X. Scottenheim" book="Almanac" page="78" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules>
+                            <rule id="ea9d-e628-d7b1-0064" name="Horatio X. Scottenheim" book="Almanac" page="79" hidden="false">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                              <description>Take this! Ooops...:
+Once per half, Horatio can cast a fireball and fling it (more or less) at the opposition. He can do this either at the start of his team&apos;s turn, before any player performs an action, or immediately after his team&apos;s turn has ended, even if it ended in a turnover. Choose a target square anywhere on the pitch, then roll for scatter and move the target square D3 squares in that direction. Roll 1 dice to hit each standing player (from either team) that is either in the target square or a square adjacent to it.If the to hit roll is a 4 or more, the target is knocked down. If it is a 3 or less they manage to avoid the blast. Make an armour roll (and possibly an injury roll as well) for each player who is knocked down as if they had been knocked down by a player with the Mighty Blow skill. If a player on Horatio&apos;s team is knocked down by a fireball, they do not suffer a turnover unless that player was carrying the ball at the time.</description>
+                            </rule>
+                          </rules>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="655f-3ffc-12cb-974b" type="max"/>
+                          </constraints>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="Gold" costTypeId="points" value="80000.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="dea0-ce36-c628-d266" name="Chaos Sorcerer" book="Spike#1" page="31" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules>
+                            <rule id="24d5-54f3-a868-8b01" name="Chaos Sorcerer" book="Spike#1" page="31" hidden="false">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                              <description>THUNDERBOLT:
+Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended in a turnover. Pick a standing opposition player anywhere on the pitch, and roll a D6. If the score is 3 or higher, then the player has been hit by the thunderbolt. If the roll is a 1 or a 2, then the player manages to duck or dodge the attack. A player hit by the thunderbolt is knocked down and an armour roll must be made (and possibly an injury roll as well) as if hit by a player with the Mighty Blow skill.
+
+RAMPANT MUTATION:
+Cast at the start of any of your turns, before any player performs an action. Choose a player on your team and roll a D6. On a 2+, that player gains 2 mutations of your choice until the end of the drive. If the result is a 1 however, the player becomes a writhing mass of flesh as raw Chaos energy flows through them momentarily. The player gains Disturbing Presence until the end of your opponent&apos;s next turn, but the spell has no other effect.</description>
+                            </rule>
+                          </rules>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f261-cf4a-f389-c1de" type="max"/>
+                          </constraints>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="Gold" costTypeId="points" value="150000.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="Gold" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="50000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks/>
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bf42-a1e3-1e31-9510" name="Bribe" hidden="false" collective="false" type="unit">
+        <selectionEntry id="b369-eebd-f85a-3125" name="Wandering Apothecary" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks>
-            <categoryLink id="4a3c-18a4-5a5c-b8ca" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="d9e3-0e8a-e960-f691" name="Bribe" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e20c-4bb3-5e41-7b3a" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="100000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a1b-0bee-8f16-7657" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="0.0"/>
+            <cost name="Gold" costTypeId="points" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="75c9-ffef-8b3e-54f2" name="Extra Team Training" hidden="false" collective="false" type="unit">
+        <selectionEntry id="f91e-1bc4-9851-f813" name="Halfling Chef" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks>
-            <categoryLink id="3572-d21f-82f1-540d" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="0780-f35a-0d05-0215" name="Extra Team Training" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9323-72e3-98de-bbd5" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="100000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2412-7695-e4cc-9968" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="0.0"/>
+            <cost name="Gold" costTypeId="points" value="300000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f1d7-0a63-ff32-ba1e" name="Halfling Chef" hidden="false" collective="false" type="unit">
+        <selectionEntry id="22fe-2aef-803e-2004" name="Extra Team Training" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks>
-            <categoryLink id="fe6f-5910-f275-d73c" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="8bf6-b737-867d-1dda" name="Halfling Chef" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d83e-c402-3f19-e4c1" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="300000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ced-7642-0264-d099" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="0.0"/>
+            <cost name="Gold" costTypeId="points" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="753d-e652-6281-9d8f" name="Wandering Apothecary" hidden="false" collective="false" type="unit">
+        <selectionEntry id="60e4-8676-6bfc-cec4" name="Bribe" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks>
-            <categoryLink id="600c-d62b-2923-2abe" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="true">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </categoryLink>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="ad8d-6564-8946-6bff" name="Wandering Apothecary" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f686-99f5-11f0-aa81" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="100000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906b-43ce-072f-022a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="Gold" costTypeId="points" value="0.0"/>
+            <cost name="Gold" costTypeId="points" value="100000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="831c-07b7-d847-7060" name="Bloodweiser" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b6d-e404-387c-88af" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d8b6-c05e-e8b5-57be" name="Extra Options" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="6330-b5f1-ba37-fc6f" name="Specialist Coaches" book="Spike#2" page="33" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb08-e584-4f49-b847" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="3d6e-8ee5-2a04-3b9e" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="20000.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6052-8b92-8479-341c" name="Temp Agency Cheerleaders" book="Spike#2" page="33" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="217a-e6a8-46d2-f98b" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="4dcc-2315-e6b6-7d6e" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="20000.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8cc0-ab95-5b12-5409" name="Weather Mage" book="Spike#2" page="34" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="479e-cfc3-68cb-f4fe" name="Weather Mage" book="Spike#2" page="34" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A Weather Mage may be used once per game, at the start of any of your team&apos;s turn (before any player takes an action). Roll on the Weather table, modifying the result by either plus or minus 1 or 2. The resulting effect lasts until the start of your next turn. At the start of your next turn the replaced weather conditions will return.
+
+Note that if the drive should end before the start of your next turn, a Changing Weather result on the kick-off table may change the weather conditions again. If the drive does end before the weather conditions change back to those that were in effect before the Weather Mage was used, the effects of the current weather are applied (for example, if the Weather Mage has been used to create Sweltering Heat when the drive ends, apply those effects).</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f45-d39d-f3fd-cda3" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="cb83-c465-4e9d-c2cc" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="30000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks/>
