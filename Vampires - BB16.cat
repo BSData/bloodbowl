@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="17" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="18" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -726,6 +726,34 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                             <cost name="Gold" costTypeId="points" value="80000.0"/>
                           </costs>
                         </selectionEntry>
+                        <selectionEntry id="7f58-82d2-c938-20e6" name="Sports Necrotheurge" book="Spike#4" page="" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules>
+                            <rule id="d8db-cf69-d760-d29b" name="Sports Necrotheurge" book="Spike#4" page="" hidden="false">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                              <description>INCORPOREAL:
+Cast at the start of any of your opponent&apos;s turns before any player performs an action. Target any opposition player. On a 3+, it becomes strangely incorporeal! The player gains the No Hands skill and will immediately drop the ball if it was carrying it, causing it to bounce once. Additionally, the player losses their tackle zones. Incorporeal lasts until the start of your opponent&apos;s last turn.
+
+VANHALABLES DANS MACABRE:
+Cast at the start of any of your turns, before any player performs an action. Roll a D6. On a 3+, all Skeleton and Zombie players on the pitch gain +1MA, +1AG and +1AV until the start of your next turn.</description>
+                            </rule>
+                          </rules>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c2b-6527-79cd-bf05" type="max"/>
+                          </constraints>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="Gold" costTypeId="points" value="150000.0"/>
+                          </costs>
+                        </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups/>
                       <entryLinks/>
@@ -926,6 +954,84 @@ Note that if the drive should end before the start of your next turn, a Changing
       <entryLinks/>
       <costs>
         <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="163a-b80a-6a3e-37ca" name="G&apos;Ral Blodschüker" book="Spike#4" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="f493-a308-276a-894e" name="G&apos;Ral Blodschüker" book="Spike#4" page="" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="7"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="3"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="7"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Catch, Dodge, Sure Feet, Wrestle"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="160,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9184-f345-70f1-ade5" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b198-0c3f-6e73-634f" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="160000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="879a-132f-bd73-60e1" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" book="Spike#4" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="d21e-ad61-1d3c-23f3" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" book="Spike#4" page="" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="7"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="4"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Disturbing Presence, Dodge, Foul Appearance, Jump Up, No Hands, Regeneration, Shadowing, Side Step"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="280,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8a8e-3f00-e292-7419" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1d9d-2056-1ad2-2e3b" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="280000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
