@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="453fbaaf-fb2b-4c78-923a-382c232a2779" name="Khemri Team" revision="17" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="453fbaaf-fb2b-4c78-923a-382c232a2779" name="Khemri Team" revision="18" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -173,9 +173,9 @@
         <cost name="Gold" costTypeId="points" value="220000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6aa7bf1-78c0-483d-908e-ea637155d633" name="Ramtut III" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="d6aa7bf1-78c0-483d-908e-ea637155d633" name="Ramtut III" book="Spike#4" page="" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="32cce0b9-095c-5338-0749-95b92d2328f2" name="Ramtut III" page="0" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+        <profile id="32cce0b9-095c-5338-0749-95b92d2328f2" name="Ramtut III" book="Spike#4" page="" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -186,7 +186,7 @@
             <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="1"/>
             <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="9"/>
             <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Break Tackle, Mighty Blow, Regeneration, Wrestle"/>
-            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="380,000"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="360,000"/>
           </characteristics>
         </profile>
       </profiles>
@@ -209,7 +209,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="Gold" costTypeId="points" value="380000.0"/>
+        <cost name="Gold" costTypeId="points" value="360000.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cda6d322-a6f5-4d27-b345-fd36c3da1bf5" name="Setekh" page="0" hidden="false" collective="false" type="model">
@@ -805,6 +805,34 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                             <cost name="Gold" costTypeId="points" value="80000.0"/>
                           </costs>
                         </selectionEntry>
+                        <selectionEntry id="e227-2b7b-b3f4-c1b9" name="Sports Necrotheurge" book="Spike#4" page="" hidden="false" collective="false" type="upgrade">
+                          <profiles/>
+                          <rules>
+                            <rule id="c58a-ab8a-69d6-746b" name="Sports Necrotheurge" book="Spike#4" page="" hidden="false">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                              <description>INCORPOREAL:
+Cast at the start of any of your opponent&apos;s turns before any player performs an action. Target any opposition player. On a 3+, it becomes strangely incorporeal! The player gains the No Hands skill and will immediately drop the ball if it was carrying it, causing it to bounce once. Additionally, the player losses their tackle zones. Incorporeal lasts until the start of your opponent&apos;s last turn.
+
+VANHALABLES DANS MACABRE:
+Cast at the start of any of your turns, before any player performs an action. Roll a D6. On a 3+, all Skeleton and Zombie players on the pitch gain +1MA, +1AG and +1AV until the start of your next turn.</description>
+                            </rule>
+                          </rules>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bbf-f038-4d6e-5036" type="max"/>
+                          </constraints>
+                          <categoryLinks/>
+                          <selectionEntries/>
+                          <selectionEntryGroups/>
+                          <entryLinks/>
+                          <costs>
+                            <cost name="Gold" costTypeId="points" value="150000.0"/>
+                          </costs>
+                        </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups/>
                       <entryLinks/>
@@ -1005,6 +1033,123 @@ Note that if the drive should end before the start of your next turn, a Changing
       <entryLinks/>
       <costs>
         <cost name="Gold" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1410-101d-dad8-fd59" name="Bryce &apos;The Slice&apos; Cambuel" book="Spike#4" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="6809-0027-b7a4-631b" name="Bryce &apos;The Slice&apos; Cambuel" book="Spike#4" page="" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="5"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="2"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Chainsaw, Regeneration, Secret Weapon, Stand Firm, Thick Skull"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="130,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ba18-c0fb-6848-0d88" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0037-449e-e36a-92b5" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="130000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1689-3654-b4c9-aeb2" name="Ivan &apos;The Animal&apos; Deathshroud" book="Spike#4" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="d9d8-636c-0acd-e486" name="Ivan &apos;The Animal&apos; Deathshroud" book="Spike#4" page="" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="6"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="4"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="2"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner, Block, Disturbing Presence, Juggernaut, Regeneration, Strip Ball, Tackle"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="230,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c8d5-ef20-6f05-fad3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bb99-03ff-73fa-f4ba" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="230000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f18-c4e9-0f5c-471c" name="Skrull Halfheight" book="Spike#4" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="ac66-a45e-f7a4-1826" name="Skrull Halfheight" book="Spike#4" page="" hidden="false" profileTypeId="dd08-3a03-4a51-680f" profileTypeName="Star Player">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="MA" characteristicTypeId="c479-66cc-841d-ebbc" value="6"/>
+            <characteristic name="ST" characteristicTypeId="0d07-dc3f-bf2a-fca6" value="3"/>
+            <characteristic name="AG" characteristicTypeId="602a-49ce-fcda-8909" value="3"/>
+            <characteristic name="AV" characteristicTypeId="a43f-1c05-f47a-eea3" value="8"/>
+            <characteristic name="Skills" characteristicTypeId="c461-3b3f-95ee-6d35" value="Loner,Accurate, Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull"/>
+            <characteristic name="Cost" characteristicTypeId="79d3-1146-a76d-53f9" value="190,000"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce13-7590-554d-aed0" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="16bc-d4e7-a2b5-ba9e" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Gold" costTypeId="points" value="190000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
