@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" name="Human Team" revision="22" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" name="Human Team" revision="23" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -43,7 +43,15 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="ff2dc595-94b1-06f7-d1cc-2e380ab43aaf" hidden="false" targetId="40ac90d0-974e-fdaf-fc56-140deaa9a73c" type="selectionEntryGroup">
+        <entryLink id="ff2dc595-94b1-06f7-d1cc-2e380ab43aaf" name="Advances and Injuries" hidden="false" targetId="40ac90d0-974e-fdaf-fc56-140deaa9a73c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c266-004a-bfaf-a96d" name="Seasons Played" hidden="false" targetId="5694-8fe4-09f0-43c8" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -92,6 +100,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="79bbe7d1-2e8b-e277-4edd-0536d88d91f9" hidden="false" targetId="40ac90d0-974e-fdaf-fc56-140deaa9a73c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6710-b2f4-b35a-a418" name="Seasons Played" hidden="false" targetId="5694-8fe4-09f0-43c8" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -225,6 +241,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="81c0-753b-82de-1397" name="Seasons Played" hidden="false" targetId="5694-8fe4-09f0-43c8" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="50000.0"/>
@@ -351,6 +375,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="7087-4e74-2f1f-77c9" name="Seasons Played" hidden="false" targetId="5694-8fe4-09f0-43c8" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="140000.0"/>
@@ -431,6 +463,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="743cff4b-ca8b-edb9-032e-ee6218297012" hidden="false" targetId="40ac90d0-974e-fdaf-fc56-140deaa9a73c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="b5da-9779-48d0-8b68" name="Seasons Played" hidden="false" targetId="5694-8fe4-09f0-43c8" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2429,6 +2469,44 @@ Note that if the drive should end before the start of your next turn, a Changing
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5694-8fe4-09f0-43c8" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="af1c-caf7-60b4-9910" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="6b9d-125c-ab43-6b0e" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d2-f92a-1238-e5c0" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
