@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d7dd-e065-31f7-d516" name="Simyin" revision="2" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d7dd-e065-31f7-d516" name="Simyin" revision="3" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -854,6 +854,14 @@ Note that if the drive should end before the start of your next turn, a Changing
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="1a07-186e-f2bc-922a" name="Seasons Played" hidden="false" targetId="60cf-89f6-850b-f76e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="80000.0"/>
@@ -895,6 +903,14 @@ Note that if the drive should end before the start of your next turn, a Changing
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="f419-2431-2438-b6f1" name="Advances and Injuries" hidden="false" targetId="a938-98a4-9837-4e2f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="ab74-8fda-dd72-21a3" name="Seasons Played" hidden="false" targetId="60cf-89f6-850b-f76e" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -950,6 +966,14 @@ Note that if the drive should end before the start of your next turn, a Changing
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="26a0-3b6e-884d-ef5b" name="Seasons Played" hidden="false" targetId="60cf-89f6-850b-f76e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="70000.0"/>
@@ -998,6 +1022,14 @@ Note that if the drive should end before the start of your next turn, a Changing
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="0d41-1b0b-276f-01b6" name="Seasons Played" hidden="false" targetId="60cf-89f6-850b-f76e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="140000.0"/>
@@ -1039,6 +1071,14 @@ Note that if the drive should end before the start of your next turn, a Changing
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="79b9-ec6b-48bd-c006" name="Advances and Injuries" hidden="false" targetId="a938-98a4-9837-4e2f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="aad8-f0dc-33de-25b5" name="Seasons Played" hidden="false" targetId="60cf-89f6-850b-f76e" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2325,6 +2365,44 @@ If the kicked player moves off the pitch, they land among the crowd (never a ple
           <costs>
             <cost name="Gold" costTypeId="points" value="40000.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="60cf-89f6-850b-f76e" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="51be-0364-72d1-627f" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="4acb-b1b6-6cf2-cecf" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f535-9e4a-fd98-2aa6" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
