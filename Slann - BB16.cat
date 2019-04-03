@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cbeab68-3bc9-4784-b739-fb36d13d1fcb" name="Slann Team" revision="13" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4cbeab68-3bc9-4784-b739-fb36d13d1fcb" name="Slann Team" revision="14" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -51,6 +51,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="a98a-d616-aa14-cc02" name="Seasons Played" hidden="false" targetId="1c6d-b960-2c5c-f35e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="110000.0"/>
@@ -92,6 +100,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="414c7c27-2644-773c-c691-6df65dda031e" hidden="false" targetId="83df2bcd-75c7-30dd-30c4-01340013a937" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5871-5aa0-0f5a-36be" name="Seasons Played" hidden="false" targetId="1c6d-b960-2c5c-f35e" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -225,6 +241,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="247e-ad6a-2e76-f05b" name="Seasons Played" hidden="false" targetId="1c6d-b960-2c5c-f35e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="140000.0"/>
@@ -266,6 +290,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="6c19b468-bbe6-c303-d8e9-666a81178a70" hidden="false" targetId="83df2bcd-75c7-30dd-30c4-01340013a937" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="4b83-8b46-3d91-4c19" name="Seasons Played" hidden="false" targetId="1c6d-b960-2c5c-f35e" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2154,6 +2186,44 @@ Note that if the drive should end before the start of your next turn, a Changing
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1c6d-b960-2c5c-f35e" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="8d95-60db-4359-e410" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="fb3b-a8b6-2bc0-2571" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f4-cea8-9b7f-1608" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
