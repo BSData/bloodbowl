@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b666b61b-33cc-42b1-99e0-f06e24197e96" name="High Elves" revision="18" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b666b61b-33cc-42b1-99e0-f06e24197e96" name="High Elves" revision="19" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -51,6 +51,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="4c84-b7d9-bc1e-b81d" name="Seasons Played" hidden="false" targetId="e0db-ffb2-78fa-7cdc" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="100000.0"/>
@@ -92,6 +100,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="49c44918-af4e-2071-47f8-876a2863d3f8" hidden="false" targetId="50e822e0-ad9e-aa42-6d81-77c403d1a56a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8e61-8293-c2a3-4cb8" name="Seasons Played" hidden="false" targetId="e0db-ffb2-78fa-7cdc" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -332,6 +348,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="4ccc-a3ad-6f42-d191" name="Seasons Played" hidden="false" targetId="e0db-ffb2-78fa-7cdc" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="70000.0"/>
@@ -490,6 +514,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="bb4f62f4-abfe-377e-4fcd-3c53975d7f1d" name="Advances and Injuries" hidden="false" targetId="50e822e0-ad9e-aa42-6d81-77c403d1a56a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2207-8e95-5a3c-0fb3" name="Seasons Played" hidden="false" targetId="e0db-ffb2-78fa-7cdc" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2321,6 +2353,44 @@ Note that if the drive should end before the start of your next turn, a Changing
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e0db-ffb2-78fa-7cdc" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="f40f-79a3-5580-fc88" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="e488-53de-2e51-62b7" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f7b-9538-f9e6-d5f9" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
