@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0d8490b-f414-41e1-b42c-cde6936fa34c" name="Necromantic Horror" revision="16" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c0d8490b-f414-41e1-b42c-cde6936fa34c" name="Necromantic Horror" revision="17" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -82,7 +82,15 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="ca6cee60-dd9f-96b4-9079-f8b2482a16c6" hidden="false" targetId="e9ed9da6-3c02-463f-982f-860fad521e0c" type="selectionEntryGroup">
+        <entryLink id="ca6cee60-dd9f-96b4-9079-f8b2482a16c6" name="Advances and Injuries" hidden="false" targetId="e9ed9da6-3c02-463f-982f-860fad521e0c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c693-809f-1149-e489" name="Seasons Played" hidden="false" targetId="3b53-ae60-2af5-42c9" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -131,6 +139,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="187ec7b7-30ff-e804-47c5-7dc549251352" hidden="false" targetId="e9ed9da6-3c02-463f-982f-860fad521e0c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="0e23-ec14-4b98-fe22" name="Seasons Played" hidden="false" targetId="3b53-ae60-2af5-42c9" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -303,6 +319,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="5615-fb7a-ba33-8af6" name="Seasons Played" hidden="false" targetId="3b53-ae60-2af5-42c9" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Gold" costTypeId="points" value="120000.0"/>
@@ -344,6 +368,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="9d93421b-aef8-6852-7fab-991352e393ff" hidden="false" targetId="e9ed9da6-3c02-463f-982f-860fad521e0c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7a89-7ab8-debd-bea5" name="Seasons Played" hidden="false" targetId="3b53-ae60-2af5-42c9" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -431,6 +463,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="b8544140-320f-ae71-641a-fb369ecf34ff" hidden="false" targetId="e9ed9da6-3c02-463f-982f-860fad521e0c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6252-f8af-7f23-c141" name="Seasons Played" hidden="false" targetId="3b53-ae60-2af5-42c9" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2447,6 +2487,44 @@ Note that if the drive should end before the start of your next turn, a Changing
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3b53-ae60-2af5-42c9" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="d0fc-995f-648c-9df1" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="0b8c-deaa-0739-80a9" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe5-983b-84da-6ce6" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
