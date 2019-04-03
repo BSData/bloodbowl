@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen" revision="22" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen" revision="23" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -43,7 +43,15 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="c34aa1a2-f916-21b4-bb27-c0801e7ad529" hidden="false" targetId="b07ef702-8485-dae9-5090-9b773025db09" type="selectionEntryGroup">
+        <entryLink id="c34aa1a2-f916-21b4-bb27-c0801e7ad529" name="Advances and Injuries" hidden="false" targetId="b07ef702-8485-dae9-5090-9b773025db09" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="52fe-af23-61d0-af8c" name="Seasons Played" hidden="false" targetId="caf6-8c98-bf9d-28d4" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -145,6 +153,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="2749cef0-9770-14c5-b12a-3b53d185ee58" hidden="false" targetId="b07ef702-8485-dae9-5090-9b773025db09" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="f3fa-8a70-9baa-20aa" name="Seasons Played" hidden="false" targetId="caf6-8c98-bf9d-28d4" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -532,6 +548,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="26f893cc-97ca-a672-a074-dcd860f1de51" hidden="false" targetId="b07ef702-8485-dae9-5090-9b773025db09" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2971-db79-0784-7b6c" name="Seasons Played" hidden="false" targetId="caf6-8c98-bf9d-28d4" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2540,6 +2564,44 @@ Note that if the drive should end before the start of your next turn, a Changing
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="caf6-8c98-bf9d-28d4" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="636b-9766-6978-4936" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="dc46-322c-25ca-5bfa" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243e-886e-c313-350d" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
