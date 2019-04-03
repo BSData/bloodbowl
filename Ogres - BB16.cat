@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="16" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="17" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -252,7 +252,15 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="6cd192eb-0900-45ae-2b86-8deb45a833e9" hidden="false" targetId="387a1ef4-490d-3b71-1e3e-38d31dacbaa9" type="selectionEntryGroup">
+        <entryLink id="6cd192eb-0900-45ae-2b86-8deb45a833e9" name="Advances and Injuries" hidden="false" targetId="387a1ef4-490d-3b71-1e3e-38d31dacbaa9" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7478-3498-8b70-8de8" name="Seasons Played" hidden="false" targetId="93ae-d586-7086-6f80" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -340,6 +348,14 @@
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="20ce268f-c3b5-3c59-7e1a-48c2c2fabf56" name="Advances and Injuries" hidden="false" targetId="387a1ef4-490d-3b71-1e3e-38d31dacbaa9" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="cbd7-72bb-2371-4831" name="Seasons Played" hidden="false" targetId="93ae-d586-7086-6f80" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2134,6 +2150,44 @@ Note that if the drive should end before the start of your next turn, a Changing
           <costs>
             <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="93ae-d586-7086-6f80" name="Seasons Played" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="e5e5-0b25-01db-e244" name="Season" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="6d03-2c1e-52c1-a965" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27dd-708a-1ac1-7529" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
