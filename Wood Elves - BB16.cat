@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" name="Wood Elves" revision="17" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" name="Wood Elves" revision="18" battleScribeVersion="2.01" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -43,7 +43,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="2d9c2e77-a82f-b85d-5c36-74a8c849be4b" hidden="false" targetId="c77b3228-d507-8cd1-c260-4d03fafc8ce7" type="selectionEntryGroup">
+        <entryLink id="2d9c2e77-a82f-b85d-5c36-74a8c849be4b" name="Advances and Injuries" hidden="false" targetId="b6cf-2391-501c-2e18" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -323,7 +323,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="9c1417b2-88fc-9a09-0ab9-897d6795836d" hidden="false" targetId="c77b3228-d507-8cd1-c260-4d03fafc8ce7" type="selectionEntryGroup">
+        <entryLink id="9c1417b2-88fc-9a09-0ab9-897d6795836d" name="Advances and Injuries" hidden="false" targetId="b6cf-2391-501c-2e18" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -418,7 +418,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="7cd45705-eea5-5feb-a6e3-20f744ca60da" hidden="false" targetId="c77b3228-d507-8cd1-c260-4d03fafc8ce7" type="selectionEntryGroup">
+        <entryLink id="7cd45705-eea5-5feb-a6e3-20f744ca60da" name="Advances and Injuries" hidden="false" targetId="c77b3228-d507-8cd1-c260-4d03fafc8ce7" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -474,7 +474,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="971f5e7a-c3b6-65a9-7173-e23cefb38d9d" name="Advances and Injuries" hidden="false" targetId="c77b3228-d507-8cd1-c260-4d03fafc8ce7" type="selectionEntryGroup">
+        <entryLink id="971f5e7a-c3b6-65a9-7173-e23cefb38d9d" name="Advances and Injuries" hidden="false" targetId="8c33-701d-05b0-ff8f" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -530,7 +530,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="e4d1cb0b-4177-b617-3f3c-8f85f77bd346" hidden="false" targetId="c77b3228-d507-8cd1-c260-4d03fafc8ce7" type="selectionEntryGroup">
+        <entryLink id="e4d1cb0b-4177-b617-3f3c-8f85f77bd346" name="Advances and Injuries" hidden="false" targetId="b6cf-2391-501c-2e18" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1094,6 +1094,315 @@ Each time the number of Cheerleaders Galandril&apos;s team has is used (for exam
           <entryLinks/>
           <costs>
             <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="34c8-14c8-b380-b13d" name="Mercenaries" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="436c-cb61-99f4-7035" name="Lineman" page="0" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="f486-acd0-3498-6459" name="Lineman" page="0" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="7"/>
+                    <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="3"/>
+                    <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="4"/>
+                    <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
+                    <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner"/>
+                    <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="100,000"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b7b4-dad0-ede7-a43c" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="ba0e-99e8-6f4d-06ee" hidden="false" targetId="506c617965727323232344415441232323" primary="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="e2db-f252-2056-d10e" name="Merc Skills" hidden="false" targetId="96d7-d6a4-69b5-a8a6" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="100000.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1309-c0f3-a01c-528e" name="Thrower" page="0" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="5fd3-5e33-71b4-8eca" name="Thrower" page="0" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="7"/>
+                    <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="3"/>
+                    <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="4"/>
+                    <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
+                    <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Pass"/>
+                    <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="120,000"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3916-6544-b2e3-f350" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="d9f1-13f6-f2ef-1650" hidden="false" targetId="506c617965727323232344415441232323" primary="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="747c-e545-5595-c2cc" name="Merc Skills" hidden="false" targetId="6d40-f658-f9ec-619f" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="120000.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b607-9520-559a-7e75" name="Treeman" page="0" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="c80c-dad6-01c4-693c" name="Treeman" page="0" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="2"/>
+                    <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="6"/>
+                    <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="1"/>
+                    <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="10"/>
+                    <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Mighty Blow, Stand Firm, Strong Arm, Take Root, Thick Skull, Throw Team-Mate"/>
+                    <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="106e-2162-3f44-93d3" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="134b-826f-71cc-b274" hidden="false" targetId="506c617965727323232344415441232323" primary="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="5538-2fdf-0c5e-063e" name="Merc Skills" hidden="false" targetId="8bf9-ccca-4ce7-cc60" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="150000.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9cec-19b7-79be-519f" name="Wardancer" page="0" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="44c2-7058-dac0-12e7" name="Wardancer" page="0" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="8"/>
+                    <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="3"/>
+                    <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="4"/>
+                    <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
+                    <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Block, Dodge, Leap"/>
+                    <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="150,000"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9651-6891-6737-0cbd" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="2a96-986f-9bb9-9a7f" hidden="false" targetId="506c617965727323232344415441232323" primary="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="75b3-1598-0476-1bda" name="Merc Skills" hidden="false" targetId="96d7-d6a4-69b5-a8a6" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="150000.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c25f-24db-9481-da94" name="Catcher" page="0" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="750a-71bd-65d6-58bf" name="Catcher" page="0" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="8"/>
+                    <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="2"/>
+                    <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="4"/>
+                    <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
+                    <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner, Catch, Dodge, Sprint"/>
+                    <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="120,000"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0de2-1c03-40fc-c268" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5c68-7fbd-1fa6-05dc" hidden="false" targetId="506c617965727323232344415441232323" primary="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="d5b1-ff9c-cd67-b935" name="Merc Skills" hidden="false" targetId="96d7-d6a4-69b5-a8a6" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="120000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0b23-0ee6-a885-bf38" name="Journeymen" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="d9d9-d0d8-95df-3700" name="Journeymen" page="0" hidden="false" collective="false" type="model">
+              <profiles>
+                <profile id="4e09-c8f0-4620-a715" name="Journeyman" page="0" hidden="false" profileTypeId="506c6179657223232344415441232323" profileTypeName="Player">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="MA" characteristicTypeId="4d4123232344415441232323" value="7"/>
+                    <characteristic name="ST" characteristicTypeId="535423232344415441232323" value="3"/>
+                    <characteristic name="AG" characteristicTypeId="414723232344415441232323" value="4"/>
+                    <characteristic name="AV" characteristicTypeId="415623232344415441232323" value="7"/>
+                    <characteristic name="Skills" characteristicTypeId="536b696c6c7323232344415441232323" value="Loner"/>
+                    <characteristic name="Cost" characteristicTypeId="436f737423232344415441232323" value="70,000"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a8a0-3335-d89b-bce2" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e22a-74dd-b46a-e820" hidden="false" targetId="506c617965727323232344415441232323" primary="true">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="70000.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2081,7 +2390,7 @@ Note that if the drive should end before the start of your next turn, a Changing
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c77b3228-d507-8cd1-c260-4d03fafc8ce7" name="Advances and Injuries" hidden="false" collective="false">
+    <selectionEntryGroup id="c77b3228-d507-8cd1-c260-4d03fafc8ce7" name="Advances and Injuries" page="Thrower" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2140,27 +2449,10 @@ Note that if the drive should end before the start of your next turn, a Changing
           <modifiers/>
           <constraints/>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="48703b47-aed6-0684-74e7-cf1938ca214f" name="Double" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="10000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="1ecc91a5-fe66-2bb6-171a-7e7e70b49211" hidden="false" targetId="6fc2cd2c-7964-4eed-ae8a-bbb09bd0fcc2" type="selectionEntryGroup">
+            <entryLink id="1ecc91a5-fe66-2bb6-171a-7e7e70b49211" name="General " hidden="false" targetId="6fc2cd2c-7964-4eed-ae8a-bbb09bd0fcc2" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -2180,24 +2472,7 @@ Note that if the drive should end before the start of your next turn, a Changing
           <modifiers/>
           <constraints/>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="1e538c9e-4abd-86b5-b97c-36257f23c0c7" name="Double" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="10000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="c5cdc139-1da9-8084-e438-9a616427af20" name="Passing" hidden="false" targetId="0c95d2cd-e6bc-13b1-5a4d-67ed825ad0a0" type="selectionEntryGroup">
@@ -2220,24 +2495,7 @@ Note that if the drive should end before the start of your next turn, a Changing
           <modifiers/>
           <constraints/>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="80c98935-e593-f90e-dccc-b819667dc14c" name="Double" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Gold" costTypeId="points" value="10000.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="9416a2b8-02be-2e27-c4fc-18198896dbb5" name="Strength " hidden="false" targetId="f314fea2-d5be-c241-ebe2-63dd43cd3ce5" type="selectionEntryGroup">
@@ -2250,7 +2508,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Gold" costTypeId="points" value="20000.0"/>
+            <cost name="Gold" costTypeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2334,7 +2592,9 @@ Note that if the drive should end before the start of your next turn, a Changing
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="baa5-5a98-debd-5332" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -2348,7 +2608,557 @@ Note that if the drive should end before the start of your next turn, a Changing
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b6cf-2391-501c-2e18" name="Advances and Injuries" page="Line, Catch, Dance" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94df-3369-1daf-25a9" type="min"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="083c-347c-f3de-9ba0" type="max"/>
+        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="aec9-25c2-7f22-8c09" type="min"/>
+        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="884d-809f-7243-ece0" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8cad-5941-ffd0-ea41" type="min"/>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c2b-0bcc-8ab9-2f11" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="d141-6ca2-7570-b691" name="XP" page="0" hidden="false" collective="false" type="unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7624-d58c-8c75-04af" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5057-549e-a09b-f61e" hidden="false" targetId="9e7d9e15-a6d3-ed8a-e568-37b5a211c610" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="20000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3fcc-b15e-655e-9442" name="General Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="6e2a-70be-ac33-9617" name="General " hidden="false" targetId="6fc2cd2c-7964-4eed-ae8a-bbb09bd0fcc2" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="20000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8b5d-bd3d-2d81-f4e2" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="979f-667e-7e8f-5b95" name="Passing" hidden="false" targetId="0c95d2cd-e6bc-13b1-5a4d-67ed825ad0a0" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="060d-9695-d046-40f7" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ded6-7413-0844-58cd" name="Strength " hidden="false" targetId="f314fea2-d5be-c241-ebe2-63dd43cd3ce5" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a261-8222-9405-45f2" name="Stats" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="18a5-046e-8fcb-4873" name="Injury" page="0" hidden="false" collective="false" type="model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="d6a6-1764-07ac-1e09" hidden="false" targetId="8871ce4b-07d7-8007-8e6f-9de1448bc28e" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="10d2-2e3f-f45c-aa7b" name="Stat" page="0" hidden="false" collective="false" type="model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="9916-a4a1-4d9e-df31" hidden="false" targetId="47e56566-7337-3632-f43b-47704daf5698" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8c33-701d-05b0-ff8f" name="Advances and Injuries" page="Tree" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e863-6c9d-d1f3-f0db" type="min"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8fb-6c12-5995-0ae1" type="max"/>
+        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0c94-1387-39c6-8832" type="min"/>
+        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9ee0-9d2f-7b78-943f" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8185-0cc1-c03c-40e9" type="min"/>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79e9-01e9-ed57-be7c" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="a96c-9f7c-4568-c6c8" name="XP" page="0" hidden="false" collective="false" type="unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac02-7e5f-34be-a8aa" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="fb31-2457-0a3c-0a85" hidden="false" targetId="9e7d9e15-a6d3-ed8a-e568-37b5a211c610" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dab0-49d1-19bb-baab" name="General Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5d84-7277-742c-8ab2" name="General " hidden="false" targetId="6fc2cd2c-7964-4eed-ae8a-bbb09bd0fcc2" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5f7a-12e0-50fa-b00b" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="c4f5-0ec4-3a36-cfaf" name="Passing" hidden="false" targetId="0c95d2cd-e6bc-13b1-5a4d-67ed825ad0a0" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2aef-a667-0562-2e43" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="f885-943f-0c6d-57ee" name="Strength " hidden="false" targetId="f314fea2-d5be-c241-ebe2-63dd43cd3ce5" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="20000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9b4d-ccfd-18f4-75c6" name="Stats" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="9565-f8aa-1e38-d815" name="Injury" page="0" hidden="false" collective="false" type="model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="f13a-c37b-7fc1-8778" hidden="false" targetId="8871ce4b-07d7-8007-8e6f-9de1448bc28e" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="07e5-c4e6-faee-e0a4" name="Stat" page="0" hidden="false" collective="false" type="model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="3e17-2b06-cb2c-ea73" hidden="false" targetId="47e56566-7337-3632-f43b-47704daf5698" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6d40-f658-f9ec-619f" name="Merc Skills" page="Thrower" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3247-b049-03e0-b22c" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="707a-fade-e03f-6823" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1760-c4b5-55b2-2d05" hidden="false" targetId="9e7d9e15-a6d3-ed8a-e568-37b5a211c610" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4831-76bc-86cb-f7b3" name="General Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3c64-1263-7f40-74a8" name="General " hidden="false" targetId="6fc2cd2c-7964-4eed-ae8a-bbb09bd0fcc2" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d898-a4c3-be5f-92f9" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1535-d1f0-fee6-c071" name="Passing" hidden="false" targetId="0c95d2cd-e6bc-13b1-5a4d-67ed825ad0a0" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8bf9-ccca-4ce7-cc60" name="Merc Skills" page="Tree" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9208-a7a3-a90c-6b39" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="d899-b0ce-54bf-57d3" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="38c9-54b0-e548-a093" name="Strength " hidden="false" targetId="f314fea2-d5be-c241-ebe2-63dd43cd3ce5" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="96d7-d6a4-69b5-a8a6" name="Merc Skills" page="Line, Catch, Dance" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="daa3-4e41-0468-9a6c" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="2f69-ff16-4d3b-6814" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="6b21-ae0a-917e-00b0" hidden="false" targetId="9e7d9e15-a6d3-ed8a-e568-37b5a211c610" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="beef-e668-a64c-2c61" name="General Skill" page="0" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="514a-0f08-2a97-b68d" name="General " hidden="false" targetId="6fc2cd2c-7964-4eed-ae8a-bbb09bd0fcc2" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" costTypeId="points" value="50000.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
