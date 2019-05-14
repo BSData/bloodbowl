@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="14" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="15" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="e37c530b-8013-4e29-baee-8b29951f3648" name="Bull Centaur" page="0" hidden="false" collective="false" type="model">
       <constraints>
@@ -22,7 +22,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="cf454ed5-0d86-6655-d27a-196004956173" name="Advances and Injuries " hidden="false" collective="false" targetId="40b710cd-d375-dcd8-db9e-c037613b3929" type="selectionEntryGroup"/>
-        <entryLink id="29c3-6b87-e1aa-49c6" name="Seasons Played" hidden="false" collective="false" targetId="5b99-dd9b-0872-937b" type="selectionEntryGroup"/>
+        <entryLink id="29c3-6b87-e1aa-49c6" name="Career" hidden="false" collective="false" targetId="f9a3-1f78-6694-46d0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="130000.0"/>
@@ -49,7 +49,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="afaec8f4-361c-5deb-65e0-11cf8855fe27" name="Advances and Injuries" hidden="false" collective="false" targetId="3dd89bb7-769f-1da2-ff61-a7ab9501f9af" type="selectionEntryGroup"/>
-        <entryLink id="f62f-8632-c98f-9fea" name="Seasons Played" hidden="false" collective="false" targetId="5b99-dd9b-0872-937b" type="selectionEntryGroup"/>
+        <entryLink id="f62f-8632-c98f-9fea" name="Career" hidden="false" collective="false" targetId="f9a3-1f78-6694-46d0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="70000.0"/>
@@ -131,7 +131,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="9abbe8c7-83b5-199f-d12b-1e38e587fc5c" name="Advances and Injuries" hidden="false" collective="false" targetId="b9a8-d0c4-79f2-7038" type="selectionEntryGroup"/>
-        <entryLink id="daac-bb60-abc0-f4a4" name="Seasons Played" hidden="false" collective="false" targetId="5b99-dd9b-0872-937b" type="selectionEntryGroup"/>
+        <entryLink id="daac-bb60-abc0-f4a4" name="Career" hidden="false" collective="false" targetId="f9a3-1f78-6694-46d0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="40000.0"/>
@@ -181,7 +181,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="b6141ead-c43e-68e5-9428-16bf0a1344fd" name="Advances and Injuries" hidden="false" collective="false" targetId="677d-1786-9a65-557f" type="selectionEntryGroup"/>
-        <entryLink id="963b-2613-cbf1-8cb7" name="Seasons Played" hidden="false" collective="false" targetId="5b99-dd9b-0872-937b" type="selectionEntryGroup"/>
+        <entryLink id="963b-2613-cbf1-8cb7" name="Career" hidden="false" collective="false" targetId="f9a3-1f78-6694-46d0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="150000.0"/>
@@ -1246,23 +1246,6 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5b99-dd9b-0872-937b" name="Seasons Played" hidden="false" collective="false">
-      <selectionEntries>
-        <selectionEntry id="b120-d476-5ad1-9a93" name="Season" hidden="false" collective="false" type="upgrade">
-          <costs>
-            <cost name="Gold" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4a4c-cb91-20c8-ac41" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e790-b532-d15a-9478" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Gold" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup id="677d-1786-9a65-557f" name="Advances and Injuries" page="Minotaur" hidden="false" collective="false">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aea2-fe1d-38f0-62fa" type="min"/>
@@ -1465,6 +1448,29 @@ Note that if the drive should end before the start of your next turn, a Changing
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f9a3-1f78-6694-46d0" name="Career" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="3631-ab91-29b8-6a1b" name="Casualties Caused" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="dc84-2e4d-42b1-624f" name="Completed Passes" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="ecde-4afa-75d6-280e" name="Interceptions" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="3fa4-bfc3-dea5-3aa6" name="Touchdowns Scored" hidden="false" collective="false" type="upgrade"/>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9ed6-9e0b-f38e-8272" name="Season" hidden="false" collective="false">
+          <selectionEntries>
+            <selectionEntry id="01cd-690d-cf64-c670" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cec-7d52-0bc8-c448" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fad2-126a-72c7-9340" name="Seasons Played" hidden="false" collective="false" type="upgrade"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
