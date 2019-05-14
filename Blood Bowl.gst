@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="21" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="22" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Almanac"/>
     <publication id="b9d5-4c01-b71b-ab91" name="Forgeworld"/>
@@ -149,6 +149,27 @@ If the kicked player moves off the pitch, they land among the crowd (never a ple
       <costs>
         <cost name="Gold" typeId="points" value="300000.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="8437-0419-ccfd-67e9" name="Season" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b275-f3e4-12dd-8c67" name="Misc" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="01fd-0216-d297-c52d" name="Games Played in Season" page="0" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3712-113e-482c-6012" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3a84-e66e-bfd1-dca0" name="Friendly Games" hidden="false" collective="false" type="upgrade"/>
+            <selectionEntry id="9cdd-1908-cec4-eba2" name="League Games" hidden="false" collective="false" type="upgrade"/>
+          </selectionEntries>
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="419e-1ff7-2594-8f73" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="297d-9efa-89c5-b1ba" name="Games Conceded (Did play)" hidden="false" collective="false" type="upgrade"/>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
 </gameSystem>
