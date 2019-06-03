@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="22" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="23" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Almanac"/>
     <publication id="b9d5-4c01-b71b-ab91" name="Forgeworld"/>
@@ -112,7 +112,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7438-5bbd-31d5-7f1e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="84a9-7c26-4eb4-642d" name="Grak" hidden="false" typeId="506c6179657223232344415441232323" typeName="Player">
+        <profile id="84a9-7c26-4eb4-642d" name="Grak" publicationId="e9d8-346a-8a46-9f6a" hidden="false" typeId="506c6179657223232344415441232323" typeName="Player">
           <characteristics>
             <characteristic name="MA" typeId="4d4123232344415441232323">5</characteristic>
             <characteristic name="ST" typeId="535423232344415441232323">5</characteristic>
@@ -122,7 +122,7 @@
             <characteristic name="Cost" typeId="436f737423232344415441232323">150,000</characteristic>
           </characteristics>
         </profile>
-        <profile id="5667-f4f5-99ef-c0e7" name="Crumbleberry" hidden="false" typeId="506c6179657223232344415441232323" typeName="Player">
+        <profile id="5667-f4f5-99ef-c0e7" name="Crumbleberry" publicationId="e9d8-346a-8a46-9f6a" hidden="false" typeId="506c6179657223232344415441232323" typeName="Player">
           <characteristics>
             <characteristic name="MA" typeId="4d4123232344415441232323">5</characteristic>
             <characteristic name="ST" typeId="535423232344415441232323">2</characteristic>
@@ -132,7 +132,7 @@
             <characteristic name="Cost" typeId="436f737423232344415441232323">150,000</characteristic>
           </characteristics>
         </profile>
-        <profile id="45c6-c35b-637b-d8f3" name="Grak and Crumbleberry" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+        <profile id="45c6-c35b-637b-d8f3" name="Grak and Crumbleberry" publicationId="e9d8-346a-8a46-9f6a" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
           <characteristics>
             <characteristic name="Ability" typeId="b112-aa11-2549-e705">KICK TEAM-MATE
 When a player with this skill makes a Blitz Action, they can kick an adjacent team-mate (who must have the Right Stuff skill) instead of throwing a block. No Block roll is made; instead, the target player is kicked as though they were a ball! The coach declares whether they will roll a D6 for a short kick or 2D6 for a riskier long kick. If they rolled 2D6 and scored a double, the kicker has been a little too enthusiastic; make an Injury roll for the target player, treating Stunned results as KO’d (if they were carrying the ball, it bounces from the square they were in).
@@ -160,16 +160,35 @@ If the kicked player moves off the pitch, they land among the crowd (never a ple
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3712-113e-482c-6012" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3a84-e66e-bfd1-dca0" name="Friendly Games" hidden="false" collective="false" type="upgrade"/>
-            <selectionEntry id="9cdd-1908-cec4-eba2" name="League Games" hidden="false" collective="false" type="upgrade"/>
+            <selectionEntry id="3a84-e66e-bfd1-dca0" name="Friendly Games" hidden="false" collective="false" type="upgrade">
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9cdd-1908-cec4-eba2" name="League Games" hidden="false" collective="false" type="upgrade">
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="419e-1ff7-2594-8f73" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="297d-9efa-89c5-b1ba" name="Games Conceded (Did play)" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="419e-1ff7-2594-8f73" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="297d-9efa-89c5-b1ba" name="Games Conceded (Did play)" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Gold" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
 </gameSystem>
