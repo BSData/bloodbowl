@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="20" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="21" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b9491123-d66b-407b-ac29-8cce224462fc" name="Bertha Bigfist" page="0" hidden="false" collective="false" type="model">
       <constraints>
@@ -80,12 +80,12 @@
         <cost name="Gold" typeId="points" value="290000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59bb7834-c40c-4357-a986-44d7b6a73cd4" name="Morg &apos;n&apos; Thorg" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="59bb7834-c40c-4357-a986-44d7b6a73cd4" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="828f0623-7e6e-783b-1da9-149bf8bcb073" name="Morg &apos;n&apos; Thorg" page="0" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="828f0623-7e6e-783b-1da9-149bf8bcb073" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
@@ -153,12 +153,12 @@
         <cost name="Gold" typeId="points" value="140000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="004d8daa-7474-431a-9451-efb6cc2b1aa4" name="Scrappa Sorehead" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="004d8daa-7474-431a-9451-efb6cc2b1aa4" name="Scrappa Sorehead" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="f8864763-eebe-c507-a841-d456309e93a4" name="Scrappa Sorehead" page="0" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="f8864763-eebe-c507-a841-d456309e93a4" name="Scrappa Sorehead" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
@@ -535,6 +535,38 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="f2ca-3308-68c3-2fdf" name="Bottles of Heady Brew" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="584c-b603-b920-4503" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a0b7-2ab1-4d9f-9b12" name="Bottles of Heady Brew" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">At the start of a drive, after setting up but before the kick-off, the coach of the team with this inducement may randomly select D3 players with the Stunty skill currently on the pitch. For the remainder of the drive, those players gain the Dauntless, Frenzy, and Really Stupid skills.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="40000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="afa1-0ee1-3a55-6e64" name="Halfling Hotpot" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" collective="false" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7019-6d1d-fb94-6215" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="675c-e38e-eea2-3be3" name="Halfling Hotpot" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">The Hot Pot may be used at the start of any of your turns, before any player performs an action. Choose a target square anywhere on the pitch, and roll a D6. On a 6, the shot is on target. On a 2-5, the shot is off target - roll for scatter and move the target square D3 squares in that direction. On a 1, however, something has gone horribly wrong and the Hot Pot has misfired in the team&apos;s Dugout - D3 randomly determined players in the Reserves box are immediately KO&apos;d and moved to the Knocked Out box.
+
+A player in the target square is automatically hit by the Hot Pot itself and knocked down. Make an armour roll (and possibly an injury roll as well) as if they player had been knocked down by a player with the Mighty Blow skill. Additionally, roll a D6 for each standing player adjacent to the target square. On a 4 or higher, the player has been hit by the stew that showers out of the Hot Pot and is placed prone. On a 3 or lower, the player manages to duck and avoid being hit. If a player on your team is placed prone by the shower of hot stew, then your team does not suffer a turnover unless the player was carrying the ball at the time. If a player on your team is knocked down by the Hot Pot itself, a turnover is caused.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="60000.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b58a-ff9e-422a-0dce" name="Extra Options" hidden="false" collective="false">
@@ -586,6 +618,29 @@ Note that if the drive should end before the start of your next turn, a Changing
       </selectionEntryGroups>
       <costs>
         <cost name="Gold" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9030-850a-a45a-bbcc" name="Big Jobo Hairyfoot" publicationId="543f-97f6-179f-71ca" page="5" hidden="false" collective="false" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7122-8436-6a3a-312d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="38bf-f9b6-4b0f-dd20" name="Big Jobo Hairyfoot" publicationId="543f-97f6-179f-71ca" page="5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
+            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Dirty Player, Stand Firm, Stunty, Tackle, Wrestle</characteristic>
+            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">120,000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8b70-eedc-5e01-cbc6" name="New CategoryLink" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Gold" typeId="points" value="120000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1152,10 +1207,26 @@ Note that if the drive should end before the start of your next turn, a Changing
     </selectionEntryGroup>
     <selectionEntryGroup id="1f47-db86-3a79-a63d" name="Career" hidden="false" collective="false">
       <selectionEntries>
-        <selectionEntry id="ce93-d270-15c7-4ca3" name="Casualties Caused" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="dfb8-256c-7360-3195" name="Completed Passes" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="27a3-e400-2349-9339" name="Interceptions" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="4821-0e99-369d-035a" name="Touchdowns Scored" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="ce93-d270-15c7-4ca3" name="Casualties Caused" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dfb8-256c-7360-3195" name="Completed Passes" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="27a3-e400-2349-9339" name="Interceptions" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4821-0e99-369d-035a" name="Touchdowns Scored" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="8f44-1443-a0be-00e2" name="Season" hidden="false" collective="false">
@@ -1168,7 +1239,11 @@ Note that if the drive should end before the start of your next turn, a Changing
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3d9a-bed4-2d72-395f" name="Seasons Played" hidden="false" collective="false" type="upgrade"/>
+            <selectionEntry id="3d9a-bed4-2d72-395f" name="Seasons Played" hidden="false" collective="false" type="upgrade">
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
