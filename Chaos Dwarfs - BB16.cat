@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="15" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="16" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="e37c530b-8013-4e29-baee-8b29951f3648" name="Bull Centaur" page="0" hidden="false" collective="false" type="model">
       <constraints>
@@ -87,12 +87,12 @@
         <cost name="Gold" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8dd4dba3-0df0-4d1d-94e2-e9baee04d4a9" name="Grashnak Blackhoof" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="8dd4dba3-0df0-4d1d-94e2-e9baee04d4a9" name="Grashnak Blackhoof" publicationId="a724-bc8d-f22a-3f61" page="5" hidden="false" collective="false" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="38d66019-bcfd-8a9c-4e03-8b839795030f" name="Grashnak Blackhoof" page="0" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="38d66019-bcfd-8a9c-4e03-8b839795030f" name="Grashnak Blackhoof" publicationId="a724-bc8d-f22a-3f61" page="5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
@@ -187,12 +187,12 @@
         <cost name="Gold" typeId="points" value="150000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59bb7834-c40c-4357-a986-44d7b6a73cd4" name="Morg &apos;n&apos; Thorg" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="59bb7834-c40c-4357-a986-44d7b6a73cd4" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="59234846-a4da-418e-3e9a-6d24a02966c4" name="Morg &apos;n&apos; Thorg" page="0" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="59234846-a4da-418e-3e9a-6d24a02966c4" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
@@ -1451,10 +1451,26 @@ Note that if the drive should end before the start of your next turn, a Changing
     </selectionEntryGroup>
     <selectionEntryGroup id="f9a3-1f78-6694-46d0" name="Career" hidden="false" collective="false">
       <selectionEntries>
-        <selectionEntry id="3631-ab91-29b8-6a1b" name="Casualties Caused" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="dc84-2e4d-42b1-624f" name="Completed Passes" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="ecde-4afa-75d6-280e" name="Interceptions" hidden="false" collective="false" type="upgrade"/>
-        <selectionEntry id="3fa4-bfc3-dea5-3aa6" name="Touchdowns Scored" hidden="false" collective="false" type="upgrade"/>
+        <selectionEntry id="3631-ab91-29b8-6a1b" name="Casualties Caused" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dc84-2e4d-42b1-624f" name="Completed Passes" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ecde-4afa-75d6-280e" name="Interceptions" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3fa4-bfc3-dea5-3aa6" name="Touchdowns Scored" hidden="false" collective="false" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="9ed6-9e0b-f38e-8272" name="Season" hidden="false" collective="false">
@@ -1467,7 +1483,11 @@ Note that if the drive should end before the start of your next turn, a Changing
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fad2-126a-72c7-9340" name="Seasons Played" hidden="false" collective="false" type="upgrade"/>
+            <selectionEntry id="fad2-126a-72c7-9340" name="Seasons Played" hidden="false" collective="false" type="upgrade">
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
