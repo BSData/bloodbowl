@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="23" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="24" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="d9a10811-e026-4e38-a2b0-330f62b01bb2" name="Bertha Bigfist" page="0" hidden="false" collective="false" type="model">
       <constraints>
@@ -714,6 +714,29 @@ Note that if the drive should end before the start of your next turn, a Changing
       </selectionEntryGroups>
       <costs>
         <cost name="Gold" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a69-f9e7-31c8-67d4" name="Zolcath the Zoat" publicationId="6ebf-d831-0023-9765" page="6" hidden="false" collective="false" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3e93-61cf-742e-c757" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6405-b5f1-c1ae-363e" name="Zolcath the Zoat" publicationId="6ebf-d831-0023-9765" page="6" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">9</characteristic>
+            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Disturbing Presence, Jugernaut, Mighty Blow, Prehensile Tail, Regeneration, Sure Feet</characteristic>
+            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">280,000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4789-7ec5-77b8-9fa8" hidden="false" targetId="5374617220506c617965727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Gold" typeId="points" value="280000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
