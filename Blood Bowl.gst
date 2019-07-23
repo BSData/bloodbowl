@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="23" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="24" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Almanac"/>
     <publication id="b9d5-4c01-b71b-ab91" name="Forgeworld"/>
@@ -10,6 +10,7 @@
     <publication id="8c2d-0b8c-484b-6789" name="Spike#3"/>
     <publication id="8e57-7262-dd22-3f40" name="Spike#4"/>
     <publication id="543f-97f6-179f-71ca" name="Spike#5"/>
+    <publication id="6ebf-d831-0023-9765" name="Spike#6"/>
   </publications>
   <costTypes>
     <costType id="points" name="Gold" defaultCostLimit="0.0"/>
