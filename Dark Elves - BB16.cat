@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" name="Dark Elves" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" name="Dark Elves" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="a2960b8a-5e9b-4b8d-b584-0bf01991a5d9" name="Assassin" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -760,6 +760,21 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
           </selectionEntries>
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="58bb-a319-8031-a1f2" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7594-7201-843e-b1d8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6d60-43a0-0636-1356" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">The mascot works as a bonus team re-roll (add the model to your team re-roll track along with the normal re-roll counter). However, to use the Mascot re-roll you must first roll a D6. On a roll of 4+, the re-roll can be used as normal. If the roll is 3 or less, the Mascot re-roll is lost for the half but you may use a normal team re-roll instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
