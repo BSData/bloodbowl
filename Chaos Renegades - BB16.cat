@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e9482b58-edc3-4edb-a2d3-c07110883bfb" name="Chaos Renegades" revision="28" battleScribeVersion="2.03" authorName="" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e9482b58-edc3-4edb-a2d3-c07110883bfb" name="Chaos Renegades" revision="29" battleScribeVersion="2.03" authorName="" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9888ba83-7a81-4c7b-b914-f08f39e29606" name="Bomber Dribblesnot" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -959,6 +959,21 @@ D8: Result:
           </profiles>
           <costs>
             <cost name="Gold" typeId="points" value="100000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="56b6-fead-f084-5d55" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3244-5c2e-c2a2-5a28" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ac01-9535-87ca-d97c" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">The mascot works as a bonus team re-roll (add the model to your team re-roll track along with the normal re-roll counter). However, to use the Mascot re-roll you must first roll a D6. On a roll of 4+, the re-roll can be used as normal. If the roll is 3 or less, the Mascot re-roll is lost for the half but you may use a normal team re-roll instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
