@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0406-e762-2329-fbea" name="Bretonnian" revision="11" battleScribeVersion="2.02" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0406-e762-2329-fbea" name="Bretonnian" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="ad50dbe1-8157-4447-8fc1-0643d4e9228a" name="Blitzer" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="ad50dbe1-8157-4447-8fc1-0643d4e9228a" name="Blitzer" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -21,14 +21,14 @@
         <categoryLink id="ad50dbe1-8157-4447-8fc1-0643d4e9228a-506c617965727323232344415441232323" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c432-eaf8-859e-428d" name="Advances and Injuries" hidden="false" collective="false" targetId="bf06-025d-cc38-ba0b" type="selectionEntryGroup"/>
-        <entryLink id="9dc0-8186-d4a9-d628" name="Career" hidden="false" collective="false" targetId="c951-492e-853d-5ab8" type="selectionEntryGroup"/>
+        <entryLink id="c432-eaf8-859e-428d" name="Advances and Injuries" hidden="false" collective="false" import="true" targetId="bf06-025d-cc38-ba0b" type="selectionEntryGroup"/>
+        <entryLink id="9dc0-8186-d4a9-d628" name="Career" hidden="false" collective="false" import="true" targetId="c951-492e-853d-5ab8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="110000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e37c530b-8013-4e29-baee-8b29951f3648" name="Yeomen" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="e37c530b-8013-4e29-baee-8b29951f3648" name="Yeomen" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -48,14 +48,14 @@
         <categoryLink id="e37c530b-8013-4e29-baee-8b29951f3648-506c617965727323232344415441232323" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6e2daca0-44bb-6f16-6202-ab9bb55c8be9" name="Advances and Injuries" hidden="false" collective="false" targetId="0eec-fd02-76d8-b68b" type="selectionEntryGroup"/>
-        <entryLink id="f474-47a3-fe28-da02" name="Career" hidden="false" collective="false" targetId="c951-492e-853d-5ab8" type="selectionEntryGroup"/>
+        <entryLink id="6e2daca0-44bb-6f16-6202-ab9bb55c8be9" name="Advances and Injuries" hidden="false" collective="false" import="true" targetId="0eec-fd02-76d8-b68b" type="selectionEntryGroup"/>
+        <entryLink id="f474-47a3-fe28-da02" name="Career" hidden="false" collective="false" import="true" targetId="c951-492e-853d-5ab8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="70000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="61055f5d-e8a2-4d78-8619-25de6bfab888" name="Coaching Staff" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="61055f5d-e8a2-4d78-8619-25de6bfab888" name="Coaching Staff" page="0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -63,17 +63,17 @@
         <categoryLink id="61055f5d-e8a2-4d78-8619-25de6bfab888-5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="afd11073-c123-4e72-afe9-bc49dd5f83a3" name="Cheerleaders" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="afd11073-c123-4e72-afe9-bc49dd5f83a3" name="Cheerleaders" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="10000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed04349c-b6f5-4f82-84e6-a840f538529b" name="Assistant Coaches" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="ed04349c-b6f5-4f82-84e6-a840f538529b" name="Assistant Coaches" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="10000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e8347c5d-8c6d-4a13-993c-b402d4ba886f" name="Apothecary" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="e8347c5d-8c6d-4a13-993c-b402d4ba886f" name="Apothecary" page="0" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
@@ -87,7 +87,7 @@
         <cost name="Gold" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3bd0f6bc-3c22-45e5-9119-c5eae9d73568" name="Lineman" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="3bd0f6bc-3c22-45e5-9119-c5eae9d73568" name="Lineman" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -107,14 +107,14 @@
         <categoryLink id="3bd0f6bc-3c22-45e5-9119-c5eae9d73568-506c617965727323232344415441232323" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="463e1e67-738a-6fac-a2e5-fbe8f9e04b24" name="Advances and Injuries" hidden="false" collective="false" targetId="e93e890f-6ae0-313e-473c-f914cf8f1bb6" type="selectionEntryGroup"/>
-        <entryLink id="d883-da00-4d87-432d" name="Career" hidden="false" collective="false" targetId="c951-492e-853d-5ab8" type="selectionEntryGroup"/>
+        <entryLink id="463e1e67-738a-6fac-a2e5-fbe8f9e04b24" name="Advances and Injuries" hidden="false" collective="false" import="true" targetId="e93e890f-6ae0-313e-473c-f914cf8f1bb6" type="selectionEntryGroup"/>
+        <entryLink id="d883-da00-4d87-432d" name="Career" hidden="false" collective="false" import="true" targetId="c951-492e-853d-5ab8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="40000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b988a55-2530-4aab-a104-f683fcb90454" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" type="model">
+    <selectionEntry id="0b988a55-2530-4aab-a104-f683fcb90454" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -137,12 +137,12 @@
         <cost name="Gold" typeId="points" value="430000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1bc9c93c-38be-250b-fd22-17e81844ba55" name="Rerolls" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="1bc9c93c-38be-250b-fd22-17e81844ba55" name="Rerolls" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1bc9c93c-38be-250b-fd22-17e81844ba55-5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e173d216-7a31-4f28-abc6-1b8f6a96049a" name="Rerolls" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e173d216-7a31-4f28-abc6-1b8f6a96049a" name="Rerolls" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="70000.0"/>
           </costs>
@@ -152,7 +152,7 @@
         <cost name="Gold" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e226e644-f498-49b0-95f1-349db53fee62" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" type="model">
+    <selectionEntry id="e226e644-f498-49b0-95f1-349db53fee62" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -175,7 +175,7 @@
         <cost name="Gold" typeId="points" value="150000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7c9fab1-f47c-49a0-be27-e26eb07b8b48" name="Zara the Slayer" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="c7c9fab1-f47c-49a0-be27-e26eb07b8b48" name="Zara the Slayer" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -198,7 +198,7 @@
         <cost name="Gold" typeId="points" value="270000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d744-b748-2e72-2f60" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" type="model">
+    <selectionEntry id="d744-b748-2e72-2f60" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fb0c-6d44-3542-d1f2" type="max"/>
       </constraints>
@@ -221,7 +221,7 @@
         <cost name="Gold" typeId="points" value="260000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2e49-edf6-ef88-98cd" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" type="model">
+    <selectionEntry id="2e49-edf6-ef88-98cd" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="455b-6f90-dacb-8785" type="max"/>
       </constraints>
@@ -244,7 +244,7 @@
         <cost name="Gold" typeId="points" value="320000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aca2-253c-4b12-97c9" name="Dolfar Longstride" page="0" hidden="false" collective="false" type="model">
+    <selectionEntry id="aca2-253c-4b12-97c9" name="Dolfar Longstride" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="876b-6519-ec46-85f5" type="max"/>
       </constraints>
@@ -267,7 +267,7 @@
         <cost name="Gold" typeId="points" value="150000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b185-3806-9e87-2cff" name="Inducements" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b185-3806-9e87-2cff" name="Inducements" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0dd7-afad-1814-131d" type="max"/>
       </constraints>
@@ -275,7 +275,7 @@
         <categoryLink id="b41a-7b92-b490-5d0d" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="77e1-e38a-c615-7b04" name="(In)Famous Coaching Staff" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="77e1-e38a-c615-7b04" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1658-890b-276c-5096" type="max"/>
           </constraints>
@@ -283,24 +283,24 @@
             <categoryLink id="831d-5778-1277-d9ad" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="e3f0-065d-9cd0-094d" name="(In)Famous Coaching Staff" hidden="false" collective="false">
+            <selectionEntryGroup id="e3f0-065d-9cd0-094d" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ed85-bced-3bfc-6bb6" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="65e7-549e-8633-760e" name="Wizard" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="65e7-549e-8633-760e" name="Wizard" hidden="false" collective="false" import="true" type="upgrade">
                   <categoryLinks>
                     <categoryLink id="be18-60d9-225d-bd94" name="(In)Famous Coaching Staff" hidden="false" targetId="8371-61bd-c561-01c6" primary="false"/>
                   </categoryLinks>
                   <selectionEntryGroups>
-                    <selectionEntryGroup id="95bc-68bc-9b82-abd2" name="Wizard" hidden="false" collective="false">
+                    <selectionEntryGroup id="95bc-68bc-9b82-abd2" name="Wizard" hidden="false" collective="false" import="true">
                       <constraints>
                         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2c4f-ced2-4edd-c1ea" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ec1-67e4-2818-9f75" type="max"/>
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cca-b774-ca07-045c" type="min"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="6f7c-2f5f-a245-99a7" name="Hireling Sports-Wizard" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" collective="false" type="upgrade">
+                        <selectionEntry id="6f7c-2f5f-a245-99a7" name="Hireling Sports-Wizard" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cea-12ea-cd8d-2434" type="max"/>
                           </constraints>
@@ -334,7 +334,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
                             <cost name="Gold" typeId="points" value="150000.0"/>
                           </costs>
                         </selectionEntry>
-                        <selectionEntry id="b67c-bbab-d077-2ed2" name="Horatio X. Scottenheim" publicationId="46da-ba61-6439-83e5" page="78" hidden="false" collective="false" type="upgrade">
+                        <selectionEntry id="b67c-bbab-d077-2ed2" name="Horatio X. Scottenheim" publicationId="46da-ba61-6439-83e5" page="78" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c74-5e0e-c051-d8f2" type="max"/>
                           </constraints>
@@ -364,7 +364,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f9f6-8b96-4648-6da1" name="Wandering Apothecary" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f9f6-8b96-4648-6da1" name="Wandering Apothecary" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec1c-152e-2cc9-fd33" type="max"/>
           </constraints>
@@ -372,7 +372,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6a71-2d21-1e8b-9022" name="Halfling Chef" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6a71-2d21-1e8b-9022" name="Halfling Chef" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49bc-cdc8-b06e-a135" type="max"/>
           </constraints>
@@ -380,7 +380,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="300000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e726-f5e5-11d1-74cd" name="Extra Team Training" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e726-f5e5-11d1-74cd" name="Extra Team Training" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daad-e1cb-fe41-8397" type="max"/>
           </constraints>
@@ -388,7 +388,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="19ae-08a7-8fb3-803c" name="Bribe" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="19ae-08a7-8fb3-803c" name="Bribe" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee21-a623-8333-fbf3" type="max"/>
           </constraints>
@@ -396,7 +396,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e106-36da-e9a2-f960" name="Bloodweiser" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e106-36da-e9a2-f960" name="Bloodweiser" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc9-8af9-22aa-db89" type="max"/>
           </constraints>
@@ -404,9 +404,9 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="48b1-f6c0-afb3-7f61" name="Mercenaries" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="48b1-f6c0-afb3-7f61" name="Mercenaries" hidden="false" collective="false" import="true" type="upgrade">
           <selectionEntries>
-            <selectionEntry id="b6cf-a3f9-30de-4698" name="Blitzer" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="b6cf-a3f9-30de-4698" name="Blitzer" page="0" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="81cc-eab8-f4ac-6e2a" type="max"/>
               </constraints>
@@ -426,13 +426,13 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                 <categoryLink id="bb63-14e4-051e-acd7" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="323c-ff1e-7560-0a98" name="Merc Skill" hidden="false" collective="false" targetId="8fce-695c-8f9f-50b3" type="selectionEntryGroup"/>
+                <entryLink id="323c-ff1e-7560-0a98" name="Merc Skill" hidden="false" collective="false" import="true" targetId="8fce-695c-8f9f-50b3" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="140000.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ed38-230d-d42b-eecc" name="Lineman" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="ed38-230d-d42b-eecc" name="Lineman" page="0" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="794b-48fa-9785-e72e" type="max"/>
               </constraints>
@@ -452,13 +452,13 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                 <categoryLink id="028f-b41f-87f2-d8eb" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="d02f-ad54-db8c-a3e4" name="Merc Skill" hidden="false" collective="false" targetId="e1cc-b599-ea62-13ab" type="selectionEntryGroup"/>
+                <entryLink id="d02f-ad54-db8c-a3e4" name="Merc Skill" hidden="false" collective="false" import="true" targetId="e1cc-b599-ea62-13ab" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="70000.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fc3c-7833-613a-1cf9" name="Yeomen" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="fc3c-7833-613a-1cf9" name="Yeomen" page="0" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5a8e-0c99-257c-cc6c" type="max"/>
               </constraints>
@@ -478,7 +478,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                 <categoryLink id="3710-6eee-4fce-36d8" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="b22f-50c5-72a2-ca79" name="Merc Skill" hidden="false" collective="false" targetId="30fb-e403-902c-ea48" type="selectionEntryGroup"/>
+                <entryLink id="b22f-50c5-72a2-ca79" name="Merc Skill" hidden="false" collective="false" import="true" targetId="30fb-e403-902c-ea48" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="100000.0"/>
@@ -489,9 +489,9 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6067-301e-f7ee-545b" name="Journeymen" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6067-301e-f7ee-545b" name="Journeymen" hidden="false" collective="false" import="true" type="upgrade">
           <selectionEntries>
-            <selectionEntry id="a646-e03f-181c-0927" name="Journeyman" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="a646-e03f-181c-0927" name="Journeyman" page="0" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="00a1-6c6a-5308-90db" type="max"/>
               </constraints>
@@ -519,11 +519,26 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="a107-2676-20e5-2999" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c506-8394-e7cb-7f28" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a8d1-1e30-d4cc-4013" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">The mascot works as a bonus team re-roll (add the model to your team re-roll track along with the normal re-roll counter). However, to use the Mascot re-roll you must first roll a D6. On a roll of 4+, the re-roll can be used as normal. If the roll is 3 or less, the Mascot re-roll is lost for the half but you may use a normal team re-roll instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="50000.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8168-c2e5-add8-06f7" name="Extra Options" hidden="false" collective="false">
+        <selectionEntryGroup id="8168-c2e5-add8-06f7" name="Extra Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="0de8-97a9-a55d-6881" name="Specialist Coaches" publicationId="9c52-d523-b87f-3a3f" page="33" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0de8-97a9-a55d-6881" name="Specialist Coaches" publicationId="9c52-d523-b87f-3a3f" page="33" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bab-f8d0-2ade-8746" type="min"/>
               </constraints>
@@ -534,7 +549,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                 <cost name="Gold" typeId="points" value="20000.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3305-4791-b25b-d7e3" name="Temp Agency Cheerleaders" publicationId="9c52-d523-b87f-3a3f" page="33" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3305-4791-b25b-d7e3" name="Temp Agency Cheerleaders" publicationId="9c52-d523-b87f-3a3f" page="33" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce35-7219-8822-ae04" type="max"/>
               </constraints>
@@ -545,7 +560,7 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                 <cost name="Gold" typeId="points" value="20000.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="313e-6f85-7ba6-5315" name="Weather Mage" publicationId="9c52-d523-b87f-3a3f" page="34" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="313e-6f85-7ba6-5315" name="Weather Mage" publicationId="9c52-d523-b87f-3a3f" page="34" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d22b-296c-a3f1-2f61" type="max"/>
               </constraints>
@@ -574,7 +589,7 @@ Note that if the drive should end before the start of your next turn, a Changing
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="e93e890f-6ae0-313e-473c-f914cf8f1bb6" name="Advances and Injuries" page="Linemen" hidden="false" collective="false">
+    <selectionEntryGroup id="e93e890f-6ae0-313e-473c-f914cf8f1bb6" name="Advances and Injuries" page="Linemen" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -584,38 +599,38 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="8594d7d2-c556-f826-58e6-c84812888a50" name="XP" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="8594d7d2-c556-f826-58e6-c84812888a50" name="XP" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3f1a6824-9c53-bd68-c103-7ca925cde745" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="3f1a6824-9c53-bd68-c103-7ca925cde745" name="Agility Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="13b02a5a-5096-a9b6-23a6-a82a5a7c414a" name="Agility " hidden="false" collective="false" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
+            <entryLink id="13b02a5a-5096-a9b6-23a6-a82a5a7c414a" name="Agility " hidden="false" collective="false" import="true" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fc56196e-a1dd-262e-f3a7-4cbe7965df90" name="General Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="fc56196e-a1dd-262e-f3a7-4cbe7965df90" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="f45765e6-05ad-e777-7cc3-04d1dc806fea" name="General " hidden="false" collective="false" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
+            <entryLink id="f45765e6-05ad-e777-7cc3-04d1dc806fea" name="General " hidden="false" collective="false" import="true" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e982afde-119f-3dea-ae90-9cf5e760524a" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="e982afde-119f-3dea-ae90-9cf5e760524a" name="Passing Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="1bbfcc29-ad0c-db0e-07cf-d9eb601d3269" name="Passing" hidden="false" collective="false" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
+            <entryLink id="1bbfcc29-ad0c-db0e-07cf-d9eb601d3269" name="Passing" hidden="false" collective="false" import="true" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="48456937-d895-b40b-8289-b75bd7cf6b35" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="48456937-d895-b40b-8289-b75bd7cf6b35" name="Strength Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="659f9eb0-140c-8c8c-8b4c-d6c9e17c0548" name="Strength " hidden="false" collective="false" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
+            <entryLink id="659f9eb0-140c-8c8c-8b4c-d6c9e17c0548" name="Strength " hidden="false" collective="false" import="true" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
@@ -623,19 +638,19 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="59df63cc-fc13-1536-75d6-921529a3d5fc" name="Stats" hidden="false" collective="false">
+        <selectionEntryGroup id="59df63cc-fc13-1536-75d6-921529a3d5fc" name="Stats" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="90fdc936-4e34-e4a4-5943-d8b9824972ed" name="Injury" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="90fdc936-4e34-e4a4-5943-d8b9824972ed" name="Injury" page="0" hidden="false" collective="false" import="true" type="model">
               <entryLinks>
-                <entryLink id="281b1b34-14f3-1645-144c-06e07890384a" hidden="false" collective="false" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup"/>
+                <entryLink id="281b1b34-14f3-1645-144c-06e07890384a" hidden="false" collective="false" import="true" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cb2186ba-c44f-2037-15c5-c91be28d1e58" name="Stat" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="cb2186ba-c44f-2037-15c5-c91be28d1e58" name="Stat" page="0" hidden="false" collective="false" import="true" type="model">
               <entryLinks>
-                <entryLink id="fb5ca064-c1bd-b297-e256-bdadecd3b3fb" hidden="false" collective="false" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup"/>
+                <entryLink id="fb5ca064-c1bd-b297-e256-bdadecd3b3fb" hidden="false" collective="false" import="true" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
@@ -645,7 +660,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" name="Agility " hidden="false" collective="false">
+    <selectionEntryGroup id="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" name="Agility " hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -655,59 +670,59 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="f01cd7f1-b689-24a5-e99a-ce0852aa60c9" name="Catch" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f01cd7f1-b689-24a5-e99a-ce0852aa60c9" name="Catch" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="646845d6-ab52-50a1-b50a-5a17bfec8b1f" name="Diving Catch" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="646845d6-ab52-50a1-b50a-5a17bfec8b1f" name="Diving Catch" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="64d28181-6799-cd26-8d01-1de0bd750c56" name="Diving Tackle" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="64d28181-6799-cd26-8d01-1de0bd750c56" name="Diving Tackle" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6edaf0b9-96ab-1039-f1b2-18cf03f2e8df" name="Dodge" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6edaf0b9-96ab-1039-f1b2-18cf03f2e8df" name="Dodge" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="67a26f67-3e28-5dfa-84f5-0faf2febb145" name="Jump Up" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="67a26f67-3e28-5dfa-84f5-0faf2febb145" name="Jump Up" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a954a0c8-ff86-baf8-a1ee-1210f183acbd" name="Leap" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a954a0c8-ff86-baf8-a1ee-1210f183acbd" name="Leap" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6983c1a4-4292-6f82-6da6-a0bf4541b4b7" name="Side Step" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6983c1a4-4292-6f82-6da6-a0bf4541b4b7" name="Side Step" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f88e7b7a-c8f2-9bf7-e0b4-f53b35cb4175" name="Sneaky Git" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f88e7b7a-c8f2-9bf7-e0b4-f53b35cb4175" name="Sneaky Git" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5a0038b6-2aa9-5e1e-49dc-ea1fa6ad2797" name="Sprint" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5a0038b6-2aa9-5e1e-49dc-ea1fa6ad2797" name="Sprint" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b5f479e3-bb95-076f-c9b1-049aa81786ae" name="Sure Feet" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b5f479e3-bb95-076f-c9b1-049aa81786ae" name="Sure Feet" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="69e68f3b-d305-5ad1-5c6a-35533619ed91" name="General " hidden="false" collective="false">
+    <selectionEntryGroup id="69e68f3b-d305-5ad1-5c6a-35533619ed91" name="General " hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -717,79 +732,79 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="b9c7d158-cc54-3014-689c-840d320a6536" name="Block" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="b9c7d158-cc54-3014-689c-840d320a6536" name="Block" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a5598054-81b2-035e-cba5-0647f57976ee" name="Dauntless" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a5598054-81b2-035e-cba5-0647f57976ee" name="Dauntless" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ba02d806-6c16-880c-df62-e37d52d8c636" name="Dirty Player" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ba02d806-6c16-880c-df62-e37d52d8c636" name="Dirty Player" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="26a3a99b-ff12-c2b5-1d0e-3e90c2a0aaa4" name="Fend" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="26a3a99b-ff12-c2b5-1d0e-3e90c2a0aaa4" name="Fend" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="807ef040-99d2-f6fe-dc61-eeb9b28945f6" name="Frenzy" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="807ef040-99d2-f6fe-dc61-eeb9b28945f6" name="Frenzy" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a111a6de-2122-e66a-4bb5-99809dd60b26" name="Kick" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a111a6de-2122-e66a-4bb5-99809dd60b26" name="Kick" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1d005ec3-c270-e02f-2127-ada86e91367c" name="Kick-Off Return" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1d005ec3-c270-e02f-2127-ada86e91367c" name="Kick-Off Return" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d3f11759-5fc8-2204-84b6-bf23a7d1b6a0" name="Pass Block" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d3f11759-5fc8-2204-84b6-bf23a7d1b6a0" name="Pass Block" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1971d6d7-24e0-09f6-b36c-c405d8f706a9" name="Pro" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1971d6d7-24e0-09f6-b36c-c405d8f706a9" name="Pro" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f6d483f4-c50f-9937-db76-b276d9f67935" name="Shadowing" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f6d483f4-c50f-9937-db76-b276d9f67935" name="Shadowing" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="06198094-e259-c7f6-b152-ffa1508e7475" name="Strip Ball" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="06198094-e259-c7f6-b152-ffa1508e7475" name="Strip Ball" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="65cc8581-1d68-2a29-3de5-7faafe961f43" name="Sure Hands" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="65cc8581-1d68-2a29-3de5-7faafe961f43" name="Sure Hands" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="45e53f1a-4e96-6566-65a7-269e5938ff30" name="Tackle" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="45e53f1a-4e96-6566-65a7-269e5938ff30" name="Tackle" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8daf2b02-67ea-f7b1-a8bd-2a65e933079c" name="Wrestle" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8daf2b02-67ea-f7b1-a8bd-2a65e933079c" name="Wrestle" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e5f60e9c-f56e-9061-a9ee-1722bd3df648" name="Passing" hidden="false" collective="false">
+    <selectionEntryGroup id="e5f60e9c-f56e-9061-a9ee-1722bd3df648" name="Passing" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -799,7 +814,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="84620997-e281-c3c5-2daf-1937974b18ff" name="Accurate" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="84620997-e281-c3c5-2daf-1937974b18ff" name="Accurate" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -807,7 +822,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="da84bfea-a283-7930-869e-9537c613d9a8" name="Dump Off" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="da84bfea-a283-7930-869e-9537c613d9a8" name="Dump Off" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -815,7 +830,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4ea5d585-c21e-e45d-d59b-e164931e0d57" name="Hail Mary Pass" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4ea5d585-c21e-e45d-d59b-e164931e0d57" name="Hail Mary Pass" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -823,7 +838,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f35e27ca-6e85-0e82-2df2-95c8a02a47b7" name="Leader" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f35e27ca-6e85-0e82-2df2-95c8a02a47b7" name="Leader" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -831,7 +846,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1d7a1b45-477b-0d24-4583-1e29376c5a22" name="Nerves of Steel" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1d7a1b45-477b-0d24-4583-1e29376c5a22" name="Nerves of Steel" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -839,7 +854,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="92d2aa59-5a53-09eb-ddde-2cfbe4d1c3ac" name="Pass" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="92d2aa59-5a53-09eb-ddde-2cfbe4d1c3ac" name="Pass" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -847,7 +862,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d236b4f2-c5f3-9b6e-6669-8f50d842923b" name="Safe Throw" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d236b4f2-c5f3-9b6e-6669-8f50d842923b" name="Safe Throw" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -857,7 +872,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f0692986-a2c4-86ac-28fa-b19a039b9692" name="Strength " hidden="false" collective="false">
+    <selectionEntryGroup id="f0692986-a2c4-86ac-28fa-b19a039b9692" name="Strength " hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -867,7 +882,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="d990b6e9-92c3-b480-6af3-c73ad794cde6" name="Break Tackle" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d990b6e9-92c3-b480-6af3-c73ad794cde6" name="Break Tackle" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -875,7 +890,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="81d98d86-a386-8b9f-686e-2c976dcc7947" name="Grab" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="81d98d86-a386-8b9f-686e-2c976dcc7947" name="Grab" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -883,7 +898,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="37278511-8d7a-2046-bd19-e641f4624dd3" name="Guard" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="37278511-8d7a-2046-bd19-e641f4624dd3" name="Guard" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -891,7 +906,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f252a732-8bb0-fd9e-8396-23f35fa27f92" name="Juggernaut" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f252a732-8bb0-fd9e-8396-23f35fa27f92" name="Juggernaut" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -899,7 +914,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4c8ba8b6-055c-c00f-d522-ee0201c49404" name="Mighty Blow" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4c8ba8b6-055c-c00f-d522-ee0201c49404" name="Mighty Blow" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -907,7 +922,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cdbae3c2-205b-408f-c22f-73ce2bb1e5b8" name="Multiple Block" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="cdbae3c2-205b-408f-c22f-73ce2bb1e5b8" name="Multiple Block" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -915,7 +930,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="13e35305-bcb3-d0f8-440f-7b3556c458da" name="Piling On" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="13e35305-bcb3-d0f8-440f-7b3556c458da" name="Piling On" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -923,7 +938,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="53880de8-5916-0956-a78f-7108578bc0c8" name="Stand Firm" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="53880de8-5916-0956-a78f-7108578bc0c8" name="Stand Firm" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -931,7 +946,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b108c5c5-6062-a63e-f09d-9a78198b76a1" name="Strong Arm" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b108c5c5-6062-a63e-f09d-9a78198b76a1" name="Strong Arm" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -939,7 +954,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f305c414-6026-f81b-b6e7-e78b6400a0d9" name="Thick Skull" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f305c414-6026-f81b-b6e7-e78b6400a0d9" name="Thick Skull" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -949,7 +964,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="811641f9-7708-d0ba-f37a-b647434690dc" name="Stat Advances" hidden="false" collective="false">
+    <selectionEntryGroup id="811641f9-7708-d0ba-f37a-b647434690dc" name="Stat Advances" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -959,29 +974,29 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="6951926e-8213-f0cd-b828-00dd7e5e3bed" name="Str" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="6951926e-8213-f0cd-b828-00dd7e5e3bed" name="Str" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1a97e2b4-e996-4d46-52fe-31ec6e9e6ab8" name="AV" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="1a97e2b4-e996-4d46-52fe-31ec6e9e6ab8" name="AV" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d3b65b17-6095-5230-b2ce-b5fe303c716d" name="MA" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="d3b65b17-6095-5230-b2ce-b5fe303c716d" name="MA" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c7c4b872-a8a8-a4b2-c29a-ccbcfdcd6a0b" name="Ag" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="c7c4b872-a8a8-a4b2-c29a-ccbcfdcd6a0b" name="Ag" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="40000.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a1aa3634-0af0-52b0-1942-bc26552463c6" name="Injuries" hidden="false" collective="false">
+    <selectionEntryGroup id="a1aa3634-0af0-52b0-1942-bc26552463c6" name="Injuries" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -991,37 +1006,37 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="95947200-c925-97fe-b9de-f5e8d39c56d9" name="MA" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="95947200-c925-97fe-b9de-f5e8d39c56d9" name="MA" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c6b8a0cc-a9e2-9121-56d1-5ac514284d07" name="Str" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="c6b8a0cc-a9e2-9121-56d1-5ac514284d07" name="Str" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c60772e8-c78f-80d1-4576-5329bcd1f655" name="AV" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="c60772e8-c78f-80d1-4576-5329bcd1f655" name="AV" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6dba1f04-ae4a-dfd8-0a9d-b4ab7765b1c5" name="Ag" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="6dba1f04-ae4a-dfd8-0a9d-b4ab7765b1c5" name="Ag" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b7d31e3a-e000-8fb4-c640-355b1ecfab46" name="Niggle" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="b7d31e3a-e000-8fb4-c640-355b1ecfab46" name="Niggle" page="0" hidden="false" collective="false" import="true" type="model">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8add-60f5-6e0c-7144" name="Missing Next Game" hidden="false" collective="false" type="unit">
+        <selectionEntry id="8add-60f5-6e0c-7144" name="Missing Next Game" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="492f-c104-b74d-ff81" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0d19-1404-bf1c-30fc" name="Manual Cost Reduction" hidden="false" collective="false" type="unit">
+            <selectionEntry id="0d19-1404-bf1c-30fc" name="Manual Cost Reduction" hidden="false" collective="false" import="true" type="unit">
               <costs>
                 <cost name="Gold" typeId="points" value="-10000.0"/>
               </costs>
@@ -1033,7 +1048,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0eec-fd02-76d8-b68b" name="Advances and Injuries" page="Yeomen" hidden="false" collective="false">
+    <selectionEntryGroup id="0eec-fd02-76d8-b68b" name="Advances and Injuries" page="Yeomen" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="409f-a73b-2b24-f31e" type="min"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8531-f4de-10c3-2d5b" type="max"/>
@@ -1043,38 +1058,38 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7737-79b3-15e0-a655" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="30c1-be7a-7627-93db" name="XP" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="30c1-be7a-7627-93db" name="XP" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d4a6-c7f6-e191-1141" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="d4a6-c7f6-e191-1141" name="Agility Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="31d1-9f45-4b03-fab0" name="Agility " hidden="false" collective="false" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
+            <entryLink id="31d1-9f45-4b03-fab0" name="Agility " hidden="false" collective="false" import="true" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7b48-44db-2849-d194" name="General Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="7b48-44db-2849-d194" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="df28-8371-b682-2279" name="General " hidden="false" collective="false" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
+            <entryLink id="df28-8371-b682-2279" name="General " hidden="false" collective="false" import="true" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f9a6-2bf4-a84d-801f" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="f9a6-2bf4-a84d-801f" name="Passing Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="763e-50da-94e2-e881" name="Passing" hidden="false" collective="false" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
+            <entryLink id="763e-50da-94e2-e881" name="Passing" hidden="false" collective="false" import="true" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="48c9-6cee-bb78-aef0" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="48c9-6cee-bb78-aef0" name="Strength Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="8b2d-b477-0aa0-8849" name="Strength " hidden="false" collective="false" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
+            <entryLink id="8b2d-b477-0aa0-8849" name="Strength " hidden="false" collective="false" import="true" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="20000.0"/>
@@ -1082,19 +1097,19 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="397f-4dfb-0968-8c6d" name="Stats" hidden="false" collective="false">
+        <selectionEntryGroup id="397f-4dfb-0968-8c6d" name="Stats" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="719a-ab98-44cd-a665" name="Injury" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="719a-ab98-44cd-a665" name="Injury" page="0" hidden="false" collective="false" import="true" type="model">
               <entryLinks>
-                <entryLink id="2b12-6dd5-58fd-435b" hidden="false" collective="false" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup"/>
+                <entryLink id="2b12-6dd5-58fd-435b" hidden="false" collective="false" import="true" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6c94-f6a6-001e-1c53" name="Stat" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="6c94-f6a6-001e-1c53" name="Stat" page="0" hidden="false" collective="false" import="true" type="model">
               <entryLinks>
-                <entryLink id="236a-5db1-c138-beeb" hidden="false" collective="false" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup"/>
+                <entryLink id="236a-5db1-c138-beeb" hidden="false" collective="false" import="true" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
@@ -1104,7 +1119,7 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bf06-025d-cc38-ba0b" name="Advances and Injuries" page="Blitzer" hidden="false" collective="false">
+    <selectionEntryGroup id="bf06-025d-cc38-ba0b" name="Advances and Injuries" page="Blitzer" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97e5-119f-a2dc-8a1b" type="min"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca93-6a18-0f16-91a2" type="max"/>
@@ -1114,38 +1129,38 @@ Note that if the drive should end before the start of your next turn, a Changing
         <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3046-f297-c825-88de" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="bf5f-dfc3-9233-7f95" name="XP" page="0" hidden="false" collective="false" type="unit">
+        <selectionEntry id="bf5f-dfc3-9233-7f95" name="XP" page="0" hidden="false" collective="false" import="true" type="unit">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1da4-3c4b-8583-1eb1" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="1da4-3c4b-8583-1eb1" name="Agility Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="c128-41f4-5e88-a536" name="Agility " hidden="false" collective="false" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
+            <entryLink id="c128-41f4-5e88-a536" name="Agility " hidden="false" collective="false" import="true" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed9a-45ac-e616-ffeb" name="General Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="ed9a-45ac-e616-ffeb" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="c467-295e-a075-90fd" name="General " hidden="false" collective="false" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
+            <entryLink id="c467-295e-a075-90fd" name="General " hidden="false" collective="false" import="true" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e3ee-5b41-3c18-a729" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="e3ee-5b41-3c18-a729" name="Passing Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="97cf-54f9-fc93-03b7" name="Passing" hidden="false" collective="false" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
+            <entryLink id="97cf-54f9-fc93-03b7" name="Passing" hidden="false" collective="false" import="true" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e9b1-df15-5014-2890" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="e9b1-df15-5014-2890" name="Strength Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="d2d0-7fec-4192-e25e" name="Strength " hidden="false" collective="false" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
+            <entryLink id="d2d0-7fec-4192-e25e" name="Strength " hidden="false" collective="false" import="true" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="30000.0"/>
@@ -1153,19 +1168,19 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a62c-922f-a5d4-2af4" name="Stats" hidden="false" collective="false">
+        <selectionEntryGroup id="a62c-922f-a5d4-2af4" name="Stats" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="c0b7-8d81-de7e-25b0" name="Injury" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="c0b7-8d81-de7e-25b0" name="Injury" page="0" hidden="false" collective="false" import="true" type="model">
               <entryLinks>
-                <entryLink id="0baf-3c9d-597c-6f1a" hidden="false" collective="false" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup"/>
+                <entryLink id="0baf-3c9d-597c-6f1a" hidden="false" collective="false" import="true" targetId="a1aa3634-0af0-52b0-1942-bc26552463c6" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c45c-7f5e-9e29-1a34" name="Stat" page="0" hidden="false" collective="false" type="model">
+            <selectionEntry id="c45c-7f5e-9e29-1a34" name="Stat" page="0" hidden="false" collective="false" import="true" type="model">
               <entryLinks>
-                <entryLink id="df76-fcf2-a921-9ddb" hidden="false" collective="false" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup"/>
+                <entryLink id="df76-fcf2-a921-9ddb" hidden="false" collective="false" import="true" targetId="811641f9-7708-d0ba-f37a-b647434690dc" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
@@ -1175,30 +1190,30 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8fce-695c-8f9f-50b3" name="Merc Skill" page="Blitzer" hidden="false" collective="false">
+    <selectionEntryGroup id="8fce-695c-8f9f-50b3" name="Merc Skill" page="Blitzer" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b30-2608-8054-07d6" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="0090-dd3c-2bd2-b910" name="Agility Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="0090-dd3c-2bd2-b910" name="Agility Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="3cea-ebbc-67cf-c00d" name="Agility " hidden="false" collective="false" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
+            <entryLink id="3cea-ebbc-67cf-c00d" name="Agility " hidden="false" collective="false" import="true" targetId="bdb5f802-5fc3-bff8-2d7f-db28fa1f1b68" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f0e6-f290-f660-c3f9" name="General Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="f0e6-f290-f660-c3f9" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="bbf6-229c-b413-d572" name="General " hidden="false" collective="false" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
+            <entryLink id="bbf6-229c-b413-d572" name="General " hidden="false" collective="false" import="true" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e872-5e4d-add1-f776" name="Passing Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="e872-5e4d-add1-f776" name="Passing Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="f487-f6aa-69dd-1d9f" name="Passing" hidden="false" collective="false" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
+            <entryLink id="f487-f6aa-69dd-1d9f" name="Passing" hidden="false" collective="false" import="true" targetId="e5f60e9c-f56e-9061-a9ee-1722bd3df648" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
@@ -1206,22 +1221,22 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="30fb-e403-902c-ea48" name="Merc Skill" page="Yeomen" hidden="false" collective="false">
+    <selectionEntryGroup id="30fb-e403-902c-ea48" name="Merc Skill" page="Yeomen" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2323-b549-d22e-8e52" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="7b14-1030-0b3c-a791" name="General Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="7b14-1030-0b3c-a791" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="fa6a-b81f-bf0f-f16c" name="General " hidden="false" collective="false" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
+            <entryLink id="fa6a-b81f-bf0f-f16c" name="General " hidden="false" collective="false" import="true" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0636-871e-58d5-36c5" name="Strength Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="0636-871e-58d5-36c5" name="Strength Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="71db-6684-4aa3-4efd" name="Strength " hidden="false" collective="false" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
+            <entryLink id="71db-6684-4aa3-4efd" name="Strength " hidden="false" collective="false" import="true" targetId="f0692986-a2c4-86ac-28fa-b19a039b9692" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
@@ -1229,14 +1244,14 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e1cc-b599-ea62-13ab" name="Merc Skill" page="Linemen" hidden="false" collective="false">
+    <selectionEntryGroup id="e1cc-b599-ea62-13ab" name="Merc Skill" page="Linemen" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4978-8830-181a-2466" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="ac5f-beae-44c0-9cd5" name="General Skill" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="ac5f-beae-44c0-9cd5" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
           <entryLinks>
-            <entryLink id="5dd0-bfe1-955d-a261" name="General " hidden="false" collective="false" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
+            <entryLink id="5dd0-bfe1-955d-a261" name="General " hidden="false" collective="false" import="true" targetId="69e68f3b-d305-5ad1-5c6a-35533619ed91" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Gold" typeId="points" value="50000.0"/>
@@ -1244,33 +1259,33 @@ Note that if the drive should end before the start of your next turn, a Changing
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c951-492e-853d-5ab8" name="Career" hidden="false" collective="false">
+    <selectionEntryGroup id="c951-492e-853d-5ab8" name="Career" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="d999-d9eb-f00c-0177" name="Casualties Caused" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d999-d9eb-f00c-0177" name="Casualties Caused" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="277a-888b-6bbc-fdda" name="Completed Passes" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="277a-888b-6bbc-fdda" name="Completed Passes" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fabf-f274-121a-1b29" name="Interceptions" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fabf-f274-121a-1b29" name="Interceptions" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0f23-00c2-f9b3-dae3" name="Touchdowns Scored" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0f23-00c2-f9b3-dae3" name="Touchdowns Scored" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c9bb-1f81-69d9-8037" name="Season" hidden="false" collective="false">
+        <selectionEntryGroup id="c9bb-1f81-69d9-8037" name="Season" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="5c7d-1e1d-5639-15ff" name="Wants To Retire" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5c7d-1e1d-5639-15ff" name="Wants To Retire" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55e8-c6ee-8af8-c31a" type="max"/>
               </constraints>
@@ -1278,7 +1293,7 @@ Note that if the drive should end before the start of your next turn, a Changing
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="63e9-725b-6109-ee6b" name="Seasons Played" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="63e9-725b-6109-ee6b" name="Seasons Played" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
