@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="24" battleScribeVersion="2.02" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="25" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Almanac"/>
     <publication id="b9d5-4c01-b71b-ab91" name="Forgeworld"/>
@@ -11,6 +11,7 @@
     <publication id="8e57-7262-dd22-3f40" name="Spike#4"/>
     <publication id="543f-97f6-179f-71ca" name="Spike#5"/>
     <publication id="6ebf-d831-0023-9765" name="Spike#6"/>
+    <publication id="1843-a5de-a33a-9e1b" name="Spike#7"/>
   </publications>
   <costTypes>
     <costType id="points" name="Gold" defaultCostLimit="0.0"/>
@@ -78,12 +79,12 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="3ec5-785d-5314-87ec" name="Gold" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="3ec5-785d-5314-87ec" name="Gold" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1f4c-08db-b706-212a" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="09b0-4e29-79d6-d809" name="Gold" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="09b0-4e29-79d6-d809" name="Gold" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
@@ -93,12 +94,12 @@
         <cost name="Gold" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="98a7-d859-abf9-7e50" name="Fan Factor" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="98a7-d859-abf9-7e50" name="Fan Factor" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="efba-d029-a698-d495" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="bb00-3292-c288-8f5d" name="Fan Factor" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bb00-3292-c288-8f5d" name="Fan Factor" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="10000.0"/>
           </costs>
@@ -108,7 +109,7 @@
         <cost name="Gold" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="28a8-68aa-5b64-0ed8" name="Grak and Crumbleberry" publicationId="e9d8-346a-8a46-9f6a" hidden="false" collective="false" type="model">
+    <selectionEntry id="28a8-68aa-5b64-0ed8" name="Grak and Crumbleberry" publicationId="e9d8-346a-8a46-9f6a" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7438-5bbd-31d5-7f1e" type="max"/>
       </constraints>
@@ -151,22 +152,22 @@ If the kicked player moves off the pitch, they land among the crowd (never a ple
         <cost name="Gold" typeId="points" value="300000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8437-0419-ccfd-67e9" name="Season" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8437-0419-ccfd-67e9" name="Season" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="b275-f3e4-12dd-8c67" name="Misc" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="01fd-0216-d297-c52d" name="Games Played in Season" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="01fd-0216-d297-c52d" name="Games Played in Season" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3712-113e-482c-6012" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3a84-e66e-bfd1-dca0" name="Friendly Games" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3a84-e66e-bfd1-dca0" name="Friendly Games" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9cdd-1908-cec4-eba2" name="League Games" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9cdd-1908-cec4-eba2" name="League Games" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
@@ -176,12 +177,12 @@ If the kicked player moves off the pitch, they land among the crowd (never a ple
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="419e-1ff7-2594-8f73" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="419e-1ff7-2594-8f73" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="297d-9efa-89c5-b1ba" name="Games Conceded (Did play)" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="297d-9efa-89c5-b1ba" name="Games Conceded (Did play)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
