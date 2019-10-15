@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="23" battleScribeVersion="2.03" authorName="" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="24" battleScribeVersion="2.03" authorName="" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="74ab9a26-25a0-46b6-84d5-3951e5b25285" name="Bombardier" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -824,6 +824,21 @@ Fink counts as 3 Assistant Coaches. In addition if his team uses a Bribe, they c
           </selectionEntries>
           <costs>
             <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="47ea-5085-546e-4048" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab7-4295-ad76-cd0f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="837c-3898-5233-b960" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">The mascot works as a bonus team re-roll (add the model to your team re-roll track along with the normal re-roll counter). However, to use the Mascot re-roll you must first roll a D6. On a roll of 4+, the re-roll can be used as normal. If the roll is 3 or less, the Mascot re-roll is lost for the half but you may use a normal team re-roll instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
