@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="641d7e90-8271-47b2-a437-ccab1c28b7ae" name="Elven Union" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="641d7e90-8271-47b2-a437-ccab1c28b7ae" name="Elven Union" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="be7014d8-2f4a-492e-8561-75070e40b0b8" name="Blitzer" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -730,6 +730,67 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="59d0-0332-14a8-5168" name="Slave Giant" publicationId="5528-2d35-d0f4-165f" page="20" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="749a-6be2-f17d-eb11" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="80e8-094e-ae2a-7c11" name="Slave Giant" publicationId="6ebf-d831-0023-9765" page="6" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">10</characteristic>
+                <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Always Hungry, Bone-Head, Jugernaut, Mighty Blow, Multiple Block, Sporting Giant, Stand Firm, Throw Team-Mate</characteristic>
+                <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">400,000</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2e88-8282-3209-158a" name="Sporting Giant: Base Size and Tackle Zones" publicationId="5528-2d35-d0f4-165f" page="20" hidden="false">
+              <description>Unlike other players, a Sporting Giant occupies not one but four squares on the pitch. Such players will always occupy four squares; when they are standing up, when they are prone, and when they are Stunned.
+
+Additionally, the direction a Sporting Giant faces is important as, due to their immense size, such players do not exert Tackle Zones on every square adjacent to the four squares they occupy. Instead, they only exert Tackle Zones over the squares adjacent to their front and sides. The four squares to the Sporting Giant&apos;s rear, those directly behind the Sporting Giant, are not included. The controlling player must make it clear to their opponent which direction the Sporting Giant is facing and where its rear lies.
+
+Finally, should any of the four squares occupied by a Sporting Giant&apos;s base be targeted by an in-game effect (such as a spell cast by a wizard or by the effects of a Special Play Card), the player is considered to have been hit by the effect just as any other player would be.</description>
+            </rule>
+            <rule id="ca2c-4b3b-e4ee-02d7" name="Sporting Giant: Movement" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+              <description>When a Sporting Giant moves it does so just like any other player, moving a number of squares equal to its MA. A Sporting Giant may move in any direction, including diagonally, as long as they do not enter a square occupied by another, standing player (from either team).
+
+If any of the four squares a Sporting Giant occupies are withing the Tackle Zone of an opposition player, the Sporting Giant must Dodge to leave that square, just like any other player. If when dodging any part of a Sporting Giant&apos;s base moves into a square withing the Tackle Zone of an opposing player, the Dodge roll is modified as normal.
+
+However, unlike other players, a Sporting Giant is large enough to simply step over downed players that would block the path of other players. A Sporting Giant may move over Prone or Stunned players if it has sufficient MA to do so. A Sporting Giant may not end its movement with any part of its base occupying a square that contains another player.
+
+Note, that due to the large size of Sporting Giants, they may find it impossible to move through small gaps. If at any point during its movement a Sporting Giant finds one or more of the four squares its base occupies obstructed by a standing player, it cannot move into that square.
+
+PUSH BACKS:
+Just like any other player, a Sporting Giant must be pushed back into  empty squares. If this is not possible then the Sporting Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are pushed back in turn.
+
+PUSHED INTO THE CROWD:
+If any part of a Sporting Giant&apos;s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn&apos;t matter how big you are, a Sporting Giant cannot be half-on and half-off the pitch. They are either entirely on or off!</description>
+            </rule>
+            <rule id="b57d-0724-cef9-431d" name="Sporting Giant: Throw Team-Mate" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+              <description>Sporting Giants are particularly effective at throwing smaller players. When a Sporting Giant attempts to throw a team-mate, you may re-roll a fumbled throw.</description>
+            </rule>
+            <rule id="a8d5-7125-759a-a78b" name="Sporting Giant: A Giant Obstruction" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+              <description>Sporting Giants do tend to get in the way of the other teams&apos; passing plays. When a Sporting Giant attempts an Interception, it does not suffer the usual -2 modifier.</description>
+            </rule>
+            <rule id="21a8-2e69-f3de-0d17" name="Sporting Giant: Scatter" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+              <description>As Sporting Giants occupy four squares, rather than the usual one, the normal Scatter template canot be used for them. Instead, Sporting Giants use the Scatter Template shown below. To use this template, simply roll a D16 (or D12) rather than a D8, rerolling any rolls above a 12.
+
+1--2--3--4
+5--###--6
+7--###--8
+9-10-11-12</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="c934-ad60-7b68-1a55" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Gold" typeId="points" value="400000.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2c09-c41e-0c48-a6ec" name="Extra Options" hidden="false" collective="false" import="true">
@@ -1391,6 +1452,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="eff5-c742-6314-8fbd" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade"/>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2f79-18ff-8574-0702" name="Season" hidden="false" collective="false" import="true">
