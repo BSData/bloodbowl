@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b9491123-d66b-407b-ac29-8cce224462fc" name="Bertha Bigfist" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -24,7 +24,7 @@
         <cost name="Gold" typeId="points" value="290000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="98d555a0-004d-4c59-ab3c-33a4fc7a688f" name="Bomber Dribblesnot" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="98d555a0-004d-4c59-ab3c-33a4fc7a688f" name="Bomber Dribblesnot" publicationId="5528-2d35-d0f4-165f" page="6" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -103,7 +103,7 @@
         <cost name="Gold" typeId="points" value="430000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da5134d0-78bf-4059-95b6-56e3ab20b685" name="Nobbla Blackwart" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="da5134d0-78bf-4059-95b6-56e3ab20b685" name="Nobbla Blackwart" publicationId="5528-2d35-d0f4-165f" page="6" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -176,7 +176,7 @@
         <cost name="Gold" typeId="points" value="150000.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ad50dbe1-8157-4447-8fc1-0643d4e9228a" name="Snotling" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ad50dbe1-8157-4447-8fc1-0643d4e9228a" name="Snotling" publicationId="5528-2d35-d0f4-165f" page="6" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -187,7 +187,7 @@
             <characteristic name="ST" typeId="535423232344415441232323">1</characteristic>
             <characteristic name="AG" typeId="414723232344415441232323">3</characteristic>
             <characteristic name="AV" typeId="415623232344415441232323">5</characteristic>
-            <characteristic name="Skills" typeId="536b696c6c7323232344415441232323">Dodge, Right Stuff, Side Step, Stunty, Titchy</characteristic>
+            <characteristic name="Skills" typeId="536b696c6c7323232344415441232323">Dodge, Right Stuff, Side Step, Stunty, Titchy, Disposable</characteristic>
             <characteristic name="Cost" typeId="436f737423232344415441232323">20,000</characteristic>
           </characteristics>
         </profile>
@@ -195,6 +195,16 @@
       <categoryLinks>
         <categoryLink id="ad50dbe1-8157-4447-8fc1-0643d4e9228a-506c617965727323232344415441232323" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a3ce-8563-47e9-ef12" name="Disposable" publicationId="5528-2d35-d0f4-165f" page="31" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6f4-70a9-6f9b-9502" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Gold" typeId="points" value="-20000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="20ce268f-c3b5-3c59-7e1a-48c2c2fabf56" name="Advances and Injuries" hidden="false" collective="false" import="true" targetId="387a1ef4-490d-3b71-1e3e-38d31dacbaa9" type="selectionEntryGroup"/>
         <entryLink id="cbd7-72bb-2371-4831" name="Career" hidden="false" collective="false" import="true" targetId="1f47-db86-3a79-a63d" type="selectionEntryGroup"/>
@@ -392,6 +402,28 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
                             <cost name="Gold" typeId="points" value="80000.0"/>
                           </costs>
                         </selectionEntry>
+                        <selectionEntry id="4c9b-94c0-e740-9292" name="Firebelly" publicationId="5528-2d35-d0f4-165f" page="30" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e0-2b18-c622-83b3" type="max"/>
+                          </constraints>
+                          <profiles>
+                            <profile id="1611-cc23-7a61-33b8" name="Firebelly" publicationId="5528-2d35-d0f4-165f" page="30" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+                              <characteristics>
+                                <characteristic name="Ability" typeId="b112-aa11-2549-e705">FIREBALL:
+Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Choose a target square anywhere on the pitch. Roll a D6 for each standing player (from either team) that is either in the target square or a square adjacent to it. If the score is 4 or higher then the player has been hit by the fireball and is knocked down. If it is 3 or less the player manages to dodge the fireball&apos;s blast. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down, as if they had been knocked down by a player with the Mighty Blow skill. If a player on the moving team is knocked down by a fireball, then the moving team does not suffer a turnover unless the player was carrying the ball at the time.
+
+COLUMN OF FIRE:
+Cast this spell immediately after your turn has ended, even if it ended in a turnover. Choose any square that is adjacent to one of the sidelines to be the Column of Fire&apos;s starting point. The Column of Fire moves in a straight line from it&apos;s starting point directly towards the opposite sideline. Roll a D6 for each standing player (from either team) that occupies a square in the path of the Column of Fire. If the &quot;hit&quot; roll is a 4+ the player is Knocked Down. If it is a 3 or less, the player manages to duck and avoid the Column of Fire. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down, as if they had been knocked down by a player with the Mighty Blow skill. If a player on the moving team is knocked down by a fireball, then the moving team does not suffer a turnover unless the player was carrying the ball at the time.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <categoryLinks>
+                            <categoryLink id="6ea0-e55b-522f-2c78" name="Inducements" hidden="false" targetId="48ab-ae31-9cc1-c8e8" primary="false"/>
+                          </categoryLinks>
+                          <costs>
+                            <cost name="Gold" typeId="points" value="150000.0"/>
+                          </costs>
+                        </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -582,6 +614,21 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
             <cost name="Gold" typeId="points" value="50000.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="fb01-babf-12c3-5575" name="Riotous Rookies" publicationId="5528-2d35-d0f4-165f" page="29" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3f5-feae-2011-c801" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7508-5339-657b-ee0d" name="Riotous Rookies" publicationId="5528-2d35-d0f4-165f" page="29" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="b112-aa11-2549-e705">Regardless of how many players are availeble for this game, and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your team&apos;s roster temporarily above 16. They are normal Journeymen players in every other aspect and, unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Gold" typeId="points" value="100000.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b58a-ff9e-422a-0dce" name="Extra Options" hidden="false" collective="false" import="true">
@@ -656,6 +703,94 @@ Note that if the drive should end before the start of your next turn, a Changing
       </categoryLinks>
       <costs>
         <cost name="Gold" typeId="points" value="120000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a21e-e351-5913-174f" name="Runt Punter" publicationId="5528-2d35-d0f4-165f" page="6" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="33bc-7bf7-2241-fe2c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a70c-c464-d34c-273b" name="Runt Punter" publicationId="5528-2d35-d0f4-165f" page="6" hidden="false" typeId="506c6179657223232344415441232323" typeName="Player">
+          <characteristics>
+            <characteristic name="MA" typeId="4d4123232344415441232323">5</characteristic>
+            <characteristic name="ST" typeId="535423232344415441232323">5</characteristic>
+            <characteristic name="AG" typeId="414723232344415441232323">2</characteristic>
+            <characteristic name="AV" typeId="415623232344415441232323">9</characteristic>
+            <characteristic name="Skills" typeId="536b696c6c7323232344415441232323">Bone Head, Kick Team-Mate, Mighty Blow, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="436f737423232344415441232323">150,000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="fba1-7be9-9ad8-76c9" hidden="false" targetId="506c617965727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4053-a56c-b3e9-123d" name="Advances and Injuries" hidden="false" collective="false" import="true" targetId="fd21-ecd4-549f-91f0" type="selectionEntryGroup"/>
+        <entryLink id="447a-1628-678c-3ea9" name="Career" hidden="false" collective="false" import="true" targetId="1f47-db86-3a79-a63d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Gold" typeId="points" value="150000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="820a-463d-68d8-9042" name="Slave Giant" publicationId="5528-2d35-d0f4-165f" page="20" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0c3f-9a88-5def-e9a5" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9f69-ece8-b58d-8da9" name="Slave Giant" publicationId="6ebf-d831-0023-9765" page="6" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">10</characteristic>
+            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Always Hungry, Bone-Head, Jugernaut, Mighty Blow, Multiple Block, Sporting Giant, Stand Firm, Throw Team-Mate</characteristic>
+            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">400,000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4385-326a-65b8-cbc1" name="Sporting Giant: Base Size and Tackle Zones" publicationId="5528-2d35-d0f4-165f" page="20" hidden="false">
+          <description>Unlike other players, a Sporting Giant occupies not one but four squares on the pitch. Such players will always occupy four squares; when they are standing up, when they are prone, and when they are Stunned.
+
+Additionally, the direction a Sporting Giant faces is important as, due to their immense size, such players do not exert Tackle Zones on every square adjacent to the four squares they occupy. Instead, they only exert Tackle Zones over the squares adjacent to their front and sides. The four squares to the Sporting Giant&apos;s rear, those directly behind the Sporting Giant, are not included. The controlling player must make it clear to their opponent which direction the Sporting Giant is facing and where its rear lies.
+
+Finally, should any of the four squares occupied by a Sporting Giant&apos;s base be targeted by an in-game effect (such as a spell cast by a wizard or by the effects of a Special Play Card), the player is considered to have been hit by the effect just as any other player would be.</description>
+        </rule>
+        <rule id="06ad-d6d1-a31e-55b0" name="Sporting Giant: Movement" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+          <description>When a Sporting Giant moves it does so just like any other player, moving a number of squares equal to its MA. A Sporting Giant may move in any direction, including diagonally, as long as they do not enter a square occupied by another, standing player (from either team).
+
+If any of the four squares a Sporting Giant occupies are withing the Tackle Zone of an opposition player, the Sporting Giant must Dodge to leave that square, just like any other player. If when dodging any part of a Sporting Giant&apos;s base moves into a square withing the Tackle Zone of an opposing player, the Dodge roll is modified as normal.
+
+However, unlike other players, a Sporting Giant is large enough to simply step over downed players that would block the path of other players. A Sporting Giant may move over Prone or Stunned players if it has sufficient MA to do so. A Sporting Giant may not end its movement with any part of its base occupying a square that contains another player.
+
+Note, that due to the large size of Sporting Giants, they may find it impossible to move through small gaps. If at any point during its movement a Sporting Giant finds one or more of the four squares its base occupies obstructed by a standing player, it cannot move into that square.
+
+PUSH BACKS:
+Just like any other player, a Sporting Giant must be pushed back into  empty squares. If this is not possible then the Sporting Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are pushed back in turn.
+
+PUSHED INTO THE CROWD:
+If any part of a Sporting Giant&apos;s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn&apos;t matter how big you are, a Sporting Giant cannot be half-on and half-off the pitch. They are either entirely on or off!</description>
+        </rule>
+        <rule id="6539-5cad-a6e7-b068" name="Sporting Giant: Throw Team-Mate" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+          <description>Sporting Giants are particularly effective at throwing smaller players. When a Sporting Giant attempts to throw a team-mate, you may re-roll a fumbled throw.</description>
+        </rule>
+        <rule id="49aa-31ce-d0a0-c234" name="Sporting Giant: A Giant Obstruction" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+          <description>Sporting Giants do tend to get in the way of the other teams&apos; passing plays. When a Sporting Giant attempts an Interception, it does not suffer the usual -2 modifier.</description>
+        </rule>
+        <rule id="3554-1c19-56ad-682e" name="Sporting Giant: Scatter" publicationId="5528-2d35-d0f4-165f" page="21" hidden="false">
+          <description>As Sporting Giants occupy four squares, rather than the usual one, the normal Scatter template canot be used for them. Instead, Sporting Giants use the Scatter Template shown below. To use this template, simply roll a D16 (or D12) rather than a D8, rerolling any rolls above a 12.
+
+1--2--3--4
+5--###--6
+7--###--8
+9-10-11-12</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ef2f-53fb-d0b9-7580" name="New CategoryLink" hidden="false" targetId="5465616d2052652d726f6c6c7320616e642046616e20466163746f7223232344415441232323" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Gold" typeId="points" value="400000.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1242,6 +1377,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="290c-a7f7-636f-f4d4" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade"/>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="8f44-1443-a0be-00e2" name="Season" hidden="false" collective="false" import="true">
@@ -1255,6 +1391,77 @@ Note that if the drive should end before the start of your next turn, a Changing
               </costs>
             </selectionEntry>
             <selectionEntry id="3d9a-bed4-2d72-395f" name="Seasons Played" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fd21-ecd4-549f-91f0" name="Advances and Injuries" page="Runt Punt" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f39-eb4c-7670-fd97" type="min"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfe6-f732-05e3-d9bc" type="max"/>
+        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a102-8aab-aa12-d1cd" type="min"/>
+        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f674-152f-c3c9-d4c8" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38be-e064-5cc0-ad70" type="min"/>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16cb-1d5b-3639-fceb" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="e4ba-1ec5-0d4c-2149" name="XP" page="0" hidden="false" collective="false" import="true" type="unit">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b51-3ba6-c36f-526d" name="Agility Skill" page="0" hidden="false" collective="false" import="true" type="model">
+          <entryLinks>
+            <entryLink id="fc14-5f81-2a75-8036" name="Agility " hidden="false" collective="false" import="true" targetId="ce385e36-63e4-7d65-563d-32c675fbcc04" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" typeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9d67-5798-9a0a-5db6" name="General Skill" page="0" hidden="false" collective="false" import="true" type="model">
+          <entryLinks>
+            <entryLink id="281c-9c5c-b462-7c0c" hidden="false" collective="false" import="true" targetId="9bdcad09-3497-aef2-6ff8-2446af6d5b3b" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" typeId="points" value="30000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5983-c18f-3e33-6d46" name="Passing Skill" page="0" hidden="false" collective="false" import="true" type="model">
+          <entryLinks>
+            <entryLink id="d9eb-2a35-35bd-f9ec" hidden="false" collective="false" import="true" targetId="38a99a8d-561a-4912-0be0-9ca9ebbb4f13" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" typeId="points" value="20000.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5c51-d67f-538f-738b" name="Strength Skill" page="0" hidden="false" collective="false" import="true" type="model">
+          <entryLinks>
+            <entryLink id="00d5-949c-6868-e131" name="Strength " hidden="false" collective="false" import="true" targetId="2a51802b-f4ad-a12d-58db-0e59d54c4fb5" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Gold" typeId="points" value="20000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="547a-f116-1416-0174" name="Stats" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="0669-9357-b3d9-1590" name="Injury" page="0" hidden="false" collective="false" import="true" type="model">
+              <entryLinks>
+                <entryLink id="8917-4e34-21f1-dbdb" hidden="false" collective="false" import="true" targetId="b75742f3-a5a0-1c4e-c327-1a336d151c7f" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="Gold" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1d3a-d68f-958a-a200" name="Stat" page="0" hidden="false" collective="false" import="true" type="model">
+              <entryLinks>
+                <entryLink id="40ee-8219-2903-931c" hidden="false" collective="false" import="true" targetId="c69348e1-a2c0-8e39-9777-e9f9e45dc7a4" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="Gold" typeId="points" value="0.0"/>
               </costs>
