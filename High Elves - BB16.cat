@@ -690,14 +690,14 @@ Once per half, Horatio can cast a fireball and fling it (more or less) at the op
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1577-e4d3-4e9d-13ad" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b60e-1e95-570b-9cb7" name="Slave Giant" publicationId="6ebf-d831-0023-9765" page="6" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="b60e-1e95-570b-9cb7" name="Slave Giant" publicationId="6ebf-d831-0023-9765" page="6" hidden="false" typeId="f329-6702-3802-4d85" typeName="Giant">
               <characteristics>
-                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
-                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">10</characteristic>
-                <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Always Hungry, Bone-Head, Jugernaut, Mighty Blow, Multiple Block, Sporting Giant, Stand Firm, Throw Team-Mate</characteristic>
-                <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">400,000</characteristic>
+                <characteristic name="MA" typeId="3865-aaa5-c9be-c456">6</characteristic>
+                <characteristic name="ST" typeId="7a2a-e198-9fee-0b7d">7</characteristic>
+                <characteristic name="AG" typeId="0995-20ef-bccb-027b">2</characteristic>
+                <characteristic name="AV" typeId="2d26-336f-4a9c-89a5">10</characteristic>
+                <characteristic name="Skills" typeId="8545-2d3c-8535-e5a3">Loner, Always Hungry, Bone-Head, Jugernaut, Mighty Blow, Multiple Block, Sporting Giant, Stand Firm, Throw Team-Mate</characteristic>
+                <characteristic name="Cost" typeId="a53f-9489-ca7b-09a4">400,000</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1407,7 +1407,11 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name="Gold" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="71d1-c393-3305-63a6" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="71d1-c393-3305-63a6" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Gold" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="4f11-8eea-ab44-625e" name="Season" hidden="false" collective="false" import="true">
