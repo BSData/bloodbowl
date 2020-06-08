@@ -20,8 +20,8 @@
     <publication id="e3e7-0556-2064-f3a9" name="White Dwarf"/>
   </publications>
   <costTypes>
-    <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0"/>
-    <costType id="39e2-ec20-0c67-eba6" name=" SPP" defaultCostLimit="-1.0"/>
+    <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
+    <costType id="39e2-ec20-0c67-eba6" name=" SPP" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="6abd-9371-31b8-653a" name="Player">
@@ -119,11 +119,11 @@
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bf2f-3b49-4f20-99d2" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="7f3a-b1b0-0640-ced0" name="Doubles Skills [G]" publicationId="46da-ba61-6439-83e5" hidden="false"/>
-    <categoryEntry id="b35c-efb9-6a1a-36c8" name="Doubles Skills [A]" hidden="false"/>
-    <categoryEntry id="ea39-19c7-b415-15c2" name="Doubles Skills [S]" hidden="false"/>
-    <categoryEntry id="6bb7-ded1-d8cb-cdff" name="Doubles Skills [P]" hidden="false"/>
-    <categoryEntry id="8901-6938-5c4d-1dc5" name="Doubles Skills [M]" hidden="false"/>
+    <categoryEntry id="7f3a-b1b0-0640-ced0" name="Double [G]" publicationId="46da-ba61-6439-83e5" hidden="false"/>
+    <categoryEntry id="b35c-efb9-6a1a-36c8" name="Double [A]" hidden="false"/>
+    <categoryEntry id="ea39-19c7-b415-15c2" name="Double [S]" hidden="true"/>
+    <categoryEntry id="6bb7-ded1-d8cb-cdff" name="Double [P]" hidden="true"/>
+    <categoryEntry id="8901-6938-5c4d-1dc5" name="Double [M]" hidden="false"/>
     <categoryEntry id="7271-75d7-d86d-8eab" name="Slave Giant" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="488c-a3f6-d7ee-d378" type="max"/>
@@ -10201,22 +10201,6 @@ Mighty Blow skill.</characteristic>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="46bd-e402-981b-99d3" name="[Toggle to Refresh Name and Allowed Rolls]" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="1fa9-a9cf-7b89-5a8c" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1fa9-a9cf-7b89-5a8c" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f47b-acbf-fd7c-656a" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="ac10-7c1e-92f4-773f" name="[Skirmish Statistics]" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394a-2ca4-e503-f339" type="max"/>
@@ -10256,6 +10240,19 @@ Mighty Blow skill.</characteristic>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0def-cc44-77c0-6c1b" name="Games Won" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Game Won">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5621-4576-70e7-480c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10298,6 +10295,19 @@ Mighty Blow skill.</characteristic>
                 <modifier type="set" field="name" value="1x Season Played">
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23d0-1585-fbbb-b623" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5621-4576-70e7-480c" name="Games Won" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Season Played">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5621-4576-70e7-480c" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
