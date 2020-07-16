@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101 or @Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl 2016" revision="28" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101 or @Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl 2016. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Almanac"/>
@@ -18,6 +18,7 @@
     <publication id="0368-61a6-4e8d-bed9" name="Death Zone Season 2"/>
     <publication id="ec0a-d42b-afbc-ee9c" name="Death Zone Season 1"/>
     <publication id="e3e7-0556-2064-f3a9" name="White Dwarf"/>
+    <publication id="83ae-12ad-0093-c537" name="Spike#9"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -569,10 +570,11 @@
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="294e-cf3c-5e94-f3ab" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9461,10 +9463,10 @@ Mighty Blow skill.</characteristic>
         </infoLink>
         <infoLink id="2584-57d8-99cd-71c0" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="8fa5-2337-8b56-9632" name="Ball &amp; Chain" hidden="false" targetId="39d3-e057-e8b4-37a1" type="rule"/>
-        <infoLink id="2c62-0623-1dba-f6b6" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
+        <infoLink id="2c62-0623-1dba-f6b6" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
         <infoLink id="cc8e-f52a-89da-f42e" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
         <infoLink id="8ff9-9928-b99a-1845" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-        <infoLink id="f9c6-751d-91a4-a360" name="Wild Animal" hidden="false" targetId="0c94-b5ce-561e-99f0" type="rule"/>
+        <infoLink id="f9c6-751d-91a4-a360" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="031d-aed0-db12-0b6a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
