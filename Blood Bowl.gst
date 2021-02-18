@@ -4631,140 +4631,138 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea76-072f-2f18-db66" type="max"/>
       </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="6a4a-dee7-b0a0-b09b" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="64ac-1f10-6cc4-d0b4" name=" 1. Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc26-d603-8c3b-5367" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1009-fcc8-e66f-838f" name="Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c522-cc34-7027-0ca8" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="f892-518e-86d6-00fe" name=" 2. Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6ee-0087-92a4-4f9e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d22d-cf06-6592-6dea" name="Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60a9-8bc0-8ef9-beff" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="07c0-0b31-82e7-64b9" name=" 3. Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fc-0dc7-0109-9f61" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0e90-547d-2e2e-6829" name="Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="27c4-20a9-3bfd-57e3" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="cbdc-9885-32e4-6024" name=" 4. Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ed-8210-11f5-e826" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="79cf-f778-707e-0d90" name="Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="83df-5319-db47-15fd" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="7b19-8955-5b8c-e6ef" name=" 5. Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1775-2c45-ce04-444e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0f79-9a2f-00d5-f41a" name="Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="1640-4a49-f269-b0e2" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="6a02-26fb-bbe0-8945" name=" 6. Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e1a-250a-8f11-d8ca" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="aa4f-bbbe-63ae-3db9" name="Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="e973-21a9-5b96-91da" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="3d9f-2aed-7d76-f1cf" name=" 7. Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd9-40e6-451a-67a6" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="73ff-6a8d-009c-f103" name="Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="f1f7-e2ac-d235-67ea" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="b4d4-65a6-9655-19d0" name=" 8. Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee0-a980-3313-e54e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="2da5-0198-f706-9118" name="Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="a675-bc5b-de5c-ba30" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="4071-4d22-e6a1-1725" name=" 9. Moles under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f55-95b2-37ec-6efd" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0817-b2b1-98f9-7d7a" name="Moles Under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="46f2-c800-6bfc-120f" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="b1e8-f77e-548b-d374" name="10. Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b50-3ac5-d5f1-4d6f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5ca9-27a7-3f9e-7a6b" name="Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="98aa-2fae-0339-03a7" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="7898-c825-c887-6d34" name="11. Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23bc-a526-ce2e-6ba1" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7b3d-8693-db34-60f3" name="Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="8b4a-c774-c4fa-409d" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="cfa9-a6ab-e07a-3db6" name="14. Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac65-2a25-0f63-9eaa" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b49a-840e-e31c-678e" name="Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="4892-aa08-8bfe-1705" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="9abc-7c31-2311-1451" name="13. Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4080-41d8-e616-9d76" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="277d-f6ec-b2dc-11c2" name="Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="965e-595e-a3ab-e19d" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="906e-a13d-d2a7-c197" name="15. Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e5-6540-4612-b61b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="dec4-4f14-bc25-81b5" name="Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="2363-63b1-5480-4d75" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="6730-f87a-9986-76b4" name="16. Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7506-cc9e-e330-5646" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d6ae-09cf-8d36-53d7" name="Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c49c-1549-bfb3-8f6d" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry id="8d74-7531-c5fd-3947" name="12. Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="269c-c9e6-d00a-d5c0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="39cc-941a-838e-157f" name="Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60f3-099d-1806-65c2" type="rule"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3692-6a10-35f8-5f40" name="Prayers to Nuffle (Exhibition)" hidden="false" collective="false" import="true" targetId="930a-b49f-8426-e0a7" type="selectionEntryGroup"/>
+        <entryLink id="b6e1-c960-cb16-21fd" name="Prayers to Nuffle (League)" hidden="false" collective="false" import="true" targetId="abdb-aa1b-3609-3d6a" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2f9b-c390-2cf8-33b5" name=" 1. Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55ba-20b6-b9b6-1768" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="6ed5-737d-9863-920e" name="Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c522-cc34-7027-0ca8" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="24c3-4632-af79-b674" name=" 2. Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b514-54db-0e6c-1688" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="38e6-7812-416a-8397" name="Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60a9-8bc0-8ef9-beff" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="765e-c5e8-a6d3-839b" name=" 3. Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76d9-5113-17fa-150a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="073f-b209-de44-fed4" name="Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="27c4-20a9-3bfd-57e3" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="232f-8143-d878-7eb5" name=" 4. Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59f2-66d9-25d9-cf4f" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="91f7-edc5-dbf9-bf6f" name="Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="83df-5319-db47-15fd" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5693-f0a0-a4fe-974a" name=" 5. Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9111-0f3e-8564-5cf2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4303-ffc1-04e6-61a3" name="Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="1640-4a49-f269-b0e2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7170-d799-1655-f398" name=" 6. Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e84b-38f0-1800-5679" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="20c3-0c12-51e5-5d0f" name="Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="e973-21a9-5b96-91da" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4499-7a42-530e-6c40" name=" 7. Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba45-ecc1-53ac-7798" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a23d-0f6d-58cf-f4ef" name="Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="f1f7-e2ac-d235-67ea" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="52a5-3711-c07e-8582" name=" 8. Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd30-07c5-4c60-7933" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8847-0cd9-ddad-92f4" name="Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="a675-bc5b-de5c-ba30" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7a08-e0c9-39c3-edbb" name=" 9. Moles under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e50-0e06-2adb-4e3b" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f272-8058-a731-f106" name="Moles Under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="46f2-c800-6bfc-120f" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="fe45-ff06-d1ab-451e" name="10. Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448d-09d2-4d27-6a5a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="b929-aa6e-9dd3-880d" name="Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="98aa-2fae-0339-03a7" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="63bb-71cd-0654-94b8" name="11. Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8656-4887-375e-4a0c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a2c8-d415-43d2-3b00" name="Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="8b4a-c774-c4fa-409d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="eb96-9bb2-0827-32be" name="12. Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="907b-7821-b552-ac9c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ef2c-1cd9-8cd7-bdfa" name="Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60f3-099d-1806-65c2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="08f2-2043-6032-bc4e" name="13. Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11c3-0764-d0f1-32b8" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="6f60-b822-138c-ed1e" name="Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="965e-595e-a3ab-e19d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="d38b-d054-7cb0-7152" name="14. Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cff-b75f-02cb-cb63" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="84f3-9888-2acc-175f" name="Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="4892-aa08-8bfe-1705" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="1361-955f-5351-526b" name="15. Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8c1-7654-b364-3dad" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="e96a-7baa-952b-2954" name="Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="2363-63b1-5480-4d75" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ea75-06d9-b8a5-630c" name="16. Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb94-fc53-71f2-73f8" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9146-93df-08e6-ed05" name="Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c49c-1549-bfb3-8f6d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -4943,6 +4941,38 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="930a-b49f-8426-e0a7" name="Prayers to Nuffle (Exhibition)" publicationId="46da-ba61-6439-83e5" page="103" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="e51d-3f12-5951-05a9" name=" 1. Treacherous Trapdoor" hidden="false" collective="false" import="true" targetId="2f9b-c390-2cf8-33b5" type="selectionEntry"/>
+        <entryLink id="cadb-d9e0-8dc0-10f6" name=" 2. Friends with the Ref" hidden="false" collective="false" import="true" targetId="24c3-4632-af79-b674" type="selectionEntry"/>
+        <entryLink id="905c-0fd8-7363-8403" name=" 3. Stiletto" hidden="false" collective="false" import="true" targetId="765e-c5e8-a6d3-839b" type="selectionEntry"/>
+        <entryLink id="f318-defa-db85-f29a" name=" 4. Iron Man" hidden="false" collective="false" import="true" targetId="232f-8143-d878-7eb5" type="selectionEntry"/>
+        <entryLink id="6659-7541-2ec3-faf5" name=" 5. Knuckle Dusters" hidden="false" collective="false" import="true" targetId="5693-f0a0-a4fe-974a" type="selectionEntry"/>
+        <entryLink id="4465-9901-fefe-d69f" name=" 6. Bad Habits" hidden="false" collective="false" import="true" targetId="7170-d799-1655-f398" type="selectionEntry"/>
+        <entryLink id="7bd3-c9aa-7842-0073" name=" 7. Greasy Cleats" hidden="false" collective="false" import="true" targetId="4499-7a42-530e-6c40" type="selectionEntry"/>
+        <entryLink id="25dc-e9d5-20b0-3eb0" name=" 8. Blessed Statue of Nuffle" hidden="false" collective="false" import="true" targetId="52a5-3711-c07e-8582" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="abdb-aa1b-3609-3d6a" name="Prayers to Nuffle (League)" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="68db-7f83-104b-dcd9" name=" 2. Friends with the Ref" hidden="false" collective="false" import="true" targetId="24c3-4632-af79-b674" type="selectionEntry"/>
+        <entryLink id="7fe6-89c2-b316-fdd6" name=" 3. Stiletto" hidden="false" collective="false" import="true" targetId="765e-c5e8-a6d3-839b" type="selectionEntry"/>
+        <entryLink id="36d4-6c50-04f0-7ec7" name=" 4. Iron Man" hidden="false" collective="false" import="true" targetId="232f-8143-d878-7eb5" type="selectionEntry"/>
+        <entryLink id="5950-04b6-b718-ba55" name=" 5. Knuckle Dusters" hidden="false" collective="false" import="true" targetId="5693-f0a0-a4fe-974a" type="selectionEntry"/>
+        <entryLink id="10e6-ed0a-3413-ea34" name=" 6. Bad Habits" hidden="false" collective="false" import="true" targetId="7170-d799-1655-f398" type="selectionEntry"/>
+        <entryLink id="b1f7-ab01-3591-79c0" name=" 7. Greasy Cleats" hidden="false" collective="false" import="true" targetId="4499-7a42-530e-6c40" type="selectionEntry"/>
+        <entryLink id="49c2-deea-825f-573b" name=" 8. Blessed Statue of Nuffle" hidden="false" collective="false" import="true" targetId="52a5-3711-c07e-8582" type="selectionEntry"/>
+        <entryLink id="c4b1-7506-fe40-d07c" name=" 9. Moles under the Pitch" hidden="false" collective="false" import="true" targetId="7a08-e0c9-39c3-edbb" type="selectionEntry"/>
+        <entryLink id="2ba3-4b9e-8586-50d9" name="10. Perfect Passing" hidden="false" collective="false" import="true" targetId="fe45-ff06-d1ab-451e" type="selectionEntry"/>
+        <entryLink id="4516-cbbc-2d3e-1028" name="11. Fan Interaction" hidden="false" collective="false" import="true" targetId="63bb-71cd-0654-94b8" type="selectionEntry"/>
+        <entryLink id="b9d7-4daa-ae6b-dc3c" name="12. Necessary Violence" hidden="false" collective="false" import="true" targetId="eb96-9bb2-0827-32be" type="selectionEntry"/>
+        <entryLink id="251f-85b3-f209-b166" name="13. Fouling Frenzy" hidden="false" collective="false" import="true" targetId="08f2-2043-6032-bc4e" type="selectionEntry"/>
+        <entryLink id="7b0e-9d18-cbbe-c977" name="14. Throw a Rock" hidden="false" collective="false" import="true" targetId="d38b-d054-7cb0-7152" type="selectionEntry"/>
+        <entryLink id="47a7-8751-0d9a-3dfb" name="15. Under Scrutiny" hidden="false" collective="false" import="true" targetId="1361-955f-5351-526b" type="selectionEntry"/>
+        <entryLink id="20ed-d86e-cf1b-cffa" name="16. Intensive Training" hidden="false" collective="false" import="true" targetId="ea75-06d9-b8a5-630c" type="selectionEntry"/>
+        <entryLink id="81d4-2765-483f-ff99" name=" 1. Treacherous Trapdoor" hidden="false" collective="false" import="true" targetId="2f9b-c390-2cf8-33b5" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
