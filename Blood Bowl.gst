@@ -3876,7 +3876,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d49-5d66-d431-9840" name="Alternate Weather Tables" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1d49-5d66-d431-9840" name="Weather Tables" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -4110,34 +4110,34 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7911-21fb-567d-deb6" name="1. Default Weather Table (2D6)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7911-21fb-567d-deb6" name="1. Default Weather Table (2D6)" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e06-d100-39d2-ceb3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f500-6083-38ec-31d9" name="03 - Very Sunny" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="f500-6083-38ec-31d9" name="03 - Very Sunny" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A glorious day, but the blinding sunshine causes a -1 modifier on all passing rolls.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A glorious day, but the clear skies and bright sunlight interfere with the passing game! Apply a -1 modifier every time a player tests against their Passing Ability.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="2c50-f2a1-a964-0477" name="02 - Sweltering Heat" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="2c50-f2a1-a964-0477" name="02 - Sweltering Heat" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Roll a D6 for each player on the pitch at the end of a drive.  On a roll of 1, the player collapses and may not be set up for the next kick-off.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Some players faint in the unbearable heat! D3 randomly selected players from each team that are on the pitch when a drive ends are placed in the Reserves box. They must miss the next drive.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9b1c-10c7-7b4f-9f1d" name="12 - Blizzard" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="9b1c-10c7-7b4f-9f1d" name="12 - Blizzard" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Any player attempting to move an extra square (GFI) will slip and be Knocked Down on a roll of 1-2, and only Quick or Short Passes can be attempted.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="47b2-a322-044f-e261" name="04-10 - Nice" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="47b2-a322-044f-e261" name="04-10 - Perfect Conditions" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Perfect Blood Bowl weather.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Neither too cold nor too hot. A warm, dry and slightly overcast day provides perfect conditions for Blood Bowl.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="c9b9-4198-3bee-aa40" name="11 - Pouring Rain" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="c9b9-4198-3bee-aa40" name="11 - Pouring Rain" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A -1 modifier applies to all Catch, Intercept, or Pick-up rolls.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4154,7 +4154,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3dec-7164-ad02-5eb7" name="Alternate Kick-Off Tables" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3dec-7164-ad02-5eb7" name="Kick-Off Tables" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -4238,64 +4238,64 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="508d-7434-70ce-9322" name="1. Normal Kick-Off Table (2D6)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="508d-7434-70ce-9322" name="1. Normal Kick-Off Table (2D6)" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="317b-22ab-b1fd-ec11" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b8c1-9e0d-16b2-20f1" name="12 - Pitch Invasion" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="b8c1-9e0d-16b2-20f1" name="12 - Pitch Invasion" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 for each opposing player on the pitch and add their FAME to the roll. If a roll is 6 or more after modification then the player is Stunned (players with the Ball &amp; Chain skill are KO&apos;d). A roll of 1 before adding FAME will always have no effect.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add their Fan Factor to the result. The coach that rolls the lowest randomly selects D3 of their players from among those on the pitch. In the case of a tie, both coaches randomly select D3 of their players from among those on the pitch. All of the randomly selected players are Placed Prone and become Stunned.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="2485-9a0b-76e9-ac93" name="02 - Get the Ref" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="2485-9a0b-76e9-ac93" name="02 - Get the Ref" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each team receives 1 additional Bribe to use during this game.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each team gains a free Bribe Inducement as described on page 91. This Inducement must be used before the end of the game or it is lost.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="75b9-b54c-3451-3900" name="03 - Riot" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="75b9-b54c-3451-3900" name="03 - Time-out" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If the receiving team’s turn marker is on turn 7 for the half, both teams move their turn marker back one space as the referee resets the clock back to before the fight started. If the receiving team has not yet taken a turn this half the referee lets the clock run on during the fight and both teams’ turn markers are moved forward one space. Otherwise roll a D6. On a 1-3, both teams’ turn markers are moved forward one space. On a 4-6, both team’s turn markers are moved back one space.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If the kicking team’s turn marker is on turn 6, 7 or 8 for the half, both coaches move their turn marker back one space. Otherwise, both coaches move their turn marker forward one space.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="c25e-76fb-6097-4ce8" name="04 - Perfect Defence" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="c25e-76fb-6097-4ce8" name="04 - Solid Defence" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The kicking team’s coach may reorganize his players – in other words he can set them up again into another legal defence. The receiving team must remain in the set-up chosen by their coach.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">D3+3 Open players on the kicking team may be removed and set up again in different locations, following all of the usual set-up rules.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9cf1-71d9-4db7-b80a" name="05 - High Kick" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="9cf1-71d9-4db7-b80a" name="05 - High Kick" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Any one player on the receiving team who is not in an opposing player’s tackle zone may be moved into the square where the ball will land no matter what their MA may be, as long as the square is unoccupied.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">One Open player on the receiving team may be moved any number of squares, regardless of their MA, and placed in the same square the ball will land in.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="5a06-f6cb-9719-110e" name="06 - Cheering Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="5a06-f6cb-9719-110e" name="06 - Cheering Fans" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D3 and adds their team’s FAME and the number of cheerleaders on their team to the score. The team with the highest score is inspired by their fans&apos; cheering and gets an extra re-roll this half. If both teams have the same score, then both teams get a re-roll.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add the number of cheerleaders on their Team Draft list. The coach with the highest total may immediately roll once on the Prayers to Nuffle table. In the case of a tie, neither coach rolls on the Prayers to Nuffle table. Note that if you roll a result that is currently in effect, you must re-roll it. However, if you roll a result that has been rolled previously but has since expired, there is no need to re-roll it.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="d727-9853-3d41-5250" name="07 - Changing Weather" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="d727-9853-3d41-5250" name="07 - Brilliant Coaching" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Make a new roll on the Weather table. Apply the new Weather roll. If the new Weather roll was a ‘Nice’ result, then a gentle gust of wind makes the ball scatter one extra square in a random direction before landing.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add the number of assistant coaches on their Team Draft list. The coach with the highest total gains one extra team re-roll for the drive ahead. If this team reroll is not used before the end of this drive, it is lost. In the case of a tie, neither coach gains an extra team re-roll.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4137-0025-4bcb-3aec" name="08 - Brilliant Coaching" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="4137-0025-4bcb-3aec" name="08 - Changing Weather" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D3 and adds their FAME and the number of assistant coaches on their team to the score. The team with the highest total gets an extra team re-roll this half thanks to the brilliant instruction provided by the coaching staff. In case of a tie both teams get an extra team re-roll.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Make a new roll on the Weather table and apply that result. If the weather conditions are ‘Perfect Conditions’ as a result of this roll, the ball will scatter, as described on page 25, before landing.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="518f-20ed-dcff-61e1" name="09 - Quick Snap!" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="518f-20ed-dcff-61e1" name="09 - Quick Snap!" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">All of the players on the receiving team are allowed to move one square. This is a free move and may be made into any adjacent empty square, ignoring tackle zones. It may be used to enter the opposing half of the pitch.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">D3+3 Open players on the receiving team may immediately move one square in any direction.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9056-bd4e-e3bb-e3fc" name="10 - Blitz!" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="9056-bd4e-e3bb-e3fc" name="10 - Blitz!" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The kicking team receives a free ‘bonus’ turn: however, players that are in an enemy tackle zone at the beginning of this free turn may not perform an Action. The kicking team may use team re-rolls during a Blitz. If any player suffers a turnover then the bonus turn ends immediately.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">D3+3 Open players on the kicking team may immediately activate to perform a Move action. One may perform a Blitz action and one may perform a Throw Team-mate action. If a player Falls Over or is Knocked Down, no further players can be activated and the Blitz ends immediately.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="dc97-8c32-0157-6709" name="11 - Throw a Rock" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="dc97-8c32-0157-6709" name="11 - Officious Ref" publicationId="46da-ba61-6439-83e5" page="11" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D6 and adds their FAME to the roll. The fans of the team that rolls higher are the ones that threw the rock. In the case of a tie a rock is thrown at each team! Decide randomly which player in the other team was hit (only players on the pitch are eligible) and roll for the effects of the injury straight away. No Armour roll is required.</characteristic>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add their Fan Factor to the result. The coach that rolls the lowest randomly selects one of their players from among those on the pitch. In the case of a tie, both coaches randomly select a player. Roll a D6 for the selected player(s). On a roll of 2+, the player and the referee argue and come to blows. The player is Placed Prone and becomes Stunned. On a roll of 1 however, the player is immediately Sent-off, as described on page 63.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
