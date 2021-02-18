@@ -104,6 +104,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-91d3-1c9a-8f12" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="ce2d-2ad9-20e4-6d92" name="Temporarily Retired" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="eea0-fbe2-d22b-c2bf" name="Standard" hidden="false">
@@ -195,6 +196,11 @@
     <entryLink id="07e8-7ace-43ce-272b" name="Legacy Rules" hidden="false" collective="false" import="true" targetId="e98a-3e24-65a5-e3b6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="30f9-7153-3134-8bcb" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="31c7-74d3-c43b-fab0" name="Prayers to Nuffle" hidden="false" collective="false" import="true" targetId="b813-b8f6-47ea-2f87" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f5b8-d647-eb18-a100" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4544,9 +4550,6 @@ If the player was carrying the ball when they were turned into a frog, it is dro
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="6a4a-dee7-b0a0-b09b" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true">
-          <categoryLinks>
-            <categoryLink id="b672-e0f1-8547-45af" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="64ac-1f10-6cc4-d0b4" name=" 1. Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4684,7 +4687,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="6fa2-0920-eabe-29d1" name="Casualties Caused" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6fa2-0920-eabe-29d1" name="Casualties (Blocks)" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="05d6-6acc-e78d-e3ac" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -4693,7 +4696,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="af0c-27b2-29cb-8a37" name="Completed Passes" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="af0c-27b2-29cb-8a37" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="10cb-90ed-b4cc-06f4" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -4702,7 +4705,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5827-052f-0008-75aa" name="Interceptions" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5827-052f-0008-75aa" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="e8ee-b633-da17-481e" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -4711,7 +4714,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3f74-a03e-139b-3f6c" name="Touchdowns Scored" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3f74-a03e-139b-3f6c" name="Touchdowns" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="1381-021b-ab0b-7bf7" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -4720,21 +4723,12 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3314-4344-40e2-e8ba" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3314-4344-40e2-e8ba" name="MVPs Awarded" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
             <categoryLink id="1294-758d-3589-5ce3" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="5.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f39e-6834-2184-9ecb" name="Misc SPP" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="72c5-e4ae-2211-d97b" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
+            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="4.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -4743,25 +4737,25 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394a-2ca4-e503-f339" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="15d2-0c8d-ed13-024c" name="Touchdowns Scored" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="15d2-0c8d-ed13-024c" name="Touchdowns" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b401-e420-661d-b5ca" name="Completed Passes" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b401-e420-661d-b5ca" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7c5e-0049-54eb-b28b" name="Interceptions" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7c5e-0049-54eb-b28b" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9a09-aa13-26cc-f41a" name="Casualties Caused" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9a09-aa13-26cc-f41a" name="Casualties" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -4792,6 +4786,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="1d85-d360-7d83-cfd8" name="Deflections" hidden="false" collective="false" import="true" type="upgrade"/>
           </selectionEntries>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
@@ -4807,6 +4802,12 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e32a-3d3d-1e26-d508" name="Deflections" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="04dc-8381-cbe6-100e" name="Casualties (Other)" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade"/>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="fd93-1b6d-656b-17f0" name="Season" hidden="false" collective="false" import="true">
@@ -4818,7 +4819,10 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry id="e389-33cb-25e9-561d" name="Wants To Retire" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e389-33cb-25e9-561d" name="Temporarily Retired" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7229-83c0-4907-5d9c" type="max"/>
               </constraints>
@@ -4857,7 +4861,6 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cc33-3795-1003-dfb3" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true"/>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="cc62-f3d9-8892-3221" name="Dauntless" publicationId="46da-ba61-6439-83e5" hidden="false">
