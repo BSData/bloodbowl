@@ -652,7 +652,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6ab2-112e-0e5c-12c9" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="7494-d1da-b20b-1430" name="Wandering Apothecary" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7494-d1da-b20b-1430" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -670,15 +670,17 @@
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c9-1ec3-3734-a523" type="max"/>
           </constraints>
-          <infoLinks>
-            <infoLink id="1f3a-5cc0-bc62-9006" name="Apothecary" hidden="false" targetId="b2ab-c7ab-b8db-8f05" type="rule"/>
-          </infoLinks>
+          <rules>
+            <rule id="e0b9-0648-3040-9647" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+              <description>Any team that can normally hire an apothecary may Induce a Wandering Apothecary or two to help during the game. Often these apothecaries are local barber surgeons, present for the game and willing to recoup the price of their ticket by helping out. Others are experts of questionable veracity, hoping to prove the worth of their unorthodox methods. Wandering Apothecaries follow all the rules for normal apothecaries, as described on page 62. However, unlike a normal apothecary, a Wandering Apothecary may attempt to patch-up any Journeymen or Mercenary players the team includes, but cannot attempt to patch up a Star Player.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="97ab-2acc-c010-5162" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="97ab-2acc-c010-5162" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000.0">
               <conditions>
@@ -690,8 +692,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedb-a263-56d8-55a4" type="max"/>
           </constraints>
           <rules>
-            <rule id="bdcc-bb2a-5eed-8959" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" hidden="false">
-              <description>At the start of each half, after both teams have been set up but before the kick-off, roll three D6.  For each dice that rolls 4 or more, the team is so inspired that they gain an extra team re-roll for this half.  In addition, the opposing team is so distracted, that for each dice that rolls a 4 or more, they will lose of of their team re-rolls for this half.</description>
+            <rule id="bdcc-bb2a-5eed-8959" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false">
+              <description>The entourage of many teams can include several world-class chefs who busy themselves with preparing the halftime and fulltime banquets for the players. The delicious aromas emanating from the team’s dugout all too often distract the opposition as much as theyinvigorate your players! At the start of both the first and second half, after step 2 but before step 3 of the Start of Drive sequence, roll three D6. For each roll of a 4+, your team is so inspired they gain an extra team re-roll for this half. In addition, the opposing team is so distracted that for each roll of a 4+, they will lose one of their team re-rolls for this half.</description>
             </rule>
           </rules>
           <costs>
@@ -699,13 +701,13 @@
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="01d3-9cc6-04e0-71cc" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="01d3-9cc6-04e0-71cc" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49f0-2c90-1065-7ff9" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49f0-2c90-1065-7ff9" type="max"/>
           </constraints>
           <rules>
-            <rule id="c43f-5f7e-5634-dd98" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" hidden="false">
-              <description>Each extra team training session allows the team to take one extra Team re-roll that may be used for this match only.</description>
+            <rule id="c43f-5f7e-5634-dd98" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+              <description>Getting all of the players together in the same place is hard enough on game day, let alone for a regular training session. If a coach wants to hold extra training sessions ahead of an important fixture, they had better be prepared to flash some cash to Induce the cooperation of their players! Each Extra Team Training session grants the team an extra team re-roll for each half of this game.</description>
             </rule>
           </rules>
           <costs>
@@ -713,7 +715,7 @@
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8604-23e5-2fa0-77a3" name="Bribe" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8604-23e5-2fa0-77a3" name="Bribes" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="50000.0">
               <conditions>
@@ -725,8 +727,12 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adc-d093-dc54-ed7f" type="max"/>
           </constraints>
           <rules>
-            <rule id="3c11-5abc-fd5c-37c2" name="Bribe" publicationId="46da-ba61-6439-83e5" hidden="false">
-              <description>Each bribe allows you to attempt to ignore one call by the referee for a player who has committed a foul to be sent off, or a player armed with a secret weapon to be banned from the match. Roll a D6: on a roll of 2-6 the bribe is effective, but on a roll of 1 the bribe is wasted and the call still stands!</description>
+            <rule id="3c11-5abc-fd5c-37c2" name="Bribe" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+              <description>When a player is caught misbehaving, a bag of gold pieces can have a surprisingly calming effect upon an angered referee! A single Bribe may be used when a player is Sent-off for committing a Foul or using a Secret Weapon.
+
+To use a Bribe, roll a D6. On a roll of 2-6, the Bribe is effective and the player is not Sent-off (and no Turnover is caused), but on a roll of 1 the Bribe is wasted and the referee’s decision still stands! Each Bribe may be used once per game.
+
+A single Bribe may be used after an attempt to Argue the Call has been made. However, if a 1 was rolled when attempting to Argue the Call and the head coach ejected, as described on page 63, the ref is annoyed beyond the calming effects of mere gold and no Bribe may be used this time!</description>
             </rule>
           </rules>
           <costs>
@@ -734,13 +740,13 @@
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8e2b-22b4-916e-a32b" name="Bloodweiser Babe" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8e2b-22b4-916e-a32b" name="Bloodweiser Keg" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fe-ee61-74c6-e78c" type="max"/>
           </constraints>
           <rules>
-            <rule id="5a90-b76f-783e-559c" name="Bloodweiser Babe" publicationId="46da-ba61-6439-83e5" hidden="false">
-              <description>For each purchase of this inducement, players on the team gain a +1 modifier to recover from KO’d for this match.</description>
+            <rule id="5a90-b76f-783e-559c" name="Bloodweiser Kegs" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
+              <description>Nothing says “get back in the game” like a frosty Bloodweiser Ale served straight from the keg. There’s probably an official rule regarding drinking during a game, but whether it’s compulsory or banned, who cares! For each Bloodweiser Keg Induced, you may apply a +1 modifier to the result of any dice rolls made during this game when rolling to see if any of your players recovers from being KO’d. Bloodweiser Kegs benefit all players currently on the team, including Journeymen, Star Players and Mercenaries.</description>
             </rule>
           </rules>
           <costs>
@@ -769,7 +775,7 @@
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="07c3-d349-052b-0fed" name="Igor, Mortuary Assistant" publicationId="8e57-7262-dd22-3f40" page="34" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="07c3-d349-052b-0fed" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -788,8 +794,8 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c51-5937-6e56-9306" type="max"/>
           </constraints>
           <rules>
-            <rule id="3f91-248f-bcd7-0c0d" name="Igor, Mortuary Assistant" publicationId="8e57-7262-dd22-3f40" page="34" hidden="false">
-              <description>An Igor may be used once per a game to re-roll one failed Regeneration roll for a player.</description>
+            <rule id="3f91-248f-bcd7-0c0d" name="Igor, Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+              <description>Necromancers are always looking for a helping hand with their work, and the local mortuary workers are often eager to earn some extra income. A Mortuary Assistant is a master of needle, thread and twisted wire, connecting hip bone to leg bone, repairing funeral bindings, and so on. They can really get the players shambling back to the pitch! A Mortuary Assistant may be used once per game to re-roll one failed Regeneration roll for any player currently on the team, including Journeymen, but not including Mercenaries or Star Players.</description>
             </rule>
           </rules>
           <costs>
@@ -797,31 +803,49 @@
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="06b6-7113-c30d-00a2" name="Specialist Assistant Coach" publicationId="9c52-d523-b87f-3a3f" page="33" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="06b6-7113-c30d-00a2" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f1-a521-8e34-78e6" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7ab4-4dce-18ed-f2a8" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
+              <description>Everyone’s an expert, and if a coach is willing to pay, many will share that expertise with the team! In addition to hiring assistant coaches as permanent Sideline Staff, any team may temporarily purchase some Part-time Assistant Coaches as Inducements. Simply increase the team’s number of assistant coaches by the number Induced, up to a maximum of nine in total, for the duration of the game.
+
+At the end of the game, any Part-time Assistant Coaches will leave the team.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c0be-227f-2b70-c3fb" name="Temp Agency Cheerleader" publicationId="9c52-d523-b87f-3a3f" page="33" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c0be-227f-2b70-c3fb" name="Temp Agency Cheerleader" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342c-6146-c56b-b26a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="33fe-7fd4-4cbb-84c6" name="Temp Agency Cheerleader" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
+              <description>Cheerleading isn’t steady work and there are always young hopefuls looking for their big break, willing to bolster a depleted cheer squad on game day! In addition to hiring cheerleaders as permanent Sideline Staff, any team may temporarily purchase some Temp Agency Cheerleaders as Inducements. Simply increase the team’s number of cheerleaders by the number Induced, up to a maximum of 16 in total, for the duration of the game.
+
+At the end of the game, any Temp Agency Cheerleaders will leave the team.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1de9-49d7-e762-1541" name="Weather Mage" publicationId="9c52-d523-b87f-3a3f" page="34" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1de9-49d7-e762-1541" name="Weather Mage" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cfb-01f7-b121-017d" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="c231-167d-f041-2af9" name="Weather Mage" publicationId="9c52-d523-b87f-3a3f" page="34" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">A Weather Mage may be used once per game, at the start of any of your team&apos;s turn (before any player takes an action). Roll on the Weather table, modifying the result by either plus or minus 1 or 2. The resulting effect lasts until the start of your next turn. At the start of your next turn the replaced weather conditions will return.
+          <rules>
+            <rule id="003f-b159-146b-b010" name="Weather Mage" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
+              <description>Many stadium owners employ Weather Mages, paying good money for highly localised spells to control the elements to keep the fans dry and happy. Rarely does this magical climate control extend to the pitch though, unless a coach is willing to pay for the service that is! A Weather Mage is not a Wizard Inducement and a coach may Induce both a Weather Mage and a Wizard of some sort.
 
-Note that if the drive should end before the start of your next turn, a Changing Weather result on the kick-off table may change the weather conditions again. If the drive does end before the weather conditions change back to those that were in effect before the Weather Mage was used, the effects of the current weather are applied (for example, if the Weather Mage has been used to create Sweltering Heat when the drive ends, apply those effects).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+You may use a Weather Mage once per game, at the start of any one of your team turns, before activating any of your players. Roll on the Weather table, applying a modifier of +1 or +2, or -1 or -2 if desired. The resulting weather conditions are applied immediately and will last until the end of the opposition’s next team turn, replacing the existing weather conditions. At the end of opposition’s next team turn or the end of the drive (whichever comes first), the replaced weather conditions will return.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
@@ -853,7 +877,7 @@ Note that if the drive should end before the start of your next turn, a Changing
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="393d-0281-8c48-9dcf" name="Plague Doctor" publicationId="8c2d-0b8c-484b-6789" page="33" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="393d-0281-8c48-9dcf" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -870,8 +894,8 @@ Note that if the drive should end before the start of your next turn, a Changing
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94a-8c73-f933-46cb" type="max"/>
           </constraints>
           <rules>
-            <rule id="80d0-e059-be76-bbdb" name="Plague Doctor" publicationId="8c2d-0b8c-484b-6789" page="33" hidden="false">
-              <description>Once per game, a Plague Doctor may be used to re-roll one failed Regeneration roll for a player on your team. Alternatively, one per match the Plague Doctor may be used when a player on your team is KO&apos;d. If the player was on the pitch when KO&apos;d, leave them on the pitch Stunned rather than removing them from the pitch. If the player was KO&apos;d as a result of being pushed into the crowd, place them directly into the Reserves box rather than the KO&apos;d Players box.</description>
+            <rule id="80d0-e059-be76-bbdb" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+              <description>The Plague Doctors that accompany Nurgle-aligned teams are well-versed in the care of the many virulent plagues and ailments that infect their charges. Once per game, a Plague Doctor may be used to re-roll one failed Regeneration roll for a player on their team. Alternatively, once per game the Plague Doctor may be used in exactly the same way as an apothecary when any player on their team is Knocked-out (see page 62). Plague Doctors benefit all players currently on the team, including Journeymen, but not including Mercenaries or Star Players.</description>
             </rule>
           </rules>
           <costs>
@@ -948,7 +972,7 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3ddb-3cf4-4367-e324" name="Riotous Rookies" publicationId="5528-2d35-d0f4-165f" page="29" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3ddb-3cf4-4367-e324" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -965,8 +989,8 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4750-c253-c921-6881" type="max"/>
           </constraints>
           <rules>
-            <rule id="dee0-5534-d86a-b613" name="Riotous Rookies" publicationId="5528-2d35-d0f4-165f" page="29" hidden="false">
-              <description>Regardless of how many players are availeble for this game, and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your team&apos;s roster temporarily above 16. They are normal Journeymen players in every other aspect and, unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</description>
+            <rule id="dee0-5534-d86a-b613" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+              <description>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</description>
             </rule>
           </rules>
           <costs>
@@ -974,95 +998,87 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="5e39-084d-b112-fb83" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb8-5829-41b4-efa0" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="5801-e40c-416f-c803" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
+              <description>Each Special Plays Inducement purchased gives you one Special Plays card to use during the game ahead. Cards are drawn from one or more of the Special Plays card decks during the Inducements step of the pregame sequence:
+
+• Each Special Plays Inducement purchased allows you to draw cards from a single deck.
+• The deck from which cards are drawn is determined by rolling a D6 and consulting the table below.
+• For each separate Special Plays Inducement purchased, roll again on the table below.
+• There is no limit to how many cards may be drawn from each deck, but if the second roll or any subsequent rolls give a duplicated result, you may re-roll the D6. If the D6 is re-rolled, you must accept the result of the re-roll.
+
+SPECIAL PLAYS CARDS
+D6 	DECK
+1. 	Random Events
+2. 	Dirty Tricks
+3. 	Magical Memorabilia
+4. 	Heroic Feats
+5.  	Benefits of Training
+6.  	Miscellaneous Mayhem
+
+CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card deck is shuffled and two cards are drawn from the top. You may then read both cards before choosing one to keep and one to discard.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="7381-c41a-988e-3632" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5e5-c20b-3ccc-f568" type="max"/>
           </constraints>
+          <rules>
+            <rule id="2e6a-3876-f463-4fa0" name="(In)Famous Coaching Staff" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
+              <description>Although most Blood Bowl celebrities are players, with the occasional ref thrown in for good measure, there are several well-known members of coaching staff around the circuit. Many of these non-playing professionals are willing to offer out their services to other teams for the right price, bringing their expertise to the dugout.
+
+(In)Famous Coaching Staff are available to purchase during the pre-game sequence at the cost listed. You may purchase up to two (In)Famous Coaching Staff who are allowed to assist your team.
+
+As with Star Players, it is possible for both teams to hire the services of the same named (In)Famous Coaching Staff (such as Josef Bugman):
+
+• If this happens during a game that is part of a league, neither team can use the (In)Famous Coaching Staff but the (In)Famous Coaching Staff will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the (In)Famous Coaching Staff – one team has clearly hired a ringer!</description>
+            </rule>
+          </rules>
           <selectionEntries>
-            <selectionEntry id="d7d6-f273-6315-a563" name="Josef Bugman, Dwarf Master Drinker" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d7d6-f273-6315-a563" name="Josef Bugman" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c39-f9f4-952b-ab31" type="max"/>
               </constraints>
               <profiles>
-                <profile id="0cec-0f02-38cf-05a7" name="Josef Bugman, Dwarf Master Drinker" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="0cec-0f02-38cf-05a7" name="Josef Bugman, Dwarf Master Drinker" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
                   <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Josef Bugman counts as two Assistant Coaches. In addition, he provides players on his team with an ample supply of Bugman’s XXXXXX. This most famous and valued of Dwarf ales is renowned for its recuperative properties. When rolling to see if Knocked Out players return to play between drives, rolls of 1 can be re-rolled. 
-
-Whenever a player from his team is removed from the pitch as a Knock Out or Casualty, or when a player is pushed into the crowd – the coach of Josef Bugman’s team may choose to roll a D6, adding +1 to the result every time this test is made after the first. If the result is a 6 or higher, Josef Bugman is unable to contain himself and rushes onto the pitch. Immediately place him adjacent to any sideline (not End Zone) in his team’s half of the pitch that is not in any other player’s tackle zone. From the start of his team’s next turn onwards, he activates and acts as part of the team and has the following stats, based on when in the game he comes on. If Bugman comes on during the first half, he is still quite sober and sensible. Should he come on in the second half, he is somewhat less so! When the drive ends, the ref sends him to the dungeons and he has no further effect on the game – he no longer counts as two Assistant Coaches and he cannot be used in a later drive. The Bugman’s XXXXXX, however, is not lost, as the players simply refuse to give it up!</characteristic>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6+</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9+</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (5+), Tackle, Thick Skull, Wrestle</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="5cd7-d860-e738-a8cb" name="Bugman&apos;s XXXXXX" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
+                  <description>Bugman provides players on his team with an ample supply of Bugman’s XXXXXX. This most famous of Dwarf ales is renowned for its recuperative properties. When rolling to see if Knocked-out players recover, rolls of a 1 can be re-rolled.</description>
+                </rule>
+                <rule id="999c-684f-85a2-4b67" name="Keen Player" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
+                  <description>If Bugman’s team cannot set up 11 players at the start of a drive, Bugman may decide to join in himself! You can choose to set him up as part of your team. If you do so, he counts as part of the team for the duration of the drive. When the drive ends, Bugman is Sent-off for committing a Foul and has no further effect on the game – he cannot be used in a later drive. The Bugman’s XXXXXX, however, is not lost; the players simply refuse to give it up!</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="3c9e-3be1-1466-bd63" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+                <infoLink id="b110-05e2-6f0f-43b9" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+                <infoLink id="0670-67bb-0058-e1fe" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
+                <infoLink id="b596-8678-995f-ded8" name="Loner (5+)" hidden="false" targetId="e99d-8433-05f4-f4af" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="966a-0145-8577-7e2d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
               </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="135b-e29e-3a53-7930" name="Josef Bugman, Dwarf Master Drinker (First Half)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43b-dd2c-6a08-4de4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be8b-8b51-667c-6201" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="30d8-1289-8d17-db15" name="Josef Bugman, Dwarf Master Drinker (First Half)" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
-                        <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
-                        <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2</characteristic>
-                        <characteristic name="PA" typeId="90cd-0493-9510-60b5"/>
-                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc"/>
-                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d"/>
-                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
-                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="1f6e-2f07-4916-7fe5" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-                    <infoLink id="3ac0-853a-cbb9-4e3c" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                    <infoLink id="a82d-d07a-f988-2d0d" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                    <infoLink id="bd48-1240-5715-4b1c" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="08a0-c268-ded4-0e90" name="Josef Bugman, Dwarf Master Drinker (Second Half)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf6d-cd17-c0b0-992f" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f28-16ba-269c-1938" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="7208-3dfb-b5de-16a7" name="Josef Bugman, Dwarf Master Drinker (Second Half)" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">4</characteristic>
-                        <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
-                        <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2</characteristic>
-                        <characteristic name="PA" typeId="90cd-0493-9510-60b5"/>
-                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc"/>
-                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d"/>
-                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
-                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="8ede-5f33-d79b-fa0f" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-                    <infoLink id="c510-f08b-027d-636d" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                    <infoLink id="65f2-2a6a-a6fb-e6ce" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                    <infoLink id="1272-58c6-cefc-2873" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                    <infoLink id="8048-702c-7b44-7c84" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1071,25 +1087,52 @@ Whenever a player from his team is removed from the pitch as a Knock Out or Casu
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34c7-a485-bf53-02a9" type="max"/>
           </constraints>
+          <rules>
+            <rule id="3901-8c96-e22c-607a" name="Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
+              <description>Wizards of the various Arcane Colleges find ready employment with the many Cabalvision networks, as it takes huge amounts of magical energy to capture the action and beam it globally to the crystal balls and magic mirrors of Cabalvision subscribers around the world. Consequently, there are always Wizards to be found at any given fixture, card carrying members of the Colleges of Magic, all more than happy to moonlight for a team wishing to secure their assistance.
+
+No team may purchase more than one Wizard Inducement per game.
+
+Some Wizards are named, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Wizard:
+
+• If this happens during a game that is part of a league, neither team can use the named Wizard but the named Wizard will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the named Wizard– one team has clearly hired a ringer! 
+
+If a Wizard Inducement is not named, there is no restriction on both teams fielding the same type.</description>
+            </rule>
+          </rules>
           <selectionEntries>
             <selectionEntry id="23a9-8461-8fb1-ffe9" name="Hireling Sports-Wizard" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d139-30aa-ba6f-109b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8070-2ad7-05ed-0546" name="Fireball" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="8070-2ad7-05ed-0546" name="Fireball" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Choose a target square anywhere on the pitch. Roll a D6 for each standing player (from either team) that is either in the target square or a square adjacent to it. If the score is 4 or higher then the player has been hit by the fireball and is knocked down. If it is 3 or less the player manages to dodge the fireball&apos;s blast. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down, as if they had been knocked down by a player with the Mighty Blow skill. If a player on the moving team is knocked down by a fireball, then the moving team does not suffer a turnover unless the player was carrying the ball at the time.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
+
+• On a roll of 4+, the player has been hit by the Fireball.
+• On a roll of 1-3, the player manages to avoid the Fireball.
+
+Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="f15f-1af8-f352-2568" name="Zap!" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="f15f-1af8-f352-2568" name="Zap!" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Target any opposition player and roll a D6. If the score is equal or higher than that player&apos;s ST, that player turns into a frog for the remainder of the drive, after which the coach will secure emergency magical assistance in the dugout to turn the player back into their original form. A natural roll of 1 always fails and a natural roll of 6 always succeeds, regardless of the target&apos;s ST.
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
 
-If the player was carrying the ball when they were turned into a frog, it is dropped and will bounce once. If the frog is injured, it will be badly hurt and miss the rest of the game. At the end of the game, the player is returned to normal shape with no ill effects. The frog has the attached profile.</characteristic>
+• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
+• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
+
+If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="baa5-3a22-c4da-0c2e" name="Hireling Sports-Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
+                  <description>Once per game, a Hireling Sports-Wizard may cast one of the following spells: Fireball, Zap!</description>
+                </rule>
+              </rules>
               <categoryLinks>
                 <categoryLink id="116e-aaf0-655b-ea64" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
                 <categoryLink id="d5a0-c12e-13d2-f53c" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
@@ -1101,14 +1144,14 @@ If the player was carrying the ball when they were turned into a frog, it is dro
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f59-656e-98a6-3ea9" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="4047-5bfb-bdaf-999a" name="Frog" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+                    <profile id="4047-5bfb-bdaf-999a" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
                       <characteristics>
                         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
                         <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
-                        <characteristic name="AG" typeId="29f4-c9a2-f996-4723">4</characteristic>
-                        <characteristic name="PA" typeId="90cd-0493-9510-60b5"/>
-                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc"/>
-                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d"/>
+                        <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
+                        <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
+                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
+                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
                         <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
                         <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
                       </characteristics>
@@ -1439,6 +1482,46 @@ If the player was carrying the ball when they were turned into a frog, it is dro
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
                 <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c5c6-71b5-c0fb-a61c" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe0-ace3-5f02-9d46" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="b00b-2cca-6003-b71a" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
+              <description>Many referees become celebrities in their own right, sometimes for their even-handed application of the rules, more often for their blatant corruption or violent outbursts! Many teams will go out of their way to bribe a ref, but nothing beats turning up to a game knowing that the ref is not only on your payroll, but is practically a part of your team!
+
+Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
+
+For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
+
+Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:
+
+• If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the named Biased Referee – they can dish outharsh rulings to both sides!</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry id="2ed0-f669-a80c-097a" name="Biased Referee Inducement" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9701-4586-da2e-c8a5" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="16fe-79e9-d18e-82e8" name="Close Scrutiny" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
+                  <description>Strict adherence to the rules is of paramount importance to all referees. This is especially true when one of the teams has paid them to watch the opposition closely! If any player on the opposing team commits a Foul without rolling a double when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 5+, the Biased Referee spots the Foul and the player is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).
+• On a roll of 1-4, the player manages to avoid the ref’s attention.</description>
+                </rule>
+                <rule id="5740-6621-f2e5-d5c0" name="&quot;I didn&apos;t see a thing!&quot;" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
+                  <description>Whilst watching one team incredibly closely, the Biased Referee can easily be forgiven for missing infractions perpetrated by the other. When rolling on the Argue the Call table, you may apply a +1 modifier to the dice roll.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5259,7 +5342,7 @@ If your team has the ‘Favoured of Nurgle’ special rule, a new ‘Rotter Line
     <rule id="d302-b3a2-216f-cc3a" name="Swoop" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
       <description>If this player is thrown by a team-mate, as described on page 52, they do not scatter before landing as they normally would. Instead, you may place the Throw-in template over the player, facing towards either End Zone or either sideline as you wish. The player then moves from the target square D3 squares in a direction determined by rolling a D6 and referring to the Throw-in template.</description>
     </rule>
-    <rule id="b2ab-c7ab-b8db-8f05" name="Apothecary" publicationId="46da-ba61-6439-83e5" hidden="false">
+    <rule id="b2ab-c7ab-b8db-8f05" name="Apothecary" publicationId="46da-ba61-6439-83e5" page="" hidden="false">
       <description>An Apothecary can be used only once per match. If the player was KO&apos;d leave him on the pitch Stunned or in the Reserves box if not on the pitch. Otherwise immediately after the player suffers the Casualty, you can use the Apothecary to make your opponent roll again on the Casualty table and then you choose which of the two results to apply. If the player is only Badly Hurt after this roll (even if it was the original Casualty roll) the player may be moved into the Reserves box.</description>
     </rule>
     <rule id="6746-0f3a-2e8c-b812" name="Swarming" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
@@ -5380,6 +5463,9 @@ A player can only perform this Special action once per turn (i.e., Projectile Vo
 • On a roll of 4+, this player continues their activation as normal and completes their declared action.
 
 If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</description>
+    </rule>
+    <rule id="e99d-8433-05f4-f4af" name="Loner (5+)" publicationId="46da-ba61-6439-83e5" page="85" hidden="false">
+      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.</description>
     </rule>
   </sharedRules>
 </gameSystem>
