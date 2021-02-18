@@ -60,11 +60,6 @@
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="ef36-92eb-8b79-1a1f" name="Players" hidden="false"/>
-    <categoryEntry id="7a10-b027-351b-806b" name="Rostered Star Players" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f66b-5041-ec9b-8232" type="max"/>
-      </constraints>
-    </categoryEntry>
     <categoryEntry id="a6b7-0663-b308-f599" name="Team Management" hidden="false"/>
     <categoryEntry id="8526-a57c-c848-4d31" name="Inducements" hidden="false"/>
     <categoryEntry id="0b84-c59e-fbf9-8c16" name="(In)Famous Coaching Staff" hidden="false">
@@ -83,7 +78,7 @@
     <categoryEntry id="0556-a674-642a-4044" name="Legend (Lvl 6)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="d516-28de-96f5-5880" name="Emerging Star (Lvl 3)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="e160-4dbf-ed32-9bde" name="Star (Lvl 4)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
-    <categoryEntry id="b56f-d2af-e5c4-d8f6" name="Superstar (Lvl 5)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
+    <categoryEntry id="b56f-d2af-e5c4-d8f6" name="Super Star (Lvl 5)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="3634-f4ae-b277-30bc" name="Dead Players" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="ce3b-e531-b6b3-0b3b" name="Missing a Game" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="625c-de63-0116-92fb" name="Mercenary" publicationId="46da-ba61-6439-83e5" hidden="false"/>
@@ -94,11 +89,21 @@
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bf2f-3b49-4f20-99d2" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="7f3a-b1b0-0640-ced0" name="Double [G]" publicationId="46da-ba61-6439-83e5" hidden="false"/>
-    <categoryEntry id="b35c-efb9-6a1a-36c8" name="Double [A]" hidden="false"/>
-    <categoryEntry id="ea39-19c7-b415-15c2" name="Double [S]" hidden="true"/>
-    <categoryEntry id="6bb7-ded1-d8cb-cdff" name="Double [P]" hidden="true"/>
-    <categoryEntry id="8901-6938-5c4d-1dc5" name="Double [M]" hidden="false"/>
+    <categoryEntry id="7f3a-b1b0-0640-ced0" name="Secondary [G]" publicationId="46da-ba61-6439-83e5" hidden="false"/>
+    <categoryEntry id="b35c-efb9-6a1a-36c8" name="Primary [G]" hidden="false"/>
+    <categoryEntry id="ea39-19c7-b415-15c2" name="Secondary [S]" hidden="true"/>
+    <categoryEntry id="6bb7-ded1-d8cb-cdff" name="Secondary [P]" hidden="true"/>
+    <categoryEntry id="8901-6938-5c4d-1dc5" name="Secondary [M]" hidden="false"/>
+    <categoryEntry id="7d60-e5f9-4153-d83a" name="Primary [A]" hidden="false"/>
+    <categoryEntry id="6f03-4133-b45c-b194" name="Primary [M]" hidden="false"/>
+    <categoryEntry id="8349-28a0-33d5-03b4" name="Primary [P]" hidden="false"/>
+    <categoryEntry id="063f-34ff-5c7f-e867" name="Primary [S]" hidden="false"/>
+    <categoryEntry id="edd8-0a01-59d7-246f" name="Secondary [A]" hidden="false"/>
+    <categoryEntry id="a32e-db91-2a7d-8708" name="Biased Referee" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-91d3-1c9a-8f12" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="eea0-fbe2-d22b-c2bf" name="Standard" hidden="false">
@@ -121,24 +126,15 @@
             <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8ed7-eb63-28ad-1d86" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="68eb-6843-4052-29e9" name="Rostered Star Players" hidden="false" targetId="7a10-b027-351b-806b" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="87d8-3e4e-7cac-4e75" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="72bd-80d9-29f8-4636" name="Misc" hidden="false" targetId="a6b7-0663-b308-f599" primary="false"/>
+        <categoryLink id="72bd-80d9-29f8-4636" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="false"/>
         <categoryLink id="2123-f0cb-6a30-dc9f" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="false"/>
         <categoryLink id="7749-565c-f2eb-d3fb" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-        <categoryLink id="84d0-2989-9b33-ce10" name="Dead Player" hidden="false" targetId="3634-f4ae-b277-30bc" primary="false"/>
+        <categoryLink id="84d0-2989-9b33-ce10" name="Dead Players" hidden="false" targetId="3634-f4ae-b277-30bc" primary="false"/>
         <categoryLink id="82e4-2b13-619e-7e6b" name="Missing a Game" hidden="false" targetId="ce3b-e531-b6b3-0b3b" primary="false"/>
         <categoryLink id="2047-0fb5-d551-d894" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="0960-c5b8-7cff-5992" name="Star Player List" hidden="false">
-      <categoryLinks>
-        <categoryLink id="7301-2c31-e21f-356c" name="Rostered Star Players" hidden="false" targetId="7a10-b027-351b-806b" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
+    <forceEntry id="0960-c5b8-7cff-5992" name="Star Player List" hidden="false"/>
   </forceEntries>
   <entryLinks>
     <entryLink id="d63b-1e42-baa4-9eaf" name="Fan Factor" hidden="false" collective="false" import="true" targetId="407e-30a8-ee48-ab2e" type="selectionEntry">
@@ -184,11 +180,6 @@
     <entryLink id="e0af-9f71-e284-80c8" name="Treasury Gold" hidden="false" collective="false" import="true" targetId="19ad-ba99-d331-e16b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="06ab-43c7-f4b2-8e08" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b33f-7a89-edbb-0225" name="Famous Referee (2D6)" hidden="false" collective="false" import="true" targetId="8464-1069-bc87-9a58" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="dda2-46c7-3949-cf65" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0477-c661-e7a6-a03a" name="Alternate Weather Tables" hidden="false" collective="false" import="true" targetId="1d49-5d66-d431-9840" type="selectionEntry">
@@ -330,12 +321,12 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="407e-30a8-ee48-ab2e" name="Fan Factor" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="407e-30a8-ee48-ab2e" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2e2-2788-1cbd-283c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="40a1-b2ad-ab32-f9b8" name="Fan Factor Level" publicationId="46da-ba61-6439-83e5" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="40a1-b2ad-ab32-f9b8" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b705-a193-fa8d-4d98" type="min"/>
           </constraints>
@@ -511,6 +502,7 @@
         <selectionEntry id="5e0d-1f48-156a-6e6b" name="Cheerleader" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2cf3-d4df-be9e-1dd9" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e13-9e72-21aa-eae8" type="max"/>
           </constraints>
           <costs>
             <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -3105,7 +3097,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -3123,7 +3115,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -3141,7 +3133,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4491,7 +4483,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e9c9-e52e-3f46-7eda" name="10,000 Treasury Gold" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e9c9-e52e-3f46-7eda" name="5,000 Treasury Gold" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
@@ -4505,6 +4497,45 @@ If the player was carrying the ball when they were turned into a frog, it is dro
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0390-715c-b0f8-66f2" name="+PA" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce0f-f781-1e0e-74e5" name="-PA" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="d2ca-b76d-9258-f261" name="Assistant Coaches" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4580-b929-3b2d-4f27" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b37b-deba-3eac-479b" name="Assistant Coach" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3459-9f84-5d0e-6c18" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-e2e8-0e23-83e6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
