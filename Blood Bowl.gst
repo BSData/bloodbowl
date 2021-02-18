@@ -4538,6 +4538,148 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b813-b8f6-47ea-2f87" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="38" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea76-072f-2f18-db66" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6a4a-dee7-b0a0-b09b" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true">
+          <categoryLinks>
+            <categoryLink id="b672-e0f1-8547-45af" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="64ac-1f10-6cc4-d0b4" name=" 1. Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc26-d603-8c3b-5367" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1009-fcc8-e66f-838f" name="Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c522-cc34-7027-0ca8" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="f892-518e-86d6-00fe" name=" 2. Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6ee-0087-92a4-4f9e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d22d-cf06-6592-6dea" name="Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60a9-8bc0-8ef9-beff" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="07c0-0b31-82e7-64b9" name=" 3. Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fc-0dc7-0109-9f61" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0e90-547d-2e2e-6829" name="Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="27c4-20a9-3bfd-57e3" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="cbdc-9885-32e4-6024" name=" 4. Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ed-8210-11f5-e826" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="79cf-f778-707e-0d90" name="Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="83df-5319-db47-15fd" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="7b19-8955-5b8c-e6ef" name=" 5. Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1775-2c45-ce04-444e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0f79-9a2f-00d5-f41a" name="Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="1640-4a49-f269-b0e2" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="6a02-26fb-bbe0-8945" name=" 6. Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e1a-250a-8f11-d8ca" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="aa4f-bbbe-63ae-3db9" name="Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="e973-21a9-5b96-91da" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="3d9f-2aed-7d76-f1cf" name=" 7. Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd9-40e6-451a-67a6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="73ff-6a8d-009c-f103" name="Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="f1f7-e2ac-d235-67ea" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="b4d4-65a6-9655-19d0" name=" 8. Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee0-a980-3313-e54e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2da5-0198-f706-9118" name="Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="a675-bc5b-de5c-ba30" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="4071-4d22-e6a1-1725" name=" 9. Moles under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f55-95b2-37ec-6efd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0817-b2b1-98f9-7d7a" name="Moles Under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="46f2-c800-6bfc-120f" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="b1e8-f77e-548b-d374" name="10. Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b50-3ac5-d5f1-4d6f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5ca9-27a7-3f9e-7a6b" name="Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="98aa-2fae-0339-03a7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="7898-c825-c887-6d34" name="11. Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23bc-a526-ce2e-6ba1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7b3d-8693-db34-60f3" name="Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="8b4a-c774-c4fa-409d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="cfa9-a6ab-e07a-3db6" name="14. Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac65-2a25-0f63-9eaa" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b49a-840e-e31c-678e" name="Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="4892-aa08-8bfe-1705" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9abc-7c31-2311-1451" name="13. Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4080-41d8-e616-9d76" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="277d-f6ec-b2dc-11c2" name="Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="965e-595e-a3ab-e19d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="906e-a13d-d2a7-c197" name="15. Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e5-6540-4612-b61b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dec4-4f14-bc25-81b5" name="Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="2363-63b1-5480-4d75" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="6730-f87a-9986-76b4" name="16. Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7506-cc9e-e330-5646" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d6ae-09cf-8d36-53d7" name="Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c49c-1549-bfb3-8f6d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="8d74-7531-c5fd-3947" name="12. Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="269c-c9e6-d00a-d5c0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="39cc-941a-838e-157f" name="Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60f3-099d-1806-65c2" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -4715,6 +4857,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
+    <selectionEntryGroup id="cc33-3795-1003-dfb3" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true"/>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="cc62-f3d9-8892-3221" name="Dauntless" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -4977,6 +5120,54 @@ Then see the Right Stuff entry to determine how gracefully the player lands – 
     </rule>
     <rule id="6746-0f3a-2e8c-b812" name="Swarming" publicationId="46da-ba61-6439-83e5" hidden="false">
       <description>&lt;Placeholder for Snotlings&gt;</description>
+    </rule>
+    <rule id="c522-cc34-7027-0ca8" name="Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this half, every time any player enters a Trapdoor square, for any reason, roll a D6. On a roll of 1, the trapdoor falls open and the player is immediately removed from play. Treat them exactly as if they had been pushed into the crowd. If the player was in possession of the ball, it bounces from the trapdoor square.</description>
+    </rule>
+    <rule id="60a9-8bc0-8ef9-beff" name="Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this drive, you may treat a roll of 5 or 6 on the Argue the Call table as a “Well, When You Put It Like That…” result and a roll of 2-4 as an “I Don’t Care!” result.</description>
+    </rule>
+    <rule id="27c4-20a9-3bfd-57e3" name="Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Randomly select one player on your team that is available to play during this drive and that does not have the Loner (X+) trait. Until the end of this drive, that player gains the Stab trait.</description>
+    </rule>
+    <rule id="83df-5319-db47-15fd" name="Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Choose one player on your team that is available to play during this drive and that does not have the Loner (X+) trait. Until the end of this game, that player improves their AV by 1, to a maximum of 11+.</description>
+    </rule>
+    <rule id="1640-4a49-f269-b0e2" name="Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Choose one player on your team that is available to play during this drive and that does not have the Loner (X+) trait. Until the end of this drive, that player gains the Mighty Blow (+1) skill.</description>
+    </rule>
+    <rule id="e973-21a9-5b96-91da" name="Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Randomly select D3 opposition players that are available to play during this drive and that do not have the Loner (X+) trait. Until the end of this drive, those players gain the Loner (2+) trait.</description>
+    </rule>
+    <rule id="f1f7-e2ac-d235-67ea" name="Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Randomly select one opposition player that is available to play during this drive. That player has had their boots tampered with! Until the end of this drive, their MA is reduced by 1.</description>
+    </rule>
+    <rule id="a675-bc5b-de5c-ba30" name="Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Choose one player on your team that is available to play during this drive and that does not have the Loner (X+) trait. Until the end of this game, that player gains the Pro skill.</description>
+    </rule>
+    <rule id="46f2-c800-6bfc-120f" name="Moles Under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this half, apply a -1 modifier every time any player attempts to Rush an extra square (-2 should it occur that both coaches have rolled this result).</description>
+    </rule>
+    <rule id="98aa-2fae-0339-03a7" name="Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this game, any player on your team that makes a Completion earns 2 SPP, rather than the usual 1 SPP.</description>
+    </rule>
+    <rule id="8b4a-c774-c4fa-409d" name="Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this drive, if a player on your team causes a Casualty by pushing an opponent into the crowd, that player will earn 2 SPP exactly as if they had caused a Casualty by performing a Block action.</description>
+    </rule>
+    <rule id="60f3-099d-1806-65c2" name="Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this drive, any player on your team that causes a Casualty earns 3 SPP, rather than the usual 2 SPP.</description>
+    </rule>
+    <rule id="965e-595e-a3ab-e19d" name="Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this drive, any player on your team that causes a Casualty with a Foul action earns 2 SPP exactly as if they had caused a Casualty by performing a Block action.</description>
+    </rule>
+    <rule id="4892-aa08-8bfe-1705" name="Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this drive, should an opposition player Stall, at the end of their team turn you may roll a D6. On a roll of 5+, an angry fan throws a rock at that player. The player is immediately Knocked Down.</description>
+    </rule>
+    <rule id="2363-63b1-5480-4d75" name="Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Until the end of this half, any player on the opposing team that commits a Foul action is automatically seen by the referee, even if a natural double is not rolled.</description>
+    </rule>
+    <rule id="c49c-1549-bfb3-8f6d" name="Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
+      <description>Randomly select one player on your team that is available to play during this drive and that does not have the Loner (X+) trait. Until the end of this game, that player gains a single Primary skill of your choice.</description>
     </rule>
   </sharedRules>
 </gameSystem>
