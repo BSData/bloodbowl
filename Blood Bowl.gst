@@ -11,7 +11,6 @@
     <publication id="6ebf-d831-0023-9765" name="Spike#6"/>
     <publication id="1843-a5de-a33a-9e1b" name="Spike#7"/>
     <publication id="5528-2d35-d0f4-165f" name="Spike#8"/>
-    <publication id="67f4-8339-afb6-037b" name="NAF"/>
     <publication id="e3e7-0556-2064-f3a9" name="White Dwarf"/>
     <publication id="83ae-12ad-0093-c537" name="Spike#9"/>
     <publication id="4eb7-b2ac-e8c7-4380" name="Spike#10"/>
@@ -26,11 +25,11 @@
         <characteristicType id="d248-b05f-7c74-d8e3" name="MA"/>
         <characteristicType id="120f-0f56-f450-196c" name="ST"/>
         <characteristicType id="29f4-c9a2-f996-4723" name="AG"/>
-        <characteristicType id="e3a0-a357-0a01-145a" name="AV"/>
-        <characteristicType id="c0ef-a6ca-f605-2573" name="Skills"/>
-        <characteristicType id="18f1-06f8-56f6-83bc" name="Normal"/>
-        <characteristicType id="596c-38cc-8932-ed01" name="Double"/>
-        <characteristicType id="c4ad-19a1-e455-ff23" name="Cost"/>
+        <characteristicType id="90cd-0493-9510-60b5" name="PA"/>
+        <characteristicType id="c77a-49e5-750a-1adc" name="AV"/>
+        <characteristicType id="aa6d-1678-d4d2-a97d" name="Skills &amp; Traits"/>
+        <characteristicType id="fda4-6261-f0d2-ba0d" name="Primary"/>
+        <characteristicType id="9491-8b10-7b30-9358" name="Secondary"/>
       </characteristicTypes>
     </profileType>
     <profileType id="dd08-3a03-4a51-680f" name="Star Player">
@@ -38,10 +37,9 @@
         <characteristicType id="c479-66cc-841d-ebbc" name="MA"/>
         <characteristicType id="0d07-dc3f-bf2a-fca6" name="ST"/>
         <characteristicType id="602a-49ce-fcda-8909" name="AG"/>
-        <characteristicType id="a43f-1c05-f47a-eea3" name="AV"/>
-        <characteristicType id="c461-3b3f-95ee-6d35" name="Skills"/>
-        <characteristicType id="79d3-1146-a76d-53f9" name="Cost"/>
-        <characteristicType id="b295-87f2-e825-6ff3" name="Upkeep Cost"/>
+        <characteristicType id="698d-46bb-7d1c-b7ac" name="PA"/>
+        <characteristicType id="7d2d-d7f0-ad66-113a" name="AV"/>
+        <characteristicType id="10f2-d8c7-4011-270d" name="Skils &amp; Traits"/>
       </characteristicTypes>
     </profileType>
     <profileType id="7764-b467-1053-a5fe" name="Ability">
@@ -229,10 +227,9 @@
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">9</characteristic>
-                <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Bone-Head, Kick Team-Mate, Mighty Blow, Thick Skull</characteristic>
-                <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">300,000</characteristic>
-                <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
               </characteristics>
             </profile>
           </profiles>
@@ -262,10 +259,9 @@
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">6</characteristic>
-                <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Dodge, Right Stuff, Stunty, Sure Hands</characteristic>
-                <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">0</characteristic>
-                <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">0</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
               </characteristics>
             </profile>
           </profiles>
@@ -537,10 +533,9 @@
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Chainsaw, Secret Weapon, Stand Firm</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">110,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">30,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -569,10 +564,9 @@
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">9</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Block, Mighty Blow</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">260,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -600,10 +594,9 @@
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">10</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Block, Mighty Blow, Thick Skull, Throw Team-Mate</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">430,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">60,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -633,10 +626,9 @@
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Block, Dodge, Fend, Sprint, Sure Feet</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">320,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">60,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1019,11 +1011,11 @@ Whenever a player from his team is removed from the pitch as a Knock Out or Casu
                         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
                         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
                         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2</characteristic>
-                        <characteristic name="AV" typeId="e3a0-a357-0a01-145a">8</characteristic>
-                        <characteristic name="Skills" typeId="c0ef-a6ca-f605-2573">Block, Loner, Tackle, Thick Skull</characteristic>
-                        <characteristic name="Normal" typeId="18f1-06f8-56f6-83bc"/>
-                        <characteristic name="Double" typeId="596c-38cc-8932-ed01"/>
-                        <characteristic name="Cost" typeId="c4ad-19a1-e455-ff23"/>
+                        <characteristic name="PA" typeId="90cd-0493-9510-60b5"/>
+                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc"/>
+                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d"/>
+                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1049,11 +1041,11 @@ Whenever a player from his team is removed from the pitch as a Knock Out or Casu
                         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">4</characteristic>
                         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
                         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2</characteristic>
-                        <characteristic name="AV" typeId="e3a0-a357-0a01-145a">8</characteristic>
-                        <characteristic name="Skills" typeId="c0ef-a6ca-f605-2573">Frenzy, Loner, Tackle, Thick Skull, Wrestle</characteristic>
-                        <characteristic name="Normal" typeId="18f1-06f8-56f6-83bc"/>
-                        <characteristic name="Double" typeId="596c-38cc-8932-ed01"/>
-                        <characteristic name="Cost" typeId="c4ad-19a1-e455-ff23"/>
+                        <characteristic name="PA" typeId="90cd-0493-9510-60b5"/>
+                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc"/>
+                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d"/>
+                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1116,11 +1108,11 @@ If the player was carrying the ball when they were turned into a frog, it is dro
                         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
                         <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
                         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">4</characteristic>
-                        <characteristic name="AV" typeId="e3a0-a357-0a01-145a">4</characteristic>
-                        <characteristic name="Skills" typeId="c0ef-a6ca-f605-2573">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
-                        <characteristic name="Normal" typeId="18f1-06f8-56f6-83bc"/>
-                        <characteristic name="Double" typeId="596c-38cc-8932-ed01"/>
-                        <characteristic name="Cost" typeId="c4ad-19a1-e455-ff23"/>
+                        <characteristic name="PA" typeId="90cd-0493-9510-60b5"/>
+                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc"/>
+                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d"/>
+                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1448,6 +1440,7 @@ If the player was carrying the ball when they were turned into a frog, it is dro
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3361,10 +3354,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">9</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Dirty Player, Loner, Mighty Blow</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">300,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3393,10 +3385,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">7</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Dodge, Frenzy, Jump Up, Juggernaut, Loner</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">250,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3426,10 +3417,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">7</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Catch, Dodge, Hypnotic Gaze, Loner, Nerves of Steel, Pass Block</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">200,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3459,10 +3449,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Accurate, Loner, Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">190,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3494,10 +3483,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner, No Hands, Regeneration, Shadowing, Side Step</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">280,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3531,10 +3519,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">2</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">10</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Loner, Mighty Blow, Stand Firm, Strong Arm, Thick Skull, Throw Team-Mate</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">300,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3567,10 +3554,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Dauntless, Dodge, Jump Up, Loner</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">220,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3600,10 +3586,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Dauntless, Loner, Side Step, Thick Skull</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">150,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">30,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3632,10 +3617,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">7</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Horns, Juggernaut, Loner, No Hands, Tackle, Thick Skull</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">170,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3667,10 +3651,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">7</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Accurate, Dodge, Loner, Pass, Side Sep, Sure Hands</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">160,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3701,10 +3684,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">9</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Disturbing Presence, Jugernaut, Loner, Mighty Blow, Prehensile Tail, Regeneration, Sure Feet</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">280,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -3745,10 +3727,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-                <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Loner, Mighty Blow, Tackle</characteristic>
-                <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">390,000</characteristic>
-                <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">60,000</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
               </characteristics>
             </profile>
           </profiles>
@@ -3777,10 +3758,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
-                <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">7</characteristic>
-                <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Accurate, Loner, Nerves of Steel, Pass, Safe Throw, Sure Hands</characteristic>
-                <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">0</characteristic>
-                <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">0</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
               </characteristics>
             </profile>
           </profiles>
@@ -4327,10 +4307,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Claw, Grab, Juggernaut, Loner, Stand Firm</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">190,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4361,10 +4340,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Dauntless, Frenzy, Loner, Multiple Block, Thick Skull</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">220,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4395,10 +4373,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">9</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">7</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Dodge, Extra Arms, Loner, Prehensile Tail, Two Heads</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">200,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4428,10 +4405,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Frenzy, Loner, Mighty Blow, Prehensile Tail</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">340,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">60,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4460,10 +4436,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">9</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Block, Jump Up, Loner, Mighty Blow, Thick Skull</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">290,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">50,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4493,10 +4468,9 @@ If the player was carrying the ball when they were turned into a frog, it is dro
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="AV" typeId="a43f-1c05-f47a-eea3">8</characteristic>
-            <characteristic name="Skills" typeId="c461-3b3f-95ee-6d35">Loner, Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle</characteristic>
-            <characteristic name="Cost" typeId="79d3-1146-a76d-53f9">170,000</characteristic>
-            <characteristic name="Upkeep Cost" typeId="b295-87f2-e825-6ff3">40,000</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
           </characteristics>
         </profile>
       </profiles>
@@ -4528,6 +4502,10 @@ If the player was carrying the ball when they were turned into a frog, it is dro
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1b-08db-6f7e-6bb9" type="max"/>
       </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
