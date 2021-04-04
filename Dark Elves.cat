@@ -120,8 +120,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="00c4-0d7f-cb3a-1d2b" name="Journeyman [Lineman]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -148,8 +149,9 @@
         <entryLink id="8bd9-c7e6-2639-c3b3" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d467-8dbf-69bb-b2de" name="Mercenary [Assassin]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -176,16 +178,10 @@
         <categoryLink id="b52b-6227-8f50-c26f" name="Primary [A]" hidden="false" targetId="7d60-e5f9-4153-d83a" primary="false"/>
         <categoryLink id="adb1-5a7b-74be-29fc" name="Primary [G]" hidden="false" targetId="b35c-efb9-6a1a-36c8" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="a85f-c27f-fecb-362b" name="Primary Skills" hidden="false" collective="false" import="true" targetId="275f-3411-7877-45ac" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d1e-0f40-d33d-c3a7" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="115000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0182-b5f8-88c6-0682" name="Runner" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -296,9 +292,6 @@
           </modifierGroups>
         </modifierGroup>
       </modifierGroups>
-      <constraints>
-        <constraint field="39e2-ec20-0c67-eba6" scope="0182-b5f8-88c6-0682" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="165c-d219-53c8-13e5" type="min"/>
-      </constraints>
       <infoLinks>
         <infoLink id="28d7-ddb3-f65a-9e64" name="Runner" hidden="false" targetId="99ad-d14d-4f38-b7e0" type="profile">
           <modifierGroups>
@@ -369,12 +362,12 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="efc9-0a6d-0db2-6fbf" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="8038-d27b-8d6a-1c96" name="Advancements" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup"/>
         <entryLink id="d906-ccf1-32d7-eaaf" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2281-174b-9e13-7597" name="Assassin" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -557,11 +550,27 @@
       <entryLinks>
         <entryLink id="42d7-8575-1766-9de4" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
         <entryLink id="ccf6-e581-e9d7-aac3" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
-        <entryLink id="bd65-83ed-cdee-5792" name="Advancements" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup"/>
+        <entryLink id="bd65-83ed-cdee-5792" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="f9d3-2661-9133-1ce8" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="b8e6-1301-2c16-7c92" name="[G]eneral" hidden="false" collective="false" import="true" targetId="784a-07da-18ad-da9e" type="selectionEntryGroup"/>
+                <entryLink id="8291-45f1-a23e-653a" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="5a6b-4c0c-b3d8-4ed5" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="d5de-ec57-1670-264a" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
+                <entryLink id="5afe-0753-ed7e-ed99" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="85000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="abb9-f8b5-3dec-4d07" name="Blitzer" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -742,12 +751,12 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="ffb4-fde4-8be9-f205" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="c8f9-0463-5cb0-735d" name="Advancements" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup"/>
         <entryLink id="148f-9e7a-5090-9cac" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4470-6211-bb6a-e6aa" name="Witch Elf" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -930,12 +939,12 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="fda0-9d60-3055-771d" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="536e-95fe-39f4-7472" name="Advancements" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup"/>
         <entryLink id="2e5c-999c-f6eb-944a" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="110000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b3e-2704-847d-b571" name="Lineman" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -1114,12 +1123,12 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="023e-4413-65a1-abc9" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="0835-2d9c-acad-ccde" name="Advancements" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup"/>
         <entryLink id="48f7-e996-9c1b-17a5" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6910-bd51-59e0-d995" name="Mercenary [Runner]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -1146,16 +1155,10 @@
         <categoryLink id="84f3-0690-ee4a-8b0e" name="Primary [G]" hidden="false" targetId="b35c-efb9-6a1a-36c8" primary="false"/>
         <categoryLink id="8918-aa88-bc75-38b4" name="Primary [P]" hidden="false" targetId="8349-28a0-33d5-03b4" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="9a20-9208-54be-4cd2" name="Primary Skills" hidden="false" collective="false" import="true" targetId="275f-3411-7877-45ac" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6d-3adb-614d-103f" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="110000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7306-795e-3d3a-6a85" name="Mercenary [Witch Elf]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -1183,16 +1186,10 @@
         <categoryLink id="6468-7901-e179-5a28" name="Primary [A]" hidden="false" targetId="7d60-e5f9-4153-d83a" primary="false"/>
         <categoryLink id="381e-dd3c-3919-64dd" name="Primary [G]" hidden="false" targetId="b35c-efb9-6a1a-36c8" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="0972-8ea9-da4c-26d7" name="Primary Skills" hidden="false" collective="false" import="true" targetId="275f-3411-7877-45ac" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="129c-bc22-d792-d50d" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="af0d-0c20-db50-f445" name="Mercenary [Blitzer]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -1208,7 +1205,7 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="48a2-edba-705c-7e07" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="48a2-edba-705c-7e07" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="774f-9d11-a864-b418" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1218,16 +1215,10 @@
         <categoryLink id="ff7b-9957-81d1-3424" name="Primary [A]" hidden="false" targetId="7d60-e5f9-4153-d83a" primary="false"/>
         <categoryLink id="87fe-17f3-db19-c222" name="Primary [G]" hidden="false" targetId="b35c-efb9-6a1a-36c8" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="7150-8fd9-4b95-1709" name="Primary Skills" hidden="false" collective="false" import="true" targetId="275f-3411-7877-45ac" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e5-e21f-80ee-e9e0" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c72-b8ce-2021-1aeb" name="Mercenary [Lineman]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -1252,19 +1243,127 @@
         <categoryLink id="a5ff-371c-3c99-f93c" name="Primary [A]" hidden="false" targetId="7d60-e5f9-4153-d83a" primary="false"/>
         <categoryLink id="3f95-5d22-931c-932c" name="Primary [G]" hidden="false" targetId="b35c-efb9-6a1a-36c8" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="1a84-1c21-33cc-7ff2" name="Primary Skills" hidden="false" collective="false" import="true" targetId="275f-3411-7877-45ac" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="272e-e25f-3c0b-6682" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="af44-80f4-eb96-80a8" name="[A]gility" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="5009-baf2-0332-3909" name="Catch" hidden="false" collective="false" import="true" targetId="8c7a-5e97-01bc-a590" type="selectionEntry"/>
+        <entryLink id="3803-72de-d9cc-d636" name="Diving Catch" hidden="false" collective="false" import="true" targetId="c329-629e-ecc0-713b" type="selectionEntry"/>
+        <entryLink id="97c5-b201-2d26-17c6" name="Diving Tackle" hidden="false" collective="false" import="true" targetId="f07b-09f1-9f88-ae6b" type="selectionEntry"/>
+        <entryLink id="b1e1-853a-bf34-0696" name="Dodge" hidden="false" collective="false" import="true" targetId="30df-c110-f163-220c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c9f-2030-9f51-f546" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5c66-bc3f-1f10-56f7" name="Defensive" hidden="false" collective="false" import="true" targetId="2efa-ed98-bd7d-6ff1" type="selectionEntry"/>
+        <entryLink id="dfcf-37ef-7d05-ee1f" name="Jump Up" hidden="false" collective="false" import="true" targetId="bd4c-dac9-e7d1-f47b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c9f-2030-9f51-f546" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="aeb1-d7dd-fa37-bccf" name="Leap" hidden="false" collective="false" import="true" targetId="851c-f5dc-38d9-d2e5" type="selectionEntry"/>
+        <entryLink id="708a-fd61-dba6-07bb" name="Side Step" hidden="false" collective="false" import="true" targetId="0aa2-ed3d-a7a8-89b4" type="selectionEntry"/>
+        <entryLink id="3876-8ff7-6116-d33a" name="Sneaky Git" hidden="false" collective="false" import="true" targetId="6685-b4e5-531d-e9d7" type="selectionEntry"/>
+        <entryLink id="9f62-1abb-ddd8-fd25" name="Sprint" hidden="false" collective="false" import="true" targetId="4ede-2f80-ca60-b608" type="selectionEntry"/>
+        <entryLink id="ce4e-ea5d-2acf-0492" name="Sure Feet" hidden="false" collective="false" import="true" targetId="286b-137e-d683-c2a3" type="selectionEntry"/>
+        <entryLink id="58cc-75f8-e9b7-1c58" name="Safe Pair of Hands" hidden="false" collective="false" import="true" targetId="d44d-4a69-ca9f-ef4c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="784a-07da-18ad-da9e" name="[G]eneral" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="b659-c636-95d1-360a" name="Block" hidden="false" collective="false" import="true" targetId="6c6d-47aa-0976-fce0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="116a-79f5-a173-97d3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="24c3-62ac-d481-fff0" name="Dauntless" hidden="false" collective="false" import="true" targetId="2e36-5cc6-094e-7cd8" type="selectionEntry"/>
+        <entryLink id="bee5-db2e-c3a5-4356" name="Dirty Player (+1)" hidden="false" collective="false" import="true" targetId="7fa2-3bc2-cc79-aeb1" type="selectionEntry"/>
+        <entryLink id="a5cc-9b21-cdd7-e1d5" name="Fend" hidden="false" collective="false" import="true" targetId="7c48-9997-5ed9-d1f1" type="selectionEntry"/>
+        <entryLink id="5917-b8e0-b44a-12f9" name="Frenzy" hidden="false" collective="false" import="true" targetId="7e98-5279-b39e-1d73" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c9f-2030-9f51-f546" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6f02-0e81-8360-9767" name="Kick" hidden="false" collective="false" import="true" targetId="e997-6798-c53e-55ad" type="selectionEntry"/>
+        <entryLink id="4799-14bc-ef14-28c3" name="Pro" hidden="false" collective="false" import="true" targetId="9f99-32a4-cfb9-3f93" type="selectionEntry"/>
+        <entryLink id="c6a9-08c8-6508-0073" name="Shadowing" hidden="false" collective="false" import="true" targetId="be32-bc2b-49b7-1c0e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9443-139e-f5aa-1fa0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d796-59f2-2576-ec17" name="Strip Ball" hidden="false" collective="false" import="true" targetId="9b6f-3ef9-1fbc-a48f" type="selectionEntry"/>
+        <entryLink id="c25e-3dcd-c292-e542" name="Sure Hands" hidden="false" collective="false" import="true" targetId="c1cb-44a9-a187-89a1" type="selectionEntry"/>
+        <entryLink id="a355-ba97-ba75-3caf" name="Tackle" hidden="false" collective="false" import="true" targetId="95a9-67ee-0356-2dba" type="selectionEntry"/>
+        <entryLink id="74cf-5adb-29b4-3e87" name="Wrestle" hidden="false" collective="false" import="true" targetId="9a16-b887-4ba8-15c6" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6c1c-fbd7-3766-86ed" name="[P]asssing" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="2735-ede5-2e13-b2e5" name="Accurate" hidden="false" collective="false" import="true" targetId="d8ab-3700-1ec7-d59c" type="selectionEntry"/>
+        <entryLink id="97a2-9b68-c2df-7b6d" name="Dump-off" hidden="false" collective="false" import="true" targetId="8e94-6564-5f79-0128" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d00-5600-ce4c-85f0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5686-93c3-d48c-c5e3" name="Hail Mary Pass" hidden="false" collective="false" import="true" targetId="12a1-0e6d-edcb-0f8a" type="selectionEntry"/>
+        <entryLink id="4eb6-a4e2-a1fa-9fba" name="Leader" hidden="false" collective="false" import="true" targetId="5d92-bca6-7d6b-03cd" type="selectionEntry"/>
+        <entryLink id="71ab-5b36-c2b3-2a43" name="Nerves of Steel" hidden="false" collective="false" import="true" targetId="5278-4a58-436e-f886" type="selectionEntry"/>
+        <entryLink id="93f2-0dc7-e762-0837" name="Pass" hidden="false" collective="false" import="true" targetId="cfde-f0d4-4609-cd57" type="selectionEntry"/>
+        <entryLink id="0312-8e9a-e277-2800" name="Safe Pass" hidden="false" collective="false" import="true" targetId="64da-eb16-90a8-7fde" type="selectionEntry"/>
+        <entryLink id="ea90-b74b-b6cd-adb2" name="Cannoneer" hidden="false" collective="false" import="true" targetId="5c4d-cb75-ab15-ad49" type="selectionEntry"/>
+        <entryLink id="0580-a27b-6145-0c78" name="Cloud Burster" hidden="false" collective="false" import="true" targetId="b95c-f05a-93f8-edd8" type="selectionEntry"/>
+        <entryLink id="4ec0-4537-eeca-fb37" name="Fumblerooskie" hidden="false" collective="false" import="true" targetId="b5e6-5b6a-02b5-5e27" type="selectionEntry"/>
+        <entryLink id="a0f4-db83-d135-2985" name="On the Ball" hidden="false" collective="false" import="true" targetId="381c-5cad-621e-8e55" type="selectionEntry"/>
+        <entryLink id="521b-d16e-9e15-630e" name="Running Pass" hidden="false" collective="false" import="true" targetId="b202-6647-1ae5-3c64" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="71f5-5a72-b9fd-fe80" name="[S]trength" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="2801-23ec-64d3-03f6" name="Break Tackle" hidden="false" collective="false" import="true" targetId="0ece-9309-c7da-d7a4" type="selectionEntry"/>
+        <entryLink id="cab5-a107-16c1-c479" name="Grab" hidden="false" collective="false" import="true" targetId="1dce-1f4d-e2b8-8e2f" type="selectionEntry"/>
+        <entryLink id="4f0d-7f53-c56c-aa15" name="Guard" hidden="false" collective="false" import="true" targetId="87dc-1360-433d-baed" type="selectionEntry"/>
+        <entryLink id="12c3-4f21-1509-bd1c" name="Juggernaut" hidden="false" collective="false" import="true" targetId="5b4b-d544-c4b1-e5d1" type="selectionEntry"/>
+        <entryLink id="4deb-4250-73d8-c12b" name="Mighty Blow (+1)" hidden="false" collective="false" import="true" targetId="b6ac-e2c8-e0d7-e092" type="selectionEntry"/>
+        <entryLink id="874f-cb72-e85c-5213" name="Multiple Block" hidden="false" collective="false" import="true" targetId="f2a0-5f3b-f43e-13fa" type="selectionEntry"/>
+        <entryLink id="ab30-9674-e5a0-1ff8" name="Stand Firm" hidden="false" collective="false" import="true" targetId="6036-f009-d354-0a40" type="selectionEntry"/>
+        <entryLink id="232c-c790-ad5b-48d5" name="Strong Arm" hidden="false" collective="false" import="true" targetId="828c-bd4a-fd63-8828" type="selectionEntry"/>
+        <entryLink id="e111-254d-bfef-eef0" name="Thick Skull" hidden="false" collective="false" import="true" targetId="9bbd-7844-16a2-c9fe" type="selectionEntry"/>
+        <entryLink id="631e-1338-2654-0d33" name="Arm Bar" hidden="false" collective="false" import="true" targetId="68a7-5f56-92ba-c718" type="selectionEntry"/>
+        <entryLink id="8f07-54cb-4463-4e9e" name="Brawler" hidden="false" collective="false" import="true" targetId="5fd2-79a1-26f5-bf4d" type="selectionEntry"/>
+        <entryLink id="f019-ff14-92a8-5b21" name="Pile Driver" hidden="false" collective="false" import="true" targetId="de4d-0c5e-4bb4-7a67" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="cd71-40b3-68b8-ac77" name="Lineman" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
       <characteristics>

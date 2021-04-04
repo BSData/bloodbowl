@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="28" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>Welcome to Blood Bowl 2020. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
+  <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
     <publication id="a724-bc8d-f22a-3f61" name="Spike#1"/>
@@ -17,7 +17,8 @@
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
-    <costType id="39e2-ec20-0c67-eba6" name=" SPP" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="39e2-ec20-0c67-eba6" name=" Total SPP" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="069c-526e-7481-6bb7" name=" Used SPP" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="6abd-9371-31b8-653a" name="Player">
@@ -74,7 +75,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a510-dc2f-2633-09d6" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="0b6c-a8b7-7bae-b8f2" name="SPP" publicationId="46da-ba61-6439-83e5" hidden="false"/>
+    <categoryEntry id="0b6c-a8b7-7bae-b8f2" name="Total SPP" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="0360-963e-6a1b-82b2" name="Experienced (Lvl 1)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="a11b-21fa-8b6c-ddad" name="Veteran (Lvl 2)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="0556-a674-642a-4044" name="Legend (Lvl 6)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
@@ -83,7 +84,11 @@
     <categoryEntry id="b56f-d2af-e5c4-d8f6" name="Super Star (Lvl 5)" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="3634-f4ae-b277-30bc" name="Dead Players" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="ce3b-e531-b6b3-0b3b" name="Missing a Game" publicationId="46da-ba61-6439-83e5" hidden="false"/>
-    <categoryEntry id="625c-de63-0116-92fb" name="Mercenary" publicationId="46da-ba61-6439-83e5" hidden="false"/>
+    <categoryEntry id="625c-de63-0116-92fb" name="Mercenary" publicationId="46da-ba61-6439-83e5" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="df9f-1f6a-c09d-3d8d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcad-3fc6-ebc8-af29" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="1fa9-a9cf-7b89-5a8c" name="Journeymen" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="fdc7-89fb-c7d0-4791" name="Pre-Match Setup" hidden="false"/>
     <categoryEntry id="4e9e-b0ee-57cb-9b9d" name="Star Player" hidden="false">
@@ -91,16 +96,6 @@
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bf2f-3b49-4f20-99d2" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="7f3a-b1b0-0640-ced0" name="Secondary [G]" publicationId="46da-ba61-6439-83e5" hidden="false"/>
-    <categoryEntry id="b35c-efb9-6a1a-36c8" name="Primary [G]" hidden="false"/>
-    <categoryEntry id="ea39-19c7-b415-15c2" name="Secondary [S]" hidden="true"/>
-    <categoryEntry id="6bb7-ded1-d8cb-cdff" name="Secondary [P]" hidden="true"/>
-    <categoryEntry id="8901-6938-5c4d-1dc5" name="Secondary [M]" hidden="false"/>
-    <categoryEntry id="7d60-e5f9-4153-d83a" name="Primary [A]" hidden="false"/>
-    <categoryEntry id="6f03-4133-b45c-b194" name="Primary [M]" hidden="false"/>
-    <categoryEntry id="8349-28a0-33d5-03b4" name="Primary [P]" hidden="false"/>
-    <categoryEntry id="063f-34ff-5c7f-e867" name="Primary [S]" hidden="false"/>
-    <categoryEntry id="edd8-0a01-59d7-246f" name="Secondary [A]" hidden="false"/>
     <categoryEntry id="a32e-db91-2a7d-8708" name="Biased Referee" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-91d3-1c9a-8f12" type="max"/>
@@ -113,6 +108,9 @@
     <categoryEntry id="e570-96d7-59e7-85e3" name="4th Advancement" hidden="false"/>
     <categoryEntry id="3422-c18e-f8f0-d540" name="5th Advancement" hidden="false"/>
     <categoryEntry id="89d0-343a-ea42-482d" name="6th Advancement" hidden="false"/>
+    <categoryEntry id="aa4d-1bfd-58fd-d7d1" name="Primary Skills" hidden="false"/>
+    <categoryEntry id="a861-0d30-d4a0-e6a8" name="Secondary Skills" hidden="false"/>
+    <categoryEntry id="df9f-1f6a-c09d-3d8d" name="Mercenary Skill" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="eea0-fbe2-d22b-c2bf" name="Standard" hidden="false">
@@ -181,11 +179,6 @@
         <categoryLink id="4487-48f5-2fb6-e111" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3e3c-f5d3-63ed-6bc4" name="Inducements (Miscellaneous)" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="4990-5091-abfb-a536" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="e0af-9f71-e284-80c8" name="Treasury Gold" hidden="false" collective="false" import="true" targetId="19ad-ba99-d331-e16b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="06ab-43c7-f4b2-8e08" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
@@ -196,7 +189,7 @@
         <categoryLink id="a421-0a58-8150-f7e3" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="be4d-0164-e4f4-b421" name="Alternate Kick-Off Tables" hidden="false" collective="false" import="true" targetId="3dec-7164-ad02-5eb7" type="selectionEntry">
+    <entryLink id="be4d-0164-e4f4-b421" name="Kick-Off Tables" hidden="false" collective="false" import="true" targetId="3dec-7164-ad02-5eb7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3d90-9718-2a30-468b" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
@@ -213,28 +206,33 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="7cc1-deb3-a4ce-8ad1" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7cc1-deb3-a4ce-8ad1" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4075-e0b5-45a9-2848" type="max"/>
       </constraints>
+      <rules>
+        <rule id="c9fc-6a43-002b-481f" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+          <description>Grak and Crumbleberry must be hired as a pair and count as two Star Players. However, if either Grak or Crumbleberry is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="9eeb-9616-8bc4-aeb7" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e9ee-c561-04b0-83ea" name="Grak" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="e9ee-c561-04b0-83ea" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85f3-f7ab-c382-88df" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30eb-2431-4948-c767" type="min"/>
           </constraints>
           <profiles>
-            <profile id="75c0-74a5-cf22-93e6" name="Grak" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="75c0-74a5-cf22-93e6" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <characteristics>
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
             </profile>
@@ -250,24 +248,25 @@
             <categoryLink id="c418-7be7-22b6-9dfc" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4cad-9a67-110c-1214" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="4cad-9a67-110c-1214" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6f6-0dad-9887-f600" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe2-9530-23a9-86f9" type="min"/>
           </constraints>
           <profiles>
-            <profile id="39a9-7848-dcc5-649d" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="39a9-7848-dcc5-649d" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <characteristics>
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
             </profile>
@@ -283,58 +282,67 @@
             <categoryLink id="5a1c-680a-a49b-236a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f7f-9d43-5a15-135d" name="Season Statistics" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="3cff-ac20-1010-4ed6" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="eaf0-54b6-990e-73f5" name="Games Conceded (Did play)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7d98-36c0-b964-a83e" name="(End of Year) Touchdowns Scored" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dc6e-361a-c7fc-9b0e" name="(End of Year) Casualties Inflicted" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2be2-b4db-7507-314f" name="Games Played (Friendly)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e488-6c06-4db4-c586" name="Games Played (League)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="407e-30a8-ee48-ab2e" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
@@ -347,14 +355,16 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b705-a193-fa8d-4d98" type="min"/>
           </constraints>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="77da-bfcb-d236-80a8" name="Apothecary" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -379,8 +389,9 @@
         <infoLink id="d813-7ba1-9a57-38c8" name="Apothecary" hidden="false" targetId="b2ab-c7ab-b8db-8f05" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bfa6-10f6-14cc-b5b1" name="Head Coach" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -405,8 +416,9 @@
         </rule>
       </rules>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c50-a743-1f7e-ce60" name="Necromancer" publicationId="8e57-7262-dd22-3f40" page="33" hidden="false" collective="false" import="true" type="model">
@@ -431,8 +443,9 @@
         </rule>
       </rules>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9350-0bc7-c2fc-7af5" name="Team Re-Rolls" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -500,14 +513,16 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="28e2-1f93-1ab4-a0a4" type="min"/>
           </constraints>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4358-1d13-b318-ae37" name="Cheerleaders" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -521,14 +536,16 @@
             <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e13-9e72-21aa-eae8" type="max"/>
           </constraints>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="feb2-778e-9d5a-6f6d" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
@@ -540,46 +557,58 @@
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">140000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="0521-eed7-1851-7407" name="Old Pro" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, Helmut may use his Pro skill to re-roll a single dice rolled as part of an Armour roll.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="f573-50b9-793b-fff5" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
         <infoLink id="5a33-2e9b-a68f-b230" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
         <infoLink id="e27e-7413-ad03-5f5a" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
-        <infoLink id="747b-0390-59e8-4ca3" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="747b-0390-59e8-4ca3" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="5a2c-a990-a045-ef48" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5ded-739a-ff4c-9f58" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
         <categoryLink id="14fa-186c-fb3e-b38d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="110000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0d0f-7eb2-6e49-5c40" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0d0f-7eb2-6e49-5c40" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8891-5e62-3a25-5c76" type="max"/>
       </constraints>
       <profiles>
-        <profile id="817e-ee5f-e546-1d97" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="817e-ee5f-e546-1d97" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="6240-563f-1b63-ed8d" name="Crushing Blow" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Zug, you may apply an additional +1 modifier to the Armour roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="eb63-e191-279d-45aa" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="74a5-c516-604d-2278" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
@@ -590,8 +619,9 @@
         <categoryLink id="c4de-0926-80f0-cdd2" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c177-8048-501c-9388" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
@@ -604,17 +634,22 @@
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Thick Skull, Throw Team-mate</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="cb85-1cd3-9da2-b76e" name="The Ballista" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, if Morg fails the Passing Ability test when making a Pass action or a Throw Team-mate action, you may re-roll the D6.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="3ca8-d641-cccd-7463" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="b381-add8-deed-f178" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
-        <infoLink id="62e4-6c95-1af1-d3ca" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="62e4-6c95-1af1-d3ca" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
         <infoLink id="c242-feff-b771-20dc" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="5788-b798-ef6b-6508" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
       </infoLinks>
@@ -623,29 +658,35 @@
         <categoryLink id="b11d-1d0d-1a90-9698" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="430000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8382-8e25-d5d1-c850" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8382-8e25-d5d1-c850" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e27e-39fc-fe8b-c84e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="313a-ef61-2bab-cee9" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="313a-ef61-2bab-cee9" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Fend, Loner (3+), Sprint, Sure Feet</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="57b6-263d-6a7e-74a2" name="Consummate Professional" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+          <description>Once per game, Griff may re-roll one dice that was rolled either as a single dice roll, as part of a multiple dice roll or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Injury or Casualty roll).</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="e607-1fa4-5996-da15" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="e607-1fa4-5996-da15" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
         <infoLink id="cad7-27e8-9a14-0ff2" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="3f97-ed4d-4983-d200" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="19c9-17b7-7cde-18c2" name="Fend" hidden="false" targetId="6683-1874-842d-7423" type="rule"/>
@@ -657,11 +698,12 @@
         <categoryLink id="33a6-8eba-a2c2-870f" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="320000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ad8-6c09-41fd-425c" name="Inducements (Miscellaneous)" publicationId="5528-2d35-d0f4-165f" page="29" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6ad8-6c09-41fd-425c" name="Inducements" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6ab2-112e-0e5c-12c9" type="max"/>
       </constraints>
@@ -690,8 +732,9 @@
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="97ab-2acc-c010-5162" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false" collective="false" import="true" type="upgrade">
@@ -711,8 +754,9 @@
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="01d3-9cc6-04e0-71cc" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -725,16 +769,24 @@
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8604-23e5-2fa0-77a3" name="Bribes" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="50000.0">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -750,8 +802,9 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8e2b-22b4-916e-a32b" name="Bloodweiser Keg" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -764,8 +817,9 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" collective="false" import="true" type="upgrade">
@@ -785,8 +839,9 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="07c3-d349-052b-0fed" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -813,8 +868,9 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="06b6-7113-c30d-00a2" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -829,8 +885,9 @@ At the end of the game, any Part-time Assistant Coaches will leave the team.</de
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c0be-227f-2b70-c3fb" name="Temp Agency Cheerleader" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -845,8 +902,9 @@ At the end of the game, any Temp Agency Cheerleaders will leave the team.</descr
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1de9-49d7-e762-1541" name="Weather Mage" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -861,8 +919,9 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             </rule>
           </rules>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f096-dfb8-02a0-00d3" name="Cavorting Nurglings" publicationId="8c2d-0b8c-484b-6789" page="33" hidden="false" collective="false" import="true" type="upgrade">
@@ -888,7 +947,8 @@ You may use a Weather Mage once per game, at the start of any one of your team t
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="393d-0281-8c48-9dcf" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -914,7 +974,8 @@ You may use a Weather Mage once per game, at the start of any one of your team t
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="605f-6880-28e7-5a8f" name="Halfling Hot Pot" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" collective="false" import="true" type="upgrade">
@@ -949,7 +1010,8 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="df62-7972-cbcb-b0f5" name="Bottles of Heady Brew" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" collective="false" import="true" type="upgrade">
@@ -983,7 +1045,8 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3ddb-3cf4-4367-e324" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -1009,7 +1072,8 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5e39-084d-b112-fb83" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -1039,7 +1103,8 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1050,9 +1115,7 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
           </constraints>
           <rules>
             <rule id="2e6a-3876-f463-4fa0" name="(In)Famous Coaching Staff" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
-              <description>Although most Blood Bowl celebrities are players, with the occasional ref thrown in for good measure, there are several well-known members of coaching staff around the circuit. Many of these non-playing professionals are willing to offer out their services to other teams for the right price, bringing their expertise to the dugout.
-
-(In)Famous Coaching Staff are available to purchase during the pre-game sequence at the cost listed. You may purchase up to two (In)Famous Coaching Staff who are allowed to assist your team.
+              <description>(In)Famous Coaching Staff are available to purchase during the pre-game sequence at the cost listed. You may purchase up to two (In)Famous Coaching Staff who are allowed to assist your team.
 
 As with Star Players, it is possible for both teams to hire the services of the same named (In)Famous Coaching Staff (such as Josef Bugman):
 
@@ -1096,23 +1159,20 @@ As with Star Players, it is possible for both teams to hire the services of the 
                 <categoryLink id="966a-0145-8577-7e2d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="1e7d-bd96-5464-3912" name="Wizard" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34c7-a485-bf53-02a9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34c7-a485-bf53-02a9" type="max"/>
           </constraints>
           <rules>
             <rule id="3901-8c96-e22c-607a" name="Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
-              <description>Wizards of the various Arcane Colleges find ready employment with the many Cabalvision networks, as it takes huge amounts of magical energy to capture the action and beam it globally to the crystal balls and magic mirrors of Cabalvision subscribers around the world. Consequently, there are always Wizards to be found at any given fixture, card carrying members of the Colleges of Magic, all more than happy to moonlight for a team wishing to secure their assistance.
-
-No team may purchase more than one Wizard Inducement per game.
-
-Some Wizards are named, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Wizard:
+              <description>Some Wizards are named, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Wizard:
 
 • If this happens during a game that is part of a league, neither team can use the named Wizard but the named Wizard will keep both hiring fees.
 • If this happens during exhibition play, both teams can use the named Wizard– one team has clearly hired a ringer! 
@@ -1187,13 +1247,15 @@ If the player was in possession of the ball when they were turned into a frog, i
                   </infoLinks>
                   <costs>
                     <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                    <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a8e3-c589-d4d8-dc51" name="Chaos Sorcerer" publicationId="a724-bc8d-f22a-3f61" page="31" hidden="false" collective="false" import="true" type="upgrade">
@@ -1237,20 +1299,21 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <categoryLink id="82ed-4b22-039d-578e" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="bb9a-6226-c72b-9d44" name="Druchii Sports Sorceress" publicationId="9c52-d523-b87f-3a3f" page="34" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
                       </conditions>
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="notInstanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="notInstanceOf"/>
@@ -1282,7 +1345,8 @@ If the player was in possession of the ball when they were turned into a frog, i
               </categoryLinks>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6b2d-41ce-a054-2c28" name="Horticulturalist of Nurgle" publicationId="8c2d-0b8c-484b-6789" page="34" hidden="false" collective="false" import="true" type="upgrade">
@@ -1326,8 +1390,9 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <categoryLink id="3490-1368-007b-cc1d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8284-09ee-06ac-a714" name="Sports Necrotheurge" publicationId="8e57-7262-dd22-3f40" page="34" hidden="false" collective="false" import="true" type="upgrade">
@@ -1373,7 +1438,8 @@ If the player was in possession of the ball when they were turned into a frog, i
               </categoryLinks>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6a67-e67d-f01f-80ba" name="Slann Mage-Priest" publicationId="a724-bc8d-f22a-3f61" page="31" hidden="false" collective="false" import="true" type="upgrade">
@@ -1416,8 +1482,9 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <categoryLink id="93ad-0602-cedb-d43b" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2067-e331-d2db-e9d7" name="Firebelly" publicationId="5528-2d35-d0f4-165f" page="30" hidden="false" collective="false" import="true" type="upgrade">
@@ -1460,8 +1527,9 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <categoryLink id="359c-7c9a-3c8c-c8a2" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c16c-d4f5-2fcb-2692" name="Night Goblin Sports Shaman" publicationId="4eb7-b2ac-e8c7-4380" page="32" hidden="false" collective="false" import="true" type="upgrade">
@@ -1501,20 +1569,19 @@ If the player was in possession of the ball when they were turned into a frog, i
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="c5c6-71b5-c0fb-a61c" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe0-ace3-5f02-9d46" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe0-ace3-5f02-9d46" type="max"/>
           </constraints>
           <rules>
             <rule id="b00b-2cca-6003-b71a" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
-              <description>Many referees become celebrities in their own right, sometimes for their even-handed application of the rules, more often for their blatant corruption or violent outbursts! Many teams will go out of their way to bribe a ref, but nothing beats turning up to a game knowing that the ref is not only on your payroll, but is practically a part of your team!
-
-Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
+              <description>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
 
 For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
 
@@ -1542,15 +1609,17 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </rules>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c7a-5e97-01bc-a590" name="Catch" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1561,8 +1630,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="bed8-0faa-b003-4a97" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c329-629e-ecc0-713b" name="Diving Catch" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1573,8 +1643,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="8b93-8504-381e-8a28" name="Diving Catch" hidden="false" targetId="2938-c9de-0989-24be" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f07b-09f1-9f88-ae6b" name="Diving Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1585,8 +1656,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="4002-cf36-3db3-b81c" name="Diving Tackle" hidden="false" targetId="f8c9-51b2-2560-8072" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd4c-dac9-e7d1-f47b" name="Jump Up" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1597,8 +1669,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="92c0-21be-5421-5d33" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ede-2f80-ca60-b608" name="Sprint" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1609,8 +1682,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="d564-9158-9532-d8ae" name="Sprint" hidden="false" targetId="9b52-0018-4d6b-5525" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0aa2-ed3d-a7a8-89b4" name="Sidestep" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1621,8 +1695,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="9963-a406-1446-343b" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="286b-137e-d683-c2a3" name="Sure Feet" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1633,8 +1708,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="3541-9741-0664-d3e8" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="30df-c110-f163-220c" name="Dodge" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1645,8 +1721,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="a924-3ab7-4e7a-b4db" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6685-b4e5-531d-e9d7" name="Sneaky Git" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1657,8 +1734,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="b6ad-daae-df54-c2f7" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="851c-f5dc-38d9-d2e5" name="Leap" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1669,8 +1747,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="2f27-8bb3-a83d-2aac" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6c6d-47aa-0976-fce0" name="Block" publicationId="543f-97f6-179f-71ca" hidden="false" collective="false" import="true" type="upgrade">
@@ -1681,8 +1760,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="166f-ae2b-09e9-f73d" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e36-5cc6-094e-7cd8" name="Dauntless" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1693,8 +1773,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="a921-a9fb-dbc1-8d44" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7fa2-3bc2-cc79-aeb1" name="Dirty Player (+1)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1705,8 +1786,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="c8ac-891a-947b-5bc2" name="Dirty Player (+1)" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e997-6798-c53e-55ad" name="Kick" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1717,8 +1799,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="c91b-ac55-5825-701e" name="Kick" hidden="false" targetId="23b9-3de7-99fd-e53b" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c48-9997-5ed9-d1f1" name="Fend" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1729,8 +1812,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="712c-bbda-400b-1f60" name="Fend" hidden="false" targetId="6683-1874-842d-7423" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9f99-32a4-cfb9-3f93" name="Pro" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1741,8 +1825,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="8f05-47fd-40b2-2a98" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be32-bc2b-49b7-1c0e" name="Shadowing" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1753,8 +1838,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="753e-dd05-296d-2b61" name="Shadowing" hidden="false" targetId="e52d-083d-8549-3edb" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e98-5279-b39e-1d73" name="Frenzy" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1765,8 +1851,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="2fe8-ab25-2738-0d33" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b6f-3ef9-1fbc-a48f" name="Strip Ball" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1777,8 +1864,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="385c-f53e-7fb9-97ab" name="Strip Ball" hidden="false" targetId="32ed-9065-34b2-86e1" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c1cb-44a9-a187-89a1" name="Sure Hands" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1789,8 +1877,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="ac62-616b-3188-adcf" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a16-b887-4ba8-15c6" name="Wrestle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1801,8 +1890,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="b14f-ef4e-4ef7-b2da" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="95a9-67ee-0356-2dba" name="Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1813,8 +1903,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="be5e-74d0-b6f4-eb63" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b20-7735-aaf0-700c" name="Big Hand" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1825,8 +1916,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="ec36-6d50-f7d5-bf02" name="Big Hand" hidden="false" targetId="5cfd-ead0-441b-4cdb" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de8d-44b0-5a3a-5ff6" name="Claws" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1837,8 +1929,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="50d9-6b86-07a6-5ed9" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5e29-2928-7d20-99c3" name="Disturbing Presence" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1849,8 +1942,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="80be-d883-3aeb-4948" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="64da-eb16-90a8-7fde" name="Safe Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1861,8 +1955,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="3414-4462-d96a-f052" name="Safe Pass" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5278-4a58-436e-f886" name="Nerves of Steel" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1873,8 +1968,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="8af0-87a5-2ee5-880b" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1dce-1f4d-e2b8-8e2f" name="Grab" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1885,8 +1981,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="074f-4b86-97e0-cf61" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b6ac-e2c8-e0d7-e092" name="Mighty Blow (+1)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1897,8 +1994,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="d4c5-22d6-abed-734b" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6036-f009-d354-0a40" name="Stand Firm" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1909,8 +2007,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="b498-677c-e2e3-0217" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9bbd-7844-16a2-c9fe" name="Thick Skull" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1921,8 +2020,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="73c3-91e9-2186-0362" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ece-9309-c7da-d7a4" name="Break Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1933,8 +2033,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="5723-a656-de9e-f8c2" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e94-6564-5f79-0128" name="Dump-off" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1945,8 +2046,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="ab35-547b-b6d3-a24c" name="Dump-Off" hidden="false" targetId="8196-2dca-31a2-0516" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ced-cc9b-1a5a-8874" name="Tentacles" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1957,8 +2059,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="4e64-32d1-447a-1435" name="Tentacles" hidden="false" targetId="ff10-4ba0-21d5-c6e8" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b4b-d544-c4b1-e5d1" name="Juggernaut" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1969,8 +2072,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="f957-03c7-6d32-c741" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="12a1-0e6d-edcb-0f8a" name="Hail Mary Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1981,8 +2085,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="7e3c-9ab8-616a-7f75" name="Hail Mary Pass" hidden="false" targetId="7ac3-b992-f82a-3a9f" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d8ab-3700-1ec7-d59c" name="Accurate" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1993,8 +2098,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="a8b7-e51e-9ecd-7320" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87dc-1360-433d-baed" name="Guard" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2005,8 +2111,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="b293-f40f-0d67-aaf1" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f2a0-5f3b-f43e-13fa" name="Multiple Block" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2017,8 +2124,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="ef52-ff06-fd2c-e16e" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="828c-bd4a-fd63-8828" name="Strong Arm" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2029,8 +2137,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="d907-159e-5e3d-d0ab" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfde-f0d4-4609-cd57" name="Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2041,8 +2150,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="57a2-b6d3-25f2-b9db" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d92-bca6-7d6b-03cd" name="Leader" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2053,8 +2163,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="3ca8-f3b4-5e19-03d2" name="Leader" hidden="false" targetId="b08e-3323-b828-dfe3" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14f3-1ae1-2756-d310" name="Very Long Legs" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2065,8 +2176,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="33a8-e22c-3366-8805" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e06-673b-e8a4-69b9" name="Prehensile Tail" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2077,8 +2189,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="7e22-85c1-d6f3-35ba" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fca-f232-20db-5486" name="Extra Arms" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2089,8 +2202,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="fff7-b48e-c9ff-8483" name="Extra Arms" hidden="false" targetId="8934-8af7-4015-7b30" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb9c-3ef4-f7a6-9234" name="Foul Appearance" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2101,8 +2215,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="5a96-5e2a-88e0-9111" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d52e-e727-0ee4-ec85" name="Horns" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2113,8 +2228,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="a694-eb44-db75-f2fd" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee92-fa03-9a46-0aa4" name="Two Heads" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2125,8 +2241,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="5edf-8ccc-5408-40ef" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d33f-b5e3-efce-f815" name="+AG" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2144,7 +2261,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f140-0619-5717-3123" name="+AV" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2162,7 +2280,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e61b-54a7-5c2b-96c5" name="+MA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2180,7 +2299,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a192-15aa-5823-f102" name="+ST" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2198,31 +2318,36 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b98d-5b2e-3c9b-4b02" name="-ST" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b3ba-e2fe-664a-fafc" name="-MA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca52-545a-6510-c3a9" name="-AV" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5477-7f75-60f5-b7e5" name="-AG" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="86a5-7971-858d-5bf4" name="Niggling Injury" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -2233,7 +2358,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </rules>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ee8-d98a-5106-523d" name="Miss Next Game" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2254,7 +2380,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6af2-0ad7-97ea-b3a2" name="Dead!" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2275,7 +2402,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19ad-ba99-d331-e16b" name="Treasury Gold" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2397,124 +2525,151 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </entryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f7ce-2073-6384-b0bc" name="Lord Borak the Despoiler" publicationId="a724-bc8d-f22a-3f61" page="13" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f7ce-2073-6384-b0bc" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c7a0-0daf-881b-45ef" type="max"/>
       </constraints>
       <profiles>
-        <profile id="d6ff-748d-0492-c442" name="Lord Borak the Despoiler" publicationId="a724-bc8d-f22a-3f61" page="13" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="d6ff-748d-0492-c442" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dirty Player (+2), Loner (4+), Mighty Blow (+1), Sneaky Git</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="3754-9c2d-dbf5-b8d9" name="Lord of Chaos" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>A team that includes Lord Borak gains an extra Team re-roll for the first half of the game. If this Team re-roll is not used during the first half, it may be carried over into the second half. However, if Lord Borak is removed from play before this re-roll is used, it is lost.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="76de-fcc3-2cfc-9241" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-        <infoLink id="be9b-9d3d-39b6-5dbe" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="76de-fcc3-2cfc-9241" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="be9b-9d3d-39b6-5dbe" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="9f9f-5486-046a-3c21" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="4ae5-7deb-7a52-a21d" name="Dirty Player" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
+        <infoLink id="4ae5-7deb-7a52-a21d" name="Dirty Player (+2)" hidden="false" targetId="01ba-b7db-48f2-bdb8" type="rule"/>
+        <infoLink id="0663-da9e-5d9e-d1c2" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5686-630b-c989-46be" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
         <categoryLink id="a12e-1c0e-9b32-1ff8" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ea7-7a54-0612-3221" name="Roxanna Darknail" publicationId="9c52-d523-b87f-3a3f" page="16" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5ea7-7a54-0612-3221" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="20b5-14ea-ca39-7846" type="max"/>
       </constraints>
       <profiles>
-        <profile id="8b58-46f0-cf28-cde2" name="Roxanna Darknail" publicationId="9c52-d523-b87f-3a3f" page="16" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="8b58-46f0-cf28-cde2" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Frenzy, Jump Up, Juggernaut, Leap, Loner (4+)</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="5d17-989b-f3c8-fc56" name="Burst of Speed" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, Roxanna may attempt to Rush three times, rather than the usual two. You may declare you are using this special rule after Roxanna has Rushed twice.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="ca17-85b7-c3bc-8f9b" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
         <infoLink id="4363-3c66-4602-5fda" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="8620-350b-407c-b3c6" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
         <infoLink id="ee71-883a-92c8-a07d" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="c2ae-f1d8-e016-f24d" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="49ee-ed9f-d000-2083" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2183-3514-dbd4-4fd7" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
         <categoryLink id="8443-d2ab-3cc4-787f" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa76-fb40-58b8-c58a" name="Eldril Sidewinder" publicationId="6ebf-d831-0023-9765" page="28" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="fa76-fb40-58b8-c58a" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd86-0494-dab4-ea60" type="max"/>
       </constraints>
       <profiles>
-        <profile id="49ab-9eec-0829-a1df" name="Eldril Sidewinder" publicationId="6ebf-d831-0023-9765" page="28" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="49ab-9eec-0829-a1df" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Dodge, Hypnotic Gaze, Loner (4+), Nerves of Steel, On the Ball</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="2aae-5269-f866-a842" name="Mesmerising Dance" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
+          <description>Once per game, Eldril may re-roll a failed Agility test when attempting to use the Hypnotic Gaze trait.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="3c6c-51df-57ce-55fb" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="b1ca-51d2-c42f-c916" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
-        <infoLink id="3a5f-8e56-861c-d2a6" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="3a5f-8e56-861c-d2a6" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="edd8-ee1a-1d79-99b0" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
         <infoLink id="550b-6a79-234e-7457" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
+        <infoLink id="6b8f-7347-c3f6-cd07" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a774-0ece-64a7-66bf" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
         <categoryLink id="ca8b-a85b-06fa-a209" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ed2-bc0e-f2b8-6b58" name="Skrull Halfheight" publicationId="8e57-7262-dd22-3f40" page="30" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6ed2-bc0e-f2b8-6b58" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ac69-9e78-2cd3-66bc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6280-a72f-c608-1f9f" name="Skrull Halfheight" publicationId="8e57-7262-dd22-3f40" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="6280-a72f-c608-1f9f" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="1f95-98e7-f75b-edc6" name="Strong Passing Game" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, after making a Passing Ability test to perform a Pass action, Skrull may choose to modify the dice roll by adding his Strength characteristic to it.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="dcda-6649-d160-bb7d" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="bba9-02bd-b5c1-2722" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
@@ -2529,31 +2684,37 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="afd1-54ad-985d-9cfe" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="65b4-2696-d9ba-6e02" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="8e57-7262-dd22-3f40" page="16" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="65b4-2696-d9ba-6e02" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b5ec-d47f-1074-4e41" type="max"/>
       </constraints>
       <profiles>
-        <profile id="6819-293e-39bc-068d" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="8e57-7262-dd22-3f40" page="16" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="6819-293e-39bc-068d" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Side Step</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="cef2-a152-4d8e-0a47" name="Incorporeal" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+          <description>Once per game, after making an Agility test to dodge, Gretchen may choose to modify the dice roll by adding her Strength characteristic to it.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="1ccd-c3e8-28e6-ad84" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="6e5c-9cca-c01a-977a" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-        <infoLink id="f355-b80e-2931-1baa" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f355-b80e-2931-1baa" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="2bbc-33b6-389f-3b00" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="6798-124c-05d2-b5bc" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
         <infoLink id="7266-82cf-1785-b246" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
@@ -2566,44 +2727,51 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="a28f-296a-14e0-f83c" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4d80-cecb-49d7-db91" name="Deeproot Strongbranch" publicationId="543f-97f6-179f-71ca" page="15" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4d80-cecb-49d7-db91" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="55e9-d7a6-2372-4cfd" type="max"/>
       </constraints>
       <profiles>
-        <profile id="131f-ad5b-e127-edb6" name="Deeproot Strongbranch" publicationId="543f-97f6-179f-71ca" page="15" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="131f-ad5b-e127-edb6" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
-            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">2</characteristic>
-            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Side Step, Sneaky Git, Stab, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225,000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="4c61-a697-37a1-de1b" name="Sneakiest of the Lot" publicationId="46da-ba61-6439-83e5" page="192" hidden="false">
+          <description>If your team includes the Black Gobbo, you may commit two Foul actions per team turn, provided one of your Foul actions is committed by the Black Gobbo himself.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="9b30-e5ad-a7e3-25c7" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="e753-7605-d3d6-d7fc" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-        <infoLink id="6463-75ca-10cf-8c6a" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
-        <infoLink id="9ccd-6cfd-6113-0df9" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-        <infoLink id="a9c6-e05b-fc14-e08f" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-        <infoLink id="dcf9-9187-1ae7-fea7" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-        <infoLink id="bdad-b9bb-0a3f-30cc" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
-        <infoLink id="d81f-6884-2aeb-f5c3" name="Timmm-ber!" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
+        <infoLink id="9b30-e5ad-a7e3-25c7" name="Bombadier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
+        <infoLink id="e753-7605-d3d6-d7fc" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="6463-75ca-10cf-8c6a" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="9ccd-6cfd-6113-0df9" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
+        <infoLink id="a9c6-e05b-fc14-e08f" name="Loner (3+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="dcf9-9187-1ae7-fea7" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="bdad-b9bb-0a3f-30cc" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
+        <infoLink id="d81f-6884-2aeb-f5c3" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fcd5-835a-b5f2-0244" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
         <categoryLink id="8714-e7dd-8387-ff80" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="225000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca28-f8a0-e212-120c" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
@@ -2616,13 +2784,18 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Dodge, Jump Up, Loner (4+)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="e3ee-99db-9151-bbcc" name="Indomitable" hidden="false">
+          <description>Once per game, when Karla successfully rolls to use her Dauntless skill, she may increase her Strength characteristic to double that of the nominated target of her Block action.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="9f0c-a2b4-b335-ef06" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="0b54-8b4a-12c9-991c" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
@@ -2635,27 +2808,33 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="f5a1-6a4b-5a3f-411f" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f78-0b48-30c3-5fc6" name="Willow Rosebark" publicationId="6ebf-d831-0023-9765" page="22" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5f78-0b48-30c3-5fc6" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="29a0-66a6-d9ea-53dd" type="max"/>
       </constraints>
       <profiles>
-        <profile id="3a42-29e2-eb8e-b114" name="Willow Rosebark" publicationId="6ebf-d831-0023-9765" page="22" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="3a42-29e2-eb8e-b114" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Side Step, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="61cd-1ba7-6e55-b785" name="Indomitable" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per game, when Willow successfully rolls to use her Dauntless skill, she may increase her Strength characteristic to double that of the nominated target of her Block action.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="1162-86b5-5280-2273" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
         <infoLink id="d4b5-004d-7f1f-143b" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
@@ -2668,26 +2847,32 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4eb6-da2d-5ab5-e3c7" name="Rumbelow Sheepskin" publicationId="543f-97f6-179f-71ca" page="28" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4eb6-da2d-5ab5-e3c7" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d4e6-ccfa-ea50-b6eb" type="max"/>
       </constraints>
       <profiles>
-        <profile id="df93-cf77-54cd-fa23" name="Rumbelow Sheepskin" publicationId="543f-97f6-179f-71ca" page="28" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="df93-cf77-54cd-fa23" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Horns, Juggernaut, Loner (4+), No Hands, Tackle, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="12bc-80d9-ba41-1556" name="Ram" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Rumbelow, you may apply an additional +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="35a8-cbf2-c7f8-a8a2" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="b51d-26ac-4c35-b57c" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
@@ -2703,31 +2888,37 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1628-2c9a-f0e3-1a63" name="Gloriel Summerbloom" publicationId="6ebf-d831-0023-9765" page="27" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1628-2c9a-f0e3-1a63" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="899f-b268-67b7-9c8b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="f3c8-26db-f848-b580" name="Gloriel Summerbloom" publicationId="6ebf-d831-0023-9765" page="27" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="f3c8-26db-f848-b580" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Side Step, Sure Hands</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="b546-7215-917c-ff83" name="Shot to Nothing" hidden="false">
+          <description>Once per game, when Gloriel performs a Pass action, she may gain the Hail Mary Pass skill. You must declare this special rule is being used when Gloriel is activated.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="8c7c-62e9-18af-d7b9" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
         <infoLink id="9c32-bf6f-c00c-6d8e" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="27d5-dfe7-34af-9884" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
-        <infoLink id="3137-4ab0-2a66-c4a7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="3137-4ab0-2a66-c4a7" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
         <infoLink id="3635-5d3b-d428-5934" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
         <infoLink id="3c34-dd96-0a19-0a82" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
@@ -2736,27 +2927,33 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="d01e-8317-8932-846f" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="42a5-cc9c-244e-84eb" name="Zolcath the Zoat" publicationId="6ebf-d831-0023-9765" page="24" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="42a5-cc9c-244e-84eb" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="83e0-bd6c-c838-311e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9546-9427-6523-9255" name="Zolcath the Zoat" publicationId="6ebf-d831-0023-9765" page="24" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="9546-9427-6523-9255" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="ae49-5201-5709-71a6" name="“Excuse Me, Are You a Zoat?”" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per game, when Zolcath is activated, he may gain the Hypnotic Gaze trait. You must declare this special rule is being used when Zolcath is activated.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="b2c4-88f6-b66d-ef7f" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
         <infoLink id="332a-4112-aa65-f86e" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
@@ -2771,14 +2968,20 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="3b65-702e-759a-f057" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b57-c2fd-9678-f69c" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7b57-c2fd-9678-f69c" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d6fa-9cd0-cf21-4014" type="max"/>
       </constraints>
+      <rules>
+        <rule id="54c7-4b83-8775-79be" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>The Swift Twins must be hired as a pair and count as two Star Players. However, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="4ee4-33e5-0091-d0ff" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
@@ -2789,14 +2992,14 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8226-8007-4b89-e676" type="max"/>
           </constraints>
           <profiles>
-            <profile id="dcda-231f-5c0c-bdc0" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="dcda-231f-5c0c-bdc0" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <characteristics>
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1), Tackle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
             </profile>
@@ -2812,7 +3015,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
           </categoryLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="82df-fde1-2e25-b229" name="Valen Swift" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2821,14 +3025,14 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d619-9cf5-7a88-648f" type="min"/>
           </constraints>
           <profiles>
-            <profile id="ec0f-c7b7-478f-062b" name="Valen Swift" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="ec0f-c7b7-478f-062b" name="Valen Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <characteristics>
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
-                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Safe Pass, Sure Hands</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
             </profile>
@@ -2846,13 +3050,15 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
           </categoryLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="390000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8464-1069-bc87-9a58" name="Famous Referee (2D6)" publicationId="46da-ba61-6439-83e5" page="89" hidden="false" collective="false" import="true" type="upgrade">
@@ -2861,7 +3067,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d49-5d66-d431-9840" name="Weather Tables" hidden="false" collective="false" import="true" type="upgrade">
@@ -2915,7 +3122,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="585a-d1be-c7b8-e1a0" name="5. Winter Weather (2D6)" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" collective="false" import="true" type="upgrade">
@@ -2951,7 +3159,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="79e1-3c68-5d8e-7537" name="6. Subterranean Conditions (2D6)" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -2987,7 +3196,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6a7d-2df0-8b8d-e8e8" name="4. Autumn Weather (2D6)" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" collective="false" import="true" type="upgrade">
@@ -3023,7 +3233,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e2ba-0460-2d25-5955" name="2. Spring Weather (2D6)" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" collective="false" import="true" type="upgrade">
@@ -3059,7 +3270,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6ede-7a02-2204-39c6" name="3. Summer Weather (2D6)" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" collective="false" import="true" type="upgrade">
@@ -3095,7 +3307,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7911-21fb-567d-deb6" name="1. Default Weather Table (2D6)" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" collective="false" import="true" type="upgrade">
@@ -3131,7 +3344,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3139,7 +3353,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </selectionEntryGroups>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3dec-7164-ad02-5eb7" name="Kick-Off Tables" hidden="false" collective="false" import="true" type="upgrade">
@@ -3223,7 +3438,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="508d-7434-70ce-9322" name="1. Normal Kick-Off Table (2D6)" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" collective="false" import="true" type="upgrade">
@@ -3289,7 +3505,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c4a8-92bb-bbb6-fa64" name="2. Blitzmania Kick-Off Table (2D6)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3355,7 +3572,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
               </profiles>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3363,30 +3581,36 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </selectionEntryGroups>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="240d-4bb4-126b-4f96" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="240d-4bb4-126b-4f96" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="46b2-8647-5559-5714" type="max"/>
       </constraints>
       <profiles>
-        <profile id="45f5-75b2-ebaf-8226" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="45f5-75b2-ebaf-8226" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Claw, Grab, Juggernaut, Loner (4+), Stand Firm</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">195000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="d75b-5335-32a6-fa0c" name="Frenzied Rush" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
+          <description>Once per game, when Glart performs a Blitz action, he may gain the Frenzy skill. You must declare this special rule is being used when Glart is activated. Glart may not use the Grab skill during a turn in which he uses this special rule.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="ae12-efba-25ae-26f7" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="70fe-ef85-a3c5-5eb8" name="Claw/Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-        <infoLink id="3b68-cb46-9811-7d4f" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="70fe-ef85-a3c5-5eb8" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+        <infoLink id="3b68-cb46-9811-7d4f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="3cd4-5bf7-6dbb-be27" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
         <infoLink id="3562-269c-db5a-4e16" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
         <infoLink id="4899-f8e2-88b0-b9ce" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
@@ -3396,27 +3620,33 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="f126-cca2-28c3-77a1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="195000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4f9c-be4e-d1f8-a852" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4f9c-be4e-d1f8-a852" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4bd8-c54e-6033-ea2a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5ee9-0f5d-1093-2cb2" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="5ee9-0f5d-1093-2cb2" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="f3a7-e999-92bf-1b81" name="Slayer" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, when an opposition player with a Strength characteristic of 5 or more is Knocked Down as the result of a Block action performed by Grim, you may apply an additional +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="b8ad-88a2-2c20-a0ee" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="2940-e764-790e-1be7" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
@@ -3430,27 +3660,33 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="6c25-774a-3b29-54af" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e821-d21a-a010-9da2" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e821-d21a-a010-9da2" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1d38-36d1-b496-82ad" type="max"/>
       </constraints>
       <profiles>
-        <profile id="bedb-b876-4351-e66a" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="bedb-b876-4351-e66a" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">9</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Extra Arms, Loner (4+), Prehensile Tail, Two Heads</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">180000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="ee6b-248d-9689-7690" name="Treacherous" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, if a team-mate in an adjacent square to Hakflem is in possession of the ball when Hakflem is activated, that player may immediately be Knocked Down and Hakflem may take possession of the ball. No Turnover is caused as a result of using this special rule.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="90b7-2261-5106-209b" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="35ce-1903-5d5a-7ef4" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
@@ -3463,8 +3699,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="080c-2ed3-366b-84ec" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b90d-f318-0522-1e60" name="Headsplitter" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -3496,26 +3733,32 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a0c4-3c14-d991-344b" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a0c4-3c14-d991-344b" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1e6a-37af-40c7-5a01" type="max"/>
       </constraints>
       <profiles>
-        <profile id="8f5d-dcae-454f-061e" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="8f5d-dcae-454f-061e" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Jump Up, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="0a21-82b7-c28b-bbb0" name="Crushing Blow" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Varag, you may apply an additional +1 modifier to the Armour roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="a08b-581d-e84a-41c0" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="78a1-6ac8-cd46-e4c9" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
@@ -3528,48 +3771,16 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <categoryLink id="6860-dee9-4a0f-25e9" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="290000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6652-6313-9828-70a8" name="Withergrasp Doubledrool" publicationId="a724-bc8d-f22a-3f61" page="28" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="221c-a8ce-2c21-fff0" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="2628-6f17-b028-a227" name="Withergrasp Doubledrool" publicationId="a724-bc8d-f22a-3f61" page="28" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-          <characteristics>
-            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac"/>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a"/>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d"/>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="c01c-75c7-70f6-2d02" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
-        <infoLink id="e4da-578b-4228-4271" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-        <infoLink id="e2fe-75e3-7dac-f20e" name="Tentacles" hidden="false" targetId="ff10-4ba0-21d5-c6e8" type="rule"/>
-        <infoLink id="eb50-6e2b-1397-38c6" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-        <infoLink id="a17c-0812-8f1f-dcbe" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
-        <infoLink id="d981-6e8b-ad23-db56" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="3f9e-cf5b-88b0-8e0b" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="c2ba-e6fd-cbac-198e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e9c9-e52e-3f46-7eda" name="5,000 Treasury Gold" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e98a-3e24-65a5-e3b6" name="Legacy Rules" hidden="false" collective="false" import="true" type="upgrade">
@@ -3579,10 +3790,11 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0390-715c-b0f8-66f2" name="+PA" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0390-715c-b0f8-66f2" name="+PA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
           <conditionGroups>
@@ -3597,13 +3809,15 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ce0f-f781-1e0e-74e5" name="-PA" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d2ca-b76d-9258-f261" name="Assistant Coaches" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -3617,14 +3831,16 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-e2e8-0e23-83e6" type="max"/>
           </constraints>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b813-b8f6-47ea-2f87" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="38" hidden="false" collective="false" import="true" type="upgrade">
@@ -3637,7 +3853,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </entryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f9b-c390-2cf8-33b5" name=" 1. Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3649,7 +3866,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24c3-4632-af79-b674" name=" 2. Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3661,7 +3879,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="765e-c5e8-a6d3-839b" name=" 3. Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3673,7 +3892,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="232f-8143-d878-7eb5" name=" 4. Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3685,7 +3905,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5693-f0a0-a4fe-974a" name=" 5. Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3697,7 +3918,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7170-d799-1655-f398" name=" 6. Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3709,7 +3931,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4499-7a42-530e-6c40" name=" 7. Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3721,7 +3944,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="52a5-3711-c07e-8582" name=" 8. Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3733,7 +3957,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7a08-e0c9-39c3-edbb" name=" 9. Moles under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3745,7 +3970,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe45-ff06-d1ab-451e" name="10. Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3757,7 +3983,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="63bb-71cd-0654-94b8" name="11. Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3769,7 +3996,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb96-9bb2-0827-32be" name="12. Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3781,7 +4009,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="08f2-2043-6032-bc4e" name="13. Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3793,7 +4022,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d38b-d054-7cb0-7152" name="14. Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3805,7 +4035,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1361-955f-5351-526b" name="15. Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3817,7 +4048,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea75-06d9-b8a5-630c" name="16. Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3829,7 +4061,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
       </infoLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2efa-ed98-bd7d-6ff1" name="Defensive" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3840,8 +4073,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="ebf0-2791-140c-6f78" name="Defensive" hidden="false" targetId="2a6a-622c-22f3-4293" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d44d-4a69-ca9f-ef4c" name="Safe Pair of Hands" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3852,8 +4086,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="45e0-d688-0d5d-4107" name="Safe Pair of Hands" hidden="false" targetId="f672-176e-7433-41f6" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f32f-8e0b-95fc-1ece" name="Iron Hard Skin" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3864,8 +4099,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="6358-77ea-1aa2-253e" name="Iron Hard Skin" hidden="false" targetId="1f09-425c-df44-48ec" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c37-ab43-92e3-65bd" name="Monstrous Mouth" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3876,8 +4112,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="90dc-d74f-5f56-4d78" name="Monstrous Mouth" hidden="false" targetId="0a11-33b3-7160-ebd4" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b95c-f05a-93f8-edd8" name="Cloud Burster" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3888,8 +4125,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="8a29-f625-a402-94ad" name="Cloud Burster" hidden="false" targetId="f37e-6769-0cc8-3ede" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c4d-cb75-ab15-ad49" name="Cannoneer" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3900,8 +4138,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="b9aa-5423-f76d-f8c4" name="Cannoneer" hidden="false" targetId="988d-1349-9f05-206c" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b5e6-5b6a-02b5-5e27" name="Fumblerooskie" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3912,8 +4151,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="3415-2841-bb63-7183" name="Fumblerooskie" hidden="false" targetId="bed2-c7d6-9abb-93ce" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="381c-5cad-621e-8e55" name="On the Ball" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3924,8 +4164,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="cb63-96b2-e1ed-3c9b" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b202-6647-1ae5-3c64" name="Running Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3936,8 +4177,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="14f9-d34d-26af-6db7" name="Running Pass" hidden="false" targetId="c58b-3cb1-0c9e-fcf3" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="68a7-5f56-92ba-c718" name="Arm Bar" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3948,8 +4190,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="8732-9a47-490f-3c12" name="Arm Bar" hidden="false" targetId="c8fe-9ea9-6803-14a0" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fd2-79a1-26f5-bf4d" name="Brawler" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3960,8 +4203,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="c4fe-4401-989e-4c2a" name="Brawler" hidden="false" targetId="3ee1-a55e-60cc-c265" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de4d-0c5e-4bb4-7a67" name="Pile Driver" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3972,38 +4216,136 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <infoLink id="6557-e82c-24ac-2ed7" name="Pile Driver" hidden="false" targetId="d788-8100-69cb-6044" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="91ba-cf1f-6fd4-6e37" name="Random Secondary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83d7-f547-143a-abf9" name="Random Primary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f4c-dbf3-d819-a3c7" name="Chosen Primary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b751-b84a-58f5-8d4a" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="00a2-6ca0-31c0-e89e" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d283-b08d-bde3-5793" name="Mercenary Skill" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b0b-be70-ab30-dbe1" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8337-9c5f-8365-8a7a" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8526-b384-1fbe-f7c0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6c6a-618c-d75b-003b" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">2</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d4a3-8f44-cedd-1a0b" name="Reliable" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
+          <description>If Deeproot fumbles a Throw Team-mate action, the player that was to be thrown will bounce as normal but will automatically land safely.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="db62-9c19-198e-e605" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="ef5b-6f0f-cc04-bd93" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="f8ea-df5b-4bf1-d0c8" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
+        <infoLink id="df77-790d-1975-526a" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="04f6-cbb4-118c-8d4c" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="019f-3138-2da0-899f" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
+        <infoLink id="2092-1897-ae00-ccf9" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+        <infoLink id="54c8-4daf-3f17-c65e" name="Timmm-ber!" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4ce2-9b95-c5df-5411" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="3394-d610-d78d-cc76" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f05-6efe-252b-1d28" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b8c5-bd09-662b-2976" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d47b-c0ef-2fe8-7001" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Loner (4+), Mighty Blow (+1), Stand Firm, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4f79-9372-2ac8-8449" name="Wisdom of the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per team turn, when one of Grombrindal’s team-mates that is in an adjacent square is activated, that player gains either the Break Tackle, Dauntless, Mighty Blow (+1) or Sure Feet skill until the end of their activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3b50-e7d9-0da6-9277" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="c4ab-58b1-6cf2-d4e8" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="71f6-53a8-0c76-e315" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="f4bb-7a1b-c4fd-42f9" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="34ef-2b53-e375-7514" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="fd3a-b8ab-9f9c-51f3" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c46f-956e-4c76-8925" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="6040-5f8b-a4f5-f197" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4015,8 +4357,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <categoryLink id="05d6-6acc-e78d-e3ac" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="2.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="2.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="af0c-27b2-29cb-8a37" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
@@ -4024,8 +4367,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <categoryLink id="10cb-90ed-b4cc-06f4" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5827-052f-0008-75aa" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
@@ -4033,8 +4377,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <categoryLink id="e8ee-b633-da17-481e" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="2.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="2.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3f74-a03e-139b-3f6c" name="Touchdowns" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
@@ -4042,8 +4387,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <categoryLink id="1381-021b-ab0b-7bf7" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="3.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="3.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3314-4344-40e2-e8ba" name="MVPs Awarded" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
@@ -4051,8 +4397,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <categoryLink id="1294-758d-3589-5ce3" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="4.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="4.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac10-7c1e-92f4-773f" name="[Skirmish Statistics]" hidden="false" collective="false" import="true" type="upgrade">
@@ -4063,37 +4410,43 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <selectionEntry id="15d2-0c8d-ed13-024c" name="Touchdowns" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b401-e420-661d-b5ca" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7c5e-0049-54eb-b28b" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9a09-aa13-26cc-f41a" name="Casualties" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fafa-ace7-ce6c-48a4" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1941-4b53-b632-692c" name="Fouls Committed" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0def-cc44-77c0-6c1b" name="Games Won" hidden="false" collective="false" import="true" type="upgrade">
@@ -4105,20 +4458,23 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1d85-d360-7d83-cfd8" name="Deflections" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fa0c-925d-0a2b-cf60" name="Fouls Committed" hidden="false" collective="false" import="true" type="upgrade">
@@ -4127,19 +4483,22 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
           </categoryLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e32a-3d3d-1e26-d508" name="Deflections" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="04dc-8381-cbe6-100e" name="Casualties (Other)" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4161,8 +4520,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7229-83c0-4907-5d9c" type="max"/>
               </constraints>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="23d0-1585-fbbb-b623" name="Seasons Played" hidden="false" collective="false" import="true" type="upgrade">
@@ -4174,8 +4534,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5621-4576-70e7-480c" name="Games Won" hidden="false" collective="false" import="true" type="upgrade">
@@ -4187,8 +4548,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4227,38 +4589,6 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <entryLink id="81d4-2765-483f-ff99" name=" 1. Treacherous Trapdoor" hidden="false" collective="false" import="true" targetId="2f9b-c390-2cf8-33b5" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="be9b-77c1-0633-79fc" name="[P]asssing" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="fc81-f92b-1aea-4c6d" name="Accurate" hidden="false" collective="false" import="true" targetId="d8ab-3700-1ec7-d59c" type="selectionEntry"/>
-        <entryLink id="f5c0-456e-5a15-4732" name="Dump-off" hidden="false" collective="false" import="true" targetId="8e94-6564-5f79-0128" type="selectionEntry"/>
-        <entryLink id="e3dc-48bc-0eda-d1b6" name="Hail Mary Pass" hidden="false" collective="false" import="true" targetId="12a1-0e6d-edcb-0f8a" type="selectionEntry"/>
-        <entryLink id="ef1c-9a8e-d62d-a8d8" name="Leader" hidden="false" collective="false" import="true" targetId="5d92-bca6-7d6b-03cd" type="selectionEntry"/>
-        <entryLink id="8d3c-c3d7-869e-d650" name="Nerves of Steel" hidden="false" collective="false" import="true" targetId="5278-4a58-436e-f886" type="selectionEntry"/>
-        <entryLink id="6a9f-16ca-5a3d-94c8" name="Pass" hidden="false" collective="false" import="true" targetId="cfde-f0d4-4609-cd57" type="selectionEntry"/>
-        <entryLink id="9b60-6586-ce34-79a5" name="Safe Pass" hidden="false" collective="false" import="true" targetId="64da-eb16-90a8-7fde" type="selectionEntry"/>
-        <entryLink id="a270-d473-5928-6dbc" name="Cannoneer" hidden="false" collective="false" import="true" targetId="5c4d-cb75-ab15-ad49" type="selectionEntry"/>
-        <entryLink id="7981-c742-eeed-6ba6" name="Cloud Burster" hidden="false" collective="false" import="true" targetId="b95c-f05a-93f8-edd8" type="selectionEntry"/>
-        <entryLink id="6913-dff9-82cb-045e" name="Fumblerooskie" hidden="false" collective="false" import="true" targetId="b5e6-5b6a-02b5-5e27" type="selectionEntry"/>
-        <entryLink id="fc1f-f443-dae9-d9fb" name="On the Ball" hidden="false" collective="false" import="true" targetId="381c-5cad-621e-8e55" type="selectionEntry"/>
-        <entryLink id="31ba-20b0-649a-60b1" name="Running Pass" hidden="false" collective="false" import="true" targetId="b202-6647-1ae5-3c64" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="b7b3-01d4-bb75-9824" name="[G]eneral" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="1f55-02cd-f9c1-26b7" name="Block" hidden="false" collective="false" import="true" targetId="6c6d-47aa-0976-fce0" type="selectionEntry"/>
-        <entryLink id="bfbf-6d7d-00d5-6631" name="Dauntless" hidden="false" collective="false" import="true" targetId="2e36-5cc6-094e-7cd8" type="selectionEntry"/>
-        <entryLink id="2b7b-ed58-d8f9-e0fe" name="Dirty Player (+1)" hidden="false" collective="false" import="true" targetId="7fa2-3bc2-cc79-aeb1" type="selectionEntry"/>
-        <entryLink id="8815-d7f8-4b70-59bd" name="Fend" hidden="false" collective="false" import="true" targetId="7c48-9997-5ed9-d1f1" type="selectionEntry"/>
-        <entryLink id="b1a9-4951-7ba4-6002" name="Frenzy" hidden="false" collective="false" import="true" targetId="7e98-5279-b39e-1d73" type="selectionEntry"/>
-        <entryLink id="514e-d231-a762-556a" name="Kick" hidden="false" collective="false" import="true" targetId="e997-6798-c53e-55ad" type="selectionEntry"/>
-        <entryLink id="0e6b-a156-4ed5-89a4" name="Pro" hidden="false" collective="false" import="true" targetId="9f99-32a4-cfb9-3f93" type="selectionEntry"/>
-        <entryLink id="e0c8-17e2-dcd5-2b09" name="Shadowing" hidden="false" collective="false" import="true" targetId="be32-bc2b-49b7-1c0e" type="selectionEntry"/>
-        <entryLink id="8d6d-2b7c-dc3d-6818" name="Strip Ball" hidden="false" collective="false" import="true" targetId="9b6f-3ef9-1fbc-a48f" type="selectionEntry"/>
-        <entryLink id="43b5-c17e-c8bf-7d1a" name="Sure Hands" hidden="false" collective="false" import="true" targetId="c1cb-44a9-a187-89a1" type="selectionEntry"/>
-        <entryLink id="9496-e12d-5e4e-0404" name="Tackle" hidden="false" collective="false" import="true" targetId="95a9-67ee-0356-2dba" type="selectionEntry"/>
-        <entryLink id="03f4-ad71-cad6-b46f" name="Wrestle" hidden="false" collective="false" import="true" targetId="9a16-b887-4ba8-15c6" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup id="d592-2341-7fef-99c3" name="[M]utations" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="84db-9efe-56e0-66f6" name="Big Hand" hidden="false" collective="false" import="true" targetId="3b20-7735-aaf0-700c" type="selectionEntry"/>
@@ -4275,53 +4605,19 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <entryLink id="dcac-ca64-9b01-e918" name="Iron Hard Skin" hidden="false" collective="false" import="true" targetId="f32f-8e0b-95fc-1ece" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ca5f-4edf-26a2-ae0f" name="[S]trength" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="23f2-0e77-b5b6-af7c" name="Break Tackle" hidden="false" collective="false" import="true" targetId="0ece-9309-c7da-d7a4" type="selectionEntry"/>
-        <entryLink id="d35c-3575-6a19-e846" name="Grab" hidden="false" collective="false" import="true" targetId="1dce-1f4d-e2b8-8e2f" type="selectionEntry"/>
-        <entryLink id="6e4f-7cd9-be84-1abe" name="Guard" hidden="false" collective="false" import="true" targetId="87dc-1360-433d-baed" type="selectionEntry"/>
-        <entryLink id="d6bb-1861-90ed-40b6" name="Juggernaut" hidden="false" collective="false" import="true" targetId="5b4b-d544-c4b1-e5d1" type="selectionEntry"/>
-        <entryLink id="e06e-be8b-8747-9ce0" name="Mighty Blow (+1)" hidden="false" collective="false" import="true" targetId="b6ac-e2c8-e0d7-e092" type="selectionEntry"/>
-        <entryLink id="ff05-aba4-18d8-73d7" name="Multiple Block" hidden="false" collective="false" import="true" targetId="f2a0-5f3b-f43e-13fa" type="selectionEntry"/>
-        <entryLink id="7ffa-f0e1-09a7-273f" name="Stand Firm" hidden="false" collective="false" import="true" targetId="6036-f009-d354-0a40" type="selectionEntry"/>
-        <entryLink id="196d-addf-c407-d7a5" name="Strong Arm" hidden="false" collective="false" import="true" targetId="828c-bd4a-fd63-8828" type="selectionEntry"/>
-        <entryLink id="f2f3-efe7-5ba5-ae26" name="Thick Skull" hidden="false" collective="false" import="true" targetId="9bbd-7844-16a2-c9fe" type="selectionEntry"/>
-        <entryLink id="0957-b547-df4b-ddcb" name="Arm Bar" hidden="false" collective="false" import="true" targetId="68a7-5f56-92ba-c718" type="selectionEntry"/>
-        <entryLink id="63f7-f606-ff09-726b" name="Brawler" hidden="false" collective="false" import="true" targetId="5fd2-79a1-26f5-bf4d" type="selectionEntry"/>
-        <entryLink id="f1ab-f4be-964f-4751" name="Pile Driver" hidden="false" collective="false" import="true" targetId="de4d-0c5e-4bb4-7a67" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="af1c-7c5d-d05e-7031" name="[A]gility" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="8851-f8a8-ec36-ea32" name="Catch" hidden="false" collective="false" import="true" targetId="8c7a-5e97-01bc-a590" type="selectionEntry"/>
-        <entryLink id="0650-9157-f779-4649" name="Diving Catch" hidden="false" collective="false" import="true" targetId="c329-629e-ecc0-713b" type="selectionEntry"/>
-        <entryLink id="8758-092b-a03f-e154" name="Diving Tackle" hidden="false" collective="false" import="true" targetId="f07b-09f1-9f88-ae6b" type="selectionEntry"/>
-        <entryLink id="6f57-2d80-c0cb-25e2" name="Dodge" hidden="false" collective="false" import="true" targetId="30df-c110-f163-220c" type="selectionEntry"/>
-        <entryLink id="5697-15ed-df3e-bfcf" name="Defensive" hidden="false" collective="false" import="true" targetId="2efa-ed98-bd7d-6ff1" type="selectionEntry"/>
-        <entryLink id="d8ef-6899-33ee-de7e" name="Jump Up" hidden="false" collective="false" import="true" targetId="bd4c-dac9-e7d1-f47b" type="selectionEntry"/>
-        <entryLink id="d7c8-cd8a-240e-e87b" name="Leap" hidden="false" collective="false" import="true" targetId="851c-f5dc-38d9-d2e5" type="selectionEntry"/>
-        <entryLink id="079e-d36b-9133-e657" name="Side Step" hidden="false" collective="false" import="true" targetId="0aa2-ed3d-a7a8-89b4" type="selectionEntry"/>
-        <entryLink id="b675-c940-1255-7b2a" name="Sneaky Git" hidden="false" collective="false" import="true" targetId="6685-b4e5-531d-e9d7" type="selectionEntry"/>
-        <entryLink id="4635-a4e3-9d19-53af" name="Sprint" hidden="false" collective="false" import="true" targetId="4ede-2f80-ca60-b608" type="selectionEntry"/>
-        <entryLink id="bc36-8398-6828-6118" name="Sure Feet" hidden="false" collective="false" import="true" targetId="286b-137e-d683-c2a3" type="selectionEntry"/>
-        <entryLink id="66ca-c3ac-4aed-f2ba" name="Safe Pair of Hands" hidden="false" collective="false" import="true" targetId="d44d-4a69-ca9f-ef4c" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup id="9415-5e37-1db4-eda2" name="[Advancements]" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="increment" field="30d1-ec3a-cff9-f4ca" value="1.0">
+          <repeats>
+            <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="069c-526e-7481-6bb7" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d1-ec3a-cff9-f4ca" type="max"/>
+      </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="936c-0b18-3e04-d4f3" name="1st Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="936c-0b18-3e04-d4f3" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <selectionEntryGroup id="936c-0b18-3e04-d4f3" name="1st Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4edc-ec0a-99b2-12cd" type="max"/>
           </constraints>
@@ -4331,7 +4627,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="6c0f-1879-c9ff-2642" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-3.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="3.0"/>
               </costs>
             </entryLink>
             <entryLink id="056b-82a9-022d-153f" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -4339,7 +4635,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="e8d0-d94c-0791-1f28" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-6.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
               </costs>
             </entryLink>
             <entryLink id="04a0-d667-8818-3ce9" name="Chosen Primary Skill" hidden="true" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -4347,7 +4643,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="6ea8-35db-47f4-bdde" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-6.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
               </costs>
             </entryLink>
             <entryLink id="b3d5-8eeb-9d70-0d91" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -4355,7 +4651,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="e54b-4b3f-8697-c8b7" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-12.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12.0"/>
               </costs>
             </entryLink>
             <entryLink id="11d5-6edc-4858-b536" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -4363,7 +4659,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="28cb-d69d-e0f6-0bd0" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-18.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="18.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -4371,21 +4667,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <selectionEntryGroup id="1183-f5e2-23fc-30ae" name="2nd Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dff-4e96-3876-0daa" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="39e2-ec20-0c67-eba6" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dff-4e96-3876-0daa" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -4397,7 +4681,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="c1dd-8398-5940-e1b4" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-4.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="4.0"/>
               </costs>
             </entryLink>
             <entryLink id="ff60-fee4-6976-7547" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -4405,7 +4689,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="3b27-08ce-3409-112a" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-8.0"/>
+                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="8.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8.0"/>
               </costs>
             </entryLink>
             <entryLink id="c583-d5a0-89d1-1b10" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -4413,7 +4698,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="a04f-ad74-e2b2-5256" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-8.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8.0"/>
               </costs>
             </entryLink>
             <entryLink id="b1c7-d0ba-886c-6276" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -4421,7 +4706,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="9a0c-44c9-ca6b-5fda" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-14.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="14.0"/>
               </costs>
             </entryLink>
             <entryLink id="be86-454a-174b-b7c8" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -4429,7 +4714,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="9203-3f3e-148b-7e06" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-20.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -4437,21 +4722,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <selectionEntryGroup id="1a72-93b6-fff9-427f" name="3rd Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="39e2-ec20-0c67-eba6" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b74c-721d-73af-2385" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -4463,7 +4736,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="f8e4-73d1-5f32-dbba" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-6.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
               </costs>
             </entryLink>
             <entryLink id="d9de-6211-cc14-7981" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -4471,7 +4744,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="7474-b629-cb01-f240" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-12.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12.0"/>
               </costs>
             </entryLink>
             <entryLink id="c6dc-10dd-3e8e-7f35" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -4479,7 +4752,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="698f-9f90-aa62-39e6" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-12.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12.0"/>
               </costs>
             </entryLink>
             <entryLink id="8fab-ac68-ad30-6dd6" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -4487,7 +4760,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="ddea-a754-d946-8a14" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-18.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="18.0"/>
               </costs>
             </entryLink>
             <entryLink id="3fb7-4b6e-09ce-9243" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -4495,7 +4768,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="afe0-f22d-9265-3247" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-24.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="24.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -4508,14 +4781,6 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b74c-721d-73af-2385" type="equalTo"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="39e2-ec20-0c67-eba6" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -4529,7 +4794,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="d096-c0c2-1023-7f24" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-8.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8.0"/>
               </costs>
             </entryLink>
             <entryLink id="18c1-6583-d678-5acd" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -4537,7 +4802,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="f929-5c53-71af-7e71" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-16.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="16.0"/>
               </costs>
             </entryLink>
             <entryLink id="8278-f3f3-5dec-9dc1" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -4545,7 +4810,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="bf8c-0047-2b82-a746" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-16.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="16.0"/>
               </costs>
             </entryLink>
             <entryLink id="d547-d52a-6536-edab" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -4553,7 +4818,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="3677-554d-e328-16ec" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-22.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="22.0"/>
               </costs>
             </entryLink>
             <entryLink id="7e8e-8946-d776-da91" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -4561,7 +4826,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="9092-269f-1b97-6e5a" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-28.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="28.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -4569,21 +4834,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <selectionEntryGroup id="f9c8-09dd-949a-ca2f" name="5th Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="39e2-ec20-0c67-eba6" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -4595,7 +4848,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="496c-2791-72ad-f736" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-10.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="fc7b-30a5-7d1e-f26e" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -4603,7 +4856,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="9b4d-a52c-2dad-7fec" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-20.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20.0"/>
               </costs>
             </entryLink>
             <entryLink id="3f7b-e129-9044-10de" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -4611,7 +4864,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="282c-89d2-26c6-820c" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-20.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20.0"/>
               </costs>
             </entryLink>
             <entryLink id="7067-7115-9ccf-cfbe" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -4619,7 +4872,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="4444-75fd-7e67-cdfb" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-26.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="26.0"/>
               </costs>
             </entryLink>
             <entryLink id="dcb6-cebe-9847-8145" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -4627,7 +4880,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="58bd-a5a6-1e1f-d410" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-32.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="32.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -4635,21 +4888,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <selectionEntryGroup id="de82-8b7a-f9f2-fbfd" name="6th Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="39e2-ec20-0c67-eba6" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="89d0-343a-ea42-482d" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -4661,7 +4902,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="9beb-d170-9d40-5277" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-15.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="15.0"/>
               </costs>
             </entryLink>
             <entryLink id="6b3c-167b-d7cd-b3da" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -4669,7 +4910,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="4555-3ad2-469f-d2dc" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-30.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="30.0"/>
               </costs>
             </entryLink>
             <entryLink id="7316-2557-e233-829d" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -4677,7 +4918,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="0a1e-f1b7-97b2-e1ea" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-30.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="30.0"/>
               </costs>
             </entryLink>
             <entryLink id="237a-2bc7-b03b-423b" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -4685,7 +4926,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="df1a-613f-7e6a-2d47" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-40.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="40.0"/>
               </costs>
             </entryLink>
             <entryLink id="5c3d-9e29-d4aa-10fa" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -4693,78 +4934,8 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <categoryLink id="039c-178b-e6cd-bb77" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="-50.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="50.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c8e5-9e35-5408-067a" name="Secondary Skills" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="2797-54a4-a56e-0337" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2797-54a4-a56e-0337" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8503-9960-a6d9-7c00" name="[A]gility" hidden="true" collective="false" import="true" targetId="af1c-7c5d-d05e-7031" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edd8-0a01-59d7-246f" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="76b5-a102-719e-8bce" name="[G]eneral" hidden="true" collective="false" import="true" targetId="b7b3-01d4-bb75-9824" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f3a-b1b0-0640-ced0" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="eea3-340d-d442-ac9c" name="[S]trength" hidden="true" collective="false" import="true" targetId="ca5f-4edf-26a2-ae0f" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea39-19c7-b415-15c2" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="7582-1ab1-f188-db64" name="[P]asssing" hidden="true" collective="false" import="true" targetId="be9b-77c1-0633-79fc" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6bb7-ded1-d8cb-cdff" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="1780-4523-ab46-212a" name="[M]utations" hidden="true" collective="false" import="true" targetId="d592-2341-7fef-99c3" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8901-6938-5c4d-1dc5" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4780,9 +4951,15 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00a2-6ca0-31c0-e89e" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="increment" field="0bb7-1fd8-088d-cb14" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00a2-6ca0-31c0-e89e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afab-2f7a-39b5-f9c2" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb7-1fd8-088d-cb14" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="681b-ac10-e3fb-8d53" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry"/>
@@ -4793,80 +4970,108 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="8898-9783-5ba0-2c3a" name="Primary Skills" hidden="true" collective="false" import="true" targetId="275f-3411-7877-45ac" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="increment" field="f2b1-aca6-27dd-acb9" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2b1-aca6-27dd-acb9" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="275f-3411-7877-45ac" name="Primary Skills" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="f823-03c1-621f-a6a8" name="[A]gility" hidden="true" collective="false" import="true" targetId="af1c-7c5d-d05e-7031" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
+    <selectionEntryGroup id="968e-d5f0-3736-bf3e" name="Primary Skills" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d60-e5f9-4153-d83a" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" type="atLeast"/>
               </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="5b50-9eaa-31d0-7540" name="[G]eneral" hidden="true" collective="false" import="true" targetId="b7b3-01d4-bb75-9824" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="00c8-2374-951a-570d" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="af24-1ac7-b6b9-82da" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00c8-2374-951a-570d" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af24-1ac7-b6b9-82da" type="min"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d785-45e4-f9a9-ba02" name="Secondary Skills" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="increment" field="2151-cf0d-f6a2-05f6" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b35c-efb9-6a1a-36c8" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" type="atLeast"/>
               </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="5c6b-9b0c-b5bb-2e16" name="[S]trength" hidden="true" collective="false" import="true" targetId="ca5f-4edf-26a2-ae0f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="063f-34ff-5c7f-e867" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="b570-e5cb-428c-77f6" name="[P]asssing" hidden="true" collective="false" import="true" targetId="be9b-77c1-0633-79fc" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8349-28a0-33d5-03b4" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="fb1a-3274-fab1-97a4" name="[M]utations" hidden="true" collective="false" import="true" targetId="d592-2341-7fef-99c3" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6f03-4133-b45c-b194" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="a9dc-ca66-62a5-c521" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9dc-ca66-62a5-c521" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2151-cf0d-f6a2-05f6" type="min"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2fc0-99b0-a08c-cf06" name="Favored of..." publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775b-4cfb-04f6-f086" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="a222-146e-9255-c5be" name="Chaos Undevided" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2d67-6981-e1c8-ce24" name="Khorne" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="91d0-ef45-11c9-35c0" name="Nurgle" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5483-7bc9-a95d-186d" name="Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="77fe-fe70-db29-6450" name="Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -5127,7 +5332,7 @@ Additionally, if this player is Prone when activated, they may attempt to Jump U
     <rule id="08e2-b983-3d58-c50b" name="Right Stuff" publicationId="46da-ba61-6439-83e5" page="86" hidden="false">
       <description>If this player also has a Strength characteristic of 3 or less, they can be thrown by a team-mate with the Throw Team-mate skill, as described on page 52.</description>
     </rule>
-    <rule id="e75c-91e8-51f1-4837" name="Sidestep" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
+    <rule id="e75c-91e8-51f1-4837" name="Side Step" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
       <description>If this player is pushed back for any reason, they are not moved into a square chosen by the opposing coach. Instead you may choose any unoccupied square adjacent to this player. This player is pushed back into that square instead. If there are no unoccupied squares adjacent to this player, this Skill cannot be used.</description>
     </rule>
     <rule id="eae2-bc9d-032e-29e0" name="Safe Pass" publicationId="46da-ba61-6439-83e5" page="79" hidden="false">
@@ -5390,6 +5595,62 @@ If you declared that this player would perform an action which can only be perfo
     </rule>
     <rule id="e99d-8433-05f4-f4af" name="Loner (5+)" publicationId="46da-ba61-6439-83e5" page="85" hidden="false">
       <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.</description>
+    </rule>
+    <rule id="3a29-341e-ac3c-2595" name="Low Cost Linemen" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
+      <description>Teams with this special rule are not very particular about
+the Linemen they hire. To make up for this, they don’t
+usually bother to pay them:
+
+• In league play (but not in exhibition play), when
+calculating the Current Value of any permanently hired
+Lineman players on a team with this special rule, the
+Hiring Fee of that player is not included.</description>
+    </rule>
+    <rule id="54eb-1089-ea5c-2824" name="Bribery and Corruption" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
+      <description>It takes a strong-willed referee indeed to risk making
+an enemy of a team so renowned for reacting… poorly
+towards any official that would rebuke its behaviour:
+
+• Once per game, when rolling on the Argue the Call
+table, you may re-roll a roll of a natural 1.
+
+In addition, a team with this special rule can
+purchase certain Inducements for a reduced price, as
+noted in the description of that Inducement.</description>
+    </rule>
+    <rule id="bbef-f04a-7cfe-0271" name="Masters of Undeath" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
+      <description>The Head Coach of this team is replaced by a
+Necromancer. Once per game, they can ‘Raise the Dead’:
+
+• If a player on the opposing team with a Strength
+characteristic of 4 or less and that does not have the
+Regeneration or Stunty traits suffers a Casualty result
+of 15-16, DEAD, and if they cannot be saved by an
+apothecary, a new rookie Zombie Lineman player can
+be placed immediately in the Reserves box of this
+team’s dugout. Note that this may cause the team
+to have more than 16 players for the remainder of
+the game.
+
+• During Step 4 of the post-game sequence, this player
+may be permanently hired for free if the team has
+fewer than 16 players on its Team Draft list, otherwise
+it will be lost. The player’s full value still counts towards
+the Team Value.
+
+Additionally, just like the Head Coach of any other
+team, a Necromancer can Argue the Call when one of
+their players is Sent-off for committing a Foul, as long as
+they haven’t been sent off themselves.</description>
+    </rule>
+    <rule id="94c9-1b4e-9077-0316" name="Loner (3+)" publicationId="46da-ba61-6439-83e5" page="85" hidden="false">
+      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.</description>
+    </rule>
+    <rule id="85fb-2a18-64bd-7492" name="Mighty Blow (+2)" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
+      <description>When an opposition player is Knocked Down as the result of a Block action performed by this player (on its own or as part of a Blitz action), you may modify either the Armour roll or Injury roll by the amount shown in brackets. This modifier may be applied after the roll has been made. This Skill cannot be used with the Stab or Chainsaw traits.</description>
+    </rule>
+    <rule id="01ba-b7db-48f2-bdb8" name="Dirty Player (+2)" publicationId="46da-ba61-6439-83e5" page="76" hidden="false">
+      <description>When this player commits a Foul action, either the Armour roll or Injury roll made against the victim may be modified by the amount shown in brackets. This modifier may be applied after the roll has been made.</description>
     </rule>
   </sharedRules>
 </gameSystem>
