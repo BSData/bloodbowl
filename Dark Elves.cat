@@ -84,38 +84,8 @@
         <categoryLink id="62ac-59dd-ff37-3696" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b269-f463-a324-6987" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="59ca-c825-50db-9de5" name="Star Players" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="fce2-b70a-7a2a-a351" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cc1-deb3-a4ce-8ad1" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b57-c2fd-9678-f69c" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce2-b70a-7a2a-a351" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="10ee-e071-0dfb-9845" name="Eldril Sidewinder" hidden="false" collective="false" import="true" targetId="fa76-fb40-58b8-c58a" type="selectionEntry"/>
-            <entryLink id="3ab9-504a-233b-7f45" name="Gloriel Summerbloom" hidden="false" collective="false" import="true" targetId="1628-2c9a-f0e3-1a63" type="selectionEntry"/>
-            <entryLink id="05c2-6d31-8766-2f3c" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="7cc1-deb3-a4ce-8ad1" type="selectionEntry"/>
-            <entryLink id="a227-fc4c-96b1-0cbc" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="feb2-778e-9d5a-6f6d" type="selectionEntry"/>
-            <entryLink id="b321-6a61-a9f1-5a67" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="c177-8048-501c-9388" type="selectionEntry"/>
-            <entryLink id="3c8a-e18a-98dc-29bb" name="Roxanna Darknail" hidden="false" collective="false" import="true" targetId="5ea7-7a54-0612-3221" type="selectionEntry"/>
-            <entryLink id="e330-fd85-c0f3-b66a" name="The Swift Twins" hidden="false" collective="false" import="true" targetId="7b57-c2fd-9678-f69c" type="selectionEntry"/>
-            <entryLink id="b377-0d70-2d18-3777" name="Willow Rosebark" hidden="false" collective="false" import="true" targetId="5f78-0b48-30c3-5fc6" type="selectionEntry"/>
-            <entryLink id="8877-e582-cf2d-50a7" name="Zolcath the Zoat" hidden="false" collective="false" import="true" targetId="42a5-cc9c-244e-84eb" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </entryLink>
+    <entryLink id="b269-f463-a324-6987" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry"/>
+    <entryLink id="6626-304c-c673-c8b3" name="Star Players" hidden="false" collective="false" import="true" targetId="78e4-7f45-3449-d00b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="84ca-d44e-d1ed-7f68" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
