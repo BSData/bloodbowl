@@ -84,8 +84,6 @@
         <categoryLink id="62ac-59dd-ff37-3696" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b269-f463-a324-6987" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry"/>
-    <entryLink id="6626-304c-c673-c8b3" name="Star Players" hidden="false" collective="false" import="true" targetId="78e4-7f45-3449-d00b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="84ca-d44e-d1ed-7f68" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -118,6 +116,11 @@
             <entryLink id="84ae-326d-95f5-9379" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
             <entryLink id="2e37-e410-32e0-1af7" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
             <entryLink id="f62b-dd7d-7a09-c8aa" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+            <entryLink id="6409-0581-cb07-f455" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f575-bd56-35d5-54ff" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -178,6 +181,14 @@
         <categoryLink id="9570-f7cd-ac32-6daa" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="b7af-c568-42a1-8221" name="Assassins" hidden="false" targetId="9443-139e-f5aa-1fa0" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="7733-e99b-53f7-fe44" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="80f1-23aa-7cd9-b645" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="b5a8-40bc-b03e-387f" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="115000.0"/>
@@ -359,6 +370,22 @@
       <entryLinks>
         <entryLink id="efc9-0a6d-0db2-6fbf" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
         <entryLink id="d906-ccf1-32d7-eaaf" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
+        <entryLink id="26ad-6cc3-aad2-4a67" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="c1a5-1ca5-79de-419f" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="efc0-e26c-953e-50f5" name="[G]eneral" hidden="false" collective="false" import="true" targetId="784a-07da-18ad-da9e" type="selectionEntryGroup"/>
+                <entryLink id="5d3f-1727-17e5-4560" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+                <entryLink id="4f19-5ac2-996f-a811" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="c607-b51c-b54a-c476" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="d1cc-f0b9-be33-bd01" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -678,9 +705,9 @@
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="increment" field="90cd-0493-9510-60b5" value="1">
+                <modifier type="increment" field="d248-b05f-7c74-d8e3" value="1">
                   <repeats>
-                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce0f-f781-1e0e-74e5" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e61b-54a7-5c2b-96c5" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="decrement" field="29f4-c9a2-f996-4723" value="1">
@@ -700,7 +727,7 @@
                 </modifier>
                 <modifier type="decrement" field="90cd-0493-9510-60b5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0390-715c-b0f8-66f2" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0390-715c-b0f8-66f2" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="increment" field="c77a-49e5-750a-1adc" value="1">
@@ -710,7 +737,7 @@
                 </modifier>
                 <modifier type="increment" field="29f4-c9a2-f996-4723" value="1">
                   <repeats>
-                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a9f-2000-06f4-b041" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5477-7f75-60f5-b7e5" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="increment" field="120f-0f56-f450-196c" value="1">
@@ -718,14 +745,14 @@
                     <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a192-15aa-5823-f102" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="d248-b05f-7c74-d8e3" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e61b-54a7-5c2b-96c5" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
                 <modifier type="decrement" field="c77a-49e5-750a-1adc" value="1">
                   <repeats>
-                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca52-545a-6510-c3a9" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca52-545a-6510-c3a9" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="90cd-0493-9510-60b5" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce0f-f781-1e0e-74e5" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -740,6 +767,22 @@
       <entryLinks>
         <entryLink id="ffb4-fde4-8be9-f205" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
         <entryLink id="148f-9e7a-5090-9cac" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
+        <entryLink id="7043-d2e1-4254-93e4" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="06d3-7d73-e5ea-8ff1" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="0c94-6f0e-8da7-63ba" name="[G]eneral" hidden="false" collective="false" import="true" targetId="784a-07da-18ad-da9e" type="selectionEntryGroup"/>
+                <entryLink id="8562-8ae6-fe06-51ff" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="3f34-6e8e-aa0a-b776" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="8e39-68c5-5700-7d0b" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
+                <entryLink id="3e91-774e-f24d-90c0" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -924,6 +967,22 @@
       <entryLinks>
         <entryLink id="fda0-9d60-3055-771d" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
         <entryLink id="2e5c-999c-f6eb-944a" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
+        <entryLink id="79e8-a52b-2632-cd93" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="e5d9-2ac7-050d-1bc2" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="6045-634d-0aa4-6487" name="[G]eneral" hidden="false" collective="false" import="true" targetId="784a-07da-18ad-da9e" type="selectionEntryGroup"/>
+                <entryLink id="9401-1b14-4527-d117" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+                <entryLink id="b4d2-32db-9d18-5688" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="693f-66ab-391a-db6b" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="439f-9783-5f9e-8e66" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1105,6 +1164,21 @@
       <entryLinks>
         <entryLink id="023e-4413-65a1-abc9" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
         <entryLink id="48f7-e996-9c1b-17a5" name="[Injuries]" hidden="false" collective="false" import="true" targetId="84ca-d44e-d1ed-7f68" type="selectionEntry"/>
+        <entryLink id="1310-d676-ae83-7eb1" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="63f7-a327-f5bd-0089" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="a3a9-3419-980f-90ae" name="[G]eneral" hidden="false" collective="false" import="true" targetId="784a-07da-18ad-da9e" type="selectionEntryGroup"/>
+                <entryLink id="4be8-e560-51d8-25f3" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="72c9-f421-5768-d0b7" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink id="5342-80c6-72bf-2fe2" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1133,6 +1207,15 @@
         <categoryLink id="99c6-6540-9985-b89f" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="12e0-788b-b950-3dd2" name="Runners" hidden="false" targetId="0d00-5600-ce4c-85f0" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5744-513e-86fc-281a" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="769e-c17c-d376-7974" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="2581-194b-6f2e-4b12" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+            <entryLink id="2ace-4139-05a0-fef8" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="110000.0"/>
@@ -1162,6 +1245,14 @@
         <categoryLink id="9c08-c009-e0bb-68a5" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="a208-5888-859d-5a8e" name="Witch Elf" hidden="false" targetId="4c9f-2030-9f51-f546" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="4b95-e019-a9ff-67e4" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="84dc-56af-b7e9-d715" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="1d4e-13cd-a311-6939" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
@@ -1189,6 +1280,21 @@
         <categoryLink id="fc23-82a0-7696-a3cd" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="43d9-35e0-1640-d773" name="Blitzers" hidden="false" targetId="116a-79f5-a173-97d3" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5e71-e6cb-650a-7ebc" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="bdf0-cc03-8264-9799" name="Mercenary Skill" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e0a2-4428-45bd-4621" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7a7f-7b30-21ba-4c6f" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+                <entryLink id="0135-4b0c-cebc-821a" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
@@ -1215,6 +1321,14 @@
         <categoryLink id="3287-c384-4890-bad4" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="5168-2505-74c7-ea37" name="Linemen" hidden="false" targetId="d7b2-5660-1730-e379" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="76f7-cde4-a7cf-7eb2" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <entryLinks>
+            <entryLink id="1620-feb5-692d-a459" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="ca17-728d-7d91-00bb" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
@@ -1337,7 +1451,7 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
-    <profile id="cd71-40b3-68b8-ac77" name="Lineman" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+    <profile id="cd71-40b3-68b8-ac77" name="Lineman" publicationId="46da-ba61-6439-83e5" page="111" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
       <characteristics>
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
@@ -1350,7 +1464,7 @@
         <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">70,000</characteristic>
       </characteristics>
     </profile>
-    <profile id="9a84-4a20-7472-8c37" name="Blitzer" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+    <profile id="9a84-4a20-7472-8c37" name="Blitzer" publicationId="46da-ba61-6439-83e5" page="111" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
       <characteristics>
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">7</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
@@ -1363,7 +1477,7 @@
         <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">100,000</characteristic>
       </characteristics>
     </profile>
-    <profile id="89a3-7819-9c1b-be52" name="Assassin" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+    <profile id="89a3-7819-9c1b-be52" name="Assassin" publicationId="46da-ba61-6439-83e5" page="111" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
       <characteristics>
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">7</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
@@ -1376,7 +1490,7 @@
         <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">85,000</characteristic>
       </characteristics>
     </profile>
-    <profile id="99ad-d14d-4f38-b7e0" name="Runner" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+    <profile id="99ad-d14d-4f38-b7e0" name="Runner" publicationId="46da-ba61-6439-83e5" page="111" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
       <characteristics>
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">7</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>
@@ -1389,7 +1503,7 @@
         <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">80,000</characteristic>
       </characteristics>
     </profile>
-    <profile id="2fb0-190f-4a4f-3bdf" name="Witch Elf" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+    <profile id="2fb0-190f-4a4f-3bdf" name="Witch Elf" publicationId="46da-ba61-6439-83e5" page="111" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
       <characteristics>
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">7</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">3</characteristic>

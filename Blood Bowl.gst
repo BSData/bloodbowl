@@ -14,6 +14,7 @@
     <publication id="e3e7-0556-2064-f3a9" name="White Dwarf"/>
     <publication id="83ae-12ad-0093-c537" name="Spike#9"/>
     <publication id="4eb7-b2ac-e8c7-4380" name="Spike#10"/>
+    <publication id="440b-48bb-12dd-90e4" name="Teams of Legend"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -199,6 +200,8 @@
         <categoryLink id="f5b8-d647-eb18-a100" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0428-5dc9-bc8f-e479" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry"/>
+    <entryLink id="c2be-b9b4-e431-dfe7" name="Star Players" hidden="false" collective="false" import="true" targetId="78e4-7f45-3449-d00b" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3f7f-9d43-5a15-135d" name="Season Statistics" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -458,7 +461,6 @@
     <selectionEntry id="6ad8-6c09-41fd-425c" name="Inducements" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6ab2-112e-0e5c-12c9" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="990a-f7bc-0a87-9fc5" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="f809-1ab6-e080-cd50" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
@@ -3268,7 +3270,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="d283-b08d-bde3-5793" name="Mercenary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b0b-be70-ab30-dbe1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b0b-be70-ab30-dbe1" type="max"/>
       </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
@@ -3279,7 +3281,6 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="78e4-7f45-3449-d00b" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33f2-c8fa-d273-4ceb" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a8-5dbd-0b55-0c45" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="8030-2a5f-0131-1964" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
@@ -4665,6 +4666,11 @@ If the player was in possession of the ball when they were turned into a frog, i
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
