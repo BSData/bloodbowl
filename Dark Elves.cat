@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" name="Dark Elves Team" revision="29" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" name="Dark Elves Team" revision="29" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Thousands of years ago, the Dark Elves were little more than a small group within High Elf society who turned their back on traditional Elven ways. They eschewed nobility and grace for power and glory, believing their immortality marked them out as the most powerful of all the world’s races. Their thirst for conquest led to a bitter civil war that rocked the Elven kingdoms. Dark Elf teams exhibit similar strengths and weaknesses to their Elven cousins, but are distinctly more aggressive in their game. But sheer spite makes the Dark Elves enjoy the running game, particularly when a team includes a remarkable player like Jeremiah Kool. In fact, it is hard to believe that the Flashing Blade won’t be tempted out of retirement – if not by the Darkside Cowboys, then by some other team.</readme>
   <categoryEntries>
     <categoryEntry id="0d00-5600-ce4c-85f0" name="Runner" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -181,14 +181,17 @@
         <categoryLink id="9570-f7cd-ac32-6daa" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="b7af-c568-42a1-8221" name="Assassins" hidden="false" targetId="9443-139e-f5aa-1fa0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="7733-e99b-53f7-fe44" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4019-d913-4cf1-3015" name="Mercenary Skill" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4958-a3b5-57ad-7e6f" type="max"/>
+          </constraints>
           <entryLinks>
-            <entryLink id="80f1-23aa-7cd9-b645" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
-            <entryLink id="b5a8-40bc-b03e-387f" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+            <entryLink id="538a-7f6d-fb6b-fdd8" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="4888-ea36-5d68-ec7e" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
           </entryLinks>
-        </entryLink>
-      </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="115000.0"/>
@@ -1207,15 +1210,18 @@
         <categoryLink id="99c6-6540-9985-b89f" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="12e0-788b-b950-3dd2" name="Runners" hidden="false" targetId="0d00-5600-ce4c-85f0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5744-513e-86fc-281a" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bd23-36a6-76e5-8f5b" name="Mercenary Skill" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6075-f48a-928c-749b" type="max"/>
+          </constraints>
           <entryLinks>
-            <entryLink id="769e-c17c-d376-7974" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
-            <entryLink id="2581-194b-6f2e-4b12" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
-            <entryLink id="2ace-4139-05a0-fef8" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
+            <entryLink id="d38d-4cca-2faa-e2e9" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="7cf4-87b9-86a0-7932" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+            <entryLink id="449d-2f78-2af1-3b7f" name="[P]asssing" hidden="false" collective="false" import="true" targetId="6c1c-fbd7-3766-86ed" type="selectionEntryGroup"/>
           </entryLinks>
-        </entryLink>
-      </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="110000.0"/>
@@ -1246,12 +1252,7 @@
         <categoryLink id="a208-5888-859d-5a8e" name="Witch Elf" hidden="false" targetId="4c9f-2030-9f51-f546" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4b95-e019-a9ff-67e4" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
-          <entryLinks>
-            <entryLink id="84dc-56af-b7e9-d715" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
-            <entryLink id="1d4e-13cd-a311-6939" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink id="9f5b-753f-f4d4-b3f0" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1321,14 +1322,17 @@
         <categoryLink id="3287-c384-4890-bad4" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="5168-2505-74c7-ea37" name="Linemen" hidden="false" targetId="d7b2-5660-1730-e379" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="76f7-cde4-a7cf-7eb2" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8d68-1fcd-974a-dc99" name="Mercenary Skill" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e90-82ad-89c1-a8fa" type="max"/>
+          </constraints>
           <entryLinks>
-            <entryLink id="1620-feb5-692d-a459" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
-            <entryLink id="ca17-728d-7d91-00bb" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
+            <entryLink id="3263-aab1-8019-a3fd" name="[A]gility" hidden="false" collective="false" import="true" targetId="af44-80f4-eb96-80a8" type="selectionEntryGroup"/>
+            <entryLink id="8f72-ae86-b285-9cbe" name="[S]trength" hidden="false" collective="false" import="true" targetId="71f5-5a72-b9fd-fe80" type="selectionEntryGroup"/>
           </entryLinks>
-        </entryLink>
-      </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>

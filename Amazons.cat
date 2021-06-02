@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101 or @Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101 or @Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Long ago, driven by a desire for adventure, the Valkyries of the Norse settlement in Lustria sailed away from their men-folk and founded a colony deep within the estuary of the river Amaxon. Now these ferocious warriors have taken to the Blood Bowl pitch – and Nuffle save those who dare play against them!</readme>
   <categoryEntries>
     <categoryEntry id="cdc2-3210-37c1-9f82" name="Eagle Warrior Thrower" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -928,6 +928,20 @@
         <categoryLink id="fbb3-c68f-b7f3-6166" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="bb8f-5f1d-29e6-8a06" name="Tribal Linewoman" hidden="false" targetId="a77b-49b2-d233-e564" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="4ed8-7432-bc48-fb11" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3fd1-efd3-f0cd-2222" name="Mercenary Skill" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a21-c89e-5275-07bc" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b0e3-4500-9953-699f" name="[G]eneral" hidden="false" collective="false" import="true" targetId="df1f-93a5-7d50-716e" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
@@ -956,6 +970,21 @@
         <categoryLink id="c879-b341-e3a4-8b47" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="408b-e8f5-9efb-2a41" name="Piranha Warrior Catcher" hidden="false" targetId="badc-5cbf-1877-8a99" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="3fcc-f7d8-6a73-cb5a" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4244-9af5-ebfe-bbc6" name="Mercenary Skill" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97e7-2de5-4e23-07b0" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="216d-f4f3-a553-c73e" name="[G]eneral" hidden="false" collective="false" import="true" targetId="df1f-93a5-7d50-716e" type="selectionEntryGroup"/>
+                <entryLink id="0890-e59c-6e05-538e" name="[A]gility" hidden="false" collective="false" import="true" targetId="bfdf-d1e7-076c-4acf" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="105000.0"/>
@@ -984,13 +1013,21 @@
         <categoryLink id="1cb3-bd18-506d-58d1" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="4fcd-3f32-5a69-ea70" name="Koka Kalim Blitzer" hidden="false" targetId="8454-7cbf-42bf-e989" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5d14-e92a-6298-e0a9" name="Skills / Attributes" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb3e-43b8-6b72-a43f" type="max"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e433-a7ff-982a-e489" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="dcda-f9f4-172f-01c8" name="Mercenary Skill" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed39-ab4d-0544-3787" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ccdd-5f48-f16f-873b" name="[G]eneral" hidden="false" collective="false" import="true" targetId="df1f-93a5-7d50-716e" type="selectionEntryGroup"/>
+                <entryLink id="7f1d-e4f0-3b30-34b1" name="[S]trength" hidden="false" collective="false" import="true" targetId="3729-ee13-3912-2112" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
@@ -1019,6 +1056,21 @@
         <categoryLink id="2030-601d-d6ad-a27b" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
         <categoryLink id="f73b-ff10-8768-2638" name="Eagle Warrior Thrower" hidden="false" targetId="cdc2-3210-37c1-9f82" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="435b-0ac6-0095-324e" name="Mercenary Skill" hidden="false" collective="false" import="true" targetId="d283-b08d-bde3-5793" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c9b2-4818-0c74-d41f" name="Mercenary Skill" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3361-50a6-0b17-eaa6" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c302-ef93-5172-e94c" name="[G]eneral" hidden="false" collective="false" import="true" targetId="df1f-93a5-7d50-716e" type="selectionEntryGroup"/>
+                <entryLink id="ffdc-da32-9b80-2b33" name="[P]asssing" hidden="false" collective="false" import="true" targetId="a2b9-b8c2-76e0-dee8" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="105000.0"/>
