@@ -4672,6 +4672,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b38d-6ca8-2092-1c48" name="Favored of..." hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8f4-7acd-88ac-0b8f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c159-cf81-d4dc-06c8" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="1efe-81f9-ef51-5978" name="Favored of..." hidden="false" collective="false" import="true" targetId="2fc0-99b0-a08c-cf06" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -4911,22 +4920,6 @@ If the player was in possession of the ball when they were turned into a frog, i
         <entryLink id="47a7-8751-0d9a-3dfb" name="15. Under Scrutiny" hidden="false" collective="false" import="true" targetId="1361-955f-5351-526b" type="selectionEntry"/>
         <entryLink id="20ed-d86e-cf1b-cffa" name="16. Intensive Training" hidden="false" collective="false" import="true" targetId="ea75-06d9-b8a5-630c" type="selectionEntry"/>
         <entryLink id="81d4-2765-483f-ff99" name=" 1. Treacherous Trapdoor" hidden="false" collective="false" import="true" targetId="2f9b-c390-2cf8-33b5" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="d592-2341-7fef-99c3" name="[M]utations" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="84db-9efe-56e0-66f6" name="Big Hand" hidden="false" collective="false" import="true" targetId="3b20-7735-aaf0-700c" type="selectionEntry"/>
-        <entryLink id="527d-ca9e-dd94-05fd" name="Claws" hidden="false" collective="false" import="true" targetId="de8d-44b0-5a3a-5ff6" type="selectionEntry"/>
-        <entryLink id="3521-5734-a0ad-5d16" name="Disturbing Presence" hidden="false" collective="false" import="true" targetId="5e29-2928-7d20-99c3" type="selectionEntry"/>
-        <entryLink id="2d94-700f-1aa5-da02" name="Extra Arms" hidden="false" collective="false" import="true" targetId="0fca-f232-20db-5486" type="selectionEntry"/>
-        <entryLink id="e27e-3ac0-2b5a-fb1e" name="Foul Appearance" hidden="false" collective="false" import="true" targetId="bb9c-3ef4-f7a6-9234" type="selectionEntry"/>
-        <entryLink id="8f1c-a834-0379-649d" name="Horns" hidden="false" collective="false" import="true" targetId="d52e-e727-0ee4-ec85" type="selectionEntry"/>
-        <entryLink id="c2d0-ed9c-bdbe-3497" name="Prehensile Tail" hidden="false" collective="false" import="true" targetId="8e06-673b-e8a4-69b9" type="selectionEntry"/>
-        <entryLink id="67df-eaa7-4152-2057" name="Tentacles" hidden="false" collective="false" import="true" targetId="4ced-cc9b-1a5a-8874" type="selectionEntry"/>
-        <entryLink id="b5bf-abe3-df0b-579b" name="Two Heads" hidden="false" collective="false" import="true" targetId="ee92-fa03-9a46-0aa4" type="selectionEntry"/>
-        <entryLink id="79f2-ddb7-9b20-644c" name="Very Long Legs" hidden="false" collective="false" import="true" targetId="14f3-1ae1-2756-d310" type="selectionEntry"/>
-        <entryLink id="d93d-0d46-8810-ee71" name="Monstrous Mouth" hidden="false" collective="false" import="true" targetId="5c37-ab43-92e3-65bd" type="selectionEntry"/>
-        <entryLink id="dcac-ca64-9b01-e918" name="Iron Hard Skin" hidden="false" collective="false" import="true" targetId="f32f-8e0b-95fc-1ece" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9415-5e37-1db4-eda2" name="[Advancements]" hidden="false" collective="false" import="true">
@@ -5358,6 +5351,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntryGroup id="2fc0-99b0-a08c-cf06" name="Favored of..." publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775b-4cfb-04f6-f086" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d63-d215-1f36-6eee" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="a222-146e-9255-c5be" name="Chaos Undevided" hidden="false" collective="false" import="true" type="upgrade">
