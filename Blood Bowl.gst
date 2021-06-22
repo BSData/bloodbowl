@@ -5407,7 +5407,7 @@ If this player has another Skill that allows them to perform more than one Block
       <description>When you make an Armour roll against an opposition player that was Knocked Down as the result of a Block action performed by this player, a roll of 8+ before applying any modifiers will break their armour, regardless of their actual Armour Value.
 </description>
     </rule>
-    <rule id="6afb-681d-b05b-b2a4" name="Bombadier" publicationId="46da-ba61-6439-83e5" page="83" hidden="false">
+    <rule id="6afb-681d-b05b-b2a4" name="Bombardier" publicationId="46da-ba61-6439-83e5" page="83" hidden="false">
       <description>When activated and if they are Standing, this player can perform a ‘Throw Bomb’ Special action. This Special action is neither a Pass action nor a Throw Team-mate action, so does not prevent another player performing one of those actions during the same team turn. However, only a single player with this Trait may perform this Special action each team turn.
 
 A Bomb can be thrown and caught, and the throw interfered with, just like a ball, using the rules for Pass actions as described on page 48, with the following exceptions:
