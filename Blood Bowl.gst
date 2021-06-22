@@ -4680,6 +4680,11 @@ If the player was in possession of the ball when they were turned into a frog, i
       <entryLinks>
         <entryLink id="1efe-81f9-ef51-5978" name="Favored of..." hidden="false" collective="false" import="true" targetId="2fc0-99b0-a08c-cf06" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -4955,7 +4960,7 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
               </costs>
             </entryLink>
-            <entryLink id="04a0-d667-8818-3ce9" name="Chosen Primary Skill" hidden="true" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
+            <entryLink id="04a0-d667-8818-3ce9" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="6ea8-35db-47f4-bdde" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
@@ -5354,7 +5359,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d63-d215-1f36-6eee" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="a222-146e-9255-c5be" name="Chaos Undevided" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a222-146e-9255-c5be" name="Chaos Undivided" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
