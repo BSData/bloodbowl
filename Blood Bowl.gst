@@ -3,18 +3,9 @@
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
-    <publication id="a724-bc8d-f22a-3f61" name="Spike#1"/>
-    <publication id="9c52-d523-b87f-3a3f" name="Spike#2"/>
-    <publication id="8c2d-0b8c-484b-6789" name="Spike#3"/>
-    <publication id="8e57-7262-dd22-3f40" name="Spike#4"/>
-    <publication id="543f-97f6-179f-71ca" name="Spike#5"/>
-    <publication id="6ebf-d831-0023-9765" name="Spike#6"/>
-    <publication id="1843-a5de-a33a-9e1b" name="Spike#7"/>
-    <publication id="5528-2d35-d0f4-165f" name="Spike#8"/>
     <publication id="e3e7-0556-2064-f3a9" name="White Dwarf"/>
-    <publication id="83ae-12ad-0093-c537" name="Spike#9"/>
-    <publication id="4eb7-b2ac-e8c7-4380" name="Spike#10"/>
     <publication id="440b-48bb-12dd-90e4" name="Teams of Legend"/>
+    <publication id="9118-6c97-8006-93a4" name="Death Zone"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -185,11 +176,6 @@
         <categoryLink id="a421-0a58-8150-f7e3" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="be4d-0164-e4f4-b421" name="Kick-Off Tables" hidden="false" collective="false" import="true" targetId="3dec-7164-ad02-5eb7" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="3d90-9718-2a30-468b" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="07e8-7ace-43ce-272b" name="Legacy Rules" hidden="false" collective="false" import="true" targetId="e98a-3e24-65a5-e3b6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="30f9-7153-3134-8bcb" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
@@ -331,25 +317,20 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7c50-a743-1f7e-ce60" name="Necromancer" publicationId="8e57-7262-dd22-3f40" page="33" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="notInstanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="notInstanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="7c50-a743-1f7e-ce60" name="Masters of Undeath" publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b5c5-fbcc-6636-8e27" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2a-74c8-ec55-89c5" type="min"/>
       </constraints>
       <rules>
-        <rule id="a51b-4fc7-65b2-1b4e" name="Necromancer" publicationId="8e57-7262-dd22-3f40" page="33" hidden="false">
-          <description>The Necromancer allows the team once per a match to ‘Raise the Dead’. If a player on the opposing team with Strength 4 or less that does not have Regeneration or Stunty is killed during the match (after Apothecary attempt if any) then the team may immediately place a new Zombie player in the Reserves box of their dugout (this may cause a team to have more than 16 players for the remainder of the match). During Step 5 of Updating Your Team Roster, you may add this player to your roster for free if you have less than 16 players on the team. A free Zombie still counts at full value towards the team value.</description>
+        <rule id="a51b-4fc7-65b2-1b4e" name="Masters of Undeath" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
+          <description>The Head Coach of this team is replaced by a Necromancer. Once per game, they can ‘Raise the Dead’:
+
+• If a player on the opposing team with a Strength characteristic of 4 or less and that does not have the Regeneration or Stunty traits suffers a Casualty result of 15-16, DEAD, and if they cannot be saved by an apothecary, a new rookie Zombie Lineman player can be placed immediately in the Reserves box of this team’s dugout. Note that this may cause the team to have more than 16 players for the remainder of
+the game.
+• During Step 4 of the post-game sequence, this player may be permanently hired for free if the team has fewer than 16 players on its Team Draft list, otherwise it will be lost. The player’s full value still counts towards the Team Value.
+
+Additionally, just like the Head Coach of any other team, a Necromancer can Argue the Call when one of their players is Sent-off for committing a Foul, as long as they haven’t been sent off themselves.</description>
         </rule>
       </rules>
       <costs>
@@ -581,20 +562,13 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot (Legacy)" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011e-58d1-5860-31bf" type="max"/>
           </constraints>
           <rules>
-            <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="1843-a5de-a33a-9e1b" page="17" hidden="false">
-              <description>The mascot works as a bonus team re-roll (add the model to your team re-roll track along with the normal re-roll counter). However, to use the Mascot re-roll you must first roll a D6. On a roll of 4+, the re-roll can be used as normal. If the roll is 3 or less, the Mascot re-roll is lost for the half but you may use a normal team re-roll instead.</description>
+            <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
+              <description></description>
             </rule>
           </rules>
           <costs>
@@ -683,24 +657,13 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f096-dfb8-02a0-00d3" name="Cavorting Nurglings (Legacy)" publicationId="8c2d-0b8c-484b-6789" page="33" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="notInstanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <selectionEntry id="f096-dfb8-02a0-00d3" name="Cavorting Nurglings (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c70-c799-96c4-ebcc" type="max"/>
           </constraints>
           <rules>
-            <rule id="ebc0-978c-ff8e-4c06" name="Cavorting Nurglings" publicationId="8c2d-0b8c-484b-6789" page="33" hidden="false">
-              <description>A Nurgle team accompanied by a swarm of Cavorting Nurglings on the sidelines will automatically gain a +1 FAME modifier at the begining of the match. Note that this modifier may not take the team above +2 FAME.</description>
+            <rule id="ebc0-978c-ff8e-4c06" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
+              <description></description>
             </rule>
           </rules>
           <costs>
@@ -736,27 +699,13 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="605f-6880-28e7-5a8f" name="Halfling Hot Pot (Legacy)" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="notInstanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="notInstanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <selectionEntry id="605f-6880-28e7-5a8f" name="Halfling Hot Pot (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad57-1911-cdc0-48cd" type="max"/>
           </constraints>
           <rules>
-            <rule id="ef73-c35e-6e9f-4663" name="Halfling Hot Pot" publicationId="543f-97f6-179f-71ca" page="34" hidden="false">
-              <description>The Hot Pot may be used at the start of any of your turns, before any player performs an action. Choose a target square anywhere on the pitch, and roll a D6. On a 6, the shot is on target. On a 2-5, the shot is off target - roll for scatter and move the target square D3 squares in that direction. On a 1, however, something has gone horribly wrong and the Hot Pot has misfired in the team&apos;s Dugout - D3 randomly determined players in the Reserves box are immediately KO&apos;d and moved to the Knocked Out box.
-
-A player in the target square is automatically hit by the Hot Pot itself and knocked down. Make an armour roll (and possibly an injury roll as well) as if they player had been knocked down by a player with the Mighty Blow skill. Additionally, roll a D6 for each standing player adjacent to the target square. On a 4 or higher, the player has been hit by the stew that showers out of the Hot Pot and is placed prone. On a 3 or lower, the player manages to duck and avoid being hit. If a player on your team is placed prone by the shower of hot stew, then your team does not suffer a turnover unless the player was carrying the ball at the time. If a player on your team is knocked down by the Hot Pot itself, a turnover is caused.</description>
+            <rule id="ef73-c35e-6e9f-4663" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
+              <description></description>
             </rule>
           </rules>
           <costs>
@@ -765,26 +714,13 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="df62-7972-cbcb-b0f5" name="Bottles of Heady Brew (Legacy)" publicationId="543f-97f6-179f-71ca" page="34" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="notInstanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="notInstanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="notInstanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+        <selectionEntry id="df62-7972-cbcb-b0f5" name="Bottles of Heady Brew (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36bf-6195-ef50-afd4" type="max"/>
           </constraints>
           <rules>
-            <rule id="4c03-526b-c5fd-39ce" name="Bottles of Heady Brew" publicationId="543f-97f6-179f-71ca" page="34" hidden="false">
-              <description>At the start of a drive, after setting up but before the kick-off, the coach of the team with this inducement may randomly select D3 players with the Stunty skill currently on the pitch. For the remainder of the drive, those players gain the Dauntless, Frenzy, and Really Stupid skills.</description>
+            <rule id="4c03-526b-c5fd-39ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
+              <description></description>
             </rule>
           </rules>
           <costs>
@@ -793,7 +729,7 @@ A player in the target square is automatically hit by the Hot Pot itself and kno
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3ddb-3cf4-4367-e324" name="Riotous Rookies (Legacy)" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3ddb-3cf4-4367-e324" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -960,7 +896,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
             </rule>
           </rules>
           <selectionEntries>
-            <selectionEntry id="3777-317a-8160-a105" name="Hireling Sports-Wizard" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3777-317a-8160-a105" name="Hireling Sports-Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="192c-a611-7c2e-eaef" type="max"/>
               </constraints>
@@ -1037,39 +973,19 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f8bc-49d4-e9ac-445f" name="Chaos Sorcerer (Legacy)" publicationId="a724-bc8d-f22a-3f61" page="31" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="notInstanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="f8bc-49d4-e9ac-445f" name="Chaos Sorcerer (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b2e-77f8-5fd9-61cf" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8d76-64f2-2018-8529" name="Thunderbolt" publicationId="a724-bc8d-f22a-3f61" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="8d76-64f2-2018-8529" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended in a turnover. Pick a standing opposition player anywhere on the pitch, and roll a D6. If the score is 3 or higher, then the player has been hit by the thunderbolt. If the roll is a 1 or a 2, then the player manages to duck or dodge the attack. A player hit by the thunderbolt is knocked down and an armour roll must be made (and possibly an injury roll as well) as if hit by a player with the Mighty Blow skill.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
-                <profile id="70cd-a8cf-d031-eed5" name="Rampant Mutation" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="70cd-a8cf-d031-eed5" name="Rampant Mutation" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast at the start of any of your turns, before any player performs an action. Choose a player on your team and roll a D6. On a 2+, that player gains 2 mutations of your choice until the end of the drive. If the result is a 1 however, the player becomes a writhing mass of flesh as raw Chaos energy flows through them momentarily. The player gains Disturbing Presence until the end of your opponent&apos;s next turn, but the spell has no other effect.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1083,39 +999,19 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="30fd-5ad0-8271-ee90" name="Horticulturalist of Nurgle (Legacy)" publicationId="8c2d-0b8c-484b-6789" page="34" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="notInstanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="30fd-5ad0-8271-ee90" name="Horticulturalist of Nurgle (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8561-434c-2fad-4fd7" type="max"/>
               </constraints>
               <profiles>
-                <profile id="faa9-98c7-c0cb-d210" name="Strange Fauna" publicationId="8c2d-0b8c-484b-6789" page="34" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="faa9-98c7-c0cb-d210" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended in a turnover. Choose an empty target square anywhere on the pitch. Choose D3 opposition players within 2 squares of the target square, and roll a D6 for each to see if that player is hit. If the score is a 4 or higher, the player is unexpectedly attacked by daemonic carnivorous plants of prodigious size that erupt from the loamy earth before rapidly rotting way to nothing.The player is knocked down. If it is a 3 or less, the player manages to avoid the attacking plant life. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down as if they had been knocked down by a player with the Mighty Blow and Nurgle&apos;s Rot skills.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
-                <profile id="fda0-cfd8-8de5-270c" name="Vigorous Growth" publicationId="8c2d-0b8c-484b-6789" page="34" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="fda0-cfd8-8de5-270c" name="Vigorous Growth" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast at the start of any of your opponent&apos;s turns, before any player performs an action. For the duration of this turn, opposition players suffer a -2 modifier to dice rolls when making Go For It attempts, as the turf of the pitch erupts in unclean life. Note that this modifier applies alongside weather conditions or any other factors that may alter the outcome of a Go For It.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1129,40 +1025,19 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2802-0906-edd5-039e" name="Sports Necrotheurge (Legacy)" publicationId="8e57-7262-dd22-3f40" page="34" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="notInstanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="2802-0906-edd5-039e" name="Sports Necrotheurge (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bdc-c252-6009-96d6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6b71-790c-8623-fb1c" name="Vanhalables Dans Macabre" publicationId="8e57-7262-dd22-3f40" page="34" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="6b71-790c-8623-fb1c" name="Vanhalables Dans Macabre" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast at the start of any of your turns, before any player performs an action. Roll a D6. On a 3+, all Skeleton and Zombie players on the pitch gain +1MA, +1AG and +1AV until the start of your next turn.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
-                <profile id="cd04-4690-65d3-0d56" name="Incorporeal" publicationId="8e57-7262-dd22-3f40" page="34" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="cd04-4690-65d3-0d56" name="Incorporeal" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast at the start of any of your opponent&apos;s turns before any player performs an action. Target any opposition player. On a 3+, it becomes strangely incorporeal! The player gains the No Hands skill and will immediately drop the ball if it was carrying it, causing it to bounce once. Additionally, the player losses their tackle zones. Incorporeal lasts until the start of your opponent&apos;s next turn.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1176,38 +1051,19 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="be19-17d4-4196-b732" name="Slann Mage-Priest (Legacy)" publicationId="a724-bc8d-f22a-3f61" page="31" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="notInstanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="be19-17d4-4196-b732" name="Slann Mage-Priest (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="063b-0483-f5ec-2460" type="max"/>
               </constraints>
               <profiles>
-                <profile id="0fe5-21ad-31d9-8ff2" name="Reality Blinks" publicationId="a724-bc8d-f22a-3f61" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="0fe5-21ad-31d9-8ff2" name="Reality Blinks" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Choose two Standing players from your team that do not have the Loner skill and that are not in possession of the ball from amonst those on the pitch and roll a D6. If the score is 3 or higher, these two players immediately switch places. If it is 2 or lower, the players become slightly transparent as they waver between realities! Until the start of your next team turn, these two players lose their Tackle Zones and gain the No Hands skill.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
-                <profile id="ec95-6242-1aad-436f" name="Tectonic Shift" publicationId="1843-a5de-a33a-9e1b" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="ec95-6242-1aad-436f" name="Tectonic Shift" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Roll a D6. if the score is 3 or highter, the floor of the stadium begins to shift. Roll a D6; on a 1-2 the pitch tops towards your End Zone and on a 3-5 towards your opponent&apos;s. On a roll of 6, the pitch tips towards an End Zone or sideline of your choice. All players immediately slide one square in that direction, starting with the player furthest away (if there are several players on the same line of squares, you may choose the order in which they are moved). If any player leaves the pitch, resolve it as if they had been pushed into the crowd. If the ball carrier scores a touchdown as a result of this, count the touchdown as normal but only after all players have been moved and any crowd pushes resolved.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1221,38 +1077,19 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="78ad-f70c-5fd5-ac39" name="Firebelly (Legacy)" publicationId="5528-2d35-d0f4-165f" page="30" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="notInstanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="78ad-f70c-5fd5-ac39" name="Firebelly (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a67-aca5-7f7e-072c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="beae-6e3e-2399-23c4" name="Fireball" publicationId="5528-2d35-d0f4-165f" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="beae-6e3e-2399-23c4" name="Fireball" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast either at the start of any of your turns, before any player performs an action, or immediately after your turn has ended, even if it ended with a turnover. Choose a target square anywhere on the pitch. Roll a D6 for each standing player (from either team) that is either in the target square or a square adjacent to it. If the score is 4 or higher then the player has been hit by the fireball and is knocked down. If it is 3 or less the player manages to dodge the fireball&apos;s blast. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down, as if they had been knocked down by a player with the Mighty Blow skill. If a player on the moving team is knocked down by a fireball, then the moving team does not suffer a turnover unless the player was carrying the ball at the time.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
-                <profile id="cc8b-deff-797b-0502" name="Column of Fire" publicationId="5528-2d35-d0f4-165f" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="cc8b-deff-797b-0502" name="Column of Fire" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast this spell immediately after your turn has ended, even if it ended in a turnover. Choose any square that is adjacent to one of the sidelines to be the Column of Fire&apos;s starting point. The Column of Fire moves in a straight line from it&apos;s starting point directly towards the opposite sideline. Roll a D6 for each standing player (from either team) that occupies a square in the path of the Column of Fire. If the &quot;hit&quot; roll is a 4+ the player is Knocked Down. If it is a 3 or less, the player manages to duck and avoid the Column of Fire. Make an armour roll (and possibly an injury roll as well) for any player that is knocked down, as if they had been knocked down by a player with the Mighty Blow skill. If a player on the moving team is knocked down by a fireball, then the moving team does not suffer a turnover unless the player was carrying the ball at the time.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1266,38 +1103,19 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d057-add6-1c3e-2fcf" name="Night Goblin Sports Shaman (Legacy)" publicationId="4eb7-b2ac-e8c7-4380" page="32" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e98a-3e24-65a5-e3b6" type="lessThan"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="notInstanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="notInstanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="d057-add6-1c3e-2fcf" name="Night Goblin Sports Shaman (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f19c-dbd3-e98d-6808" type="max"/>
               </constraints>
               <profiles>
-                <profile id="25bc-ee05-72b8-fad1" name="Foot of Gork (or Mork)" publicationId="4eb7-b2ac-e8c7-4380" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="25bc-ee05-72b8-fad1" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast this spell immediately after your turn has ended, even if it ended with a turnover. Choose a target square anywhere on the pitch that is not occupied by a player. The Foot of Gork (or Mork) moves in a straight line from the target square for three squares towards your opponent’s End Zone. Roll one dice to hit each standing player (from either team) that occupies a square in the path of the Foot of Gork (or Mork). If the ‘to hit’ roll is a 3 or more then the player is Knocked Down. If it is a 2 or less, the player manages to duck and avoid the Foot of Gork (or Mork). Make an Armour roll (and possible Injury as well) for any player that is Knocked Down as if they had been Knocked Down by a player with the Mighty Blow skill. If a player on the moving team is Knocked Down by the Foot of Gork (or Mork) then the moving team does not suffer a turnover unless the player was carrying the ball at the time.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
-                <profile id="810a-ad62-7261-e7ec" name="Spore Cloud" publicationId="4eb7-b2ac-e8c7-4380" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+                <profile id="810a-ad62-7261-e7ec" name="Spore Cloud" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Cast this spell at the start of any of your opponent’s turns, before any player performs an action. Target any opposition player; on a 2+ that player gains both the Loner and Really Stupid skills. This lasts until the end of the drive.</characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1446,7 +1264,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6c6d-47aa-0976-fce0" name="Block" publicationId="543f-97f6-179f-71ca" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6c6d-47aa-0976-fce0" name="Block" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae0-9eb7-8b3f-3453" type="max"/>
       </constraints>
@@ -2249,32 +2067,32 @@ If the player was in possession of the ball when they were turned into a frog, i
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ff-7a0f-ed9d-c400" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="efe4-c7e0-c218-fd35" name="7. Primordial Rainforest Weather (2D6) (Legacy)" publicationId="1843-a5de-a33a-9e1b" page="18" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="efe4-c7e0-c218-fd35" name="Primordial Rainforest Weather (2D6) (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c3-b3fd-4aad-8287" type="max"/>
               </constraints>
               <profiles>
-                <profile id="bbba-02d3-fa43-6674" name="02 - Praise the Sun Gods" publicationId="1843-a5de-a33a-9e1b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="bbba-02d3-fa43-6674" name="02 - Praise the Sun Gods" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Players attempting to GFI will fail on a roll of 1-2. If a player fails a GFI roll and is Knocked Down, add +1 to the Armour roll. Players also find it harder to get motivated and get back on the pitch – apply a -1 modifier to all dice rolls when rolling to see if KO’d players recover.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="2638-bf9d-2d17-6970" name="03 - Heat Wave" publicationId="1843-a5de-a33a-9e1b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="2638-bf9d-2d17-6970" name="03 - Heat Wave" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Players attempting to GFI will fail on a roll of 1-2. Players also find it harder to get motivated and get back on the pitch – apply a -1 modifier to all dice rolls when rolling to see if KO’d players recover.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9da2-fb2d-7e26-1d40" name="04-10 - Nice" publicationId="1843-a5de-a33a-9e1b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="9da2-fb2d-7e26-1d40" name="04-10 - Nice" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s muggy and the mosquitos are out but otherwise it’s perfect Blood Bowl weather.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="3546-f9fb-fced-8f1d" name="12 - Tropical Monsoon" publicationId="1843-a5de-a33a-9e1b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="3546-f9fb-fced-8f1d" name="12 - Tropical Monsoon" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Sheets of rain pour through the tree canopy, creating a wall of water. The ground becomes boggy and visibility is severely reduced. While the monsoon persists, only Quick or Short Passes can be attempted and the amount of GFI attempts a player can make is reduced by 1 (to a minimum of 1).</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="74e1-b6c3-e673-27e3" name="11 - Jungle Showers" publicationId="1843-a5de-a33a-9e1b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="74e1-b6c3-e673-27e3" name="11 - Jungle Showers" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s raining those big fat jungle raindrops, making the ball slippery and difficult to hold. A -1 modifier applies to all Catch, Intercept, or Pick-up rolls.</characteristic>
                   </characteristics>
@@ -2286,32 +2104,32 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="585a-d1be-c7b8-e1a0" name="5. Winter Weather (2D6) (Legacy)" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="585a-d1be-c7b8-e1a0" name="Winter Weather (2D6) (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b54-0cb3-8852-c127" type="max"/>
               </constraints>
               <profiles>
-                <profile id="d9a2-67b6-92be-576a" name="12 - Blizzard" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="d9a2-67b6-92be-576a" name="12 - Blizzard" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Any player attempting to move an extra square (GFI) will slip and be Knocked Down on a roll of 1-2, and only Quick or Short Passes can be attempted.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="e20c-3602-c1d0-d2cd" name="11 - Heavy Snow" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="e20c-3602-c1d0-d2cd" name="11 - Heavy Snow" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Whenever a player makes a Blitz Action, their ST is reduced by 1 for the duration of that Action.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="2ed2-69aa-c14e-1465" name="04-10 - Brisk" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="2ed2-69aa-c14e-1465" name="04-10 - Brisk" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s rather chilly, but it is as close to perfect Blood Bowl weather as you can hope for at this time of year! This counts as a ‘Nice’ result for purposes of the Changing Weather result on the Kick-off table.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="1fb4-110c-94b4-bd4a" name="03 - Freezing" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="1fb4-110c-94b4-bd4a" name="03 - Freezing" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Whenever a player is Knocked Down, add 1 to the result of the Armour roll.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="bc56-22a7-ae19-f092" name="02 - Howling Winds" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="bc56-22a7-ae19-f092" name="02 - Howling Winds" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Any pass attempts have an additional -1 modifier. Each player rolls a D6 (re-rolling ties) – the wind is blowing down the pitch towards the losing player’s End Zone. Whenever the ball scatters for a kick-off or inaccurate pass, it will be blown down the pitch. Before making the Scatter roll, place the Throw-in template over the ball so that the 3-4 result is pointing in the same direction as the wind, then roll a D6 and move the ball one space in the corresponding direction. Repeat this a second time, then scatter the ball as normal.</characteristic>
                   </characteristics>
@@ -2323,32 +2141,32 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="79e1-3c68-5d8e-7537" name="6. Subterranean Conditions (2D6) (Legacy)" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="79e1-3c68-5d8e-7537" name="Subterranean Conditions (2D6) (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22a3-2e80-f94c-9960" type="max"/>
               </constraints>
               <profiles>
-                <profile id="bd52-8629-8ff0-5bed" name="04-10 - Nice Enough" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="bd52-8629-8ff0-5bed" name="04-10 - Nice Enough" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">You might be missing the light of the sun, but the conditions are as good as you could hope for. This counts as a &apos;Nice&apos; result for purposes of the Changing Weather result on the Kick-off table.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="a4c1-b599-7a53-93bf" name="11 - Thermal Geysers" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="a4c1-b599-7a53-93bf" name="11 - Thermal Geysers" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">If a player on your team is Knocked Down (not just placed Prone), roll a D6. On a roll of 1, they crack open a thermal geyser and are shot into the air. Scatter them D3 squares in a random direction (ignoring any squares they pass through). If they land in an occupied square, move them one more space in the direction of scatter until they land in an unoccupied square or leave the pitch. When making the Injury roll for a player who has been shot into the air, add 2 to the result.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="bcef-ceea-ec84-fc27" name="12 - Seismic Activity" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="bcef-ceea-ec84-fc27" name="12 - Seismic Activity" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Roll a D6 at the end of each turn, adding 1 to the result for each player on the pitch with a Strength 5 or more. If the result is 6 or more, rocks tumble down from up above. Each coach rolls a D6. The one who scores the lowest picks one of their players at random, that player is Knocked Down by a falling rock and the other coach makes an Injury roll for them. If both coaches roll the same, a random player on each team is struck by a falling rock!</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="48ae-da38-b57e-7ee1" name="03 - Gloomy" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="48ae-da38-b57e-7ee1" name="03 - Gloomy" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Long Passes and Long Bombs have an extra -1 modifier (making them -2 and -3 respectively). In addition, players attempting to Go For It for a second time during an Action (or third time, if they have the Sprint skill) will trip and be Knocked Down on a roll of 1 or 2 instead of just on a roll of a 1.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9b87-95ce-10fc-b1a5" name="02 - Bubbling Up From Below" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="9b87-95ce-10fc-b1a5" name="02 - Bubbling Up From Below" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">All players on the pitch subtract 1 from their MA, but can attempt to Go For It one more time when they move (three times, or four times if they have the Sprint skill).</characteristic>
                   </characteristics>
@@ -2360,32 +2178,32 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6a7d-2df0-8b8d-e8e8" name="4. Autumn Weather (2D6) (Legacy)" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6a7d-2df0-8b8d-e8e8" name="Autumn Weather (2D6) (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d775-f5ac-404b-a942" type="max"/>
               </constraints>
               <profiles>
-                <profile id="dbef-2dcb-1a29-f9c0" name="12 - Strong Winds" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="dbef-2dcb-1a29-f9c0" name="12 - Strong Winds" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Immediately roll on the Scatter template to determine the direction of the wind. During Kick-offs and Inaccurate Passes, the ball scatters D3 in this direction before normal Scatter rolls are made.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="ee9a-8206-9459-4751" name="11 - Pouring Rain" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="ee9a-8206-9459-4751" name="11 - Pouring Rain" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">A -1 modifier applies to all Catch, Intercept, or Pick-up rolls.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="0b0c-3784-ec70-3ea6" name="04-10 - Temperate" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="0b0c-3784-ec70-3ea6" name="04-10 - Temperate" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">It&apos;s not quite warm but then again, it&apos;s not quite cold - ideal Blood Bowl weather! This counds as a &apos;Nice&apos; result for purposes of the Chainging Weather result on the Kick-off table.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4efb-5c8f-00b9-f118" name="03 - Autumn Chill" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="4efb-5c8f-00b9-f118" name="03 - Autumn Chill" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Subtract 1 from the result of all dice rolls you make to see whether one of your players recovers from being KO&apos;d.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="2b91-674e-6bf5-c6e6" name="02 - Leaf-Strewn Pitch" publicationId="6ebf-d831-0023-9765" page="33" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="2b91-674e-6bf5-c6e6" name="02 - Leaf-Strewn Pitch" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Whenever a player is Knocked Down, subtract 1 from the result of the Armour roll.</characteristic>
                   </characteristics>
@@ -2397,32 +2215,32 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e2ba-0460-2d25-5955" name="2. Spring Weather (2D6) (Legacy)" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e2ba-0460-2d25-5955" name="Spring Weather (2D6) (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c04-42b0-4816-e952" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2736-a1e2-cae3-c2c5" name="12 - High Winds" publicationId="8e57-7262-dd22-3f40" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="2736-a1e2-cae3-c2c5" name="12 - High Winds" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Roll a D6 each time a player wishes to use a team re-roll.  On a 2+ they may use the team re-roll as normal.  On a 1, the original result stands without being re-rolled but the team re-roll is not lost and this does not count as the use of a team re-roll for this turn.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="9a08-35fb-d548-25e4" name="11 - Thick Fog" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="9a08-35fb-d548-25e4" name="11 - Thick Fog" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Players can only move a maximum of six squares, although they may still Go For It! after.  Only Quick and Short passes can be attempted.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="44db-d274-b578-6531" name="04-10 - Temperate" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="44db-d274-b578-6531" name="04-10 - Temperate" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">It&apos;s not quite warm but then again, it&apos;s not quite cold - ideal Blood Bowl weather! This counds as a &apos;Nice&apos; result for purposes of the Chainging Weather result on the Kick-off table.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="ee47-5209-02ba-9c00" name="03 - Blossoming Flowers" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="ee47-5209-02ba-9c00" name="03 - Blossoming Flowers" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Players cannot be sent off for fouling even if a double is rolled for the Armour roll or Injury roll.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="90b9-bc8a-2cfc-7d64" name="02 - Morning Dew" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="90b9-bc8a-2cfc-7d64" name="02 - Morning Dew" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Any player attempting to move an extra square when Going for it! will slip and be Knocked Down on a roll of 1-2. Additionally, a -1 modifier applies to all Pick-up rolls.</characteristic>
                   </characteristics>
@@ -2434,32 +2252,32 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6ede-7a02-2204-39c6" name="3. Summer Weather (2D6) (Legacy)" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6ede-7a02-2204-39c6" name="Summer Weather (2D6) (WIP)" publicationId="9118-6c97-8006-93a4" page="" hidden="true" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3502-7fcd-1113-c91b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b5a3-925c-a50c-2c17" name="12 - Monsoon" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="b5a3-925c-a50c-2c17" name="12 - Monsoon" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">A -1 modifier applies to all Catch, Intercept, or Pick-up rolls and the ball scatters one extra square in a random direction whenever it scatters.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="7fd3-49e6-2fad-873e" name="11 - Blinding Rays" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="7fd3-49e6-2fad-873e" name="11 - Blinding Rays" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Only Quick or Short Passes can be attempted and the blinding sunshine causes a -1 modifier on all Passing rolls.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="8dba-8b5a-a660-a236" name="04-10 - Nice" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="8dba-8b5a-a660-a236" name="04-10 - Nice" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Perfect Blood Bowl weather!</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="21e5-f5f6-2f00-13d8" name="03 - Melting Astrogranite" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="21e5-f5f6-2f00-13d8" name="03 - Melting Astrogranite" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Players can attempt to move one less square when Going for It than normal.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="8a3f-52a8-88a1-ab3b" name="02 - Sweltering Heat" publicationId="6ebf-d831-0023-9765" page="32" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                <profile id="8a3f-52a8-88a1-ab3b" name="02 - Sweltering Heat" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">Roll a D6 for each player on the pitch at the end of a drive.  On a roll of 1, the player collapses and may not be set up for the next kick-off.</characteristic>
                   </characteristics>
@@ -2471,7 +2289,7 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7911-21fb-567d-deb6" name="1. Default Weather Table (2D6)" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7911-21fb-567d-deb6" name="Default Weather Table (2D6)" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e06-d100-39d2-ceb3" type="max"/>
               </constraints>
@@ -2499,227 +2317,6 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <profile id="c9b9-4198-3bee-aa40" name="11 - Pouring Rain" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
                   <characteristics>
                     <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3dec-7164-ad02-5eb7" name="Kick-Off Tables" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4400-a87d-d31c-60b2" type="max"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="82f8-7562-3a49-bb1f" name="Kick-Off Tables" hidden="false" collective="false" import="true" defaultSelectionEntryId="508d-7434-70ce-9322">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6266-2ce1-afbb-7adf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1432-7858-1783-cbdf" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a273-f5f4-f9af-ee0a" name="3. Lustrian Kick-Off Table (2D6) (Legacy)" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6b4-ce4e-9433-950a" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="38e7-cd59-2e48-36b5" name="02 - Blessing of the Ancient Star Gods" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add their FAME. The team with the highest score receives an extra re-roll this half. If both teams have the same score then both teams get a re-roll.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="5751-3b2b-8e60-37a3" name="03 - Chameleon Skinks" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D6 and adds their FAME. The team with the highest score gains the favour of the Skinks, who will fire poison darts at one randomly determined player on the opposing team (only players on the pitch are eligible). Roll a D6 for the hit player immediately. On a roll of 1-5, the player becomes sluggish from the poison and their MA is reduced by 1 until the end of this drive. On the roll of a 6, the player is KO’d by the poison dart.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7ed6-3ca6-e218-445e" name="04 - Perfect Defence" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Perfect Defence Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="274d-afac-e5e9-4adf" name="05 - High Kick" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the High Kick Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0391-b348-16ba-fffb" name="06 - Cheering Fans" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Cheering Fans Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="6b36-94ca-ee36-ae3f" name="07 - Changing Weather" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Changing Weather Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8dac-f79a-712f-1752" name="08 - Brilliant Coaching" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Brilliant Coaching Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="5b93-cb2e-b97e-5b1d" name="09 - Quick Snap" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Quick Snap Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="25b2-d703-53d3-9531" name="10 - Blitz!" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Blitz! Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="3ef5-c697-c968-49f8" name="11 - Terradon Flock" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D3 and adds their FAME; this is how many Ancient Boulder Attacks each coach can make. Taking it in turns, starting with the coach of the kicking team, pick a square on the pitch for the boulder to fall in and then roll for Scatter three times. If the boulder lands on any player from either team, make an unmodified Armour roll against that player&apos;s armour and resolve any injuries as normal. Once all the boulders have been dropped, the Terradons disperse and play continues as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="76f4-dc69-ae8a-4a41" name="12 - Carnosaur Invasion" publicationId="1843-a5de-a33a-9e1b" page="19" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 for each opposing player on the pitch (these rolls are not modified by FAME). On a roll of 5 or more, the player becomes Stunned. Do not roll for Stunty or Titchy players.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="508d-7434-70ce-9322" name="1. Normal Kick-Off Table (2D6)" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="317b-22ab-b1fd-ec11" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b8c1-9e0d-16b2-20f1" name="12 - Pitch Invasion" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add their Fan Factor to the result. The coach that rolls the lowest randomly selects D3 of their players from among those on the pitch. In the case of a tie, both coaches randomly select D3 of their players from among those on the pitch. All of the randomly selected players are Placed Prone and become Stunned.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2485-9a0b-76e9-ac93" name="02 - Get the Ref" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each team gains a free Bribe Inducement as described on page 91. This Inducement must be used before the end of the game or it is lost.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="75b9-b54c-3451-3900" name="03 - Time-out" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If the kicking team’s turn marker is on turn 6, 7 or 8 for the half, both coaches move their turn marker back one space. Otherwise, both coaches move their turn marker forward one space.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c25e-76fb-6097-4ce8" name="04 - Solid Defence" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">D3+3 Open players on the kicking team may be removed and set up again in different locations, following all of the usual set-up rules.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9cf1-71d9-4db7-b80a" name="05 - High Kick" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">One Open player on the receiving team may be moved any number of squares, regardless of their MA, and placed in the same square the ball will land in.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="5a06-f6cb-9719-110e" name="06 - Cheering Fans" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add the number of cheerleaders on their Team Draft list. The coach with the highest total may immediately roll once on the Prayers to Nuffle table. In the case of a tie, neither coach rolls on the Prayers to Nuffle table. Note that if you roll a result that is currently in effect, you must re-roll it. However, if you roll a result that has been rolled previously but has since expired, there is no need to re-roll it.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="d727-9853-3d41-5250" name="07 - Brilliant Coaching" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add the number of assistant coaches on their Team Draft list. The coach with the highest total gains one extra team re-roll for the drive ahead. If this team reroll is not used before the end of this drive, it is lost. In the case of a tie, neither coach gains an extra team re-roll.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="4137-0025-4bcb-3aec" name="08 - Changing Weather" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Make a new roll on the Weather table and apply that result. If the weather conditions are ‘Perfect Conditions’ as a result of this roll, the ball will scatter, as described on page 25, before landing.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="518f-20ed-dcff-61e1" name="09 - Quick Snap!" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">D3+3 Open players on the receiving team may immediately move one square in any direction.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9056-bd4e-e3bb-e3fc" name="10 - Blitz!" publicationId="46da-ba61-6439-83e5" page="41" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">D3+3 Open players on the kicking team may immediately activate to perform a Move action. One may perform a Blitz action and one may perform a Throw Team-mate action. If a player Falls Over or is Knocked Down, no further players can be activated and the Blitz ends immediately.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="dc97-8c32-0157-6709" name="11 - Officious Ref" publicationId="46da-ba61-6439-83e5" page="11" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Both coaches roll a D6 and add their Fan Factor to the result. The coach that rolls the lowest randomly selects one of their players from among those on the pitch. In the case of a tie, both coaches randomly select a player. Roll a D6 for the selected player(s). On a roll of 2+, the player and the referee argue and come to blows. The player is Placed Prone and becomes Stunned. On a roll of 1 however, the player is immediately Sent-off, as described on page 63.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c4a8-92bb-bbb6-fa64" name="2. Blitzmania Kick-Off Table (2D6) (Legacy)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b5-dc86-01bd-e04b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8c8d-3af7-ec8b-b0a1" name="12 - Big Money In The House" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Roll a D6 -- each team gains that many bonus team re-rolls (up to a maximum of 8). In addition, during this drive, teams can use more than one team re-roll in a turn (a roll can still never be re-rolled more than once). Any of these bonus re-rolls that have not been used by the end of the drive are lost.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="6fc7-f766-2091-0667" name="02 - Um... Where&apos;s The Ref" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">For the duration of this drive, any number of players can make a Foul action each turn. In addition, players cannot be sent off for Fouling, using Secret Weapons, or anything else.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="89be-2f56-30ca-2d6b" name="03 - Breaking Scandal" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each player rolls a D3 and reduces their FAME by that much for the rest of the match, as fans stampede out of the stadium - and yes, FAME can go into negative figures. In addition, each player rolls a D6 for each of their players that is within 2 squares of the sidelines. On a roll of 1 or 2, they are Knocked Down by errant fans.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="aa30-c6f1-84e7-9ebe" name="04 - Bolster The Line" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The receiving player rolls a D6 for each player in their Reserves box. On a result of 4, 5 or 6, that player can be set up in their team&apos;s End Zone.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="21a5-7297-70e7-6580" name="05 - Rogue Ball" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The kicking team&apos;s coach places a second ball anywhere in the receiving team&apos;s half -- this will scatter in the same way as the first ball, once the first ball&apos;s scatter has been resolved. Players may not pick-up, catch or intercept a ball if they are already carrying one. A ball bouncing into the square with the other ball will bounce again. After each player has had one turn, pick one ball at random; that ball (revealed as the replica) bursts, and is removed from play.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="22c6-6bc1-5fdd-f144" name="06 - Bloodthirsty Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D3 and adds their FAME and the number of cheerleaders on their team to the score. Re-roll ties. A random player on the team with the highest score is driven to an act of bloodlust, and can immediately make a Blitz action.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="929a-60a6-8c46-04fc" name="07 - Changing Weather" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Apply the Changing Weather Event as normal.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="6266-cbf7-c0a7-461e" name="08 - Questionable Coaching" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D3 and adds their FAME and the number of assistant coaches on their team to the score. The coach of the team with the lowest total has upset one of the players with a last-minute call, and they head back to the Dugout to set things straight -- missing the drive in the process! One randomly determined player from that team (or both teams in case of a tie) that is on the pitch is placed in the Reserves box.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2abe-c0a7-772d-6f21" name="09 - Violent Outburst" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Every player on the receiving team that is adjacent to one (and only one) enemy player can immediately make a bonus Block action. Team re-rolls cannot be made during these actions, and if a player on the receiving team is Knocked Down, the bonus actions come to an end and no more Blocks can be thrown.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2789-8590-defb-054f" name="10 - Sneaky Sprint" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A random player on the kicking team who is not on the line of scrimmage, and is not in an enemy player&apos;s tackle zone is removed from play. The kicking team&apos;s coach can then set them up anywhere in the receiving team&apos;s half, in a square that does not contain another player or the ball; they then move D6 squares in a random direction (determined using the scatter template) stopping before they would move into an occupied square or the square containing the ball.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bab4-23ac-8e40-5412" name="11 - Pelted By The Crowd" publicationId="46da-ba61-6439-83e5" page="" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Each coach rolls a D6 and adds their FAME the roll. The team that rolls lower (both teams in case of a tie) is pelted by rotten vegetables, promotional merchandise and smaller members of the crowd. Roll a D6 for each player on the team; on a roll of 1, they are Placed Prone.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

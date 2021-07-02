@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="16fa-fd44-878a-e35b" name="Snotling Team" revision="1" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment></comment>
   <readme>Snotlings are the smallest, and perhaps the most numerous, type of Greenskin in the world. Tiny in stature and severely lacking any sense of self-preservation, they are enthusiastic followers and players of Blood Bowl. They sometimes appear in Ogre teams, but Snotlings are often unwilling to take to the field alongside other races, believing as they so often do in self-perpetuating myths of their own superiority. Such Snotlings swarm together around a visionary coach in great numbers and take to the pitch in a frenzy of enthusiasm. Officials hate to see Snotling teams, for various reasons, chief amongst which is that Snotlings can’t (or, more correctly, won’t) count and their ridiculously tiny stature makes them nigh impossible to manage as they flood onto the pitch!</readme>
   <categoryEntries>
     <categoryEntry id="c04f-1ba4-cbdc-77e3" name="Snotling Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
-      <modifiers>
-        <modifier type="increment" field="061f-b537-8dfe-46ff" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1fa9-a9cf-7b89-5a8c" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="061f-b537-8dfe-46ff" type="max"/>
       </constraints>
@@ -1274,6 +1266,7 @@
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3c91-109b-7e88-3b48" name="Mercenary [Fun-hoppa]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">

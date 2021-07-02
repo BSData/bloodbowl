@@ -2,22 +2,22 @@
 <catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="21" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Chaos Dwarfs are evil creatures, famed weaponsmiths whose creations are as twisted and as cruel as they are. They are the sworn enemies of their distant kin, but if there’s one thing the two races agree on, it is Blood Bowl. Chaos Dwarf teams have long been a fixture of the sport, even though they were excluded from official play by the NAF until its collapse. Most Chaos Dwarf coaches realise that their chief weakness is their race’s inherent ponderousness, so Hobgoblin slaves fulfil a vital role as Runners and Throwers. A few lucky teams can even boast the presence of Bull Centaurs, mighty warriors who have been blessed with the gift of mutation. Chaos Dwarf teams might not be quick, but you’d be a fool to stand in their way!</readme>
   <categoryEntries>
-    <categoryEntry id="108e-32d7-df38-c44c" name="Enslaved Minotaur" publicationId="46da-ba61-6439-83e5" hidden="false">
+    <categoryEntry id="108e-32d7-df38-c44c" name="Enslaved Minotaur" publicationId="440b-48bb-12dd-90e4" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1780-695c-069d-5fad" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="e6c8-bcec-1783-dfd2" name="Bull Centaur Blitzer" publicationId="46da-ba61-6439-83e5" hidden="false">
+    <categoryEntry id="e6c8-bcec-1783-dfd2" name="Bull Centaur Blitzer" publicationId="440b-48bb-12dd-90e4" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4025-e1c3-056e-5e10" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="a308-0cd0-5622-4690" name="Chaos Dwarf Blocker" publicationId="46da-ba61-6439-83e5" hidden="false">
+    <categoryEntry id="a308-0cd0-5622-4690" name="Chaos Dwarf Blocker" publicationId="440b-48bb-12dd-90e4" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="6.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0e6d-1d65-6aa4-7553" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="feea-9dad-b0c8-0b64" name="Hobgoblin Runner" publicationId="46da-ba61-6439-83e5" hidden="false">
+    <categoryEntry id="feea-9dad-b0c8-0b64" name="Hobgoblin Lineman" publicationId="440b-48bb-12dd-90e4" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b739-3a05-9118-846d" type="max"/>
       </constraints>
@@ -72,7 +72,7 @@
     <entryLink id="52d2-ef5c-4908-3fdb" name="Favored of..." hidden="false" collective="false" import="true" targetId="b38d-6ca8-2092-1c48" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="cd62-b744-a281-631f" name="Hobgoblin Runner" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="cd62-b744-a281-631f" name="Hobgoblin Lineman" publicationId="440b-48bb-12dd-90e4" page="" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
         <modifierGroup>
           <modifierGroups>
@@ -312,13 +312,13 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b968-0b63-ffd8-b442" name="Journeyman [Hobgoblin Runner]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b968-0b63-ffd8-b442" name="Journeyman [Hobgoblin Lineman]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="6830-d667-468e-016c" name="Hobgoblin Lineman" hidden="false" targetId="ec51-ed18-a571-f99c" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="set" field="name" value="Journeyman [Hobgoblin Runner]"/>
+                <modifier type="set" field="name" value="Journeyman [Hobgoblin Lineman]"/>
                 <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Loner (4+)"/>
               </modifiers>
             </modifierGroup>
@@ -341,7 +341,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1c5e-cf53-786c-458b" name="Mercenary [Hobgoblin Runner]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1c5e-cf53-786c-458b" name="Mercenary [Hobgoblin Lineman]" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="3b08-b98c-64a9-58f5" name="Hobgoblin Lineman" hidden="false" targetId="ec51-ed18-a571-f99c" type="profile">
           <modifierGroups>
@@ -349,7 +349,7 @@
               <modifiers>
                 <modifier type="set" field="ee01-7448-8c3f-a882" value="70,000"/>
                 <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Loner (4+)"/>
-                <modifier type="set" field="name" value="Mercenary [Hobgoblin Runner]"/>
+                <modifier type="set" field="name" value="Mercenary [Hobgoblin Lineman]"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -377,7 +377,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8efe-db54-e2b4-ff16" name="Chaos Dwarf Blocker" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8efe-db54-e2b4-ff16" name="Chaos Dwarf Blocker" publicationId="440b-48bb-12dd-90e4" page="" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
         <modifierGroup>
           <modifierGroups>
@@ -577,7 +577,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9290-8dc1-d135-70f1" name="Bull Centaur Blitzer" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9290-8dc1-d135-70f1" name="Bull Centaur Blitzer" publicationId="440b-48bb-12dd-90e4" page="" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
         <modifierGroup>
           <modifierGroups>
@@ -776,7 +776,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb0b-c119-6169-ff47" name="Enslaved Minotaur" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="fb0b-c119-6169-ff47" name="Enslaved Minotaur" publicationId="440b-48bb-12dd-90e4" page="" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
         <modifierGroup>
           <modifierGroups>
