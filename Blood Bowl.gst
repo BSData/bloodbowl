@@ -141,11 +141,6 @@
         <categoryLink id="ca89-41b4-76cf-85d0" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5191-6b64-1786-67a6" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="6499-5fba-4a93-5949" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="ad54-e52b-d79f-9544" name="Cheerleaders" hidden="false" collective="false" import="true" targetId="4358-1d13-b318-ae37" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="eb58-d9a5-cf49-60d4" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
@@ -154,11 +149,6 @@
     <entryLink id="e757-eb31-3140-de9d" name="Apothecary" hidden="false" collective="false" import="true" targetId="77da-bfcb-d236-80a8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="f36b-1277-be5b-216d" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="2057-e85a-8ed9-87ea" name="Necromancer" hidden="false" collective="false" import="true" targetId="7c50-a743-1f7e-ce60" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="305d-9bf0-cef4-b0c7" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8435-608c-efe1-f84d" name="Team Re-Rolls" hidden="false" collective="false" import="true" targetId="9350-0bc7-c2fc-7af5" type="selectionEntry">
@@ -174,11 +164,6 @@
     <entryLink id="0477-c661-e7a6-a03a" name="Weather Tables" hidden="false" collective="false" import="true" targetId="1d49-5d66-d431-9840" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a421-0a58-8150-f7e3" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="07e8-7ace-43ce-272b" name="Legacy Rules" hidden="false" collective="false" import="true" targetId="e98a-3e24-65a5-e3b6" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="30f9-7153-3134-8bcb" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="31c7-74d3-c43b-fab0" name="Prayers to Nuffle" hidden="false" collective="false" import="true" targetId="b813-b8f6-47ea-2f87" type="selectionEntry">
@@ -567,9 +552,7 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011e-58d1-5860-31bf" type="max"/>
           </constraints>
           <rules>
-            <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
-              <description></description>
-            </rule>
+            <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
           </rules>
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -662,9 +645,7 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c70-c799-96c4-ebcc" type="max"/>
           </constraints>
           <rules>
-            <rule id="ebc0-978c-ff8e-4c06" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
-              <description></description>
-            </rule>
+            <rule id="ebc0-978c-ff8e-4c06" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
@@ -704,9 +685,7 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad57-1911-cdc0-48cd" type="max"/>
           </constraints>
           <rules>
-            <rule id="ef73-c35e-6e9f-4663" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
-              <description></description>
-            </rule>
+            <rule id="ef73-c35e-6e9f-4663" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
@@ -719,9 +698,7 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36bf-6195-ef50-afd4" type="max"/>
           </constraints>
           <rules>
-            <rule id="4c03-526b-c5fd-39ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="" hidden="false">
-              <description></description>
-            </rule>
+            <rule id="4c03-526b-c5fd-39ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
@@ -980,12 +957,12 @@ If the player was in possession of the ball when they were turned into a frog, i
               <profiles>
                 <profile id="8d76-64f2-2018-8529" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
                 <profile id="70cd-a8cf-d031-eed5" name="Rampant Mutation" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1006,12 +983,12 @@ If the player was in possession of the ball when they were turned into a frog, i
               <profiles>
                 <profile id="faa9-98c7-c0cb-d210" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
                 <profile id="fda0-cfd8-8de5-270c" name="Vigorous Growth" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1032,12 +1009,12 @@ If the player was in possession of the ball when they were turned into a frog, i
               <profiles>
                 <profile id="6b71-790c-8623-fb1c" name="Vanhalables Dans Macabre" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
                 <profile id="cd04-4690-65d3-0d56" name="Incorporeal" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1058,12 +1035,12 @@ If the player was in possession of the ball when they were turned into a frog, i
               <profiles>
                 <profile id="0fe5-21ad-31d9-8ff2" name="Reality Blinks" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
                 <profile id="ec95-6242-1aad-436f" name="Tectonic Shift" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1084,12 +1061,12 @@ If the player was in possession of the ball when they were turned into a frog, i
               <profiles>
                 <profile id="beae-6e3e-2399-23c4" name="Fireball" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
                 <profile id="cc8b-deff-797b-0502" name="Column of Fire" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1110,12 +1087,12 @@ If the player was in possession of the ball when they were turned into a frog, i
               <profiles>
                 <profile id="25bc-ee05-72b8-fad1" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
                 <profile id="810a-ad62-7261-e7ec" name="Spore Cloud" publicationId="9118-6c97-8006-93a4" page="" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                   <characteristics>
-                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"></characteristic>
+                    <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1771,9 +1748,6 @@ If the player was in possession of the ball when they were turned into a frog, i
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1015-004b-cb99-c731" type="max"/>
-      </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1793,9 +1767,6 @@ If the player was in possession of the ball when they were turned into a frog, i
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c2-85e5-aa11-a363" type="max"/>
-      </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1815,9 +1786,6 @@ If the player was in possession of the ball when they were turned into a frog, i
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="896c-96df-2ff3-b338" type="max"/>
-      </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1837,9 +1805,6 @@ If the player was in possession of the ball when they were turned into a frog, i
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e3-ede0-e214-a584" type="max"/>
-      </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2342,17 +2307,6 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e98a-3e24-65a5-e3b6" name="Legacy Rules" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>Used to ahow/hide rules from older Spike Journals. As many of these required slight tweaking to work in the new edition and are out of print it is possible they won&apos;t be legal in all leagues. This seemed like the best way to include them without confusinf players just running off of the core rule book.</comment>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1b-08db-6f7e-6bb9" type="max"/>
-      </constraints>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0390-715c-b0f8-66f2" name="+PA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
@@ -2366,9 +2320,6 @@ If the player was in possession of the ball when they were turned into a frog, i
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b82-dd83-4e6d-3b67" type="max"/>
-      </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -4857,36 +4808,6 @@ If the player was in possession of the ball when they were turned into a frog, i
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="50.0"/>
               </costs>
             </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="b25c-d1f0-fd78-26cd" name="Characteristic Improvements" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="afab-2f7a-39b5-f9c2" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00a2-6ca0-31c0-e89e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00a2-6ca0-31c0-e89e" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="0bb7-1fd8-088d-cb14" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="00a2-6ca0-31c0-e89e" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afab-2f7a-39b5-f9c2" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb7-1fd8-088d-cb14" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="681b-ac10-e3fb-8d53" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry"/>
-            <entryLink id="8cb5-5658-3c31-8ea7" name="+AG" hidden="false" collective="false" import="true" targetId="d33f-b5e3-efce-f815" type="selectionEntry"/>
-            <entryLink id="d97c-ec4b-d029-8894" name="+MA" hidden="false" collective="false" import="true" targetId="e61b-54a7-5c2b-96c5" type="selectionEntry"/>
-            <entryLink id="ce59-a6a4-7807-358e" name="+PA" hidden="false" collective="false" import="true" targetId="0390-715c-b0f8-66f2" type="selectionEntry"/>
-            <entryLink id="996d-d902-3d9b-fba8" name="+ST" hidden="false" collective="false" import="true" targetId="a192-15aa-5823-f102" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
