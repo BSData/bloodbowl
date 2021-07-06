@@ -315,33 +315,37 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
-        <entryLink id="a0d0-a62b-1994-f8dc" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+        <entryLink id="94dc-a9ec-f447-52b8" name="[Advancements]" hidden="false" collective="false" import="true" targetId="aa08-7b48-de90-716d" type="selectionEntry">
           <entryLinks>
-            <entryLink id="4072-83b8-f265-154a" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+            <entryLink id="f8e4-2ef5-2bee-a20a" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink id="e98e-a255-9f91-5218" name="[P]asssing" hidden="false" collective="false" import="true" targetId="131c-e22e-66e7-79a1" type="selectionEntryGroup"/>
-                <entryLink id="b2b8-8b3f-37a4-1779" name="[S]trength" hidden="false" collective="false" import="true" targetId="70e7-098d-5f4a-44aa" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="02a9-668a-4d54-8e50" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="92ba-1d16-6d4d-b227" name="[A]gility" hidden="false" collective="false" import="true" targetId="ac16-d9db-2c6f-59cc" type="selectionEntryGroup"/>
-                <entryLink id="9957-1f7f-796e-a7c7" name="[G]eneral" hidden="false" collective="false" import="true" targetId="a3c8-ec51-4f47-ea80" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="a145-69e3-2381-fa99" name="Characteristic Improvements" hidden="false" collective="false" import="true" targetId="b9b5-4204-56d1-cc0d" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="6376-5aa1-1fc7-7204" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="85f9-b756-e2ce-10d4" value="2.0">
-                      <conditions>
-                        <condition field="selections" scope="0572-eb0a-e777-43c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca52-545a-6510-c3a9" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85f9-b756-e2ce-10d4" type="max"/>
-                  </constraints>
+                <entryLink id="06ff-8ead-e34d-312c" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="0889-a6c3-2753-0a61" name="[P]asssing" hidden="false" collective="false" import="true" targetId="131c-e22e-66e7-79a1" type="selectionEntryGroup"/>
+                    <entryLink id="c44a-c3c6-4b97-7c66" name="[S]trength" hidden="false" collective="false" import="true" targetId="70e7-098d-5f4a-44aa" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="1d4e-f3ce-df8a-3ea6" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="b2da-5164-0b2c-989b" name="[A]gility" hidden="false" collective="false" import="true" targetId="ac16-d9db-2c6f-59cc" type="selectionEntryGroup"/>
+                    <entryLink id="36d8-2a02-1e7e-aa29" name="[G]eneral" hidden="false" collective="false" import="true" targetId="a3c8-ec51-4f47-ea80" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="9716-921f-f243-389e" name="Characteristic Improvements" hidden="false" collective="false" import="true" targetId="b9b5-4204-56d1-cc0d" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="3750-7706-8145-3034" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="dcc6-3642-6f5e-470c" value="2.0">
+                          <conditions>
+                            <condition field="selections" scope="0572-eb0a-e777-43c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca52-545a-6510-c3a9" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcc6-3642-6f5e-470c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </entryLink>
@@ -526,6 +530,13 @@
       <comment>TV is set to 0 due to Disposable Skill.</comment>
       <modifierGroups>
         <modifierGroup>
+          <modifiers>
+            <modifier type="set" field="ffff-7836-9be4-196c" value="15000.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <conditionGroups>
@@ -782,24 +793,28 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
-        <entryLink id="87e2-34e8-fe8e-2c90" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+        <entryLink id="4dad-2781-9c43-b18e" name="[Advancements]" hidden="false" collective="false" import="true" targetId="aa08-7b48-de90-716d" type="selectionEntry">
           <entryLinks>
-            <entryLink id="8b2f-7b5c-c0d2-6567" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+            <entryLink id="3068-4723-7b44-d524" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink id="19ce-6b46-029b-a69f" name="[A]gility" hidden="false" collective="false" import="true" targetId="ac16-d9db-2c6f-59cc" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="1a8b-8d15-f037-d106" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="b417-766f-0689-6586" name="[G]eneral" hidden="false" collective="false" import="true" targetId="a3c8-ec51-4f47-ea80" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="ec1b-fbbe-c2ba-4b62" name="Characteristic Improvements" hidden="false" collective="false" import="true" targetId="b9b5-4204-56d1-cc0d" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="b1a0-5ccc-d260-79c4" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1659-5fb8-98d1-371f" type="max"/>
-                  </constraints>
+                <entryLink id="abf9-4d3d-ff80-79a1" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="d666-69d9-1f58-9c11" name="[A]gility" hidden="false" collective="false" import="true" targetId="ac16-d9db-2c6f-59cc" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="ebe7-d0e3-c496-20f1" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="5019-19bc-740a-0c60" name="[G]eneral" hidden="false" collective="false" import="true" targetId="a3c8-ec51-4f47-ea80" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="e4da-4d08-3d07-4ebb" name="Characteristic Improvements" hidden="false" collective="false" import="true" targetId="b9b5-4204-56d1-cc0d" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="678b-3d96-0998-17d9" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab6-c711-0783-b62d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </entryLink>
@@ -1070,33 +1085,37 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
-        <entryLink id="69cc-b88e-f8e6-fa8f" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
+        <entryLink id="399b-303b-5b85-3c64" name="[Advancements]" hidden="false" collective="false" import="true" targetId="aa08-7b48-de90-716d" type="selectionEntry">
           <entryLinks>
-            <entryLink id="5a5f-ffed-c534-2a34" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+            <entryLink id="4d8b-40e7-33f9-201d" name="[Advancements]" hidden="false" collective="false" import="true" targetId="9415-5e37-1db4-eda2" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink id="8258-fb89-811a-b855" name="[S]trength" hidden="false" collective="false" import="true" targetId="70e7-098d-5f4a-44aa" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="5347-ac63-613b-96f5" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="3c65-3fe8-1eb5-a365" name="[A]gility" hidden="false" collective="false" import="true" targetId="ac16-d9db-2c6f-59cc" type="selectionEntryGroup"/>
-                <entryLink id="1b8e-63a1-bb7d-8d45" name="[G]eneral" hidden="false" collective="false" import="true" targetId="a3c8-ec51-4f47-ea80" type="selectionEntryGroup"/>
-                <entryLink id="c411-8932-f2f1-e49f" name="[P]asssing" hidden="false" collective="false" import="true" targetId="131c-e22e-66e7-79a1" type="selectionEntryGroup"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="a509-c5c8-8e95-f98b" name="Characteristic Improvements" hidden="false" collective="false" import="true" targetId="b9b5-4204-56d1-cc0d" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="1e70-026c-470b-7bdf" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="4737-700e-5fe4-6810" value="2.0">
-                      <conditions>
-                        <condition field="selections" scope="0051-b911-9114-ca32" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca52-545a-6510-c3a9" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4737-700e-5fe4-6810" type="max"/>
-                  </constraints>
+                <entryLink id="c430-ebcc-ebc7-eafa" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="adb2-d0b4-07ac-b29e" name="[S]trength" hidden="false" collective="false" import="true" targetId="70e7-098d-5f4a-44aa" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="1f9d-7a3a-61be-9c3c" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="96a9-2752-27bb-c1a9" name="[A]gility" hidden="false" collective="false" import="true" targetId="ac16-d9db-2c6f-59cc" type="selectionEntryGroup"/>
+                    <entryLink id="1a2d-0b39-a3a3-dd24" name="[G]eneral" hidden="false" collective="false" import="true" targetId="a3c8-ec51-4f47-ea80" type="selectionEntryGroup"/>
+                    <entryLink id="cc9a-ec02-817b-4c0a" name="[P]asssing" hidden="false" collective="false" import="true" targetId="131c-e22e-66e7-79a1" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="8c42-a5be-7422-ceea" name="Characteristic Improvements" hidden="false" collective="false" import="true" targetId="b9b5-4204-56d1-cc0d" type="selectionEntryGroup">
+                  <entryLinks>
+                    <entryLink id="bae4-16dc-ce18-1188" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="0356-608c-9688-1e3e" value="2.0">
+                          <conditions>
+                            <condition field="selections" scope="0051-b911-9114-ca32" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca52-545a-6510-c3a9" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0356-608c-9688-1e3e" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </entryLink>
@@ -1106,6 +1125,29 @@
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa08-7b48-de90-716d" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="cf7b-40e1-6d7a-f2b3" value="1.0">
+          <repeats>
+            <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d5-8da3-c39a-5d3d" type="max"/>
+        <constraint field="069c-526e-7481-6bb7" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf7b-40e1-6d7a-f2b3" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
