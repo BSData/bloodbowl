@@ -189,6 +189,11 @@
         <categoryLink id="1e66-cefe-c8f7-6f5c" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="1b1e-fb58-dad2-14e6" name="Ongoing Sposorships" hidden="false" collective="false" import="true" targetId="29e1-f4c3-b0e1-437a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8b49-324a-741f-1566" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3f7f-9d43-5a15-135d" name="Season Statistics" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -808,7 +813,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
                   <profiles>
                     <profile id="dc0b-8cb9-2e52-b7e0" name="Fireball" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
                       <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
+                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
 
 • On a roll of 4+, the player has been hit by the Fireball.
 • On a roll of 1-3, the player manages to avoid the Fireball.
@@ -1159,6 +1164,40 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="2fb6-cb4b-2ad0-ddc5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d974-04d8-a502-00c9" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="c2bc-4cef-6ea9-7cd5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
+              <description>After Step 4, but before Step 5 of the pre-game sequence, you may place a bet of between 10,000 and 100,000 gold pieces that your team will win the game. Simply inform your opponent that the bet has been placed, and how much you are betting. Should your team win the game, you will receive double your stake back during Step 1 of the post-game sequence (for example, if you bet 20,000 gold pieces that your team would win, you will win 40,000 gold pieces if it does win).
+
+If, however, your team loses, the stake is lost (such is the risk of gambling)!</description>
+            </rule>
+          </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9341-0c4a-f09d-2f9c" name="Bet" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="c6e3-6eda-4503-4ca9" name="10,000 GP" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b588-3d70-583c-df41" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="46ca-4d79-23d4-43ac" name="5,000 GP" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53e-1a2a-dfb0-605c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1967,110 +2006,124 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b5-b950-b1e6-8380" type="min"/>
       </constraints>
       <rules>
-        <rule id="c6ee-12fe-948f-e205" name="Spiraling Expenses" publicationId="46da-ba61-6439-83e5" hidden="false">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="ffff-7836-9be4-196c" scope="roster" value="1750000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <description>Once a team’s value equals or exceeds 1,750,000 gold pieces they must deduct an amount from its winnings during the Post match sequence. This starts at 10,000 gp, but each time the Team Value increases by another 150,000 gp above 1,750,000 gp, the deduction increases by 10,000 gp.</description>
-        </rule>
-        <rule id="92e6-41fc-472b-794f" name="Expensive Mistakes (100k-190k)" publicationId="46da-ba61-6439-83e5" hidden="false">
+        <rule id="92e6-41fc-472b-794f" name="Expensive Mistakes (100k-195k)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="lessThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <description>If you have between 100,000 and 190,000 gold pieces in the Treasury at the Prepare for Next Match step of the Post-match sequence, roll a D6 on the following table and apply the appropriate result:
+          <description>If you have between 100,000 and 195,000 gold pieces stored in your Treasury during this step of the post-game sequence, roll a D6 on the following table, applying the result:
+
+1: Minor Incident - Lose D3 x 10,000 gold pieces.
+2-6: Crisis Averted - Nothing happens.</description>
+        </rule>
+        <rule id="fd77-1209-d833-355c" name="Expensive Mistakes (400k-495k)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="40.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>If you have between 400,000 and 495,000 gold pieces stored in your Treasury during this step of the post-game sequence, roll a D6 on the following table, applying the result:
+
+1-2: Major Incident - Lose half the gold in your Treasury (rounding down to the nearest 5,000 gold pieces).
+3-4: Minor Incident - Lose D3 x 10,000 gold pieces.
+5-6: Crisis Averted - Nothing happens.</description>
+        </rule>
+        <rule id="fc1e-a43c-608f-1c38" name="Expensive Mistakes (500k-595k)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="19ad-ba99-d331-e16b" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                <condition field="selections" scope="19ad-ba99-d331-e16b" value="59.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>If you have between 500,000 and 595,000 gold pieces stored in your Treasury during this step of the post-game sequence, roll a D6 on the following table, applying the result:
+
+1: Catastrophe - Lose all the gold in your Treasury except for 2D6 x 10,000 gold pieces.
+2-3: Major Incident - Lose half the gold in your Treasury (rounding down to the nearest 5,000 gold pieces).
+4-5: Minor Incident - Lose D3 x 10,000 gold pieces.
+6: Crisis Averted - Nothing happens.</description>
+        </rule>
+        <rule id="b5ba-1b9d-c0aa-fdde" name="Expensive Mistakes (300k-395k)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="39.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="30.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>If you have between 300,000 and 395,000 gold pieces stored in your Treasury during this step of the post-game sequence, roll a D6 on the following table, applying the result:
+
+1: Major Incident - Lose half the gold in your Treasury (rounding down to the nearest 5,000 gold pieces).
+2-3: Minor Incident - Lose D3 x 10,000 gold pieces.
+4-6: Crisis Averted - Nothing happens.</description>
+        </rule>
+        <rule id="7c22-b69a-3166-3266" name="Expensive Mistakes (200k-295k)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="29.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>If you have between 200,000 and 295,000 gold pieces stored in your Treasury during this step of the post-game sequence, roll a D6 on the following table, applying the result:
 
 1-2: Minor Incident - Lose D3 x 10,000 gold pieces.
 3-6: Crisis Averted - Nothing happens.</description>
         </rule>
-        <rule id="fd77-1209-d833-355c" name="Expensive Mistakes (400k-490k)" publicationId="46da-ba61-6439-83e5" hidden="false">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="greaterThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="40.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="lessThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>If you have between 400,000 and 490,000 gold pieces in the Treasury at the Prepare for Next Match step of the Post-match sequence, roll a D6 on the following table and apply the appropriate result:
-
-1-2: Catastrophe - Lose all the gold in your Treasure except for 2D6 x 10,000 gold pieces.
-3: Major Incident - Lose half the gold in your Treasury (rounding up).
-4-5: Minor Incident - Lose D3 x 10,000 gold pieces.
-6: Crisis Averted - Nothing happens.</description>
-        </rule>
-        <rule id="fc1e-a43c-608f-1c38" name="Expensive Mistakes (500k+)" publicationId="46da-ba61-6439-83e5" hidden="false">
+        <rule id="dc0c-fc09-94ad-0420" name="Expensive Mistakes (600k+)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="19ad-ba99-d331-e16b" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="lessThan"/>
+                <condition field="selections" scope="19ad-ba99-d331-e16b" value="60.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
               </conditions>
             </modifier>
           </modifiers>
-          <description>If you have at least 500,000 gold pieces in the Treasury at the Prepare for Next Match step of the Post-match sequence, roll a D6 on the following table, applying the appropriate result:
+          <description>If you have 600,000 or more gold pieces stored in your Treasury during this step of the post-game sequence, roll a D6 on the following table, applying the result:
 
-1-3: Catastrophe - Lose all the gold in your Treasure except for 2D6 x 10,000 gold pieces.
-4: Major Incident - Lose half the gold in your Treasury (rounding up).
+1-2: Catastrophe - Lose all the gold in your Treasury except for 2D6 x 10,000 gold pieces.
+3-4: Major Incident - Lose half the gold in your Treasury (rounding down to the nearest 5,000 gold pieces).
 5-6: Minor Incident - Lose D3 x 10,000 gold pieces.</description>
         </rule>
-        <rule id="b5ba-1b9d-c0aa-fdde" name="Expensive Mistakes (300k-390k)" publicationId="46da-ba61-6439-83e5" hidden="false">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="39.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="greaterThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="30.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="lessThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>If you have between 300,000 and 390,000 gold pieces in the Treasury at the Prepare for Next Match step of the Post-match sequence, roll a D6 on the following table and apply the appropriate result:
-
-1: Catastrophe - Lose all the gold in your Treasure except for 2D6 x 10,000 gold pieces.
-2: Major Incident - Lose half the gold in your Treasury (rounding up).
-3-4: Minor Incident - Lose D3 x 10,000 gold pieces.
-5-6: Crisis Averted - Nothing happens.</description>
-        </rule>
-        <rule id="7c22-b69a-3166-3266" name="Expensive Mistakes (200k-290k)" publicationId="46da-ba61-6439-83e5" hidden="false">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="lessThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="29.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9c9-e52e-3f46-7eda" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <description>If you have between 200,000 and 290,000 gold pieces in the Treasury at the Prepare for Next Match step of the Post-match sequence, roll a D6 on the following table and apply the appropriate result:
-
-1-3: Minor Incident - Lose D3 x 10,000 gold pieces.
-4-6: Crisis Averted - Nothing happens.</description>
-        </rule>
       </rules>
-      <entryLinks>
-        <entryLink id="34a9-04e7-4fdb-62a9" name="10,000 Treasury Gold" hidden="false" collective="false" import="true" targetId="e9c9-e52e-3f46-7eda" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="3af9-3478-1ef1-be85" name="5,000 Treasury Gold" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d87-d8fb-d6bc-ce75" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3dc4-c0b2-11b9-e745" name="10,000 Treasury Gold" hidden="false" collective="false" import="true" type="upgrade"/>
+      </selectionEntries>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2590,13 +2643,6 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e9c9-e52e-3f46-7eda" name="5,000 Treasury Gold" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4736,6 +4782,118 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="29e1-f4c3-b0e1-437a" name="Ongoing Sposorships" publicationId="9118-6c97-8006-93a4" page="57" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f07e-991f-e1f2-6806" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="87e8-7783-560c-fb23" name="Ongoing Sposorship" publicationId="9118-6c97-8006-93a4" page="57" hidden="false">
+          <description>If a team takes an Ongoing Sponsorship, make a note of this on their roster. During Step 1 of the post-game sequence of every future game ... roll a D6:
+
+• On the roll of a 1, one randomly selected player from your team has upset the Sponsors somehow and has received a visit from a pair of ‘brand ambassadors’. The selected player must miss the next game, exactly as if they had suffered a 7-9, Seriously Hurt result on the Casualty table. If the selected player is already missing the next game, this roll has no further effect.
+• On the roll of 2+, the players are well-behaved and no one upsets the Sponsors.
+
+Teams can have any number of Ongoing Sponsorships – however, the roll to see whether the Sponsors are happy must be made for each one!
+
+Immediately after rolling to see whether the Sponsors are happy or not, you can choose to end any Ongoing Sponsorships, deleting them from the team’s roster.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="e434-ba15-8d42-4235" name="Minor Sposorships" publicationId="9118-6c97-8006-93a4" page="57" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9b5a-4b9d-79e8-f63e" name="Minor Sposorships" hidden="false">
+              <description>During Step 1 of the post-game sequence of every future game, when recording the team’s winnings, a team that has an Ongoing Sponsor gains an additional D3 x 10,000 gold pieces in addition to their winnings.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="484f-fca3-d549-b292" name="Major Sposorship" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c53-24f0-8ad0-32cc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="db1d-f2ad-dabd-86fd" name="McMurty&apos;s Burger Emporium" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4046-f2de-299d-95d1" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="6986-4ee3-203a-ab42" name="McMurty&apos;s Burger Emporium" publicationId="9118-6c97-8006-93a4" page="58" hidden="false">
+                  <description>A team sponsored by McMurty’s Burger Emporium has the following special rules:
+
+• A team that is sponsored by McMurty’s Burger Emporium gains an extra team re-roll for the first half of each and every game they play. If this team re-roll is not used during the first half, it may be carried over into the second half.
+• McMurty’s might make fine food, but sadly their fare is somewhat fattening and doesn’t make an ideal diet for athletes! Players on a team sponsored by McMurty’s Burger Emporium cannot improve either their MA or AG characteristic while the Sponsorship is ongoing.
+
+A coach can choose to end their deal with McMurty’s in the same way as an Ongoing Sponsorship.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="ec6d-d519-5f96-c22b" name="Farblast and Sons Ordanance Solutions" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ba-694e-1a1f-8b5c" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="42ad-85e5-4a76-b03d" name="Farblast and Sons Ordanance Solutions" publicationId="9118-6c97-8006-93a4" page="58" hidden="false">
+                  <description>A team sponsored by Farblast &amp; Sons has the following special rules:
+
+• A single permanently hired Lineman positional player of your choice may be equipped with a satchel of Farblast’s Finest Detonating Spheres. This player gains the Bombardier, Loner (4+) and Secret Weapon traits, and Secondary access to Passing skills, as long as the Sponsorship lasts.
+• While sponsored by Farblast &amp; Sons, the team’s winnings after each game are reduced by 20,000 gold pieces due to increased insurance premiums.
+
+A coach can choose to end their deal with Farblast &amp; Sons in the same way as an Ongoing Sponsorship.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="b896-4f0e-5ea3-f3c1" name="Star Insurance Guild" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b7-151a-31cf-0b5f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="e3e1-993a-436b-2633" name="Star Insurance Guild" publicationId="9118-6c97-8006-93a4" page="59" hidden="false">
+                  <description>A team
+sponsored by the S.I.G. has the following special rules:
+ 
+• If a permanently hired player belonging to a team sponsored by the S.I.G. suffers a Casualty result of 15-16, DEAD, and is removed from the team roster during the post-game sequence, the team immediately receives a pay-out. The amount paid out is equal to half of that player’s Current Value (rounding each up to the nearest 5,000 gold pieces).
+• Once all dead players have been removed, roll a D6. If the result is equal to or lower than the number of players that were removed from the roster, the Guild’s agents have arrived to collect their due! The team must immediately pay 2D6 x 10,000 gold pieces. If it cannot afford to, its treasury is emptied and the deal with S.I.G. comes to an end. D3 randomly selected, permanently hired players go mysteriously absent and must miss the next game, exactly as if they had suffered a 7-9, Seriously Hurt result on the Casualty table. Record on the team’s roster that it is now on the S.I.G. blacklist and cannot be sponsored by them ever again.
+
+A coach can choose to end their deal with the Star Insurance Guild in the same way as an Ongoing Sponsorship.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="b9a6-7016-995e-4be0" name="Steelhelm&apos;s Sporting Emporium" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0e-098c-290b-ff0f" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="ebcc-a65a-f647-e777" name="Steelhelm&apos;s Sporting Emporium" publicationId="9118-6c97-8006-93a4" page="59" hidden="false">
+                  <description>A team sponsored by Steelhelm’s Sporting Emporium has the following special rules:
+
+• When a permanently hired player belonging to a team sponsored by Steelhelm’s Sporting Emporium randomly selects a new Skill, either Primary or Secondary, you may re-roll one or both of the D6. However, you must accept the result of the re-roll even if the Skill generated is less desirable (note, however, that if the Skill rolled when rolling or re-rolling the second D6 is one that the player already has or cannot take, you may re-roll the dice as normal).
+• There is a chance that a player will injure themselves when training intensively. Once a new Primary skill has been selected, roll a D6. Once a new Secondary skill has been selected, roll two D6:
+- If a 1 is rolled on either of the D6, the player must miss the next game, exactly as if they had suffered a 7-9, Seriously Hurt result on the Casualty table. 
+- If a 1 is rolled on both dice, the player must miss the next game and suffers a Niggling Injury, exactly as if they had suffered a 10-12, Serious Injury result on the Casualty table.
+
+A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the same way as an Ongoing Sponsorship.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -5836,7 +5994,7 @@ When a Bomb comes to rest on the ground, in either an unoccupied square, in a sq
 • Roll a D6 for each player (from either team) that occupies a square adjacent to the one in which the Bomb exploded:
 - On a roll of 4+, the player has been hit by the explosion.
 - On a roll of 1-3, the player manages to avoid the explosion.
-• Any Standing players hit by the explosion are Knocked Down.
+• Any Standing players hit by the explosion are Placed Prone.
 • An Armour roll (and possibly an Injury roll as well) is made against any player hit by the explosion, even if they were already Prone or Stunned. 
 • You may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.
 </description>
@@ -5911,7 +6069,7 @@ This player may Rush. Declare that the player will Rush before placing the Throw
 
 If this player ever Falls Over, is Knocked Down or is Placed Prone, an Injury roll is immediately made against them (no Armour roll is required), treating a Stunned result as a KO’d result.
 
-A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills.
+A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills. This Trait must still be used if the player is Prone or has lost their Tackle Zone.
 </description>
     </rule>
     <rule id="f408-610b-756c-c5c0" name="Animosity" publicationId="46da-ba61-6439-83e5" page="81" hidden="false">
@@ -5943,7 +6101,7 @@ A player with this Skill cannot also have the Frenzy skill.</description>
       <description>When this player performs a Block action as part of a Blitz action (but not on its own), they may choose to treat a Both Down result as a Push Back result. In addition, when this player performs a Block action as part of a Blitz action, the target of the Block action may not use the Fend, Stand Firm or Wrestle skills.</description>
     </rule>
     <rule id="fcd2-8777-28d8-fdd7" name="Foul Appearance" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
-      <description>When an opposition player declares a Block action targeting this player (on its own or as part of a Blitz action), or any Special action that targets this player, their coach must first roll a D6, even if this player has lost their Tackle Zone. On a roll of 1, the player cannot perform the declared action and the action is wasted.
+      <description>When an opposition player declares a Block action targeting this player (on its own or as part of a Blitz action), or any Special action that targets this player, their coach must first roll a D6, even if this player has lost their Tackle Zone. On a roll of 1, the player cannot perform the declared action and the action is wasted. This Skill may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.
 </description>
     </rule>
     <rule id="997c-d0f0-8262-dea7" name="Guard" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
@@ -6022,7 +6180,7 @@ Additionally, this player may apply a +1 modifier to any attempt to catch an acc
       <description>If this player is nominated to be the kicking player during a kick-off, you may choose to halve the result of the D6 to determine the number of squares that the ball deviates, rounding any fractions down.</description>
     </rule>
     <rule id="b448-c8db-4598-1aab" name="Loner (4+)" publicationId="46da-ba61-6439-83e5" page="85" hidden="false">
-      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.</description>
+      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used. This Trait must still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="8196-2dca-31a2-0516" name="Dump-Off" publicationId="46da-ba61-6439-83e5" page="79" hidden="false">
       <description>If this player is nominated as the target of a Block action (or a Special action granted by a Skill or Trait that can be performed instead of a Block action) and if they are in possession of the ball, they may immediately perform a Quick Pass action, interrupting the activation of the opposition player performing the Block action (or Special action) to do so. This Quick Pass action cannot cause a Turnover, but otherwise all of the normal rules for passing the ball apply. Once the Quick Pass action is resolved, the active player performs the Block action and their team turn continues.</description>
@@ -6043,7 +6201,7 @@ Note that if you declared that this player would perform an action which can onl
     <rule id="3ed7-31d8-4977-92b9" name="Jump Up" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
       <description>If this player is Prone they may stand up for free (i.e., standing up does not cost this player three (3) squares of their Movement Allowance, as it normally would).
 
-Additionally, if this player is Prone when activated, they may attempt to Jump Up and perform a Block action. This player makes an Agility test, applying a +1 modifier. If this test is passed, they stand up and may perform a Block action. If the test is failed, they remain Prone and their activation ends.
+Additionally, if this player is Prone when activated, they may attempt to Jump Up and perform a Block action. This player makes an Agility test, applying a +1 modifier. If this test is passed, they stand up and may perform a Block action. If the test is failed, they remain Prone and their activation ends. This Skill may still be used if the player is Prone or has lost their Tackle Zone.
 </description>
     </rule>
     <rule id="a1d7-cbde-7dee-aa12" name="Disturbing Presence" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
@@ -6057,7 +6215,7 @@ Additionally, if this player is Prone when activated, they may attempt to Jump U
       <description>When a drive in which this player took part ends, even if this player was not on the pitch at the end of the drive, this player will be Sent-off for committing a Foul, as described on page 63.</description>
     </rule>
     <rule id="08e2-b983-3d58-c50b" name="Right Stuff" publicationId="46da-ba61-6439-83e5" page="86" hidden="false">
-      <description>If this player also has a Strength characteristic of 3 or less, they can be thrown by a team-mate with the Throw Team-mate skill, as described on page 52.</description>
+      <description>If this player also has a Strength characteristic of 3 or less, they can be thrown by a team-mate with the Throw Team-mate skill, as described on page 52. This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</description>
     </rule>
     <rule id="e75c-91e8-51f1-4837" name="Side Step" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
       <description>If this player is pushed back for any reason, they are not moved into a square chosen by the opposing coach. Instead you may choose any unoccupied square adjacent to this player. This player is pushed back into that square instead. If there are no unoccupied squares adjacent to this player, this Skill cannot be used.</description>
@@ -6080,7 +6238,7 @@ Additionally, the activation of this player does not have to end once the Foul h
 
 However, when an opposition player attempts to interfere with a Pass action performed by this player, that player may apply a +1 modifier to their Agility test.
 
-Finally, players with this Trait are more prone to injury. Therefore, when an Injury roll is made against this player, roll 2D6 and consult the Stunty Injury table, on page 60.</description>
+Finally, players with this Trait are more prone to injury. Therefore, when an Injury roll is made against this player, roll 2D6 and consult the Stunty Injury table, on page 60. This Trait must still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</description>
     </rule>
     <rule id="5c7a-5a05-18d5-0d13" name="Stab" publicationId="46da-ba61-6439-83e5" page="86" hidden="false">
       <description>Instead of performing a Block action (on its own or as part of a Blitz action), this player may perform a ‘Stab’ Special action. Exactly as described for a Block action, nominate a single Standing player to be the target of the Stab Special action. There is no limit to how many players with this Trait may perform this Special action each team turn.
@@ -6143,7 +6301,7 @@ normal and completes their declared action.
 If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</description>
     </rule>
     <rule id="37d5-cd69-9f1e-5433" name="Regeneration" publicationId="46da-ba61-6439-83e5" page="86" hidden="false">
-      <description>After a Casualty roll has been made against this player, roll a D6. On a roll of 4+, the Casualty roll is discarded without effect and the player is placed in the Reserves box rather than the Casualty box of their team dugout. On a roll of 1-3, however, the result of the Casualty roll is applied as normal.</description>
+      <description>After a Casualty roll has been made against this player, roll a D6. On a roll of 4+, the Casualty roll is discarded without effect and the player is placed in the Reserves box rather than the Casualty box of their team dugout. On a roll of 1-3, however, the result of the Casualty roll is applied as normal. This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</description>
     </rule>
     <rule id="a5cb-c319-ffd3-7a6a" name="Stand Firm" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
       <description>This player may choose not to be pushed back, either as the result of a Block action made against them or by a chain-push. Using this Skill does not prevent an opposition player with the Frenzy skill from performing a second Block action if this player is still Standing after the first.</description>
@@ -6190,7 +6348,7 @@ However, if the Kick Team-mate Special action is fumbled, the kicked player is a
 If your team has the ‘Favoured of Nurgle’ special rule, a new ‘Rotter Lineman’ player, drawn from the Nurgle roster, can be placed immediately in the Reserves box of your team’s dugout (this may cause a team to have more than 16 players for the remainder of this game). During step 4 of the post-game sequence, this player may be permanently hired, exactly as you would a Journeyman player that had played for your team (see page 72).</description>
     </rule>
     <rule id="4e5b-8b02-c9de-11bc" name="Timmm-ber!" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
-      <description>If this player has a Movement Allowance of 2 or less, apply a +1 modifier to the dice roll when they attempt to stand up (as described on page 44) for each Open, Standing team-mate they are currently adjacent to. A natural 1 is always a failure, no matter how many teammates are helping.</description>
+      <description>If this player has a Movement Allowance of 2 or less, apply a +1 modifier to the dice roll when they attempt to stand up (as described on page 44) for each Open, Standing team-mate they are currently adjacent to. A natural 1 is always a failure, no matter how many teammates are helping. This Trait may still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="c008-450e-4ccf-cde2" name="Wrestle" publicationId="46da-ba61-6439-83e5" page="77" hidden="false">
       <description>This player may use this Skill when a Both Down result is applied, either when they perform a Block action or when they are the target of a Block action. Instead of applying the Both Down result as normal, and regardless of any other Skills either player may possess, both players are Placed Prone.</description>
@@ -6256,10 +6414,10 @@ If your team has the ‘Favoured of Nurgle’ special rule, a new ‘Rotter Line
       <description>During your opponent’s team turn (but not during your own team turn), any opposition players being Marked by this player cannot use the Guard skill.</description>
     </rule>
     <rule id="f672-176e-7433-41f6" name="Safe Pair of Hands" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
-      <description>If this player is Knocked Down or Placed Prone (but not if they Fall Over) whilst in possession of the ball, the ball does not bounce. Instead, you may place the ball in an unoccupied square adjacent to the one this player occupies when they become Prone.</description>
+      <description>If this player is Knocked Down or Placed Prone (but not if they Fall Over) whilst in possession of the ball, the ball does not bounce. Instead, you may place the ball in an unoccupied square adjacent to the one this player occupies when they become Prone. This Skill may still be used if the player is Prone.</description>
     </rule>
     <rule id="1f09-425c-df44-48ec" name="Iron Hard Skin" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
-      <description>The Claws skill cannot be used when making an Armour roll against this player.</description>
+      <description>The Claws skill cannot be used when making an Armour roll against this player. This Skill may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</description>
     </rule>
     <rule id="988d-1349-9f05-206c" name="Cannoneer" publicationId="46da-ba61-6439-83e5" page="79" hidden="false">
       <description>When this player performs a Long Pass action or a Long Bomb Pass action, you may apply an additional +1 modifier to the Passing Ability test.</description>
@@ -6321,7 +6479,7 @@ A player can only perform this Special action once per turn (i.e., Projectile Vo
 If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</description>
     </rule>
     <rule id="e99d-8433-05f4-f4af" name="Loner (5+)" publicationId="46da-ba61-6439-83e5" page="85" hidden="false">
-      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.</description>
+      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used. This Trait must still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="3a29-341e-ac3c-2595" name="Low Cost Linemen" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
       <description>Teams with this special rule are not very particular about
@@ -6371,7 +6529,7 @@ their players is Sent-off for committing a Foul, as long as
 they haven’t been sent off themselves.</description>
     </rule>
     <rule id="94c9-1b4e-9077-0316" name="Loner (3+)" publicationId="46da-ba61-6439-83e5" page="85" hidden="false">
-      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.</description>
+      <description>If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used. This Trait must still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="85fb-2a18-64bd-7492" name="Mighty Blow (+2)" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
       <description>When an opposition player is Knocked Down as the result of a Block action performed by this player (on its own or as part of a Blitz action), you may modify either the Armour roll or Injury roll by the amount shown in brackets. This modifier may be applied after the roll has been made. This Skill cannot be used with the Stab or Chainsaw traits.</description>
