@@ -2362,7 +2362,7 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
         </selectionEntry>
         <selectionEntry id="faf3-bd7c-1df9-9724" name="Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="4c37-7996-ee71-f822" name="Giant Mercenary Player" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+            <profile id="4c37-7996-ee71-f822" name="ScatterGiant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
               <characteristics>
                 <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
                 <characteristic name="ST" typeId="120f-0f56-f450-196c">7</characteristic>
@@ -2375,17 +2375,23 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
                 <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">350,000</characteristic>
               </characteristics>
             </profile>
-          </profiles>
-          <rules>
-            <rule id="8597-e2f0-faa4-e419" name="Base Size and Tackle Zones" publicationId="9118-6c97-8006-93a4" page="54" hidden="false">
-              <description>Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
+            <profile id="b682-de4f-2805-5e2b" name="Base Size and Tackle Zones" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+              <characteristics>
+                <characteristic name="Details" typeId="b112-aa11-2549-e705">Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
 
 Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies.
 
-Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</description>
-            </rule>
-            <rule id="6fc5-1135-ed37-0e7a" name="Movement" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
-              <description>When a Giant moves it does so just like any other player, moving a number of squares equal to its Movement Allowance. A Giant may move forward, backward, to either side, or diagonally, as long as they do not enter a square occupied by another standing player (from either team).
+Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3558-400a-8bd0-a723" name="A Giant Obstruction" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+              <characteristics>
+                <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants do tend to get in the way of other teams’ passing plays. When a Giant interferes with a pass, it reduces any negative modifiers that would normally apply by 2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0ef2-960b-121c-c0ef" name="Movement" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+              <characteristics>
+                <characteristic name="Details" typeId="b112-aa11-2549-e705">When a Giant moves it does so just like any other player, moving a number of squares equal to its Movement Allowance. A Giant may move forward, backward, to either side, or diagonally, as long as they do not enter a square occupied by another standing player (from either team).
 
 If any of the four squares a Giant occupies is within the Tackle Zone of an opposition player, the Giant is considered to be Marked by that player and must dodge to leave that square, just like any other player. If when dodging any part of a Giant’s base moves into a square in which it is being Marked, apply a -1 modifier per player Marking them as normal.
 
@@ -2393,19 +2399,34 @@ STEPPING OVER PRONE OR STUNNED PLAYERS: Unlike other players, a Giant is large e
 
 However, a Giant may not end its movement with any part of its base occupying a square that contains a Prone or Stunned player. Therefore, should a Giant Fall Over whilst stepping over a Prone or Stunned player, that player is pushed back one square in a direction chosen by the coach of the team the Giant belongs to, exactly as if a Push Back block dice result had been applied against them.
 
-SURROUNDED!: Coaches should note that, due to the large size of Giants, they may find it impossible to move through small gaps. If at any point during its movement a Giant finds one or more of the four squares its base occupies obstructed by a Standing player, it cannot move into that square.</description>
-            </rule>
-            <rule id="6101-1828-970a-ad76" name="Push Backs" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
-              <description>Just like any other player, a Giant must be pushed back into empty squares. If this is not possible, then the Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are chain-pushed in turn.
+SURROUNDED!: Coaches should note that, due to the large size of Giants, they may find it impossible to move through small gaps. If at any point during its movement a Giant finds one or more of the four squares its base occupies obstructed by a Standing player, it cannot move into that square.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3e6a-8946-9606-e26e" name="Push Backs" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+              <characteristics>
+                <characteristic name="Details" typeId="b112-aa11-2549-e705">Just like any other player, a Giant must be pushed back into empty squares. If this is not possible, then the Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are chain-pushed in turn.
 
-PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn’t matter how big they are, a Giant cannot be half on and half off the pitch. They are either entirely on the pitch, or they are off it!</description>
-            </rule>
-            <rule id="e908-3bbc-d50e-a5c2" name="Throwing Other Players" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
-              <description>Giants are particularly effective at throwing smaller players. When a Giant attempts to throw a team-mate, you may re-roll a Fumbled throw.</description>
-            </rule>
-            <rule id="2c24-80d6-4098-59b0" name="A Giant Obstruction" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
-              <description>Giants do tend to get in the way of other teams’ passing plays. When a Giant interferes with a pass, it reduces any negative modifiers that would normally apply by 2.</description>
-            </rule>
+PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn’t matter how big they are, a Giant cannot be half on and half off the pitch. They are either entirely on the pitch, or they are off it!</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0c48-de49-2dfc-e992" name="Throwing Other Players" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+              <characteristics>
+                <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants are particularly effective at throwing smaller players. When a Giant attempts to throw a team-mate, you may re-roll a Fumbled throw.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ff97-7f02-02d9-b513" name="Scatter" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+              <characteristics>
+                <characteristic name="Details" typeId="b112-aa11-2549-e705">As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.
+
+1-2-3-4
+5-###-6
+7-###-8
+9-10-11-12
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
             <rule id="2c51-e3a9-94dc-2c5e" name="Scatter" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
               <description>As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.</description>
             </rule>
@@ -2423,6 +2444,8 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           </infoLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
