@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0d8490b-f414-41e1-b42c-cde6936fa34c" name="Necromantic Horror Team" revision="26" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c0d8490b-f414-41e1-b42c-cde6936fa34c" name="Necromantic Horror Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The dead do not rest easy. From haunted castles to sinister forests, Undead creatures prowl the night, snatching unwary villagers from their beds. Well, some of them do. For the rest,  there’s Blood Bowl! Many Necromancers, proficient at corpse-raising and flesh-crafting but lacking a real plan of how to use their skills, realise that warm dugouts are a lovely alternative to musty tombs and dank barrows, and therefore decide to assemble a team of players (quite literally!). Interestingly, a schism of sorts seems to have occurred, leading to two competing philosophies when it comes to coaching an Undead team. Some Necromancers put their trust in the ancient dead. Other Necromancers prefer a little more life in their team, buying the services of Werewolves with promises of fresh meat and stitching together hulking Flesh Golems from an assortment of cadavers.</readme>
   <categoryEntries>
     <categoryEntry id="43bf-0a62-5eb2-6b5b" name="Zombie Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -462,7 +462,21 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="b099-d182-c796-e46c" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="ba28-5aa7-6a95-b645" name="[Injuries]" hidden="false" collective="false" import="true" targetId="503e-3e60-1b74-ba00" type="selectionEntry"/>
+        <entryLink id="f1ee-014d-2eb9-411b" name="[Injuries]" hidden="false" collective="false" import="true" targetId="503e-3e60-1b74-ba00" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5f2a-a775-74dc-27ad" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="197e-1d2a-25c4-d11b" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="4317-f3ef-af81-bc02" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="2c96-f083-ec46-f101" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="a1b0-1bca-6adc-8ad9" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="a32a-dd1f-91c4-d017" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="d304-e18d-3219-d52c" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="f5ec-76c7-6947-335b" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1946,7 +1960,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2de9-4e7a-6d60-01dc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2de9-4e7a-6d60-01dc" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1958,7 +1972,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a02b-2e68-4e34-5a6b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a02b-2e68-4e34-5a6b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1975,7 +1989,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a02b-2e68-4e34-5a6b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a02b-2e68-4e34-5a6b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1987,7 +2001,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb79-1229-d102-5eb8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb79-1229-d102-5eb8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2029,7 +2043,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c024-4825-9c94-33ae" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c024-4825-9c94-33ae" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2039,7 +2053,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c024-4825-9c94-33ae" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c024-4825-9c94-33ae" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

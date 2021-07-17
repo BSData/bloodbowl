@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="26" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>At face value, the thought of an Ogre Blood Bowl team is enough to fill most players with dread. Thankfully, the reality never quite lives up to their worst fears. For starters, most Ogres are incredibly dense. Just getting them to all turn up at the same time is a mammoth task. Not to mention that very few coaches can afford to field more than a few Ogres at a time, meaning that most Ogre teams are bulked out with Gnoblars. Then there’s the fact that, no matter how much you train them, the moment the whistle goes, most Ogres forget everything and try to pound their opponents into a bloody mess. Coaches who know what they’re doing can turn this to their advantage, but it’s a rare sight to see an Ogre team performing consistently.</readme>
   <categoryEntries>
     <categoryEntry id="72d9-56a6-76ad-260c" name="Gnoblar Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -425,7 +425,21 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="87b6-e931-4238-171e" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="9158-8afc-f5e1-d64b" name="[Injuries]" hidden="false" collective="false" import="true" targetId="00ae-6d04-7a96-c09d" type="selectionEntry"/>
+        <entryLink id="23fe-f16b-8797-d4dc" name="[Injuries]" hidden="false" collective="false" import="true" targetId="00ae-6d04-7a96-c09d" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="fcbb-0998-2f42-d361" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="b42e-2353-4f83-a67f" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="306f-22ae-c423-55c8" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="621e-c25c-65d3-220b" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="3496-9462-7742-9bb1" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="9342-850f-30e9-80c9" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="2093-7920-0960-083f" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="2fea-ec2e-9f25-d714" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -746,7 +760,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1715-31a7-98d6-6fae" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1715-31a7-98d6-6fae" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="2e40-834d-c294-156e" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry">
@@ -1162,7 +1176,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1174,7 +1188,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1227,7 +1241,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1239,7 +1253,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72d9-56a6-76ad-260c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

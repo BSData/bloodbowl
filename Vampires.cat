@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="28" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Vampires are just one of the many Undead nightmares that stalk the shadows on moonless nights, but never let it be said that they aren’t the most civilised. Unlike the Skeletons, Zombies and Wights that are held together by necromancy, Vampires are noble creatures, capable of existing among human society with little fear of discovery. Since Blood Bowl took the world by storm, a great number have stepped out of the shadows to involve themselves in the sport – the most famous being star commentator Jim Johnson – whilst many others make use of modern sun protection fetishes to allow them to play in daylight. Teams made up exclusively of Vampires are almost unheard of, and most pad out their numbers with Thralls, who gladly give up free will in exchange for the life of a Blood Bowl player!</readme>
   <categoryEntries>
     <categoryEntry id="cd18-d181-3017-ee27" name="Thrall" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -398,7 +398,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="b6f5-f7d2-52ea-6d84" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="6514-ed5c-bf71-65ce" name="[Injuries]" hidden="false" collective="false" import="true" targetId="82e8-5f6d-1f1b-f58f" type="selectionEntry"/>
+        <entryLink id="8eef-0378-e5f3-140e" name="[Injuries]" hidden="false" collective="false" import="true" targetId="82e8-5f6d-1f1b-f58f" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1eac-1ab8-b30a-303b" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="2cc2-f8ad-f545-f3e8" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="b3fe-c90d-0363-dc1e" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="2c88-6426-2752-7142" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="4cf6-dfea-c35e-9c30" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="686f-5699-cf07-dff9" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="1f03-453b-75f3-206d" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="1aee-ef12-8de0-9a31" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="cf0f-9f59-e9b6-56b4" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" name="Nurgle Team" revision="29" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" name="Nurgle Team" revision="30" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The followers of Chaos have been involved in Blood Bowl since the earliest days of the sport. Although most teams started as a conglomerate of followers of all of the Chaos gods, it didn’t take long for teams to be more selective in their choice of deity. On the field, Nurgle teams are a terrifying prospect to face. What they lack in agility and coordination, they more than make up for with brute strength, a natural resilience to harm and a whole playbook of stomach-churning tactics devised to bring the other team to its knees. Nurgle teams defy conventional definition, being made up of Rotters, players who have contracted one or more of Nurgle’s many blessings; Bloaters, players swollen with disease; Pestigors, Beastmen attracted to the smell; and Rotspawn, players so blessed by the Plague God that they have devolved into hideously mutated beasts.</readme>
   <categoryEntries>
     <categoryEntry id="4946-fa56-50fe-efd4" name="Rotter Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -383,7 +383,7 @@
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="set" field="ee01-7448-8c3f-a882" value="70,000"/>
+                <modifier type="set" field="ee01-7448-8c3f-a882" value="65,000"/>
                 <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Decay, Loner (4+), Nurgle&apos;s Rot"/>
                 <modifier type="set" field="name" value="Mercenary [Rotter Lineman]"/>
               </modifiers>
@@ -412,7 +412,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="65000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -439,11 +439,26 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="73e6-2a6d-f6cd-e621" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="665a-49ba-3f27-5bb0" name="[Injuries]" hidden="false" collective="false" import="true" targetId="8ebf-dc8a-431b-b77a" type="selectionEntry"/>
+        <entryLink id="16bc-d53a-5dcd-79e3" name="[Injuries]" hidden="false" collective="false" import="true" targetId="8ebf-dc8a-431b-b77a" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0aa1-6476-bd23-307f" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="668e-06e5-a564-429d" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="3591-e3b2-d327-d8e7" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="c1c5-083e-6a10-af3f" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="30f8-89cd-95ce-112b" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="0f15-5840-1fc8-2ebf" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="ec77-7c24-e9a3-2be3" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="16ab-b82a-c4b6-e08b" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="f40c-3d9a-8949-2cbb" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="35000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1081,7 +1096,7 @@
           </modifierGroups>
         </infoLink>
         <infoLink id="066b-a419-2502-9653" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
-        <infoLink id="1247-da90-2a85-5fbb" name="Nurgle&apos;s Rot" hidden="false" targetId="bcf5-cfc7-f2fc-873a" type="rule"/>
+        <infoLink id="1247-da90-2a85-5fbb" name="Plague Ridden" hidden="false" targetId="bcf5-cfc7-f2fc-873a" type="rule"/>
         <infoLink id="677c-7386-ca86-0ce2" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1486,7 +1501,7 @@
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="35000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1557,8 +1572,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b7b-f9ca-dd7b-8cc0" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b7b-f9ca-dd7b-8cc0" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1572,8 +1587,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b7b-f9ca-dd7b-8cc0" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b7b-f9ca-dd7b-8cc0" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1584,7 +1599,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b422-b343-ad55-3629" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b422-b343-ad55-3629" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1594,7 +1609,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1631,7 +1646,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3101-3b70-7bb8-72a3" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

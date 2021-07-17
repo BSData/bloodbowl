@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e9482b58-edc3-4edb-a2d3-c07110883bfb" name="Chaos Renegades" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e9482b58-edc3-4edb-a2d3-c07110883bfb" name="Chaos Renegades" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Chaos Renegade teams represent the real flotsam and jetsam of the Blood Bowl world, players so maladjusted that no coach worth their salt would let them play on their roster. They might be bitter rejects, inveterate cheats or blatant foulers. Many are outcasts expelled from established teams. Inevitably, such players end up rejecting the ways of Nuffle and dedicating themselves to other dark powers, often garnering themselves all manner of dubious mutations as ‘rewards’ in the process. The most successful team of this type was the Chaos All-Stars, whose eccentrically mixed line-up managed to soar to glory. Also of note is the (in)famous Mongrel Horde, a motley assortment of scumbags in it for the gold. Unfortunately, most of the Horde’s players hate each other, often refusing to play nicely or turn up to practices together!</readme>
   <categoryEntries>
     <categoryEntry id="2b8a-87a3-b5dc-c33a" name="Renegade Human Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -203,7 +203,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="f70e-7e61-e6bc-5086" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="4ca3-508f-3922-881d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="7cb2-bef2-771f-31f6" type="selectionEntry"/>
+        <entryLink id="e8b3-0430-627b-ab18" name="[Injuries]" hidden="false" collective="false" import="true" targetId="7cb2-bef2-771f-31f6" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b488-b19c-a5c8-59eb" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="4ff9-022f-de95-599b" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="0146-0773-d6cf-ed0a" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="316b-2033-a32d-4adf" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="fd2b-0de8-afe8-aaa3" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="b49c-c26d-5fa3-f9bd" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="1947-5b5b-a259-c506" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="fcb0-5565-4f7b-936f" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="69a4-72e7-56bf-0f4a" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -3693,7 +3708,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b5b-3da7-c410-cc62" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b5b-3da7-c410-cc62" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3709,7 +3724,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f4e-5891-5118-e227" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f4e-5891-5118-e227" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3728,8 +3743,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72f3-2b85-b7cf-2f5c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72f3-2b85-b7cf-2f5c" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3756,7 +3771,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3765,7 +3780,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72f3-2b85-b7cf-2f5c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72f3-2b85-b7cf-2f5c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3788,7 +3803,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f4e-5891-5118-e227" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9f4e-5891-5118-e227" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3813,9 +3828,9 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a89b-a533-b2dd-c08a" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8743-2717-3e60-ceb3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a89b-a533-b2dd-c08a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8743-2717-3e60-ceb3" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3831,8 +3846,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a89b-a533-b2dd-c08a" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25f1-3896-9695-5124" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a89b-a533-b2dd-c08a" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

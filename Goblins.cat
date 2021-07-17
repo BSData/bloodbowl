@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="28" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="29" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Goblins are cruel and uncouth, with a juvenile sense of humour and a wicked imagination dedicated to discovering new ways of hurting others without getting hurt themselves. This tends to make them better Blood Bowl fans than players, and indeed Goblin fans have a solid reputation throughout the Old World for turning up hours before the game, getting drunk, starting fights, singing lewd and insulting songs, and generally causing trouble wherever they go. Unsurprisingly, Goblin teams don’t tend to do amazingly well on the pitch, but by Nuffle are they entertaining! Their play style revolves around a seemingly endless arsenal of ‘secret’ weapons which the Gobbos sneak onto the pitch at every opportunity, and the assistance of lumbering Trolls who alternate between flinging their smaller team-mates up the pitch and absent-mindedly chewing on them instead!</readme>
   <categoryEntries>
     <categoryEntry id="36f9-41c5-0bac-d7ca" name="Trained Troll" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -170,7 +170,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="fdba-cd46-f12f-7afc" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="4226-8ec6-3c8f-790b" name="[Injuries]" hidden="false" collective="false" import="true" targetId="3de7-816c-0970-f5d9" type="selectionEntry"/>
+        <entryLink id="1a80-b6b2-1da7-9574" name="[Injuries]" hidden="false" collective="false" import="true" targetId="3de7-816c-0970-f5d9" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8e38-3db2-a1d3-b10c" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="6e4c-a319-e786-77c7" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="869f-90dc-cf22-67ee" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="d894-fa68-844c-1157" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="9bd1-8e1b-54bf-3a5e" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="e91e-9b86-ff88-acc9" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="1e35-d13a-1c0a-5aef" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="bb8f-7fcb-bda5-b263" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="d979-2cdd-3dc6-8c00" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -997,7 +1012,7 @@
         <infoLink id="d840-76ec-932c-0545" name="Swoop" hidden="false" targetId="d302-b3a2-216f-cc3a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d21e-2249-cbc9-eda8" name="Doom Diver" hidden="false" targetId="6f8f-051d-74e7-b9f9" primary="false"/>
+        <categoryLink id="fe21-f23f-23d1-5cce" name="Doom Diver" hidden="false" targetId="6f8f-051d-74e7-b9f9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a16d-0a30-690a-bb91" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
@@ -2970,7 +2985,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f9-41c5-0bac-d7ca" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36f9-41c5-0bac-d7ca" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3008,7 +3023,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1137-884c-f431-5f5b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1137-884c-f431-5f5b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3035,10 +3050,10 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0464-af0a-7611-166d" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ee9-1dc4-5069-4ebb" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe33-2b48-66fa-0460" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1137-884c-f431-5f5b" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0464-af0a-7611-166d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ee9-1dc4-5069-4ebb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe33-2b48-66fa-0460" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1137-884c-f431-5f5b" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

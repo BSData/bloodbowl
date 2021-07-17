@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" name="Underworld Denizens Team" revision="30" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" name="Underworld Denizens Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Ask any Goblinoid and they’ll tell you that it’s not easy being a low-down sneaky git! Similarly, if you managed to corner a Skaven long enough to get an answer out of them, they’d probably tell you that living in the sewers is less fun than it looks. It’s not entirely clear when these very different races first joined forces, but there’s a good chance that the Underworld Creepers were the first such team to take to the pitch. Fuelled by a heady elixir of warpstone infused mushrooms, Underworld Denizens teams combine the sneakiness of Snotlings and Goblins with the speed of Skaven; most are despised, but some of them have garnered a cult following! The most popular tend to be those who field a Troll or Rat Ogre, hideous and pallid mountains of slab-like muscle that serve as enforcers for their smaller team-mates.</readme>
   <categoryEntries>
     <categoryEntry id="6cf0-f5dd-7345-e934" name="Gutter Runner" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -526,7 +526,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="06ab-757f-eb0b-4cfb" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="8119-352e-2adb-f714" name="[Injuries]" hidden="false" collective="false" import="true" targetId="ccc8-cf80-69d4-cc9e" type="selectionEntry"/>
+        <entryLink id="7960-f872-e916-3525" name="[Injuries]" hidden="false" collective="false" import="true" targetId="ccc8-cf80-69d4-cc9e" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7128-9828-aec6-6c75" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="b39a-d8a5-b471-7826" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="c48d-313b-aa14-cfdd" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="1fc1-c120-285f-219b" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="ccd9-eece-4f3e-1cd0" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="6d8c-f7a3-2607-686f" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="a09a-8d09-0f75-6fb0" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="5f2e-fd45-e946-7365" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="b986-bcac-0101-ce25" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -3096,7 +3111,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9703-490c-0b46-acf0" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9703-490c-0b46-acf0" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3108,7 +3123,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de63-08cc-9c3b-02c7" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de63-08cc-9c3b-02c7" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3121,7 +3136,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be8d-8de3-67e1-e46b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be8d-8de3-67e1-e46b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3142,7 +3157,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de63-08cc-9c3b-02c7" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de63-08cc-9c3b-02c7" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3165,7 +3180,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be8d-8de3-67e1-e46b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be8d-8de3-67e1-e46b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3190,8 +3205,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de63-08cc-9c3b-02c7" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c62-990f-755b-a1c1" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de63-08cc-9c3b-02c7" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c62-990f-755b-a1c1" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

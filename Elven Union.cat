@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="641d7e90-8271-47b2-a437-ccab1c28b7ae" name="Elven Union Team" revision="30" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="641d7e90-8271-47b2-a437-ccab1c28b7ae" name="Elven Union Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Following the collapse of the NAF, many Elven teams found themselves indebted to noble backers from the Elven kingdoms, who – thanks to a lot of small print – began to make their way onto the pitch, shunting established players tothe sidelines. Outrage abounded among players and fans alike, and it was only a matter of time before something was done about it. When that something finally happened, the formation of the Elven Union came as a surprise to no one. A loose federation of Elven teams, made up primarily of High Elf players but including the odd Wood Elf and even Dark Elf, the Union seeks to repair the damaged reputation of Elven teams and show that they can take Blood Bowl seriously. What the teams lack in funding, they make up for with experience and stubborn determination.</readme>
   <categoryEntries>
     <categoryEntry id="eb20-d7f5-e235-d546" name="Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -107,7 +107,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="3634-14d9-98a2-ab91" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="cd00-09e0-c9f0-292d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="16bd-8eaa-ee90-24f5" type="selectionEntry"/>
+        <entryLink id="f43f-a81e-7b66-2b66" name="[Injuries]" hidden="false" collective="false" import="true" targetId="16bd-8eaa-ee90-24f5" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4bd8-796f-f6ae-13d0" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="8754-5d8f-cf5c-0453" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="7a7a-1d0c-254a-2fc5" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="5d5a-4227-01f9-3d3c" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="52c8-f95f-7c7c-35cf" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="38db-cce4-ff37-a5dc" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="d3a1-3d12-a72b-f48f" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="c7e7-9cf7-bd5d-9c11" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="a9ce-cd12-9535-8f5c" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1545,7 +1560,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e11-16b8-7c9a-451f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e11-16b8-7c9a-451f" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1556,11 +1571,11 @@
         <entryLink id="83db-8199-73c1-0c6d" name="Defensive" hidden="false" collective="false" import="true" targetId="2efa-ed98-bd7d-6ff1" type="selectionEntry"/>
         <entryLink id="9e00-219b-cf59-4b18" name="Jump Up" hidden="false" collective="false" import="true" targetId="bd4c-dac9-e7d1-f47b" type="selectionEntry"/>
         <entryLink id="0d28-8262-da8d-9c5d" name="Leap" hidden="false" collective="false" import="true" targetId="851c-f5dc-38d9-d2e5" type="selectionEntry"/>
-        <entryLink id="e85e-d97d-0b74-bbf2" name="Sidestep" hidden="false" collective="false" import="true" targetId="0aa2-ed3d-a7a8-89b4" type="selectionEntry">
+        <entryLink id="e85e-d97d-0b74-bbf2" name="Side Step" hidden="false" collective="false" import="true" targetId="0aa2-ed3d-a7a8-89b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f7c1-7e47-6b44-d2a8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f7c1-7e47-6b44-d2a8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1577,7 +1592,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f7c1-7e47-6b44-d2a8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f7c1-7e47-6b44-d2a8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1605,7 +1620,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e11-16b8-7c9a-451f" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e11-16b8-7c9a-451f" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1614,7 +1629,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4590-086c-de06-37fb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4590-086c-de06-37fb" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

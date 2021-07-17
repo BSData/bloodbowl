@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="736e07b6-4458-426e-8cf9-d33860c0c7a7" name="Halfling Team" revision="22" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="736e07b6-4458-426e-8cf9-d33860c0c7a7" name="Halfling Team" revision="23" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The technical deficiency of Halfling teams is legendary. They’re too short to throw or catch, they run at half pace, and it goes without saying that their blocking game leaves something to be desired. Most Halfling coaches, aware of the material that they have to work with, make up for quality with quantity. After all, if you can get half a dozen players in the opposing team’s End Zone and, by some miracle, manage to end up with the ball, then there is a small chance that one or two of them won’t be jelly by the time you throw the thing! Probably the only real point in the Halflings’ favour is their long-held alliance with the Treemen who guard the forests of their realm, and a team that can tempt one (or two!) of them along to a game suddenly doesn’t look so pathetic!</readme>
   <categoryEntries>
     <categoryEntry id="993d-b293-4970-f335" name="Halfling Hopeful Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -110,7 +110,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="4aa9-a80c-e393-7780" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="fac3-58e4-0dbb-cfe1" name="[Injuries]" hidden="false" collective="false" import="true" targetId="0b16-40df-59c8-556e" type="selectionEntry"/>
+        <entryLink id="5f5b-c17b-c034-3605" name="[Injuries]" hidden="false" collective="false" import="true" targetId="0b16-40df-59c8-556e" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c8ed-33a8-7c6d-27bb" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="e400-e8e4-fb1d-3fbe" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="65b2-a85d-e710-46e2" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="349a-313e-fabc-cb68" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="3b1a-797f-3708-c5b0" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="c060-928b-3271-0f95" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="c08e-6628-5665-0838" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="0d8d-b27a-78df-afb0" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="c2ae-41cf-39fb-3578" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1495,7 +1510,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a5b4-2982-af49-3230" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a5b4-2982-af49-3230" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1506,7 +1521,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1520,7 +1535,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a5b4-2982-af49-3230" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a5b4-2982-af49-3230" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1538,7 +1553,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b7-f2c6-e507-d10b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b7-f2c6-e507-d10b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1579,7 +1594,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1589,7 +1604,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1598,7 +1613,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1607,7 +1622,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-6bd6-df29-99d8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="32" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Blood Bowl is arguably even more popular among the followers of the Chaos gods than it is among civilised folk. Maybe it’s the cult-like supporters’ clubs, the constant violence both on and off the pitch, or just the brightly-coloured strips... Whatever the case, wherever you find a Blood Bowl stadium, you’re guaranteed to find at least one team made up of an assortment of thoroughly debased, dedicated followers of Chaos. Most of the teams’ players tend to be Beastmen, hideous mutants who have given up their forest lairs for the sporting life, but their numbers are bolstered by the presence of superhuman Chosen, and frenzied and blood-crazed Minotaurs, Ogres and Trolls. Such teams are hardly subtle, often forgetting about the ball entirely as they grind their opponents into the turf, all in veneration of the Ruinous Powers they worship.</readme>
   <categoryEntries>
     <categoryEntry id="cb40-5b0a-d25b-0a94" name="Chosen Blocker" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -1028,7 +1028,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="58c8-5346-5813-e882" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="226e-7e02-0fba-22d2" name="[Injuries]" hidden="false" collective="false" import="true" targetId="e047-2a92-7311-7ad0" type="selectionEntry"/>
+        <entryLink id="8a56-d09c-9343-60db" name="[Injuries]" hidden="false" collective="false" import="true" targetId="e047-2a92-7311-7ad0" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="09a0-800f-b0b4-16fb" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="015b-003c-f3aa-1d58" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="1253-6460-eb40-1898" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="59fe-3090-80a5-c0a6" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="a16e-4355-e269-cbb5" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="de9b-5602-7d87-2a7e" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="1d10-8995-f141-ba50" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="6fc7-58f1-c11e-8d5c" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="1fb5-aaee-a7d3-6c11" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
@@ -1912,7 +1927,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c87-a7d1-cca4-c810" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c87-a7d1-cca4-c810" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1952,7 +1967,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b73-fb13-e749-7023" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b73-fb13-e749-7023" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1966,8 +1981,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4539-6213-6011-90d3" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c87-a7d1-cca4-c810" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4539-6213-6011-90d3" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2c87-a7d1-cca4-c810" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1990,7 +2005,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a83-45c5-b194-1950" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a83-45c5-b194-1950" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

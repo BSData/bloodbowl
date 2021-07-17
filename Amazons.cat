@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="28" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @Crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="29" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @Crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The Amazons of Lustria are an enigma and several contradictory stories of their origins exist. One tells that long ago, driven by a desire for adventure, a group of Norse Valkyries set sail for distant shores. After a journey worthy of a saga in its own right, they founded a colony deep within the basin of a great river that wound its way through a massive rainforest. Cut off from the outside world, a new warrior society sprung up, borrowing customs from the native Lizardmen. Another legend claims that the Amazons were created by ancient, god-like beings to serve as the handmaidens of the gods. Perhaps both legends contain something of the truth, but either way, Amazons are natural athletes, and many possess the combination of agility and violence that marks  them out as potential legends of the sport.</readme>
   <categoryEntries>
     <categoryEntry id="cdc2-3210-37c1-9f82" name="Eagle Warrior Thrower" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -548,7 +548,7 @@
         <infoLink id="28fa-57b9-4a3e-0003" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="bbae-9dac-63d0-2b1d" name="Eagle Warrior Thrower" hidden="false" targetId="cdc2-3210-37c1-9f82" primary="false"/>
+        <categoryLink id="5083-2b91-0247-2184" name="Eagle Warrior Thrower" hidden="false" targetId="cdc2-3210-37c1-9f82" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8b24-75e8-5947-d7ac" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
@@ -1410,7 +1410,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="d33b-ec8e-3c0d-22d5" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="69f1-c6ae-858d-b18b" name="[Injuries]" hidden="false" collective="false" import="true" targetId="7520-8ea1-95cb-d4af" type="selectionEntry"/>
+        <entryLink id="f051-f90c-49e0-251d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="7520-8ea1-95cb-d4af" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="af63-5621-4570-b583" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="191b-02dd-ebf8-f938" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="17ee-52af-3647-caaf" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="f345-c019-27c5-dbd3" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="1a4f-6de9-9132-408a" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="82e2-5acc-a6e5-4ae9" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="996e-70a5-6008-672b" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="9003-798c-7fd8-49f1" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="1a7d-6d51-46b6-4359" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1449,7 +1464,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc2-3210-37c1-9f82" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="badc-5cbf-1877-8a99" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1472,7 +1487,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8454-7cbf-42bf-e989" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8454-7cbf-42bf-e989" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1501,7 +1516,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc2-3210-37c1-9f82" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc2-3210-37c1-9f82" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec1f-b097-71ea-f8d3" name="Black Orc Team" revision="2" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec1f-b097-71ea-f8d3" name="Black Orc Team" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Black Orcs are the biggest and strongest of all Orcs. Many believe they draw their name from their dark green skin, although the title is more likely derived from their dour demeanour and bleak sense of humour! Grim and singularly focused on violence, it’s no wonder so many flock to the Blood Bowl pitch! Black Orcs treat other Greenskins as little more than frivolous amateurs, largely because lesser Orcs are likely to squabble amongst themselves and focus too much on beating up the opposition, instead of concentrating on the game. Consequently, many Black Orcs refuse to play alongside other Orcs, choosing instead to form their own teams. Yet Black Orcs aren’t stupid – they know the importance of speed and agility. As a result, Black Orc teams make great use of Goblins, many of whom they become quite fond of, treating them as favourite pets and training them to be tough with regular clumps about the noggin!</readme>
   <categoryEntries>
     <categoryEntry id="696d-9217-aa0a-9765" name="Goblin Bruiser Lineman" hidden="false">
@@ -1031,7 +1031,22 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="a3d4-0e1e-35ba-c40a" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="1bde-eaf8-bfb5-e6f1" name="[Injuries]" hidden="false" collective="false" import="true" targetId="3388-c20c-2ad7-c293" type="selectionEntry"/>
+        <entryLink id="8390-51e0-30d7-9ee6" name="[Injuries]" hidden="false" collective="false" import="true" targetId="3388-c20c-2ad7-c293" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b69e-09df-0b7f-a9b0" name="Injuries" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="f8cd-2401-612e-9579" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry"/>
+                <entryLink id="b1f5-017d-9f77-138c" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry"/>
+                <entryLink id="2f43-0442-999d-268f" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry"/>
+                <entryLink id="d293-30aa-d7eb-e940" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry"/>
+                <entryLink id="bc1f-8efe-8a2e-b539" name="Niggling Injury" hidden="false" collective="false" import="true" targetId="86a5-7971-858d-5bf4" type="selectionEntry"/>
+                <entryLink id="4a92-c556-4a03-88c8" name="Miss Next Game" hidden="false" collective="false" import="true" targetId="1ee8-d98a-5106-523d" type="selectionEntry"/>
+                <entryLink id="de34-582e-282b-e267" name="Dead!" hidden="false" collective="false" import="true" targetId="6af2-0ad7-97ea-b3a2" type="selectionEntry"/>
+                <entryLink id="8b29-2b6a-c711-b31e" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1153,7 +1168,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="696d-9217-aa0a-9765" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="696d-9217-aa0a-9765" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1207,7 +1222,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47dd-e62a-2558-c1f8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47dd-e62a-2558-c1f8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1218,7 +1233,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29cd-476f-1238-0a0d" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29cd-476f-1238-0a0d" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1230,7 +1245,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="696d-9217-aa0a-9765" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="696d-9217-aa0a-9765" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1240,7 +1255,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47dd-e62a-2558-c1f8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47dd-e62a-2558-c1f8" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
