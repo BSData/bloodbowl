@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="736e07b6-4458-426e-8cf9-d33860c0c7a7" name="Halfling Team" revision="24" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="736e07b6-4458-426e-8cf9-d33860c0c7a7" name="Halfling Team" revision="25" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The technical deficiency of Halfling teams is legendary. They’re too short to throw or catch, they run at half pace, and it goes without saying that their blocking game leaves something to be desired. Most Halfling coaches, aware of the material that they have to work with, make up for quality with quantity. After all, if you can get half a dozen players in the opposing team’s End Zone and, by some miracle, manage to end up with the ball, then there is a small chance that one or two of them won’t be jelly by the time you throw the thing! Probably the only real point in the Halflings’ favour is their long-held alliance with the Treemen who guard the forests of their realm, and a team that can tempt one (or two!) of them along to a game suddenly doesn’t look so pathetic!</readme>
   <categoryEntries>
     <categoryEntry id="993d-b293-4970-f335" name="Halfling Hopeful Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -69,9 +69,9 @@
         <categoryLink id="4ae0-dd65-6bd4-b071" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="55fb-877f-467c-499c" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="6bb0-95bb-31f0-de3a" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="f995-ac9a-5b71-f528" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="7715-6a00-fa3f-7653" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1481,15 +1481,28 @@
     </selectionEntry>
     <selectionEntry id="1abb-d71c-872f-a946" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="7a70-b967-e1bb-a532" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="7a70-b967-e1bb-a532" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

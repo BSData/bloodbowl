@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="32" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -195,6 +195,11 @@
         <categoryLink id="8b49-324a-741f-1566" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="511f-47f8-e42c-9ce5" name="Assistant Coaches" hidden="false" collective="false" import="true" targetId="d2ca-b76d-9258-f261" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6318-9c43-eaed-c215" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3f7f-9d43-5a15-135d" name="Season Statistics" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -298,18 +303,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bfa6-10f6-14cc-b5b1" name="Head Coach" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4517-a714-7b6b-6869" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24bf-2bc5-6908-7907" type="min"/>
@@ -328,7 +321,7 @@
     <selectionEntry id="7c50-a743-1f7e-ce60" name="Necromancer" publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b5c5-fbcc-6636-8e27" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2a-74c8-ec55-89c5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b51c-4862-4316-0b15" type="min"/>
       </constraints>
       <rules>
         <rule id="a51b-4fc7-65b2-1b4e" name="Masters of Undeath" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
@@ -338,7 +331,9 @@
 the game.
 • During Step 4 of the post-game sequence, this player may be permanently hired for free if the team has fewer than 16 players on its Team Draft list, otherwise it will be lost. The player’s full value still counts towards the Team Value.
 
-Additionally, just like the Head Coach of any other team, a Necromancer can Argue the Call when one of their players is Sent-off for committing a Foul, as long as they haven’t been sent off themselves.</description>
+Additionally, just like the Head Coach of any other team, a Necromancer can Argue the Call when one of their players is Sent-off for committing a Foul, as long as they haven’t been sent off themselves.
+
+Any time a player is sent off for committing a foul or using a Secret Weapon, you can ‘Argue the call’. Roll a D6. On a roll of 6, the player in question is only sent to the Reserves box. On a roll of a 1, For the rest of the game you cannot argue any calls, and if the ‘Brilliant Coaching’ result is rolled on the Kick-off table, subtract 1 from your dice roll. A turnover is still caused if argue the call is successful. Argue the call may be used in before or after a Bribe, however the Bribe only applies for the player, not the Head Coach.</description>
         </rule>
       </rules>
       <costs>
@@ -3094,6 +3089,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3113,6 +3109,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3132,6 +3129,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3151,6 +3149,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3916,6 +3915,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
               <conditions>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4342,6 +4342,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4361,6 +4362,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4380,6 +4382,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4399,6 +4402,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6240,7 +6244,7 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ac10-7c1e-92f4-773f" name="[Skirmish Statistics]" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ac10-7c1e-92f4-773f" name="[Exhibition Statistics]" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394a-2ca4-e503-f339" type="max"/>
           </constraints>

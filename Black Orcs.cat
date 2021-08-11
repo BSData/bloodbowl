@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec1f-b097-71ea-f8d3" name="Black Orc Team" revision="4" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec1f-b097-71ea-f8d3" name="Black Orc Team" revision="5" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Black Orcs are the biggest and strongest of all Orcs. Many believe they draw their name from their dark green skin, although the title is more likely derived from their dour demeanour and bleak sense of humour! Grim and singularly focused on violence, it’s no wonder so many flock to the Blood Bowl pitch! Black Orcs treat other Greenskins as little more than frivolous amateurs, largely because lesser Orcs are likely to squabble amongst themselves and focus too much on beating up the opposition, instead of concentrating on the game. Consequently, many Black Orcs refuse to play alongside other Orcs, choosing instead to form their own teams. Yet Black Orcs aren’t stupid – they know the importance of speed and agility. As a result, Black Orc teams make great use of Goblins, many of whom they become quite fond of, treating them as favourite pets and training them to be tough with regular clumps about the noggin!</readme>
   <categoryEntries>
     <categoryEntry id="696d-9217-aa0a-9765" name="Goblin Bruiser Lineman" hidden="false">
@@ -54,9 +54,9 @@
         <categoryLink id="dc08-8875-1c6e-1b46" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8a69-0701-a7f1-1e90" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="399b-c892-f174-026e" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="70bb-82a5-f711-d459" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="608a-8ef6-7f2b-1537" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1136,15 +1136,28 @@
     </selectionEntry>
     <selectionEntry id="fea6-3623-e4ef-a527" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="increment" field="0dbc-bafd-86c9-8cc4" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="0dbc-bafd-86c9-8cc4" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3996813e-c141-4ae8-8bac-aa8969a6dc4c" name="Skaven Team" revision="22" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3996813e-c141-4ae8-8bac-aa8969a6dc4c" name="Skaven Team" revision="23" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The game of Blood Bowl has become very popular in all walks of Skaven life. True to their warped nature, the Skaven have adapted the game in their own special ways. A new clan has been formed to govern and control the game – Clan Rigens – which consists of over 20 teams. The most famous are the Skavenblight Scramblers, twice winners of the Blood Bowl trophy. Several other teams have achieved successes in other, lesser leagues and competitions too, and there are mixed teams with a large proportion of Skaven competing at various levels. Of course, their close association with warpstone and the resulting mutations have helped with this success, but even the basic Skaven player has a lot going for them. It’s only a matter of time before a Skaven team makes it to the top again!</readme>
   <categoryEntries>
     <categoryEntry id="02cf-3304-12d7-c96e" name="Skaven Clanrat Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -84,9 +84,9 @@
         <categoryLink id="c1f4-fc3e-07a1-b4b1" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5518-0aa7-522c-5786" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="3bb7-1a48-a7fb-501d" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="fe54-1d95-b0d1-d5ef" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="bfe8-bf19-85e5-d1b5" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1887,15 +1887,28 @@
     </selectionEntry>
     <selectionEntry id="9d47-246e-de62-8592" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="a16e-7af0-7976-3e4e" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="a16e-7af0-7976-3e4e" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

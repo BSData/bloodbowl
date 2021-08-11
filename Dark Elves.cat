@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" name="Dark Elves Team" revision="32" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" name="Dark Elves Team" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Thousands of years ago, the Dark Elves were little more than a small group within High Elf society who turned their back on traditional Elven ways. They eschewed nobility and grace for power and glory, believing their immortality marked them out as the most powerful of all the world’s races. Their thirst for conquest led to a bitter civil war that rocked the Elven kingdoms. Dark Elf teams exhibit similar strengths and weaknesses to their Elven cousins, but are distinctly more aggressive in their game. But sheer spite makes the Dark Elves enjoy the running game, particularly when a team includes a remarkable player like Jeremiah Kool. In fact, it is hard to believe that the Flashing Blade won’t be tempted out of retirement – if not by the Darkside Cowboys, then by some other team.</readme>
   <categoryEntries>
     <categoryEntry id="0d00-5600-ce4c-85f0" name="Runner" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -34,7 +34,7 @@
         <categoryLink id="c57e-dcef-235a-2dbd" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7c8d-5a64-5d13-4e7a" name="Journeyman [Lineman]" hidden="false" collective="false" import="true" targetId="00c4-0d7f-cb3a-1d2b" type="selectionEntry">
+    <entryLink id="7c8d-5a64-5d13-4e7a" name="Journeyman [Dark Elf Lineman]" hidden="false" collective="false" import="true" targetId="00c4-0d7f-cb3a-1d2b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7cc1-35a1-7112-6969" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
@@ -69,7 +69,7 @@
         <categoryLink id="e624-1b58-1b63-dd7b" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5705-02e7-4a1e-5db6" name="Lineman" hidden="false" collective="false" import="true" targetId="9b3e-2704-847d-b571" type="selectionEntry">
+    <entryLink id="5705-02e7-4a1e-5db6" name="Dark Elf Lineman" hidden="false" collective="false" import="true" targetId="9b3e-2704-847d-b571" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1453-9d60-7abe-22c3" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -84,9 +84,9 @@
         <categoryLink id="62ac-59dd-ff37-3696" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2eb0-deca-fcdb-19f8" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="cd09-4618-1ed4-fd5d" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="2a7f-8c0c-46cf-1756" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="4a58-bff5-da14-fc0a" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1827,15 +1827,28 @@
     </selectionEntry>
     <selectionEntry id="d6f7-84a5-0e16-c1ab" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="increment" field="aaa4-6249-23e4-5bd8" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="aaa4-6249-23e4-5bd8" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

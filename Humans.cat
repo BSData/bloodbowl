@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" name="Human Team" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101 or @Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" name="Human Team" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101 or @Dr. Toboggan" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either. This makes Human teams extremely flexible, equally at home running the ball, passing it, or ignoring it and pounding the opposition into the turf instead!</readme>
   <categoryEntries>
     <categoryEntry id="fd40-0171-c571-c1a5" name="Human Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -79,7 +79,7 @@
         <categoryLink id="1761-f8e4-2cff-0e87" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b730-8c00-db23-9e8e" name="Lineman" hidden="false" collective="false" import="true" targetId="3809-6d2e-11d0-184f" type="selectionEntry">
+    <entryLink id="b730-8c00-db23-9e8e" name="Human Lineman" hidden="false" collective="false" import="true" targetId="3809-6d2e-11d0-184f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="db0f-a409-786d-3949" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -99,9 +99,9 @@
         <categoryLink id="01c7-5835-f30c-596a" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b13c-0ef7-00d0-5c9c" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="5356-a891-8e7e-3686" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="e0a5-7c85-9747-ee40" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="67f7-15e8-5d0e-4c73" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -628,7 +628,7 @@
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="set" field="ee01-7448-8c3f-a882" value="125,000"/>
+                <modifier type="set" field="ee01-7448-8c3f-a882" value="115,000"/>
                 <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Block, Loner (4+)"/>
                 <modifier type="set" field="name" value="Mercenary [Blitzer]"/>
               </modifiers>
@@ -656,7 +656,7 @@
       </selectionEntryGroups>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="125000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="115000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1266,7 +1266,7 @@
       </entryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="95000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="85000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2222,15 +2222,28 @@
     </selectionEntry>
     <selectionEntry id="6cfc-e4bc-9379-b743" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="bc2e-c151-80d1-39a9" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="bc2e-c151-80d1-39a9" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

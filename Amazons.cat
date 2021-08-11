@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="30" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @Crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @Crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The Amazons of Lustria are an enigma and several contradictory stories of their origins exist. One tells that long ago, driven by a desire for adventure, a group of Norse Valkyries set sail for distant shores. After a journey worthy of a saga in its own right, they founded a colony deep within the basin of a great river that wound its way through a massive rainforest. Cut off from the outside world, a new warrior society sprung up, borrowing customs from the native Lizardmen. Another legend claims that the Amazons were created by ancient, god-like beings to serve as the handmaidens of the gods. Perhaps both legends contain something of the truth, but either way, Amazons are natural athletes, and many possess the combination of agility and violence that marks  them out as potential legends of the sport.</readme>
   <categoryEntries>
     <categoryEntry id="cdc2-3210-37c1-9f82" name="Eagle Warrior Thrower" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -69,9 +69,9 @@
         <categoryLink id="4cf6-1b7a-f914-6a54" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6545-10c3-b5ef-033c" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="a1dc-72db-8dcf-2c98" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="a07b-c999-8099-a35c" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="a116-2dd7-63b2-1121" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1444,6 +1444,14 @@
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="45b6-e5bf-3bfa-fb0d" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>

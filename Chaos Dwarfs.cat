@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="24" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="25" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Chaos Dwarfs are evil creatures, famed weaponsmiths whose creations are as twisted and as cruel as they are. They are the sworn enemies of their distant kin, but if there’s one thing the two races agree on, it is Blood Bowl. Chaos Dwarf teams have long been a fixture of the sport, even though they were excluded from official play by the NAF until its collapse. Most Chaos Dwarf coaches realise that their chief weakness is their race’s inherent ponderousness, so Hobgoblin slaves fulfil a vital role as Runners and Throwers. A few lucky teams can even boast the presence of Bull Centaurs, mighty warriors who have been blessed with the gift of mutation. Chaos Dwarf teams might not be quick, but you’d be a fool to stand in their way!</readme>
   <categoryEntries>
     <categoryEntry id="108e-32d7-df38-c44c" name="Enslaved Minotaur" publicationId="440b-48bb-12dd-90e4" hidden="false">
@@ -39,7 +39,7 @@
         <categoryLink id="291a-0f0a-2d4d-4653" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e647-2df1-4b4f-5a1a" name="Hobgoblin Runner" hidden="false" collective="false" import="true" targetId="cd62-b744-a281-631f" type="selectionEntry">
+    <entryLink id="e647-2df1-4b4f-5a1a" name="Hobgoblin Lineman" hidden="false" collective="false" import="true" targetId="cd62-b744-a281-631f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="bfdd-8925-4fb4-af5b" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -69,10 +69,14 @@
         <categoryLink id="b573-bb19-92cc-f0a0" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="52d2-ef5c-4908-3fdb" name="Favored of..." hidden="false" collective="false" import="true" targetId="b38d-6ca8-2092-1c48" type="selectionEntry"/>
-    <entryLink id="f385-7726-2164-5b6e" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="52d2-ef5c-4908-3fdb" name="Favored of..." hidden="false" collective="false" import="true" targetId="b38d-6ca8-2092-1c48" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="f13a-7bef-5b97-a636" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="0b34-9f62-a9b8-ff14" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="83d2-cf61-f0d2-9d28" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="58da-615c-2f64-b74c" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1482,14 +1486,27 @@
     <selectionEntry id="0067-ce03-cc6d-d83b" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="802c-fb93-06bc-8689" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="802c-fb93-06bc-8689" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>

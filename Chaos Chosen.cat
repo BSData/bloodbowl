@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="35" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Blood Bowl is arguably even more popular among the followers of the Chaos gods than it is among civilised folk. Maybe it’s the cult-like supporters’ clubs, the constant violence both on and off the pitch, or just the brightly-coloured strips... Whatever the case, wherever you find a Blood Bowl stadium, you’re guaranteed to find at least one team made up of an assortment of thoroughly debased, dedicated followers of Chaos. Most of the teams’ players tend to be Beastmen, hideous mutants who have given up their forest lairs for the sporting life, but their numbers are bolstered by the presence of superhuman Chosen, and frenzied and blood-crazed Minotaurs, Ogres and Trolls. Such teams are hardly subtle, often forgetting about the ball entirely as they grind their opponents into the turf, all in veneration of the Ruinous Powers they worship.</readme>
   <categoryEntries>
     <categoryEntry id="cb40-5b0a-d25b-0a94" name="Chosen Blocker" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -49,7 +49,7 @@
         <categoryLink id="a27d-1c65-a896-01d9" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="789c-7cac-e1ef-a4ee" name="Journeyman [Beastman Runner]" hidden="false" collective="false" import="true" targetId="1577-b069-e824-b0b9" type="selectionEntry">
+    <entryLink id="789c-7cac-e1ef-a4ee" name="Journeyman [Beastman Runner Lineman]" hidden="false" collective="false" import="true" targetId="1577-b069-e824-b0b9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="123a-819d-c636-8a94" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
@@ -94,9 +94,9 @@
         <categoryLink id="ba16-7fb5-aa6e-3bad" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8c09-27e8-d938-8bd1" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="68d9-49e1-48b9-f3d1" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4ff8-cb77-96b3-1d3f" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="bfc3-453d-2802-c51c" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1878,15 +1878,28 @@
     </selectionEntry>
     <selectionEntry id="1327-e416-5dde-875b" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="increment" field="3be6-3e0d-6553-41eb" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="3be6-3e0d-6553-41eb" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

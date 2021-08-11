@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" name="Wood Elves Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" name="Wood Elves Team" revision="28" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Wood Elves make natural Blood Bowl players, although their refusal to wear heavy armour does leave them vulnerable to some of the more hard hitting teams. Generally, the Wood Elves’ natural athletic ability is enough to keep them out of trouble – it takes a fast or cunning foe to catch a Wood Elf player. In any case, no decent Wood Elf wants to wear bulky, shapeless armour, let alone be seen in it! For Wood Elves the long pass is everything, even more so than for their High Elf cousins, and all of their effort goes into becoming experts at throwing or receiving. The one exception to this is the Wood Elf Wardancers. These athletic warriors are trained in the deadly arts of hand-to-hand combat and are a match for almost any foe.</readme>
   <categoryEntries>
     <categoryEntry id="1e8c-d660-270c-ec99" name="Wood Elf Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -34,7 +34,7 @@
         <categoryLink id="2e45-064f-20e3-2dff" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="54d0-4bea-b597-3703" name="Journeyman [Lineman]" hidden="false" collective="false" import="true" targetId="388b-d925-9e6c-53c9" type="selectionEntry">
+    <entryLink id="54d0-4bea-b597-3703" name="Journeyman [Wood Elf Lineman]" hidden="false" collective="false" import="true" targetId="388b-d925-9e6c-53c9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a453-ea1c-cddd-8894" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
@@ -84,9 +84,9 @@
         <categoryLink id="2013-b4ba-2e37-413c" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ddf7-58ac-e536-4aea" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="ce08-5fe7-8d92-9174" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="7679-9bb6-c828-f2b4" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="b340-b7a5-0773-17ab" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1932,15 +1932,28 @@
     </selectionEntry>
     <selectionEntry id="e2b3-9492-1030-214d" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="30f1-a4bb-3d08-b198" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="30f1-a4bb-3d08-b198" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e9482b58-edc3-4edb-a2d3-c07110883bfb" name="Chaos Renegades" revision="35" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e9482b58-edc3-4edb-a2d3-c07110883bfb" name="Chaos Renegades" revision="36" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Chaos Renegade teams represent the real flotsam and jetsam of the Blood Bowl world, players so maladjusted that no coach worth their salt would let them play on their roster. They might be bitter rejects, inveterate cheats or blatant foulers. Many are outcasts expelled from established teams. Inevitably, such players end up rejecting the ways of Nuffle and dedicating themselves to other dark powers, often garnering themselves all manner of dubious mutations as ‘rewards’ in the process. The most successful team of this type was the Chaos All-Stars, whose eccentrically mixed line-up managed to soar to glory. Also of note is the (in)famous Mongrel Horde, a motley assortment of scumbags in it for the gold. Unfortunately, most of the Horde’s players hate each other, often refusing to play nicely or turn up to practices together!</readme>
   <categoryEntries>
     <categoryEntry id="2b8a-87a3-b5dc-c33a" name="Renegade Human Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -49,7 +49,7 @@
     </categoryEntry>
     <categoryEntry id="a9d5-4c1c-ed7a-8aa2" name="Big Guy" publicationId="46da-ba61-6439-83e5" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="176c-ba26-857c-1d71" type="max"/>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="176c-ba26-857c-1d71" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="9f4e-5891-5118-e227" name="Renegade Human Thrower" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -169,9 +169,9 @@
         <categoryLink id="f8dc-9d50-cc1a-4ebf" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7457-f865-7aa6-2cc9" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="bcf1-808b-58c9-8994" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="9273-8b01-aae0-d0f1" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="20f1-ec19-4a33-b738" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3676,15 +3676,28 @@
     </selectionEntry>
     <selectionEntry id="34ad-aae9-160b-ce25" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="64f2-3667-67fb-2b99" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="64f2-3667-67fb-2b99" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

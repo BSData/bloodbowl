@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" name="Orc Team" revision="26" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" name="Orc Team" revision="27" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Orcs have been playing Blood Bowl since the game was discovered – in fact it was an Orc who found the shrine where the sacred Tome of Nuffle was hidden. Orc teams are very hard-hitting, concentrating on pounding the opposition into the turf to create gaps through which Orc Blitzers can run. Indeed, if any fault can be found with Orc teams, it is that if they aren’t fighting amongst themselves, they’re spending too much time beating up the other team! Orcs have always respected brawn over intelligence, so their line of scrimmage is often overloaded with Big Uns and Troll players, adding even more weight to the front line. The Orc race also has close ties with other Greenskin races such as Goblins, and it is common to find such players in Orc teams.</readme>
   <categoryEntries>
     <categoryEntry id="ccc4-6788-3bb9-7307" name="Orc Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -34,7 +34,7 @@
     </categoryEntry>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="39e6-b00d-4bf2-980c" name="Black Orc Blocker" hidden="false" collective="false" import="true" targetId="2610-a6e0-9f90-0267" type="selectionEntry">
+    <entryLink id="39e6-b00d-4bf2-980c" name="Big Un Blocker" hidden="false" collective="false" import="true" targetId="2610-a6e0-9f90-0267" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5275-f891-3452-9465" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -44,7 +44,7 @@
         <categoryLink id="71a6-a5dc-a251-c495" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4d00-b0ca-7c7f-b4ab" name="Journeyman [Lineman]" hidden="false" collective="false" import="true" targetId="9482-df82-953b-4d72" type="selectionEntry">
+    <entryLink id="4d00-b0ca-7c7f-b4ab" name="Journeyman [Orc Lineman]" hidden="false" collective="false" import="true" targetId="9482-df82-953b-4d72" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="af93-9569-d321-9748" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
@@ -99,9 +99,9 @@
         <categoryLink id="bace-25ca-b1e2-1365" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fcc8-0797-995a-3eef" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="fb8a-e671-5c8c-d943" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="958c-dd39-c1ec-472d" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="727d-a04b-39c6-e848" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2193,15 +2193,28 @@
     </selectionEntry>
     <selectionEntry id="6447-0e91-878c-04da" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="9431-4c55-b155-1a9a" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="9431-4c55-b155-1a9a" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

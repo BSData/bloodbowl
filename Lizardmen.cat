@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b807a583-d1b4-4029-b81b-b14c3ad69064" name="Lizardman Team" revision="25" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b807a583-d1b4-4029-b81b-b14c3ad69064" name="Lizardman Team" revision="26" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>If Blood Bowl historians are to be believed, Lizardmen have been playing the sport for over 8,000 years. This does seem a little unlikely but when questioned, Blood Bowl historians just nod smugly, peer over their spectacles and say that this just goes to show how prescient Lizardmen are. Whatever the story behind their involvement in the sport, they’ve definitely made an impact! On the field, Lizardmen epitomise teamwork, with up to four different species working together on the pitch at a time. Skinks are the most numerous players, highly agile and as quick as lightning. They are balanced out by Saurus, fewer in number and not as fast, but capable of dishing out some serious punishment. Then there are the Kroxigor, reptilian monstrosities capable of felling an Ogre with a single blow!</readme>
   <categoryEntries>
     <categoryEntry id="c01f-f62a-4a0e-d257" name="Chameleon Skink" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -34,7 +34,7 @@
         <categoryLink id="346f-3a6c-cc7d-576e" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5156-92a3-2de7-f276" name="Journeyman [Skink Runner]" hidden="false" collective="false" import="true" targetId="787c-e455-7361-d9b7" type="selectionEntry">
+    <entryLink id="5156-92a3-2de7-f276" name="Journeyman [Skink Runner Lineman]" hidden="false" collective="false" import="true" targetId="787c-e455-7361-d9b7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="415b-a618-4b5e-2116" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
@@ -69,9 +69,14 @@
         <categoryLink id="821a-90ad-51b1-4bf8" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4374-20c0-370a-1c9b" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="8323-af80-4270-95ee" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="09e3-fb57-e07f-d320" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="3e2d-8a69-44d2-4f50" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f83c-b509-f32a-d6ef" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="92a3-3a66-1115-cfae" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1549,15 +1554,28 @@
     </selectionEntry>
     <selectionEntry id="2754-f9be-06c6-4421" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="e95c-42f0-ce8b-ea6b" value="-1.0">
           <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="e95c-42f0-ce8b-ea6b" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

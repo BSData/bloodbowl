@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="29" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="30" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Vampires are just one of the many Undead nightmares that stalk the shadows on moonless nights, but never let it be said that they aren’t the most civilised. Unlike the Skeletons, Zombies and Wights that are held together by necromancy, Vampires are noble creatures, capable of existing among human society with little fear of discovery. Since Blood Bowl took the world by storm, a great number have stepped out of the shadows to involve themselves in the sport – the most famous being star commentator Jim Johnson – whilst many others make use of modern sun protection fetishes to allow them to play in daylight. Teams made up exclusively of Vampires are almost unheard of, and most pad out their numbers with Thralls, who gladly give up free will in exchange for the life of a Blood Bowl player!</readme>
   <categoryEntries>
     <categoryEntry id="cd18-d181-3017-ee27" name="Thrall" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -19,7 +19,7 @@
         <categoryLink id="f701-19ba-f7db-c3a0" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="be7b-b9cb-872f-3b29" name="Journeyman [Thrall]" hidden="false" collective="false" import="true" targetId="3543-5c32-b34d-59a9" type="selectionEntry">
+    <entryLink id="be7b-b9cb-872f-3b29" name="Journeyman [Thrall Lineman]" hidden="false" collective="false" import="true" targetId="3543-5c32-b34d-59a9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ae47-9882-cc8f-fab2" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
@@ -39,9 +39,9 @@
         <categoryLink id="3d3a-95c1-725d-2eca" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4a0a-e381-bb14-557a" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+    <entryLink id="45c6-cab3-8dc2-578c" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c75c-bf1f-1262-f218" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="47c8-10e0-1f9d-3e1a" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -770,14 +770,27 @@
     <selectionEntry id="a4da-885c-478e-acc9" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" field="d599-e1bf-e4be-9870" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d599-e1bf-e4be-9870" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>

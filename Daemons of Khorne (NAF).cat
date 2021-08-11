@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1ef1-a4de-64c9-efd2" name="Daemons of Khorne (NAF)" revision="1" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1ef1-a4de-64c9-efd2" name="Daemons of Khorne (NAF)" revision="2" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@Crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Blood for the Blood God! The frenzied fans of the Khorne demand blood for their dark god - and the players are happy to give it to them, often by launching opponents off the pitch to be sacrificed by the crowd. Uncontrollable rage turns Khornate players into virtually unstoppable blitzers, making the sidelines very dangerous indeed. The Lord of Rage blesses the team with his daemons, including the most feared monstrosity in Blood Bowl: the Bloodthirster. Khorne demands carnage, and if a few touchdowns should perchance be scored, all the better!</readme>
   <categoryEntries>
     <categoryEntry id="25bc-8286-1f05-8e5a" name="Pit Figher" publicationId="de23-a2d4-c567-535a" hidden="false">
@@ -24,11 +24,6 @@
     </categoryEntry>
   </categoryEntries>
   <entryLinks>
-    <entryLink id="5290-27d4-9481-2e53" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="28f9-8b45-0e40-4fa0" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="c36f-acc5-f23d-c4a7" name="Pit Fighter" hidden="false" collective="false" import="true" targetId="459c-ae26-da6d-6284" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="44c7-f0f5-d0f4-ca27" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
@@ -79,19 +74,37 @@
         <categoryLink id="4031-ab41-bb43-615a" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="d863-ba51-6ee1-d475" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a60e-2f11-adbe-c655" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1b98-25a5-6d7d-781c" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
-          </conditions>
-        </modifier>
         <modifier type="increment" field="104f-1bb7-6d1c-1dc1" value="1.0">
           <repeats>
             <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="104f-1bb7-6d1c-1dc1" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
