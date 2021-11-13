@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5ca8-cd92-27fb-6d55" name="Old World Alliance" revision="5" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5ca8-cd92-27fb-6d55" name="Old World Alliance" revision="6" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The cities of the Old World are bustling metropoles, populated by all manner of different races. From Kislev in the cold north, to Estalia in the sweltering south, Humans build their homes, and to these flock Dwarfs, Halflings and more. Many Dwarfs come to build the tall towers and maintain the high walls of these great cities, whilst Halflings come to cook, eat and steal any small items they happen upon. Indeed, in these more enlightened times when warfare is considered a thing of the past, ever more varied races flock to these urban centres, so that today even Ogres are an increasingly common sight. Old World Alliance teams, though relatively uncommon, tend to form in the largest of cities, where cosmopolitan players of various races are drawn together to enjoy Nuffle’s great game.</readme>
   <categoryEntries>
     <categoryEntry id="0ca9-2f56-9850-2340" name="Old World Human Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -2318,8 +2318,8 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="25d9-556d-4ed4-4314" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="e269-bdd8-4401-6ed9" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+        <infoLink id="25d9-556d-4ed4-4314" name="Arm Bar" hidden="false" targetId="c8fe-9ea9-6803-14a0" type="rule"/>
+        <infoLink id="e269-bdd8-4401-6ed9" name="Brawler" hidden="false" targetId="3ee1-a55e-60cc-c265" type="rule"/>
         <infoLink id="43dd-4321-2d91-f065" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="495a-ff20-1279-7d91" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
       </infoLinks>
@@ -2905,8 +2905,8 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="5393-cfd3-2c5d-35cd" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="0e8e-bfa9-1dda-8318" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+        <infoLink id="5393-cfd3-2c5d-35cd" name="Arm Bar" hidden="false" targetId="c8fe-9ea9-6803-14a0" type="rule"/>
+        <infoLink id="0e8e-bfa9-1dda-8318" name="Brawler" hidden="false" targetId="3ee1-a55e-60cc-c265" type="rule"/>
         <infoLink id="640e-9550-e666-f6ec" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="28a4-e4db-cbc8-c109" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
       </infoLinks>
@@ -3833,6 +3833,7 @@
         <infoLink id="fced-7d70-ffbb-6014" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
         <infoLink id="8c8c-972c-b771-03a9" name="Take Root" hidden="false" targetId="f5fc-093a-1cd5-56fc" type="rule"/>
         <infoLink id="90a9-f27d-22a5-a941" name="Timmm-ber!" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
+        <infoLink id="c5c3-2f85-45de-189b" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5efc-b43e-5a97-bb25" name="Big Guy" hidden="false" targetId="b8ea-4dbe-bea4-ad3e" primary="false"/>
@@ -3979,6 +3980,7 @@
         <infoLink id="1215-2156-bee6-1c16" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
         <infoLink id="78ad-3732-0060-e809" name="Take Root" hidden="false" targetId="f5fc-093a-1cd5-56fc" type="rule"/>
         <infoLink id="0695-6a25-8474-6f3b" name="Timmm-ber!" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
+        <infoLink id="89b9-d80c-a9f6-0b0e" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="99b8-a009-a21a-ff3f" name="Big Guy" hidden="false" targetId="b8ea-4dbe-bea4-ad3e" primary="false"/>
@@ -4188,7 +4190,15 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="c593-dffe-42c9-ed9d" name="Strong Arm" hidden="false" collective="false" import="true" targetId="828c-bd4a-fd63-8828" type="selectionEntry"/>
+        <entryLink id="c593-dffe-42c9-ed9d" name="Strong Arm" hidden="false" collective="false" import="true" targetId="828c-bd4a-fd63-8828" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e800-c13c-b835-0063" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="37d2-04ef-728c-8cf1" name="Thick Skull" hidden="true" collective="false" import="true" targetId="9bbd-7844-16a2-c9fe" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
