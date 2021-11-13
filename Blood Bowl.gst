@@ -7,6 +7,7 @@
     <publication id="440b-48bb-12dd-90e4" name="Teams of Legend"/>
     <publication id="9118-6c97-8006-93a4" name="Death Zone"/>
     <publication id="de23-a2d4-c567-535a" name="NAF: Rules for Tournaments"/>
+    <publication id="3637-e2aa-16da-c089" name="Spike #13"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -378,6 +379,7 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3898,6 +3900,43 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="a29a-9e95-402e-649e" name="Wrath of Khorne (2D6)" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90e4-bc42-d307-a47e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="dc17-ad9b-e1de-4b59" name="12 - Crimson Downpour" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">So impressed with the display of violence, Khorne causes the heavens to rain crimson down upon those on the pitch, drenching them in gallons of blood and making it slippery underfoot. Players attampting to Rush will fail on the roll of a 1 or a 2. Additionally, if a player suffers a Push Back result from a Block, roll a D6. On the roll of a 1, the player is KO&apos;d after the push is made.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="528f-b635-7fff-8070" name="11 - Red Mist" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A red mist descends upon the pitch, coating the players in a thin veil of blood and making visibility worse. Players making a pass action may not perform a Long Pass or Lopng Bomb.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="1961-d7b4-f7c2-b80b" name="04-10 - All is Calm" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Khorne is content to simply watch the game without intervening, making it perfect Blood Bowl weather.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="8874-7e48-3c37-6971" name="03 - Losing Patience" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The insufficient spilling of blood, at least in his eyes, is beginning to draw the ire of Khorne - which brings its own risks. At the end of each drive, randomly select one player on the pitch. Immediately make an Armour roll, and an Injury roll if necessary, for that player.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="9b0e-a9e7-3ec5-2e7c" name="02 - Khorne&apos;s Fury" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Khorne has become incensed that there is not enough carnage to stem his bloodlust, and he demands more bloodshed. To fuel his rage, Khorne plants his wrath within his chosen vessels on the pitch - though it comes with a cost to the players. Randomly select two players form each team. Those players gain +1 to their Strength characteristic and the Frenzy skill until a different result is rolled on the Weather table. When a different result is rolled, these players immediately make an Armour roll, and an Injury roll if necessary.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4583,6 +4622,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5245,6 +5285,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5812,6 +5853,215 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
               </categoryLinks>
               <costs>
                 <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ac1b-b0f1-b5b1-4d9d" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f6-3387-2dbc-f6f7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4040-de09-b320-d12a" name="Akhorne the Squirrel" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">1</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="0431-7ce8-62a7-6053" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false">
+                  <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="19d8-7ec9-6008-83e7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="dee4-5eb3-42b9-04e5" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+                <infoLink id="efaf-d6e6-b7be-27f5" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+                <infoLink id="e18c-5d9a-753d-0d93" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+                <infoLink id="5f98-307f-1b1a-82c0" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+                <infoLink id="514a-21c5-52f3-b9b3" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+                <infoLink id="cfe8-1072-2cab-bebe" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+                <infoLink id="f477-274e-b8f6-923d" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+                <infoLink id="c234-d261-cb86-1eeb" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
+                <infoLink id="e525-74ff-e78c-3db8" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="8fb2-c518-0098-280c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="016a-f67d-2398-1dfd" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a60a-9e6c-0312-ab5c" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66c-20db-1afa-f2a7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="95b0-a2e2-89d8-6f29" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchanneled Fury</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">240000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="545d-2612-f26a-68a8" name="Gored by the Bull" publicationId="3637-e2aa-16da-c089" page="11" hidden="false">
+                  <description>Once per game, when Grashnak performs a Blitz action, Grashnak may roll one additional Block dice against the opposition player, regardless of the opposition player&apos;s Strength, to a maximum of 3 Block dice. If Grashnak performs a second Block action due to the Frenzy skill, this second Block action will also benefit from this rule.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="b272-72db-0254-fef9" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="01b7-4a6f-bea3-f1ae" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+                <infoLink id="4b30-d6ef-c820-e5b7" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+                <infoLink id="dfaf-c195-9d65-6efa" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
+                <infoLink id="d52b-1179-52f9-0320" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+                <infoLink id="7c84-91c1-af5f-3c91" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bd67-f496-39a8-e7ab" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="043f-941d-2069-de44" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="240000.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c5f9-54c2-2418-a111" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd1b-687f-a426-6c25" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a520-68b1-fa83-bb26" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="b118-1a5f-f669-d109" name="Fury of the Blood God" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+                  <description>Once per game, if Scyla rolls a 1 for his Unchaanneled Fury roll after declaring a Block action, instead of applying the usual effects of Unchaanneled Fury, Scyla may perform two Block actions instead.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="63e0-52ed-0020-7dc2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="f0bc-c586-d6c8-312f" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+                <infoLink id="1fca-e9b8-5bd1-b578" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+                <infoLink id="a714-0642-2165-bc01" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+                <infoLink id="b8b8-17d1-ecd9-b93f" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+                <infoLink id="d973-d8bc-f7d0-f9af" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+                <infoLink id="d67f-1d86-6410-0a74" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="fd6d-ef59-036d-bae5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="720a-a641-89a1-f440" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dc1c-d4a8-1344-9350" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd5-bf8c-8784-196f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5a54-addd-efd5-59c1" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Secret Weapon</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="9991-74c5-9dbc-78d1" name="Maximum Carnage" publicationId="3637-e2aa-16da-c089" page="30" hidden="false">
+                  <description>Once per game, after Max performs a Chainsaw Attack Special action he may immediately perform another Chainsaw Attack Special action that targets a different opposition player.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="343e-1109-31dc-c9c0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="4bd7-48ed-4936-3505" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+                <infoLink id="de45-732e-97dc-1672" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5401-5a92-1570-ff8e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="54aa-c74a-3837-2357" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
                 <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
