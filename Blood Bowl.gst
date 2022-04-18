@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -8,6 +8,8 @@
     <publication id="9118-6c97-8006-93a4" name="Death Zone"/>
     <publication id="de23-a2d4-c567-535a" name="NAF: Rules for Tournaments"/>
     <publication id="3637-e2aa-16da-c089" name="Spike #13"/>
+    <publication id="af11-1772-744f-9a1a" name="Spike #14"/>
+    <publication id="8c4c-3037-21a5-355b" name="Spike #11"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -3937,6 +3939,80 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="519b-1d5b-5c77-ed71" name="Harsh Tundra Weather Table (2D6)" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb02-32c9-356c-5fd5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c8e8-bde4-513f-1fd8" name="12 - White-out" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It&apos;s snowing so heavily that it&apos;s near impossible for the players to see anything at all! Players maay not perform Pass actions. Additionally, a player may not declare a Blitz action against an opposing player who is more than three squares away.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b225-3bfe-b884-7224" name="11 - Hail Shower" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">At the start of each of the team&apos;s turn, roll a D6. On a 1, randomly select one player on the pitch from the active team. This player is struck by an unusually large hailstone; make an Armour roll for this player. If the armour roll is successful, do not make an Injury roll; the player is instead automatically Stunned. This will not cause a Turnover, even if the player with the ball is Knocked Down.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="157b-add9-44d1-7d7d" name="04-10 Clear and Calm" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The frequently dangerous climate is unusually calm and warm (for Norscaa at least!) making it perfect (ish - Ed) Blood Bowl weather.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="90cf-d07c-63a2-acac" name="03 - Freezing Fog" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The weather is so cold it&apos;s causing players&apos; fingers to go numb, which makes catching the ball difficult indeed! Apply a -1 modifier every time a player makes an AG test when attempting to catch the ball, pick up the ball, or to intefere with a Pass action.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="ae77-9bf6-676b-c4a2" name="02 - Wind Chill" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The biting wind is enough to force some players to hide from the freezing cold in the dugout! At the end of step 1 of the Start of Drive sequence, both coaches roll a D6. The team that scores the lowest (or both teams in the case of a tie) raandomly selects one of their players on the pitch. That player has had enough of the dreadful wind. Immediately place the selected player in the Reserves box to warm up.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="25b7-1f09-90e5-d029" name="Dark of Night Weather Table (2D6)" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="087e-ff3f-a8bd-cb53" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="119b-a976-d473-1265" name="03 - Pouring Rain" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soakedd and the ball very slippery! apply a -1 moddifier every time a player makes an Agility test to catch or pick up the ball, or attempts to interfere with a pass.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d3af-b1a9-eeee-73a9" name="02 - Thunderstorm" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The rain lashes and overhead a freak thunderstorm threatens to cause haavoc on the pitch. Apply a -1 modifier every time a player makes an Agility test to pick up the ball, or attempts to interfere with a pass. Additionally, at the start of each players turn roll a D6. On a 1, randomly select one player on the pitch from the active team. This player is hit by lightning; make an Injury roll for this player. If this causes a Casualty, it will always be treated as a Badly Hurt result. This will not cause a turnover, even if it hits a player with the ball.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="10d4-b109-bbf5-9d2e" name="12 - Can&apos;t see the Hand in Front of your face" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The fog is so thick that it is all but impossible for a player to see themselves, let alone their team-mates or opponents! Players may not make Pass actions. Additionally, a player may not declare a Blitz action against an opposing model that is more than three squares away from it.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="d6dd-e4f2-6c5b-851a" name="04-10 - A Still Night" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It may be dark and eerily quiet in Sylvania, but otherwise it is perfect Blood Bowl weather.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="beec-306c-de7e-e1e0" name="11 - Thick Fog" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Fog descends on the pitch, making it hard to see past a certain point. Players making a Pass action may not perform a Long pass or a Long Bomb.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4504,11 +4580,18 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -4624,6 +4707,14 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -4679,7 +4770,6 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5062,12 +5152,19 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5099,7 +5196,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                 <infoLink id="bbbf-0900-3f29-e79d" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
                 <infoLink id="3421-4ff7-9082-3282" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
                 <infoLink id="7aa6-d538-d79b-8ce4" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-                <infoLink id="3f1c-4195-fc81-44c9" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="3f1c-4195-fc81-44c9" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
                 <infoLink id="1ddd-f19e-e2da-b797" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
               </infoLinks>
               <categoryLinks>
@@ -5228,13 +5325,20 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5261,8 +5365,8 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                 </rule>
               </rules>
               <infoLinks>
-                <infoLink id="7159-e2be-d7a1-7af7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="d2d2-d918-28b8-1d8b" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+                <infoLink id="7159-e2be-d7a1-7af7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="d2d2-d918-28b8-1d8b" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
                 <infoLink id="1609-a1a9-43c2-74a0" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
               </infoLinks>
               <categoryLinks>
@@ -5287,6 +5391,14 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5338,13 +5450,20 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5441,6 +5560,14 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5492,12 +5619,19 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5529,7 +5663,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                 <infoLink id="858d-6cb2-9542-285c" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
                 <infoLink id="08da-ae73-76d7-3ac9" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
                 <infoLink id="4d9f-2288-9c52-f56f" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="6319-dda7-1ef6-1136" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="6319-dda7-1ef6-1136" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="a45e-b3ad-91a1-40a8" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -5550,11 +5684,18 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5806,7 +5947,6 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
@@ -5814,6 +5954,14 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5913,6 +6061,14 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5959,9 +6115,6 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
             <selectionEntry id="c5f9-54c2-2418-a111" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="true" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -5969,7 +6122,16 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -6026,6 +6188,14 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -6066,6 +6236,369 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="e16f-5778-cdb8-6574" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5655-17b8-d345-5354" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b30e-b57e-8488-35b8" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Guard, Loner (3+), Tackle</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">245000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="097c-0338-0b54-3afa" name="Raiding Party" publicationId="af11-1772-744f-9a1a" page="11" hidden="false">
+                  <description>Once per drive, whenever Ivar begins his activation, he may choose one Open player on his team within five squares. The chosen player may immediately move one square, ignoring Tackle Zones, through they must end this move Marking an opposing player.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="a024-47a5-2b89-d976" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+                <infoLink id="1db0-62f8-c980-c1a2" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+                <infoLink id="6ebe-2e7d-a2a6-038f" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+                <infoLink id="3684-2f7f-6292-38f0" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="11d5-6ffe-3c33-9d72" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="cc9d-0e8d-ff86-364e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="245000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="edd7-34a2-2dd2-1de8" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a775-1248-b184-d8d0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8925-0590-48b6-5b28" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Drunkard, Loner (4+), Thick Skull</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="3fc4-f564-a05d-9420" name="Beer Barrel Bash" publicationId="af11-1772-744f-9a1a" page="30" hidden="false">
+                  <description>Once per drive, at the start of his activation, Thorsson may perform a Throw Keg Special action. When he does, select an opposition player within three squares of Thorsson and roll a D6. On a 3+, the player is immediately Knocked Down. However, on a 1, Thorsson is Knocked Down instead.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="8a77-96fa-6048-88bd" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+                <infoLink id="a7e4-a1c9-05d4-6010" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+                <infoLink id="4629-08b5-220a-f2b2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="a02e-bc90-ef93-9cbb" name="Drunkard" hidden="false" targetId="2fdd-b4b3-a1a4-f3de" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="ee12-7c56-86d0-abdc" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="6604-080d-ab17-e6b7" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="21aa-34d9-073a-8816" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5f8-8d98-fc14-16ff" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4463-1ecd-8b5f-02e3" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1)</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="6dd7-61f4-a23b-844c" name="Pump Up the Crowd" publicationId="af11-1772-744f-9a1a" page="14" hidden="false">
+                  <description>Once per game, when Skrorg causes an opposition player to be removed as a Casualty as a result of a Block action, Skrorg&apos;s controlling coach gains one team re-roll. If this re-roll has not been used by the end of the drive, it is lost.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="553a-da98-07c2-4f78" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+                <infoLink id="2982-f9cf-974f-d4f4" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+                <infoLink id="8201-d2c8-b183-5d39" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+                <infoLink id="5ba1-578b-1571-553f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="c6a9-6fa5-a249-cc06" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="9377-ae27-0438-e930" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="fce4-989f-92ab-1cf1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cd5c-e792-750b-09a7" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a11-0924-9550-c3bd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6f30-8cee-d23a-5856" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Breaak Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="da9d-dff9-103c-fb3b" name="Brutal Block" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
+                  <description>Once per game, when Frank &apos;n&apos; Stien makes an Injury roll against an opponent as a result of a Block action, he may choose to add an additional +1 modifier to the Injury roll. This modifier may be applied aafter the roll has been made.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="ffa6-0f48-eb1d-b370" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
+                <infoLink id="ec20-ddc3-cecd-77e5" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+                <infoLink id="2c42-28cf-bc77-6cb6" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="0ee7-536b-3db1-9131" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+                <infoLink id="28c8-c658-6487-b731" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+                <infoLink id="e42a-7b7a-d345-7d23" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="1dcb-a02d-694a-5280" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="fc06-9f8b-28c4-a3f5" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ce65-b75b-ba84-35eb" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64bf-7043-6ed5-6e15" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="038b-2421-8d86-8e62" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Claws, Frenzy, Loner (4+), Mighty Blow (+1), Regeneration, Wrestle</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="fd29-c8e9-62ce-77d4" name="Savage Mauling" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
+                  <description>Once per game, when Wilhelm makes an Injury roll against an opposing player, he may choose to re-roll the result.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="0596-463a-a4d3-93fe" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
+                <infoLink id="d048-435a-4b37-8962" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+                <infoLink id="f782-9647-8fae-f6cb" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="b51b-c23d-bbc4-ee74" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+                <infoLink id="4ce3-40f7-1ceb-0070" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+                <infoLink id="bcde-c933-7820-abb3" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="cf86-1a18-744b-0bd5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="c4b7-acfa-6457-a8d1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ae7d-e937-79e3-d9fe" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd0-5f87-f5ae-387a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4daf-2e5e-45e8-fbd6" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Regeneration, Secret Weapon, Stand Firm, Thick Skull</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="db0d-f754-f261-b78b" name="Ghostly Flames" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false">
+                  <description>Once per half, when Bryce makes a Chainsaw Attack Special action as part of a Blitz action, he may add +4 to the Armour roll against an opponent rather than +3.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="9d3f-e8fa-a573-05d2" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+                <infoLink id="43e5-f07a-dd12-0e1b" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+                <infoLink id="9855-7df8-cb34-27bf" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="cffc-ad52-7ee2-d641" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+                <infoLink id="2b2b-9591-9126-101b" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+                <infoLink id="3973-ebb7-a17f-cda0" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="2856-ac6e-eeb4-b7cf" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                <categoryLink id="a832-bb23-30a1-001d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6077,8 +6610,7 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
     </selectionEntry>
     <selectionEntry id="b38d-6ca8-2092-1c48" name="Favored of..." hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8f4-7acd-88ac-0b8f" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c159-cf81-d4dc-06c8" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c159-cf81-d4dc-06c8" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="1efe-81f9-ef51-5978" name="Favored of..." hidden="false" collective="false" import="true" targetId="2fc0-99b0-a08c-cf06" type="selectionEntryGroup"/>
@@ -6439,6 +6971,11 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="396b-e87d-dd8a-d5fd" name="Old World Classic" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1b-7f38-953e-2cb3" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -7120,6 +7657,13 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
           </costs>
         </selectionEntry>
         <selectionEntry id="91d0-ef45-11c9-35c0" name="Nurgle" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -7127,6 +7671,13 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
           </costs>
         </selectionEntry>
         <selectionEntry id="5483-7bc9-a95d-186d" name="Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -7134,6 +7685,13 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
           </costs>
         </selectionEntry>
         <selectionEntry id="77fe-fe70-db29-6450" name="Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -8075,6 +8633,12 @@ they haven’t been sent off themselves.</description>
     </rule>
     <rule id="01ba-b7db-48f2-bdb8" name="Dirty Player (+2)" publicationId="46da-ba61-6439-83e5" page="76" hidden="false">
       <description>When this player commits a Foul action, either the Armour roll or Injury roll made against the victim may be modified by the amount shown in brackets. This modifier may be applied after the roll has been made.</description>
+    </rule>
+    <rule id="2fdd-b4b3-a1a4-f3de" name="Drunkard" publicationId="af11-1772-744f-9a1a" page="5" hidden="false">
+      <description>This player suffers a -1 penalty to the dice roll when attempting to Rush.</description>
+    </rule>
+    <rule id="07ae-bdf3-af59-e097" name="Pick-Me-Up" publicationId="af11-1772-744f-9a1a" page="5" hidden="false">
+      <description>At the end of the opponent&apos;s team turn, roll a D6 for each Prone, non-Stunned team-mate within three squares of a Standing player with the Trait. On a 5+, the Prone player may immediately stand up.</description>
     </rule>
   </sharedRules>
 </gameSystem>
