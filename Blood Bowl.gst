@@ -131,7 +131,7 @@
         <categoryLink id="84d0-2989-9b33-ce10" name="Dead Players" hidden="false" targetId="3634-f4ae-b277-30bc" primary="false"/>
         <categoryLink id="82e4-2b13-619e-7e6b" name="Missing a Game" hidden="false" targetId="ce3b-e531-b6b3-0b3b" primary="false"/>
         <categoryLink id="2047-0fb5-d551-d894" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
-        <categoryLink id="de4e-9b5d-e765-b274" name="Retired for Season" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
+        <categoryLink id="de4e-9b5d-e765-b274" name="Temporarliy Retired" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -740,8 +740,15 @@ You may use a Weather Mage once per game, at the start of any one of your team t
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -957,6 +964,14 @@ If the player was in possession of the ball when they were turned into a frog, i
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -1112,7 +1127,6 @@ A player hit by Incorporeal gains the No Hands trait and, if they are in possess
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                           </conditions>
@@ -1288,6 +1302,14 @@ A Standing player stomped on by the Foot of Gork (or Mork) is Knocked Down. When
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -1405,6 +1427,14 @@ You may attempt to move both teams’ turn markers forwards or backwards one spa
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -1662,6 +1692,14 @@ As with Star Players, it is possible for both teams to hire the services of the 
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -1718,6 +1756,14 @@ As with Star Players, it is possible for both teams to hire the services of the 
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -1899,6 +1945,14 @@ Until the end of this game, each selected player gains a single randomly selecte
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -2119,10 +2173,17 @@ Once spotted by Korensson in this way (and only in this way), the player that co
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -2271,8 +2332,15 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -2309,8 +2377,15 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -6976,6 +7051,11 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1b-7f38-953e-2cb3" type="max"/>
       </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
