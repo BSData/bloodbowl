@@ -102,7 +102,9 @@
     <categoryEntry id="aa4d-1bfd-58fd-d7d1" name="Primary Skills" hidden="false"/>
     <categoryEntry id="a861-0d30-d4a0-e6a8" name="Secondary Skills" hidden="false"/>
     <categoryEntry id="df9f-1f6a-c09d-3d8d" name="Mercenary Skill" hidden="false"/>
-    <categoryEntry id="d6f7-c6a3-b998-f51f" name="Temporarliy Retired" hidden="false"/>
+    <categoryEntry id="d6f7-c6a3-b998-f51f" name="Temporarliy Retired Players" hidden="false"/>
+    <categoryEntry id="df0d-1d00-1bf7-958f" name="Positionals" hidden="false"/>
+    <categoryEntry id="ed73-46c2-9ade-4dc0" name="Drafted Players" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="eea0-fbe2-d22b-c2bf" name="Standard" hidden="false">
@@ -132,6 +134,34 @@
         <categoryLink id="82e4-2b13-619e-7e6b" name="Missing a Game" hidden="false" targetId="ce3b-e531-b6b3-0b3b" primary="false"/>
         <categoryLink id="2047-0fb5-d551-d894" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
         <categoryLink id="de4e-9b5d-e765-b274" name="Temporarliy Retired" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="e070-b4a9-cbf9-7b52" name="Sevens" hidden="false">
+      <categoryLinks>
+        <categoryLink id="350f-f454-92aa-a288" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="f902-4cf8-aa36-9f7b" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1fa9-a9cf-7b89-5a8c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="fe38-9bbd-9fbc-5eed" type="min"/>
+            <constraint field="selections" scope="roster" value="11.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="f902-4cf8-aa36-9f7b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0637-ea9a-ed25-6911" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="false"/>
+        <categoryLink id="55a8-70f3-bdcd-93dd" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="false"/>
+        <categoryLink id="39b4-275d-d021-fa61" name="Dead Players" hidden="false" targetId="3634-f4ae-b277-30bc" primary="false"/>
+        <categoryLink id="4263-d6cd-ff4b-b00d" name="Missing a Game" hidden="false" targetId="ce3b-e531-b6b3-0b3b" primary="false"/>
+        <categoryLink id="42aa-2e1f-313e-9ceb" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
+        <categoryLink id="e747-916b-421d-3239" name="Temporarliy Retired" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
+        <categoryLink id="f2a5-73c3-b701-d464" name="Positionals" hidden="false" targetId="df0d-1d00-1bf7-958f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b389-0c4e-1af1-a42a" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
