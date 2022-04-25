@@ -81,8 +81,16 @@
     <categoryEntry id="3634-f4ae-b277-30bc" name="Dead Players" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="ce3b-e531-b6b3-0b3b" name="Missing a Game" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="625c-de63-0116-92fb" name="Mercenary" publicationId="46da-ba61-6439-83e5" hidden="false">
+      <modifiers>
+        <modifier type="set" field="655b-27e5-6123-680b" value="3.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="452f-a089-566c-31a6" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="df9f-1f6a-c09d-3d8d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcad-3fc6-ebc8-af29" type="max"/>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="655b-27e5-6123-680b" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1fa9-a9cf-7b89-5a8c" name="Journeymen" publicationId="46da-ba61-6439-83e5" hidden="false"/>
@@ -105,6 +113,31 @@
     <categoryEntry id="d6f7-c6a3-b998-f51f" name="Temporarliy Retired Players" hidden="false"/>
     <categoryEntry id="df0d-1d00-1bf7-958f" name="Positionals" hidden="false"/>
     <categoryEntry id="ed73-46c2-9ade-4dc0" name="Drafted Players" hidden="false"/>
+    <categoryEntry id="1372-d07c-4465-9f66" name="Bona Fide Big Guy" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a6-3233-45d5-d915" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="496a-6c79-e1e6-b5de" name="Legendary Linemen" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3548-7b8c-007f-3155" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="afcb-d5d8-3dcd-2bbe" name="Brutal Blockers" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3e-1e30-5b82-7f48" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="e8e6-1901-1e21-29bc" name="Reliable Ringers" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="228b-9e0a-5cda-d3de" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="d78e-2ef7-685f-03a8" name="Stunty Superstars" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e2-5d5d-932f-fc3e" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="eea0-fbe2-d22b-c2bf" name="Standard" hidden="false">
@@ -233,6 +266,16 @@
         <categoryLink id="6318-9c43-eaed-c215" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="35bc-85a1-d6c1-ff98" name="Mercenary Type" hidden="false" collective="false" import="true" targetId="2177-2aa7-a977-fd03" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="353e-b57b-7a72-26d6" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3194-0067-016c-6d97" name="Mercenary [Stunty Superstar]" hidden="false" collective="false" import="true" targetId="30ff-929b-bb9c-80c1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c217-9e1c-5a75-e725" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3f7f-9d43-5a15-135d" name="Season Statistics" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -331,9 +374,50 @@
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6a44-0a7d-c8b4-29d6" type="max"/>
       </constraints>
-      <infoLinks>
-        <infoLink id="d813-7ba1-9a57-38c8" name="Apothecary" hidden="false" targetId="b2ab-c7ab-b8db-8f05" type="rule"/>
-      </infoLinks>
+      <rules>
+        <rule id="ef71-6db1-a568-fc06" name="Apothecary" publicationId="46da-ba61-6439-83e5" page="62" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>Once per game, a team with an apothecary may use them to ‘patch-up’ any permanently hired players belonging to it that have been removed from play after being Knocked-out or after having a Casualty roll made against them. An apothecary cannot be used to patch-up any Journeymen players or any Induced players, such as Mercenaries or Star Players. Journeymen are rarely considered worth the effort, whilst Mercenaries and Star Players travel with their own staff of healers and medics.
+
+PATCHING-UP KNOCKED-OUT PLAYERS 
+Once per game, an apothecary can be used immediately when a player becomes Knocked-out:
+• If the player was on the pitch when they were Knocked out, they are not removed from play. Instead, they remain on the pitch and become Stunned.
+• If the player was Knocked-out as a result of being pushed back into the crowd or landing in the crowd, place them directly into the Reserves box rather than the Knocked-out box.
+
+PATCHING-UP CASUALTIES
+Alternatively, once per game an apothecary can be used
+when a Casualty roll is made against a player:
+• Immediately after the Casualty roll is made against your player, you may declare the use of an apothecary.
+• The coach of the opposing team rolls again on the Casualty table, giving two possible outcomes. You may choose which result is applied to your player.
+• If a Badly Hurt result is applied, the apothecary has been able to patch the player up and pump them full of painkillers. The player is removed from the Casualty box and placed in the Reserves box. Note that the use of an apothecary comes before any other attempts to heal the player. This includes the use of any Skills or Traits, or any other in-game effect or special rule that may modify the Casualty roll or its effect.</description>
+        </rule>
+        <rule id="d9ff-5f5f-5510-bc8e" name="Apothecary" publicationId="9118-6c97-8006-93a4" page="95" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>During a Blood Bowl Sevens game, a team may use an apothecary to ‘patch-up’ any player (including Journeymen and Mercenaries) that has been removed from play after being Knocked Out or after suffering a Badly Hurt, Seriously Hurt or DEAD result on the Injury table.
+
+PATCHING-UP KNOCKED-OUT PLAYERS
+An apothecary can be used immediately when a player becomes Knocked-out:
+• If the player was on the pitch when they were Knockedout, they are not removed from play. Instead, they remain on the pitch and become Stunned.
+• If the player was Knocked-out as a result of being pushed back into the crowd or landing in the crowd, place them directly into the Reserves box rather than the Knocked-out box.
+
+PATCHING-UP CASUALTIES
+An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or DEAD result on the Injury table. Roll a D6:
+• On a roll of 4+, the apothecary has been able to patch the player up and pump them full of painkillers. The player is removed from the Casualty box and placed in the Reserves box.
+• On a roll of 1-3, the apothecary’s vigorous efforts prove largely futile. The apothecary is unable to patch the player up – the original Injury table result stands.</description>
+        </rule>
+      </rules>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
@@ -7643,6 +7727,625 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2177-2aa7-a977-fd03" name="Mercenary Type" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc02-6d0c-88f1-86b6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="354e-ff43-6934-028e" type="min"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f6b2-9c51-c27a-2364" name="Mercenary Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="f399-7cea-d25a-7d2f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbd-e8a4-73ed-3163" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a56f-55e0-a8ae-badb" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f399-7cea-d25a-7d2f" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0c-87e3-ebaf-461a" type="max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry id="452f-a089-566c-31a6" name="Freebooters" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0007-dc47-e026-1cdc" type="max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="30ff-929b-bb9c-80c1" name="Mercenary [Stunty Superstar] (Minimum 30,000 TV)" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="ffff-7836-9be4-196c" value="20000.0">
+          <repeats>
+            <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1a01-2f2c-c927-36d7" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="ffff-7836-9be4-196c" value="10000.0">
+          <repeats>
+            <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="47c9-2957-a702-db6e" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="ffff-7836-9be4-196c" value="20000.0">
+          <repeats>
+            <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6361-8e7f-3e2e-85cb" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="ffff-7836-9be4-196c" value="30000.0">
+          <repeats>
+            <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="ddc5-01d0-ade1-05dc" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="ffff-7836-9be4-196c" value="40000.0">
+          <repeats>
+            <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0e8b-8463-f90d-d517" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="ffff-7836-9be4-196c" value="10000.0">
+          <conditions>
+            <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6361-8e7f-3e2e-85cb" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="452f-a089-566c-31a6" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4466-c801-01b3-df45" name="Mercenary [Stunty Superstar]" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+          <modifiers>
+            <modifier type="decrement" field="c77a-49e5-750a-1adc" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="87ed-9647-20fd-5885" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="90cd-0493-9510-60b5" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6e8e-92a6-bc35-2b90" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="29f4-c9a2-f996-4723" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="979a-7646-74ac-4d0b" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c77a-49e5-750a-1adc" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="bb71-968b-0745-618d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d248-b05f-7c74-d8e3" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="df9d-b757-fe5c-c6ed" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d248-b05f-7c74-d8e3" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="aa28-9156-1704-0152" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="90cd-0493-9510-60b5" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6e8e-92a6-bc35-2b90" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="29f4-c9a2-f996-4723" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="87d9-c0e1-6bc4-4e20" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="120f-0f56-f450-196c" value="1">
+              <repeats>
+                <repeat field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1782-be7d-4456-9069" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="120f-0f56-f450-196c" value="3">
+              <conditions>
+                <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fe08-7fc1-f720-7aec" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="d248-b05f-7c74-d8e3" value="2">
+              <conditions>
+                <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fe08-7fc1-f720-7aec" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
+            <characteristic name="ST" typeId="120f-0f56-f450-196c">2</characteristic>
+            <characteristic name="AG" typeId="29f4-c9a2-f996-4723">3</characteristic>
+            <characteristic name="PA" typeId="90cd-0493-9510-60b5">4</characteristic>
+            <characteristic name="AV" typeId="c77a-49e5-750a-1adc">6</characteristic>
+            <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Loner (4+), Right Stuff, Stunty</characteristic>
+            <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+            <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
+            <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">30000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2060-b650-5711-c256" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fe08-7fc1-f720-7aec" type="atLeast"/>
+                    <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="eefd-4ce1-acb4-9d92" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6c98-36cd-977b-4c38" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="b235-7452-a3d8-b051" type="atLeast"/>
+                    <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f5b6-c8fe-9cca-2e8d" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6d2e-2849-c4eb-ec34" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cbb6-8431-1202-ffb1" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bd74-dff0-448d-7a3d" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c107-0708-a92f-c2fd" name="Mercenary" hidden="false" targetId="625c-de63-0116-92fb" primary="false"/>
+        <categoryLink id="36aa-f332-a978-4973" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="e81a-4043-a8c7-c225" name="Positionals" hidden="false" targetId="df0d-1d00-1bf7-958f" primary="false"/>
+        <categoryLink id="a682-6d17-9afb-88cc" name="Stunty Superstars" hidden="false" targetId="d78e-2ef7-685f-03a8" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="87f8-df45-c5f6-7e46" name="Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f53-8ff1-6d2b-d9b1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cbb6-8431-1202-ffb1" name="Trait Packages (Replaces Right Stuff)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e8-d9ea-8554-f96a" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="bf3c-2161-8b2f-5ee5" name="Trait Package" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c4a-9684-5370-09ec" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7555-52bb-4da7-bc6a" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="f5b6-c8fe-9cca-2e8d" name="Dirty Player (+1), Sneaky Git, Loner (5+)" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="fb73-592c-bba5-1c6d" name="Dirty Player (+1)" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
+                        <infoLink id="4e0a-ecef-36b5-62fb" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
+                        <infoLink id="df77-56fe-a8b5-7c25" name="Loner (5+)" hidden="false" targetId="e99d-8433-05f4-f4af" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b235-7452-a3d8-b051" name="Dirty Player (+2), Sneaky Git, Loner (5+)" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="dd50-50a1-98eb-eb01" name="Dirty Player (+2)" hidden="false" targetId="01ba-b7db-48f2-bdb8" type="rule"/>
+                        <infoLink id="fbf7-cc4b-a8ab-bb72" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
+                        <infoLink id="11c4-8ead-536a-1cb0" name="Loner (5+)" hidden="false" targetId="e99d-8433-05f4-f4af" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="87fd-46f0-201d-ce56" name="Bombardier, Secret Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="029e-8e1c-2287-c7d2" name="Bombardier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
+                        <infoLink id="e334-8efa-36cd-7c9a" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="6300-862f-7152-6dd1" name="Stab, Secret Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="0247-4666-a2df-a665" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
+                        <infoLink id="67f4-f46e-8cb6-cf08" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="bf6d-dd32-fce6-30f9" name="Pogo Stick" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="ba75-86b5-32c4-3e44" name="Pogo Stick" hidden="false" targetId="8008-4f05-0fb1-e66d" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="eefd-4ce1-acb4-9d92" name="Chainsaw, Secret Weapon, No Hands, -Dodge" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="ac98-0e70-8d1b-abd8" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+                        <infoLink id="377a-ac6b-b2fc-6069" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+                        <infoLink id="b79a-a36f-2d86-4db2" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="fe08-7fc1-f720-7aec" name="Ball and Chain, Secret Weapon, No Hands, +3ST, -2MA, -Dodge" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <infoLinks>
+                        <infoLink id="70ed-c009-a62f-3f36" name="Ball &amp; Chain" hidden="false" targetId="39d3-e057-e8b4-37a1" type="rule"/>
+                        <infoLink id="2484-3d24-a69e-6597" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+                        <infoLink id="148b-eb64-6113-50d1" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="0a9f-c1d3-a1da-c6f8" name="Characteristic Options" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2f-7a21-6c92-848b" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3fc0-56e2-e85c-cec4" name="Characteristic Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0a-8778-9c2e-c81a" type="min"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="d33f-08c4-0d3c-6201" name="Increases" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="979a-7646-74ac-4d0b" name="+AG" hidden="false" collective="false" import="true" targetId="d33f-b5e3-efce-f815" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="bb71-968b-0745-618d" name="+AV" hidden="false" collective="false" import="true" targetId="f140-0619-5717-3123" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="df9d-b757-fe5c-c6ed" name="+MA" hidden="false" collective="false" import="true" targetId="e61b-54a7-5c2b-96c5" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="6e8e-92a6-bc35-2b90" name="+PA" hidden="false" collective="false" import="true" targetId="0390-715c-b0f8-66f2" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="47c9-2957-a702-db6e" name="Decreases" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="87d9-c0e1-6bc4-4e20" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad80-e9cb-ad18-4437" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="87ed-9647-20fd-5885" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b54-f3aa-de17-9f62" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="aa28-9156-1704-0152" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d04-fbaf-a73c-f8b9" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="caf6-1cb0-ab32-1904" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b13-ad5b-52c7-b9e8" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="1782-be7d-4456-9069" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="adb6-c369-35ac-4296" value="2.0">
+                              <conditions>
+                                <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fe08-7fc1-f720-7aec" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb6-c369-35ac-4296" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry id="ffb5-b1d7-f148-c749" name="Additional Skills" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5af9-45c5-5002-ea6c" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ba44-cadf-1510-48c1" name="Skills" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3ad-2073-371f-7efa" type="min"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="1a01-2f2c-c927-36d7" name="[P]assing" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d56-d60f-83cd-bf97" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="9fde-96aa-2582-48a9" name="Accurate" hidden="false" collective="false" import="true" targetId="d8ab-3700-1ec7-d59c" type="selectionEntry"/>
+                        <entryLink id="8949-f3c3-cace-0f21" name="Cannoneer" hidden="false" collective="false" import="true" targetId="5c4d-cb75-ab15-ad49" type="selectionEntry"/>
+                        <entryLink id="bdfe-0c7f-8904-2a6a" name="Cloud Burster" hidden="false" collective="false" import="true" targetId="b95c-f05a-93f8-edd8" type="selectionEntry"/>
+                        <entryLink id="696b-9839-fa8c-a6c8" name="Dump-off" hidden="false" collective="false" import="true" targetId="8e94-6564-5f79-0128" type="selectionEntry"/>
+                        <entryLink id="8eec-5a41-47e0-727d" name="Fumblerooskie" hidden="false" collective="false" import="true" targetId="b5e6-5b6a-02b5-5e27" type="selectionEntry"/>
+                        <entryLink id="c68f-bff2-78a4-a5bf" name="Hail Mary Pass" hidden="false" collective="false" import="true" targetId="12a1-0e6d-edcb-0f8a" type="selectionEntry"/>
+                        <entryLink id="c05e-2a41-1964-c8e1" name="Leader" hidden="false" collective="false" import="true" targetId="5d92-bca6-7d6b-03cd" type="selectionEntry"/>
+                        <entryLink id="0074-9afe-3532-3709" name="Nerves of Steel" hidden="false" collective="false" import="true" targetId="5278-4a58-436e-f886" type="selectionEntry"/>
+                        <entryLink id="f75c-b113-7894-7b5e" name="On the Ball" hidden="false" collective="false" import="true" targetId="381c-5cad-621e-8e55" type="selectionEntry"/>
+                        <entryLink id="1204-94ae-235f-8491" name="Pass" hidden="false" collective="false" import="true" targetId="cfde-f0d4-4609-cd57" type="selectionEntry"/>
+                        <entryLink id="3ab3-6886-7362-139c" name="Running Pass" hidden="false" collective="false" import="true" targetId="b202-6647-1ae5-3c64" type="selectionEntry"/>
+                        <entryLink id="ed5f-36ad-0878-c050" name="Safe Pass" hidden="false" collective="false" import="true" targetId="64da-eb16-90a8-7fde" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="ddc5-01d0-ade1-05dc" name="[M]utation" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8df-7dc7-1b06-cbf3" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="d601-ffbb-e912-ec4c" name="Big Hand" hidden="false" collective="false" import="true" targetId="3b20-7735-aaf0-700c" type="selectionEntry"/>
+                        <entryLink id="3a8d-f5f9-d9a6-f890" name="Claws" hidden="false" collective="false" import="true" targetId="de8d-44b0-5a3a-5ff6" type="selectionEntry"/>
+                        <entryLink id="9d9a-dd19-ef2c-8838" name="Disturbing Presence" hidden="false" collective="false" import="true" targetId="5e29-2928-7d20-99c3" type="selectionEntry"/>
+                        <entryLink id="fbb5-5a78-f7b1-3148" name="Extra Arms" hidden="false" collective="false" import="true" targetId="0fca-f232-20db-5486" type="selectionEntry"/>
+                        <entryLink id="c656-3ed3-618a-ef7e" name="Foul Appearance" hidden="false" collective="false" import="true" targetId="bb9c-3ef4-f7a6-9234" type="selectionEntry"/>
+                        <entryLink id="f288-85d4-3bdf-a4ed" name="Horns" hidden="false" collective="false" import="true" targetId="d52e-e727-0ee4-ec85" type="selectionEntry"/>
+                        <entryLink id="277a-7449-8693-e21c" name="Iron Hard Skin" hidden="false" collective="false" import="true" targetId="f32f-8e0b-95fc-1ece" type="selectionEntry"/>
+                        <entryLink id="6c0c-3573-b382-ac03" name="Monstrous Mouth" hidden="false" collective="false" import="true" targetId="5c37-ab43-92e3-65bd" type="selectionEntry"/>
+                        <entryLink id="222d-73eb-e04b-40b5" name="Prehensile Tail" hidden="false" collective="false" import="true" targetId="8e06-673b-e8a4-69b9" type="selectionEntry"/>
+                        <entryLink id="c4b6-82f0-ab04-39c5" name="Tentacles" hidden="false" collective="false" import="true" targetId="4ced-cc9b-1a5a-8874" type="selectionEntry"/>
+                        <entryLink id="cfdd-9532-0668-025c" name="Two Heads" hidden="false" collective="false" import="true" targetId="ee92-fa03-9a46-0aa4" type="selectionEntry"/>
+                        <entryLink id="da76-fd28-72bd-9ff2" name="Very Long Legs" hidden="false" collective="false" import="true" targetId="14f3-1ae1-2756-d310" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="0e8b-8463-f90d-d517" name="[G]eneral" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8718-fa01-154b-ce8e" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="46ef-4fcf-e390-c9d1" name="Block" page="" hidden="false" collective="false" import="true" targetId="6c6d-47aa-0976-fce0" type="selectionEntry"/>
+                        <entryLink id="6e30-1134-cb0d-81e9" name="Dauntless" hidden="false" collective="false" import="true" targetId="2e36-5cc6-094e-7cd8" type="selectionEntry"/>
+                        <entryLink id="78ea-f967-10ee-09b8" name="Fend" hidden="false" collective="false" import="true" targetId="7c48-9997-5ed9-d1f1" type="selectionEntry"/>
+                        <entryLink id="de0a-afa7-2468-0286" name="Frenzy" hidden="false" collective="false" import="true" targetId="7e98-5279-b39e-1d73" type="selectionEntry"/>
+                        <entryLink id="92bc-aae8-a5c7-9848" name="Kick" hidden="false" collective="false" import="true" targetId="e997-6798-c53e-55ad" type="selectionEntry"/>
+                        <entryLink id="3f41-5a14-9ae5-33bc" name="Pro" hidden="false" collective="false" import="true" targetId="9f99-32a4-cfb9-3f93" type="selectionEntry"/>
+                        <entryLink id="57e2-85ef-8e0d-926b" name="Shadowing" hidden="false" collective="false" import="true" targetId="be32-bc2b-49b7-1c0e" type="selectionEntry"/>
+                        <entryLink id="9303-851b-7769-af35" name="Strip Ball" hidden="false" collective="false" import="true" targetId="9b6f-3ef9-1fbc-a48f" type="selectionEntry"/>
+                        <entryLink id="24a0-0caf-eec5-3081" name="Sure Hands" hidden="false" collective="false" import="true" targetId="c1cb-44a9-a187-89a1" type="selectionEntry"/>
+                        <entryLink id="cc1f-dffb-c207-948d" name="Tackle" hidden="false" collective="false" import="true" targetId="95a9-67ee-0356-2dba" type="selectionEntry"/>
+                        <entryLink id="ab97-4b32-567c-0e30" name="Wrestle" hidden="false" collective="false" import="true" targetId="9a16-b887-4ba8-15c6" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="6361-8e7f-3e2e-85cb" name="[A]gility" hidden="false" collective="false" import="true">
+                      <entryLinks>
+                        <entryLink id="62f0-3c48-d94c-e04a" name="Catch" hidden="false" collective="false" import="true" targetId="8c7a-5e97-01bc-a590" type="selectionEntry"/>
+                        <entryLink id="63dd-15ea-4c35-0270" name="Diving Catch" hidden="false" collective="false" import="true" targetId="c329-629e-ecc0-713b" type="selectionEntry"/>
+                        <entryLink id="b6ec-6090-3fa3-ce36" name="Diving Tackle" hidden="false" collective="false" import="true" targetId="f07b-09f1-9f88-ae6b" type="selectionEntry"/>
+                        <entryLink id="5030-afee-e789-f44a" name="Defensive" hidden="false" collective="false" import="true" targetId="2efa-ed98-bd7d-6ff1" type="selectionEntry"/>
+                        <entryLink id="3ff6-214d-7115-19a3" name="Jump Up" hidden="false" collective="false" import="true" targetId="bd4c-dac9-e7d1-f47b" type="selectionEntry"/>
+                        <entryLink id="add3-4df4-defb-ca5f" name="Leap" hidden="false" collective="false" import="true" targetId="851c-f5dc-38d9-d2e5" type="selectionEntry"/>
+                        <entryLink id="2a7b-63e8-4efd-9c6c" name="Safe Pair of Hands" hidden="false" collective="false" import="true" targetId="d44d-4a69-ca9f-ef4c" type="selectionEntry"/>
+                        <entryLink id="b7ff-d63f-d2fa-ef86" name="Side Step" hidden="false" collective="false" import="true" targetId="0aa2-ed3d-a7a8-89b4" type="selectionEntry"/>
+                        <entryLink id="b726-a646-44a4-e9fe" name="Sneaky Git" hidden="false" collective="false" import="true" targetId="6685-b4e5-531d-e9d7" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f5b6-c8fe-9cca-2e8d" type="atLeast"/>
+                                    <condition field="selections" scope="30ff-929b-bb9c-80c1" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="b235-7452-a3d8-b051" type="atLeast"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink id="b7d3-0bba-7ba8-c38a" name="Sprint" hidden="false" collective="false" import="true" targetId="4ede-2f80-ca60-b608" type="selectionEntry"/>
+                        <entryLink id="3a4c-176d-ed3e-8ea8" name="Sure Feet" hidden="false" collective="false" import="true" targetId="286b-137e-d683-c2a3" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -8573,6 +9276,86 @@ In addition, the limit of two players per Wide Zone during set-up does not apply
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="dcaf-4844-c661-8ada" name="[P]assing" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="8bee-6eaf-aec1-5d59" name="Accurate" hidden="false" collective="false" import="true" targetId="d8ab-3700-1ec7-d59c" type="selectionEntry"/>
+        <entryLink id="8984-637b-3972-5c3e" name="Cannoneer" hidden="false" collective="false" import="true" targetId="5c4d-cb75-ab15-ad49" type="selectionEntry"/>
+        <entryLink id="759c-bd68-10ad-1000" name="Cloud Burster" hidden="false" collective="false" import="true" targetId="b95c-f05a-93f8-edd8" type="selectionEntry"/>
+        <entryLink id="30a2-3128-eff1-47f6" name="Dump-off" hidden="false" collective="false" import="true" targetId="8e94-6564-5f79-0128" type="selectionEntry"/>
+        <entryLink id="ea76-5fbd-2972-0ffd" name="Fumblerooskie" hidden="false" collective="false" import="true" targetId="b5e6-5b6a-02b5-5e27" type="selectionEntry"/>
+        <entryLink id="4817-f29c-e3ce-3234" name="Hail Mary Pass" hidden="false" collective="false" import="true" targetId="12a1-0e6d-edcb-0f8a" type="selectionEntry"/>
+        <entryLink id="d2b2-8039-58ae-85c4" name="Leader" hidden="false" collective="false" import="true" targetId="5d92-bca6-7d6b-03cd" type="selectionEntry"/>
+        <entryLink id="68b2-3537-47f2-8f31" name="Nerves of Steel" hidden="false" collective="false" import="true" targetId="5278-4a58-436e-f886" type="selectionEntry"/>
+        <entryLink id="832a-55d5-8bc4-27c8" name="On the Ball" hidden="false" collective="false" import="true" targetId="381c-5cad-621e-8e55" type="selectionEntry"/>
+        <entryLink id="20a8-41b2-ef57-e1b9" name="Pass" hidden="false" collective="false" import="true" targetId="cfde-f0d4-4609-cd57" type="selectionEntry"/>
+        <entryLink id="1200-bd69-fe06-81f8" name="Running Pass" hidden="false" collective="false" import="true" targetId="b202-6647-1ae5-3c64" type="selectionEntry"/>
+        <entryLink id="8a7f-d8b7-394a-19b6" name="Safe Pass" hidden="false" collective="false" import="true" targetId="64da-eb16-90a8-7fde" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e249-4ef5-99e4-f01f" name="[M]utation" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="f6c7-a088-57bf-3aae" name="Big Hand" hidden="false" collective="false" import="true" targetId="3b20-7735-aaf0-700c" type="selectionEntry"/>
+        <entryLink id="fa60-e6f4-8db3-0745" name="Claws" hidden="false" collective="false" import="true" targetId="de8d-44b0-5a3a-5ff6" type="selectionEntry"/>
+        <entryLink id="742b-3da7-00db-66d7" name="Disturbing Presence" hidden="false" collective="false" import="true" targetId="5e29-2928-7d20-99c3" type="selectionEntry"/>
+        <entryLink id="cef1-dc8f-60cd-2f88" name="Extra Arms" hidden="false" collective="false" import="true" targetId="0fca-f232-20db-5486" type="selectionEntry"/>
+        <entryLink id="4bb5-0ce7-afa8-ebe4" name="Foul Appearance" hidden="false" collective="false" import="true" targetId="bb9c-3ef4-f7a6-9234" type="selectionEntry"/>
+        <entryLink id="a67e-d4b7-76a8-dd0e" name="Horns" hidden="false" collective="false" import="true" targetId="d52e-e727-0ee4-ec85" type="selectionEntry"/>
+        <entryLink id="b14c-80f3-29ee-a960" name="Iron Hard Skin" hidden="false" collective="false" import="true" targetId="f32f-8e0b-95fc-1ece" type="selectionEntry"/>
+        <entryLink id="f4e4-2ee6-2b73-4b1c" name="Monstrous Mouth" hidden="false" collective="false" import="true" targetId="5c37-ab43-92e3-65bd" type="selectionEntry"/>
+        <entryLink id="daf8-e0c4-c0e5-1ea4" name="Prehensile Tail" hidden="false" collective="false" import="true" targetId="8e06-673b-e8a4-69b9" type="selectionEntry"/>
+        <entryLink id="936a-c503-8d59-2315" name="Tentacles" hidden="false" collective="false" import="true" targetId="4ced-cc9b-1a5a-8874" type="selectionEntry"/>
+        <entryLink id="25ff-3774-684c-003c" name="Two Heads" hidden="false" collective="false" import="true" targetId="ee92-fa03-9a46-0aa4" type="selectionEntry"/>
+        <entryLink id="9044-ad66-5661-ab53" name="Very Long Legs" hidden="false" collective="false" import="true" targetId="14f3-1ae1-2756-d310" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b939-c6e0-5637-0773" name="[S]trength" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="035a-0076-ec1e-4467" name="Arm Bar" hidden="false" collective="false" import="true" targetId="68a7-5f56-92ba-c718" type="selectionEntry"/>
+        <entryLink id="4e55-4882-f798-a5d6" name="Brawler" hidden="false" collective="false" import="true" targetId="5fd2-79a1-26f5-bf4d" type="selectionEntry"/>
+        <entryLink id="b5b8-0e6e-69a4-9b47" name="Break Tackle" hidden="false" collective="false" import="true" targetId="0ece-9309-c7da-d7a4" type="selectionEntry"/>
+        <entryLink id="1c29-094f-49ad-e42b" name="Grab" hidden="false" collective="false" import="true" targetId="1dce-1f4d-e2b8-8e2f" type="selectionEntry"/>
+        <entryLink id="95d5-28ed-c1f3-dfcd" name="Guard" hidden="false" collective="false" import="true" targetId="87dc-1360-433d-baed" type="selectionEntry"/>
+        <entryLink id="1229-3da5-05e2-7ecf" name="Juggernaut" hidden="false" collective="false" import="true" targetId="5b4b-d544-c4b1-e5d1" type="selectionEntry"/>
+        <entryLink id="8a01-e682-0fad-a693" name="Mighty Blow (+1)" hidden="false" collective="false" import="true" targetId="b6ac-e2c8-e0d7-e092" type="selectionEntry"/>
+        <entryLink id="2e1f-4abb-707d-0af6" name="Multiple Block" hidden="false" collective="false" import="true" targetId="f2a0-5f3b-f43e-13fa" type="selectionEntry"/>
+        <entryLink id="3569-7b00-008d-4d98" name="Pile Driver" hidden="false" collective="false" import="true" targetId="de4d-0c5e-4bb4-7a67" type="selectionEntry"/>
+        <entryLink id="dd83-3c96-ae25-f1fb" name="Stand Firm" hidden="false" collective="false" import="true" targetId="6036-f009-d354-0a40" type="selectionEntry"/>
+        <entryLink id="abc0-676c-0d5f-b0fe" name="Strong Arm" hidden="false" collective="false" import="true" targetId="828c-bd4a-fd63-8828" type="selectionEntry"/>
+        <entryLink id="fbe0-d094-95d0-4553" name="Thick Skull" hidden="false" collective="false" import="true" targetId="9bbd-7844-16a2-c9fe" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="547f-b1e3-4636-c912" name="[G]eneral" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0458-60a6-5586-673d" name="Block" page="" hidden="false" collective="false" import="true" targetId="6c6d-47aa-0976-fce0" type="selectionEntry"/>
+        <entryLink id="ed6c-8e0a-7921-782e" name="Dauntless" hidden="false" collective="false" import="true" targetId="2e36-5cc6-094e-7cd8" type="selectionEntry"/>
+        <entryLink id="6172-5bca-d504-f617" name="Dirty Player (+1)" hidden="false" collective="false" import="true" targetId="7fa2-3bc2-cc79-aeb1" type="selectionEntry"/>
+        <entryLink id="eb1e-f455-c7de-3562" name="Fend" hidden="false" collective="false" import="true" targetId="7c48-9997-5ed9-d1f1" type="selectionEntry"/>
+        <entryLink id="3de4-cfe6-354e-ac3b" name="Frenzy" hidden="false" collective="false" import="true" targetId="7e98-5279-b39e-1d73" type="selectionEntry"/>
+        <entryLink id="8dca-b2fb-763d-287f" name="Kick" hidden="false" collective="false" import="true" targetId="e997-6798-c53e-55ad" type="selectionEntry"/>
+        <entryLink id="af29-2ecd-b01f-36a0" name="Pro" hidden="false" collective="false" import="true" targetId="9f99-32a4-cfb9-3f93" type="selectionEntry"/>
+        <entryLink id="4f1b-25f1-d3d7-fbb5" name="Shadowing" hidden="false" collective="false" import="true" targetId="be32-bc2b-49b7-1c0e" type="selectionEntry"/>
+        <entryLink id="c7d6-2abf-978f-df19" name="Strip Ball" hidden="false" collective="false" import="true" targetId="9b6f-3ef9-1fbc-a48f" type="selectionEntry"/>
+        <entryLink id="154c-01b3-47b7-bb18" name="Sure Hands" hidden="false" collective="false" import="true" targetId="c1cb-44a9-a187-89a1" type="selectionEntry"/>
+        <entryLink id="e6bc-4b8a-cced-dcd2" name="Tackle" hidden="false" collective="false" import="true" targetId="95a9-67ee-0356-2dba" type="selectionEntry"/>
+        <entryLink id="a54c-703b-2522-eb69" name="Wrestle" hidden="false" collective="false" import="true" targetId="9a16-b887-4ba8-15c6" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="295f-96b9-9f92-99e7" name="[A]gility" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="acd0-5854-83b0-53a2" name="Catch" hidden="false" collective="false" import="true" targetId="8c7a-5e97-01bc-a590" type="selectionEntry"/>
+        <entryLink id="980f-279c-b7dd-3ca6" name="Diving Catch" hidden="false" collective="false" import="true" targetId="c329-629e-ecc0-713b" type="selectionEntry"/>
+        <entryLink id="0a77-13e9-91c4-50a3" name="Diving Tackle" hidden="false" collective="false" import="true" targetId="f07b-09f1-9f88-ae6b" type="selectionEntry"/>
+        <entryLink id="b668-dfc0-07b2-d9cf" name="Dodge" hidden="false" collective="false" import="true" targetId="30df-c110-f163-220c" type="selectionEntry"/>
+        <entryLink id="c404-d349-2831-519f" name="Defensive" hidden="false" collective="false" import="true" targetId="2efa-ed98-bd7d-6ff1" type="selectionEntry"/>
+        <entryLink id="91c7-6411-7641-95f4" name="Jump Up" hidden="false" collective="false" import="true" targetId="bd4c-dac9-e7d1-f47b" type="selectionEntry"/>
+        <entryLink id="6604-c9f8-2640-1cdb" name="Leap" hidden="false" collective="false" import="true" targetId="851c-f5dc-38d9-d2e5" type="selectionEntry"/>
+        <entryLink id="55e6-b34a-04bc-ba2c" name="Safe Pair of Hands" hidden="false" collective="false" import="true" targetId="d44d-4a69-ca9f-ef4c" type="selectionEntry"/>
+        <entryLink id="fc9d-8893-bf6f-54a8" name="Side Step" hidden="false" collective="false" import="true" targetId="0aa2-ed3d-a7a8-89b4" type="selectionEntry"/>
+        <entryLink id="5c46-a26e-d85d-d58d" name="Sneaky Git" hidden="false" collective="false" import="true" targetId="6685-b4e5-531d-e9d7" type="selectionEntry"/>
+        <entryLink id="b1d4-bc4d-dd0f-c231" name="Sprint" hidden="false" collective="false" import="true" targetId="4ede-2f80-ca60-b608" type="selectionEntry"/>
+        <entryLink id="b289-05a0-972b-756e" name="Sure Feet" hidden="false" collective="false" import="true" targetId="286b-137e-d683-c2a3" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="cc62-f3d9-8892-3221" name="Dauntless" publicationId="46da-ba61-6439-83e5" page="76" hidden="false">
@@ -8970,9 +9753,6 @@ If your team has the ‘Favoured of Nurgle’ special rule, a new ‘Rotter Line
     </rule>
     <rule id="d302-b3a2-216f-cc3a" name="Swoop" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
       <description>If this player is thrown by a team-mate, as described on page 52, they do not scatter before landing as they normally would. Instead, you may place the Throw-in template over the player, facing towards either End Zone or either sideline as you wish. The player then moves from the target square D3 squares in a direction determined by rolling a D6 and referring to the Throw-in template.</description>
-    </rule>
-    <rule id="b2ab-c7ab-b8db-8f05" name="Apothecary" publicationId="46da-ba61-6439-83e5" page="" hidden="false">
-      <description>An Apothecary can be used only once per match. If the player was KO&apos;d leave him on the pitch Stunned or in the Reserves box if not on the pitch. Otherwise immediately after the player suffers the Casualty, you can use the Apothecary to make your opponent roll again on the Casualty table and then you choose which of the two results to apply. If the player is only Badly Hurt after this roll (even if it was the original Casualty roll) the player may be moved into the Reserves box.</description>
     </rule>
     <rule id="6746-0f3a-2e8c-b812" name="Swarming" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
       <description>During each Start of Drive sequence, after Step 2 but before Step 3, you may remove D3 players with this Trait from the Reserves box of your dugout and set them up on the pitch, allowing you to set up more than the usual 11 players. These extra players may not be placed on the Line of Scrimmage or in a Wide Zone.</description>
