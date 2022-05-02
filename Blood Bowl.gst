@@ -290,6 +290,18 @@
         <categoryLink id="c8a8-1304-4da2-92cc" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="5c10-6081-4728-380d" name="Rostered Star Player" hidden="false" collective="false" import="true" targetId="273b-8e86-6a19-ac9a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a076-1a27-6897-b2a1" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3f7f-9d43-5a15-135d" name="Season Statistics" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -982,62 +994,6 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bc81-b345-de4e-0ec3" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="30000.0">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34a9-62e9-e94b-e585" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="0bc6-aba0-3228-23e8" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false">
-              <description>During Step 2 of every Start of Drive sequence, the Master of Ballistics can attempt to advise the kicker. After placing the ball but before rolling for deviation, roll a D3 on the following table:
-
-1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
-2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
-3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).
-</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
@@ -2151,6 +2107,18 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       </costs>
     </selectionEntry>
     <selectionEntry id="b98d-5b2e-3c9b-4b02" name="-ST" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2158,6 +2126,18 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       </costs>
     </selectionEntry>
     <selectionEntry id="b3ba-e2fe-664a-fafc" name="-MA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2165,6 +2145,18 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       </costs>
     </selectionEntry>
     <selectionEntry id="ca52-545a-6510-c3a9" name="-AV" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2172,6 +2164,18 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       </costs>
     </selectionEntry>
     <selectionEntry id="5477-7f75-60f5-b7e5" name="-AG" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2179,6 +2183,13 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       </costs>
     </selectionEntry>
     <selectionEntry id="86a5-7971-858d-5bf4" name="Niggling Injury" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="9bff-3dc5-b2f7-a2bf" name="Niggling Injury" publicationId="46da-ba61-6439-83e5" hidden="false">
           <description>Each Niggling Injury adds 1 to any subsequent Injury roll made against this player.</description>
@@ -2225,6 +2236,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2411,6 +2423,18 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       </costs>
     </selectionEntry>
     <selectionEntry id="ce0f-f781-1e0e-74e5" name="-PA" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -3145,6 +3169,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7799,8 +7824,18 @@ If the player was in possession of the ball when they were turned into a frog, i
       </costs>
     </selectionEntry>
     <selectionEntry id="5993-677d-8b45-5595" name="Bomber Dribblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968d-d212-b950-7320" type="max"/>
+      </constraints>
       <profiles>
         <profile id="9613-f377-9c79-9123" name="Bomber Driblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Bombardier, Dodge, Right Stuff, Secret Weapon, Stunty">
+              <conditions>
+                <condition field="selections" scope="5993-677d-8b45-5595" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
@@ -7819,7 +7854,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="0995-5e1c-7031-3368" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
-        <infoLink id="9a47-93a1-07a2-c689" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="9a47-93a1-07a2-c689" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="5993-677d-8b45-5595" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="a783-1e83-a270-7f25" name="Bombardier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
         <infoLink id="48c4-11de-0e19-23c2" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="f1f2-1575-6c21-f109" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
@@ -7832,11 +7875,23 @@ If the player was in possession of the ball when they were turned into a frog, i
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="267d-86b2-036e-64c7" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d8e-081c-afe6-510c" type="max"/>
+      </constraints>
       <profiles>
-        <profile id="d5e8-a3cf-58dd-1a83" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="2126-387c-a9e5-8a90" name="Kreek Rustgouger" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Ball and Chain, Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon">
+              <conditions>
+                <condition field="selections" scope="267d-86b2-036e-64c7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
@@ -7855,7 +7910,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="72b2-e4c5-e34c-1ca7" name="Ball &amp; Chain" hidden="false" targetId="39d3-e057-e8b4-37a1" type="rule"/>
-        <infoLink id="4350-03d6-c851-308d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="4350-03d6-c851-308d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="267d-86b2-036e-64c7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="8738-58a0-0ab5-4311" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="cb9a-3024-6a3e-c62f" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
         <infoLink id="c3a6-3b6c-9364-bd5f" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
@@ -7867,11 +7930,23 @@ If the player was in possession of the ball when they were turned into a frog, i
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a3af-a94c-d242-1dc5" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecc-f8e5-0312-b860" type="max"/>
+      </constraints>
       <profiles>
         <profile id="28a2-ee27-4097-9656" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Ball and Chain, Mighty Blow (+1), No Hands, Secret Weapon, Stunty">
+              <conditions>
+                <condition field="selections" scope="a3af-a94c-d242-1dc5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
@@ -7890,7 +7965,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="aeb3-6689-6dc6-391d" name="Ball &amp; Chain" hidden="false" targetId="39d3-e057-e8b4-37a1" type="rule"/>
-        <infoLink id="98d9-caf7-8174-07ca" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="98d9-caf7-8174-07ca" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="a3af-a94c-d242-1dc5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="6640-6a39-9bca-cb22" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="8cda-7912-94a7-842e" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
         <infoLink id="03d9-cfff-e8b1-c86f" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
@@ -7902,11 +7985,23 @@ If the player was in possession of the ball when they were turned into a frog, i
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a87-241d-2e82-8181" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ef-cd2f-64cc-72a8" type="max"/>
+      </constraints>
       <profiles>
         <profile id="ecaa-4057-c164-2344" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Hail Mary Pass, Pass, Secret Weapon, Strong Arm, Sure Hands, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="8a87-241d-2e82-8181" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -7925,7 +8020,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="73b3-a267-d53c-e546" name="Hail Mary Pass" hidden="false" targetId="7ac3-b992-f82a-3a9f" type="rule"/>
-        <infoLink id="380d-2fae-91eb-fea4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="380d-2fae-91eb-fea4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="8a87-241d-2e82-8181" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="8da1-86c6-8d81-ebe4" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
         <infoLink id="2900-896a-09a7-73d7" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
         <infoLink id="f380-a567-1e39-e11e" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
@@ -7938,14 +8041,23 @@ If the player was in possession of the ball when they were turned into a frog, i
       </categoryLinks>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1938-caba-4c33-725c" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad4b-87e1-d197-56a8" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3839-1d8f-2b7a-b2b1" type="max"/>
       </constraints>
       <profiles>
         <profile id="d665-b18a-fd02-5e64" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Chainsaw, Regeneration, Secret Weapon, Stand Firm, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="1938-caba-4c33-725c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -7965,7 +8077,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="5f22-d405-daa0-3fea" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
         <infoLink id="2e48-ce14-4e12-07bc" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-        <infoLink id="fa65-eb93-e281-97d0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="fa65-eb93-e281-97d0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1938-caba-4c33-725c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="d521-4355-eb69-5cfc" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
         <infoLink id="230d-d461-8387-e98b" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
         <infoLink id="85e1-4726-412d-e614" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
@@ -7982,10 +8102,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="16be-5f78-7e02-c253" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="949b-3da9-140d-ed6b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9a-ec58-09da-e0c2" type="max"/>
       </constraints>
       <profiles>
         <profile id="07c0-49b4-57e4-6d9c" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!">
+              <conditions>
+                <condition field="selections" scope="16be-5f78-7e02-c253" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">2</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
@@ -8004,7 +8131,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="48ac-5f6f-21ba-28ad" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="0981-b3e8-c2a8-0c26" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="0981-b3e8-c2a8-0c26" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="16be-5f78-7e02-c253" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="b5ef-eb79-08aa-a666" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
         <infoLink id="5bf9-2e4b-a9d9-3c63" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="49ee-ca83-e3fc-3b3d" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
@@ -8024,10 +8159,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="9da4-9779-ae60-1c48" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="307f-9594-145e-326a" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e62-5a4f-2658-6996" type="max"/>
       </constraints>
       <profiles>
         <profile id="6d49-c364-dfbb-e861" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Catch, Dodge, Hypnotic Gaze, Nerves of Steel, On the Ball">
+              <conditions>
+                <condition field="selections" scope="9da4-9779-ae60-1c48" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8047,7 +8189,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="ad06-ecf7-6da2-3c06" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="6b0e-c334-a83f-880c" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
-        <infoLink id="638e-3533-f914-d64d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="638e-3533-f914-d64d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9da4-9779-ae60-1c48" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="6931-0e6b-6b75-b3f9" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
         <infoLink id="1bbd-f4ec-6801-f564" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
         <infoLink id="fda6-6cac-c361-11b7" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
@@ -8064,17 +8214,24 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="4afd-2b3a-5a0c-b249" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2200-93d0-5be6-0a34" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bba1-0339-79e7-5177" type="max"/>
       </constraints>
       <profiles>
         <profile id="ad87-d2d7-2d93-5b8c" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Break Tackle, Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="4afd-2b3a-5a0c-b249" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
             <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
             <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Breaak Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Break Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
           </characteristics>
         </profile>
@@ -8087,7 +8244,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="1028-645f-863d-3f5b" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
         <infoLink id="186e-d841-b3a5-c430" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-        <infoLink id="8409-9b9b-6b37-678f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="8409-9b9b-6b37-678f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="4afd-2b3a-5a0c-b249" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="12ed-a520-c38e-4a06" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="4d4b-7745-63f3-4a1a" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
         <infoLink id="c340-1ab8-2918-883f" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
@@ -8104,10 +8269,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="f11a-2b66-4503-d3f8" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2cdf-c6f3-5419-341b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2b-176d-1c8c-558d" type="max"/>
       </constraints>
       <profiles>
         <profile id="8583-8b4f-3032-e7b0" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Claw, Grab, Juggernaut, Stand Firm">
+              <conditions>
+                <condition field="selections" scope="f11a-2b66-4503-d3f8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -8127,7 +8299,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="2359-4c66-beda-e37a" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="0da2-b54a-0b6e-7432" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-        <infoLink id="0267-6e7d-439e-cfbe" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="0267-6e7d-439e-cfbe" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="f11a-2b66-4503-d3f8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="7099-4355-07bb-adf6" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
         <infoLink id="a2ba-0401-e438-fc5d" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
         <infoLink id="a64e-d4df-3034-b070" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
@@ -8144,10 +8324,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="9934-db67-9c77-27bb" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8452-0f7f-5c14-054e" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f735-304e-3ede-716e" type="max"/>
       </constraints>
       <profiles>
         <profile id="f49d-5967-47f3-bf5b" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Dodge, Pass, Side Step, Sure Hands">
+              <conditions>
+                <condition field="selections" scope="9934-db67-9c77-27bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
@@ -8168,7 +8355,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="6bc9-04fb-a571-9539" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
         <infoLink id="04ae-181b-cf50-e22b" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="7bec-362a-86b6-5cdc" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
-        <infoLink id="53e8-ff7c-c3d1-e4ed" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="53e8-ff7c-c3d1-e4ed" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9934-db67-9c77-27bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="4abd-cf71-0ced-1e36" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
         <infoLink id="aa9a-14ed-3ba5-25df" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
@@ -8184,10 +8379,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="874c-6352-2ead-33fb" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ed4-563d-4900-d29d" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f4-756c-8f81-4428" type="max"/>
       </constraints>
       <profiles>
         <profile id="d504-729b-65f9-872a" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Frenzy, Horns, Mighty Blow (+1),  Thick Skull, Unchanneled Fury">
+              <conditions>
+                <condition field="selections" scope="874c-6352-2ead-33fb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
@@ -8205,7 +8407,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="f3ca-2beb-8406-01f8" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f3ca-2beb-8406-01f8" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="874c-6352-2ead-33fb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="ecae-8ac8-f106-b210" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="e446-aeae-597b-6580" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
         <infoLink id="e656-3ef5-9b1c-55eb" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
@@ -8224,10 +8434,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="1d5b-c35f-836d-d879" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b576-d2e5-bd3e-87be" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f542-987c-314d-842d" type="max"/>
       </constraints>
       <profiles>
         <profile id="3a17-8f51-767c-1ea1" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Dodge, Foul Appearance, Jump Up, No Hands, Regeneration, Shadowing, Side Step">
+              <conditions>
+                <condition field="selections" scope="1d5b-c35f-836d-d879" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8247,7 +8464,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="1c23-1a3c-3a9d-5abf" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="9cfe-66ff-68b9-938a" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-        <infoLink id="f97f-dd4f-60c2-c8fd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f97f-dd4f-60c2-c8fd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1d5b-c35f-836d-d879" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="bbe2-fcd1-3a09-c30c" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="a7b9-c75d-e9ea-494c" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
         <infoLink id="3156-57b9-a44e-e749" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
@@ -8267,10 +8492,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="1ac9-bdfc-a8bb-ad93" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1a9-f159-6799-36ce" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50d-1a83-7588-19b9" type="max"/>
       </constraints>
       <profiles>
         <profile id="3dfa-2160-ab13-a565" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dodge, Fend, Sprint, Sure Feet">
+              <conditions>
+                <condition field="selections" scope="1ac9-bdfc-a8bb-ad93" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -8288,7 +8520,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="39dd-d52a-8bf7-04d9" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="39dd-d52a-8bf7-04d9" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1ac9-bdfc-a8bb-ad93" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="9117-47d7-92ed-4f51" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="cb4e-b1e1-2104-e3aa" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="8d32-9ca3-3ad2-2342" name="Fend" hidden="false" targetId="6683-1874-842d-7423" type="rule"/>
@@ -8307,10 +8547,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="f980-4ebc-144f-8776" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e38-62fb-2d96-b888" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f61b-29f0-91ea-ea42" type="max"/>
       </constraints>
       <profiles>
         <profile id="ce54-b7df-a013-5dad" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick SkulBlock, Dauntless, Frenzy, Multiple Block, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="f980-4ebc-144f-8776" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -8333,7 +8580,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="d061-54d4-d569-57ba" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
         <infoLink id="ac69-60a0-fead-01ee" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
         <infoLink id="fa19-aa06-95c8-1a56" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-        <infoLink id="ccd4-aeb1-ffa9-70b2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="ccd4-aeb1-ffa9-70b2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="f980-4ebc-144f-8776" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dd11-21f5-e5c4-7551" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -8347,10 +8602,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="c402-f09f-2f59-3a7c" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc00-9ed5-25b0-d7c3" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d7-09cd-5c74-6faa" type="max"/>
       </constraints>
       <profiles>
         <profile id="6bfc-5e20-998a-0967" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Mighty Blow (+1), Stand Firm, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="c402-f09f-2f59-3a7c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8369,7 +8631,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="0856-2645-899c-63fa" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="986b-8df6-5e63-7fe4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="986b-8df6-5e63-7fe4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="c402-f09f-2f59-3a7c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="32b3-d05e-9927-1b3a" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="198e-17cc-ede2-44d2" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
         <infoLink id="b589-f0d4-a15f-3669" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
@@ -8387,10 +8657,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="6e4e-8a0d-7d04-5d9e" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9218-1108-4d41-f482" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee43-0e7c-d061-922e" type="max"/>
       </constraints>
       <profiles>
         <profile id="479a-c2e2-0854-36f3" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Extra Arms, Prehensile Tail, Two Heads">
+              <conditions>
+                <condition field="selections" scope="6e4e-8a0d-7d04-5d9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">9</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8411,7 +8688,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="bc61-7d53-1249-92c4" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="b720-2243-17b3-a93a" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
         <infoLink id="b031-49a0-f82a-81c7" name="Extra Arms" hidden="false" targetId="8934-8af7-4015-7b30" type="rule"/>
-        <infoLink id="6721-6fa8-1503-50fd" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="6721-6fa8-1503-50fd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="6e4e-8a0d-7d04-5d9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="d38d-8385-594f-6246" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8426,10 +8711,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="b4a4-4dae-4c27-5793" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59e1-4dfb-8a0b-6f6f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9927-de39-3913-296e" type="max"/>
       </constraints>
       <profiles>
         <profile id="4178-dc58-fe17-150b" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Guard, Tackle">
+              <conditions>
+                <condition field="selections" scope="b4a4-4dae-4c27-5793" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -8449,7 +8741,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="b647-28a9-df2d-6ff4" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="ea1c-51af-c0fc-2ed8" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-        <infoLink id="e4f6-cd0d-53ca-7d3c" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="e4f6-cd0d-53ca-7d3c" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="b4a4-4dae-4c27-5793" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="bb81-e127-f2c5-0d64" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8464,10 +8764,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="1ba9-97ef-2ed0-08f0" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9d-0b58-84f7-ee15" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ec-d44c-78d5-98dc" type="max"/>
       </constraints>
       <profiles>
         <profile id="fbfd-f247-9f0e-22f2" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Dodge, Jump Up">
+              <conditions>
+                <condition field="selections" scope="1ba9-97ef-2ed0-08f0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -8488,7 +8795,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="e93b-3b27-4018-7265" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="afe5-d1cc-52a0-5890" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="1119-d8d5-6469-ffcb" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-        <infoLink id="fc3b-0e3c-b09c-f834" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="fc3b-0e3c-b09c-f834" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1ba9-97ef-2ed0-08f0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="721e-c577-94cd-2eb8" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8503,10 +8818,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="d101-32eb-1c0f-9405" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b013-b922-3e3f-f077" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabe-d23f-7cbf-259f" type="max"/>
       </constraints>
       <profiles>
         <profile id="dde9-6a58-a326-ce17" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dirty Player (+2), Mighty Blow (+1), Sneaky Git">
+              <conditions>
+                <condition field="selections" scope="d101-32eb-1c0f-9405" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
@@ -8524,7 +8846,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="605c-fdd8-ccd1-70bd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="605c-fdd8-ccd1-70bd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="d101-32eb-1c0f-9405" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="a936-3235-035d-363d" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="aaf3-ebac-23bf-7e89" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="61f1-c546-3d08-35df" name="Dirty Player (+2)" hidden="false" targetId="01ba-b7db-48f2-bdb8" type="rule"/>
@@ -8542,10 +8872,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1cd-5a28-a2df-c896" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc35-0ab2-130c-4efd" type="max"/>
       </constraints>
       <profiles>
         <profile id="666f-ab29-9c67-781d" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Chainsaw, Secret Weapon">
+              <conditions>
+                <condition field="selections" scope="19c7-050a-9950-59c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -8563,7 +8900,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a74f-3c4c-aecc-c845" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="a74f-3c4c-aecc-c845" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="19c7-050a-9950-59c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="a79c-8d8d-16ee-6b40" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
         <infoLink id="a9e7-401e-11c1-8d28" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
       </infoLinks>
@@ -8579,10 +8924,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="b6b9-e4df-20d7-feb8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7688-b8f0-dba6-d966" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c73-4e51-88c1-9d4b" type="max"/>
       </constraints>
       <profiles>
         <profile id="7101-7666-4858-06c8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+1)">
+              <conditions>
+                <condition field="selections" scope="b6b9-e4df-20d7-feb8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
@@ -8600,7 +8952,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="493c-3802-d9d8-34ee" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="493c-3802-d9d8-34ee" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="b6b9-e4df-20d7-feb8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="7d32-2d90-90a0-4d11" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="381d-237b-7acf-919b" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
       </infoLinks>
@@ -8616,10 +8976,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="10b5-f4a3-c6e3-704d" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fe-2b96-925d-a05e" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f431-9d36-f783-157b" type="max"/>
       </constraints>
       <profiles>
         <profile id="6a1a-6c77-a7ec-5b28" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+2), Thick Skull, Throw Team-mate">
+              <conditions>
+                <condition field="selections" scope="10b5-f4a3-c6e3-704d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
@@ -8640,7 +9007,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="79ff-bd88-74d5-41dd" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="a0e3-9abf-d546-b4bb" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
         <infoLink id="638f-7547-3ba8-75c8" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
-        <infoLink id="ba24-973e-ed75-96e7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="ba24-973e-ed75-96e7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="10b5-f4a3-c6e3-704d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="f6c1-75be-c32c-69dc" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8655,10 +9030,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="2736-a7fd-e2a7-e349" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e785-9ab5-dd9a-c976" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f4-5c58-2b76-92c8" type="max"/>
       </constraints>
       <profiles>
         <profile id="4b46-4bc6-6875-f1cd" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Frenzy, Jump Up, Juggernaut, Leap">
+              <conditions>
+                <condition field="selections" scope="2736-a7fd-e2a7-e349" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8677,7 +9059,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="dd0c-f188-0ec2-a8cd" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-        <infoLink id="f23c-d8fc-8f13-b0a7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f23c-d8fc-8f13-b0a7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="2736-a7fd-e2a7-e349" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="1934-2971-b5e6-4ea5" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
         <infoLink id="69d4-870f-802e-9bb7" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="0385-e4bb-49ec-0e38" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
@@ -8695,10 +9085,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="0653-e1fd-2776-28d3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea6-603f-e1e4-d47c" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea27-1973-f51b-e269" type="max"/>
       </constraints>
       <profiles>
         <profile id="a668-ecb4-c605-fbf3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Horns, Juggernaut, No Hands, Tackle, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="0653-e1fd-2776-28d3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8721,7 +9118,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="0698-aa30-816e-20c3" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
         <infoLink id="395a-e67f-dba5-e6c3" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
         <infoLink id="5274-e117-1ac5-5846" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-        <infoLink id="f094-ab6e-2fe0-b317" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f094-ab6e-2fe0-b317" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="0653-e1fd-2776-28d3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="74fa-f030-5054-51a8" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8736,17 +9141,24 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a1-5ff6-2a14-4885" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941a-de4f-4ec5-61d6" type="max"/>
       </constraints>
       <profiles>
         <profile id="9db2-1dfb-aec4-8e74" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Claws, Frenzy, Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury">
+              <conditions>
+                <condition field="selections" scope="9007-a6be-1641-e125" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
             <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
             <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
           </characteristics>
         </profile>
@@ -8757,7 +9169,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="29e1-8a57-1379-61d0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="29e1-8a57-1379-61d0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9007-a6be-1641-e125" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="4d0e-731c-bc34-5d9f" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="2dd0-d04f-7741-66c4" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
         <infoLink id="0226-c8d5-d8aa-d011" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
@@ -8777,10 +9197,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="9345-2f7a-f236-ddcd" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adc-131c-c9cc-7466" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a307-a275-4510-fc12" type="max"/>
       </constraints>
       <profiles>
         <profile id="08b8-c339-595c-1fef" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Claws, Disturbing Presence, Juggernaut, Mighty Blow (+1)">
+              <conditions>
+                <condition field="selections" scope="9345-2f7a-f236-ddcd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
@@ -8801,7 +9228,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="e179-c2fe-0974-f1c3" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="2bb3-59a3-5390-6907" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
         <infoLink id="c106-ae08-846c-e553" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-        <infoLink id="b03e-cc69-be8c-dc4d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="b03e-cc69-be8c-dc4d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9345-2f7a-f236-ddcd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="8f85-fa12-48eb-f513" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8816,10 +9251,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="2e41-d71f-ea2b-27ac" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a507-ea17-8bca-a872" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6136-e464-77b1-cf75" type="max"/>
       </constraints>
       <profiles>
         <profile id="5f10-92eb-d4f6-c0c6" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8839,7 +9281,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="8ec6-7dac-32de-ae21" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="e0c2-8b7c-e6c4-b10d" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-        <infoLink id="4378-56a4-0c1b-283c" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="4378-56a4-0c1b-283c" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="11e5-fe83-6e3a-fdb1" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
         <infoLink id="4b8d-9070-4617-8881" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
         <infoLink id="51b1-e741-3c82-8122" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
@@ -8857,10 +9307,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="9dcd-f21e-18ec-e0e7" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48c6-95e0-5acf-441e" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="167c-3c86-de1e-1e10" type="max"/>
       </constraints>
       <profiles>
         <profile id="b6a0-8102-cdcd-8348" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Bombardier, Disturbing Presence, Dodge, Side Step, Sneaky Git, Stab, Stunty">
+              <conditions>
+                <condition field="selections" scope="9dcd-f21e-18ec-e0e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
@@ -8882,7 +9339,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="ae98-f861-bafb-4f4b" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
         <infoLink id="703e-718d-a80b-f323" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
         <infoLink id="ee4e-ded6-fc8b-758f" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
-        <infoLink id="a316-2d2d-1f20-bd2f" name="Loner (3+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="a316-2d2d-1f20-bd2f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9dcd-f21e-18ec-e0e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="0221-9140-4df3-9dae" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="240b-81e9-f9b6-ba14" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
         <infoLink id="c148-dcd0-452b-c79c" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
@@ -8899,7 +9364,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="3ab3-0a11-4223-c529" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c1-a41f-9df7-f1b8" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1583-10ea-e975-4402" type="max"/>
       </constraints>
       <rules>
         <rule id="8d7e-70b1-ec88-e0a4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
@@ -8917,6 +9382,13 @@ If the player was in possession of the ball when they were turned into a frog, i
           </constraints>
           <profiles>
             <profile id="4956-4853-2734-8cec" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <modifiers>
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+1), TackleBlock, Loner (4+), Mighty Blow (+1), Tackle">
+                  <conditions>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8932,7 +9404,15 @@ If the player was in possession of the ball when they were turned into a frog, i
             <infoLink id="a108-5627-9fc2-be2f" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
             <infoLink id="5486-4957-1c4b-e93b" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
             <infoLink id="e21b-9287-5d93-120b" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-            <infoLink id="b80a-0d64-5785-f72a" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+            <infoLink id="b80a-0d64-5785-f72a" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="8ea4-94da-43bb-9ada" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -8950,6 +9430,13 @@ If the player was in possession of the ball when they were turned into a frog, i
           </constraints>
           <profiles>
             <profile id="e59d-8a6e-b173-3cd9" name="Valen Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <modifiers>
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Nerves of Steel, Pass, Safe Pass, Sure Hands">
+                  <conditions>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
                 <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -8965,7 +9452,15 @@ If the player was in possession of the ball when they were turned into a frog, i
             <infoLink id="386f-5956-679a-836f" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
             <infoLink id="e306-2061-62d4-5f02" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
             <infoLink id="36db-4b4e-93f3-d1be" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
-            <infoLink id="6532-1853-5299-4302" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+            <infoLink id="6532-1853-5299-4302" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="28d1-3ee7-ef04-590e" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
             <infoLink id="1c24-4c36-ad56-8661" name="Safe Throw" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
           </infoLinks>
@@ -8987,10 +9482,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="69f2-a7c5-f5d1-64e8" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0c-d4d1-ca31-438d" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5db-701a-1618-58f1" type="max"/>
       </constraints>
       <profiles>
         <profile id="9124-9eca-a0d3-07cc" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Drunkard, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="69f2-a7c5-f5d1-64e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
@@ -9010,7 +9512,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="4c46-6e95-fc84-4fde" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="8f2c-15a6-7c9d-d048" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-        <infoLink id="10c0-44f0-dd87-73ce" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="10c0-44f0-dd87-73ce" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="69f2-a7c5-f5d1-64e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="955a-9161-6379-70aa" name="Drunkard" hidden="false" targetId="2fdd-b4b3-a1a4-f3de" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -9025,10 +9535,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="5aed-7128-04f0-bc29" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eea-1018-af16-ce9a" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b291-bd11-4d47-5a1e" type="max"/>
       </constraints>
       <profiles>
         <profile id="2544-75fb-5e78-d0bc" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Jump Up, Mighty Blow (+1), Thick Skull">
+              <conditions>
+                <condition field="selections" scope="5aed-7128-04f0-bc29" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
@@ -9050,7 +9567,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="8eed-8ab7-f9bc-24e0" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="0dbe-d1e9-91d2-b636" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="3f45-be8c-09e6-84fa" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="f83b-eabe-cf3a-a928" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f83b-eabe-cf3a-a928" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="5aed-7128-04f0-bc29" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7e02-0163-5a97-979f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -9064,10 +9589,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="a68e-e39e-46f4-5122" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8845-c818-c3f2-7197" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7465-b0a8-361b-b9b4" type="max"/>
       </constraints>
       <profiles>
         <profile id="0083-82d1-fa06-dc56" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Catch, Claws, Frenzy, Mighty Blow (+1), Regeneration, Wrestle">
+              <conditions>
+                <condition field="selections" scope="a68e-e39e-46f4-5122" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -9087,7 +9619,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="ef26-a366-acc6-ae60" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
         <infoLink id="f310-08ab-9147-d7f3" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-        <infoLink id="d6c4-dc46-4fea-3679" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="d6c4-dc46-4fea-3679" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="a68e-e39e-46f4-5122" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="d65b-917a-62a9-e4d7" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
         <infoLink id="c45d-59a9-dcea-187c" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
         <infoLink id="e2a5-6386-404e-6e40" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
@@ -9104,10 +9644,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="7796-75b1-61e7-fa43" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d61-54f1-a211-5da9" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa17-5dbb-111c-3161" type="max"/>
       </constraints>
       <profiles>
         <profile id="d7d0-9838-fa2e-85da" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dauntless, Side Step, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="7796-75b1-61e7-fa43" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
@@ -9126,7 +9673,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       </rules>
       <infoLinks>
         <infoLink id="9ac0-645e-0699-82c8" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-        <infoLink id="0715-3ac8-729a-6273" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="0715-3ac8-729a-6273" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="7796-75b1-61e7-fa43" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="daa3-a851-e14b-c46e" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
         <infoLink id="8d50-4bd1-23e6-4736" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
       </infoLinks>
@@ -9142,10 +9697,17 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="b46a-06d8-c171-c7e7" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e55-efa8-6c6a-1842" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e4-fef5-b9d9-8fe5" type="max"/>
       </constraints>
       <profiles>
         <profile id="f48e-0a56-1c45-ca6f" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Juggernaut, Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet">
+              <conditions>
+                <condition field="selections" scope="b46a-06d8-c171-c7e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
@@ -9165,7 +9727,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="004c-27ba-26c4-fe93" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
         <infoLink id="7aca-8b46-b95e-e296" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-        <infoLink id="88aa-e78c-d2c6-02b5" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="88aa-e78c-d2c6-02b5" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="b46a-06d8-c171-c7e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="edcf-d1f6-d0c5-d3e8" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="f6dd-9709-ac2f-0324" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
         <infoLink id="b271-9742-d2d0-9d9a" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
@@ -9214,14 +9784,22 @@ If the player was in possession of the ball when they were turned into a frog, i
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="33b8-1c27-25a2-275e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95fd-2c89-56cb-ae1b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761b-fce6-2eb5-025c" type="max"/>
       </constraints>
       <profiles>
         <profile id="b6ea-50bf-6fd8-f78e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Frenzy">
+              <conditions>
+                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
             <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
@@ -9242,7 +9820,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="56f9-58b9-66b0-2973" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
         <infoLink id="7524-056f-8645-8936" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
         <infoLink id="971a-c6be-dcad-f09a" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="adac-fe4a-78a5-bfab" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="adac-fe4a-78a5-bfab" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c1d5-25b1-7c66-862d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
@@ -9279,7 +9865,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     </selectionEntry>
     <selectionEntry id="fe6f-d2cd-7957-9633" name="Mungo Spinecracker" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc2-e441-cd17-bb9c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f37-1e28-57be-6258" type="max"/>
       </constraints>
       <rules>
         <rule id="5254-3bd4-f8ff-78ae" name="&quot;I&apos;m fine thanks, Mungo!&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
@@ -9358,7 +9944,7 @@ Once spotted by Ranulf in this way (and only in this way), the coach of the play
     </selectionEntry>
     <selectionEntry id="7db9-75b4-696b-2fee" name="Thoron Korensson" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6531-33d7-1177-cc30" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc6f-7afb-eb77-762a" type="max"/>
       </constraints>
       <rules>
         <rule id="7727-1d11-7314-c522" name="Strict Discipline" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
@@ -10061,11 +10647,537 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8a90-db4e-14cd-b9b2" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="eb67-aa21-976b-1799" value="1.0">
+          <repeats>
+            <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="eb67-aa21-976b-1799" value="-1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8ec-cafc-a901-5a18" type="max"/>
+        <constraint field="069c-526e-7481-6bb7" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb67-aa21-976b-1799" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61d6-a5ff-786e-aad7" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1d8-dba2-1bfa-29c6" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e80e-92fe-bfa9-1874" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7531-109e-1728-d778" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8383-55ee-8870-c7d7" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Claws, Dauntless, Dodge, Frenzy, Jump Up, No Hands, Sidestep, Stunty, Titchy">
+              <conditions>
+                <condition field="selections" scope="e80e-92fe-bfa9-1874" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">1</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d5ef-785c-dffb-56c7" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false">
+          <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="97ca-0e82-142f-4449" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e80e-92fe-bfa9-1874" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="be36-47b1-c294-401d" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+        <infoLink id="bcff-fcea-d6f2-5bc3" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+        <infoLink id="7347-cf26-f5d6-fbfe" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="dafe-3b24-9197-e0c5" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="59c8-04f0-21f8-854a" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+        <infoLink id="6507-eec3-f0ab-debf" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="44d1-ae51-88c6-3fb9" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+        <infoLink id="1de6-fb1b-a2c5-848e" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
+        <infoLink id="7881-3e48-829c-5205" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5c52-632f-1f0b-084a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="e847-ed0c-1a61-8819" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5275-5518-f1eb-3bce" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7baf-5d87-bc23-6f15" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8eaf-aaaa-6b37-45b4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+          <description>Grak and Crumbleberry must be hired as a pair and count as two Star Players. However, if either Grak or Crumbleberry is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b23a-c12a-4334-f2da" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c718-8598-f61f-f6b1" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6e3-871c-d5d1-a1ad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045d-8f5b-38cc-7f84" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b9b0-ad6f-a5ca-e175" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <modifiers>
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Bone Head, Kick Team-mate, Mighty Blow (+1), Thick Skull">
+                  <conditions>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6be4-4f9c-5687-dff0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="22ba-c4f6-4ea0-8dec" name="Bone-head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
+            <infoLink id="3c60-fde2-54b5-4364" name="Kick Team-Mate" hidden="false" targetId="b527-59bd-ce9e-e45c" type="rule"/>
+            <infoLink id="47f7-d1fc-0315-2e1f" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+            <infoLink id="0b42-2dc9-b018-a45b" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f6f5-70c1-7d31-ec7e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f4b7-b704-a513-7b8b" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a8-6fdb-6d21-c275" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b06-44e6-8aec-f469" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3fd7-2435-8c89-3621" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <modifiers>
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Right Stuff, Stunty, Sure Hands">
+                  <conditions>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c59b-0b41-e740-1caf" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+            <infoLink id="5de8-b0b8-d51f-88fe" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
+            <infoLink id="0b02-38c5-8c2b-c8cc" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
+            <infoLink id="712a-f9e2-9aab-7e8f" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+            <infoLink id="34a4-e147-28d9-737f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c0cd-03b8-71c7-f265" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b607-4486-3180-3306" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a946-d15d-aef9-8577" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="24e6-8854-e8eb-fa97" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Chainsaw, Pro, Secret Weapon, Stand Firm">
+              <conditions>
+                <condition field="selections" scope="b607-4486-3180-3306" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">140000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ce0a-a072-bb06-8780" name="Old Pro" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, Helmut may use his Pro skill to re-roll a single dice rolled as part of an Armour roll.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="da5e-374b-a331-c30a" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="841d-1bc0-367e-d5f8" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+        <infoLink id="c904-176c-0e29-e200" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+        <infoLink id="08bd-0112-f80a-4111" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="b607-4486-3180-3306" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="feb0-3644-69bd-cad5" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e8ab-bb95-c7eb-6f37" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="7c34-5a85-1f39-b132" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="157f-649b-9c97-9e54" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686a-6527-1419-0916" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="7cda-7db6-798f-5720" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false">
+          <description>During Step 2 of every Start of Drive sequence, the Master of Ballistics can attempt to advise the kicker. After placing the ball but before rolling for deviation, roll a D3 on the following table:
+
+1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
+2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
+3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).
+</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="273b-8e86-6a19-ac9a" name="Rostered Star Player" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5810-0e9d-48c6-aee3" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3d9d-e78a-441c-f152" name="Rostered Star Player" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c180-f679-5735-c762" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c90c-2149-4d0d-b656" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="aacd-3145-537a-81f9" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="3ba0-ab61-1c04-a29f" name="Barik Farblast" hidden="false" collective="false" import="true" targetId="8a87-241d-2e82-8181" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="73af-4890-e4fd-c276" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="9fd3-361b-4632-5195" name="Bomber Dribblesnot" hidden="false" collective="false" import="true" targetId="5993-677d-8b45-5595" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="14c0-5d53-dd7f-36d2" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="4778-524b-8af5-20c4" name="Bryce &apos;The Slice&apos; Cambuel" hidden="false" collective="false" import="true" targetId="1938-caba-4c33-725c" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="b2e9-ddc1-268a-ef55" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="8370-f07f-c012-ff9e" name="Deeproot Strongbranch" hidden="false" collective="false" import="true" targetId="16be-5f78-7e02-c253" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="2c01-3e86-cab6-b5d5" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="a49b-8b21-d5e4-3d6f" name="Eldril Sidewinder" hidden="false" collective="false" import="true" targetId="9da4-9779-ae60-1c48" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="febb-ae0b-8235-6052" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="940b-265e-bbc9-0d7d" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="34a3-b113-851e-5f8a" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="e1fb-20a5-3973-378e" name="Fungus the Loon" hidden="false" collective="false" import="true" targetId="a3af-a94c-d242-1dc5" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="bdf3-657c-ccf1-c3fd" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="9f73-89cf-df5e-4ceb" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="cb32-db25-1833-612c" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="2dfe-310d-c285-349b" name="Gloriel Summerbloom" hidden="false" collective="false" import="true" targetId="9934-db67-9c77-27bb" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="9555-c5af-77bb-71db" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="6217-9881-b603-c611" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="9023-b2b0-cee7-9f0b" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="0b59-6b54-5e5d-0baa" name="Grashnak Blackhoof" hidden="false" collective="false" import="true" targetId="874c-6352-2ead-33fb" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="a73d-81a5-443a-0a04" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="d083-3e9b-9eff-3e6e" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" hidden="false" collective="false" import="true" targetId="1d5b-c35f-836d-d879" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="a38c-0349-17a5-30ca" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="9fff-403c-279c-7707" name="Griff Oberwald" hidden="false" collective="false" import="true" targetId="1ac9-bdfc-a8bb-ad93" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="7855-efb1-0c91-67f5" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="0729-d803-0704-ccc5" name="Grim Ironjaw" hidden="false" collective="false" import="true" targetId="f980-4ebc-144f-8776" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="13e5-334a-98b5-a4ee" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="0e6e-2014-2f96-4f46" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="8b21-6d8f-4b10-5ce1" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="ad86-d958-6910-1a02" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="804c-3e90-816d-f731" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="2d18-20a1-b8bd-1f01" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="778a-2500-13e6-6203" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="70e7-901c-5d3e-1f89" name="Ivar Eriksson" hidden="false" collective="false" import="true" targetId="b4a4-4dae-4c27-5793" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="2e06-8b45-55c7-9d3a" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="facd-b0e1-f415-52b8" name="Karla von Kill" hidden="false" collective="false" import="true" targetId="1ba9-97ef-2ed0-08f0" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="ceae-a996-cfff-e7da" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="ba60-17db-ad0c-2b75" name="Kreek Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="2829-e37b-bb4e-bdab" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="624a-526c-d8f0-847d" name="Lord Borak the Despoiler" hidden="false" collective="false" import="true" targetId="d101-32eb-1c0f-9405" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="7e96-aa7d-3da8-1341" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="eab3-d83b-fe09-b38d" name="Max Spleenripper" hidden="false" collective="false" import="true" targetId="19c7-050a-9950-59c0" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="afaf-fc95-2f89-8dc2" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="3a61-aaaf-9b66-e760" name="Mighty Zug" hidden="false" collective="false" import="true" targetId="b6b9-e4df-20d7-feb8" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="a4a1-ad6f-08b4-9dc1" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="363d-9e52-24ef-0819" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="4961-8bb5-093f-f1e0" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="f359-a055-9b50-a2da" name="Roxanna Darknail" hidden="false" collective="false" import="true" targetId="2736-a7fd-e2a7-e349" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="d0be-7a22-b12c-2aaa" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="b22c-a9b0-9c91-47d3" name="Rumbelow Sheepskin" hidden="false" collective="false" import="true" targetId="0653-e1fd-2776-28d3" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="1655-f4b6-b740-d5be" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="0d7d-a380-62ae-028e" name="Scyla Anfingrimm" hidden="false" collective="false" import="true" targetId="9007-a6be-1641-e125" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="a6cb-87dc-74cd-b6b8" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="4389-d3e1-ed32-0e92" name="Skrorg Snowpelt" hidden="false" collective="false" import="true" targetId="9345-2f7a-f236-ddcd" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="daf3-2770-d89f-4132" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="47f6-b1c3-6fc2-bb30" name="Skrull Halfheight" hidden="false" collective="false" import="true" targetId="2e41-d71f-ea2b-27ac" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="8eaa-6102-84e4-d45d" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="e7e0-4f79-0a1b-3880" name="The Swift Twins" hidden="false" collective="false" import="true" targetId="3ab3-0a11-4223-c529" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="27b2-3d3b-8b79-f6ab" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="7266-20e2-144e-296f" name="Thorsson Stoutmead" hidden="false" collective="false" import="true" targetId="69f2-a7c5-f5d1-64e8" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="beec-8ac1-ff3b-2af9" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="3e99-59d8-cc96-bbe8" name="Varag Ghoul-Chewer" hidden="false" collective="false" import="true" targetId="5aed-7128-04f0-bc29" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="7e12-def4-28b3-68e3" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="eee5-bdde-a8bc-5c1c" name="Wilhelm Chaney" hidden="false" collective="false" import="true" targetId="a68e-e39e-46f4-5122" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="611c-1135-e632-2b88" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="5133-a132-bc99-0bf3" name="Willow Rosebark" hidden="false" collective="false" import="true" targetId="7796-75b1-61e7-fa43" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="0b72-6a0b-9458-0d6c" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink id="3d50-57cf-af18-eefe" name="Zolcath the Zoat" hidden="false" collective="false" import="true" targetId="b46a-06d8-c171-c7e7" type="selectionEntry">
+              <entryLinks>
+                <entryLink id="da07-62a1-b13b-21a4" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d8e-1440-b9b8-a2b5" name="Familiar Face" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="639c-a6a5-0448-b3d6" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="6fa2-0920-eabe-29d1" name="Casualties (Blocks)" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="05d6-6acc-e78d-e3ac" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -10076,6 +11188,13 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           </costs>
         </selectionEntry>
         <selectionEntry id="af0c-27b2-29cb-8a37" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="10cb-90ed-b4cc-06f4" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -10086,6 +11205,13 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           </costs>
         </selectionEntry>
         <selectionEntry id="5827-052f-0008-75aa" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="e8ee-b633-da17-481e" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -10096,6 +11222,13 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           </costs>
         </selectionEntry>
         <selectionEntry id="3f74-a03e-139b-3f6c" name="Touchdowns" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="1381-021b-ab0b-7bf7" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -10106,6 +11239,13 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           </costs>
         </selectionEntry>
         <selectionEntry id="3314-4344-40e2-e8ba" name="MVPs Awarded" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink id="1294-758d-3589-5ce3" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
@@ -10201,6 +11341,13 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           </costs>
         </selectionEntry>
         <selectionEntry id="e32a-3d3d-1e26-d508" name="Deflections" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
@@ -10253,6 +11400,13 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
     <selectionEntryGroup id="9415-5e37-1db4-eda2" name="[Advancements]" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="936c-0b18-3e04-d4f3" name="1st Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4edc-ec0a-99b2-12cd" type="max"/>
           </constraints>
@@ -10302,9 +11456,14 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <selectionEntryGroup id="1183-f5e2-23fc-30ae" name="2nd Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dff-4e96-3876-0daa" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dff-4e96-3876-0daa" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -10357,9 +11516,14 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <selectionEntryGroup id="1a72-93b6-fff9-427f" name="3rd Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -10414,7 +11578,8 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b74c-721d-73af-2385" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b74c-721d-73af-2385" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10469,9 +11634,14 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <selectionEntryGroup id="f9c8-09dd-949a-ca2f" name="5th Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -10523,9 +11693,14 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <selectionEntryGroup id="de82-8b7a-f9f2-fbfd" name="6th Advancement" publicationId="46da-ba61-6439-83e5" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -10584,6 +11759,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -10599,6 +11775,16 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" field="00c8-2374-951a-570d" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="af24-1ac7-b6b9-82da" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -10620,6 +11806,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" type="atLeast"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -10629,6 +11816,16 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="set" field="2151-cf0d-f6a2-05f6" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="a9dc-ca66-62a5-c521" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -11034,196 +12231,6 @@ In addition, the limit of two players per Wide Zone during set-up does not apply
           </costs>
         </entryLink>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9968-d287-e591-aeab" name="Star Players" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="9202-edd7-d521-3032" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ab3-0a11-4223-c529" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7097-369e-23d9-267c" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9202-edd7-d521-3032" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="b9b1-102b-f03a-46c4" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7feb-5117-45c9-c067" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="a28f-b20d-ccab-15e4" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-              <characteristics>
-                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
-                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
-                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">140000</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="8b5c-22ae-133e-6a8c" name="Old Pro" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
-              <description>Once per game, Helmut may use his Pro skill to re-roll a single dice rolled as part of an Armour roll.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="9658-7d52-5d04-ddba" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-            <infoLink id="82aa-0a14-5066-3de2" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
-            <infoLink id="971a-77bc-dd22-90a1" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
-            <infoLink id="9aab-0bcb-0e6b-166b" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-            <infoLink id="e733-7ca7-7c31-2bd0" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="8333-8bdb-49ff-a9cf" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-            <categoryLink id="405d-016f-7115-aaca" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7097-369e-23d9-267c" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b40-6b94-abcf-f523" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="1af9-d43d-4e2f-0541" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
-              <description>Grak and Crumbleberry must be hired as a pair and count as two Star Players. However, if either Grak or Crumbleberry is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink id="58cb-a11c-af29-f7e4" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="5f34-7581-5626-c1c9" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde0-49ec-6f57-342d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="009f-dad8-956d-8aae" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="f926-8f21-4b4d-ecde" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="0609-70b4-2580-9e20" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="79fe-03ae-57fe-c559" name="Bone-head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
-                <infoLink id="4f9b-bea2-2353-f439" name="Kick Team-Mate" hidden="false" targetId="b527-59bd-ce9e-e45c" type="rule"/>
-                <infoLink id="f6ea-c7b3-3dcf-13b0" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="4e8c-b0bd-ef53-0c8a" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="00f5-e666-d9d5-60d9" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3aca-b560-db00-3084" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e1-6473-adcb-91ac" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be10-4331-e298-40b5" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="fa21-7332-eabe-fbc6" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="cefc-fdfa-a688-2f06" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="c6f6-c323-8be6-39a4" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-                <infoLink id="622a-5ad7-d5a9-9c73" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
-                <infoLink id="6028-fe70-8831-e97f" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-                <infoLink id="aa6c-56b7-9e76-ace7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="5a36-0a88-9a62-a2c9" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dc89-8c39-8ab9-0834" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30f7-ce06-80df-564d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ce39-b85d-5e6e-2b59" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-              <characteristics>
-                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">1</characteristic>
-                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
-                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="f206-de65-df85-fd53" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false">
-              <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="533e-8796-2fd1-a183" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-            <infoLink id="1573-a757-1f1e-f44d" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-            <infoLink id="eec4-5733-f3d2-787e" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-            <infoLink id="138e-53a1-bf53-9deb" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-            <infoLink id="4a7d-7132-276b-488c" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-            <infoLink id="95d9-fddc-9132-f39b" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-            <infoLink id="e80e-2ae7-138b-73cb" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
-            <infoLink id="1856-758d-39a0-78d8" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-            <infoLink id="acd1-3916-669e-d5a3" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
-            <infoLink id="6fdc-3359-2c60-9ec4" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="3b02-7e5e-83da-f6ef" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-            <categoryLink id="f11a-ed55-096e-05f5" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="3a41-d8e0-044c-2580" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true">
       <constraints>
