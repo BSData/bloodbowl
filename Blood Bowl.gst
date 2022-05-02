@@ -10,6 +10,7 @@
     <publication id="3637-e2aa-16da-c089" name="Spike #13"/>
     <publication id="af11-1772-744f-9a1a" name="Spike #14"/>
     <publication id="8c4c-3037-21a5-355b" name="Spike #11"/>
+    <publication id="cdc6-3a6b-6663-f6ea" name="Spike Almanac 2021"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -156,7 +157,7 @@
             </modifier>
             <modifier type="increment" field="8ed7-eb63-28ad-1d86" value="7.0">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ddb-3cf4-4367-e324" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4361-1f5a-b2d3-901c" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -219,11 +220,6 @@
         <categoryLink id="eb58-d9a5-cf49-60d4" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e757-eb31-3140-de9d" name="Apothecary" hidden="false" collective="false" import="true" targetId="77da-bfcb-d236-80a8" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="f36b-1277-be5b-216d" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="8435-608c-efe1-f84d" name="Team Re-Rolls" hidden="false" collective="false" import="true" targetId="9350-0bc7-c2fc-7af5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4487-48f5-2fb6-e111" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
@@ -234,18 +230,11 @@
         <categoryLink id="06ab-43c7-f4b2-8e08" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0477-c661-e7a6-a03a" name="Weather Tables" hidden="false" collective="false" import="true" targetId="1d49-5d66-d431-9840" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="a421-0a58-8150-f7e3" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="31c7-74d3-c43b-fab0" name="Prayers to Nuffle" hidden="false" collective="false" import="true" targetId="b813-b8f6-47ea-2f87" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="f5b8-d647-eb18-a100" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0428-5dc9-bc8f-e479" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry"/>
-    <entryLink id="c2be-b9b4-e431-dfe7" name="Star Players" hidden="false" collective="false" import="true" targetId="78e4-7f45-3449-d00b" type="selectionEntry"/>
     <entryLink id="a0ad-1589-c6e6-1e28" name="Game Type" hidden="false" collective="false" import="true" targetId="4816-c8dd-bffc-3384" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d7c7-231f-8f16-2158" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
@@ -695,35 +684,6 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
         <categoryLink id="f809-1ab6-e080-cd50" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7494-d1da-b20b-1430" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c9-1ec3-3734-a523" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="e0b9-0648-3040-9647" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
-              <description>Any team that can normally hire an apothecary may Induce a Wandering Apothecary or two to help during the game. Often these apothecaries are local barber surgeons, present for the game and willing to recoup the price of their ticket by helping out. Others are experts of questionable veracity, hoping to prove the worth of their unorthodox methods. Wandering Apothecaries follow all the rules for normal apothecaries, as described on page 62. However, unlike a normal apothecary, a Wandering Apothecary may attempt to patch-up any Journeymen or Mercenary players the team includes, but cannot attempt to patch up a Star Player.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="97ab-2acc-c010-5162" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000.0">
@@ -841,35 +801,6 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="07c3-d349-052b-0fed" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c51-5937-6e56-9306" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="3f91-248f-bcd7-0c0d" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
-              <description>Necromancers are always looking for a helping hand with their work, and the local mortuary workers are often eager to earn some extra income. A Mortuary Assistant is a master of needle, thread and twisted wire, connecting hip bone to leg bone, repairing funeral bindings, and so on. They can really get the players shambling back to the pitch! A Mortuary Assistant may be used once per game to re-roll one failed Regeneration roll for any player currently on the team, including Journeymen, but not including Mercenaries or Star Players.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="06b6-7113-c30d-00a2" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="c4f1-a521-8e34-78e6" value="1.0">
@@ -952,187 +883,6 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f096-dfb8-02a0-00d3" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="768b-b64b-f982-47e4" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c70-c799-96c4-ebcc" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="ebc0-978c-ff8e-4c06" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false">
-              <description>At the beginning of the game, a team may increase its Fan Factor by +1 for each swarm of Cavorting Nurglings it has Induced. In addition, for the duration of this game, a team may increase its number of cheerleaders by the number of Cavorting Nurglings Induced.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="393d-0281-8c48-9dcf" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="768b-b64b-f982-47e4" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94a-8c73-f933-46cb" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="80d0-e059-be76-bbdb" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
-              <description>The Plague Doctors that accompany Nurgle-aligned teams are well-versed in the care of the many virulent plagues and ailments that infect their charges. Once per game, a Plague Doctor may be used to re-roll one failed Regeneration roll for a player on their team. Alternatively, once per game the Plague Doctor may be used in exactly the same way as an apothecary when any player on their team is Knocked-out (see page 62). Plague Doctors benefit all players currently on the team, including Journeymen, but not including Mercenaries or Star Players.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="605f-6880-28e7-5a8f" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="37" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="60000.0">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="false"/>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad57-1911-cdc0-48cd" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="ef73-c35e-6e9f-4663" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="df62-7972-cbcb-b0f5" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36bf-6195-ef50-afd4" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="4c03-526b-c5fd-39ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-              <description>At the start of a drive, after both teams have been set up but before the kick-off (between Step 1 and Step 2), randomly select D3 players with the Stunty trait that are currently set up on the pitch. For the remainder of this drive, those players gain the Dauntless and Frenzy skills and the Really Stupid (4+) trait.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3ddb-3cf4-4367-e324" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4750-c253-c921-6881" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="dee0-5534-d86a-b613" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
-              <description>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="5e39-084d-b112-fb83" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb8-5829-41b4-efa0" type="max"/>
@@ -1158,1358 +908,6 @@ D6 	DECK
 CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card deck is shuffled and two cards are drawn from the top. You may then read both cards before choosing one to keep and one to discard.</description>
             </rule>
           </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="48e5-fada-bf3f-939b" name="Wizard" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bea-0039-debc-c7ab" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="3edf-edfc-c8ce-472b" name="Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
-              <description>Some Wizards are named, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Wizard:
-
-• If this happens during a game that is part of a league, neither team can use the named Wizard but the named Wizard will keep both hiring fees.
-• If this happens during exhibition play, both teams can use the named Wizard– one team has clearly hired a ringer! 
-
-If a Wizard Inducement is not named, there is no restriction on both teams fielding the same type.</description>
-            </rule>
-          </rules>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="8734-e4d0-165c-0123" name="Wizard" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f98-f998-ad3d-e835" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="497f-1fda-db65-6ac1" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="23" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e38-d546-b3c4-0ad1" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="f3aa-a3b1-da34-ba9c" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="ae67-74f7-31d8-36df" name="Rampant Mutation" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns. Choose a player on your team from among those on the pitch, and roll a D6:
-
-• On a roll of 2+, until the end of this drive that player gains two Mutation skills of your choice.
-• On a roll of 1, the player becomes a writhing mass of flesh as raw chaos energy flows through them momentarily. The player gains the Disturbing Presence skill until the end of this drive.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="76a4-85cb-669f-fff4" name="Chaos Sorcerer" hidden="false">
-                      <description>Once per game, a Chaos Sorcerer may cast one of the following spells: Thunderbolt, Rampant Mutation</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="acdb-20ea-c163-976c" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="c772-977b-d9ff-5790" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a7f2-7214-dc42-1392" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="768b-b64b-f982-47e4" type="atLeast"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e8-85af-8bf3-b7fa" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c4db-2041-dad7-deff" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose an empty target square anywhere on the pitch and nominate D3 Standing opposition players that are within two squares of the target square. Roll a D6 for each nominated player:
-
-• On a roll of 3+, the player is unexpectedly attacked by daemonic plants of prodigious size that erupt from the loamy earth before rapidly rotting away to nothing.
-• On a roll of 1 or 2, the player manages to duck and avoid the attacking flora.
-
-Any Standing players hit by Strange Flora are Knocked Down. When a player is Knocked Down by Strange Flora, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="44b6-1d8b-559a-72d7" name="Vigorous Growth" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. For the duration of this team turn, there is a -2 modifier applied to the dice roll every time an opposition player attempts to Rush.
-
-Note that this modifier applies alongside any other modifiers that apply to attempts to Rush.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="4366-1867-d850-aee5" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-                      <description>Once per game, a Horticulturalist of Nurgle may cast one of the following spells: Vigorous Growth, Strange Flora</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="4c33-225b-650b-13c3" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="9dd1-172f-1d1d-dd79" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="30d6-84ef-9b01-d4db" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6692-2de5-002a-d380" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="978f-22b0-f1ba-35e9" name="Vanhalables Dans Macabre" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Roll a D6:
-
-• On a roll of 3+, your players are suffused with dark vitality. During this team turn, each Lineman positional player on your team that is currently on the pitch (including Journeymen) may improve either their MA, AG or PA by 1. You may choose which of these three bonuses each affected player gains when that player is activated.
-• On a roll of 1 or 2, the sky darkens and the players jerk and spasm furiously, but the spell has no further effect.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="043d-7cd0-76a6-da79" name="Incorporeal" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player is hit and becomes strangely incorporeal!
-• On a roll of 1 or 2, the player briefly becomes eerily luminous, before the spell dissipates harmlessly.
-
-A player hit by Incorporeal gains the No Hands trait and, if they are in possession of the ball, will immediately drop it, causing it to bounce. Additionally, the player loses their Tackle Zone. The effects of Incorporeal last until the start of the opposition’s next team turn.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="68fc-7520-6be6-1134" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-                      <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable,s Danse Macarbe</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="6b77-beed-eb46-4dd0" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                    <categoryLink id="af4c-dc35-1b27-f411" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="53c2-e4a6-021c-e944" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="365a-f1b0-1800-7c8c" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="75f6-e612-bf75-0dd1" name="Reality Blinks" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
-                      </characteristics>
-                    </profile>
-                    <profile id="1bd7-f2b4-9bc6-a29b" name="Tectonic Shift" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
-                      </characteristics>
-                    </profile>
-                    <profile id="6b87-a495-7f47-b8a5" name="Temporal Distortion" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
-
-You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
-
-• On a roll of 5+, the spell is successful and the turn markers are moved.
-• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="08af-0a9a-49a4-523b" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="false">
-                      <description>Once per game, a Slann Mage-priest may cast one of the
-following spells: Temporal Distortion, Tectonic Shift, Reality Blinks</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="0dd3-39b4-5ca1-60f0" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="29ea-ce27-647a-dcd0" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0a75-3b57-7fcd-9220" name="Ogre Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e21b-8f08-64dc-4048" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="8e60-0888-9ca6-1a2a" name="Fireball" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
-
-• On a roll of 4+, the player has been hit by the Fireball.
-• On a roll of 1-3, the player manages to avoid the Fireball.
-
-Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="80a7-4f57-c382-c33b" name="Column of Fire" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose any square that is adjacent to one of the Sidelines to be the Column of Fire’s starting point. The Column of Fire follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Column of Fire’s path:
-
-• On a roll of 4+, the player has been hit by the Column of Fire.
-• On a roll of 1-3, the player is able to duck and avoid the Column of Fire.
-
-Any Standing players hit by the Column of Fire are Knocked Down. When a player is Knocked Down by the Column of Fire, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="8f47-1914-3b19-a983" name="Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="false">
-                      <description>Once per game, a Firebelly may cast one of the following spells: Fireball, Column of Fire</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="668b-c973-41c8-fcf0" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="a5ae-ffc3-f7bf-45a1" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4a9b-382c-23ff-be89" name="Night Goblin Sports Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1887-9dce-946d-b114" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="fee5-a1cc-08a8-6774" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 6, the player has been kicked by the Foot of Gork (or Mork)!
-• On a roll of 3-5, the player has been stomped on by the Foot of Gork (or Mork).
-• On a roll of 1 or 2, the player is lucky and the Foot of Gork (or Mork) swings harmlessly over their head.
-
-A Standing player kicked by the Foot of Gork (or Mork) is immediately catapulted through the air. Immediately treat that player as being thrown (as if they had the Right Stuff trait, and as if their Strength is 3 or less should their Strength be 4 or more) by another player (with the Throw Team-mate trait and a Strength of 5 or more), and treat the quality of the throw as terrible.
-
-A Standing player stomped on by the Foot of Gork (or Mork) is Knocked Down. When a player is Knocked Down by the Foot of Gork (or Mork), you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="83ef-2f68-652f-a089" name="Spore Cloud" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 2+, the player is engulfed by a cloud of Madcap Mushroom spores. Until the end of this drive, the player gains both the Loner (5+) and Really Stupid traits.
-• On a roll of 1, the player begins to sprout strange fungus from their armour, before the spell dissipates harmlessly.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="cefc-0125-a067-2b09" name="Night Goblin Sports Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false">
-                      <description>Once per game, a Night Goblin Shaman may cast one of the following spells: Foot of Gork (or Mork), Spore Cloud</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1705-1258-dac0-40be" name="Druchii Sprots Sorceress" publicationId="9118-6c97-8006-93a4" page="24" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1551-6e9b-00ed-d735" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="c2bf-44bc-bd9c-a25a" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="b8bc-5727-b95a-8f4b" name="One Thousand Cuts" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player is hit by a swirling storm of incorporeal dark magic.
-• On a roll of 1 or 2, the magic engulfs the player briefly before the spell dissipates harmlessly.
-
-Until the end of this drive, the MA, ST, and AG characteristics of a player hit by One Thousand Cuts are reduced by 1.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="c977-fcf4-80d0-c262" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="24" hidden="false">
-                      <description>Once per game, a Druchii Sports Sorceress may cast one of the following spells: Thunderbolt, One Thousand Cuts</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="f511-369c-1af7-55c6" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="1d73-2085-d2c0-e496" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0d6b-cc21-32b7-03d2" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cab-126e-e0d5-5632" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a9ac-bee0-9ff4-a376" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="30a6-ef9d-1a8f-67ba" name="Temporal Distortion" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
-
-You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
-
-• On a roll of 5+, the spell is successful and the turn markers are moved.
-• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="c181-5043-5866-e025" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="false">
-                      <description>Once per game, an Asur High Mage may cast one of the following spells: Temporal Distortion, Thunderbolt</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="f3aa-6316-5965-41e0" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="3abd-696d-73c9-fe6d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d2a4-1975-9f3a-10fb" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49bf-67b2-bb17-e4c9" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="b2a1-182c-66d7-5aa6" name="Plague of Warts" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player is hit and their skin unexpectedly erupts into a mass of warts.
-• On a roll of 1 or 2, the player develops a few unsightly blemishes, but is otherwise unaffected.
-
-Until the end of this drive, the MA, ST, and AG characteristics of a player hit by Plague of Warts are reduced by 1. Additionally, until the end of this drive, a player hit by Plague of Warts gains the Disturbing Presence and Foul Appearance skills.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="c9dc-63c4-b382-e084" name="Zap!" publicationId="46da-ba61-6439-83e5" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
-
-• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
-• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
-
-If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="47a6-e4b6-f1ef-89eb" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false">
-                      <description>Once per game, a Wicked Witch may cast one of the following spells:</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="4e4a-9858-cf86-bec6" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="509e-8f26-7c79-1b1f" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <selectionEntries>
-                    <selectionEntry id="08fe-ff6e-ecf5-d265" name="Frog" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb1b-3240-f53a-0512" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="946a-bfed-317f-1eb6" type="min"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="95c3-19c8-68cc-2465" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-                          <characteristics>
-                            <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
-                            <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
-                            <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
-                            <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
-                            <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
-                            <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
-                            <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
-                            <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
-                            <characteristic name="Cost" typeId="ee01-7448-8c3f-a882"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="8187-84a1-91c3-ee57" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                        <infoLink id="68b6-78a3-fce2-7ed4" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
-                        <infoLink id="2e83-ed55-bd94-a856" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-                        <infoLink id="61c8-9113-869b-6137" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-                        <infoLink id="a583-dc44-50e4-a709" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
-                        <infoLink id="8c6d-c842-3903-ffd6" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d6ae-2e24-92b5-e11d" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b7-3913-be04-d48e" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="add7-6462-3723-3aa6" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile id="ecc8-9e39-6323-8610" name="Warp Lightning" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose any square that is adjacent to one of the Sidelines to be the Warp Lightning’s starting point. The Warp Lightning follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Warp Lightning’s path:
-
-• On a roll of 3+, the player has been hit by the Warp Lightning.
-• On a roll of 1 or 2, the player is lucky and the bolt zips overhead.
-
-Any Standing players hit by the Warp Lightning are Knocked Down. When a player is Knocked Down by Warp Lightning, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.
-
-Finally, when a player is Knocked Down by Warp Lightning, roll a D6. On a roll of 1, the Warp Lightning is earthed through the player. Do not roll to see if any more players are hit. On a roll of 2+, the Warp Lightning continues along its path, as described above.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="73ca-e734-0dba-a452" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="false">
-                      <description>Once per game, a Warlock Engineer may cast one of the following spells: Warp Lightning, Thunderbolt</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="618c-efa9-64f4-f74f" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="2f80-9c6b-f3cf-cc49" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f27f-00a7-469f-42bc" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86bd-15ba-9957-93c6" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="aa50-c0b1-17d6-a9b5" name="&quot;Take this! Ooops...&quot;" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-                      <characteristics>
-                        <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Horatio may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch. The target square is moved D3 squares in a direction determined by rolling a D8 and referring to the Random Direction template. After moving the target square, roll a D6 for each Standing player (from either team) that is either in the target square or a square adjacent to it:
-
-• On a roll of 4+, the player has been hit by the Fireball.
-• On a roll of 1-3, the player manages to avoid the Fireball.
-
-Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="6a36-4204-a553-672f" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="false">
-                      <description>Once per game, Horatio may cast the following spell: &quot;Take this! Ooops...&quot;</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="8e83-6c0e-234d-0594" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-                    <categoryLink id="d31e-811d-af30-0b0e" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="7972-2515-56f6-f61e" name="Hireling Sports-Wizard" hidden="false" collective="false" import="true" targetId="c15c-c163-dae0-bad1" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ad18-72b7-86cc-1f68" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5bb5-85a2-0a80-96ce" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="e3f0-7b77-d890-85d7" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2a7-6734-e7ee-003d" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="16a2-dc02-3dd4-049f" name="(In)Famous Coaching Staff" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
-                  <description>(In)Famous Coaching Staff are available to purchase during the pre-game sequence at the cost listed. You may purchase up to two (In)Famous Coaching Staff who are allowed to assist your team.
-
-As with Star Players, it is possible for both teams to hire the services of the same named (In)Famous Coaching Staff (such as Josef Bugman):
-
-• If this happens during a game that is part of a league, neither team can use the (In)Famous Coaching Staff but the (In)Famous Coaching Staff will keep both hiring fees.
-• If this happens during exhibition play, both teams can use the (In)Famous Coaching Staff – one team has clearly hired a ringer!</description>
-                </rule>
-              </rules>
-              <selectionEntries>
-                <selectionEntry id="db23-8a99-cd4a-68f2" name="Josef Bugman" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fdd-98db-497b-7910" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="3502-bf20-17ce-6a0c" name="Josef Bugman, Dwarf Master Drinker" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                        <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                        <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
-                        <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6+</characteristic>
-                        <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9+</characteristic>
-                        <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (5+), Tackle, Thick Skull, Wrestle</characteristic>
-                        <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="db96-e71e-f32d-fe9c" name="Bugman&apos;s XXXXXX" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
-                      <description>Bugman provides players on his team with an ample supply of Bugman’s XXXXXX. This most famous of Dwarf ales is renowned for its recuperative properties. When rolling to see if Knocked-out players recover, rolls of a 1 can be re-rolled.</description>
-                    </rule>
-                    <rule id="780f-dc71-22df-967a" name="Keen Player" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
-                      <description>If Bugman’s team cannot set up 11 players at the start of a drive, Bugman may decide to join in himself! You can choose to set him up as part of your team. If you do so, he counts as part of the team for the duration of the drive. When the drive ends, Bugman is Sent-off for committing a Foul and has no further effect on the game – he cannot be used in a later drive. The Bugman’s XXXXXX, however, is not lost; the players simply refuse to give it up!</description>
-                    </rule>
-                  </rules>
-                  <infoLinks>
-                    <infoLink id="d387-c99f-3317-1022" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-                    <infoLink id="0180-b51b-d44c-63b1" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                    <infoLink id="65a9-a6e5-bc4f-f61d" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
-                    <infoLink id="0385-3ef3-babe-1979" name="Loner (5+)" hidden="false" targetId="e99d-8433-05f4-f4af" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="25c8-07b7-e720-441d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c142-ec65-a2fb-eb6d" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a5-3089-a9b7-a95d" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="b930-7405-7339-f1af" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                        <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-                        <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
-                        <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5+</characteristic>
-                        <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8+</characteristic>
-                        <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+)</characteristic>
-                        <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="c6ab-8306-d48d-c6f9" name="&quot;If you want a job done...&quot;" publicationId="9118-6c97-8006-93a4" page="15" hidden="false">
-                      <description>Kari counts as two Temp Agency Cheerleaders. In addition, if her team cannot set up 11 players at the start of a drive, Kari may decide to “show ‘em how it’s done!”. Her team’s coach can choose to set her up as part of the team. If they do so, she counts as part of the team for the duration of the drive, and no longer counts as two Temp Agency Cheerleaders. When the drive ends, Kari is Sent-off. You cannot Argue the Call or use a Bribe to prevent this. She will play no further part in the game – she does not count as any Temp Agency Cheerleaders, and she cannot be used in a later drive.</description>
-                    </rule>
-                  </rules>
-                  <infoLinks>
-                    <infoLink id="dc2a-aa38-98d5-085f" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-                    <infoLink id="023f-eec0-45c9-7681" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                    <infoLink id="2de0-4651-5fe6-a342" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                    <infoLink id="1891-314f-68a6-4989" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="a799-b71d-09c2-702c" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b7e3-6018-d74e-ce67" name="Papa Skullbones" publicationId="9118-6c97-8006-93a4" page="16" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="463a-a9e9-8b1e-f315" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="778e-1b0d-1c29-848d" name="&quot;By the power of the Gods!&quot;" publicationId="9118-6c97-8006-93a4" page="16" hidden="false">
-                      <description>At the start of each drive, after the teams have been set up but before the kick-off, Papa Skullbones can attempt to bless one player on his team (not a Mercenary or Star Player) with the power of the Chaos gods. Choose a player on your team from among those on the pitch, and roll a D8 on the table below. Any Skills gained are kept until the end of the drive; if the player already has both Skills, “By the Power of the Gods!” has no effect on them. A player cannot be chosen if a roll has already been made for them during this game.
-
-1 - Unworthy: The player is struck down. The player is immediately removed from play and placed in the Knocked-out box of their team dugout.
-2 - Overlooked: The chosen player is overlooked by the fickle gods. Randomly select another player from the same team, excluding players not on the pitch and players for whom a roll on this
-table has already been made, and roll on this table again.
-3 - Freakish Proportions: The player gains the Big Hand and Very Long Legs skills.
-4 - Grasping Tendrils: The player gains the Tentacles and Prehensile Tail skills.
-5 - Horrific Visage: The player gains the Disturbing Presence and Foul Appearance skills.
-6 - Grisly Bifurcation: The player gains the Extra Arms and Two Heads skills.
-7 - Thorny Protrusions: The player gains the Claws and Horns skills.
-8 - Favour of the Gods: The player gains two Skills of your choice, chosen from the Mutations category.</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="ef0e-b634-5a1b-e5f8" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e26f-071d-5d8f-5326" name="Galandril Silverwater" publicationId="9118-6c97-8006-93a4" page="17" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e48a-d562-3490-b6ae" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="ba81-b966-a029-facb" name="&quot;Go Team!&quot;" publicationId="9118-6c97-8006-93a4" page="17" hidden="false">
-                      <description>Each time Galandril’s team rolls Cheering Fans on the Kick-off Event table, add D3 to the number of cheerleaders the team has – if the team does not have any cheerleaders, it counts as having one. In addition, each time Galandril’s team makes a roll on the Prayers to Nuffle table, if a natural 15 or 16 is rolled on the D16 (or, if a D8 is being rolled as in exhibition play, if a natural 8 is rolled), the team gains an additional team re-roll.</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="5d75-cc48-8175-072d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2cfd-5b11-6904-4629" name="Krot Shockwhisker" publicationId="9118-6c97-8006-93a4" page="15" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c6f-9aea-eb3c-9bf3" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="560b-82e7-bdaa-1d9e" name="&quot;A new plathi... er, patient!&quot;" publicationId="9118-6c97-8006-93a4" page="18" hidden="false">
-                      <description>Once per game, during Step 2 of the End of Drive sequence, Krot can experiment on a player who has been removed from play as a Casualty, in an attempt to get them back out there. Choose a player that is in the Casualty box of Krot’s team dugout (not a Mercenary or a Star Player). This may even be a player that has suffered a Casualty table result of 15-16, DEAD. Roll a D6 on the table opposite and apply the result to the chosen player:
-
-
-1 - There Were… Complications: The player’s condition has worsened. The coach of the opposing team rolls on the Casualty table to determine exactly what has happened to the player. The result of this roll is applied immediately, in addition to any other Casualty table results already applied. Note that multiple Miss Next Game results do not stack.
-2-3 - Useless Flesh-thing!: Krot’s tinkering has no effect and the player remains in the Casualty box.
-4-5 - Flawed Execution: The player is returned to the Reserves box and can be set up with the rest of the team. However, until the end of the next drive, they gain the Really Stupid (4+) trait. If they already have the Really Stupid (4+) trait, it is replaced with the Really Stupid (5+) trait. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.
-6 - Witness Perfection!: The player is returned to the Reserves box and can be set up with the rest of the team. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="9b9b-c4da-6bc2-99d7" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9b22-ebde-af3e-195d" name="Ayleen Andar" publicationId="9118-6c97-8006-93a4" page="19" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76f3-18e7-5711-3175" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="1dd3-a781-a350-0023" name="&quot;This kid has real potential!&quot;" publicationId="9118-6c97-8006-93a4" page="19" hidden="false">
-                      <description>Roll a D6 for each, applying a -1 modifier to the roll for each Journeyman taken on:
-
-• On a roll of 1 or less, the Journeyman is a team player, but doesn’t show any particular talent. The Journeyman loses the Loner (4+) trait.
-• On a roll of 2-5, the Journeyman has some potential. The Journeyman gains a single randomly selected Skill from one of their Primary skill categories.
-• On a roll of 6, Ayleen has produced a player with real star quality! The Journeyman gains two randomly selected Skills from one of their Primary skill categories.
-
-Each Journeyman counts towards CTV as normal; their value does not increase for any Skills they may have. Journeymen provided by Ayleen may be permanently hired during Step 4 of the post-game sequence as normal, but doing so will cost an additional 10,000 gold pieces per Skill.</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="78fa-a819-cda2-e21e" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a6fc-fb9b-a3ce-d48c" name="Professor Fronkelheim" publicationId="9118-6c97-8006-93a4" page="20" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4536-734b-6fc8-074b" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="6419-2118-f293-cf92" name="&quot;Have you yhought about an upgrade?.&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
-                      <description>During the pre-game sequence, after Step 4 but before Step 5, randomly select D3 players on your team that are eligible to play during this game. These players have been modified by the professor.
-
-Until the end of this game, each selected player gains a single randomly selected Skill from the Mutations category. However, at the start of Step 3 of the post-game sequence, roll a D6 for each of these players (unless they suffered, and did not recover from, a Casualty table result of 15-16, DEAD during the game):
-
-• On a roll of 1, the experiment proves a bit of a failure, really. The player immediately loses the Skill. In addition, the player must miss the next game, exactly as if they had suffered a Casualty table result of 7-9, Seriously Hurt, during this game.
-• On a roll of 2-5, the experiment proved only a shortlived success. The player immediately loses the Skill.
-• On a roll of 6, the professor’s experiments have proven a total success! The player retains the Skill without having to spend any SPP (note that you must adjust their Current Value accordingly, as if the player had randomly selected a Secondary skill).</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="8dbf-20ae-19d6-7b3e" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3dcc-0401-7a8a-c736" name="Mungo Spinecracker" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faf7-bc74-44dd-1bcc" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="8077-ca79-3594-6c8b" name="&quot;I&apos;m fine thanks, Mungo!&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
-                      <description>Whenever a player on your team suffers an Injury result of 8-9, KO’d (or of 7-8, KO’d on the Stunty Injury table), you may roll a D6 before removing them from play:
-
-• On a roll of 1, the player’s protestations fall upon deaf ears and Mungo ‘treats’ his patient. The player becomes a casualty and is immediately removed from play and placed in the Casualty box of their team dugout. No Casualty roll is made. Instead, a Badly Hurt result is automatically applied against them.
-• On a roll of 2-4, the player is badly pummelled but suffers neither lasting harm nor noticeable benefit. The player is removed from play and placed in the Knocked-out box of your team dugout as normal.
-• On a roll of 5 or 6, the player regains their senses remarkably quickly and is able to fend off the ministrations of the Orc. The player remains on the pitch and becomes Stunned.</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="56e1-f8b9-3aaf-7e09" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="679f-7aef-872b-1057" name="Fink Da Fixer" publicationId="9118-6c97-8006-93a4" page="21" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6928-65bb-bb09-551b" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="8581-cbb6-2cbb-ebb6" name="&quot;You got it, boss!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
-                      <description>Once per game, when your team uses a Bribe, you may re-roll the D6 to see if the Bribe is effective. In addition, when rolling on the Argue the Call table, a coach who has hired Fink treats a roll of 5 or 6 as a “Well, When You Put It Like That…” result and a roll of 2-4 as an “I Don’t Care!” result. However, on a “You’re Outta Here!” result, Fink is Sent-off along with the coach and will play no further part in the game.</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="7ab9-ec7f-fd53-fab3" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b7a1-2bf4-94f0-1a78" name="Schielund Scharlitan" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2a4-3e39-4a1b-fc44" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="afed-3907-013c-79f5" name="&quot;I&apos;ll make you a star!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
-                      <description>During the pre-game sequence, after Step 4 but before Step 5, randomly select D3 players on your team that are eligible to play during this game. These players have been approached by Scharlitan, and his interest is having a noticeable effect on their attitude!
-
-Until the end of this game, each selected player gains the Pro skill. However, at the start of Step 3 of the post-game sequence, roll a D6 for each of these players (unless they suffered, and did not recover from, a Casualty table result of 15-16, DEAD during the game):
-
-• On a roll of 1, that player has begun to act like they are the next big thing. The agent tires of his client and drops them, but the exposure has gone to their head. The player gains the Loner (2+) trait.
-• On a roll of 2-5, the agent simply drops the player from his books. They might be disappointed, but they’ll get over it.
-• On a roll of 6, the agent tires of his client and drops them, but the exposure has been good for them. The player permanently retains the Pro skill without having to spend any SPP (note that you must adjust their Current Value accordingly, as if the player had chosen a Primary skill).</description>
-                    </rule>
-                  </rules>
-                  <categoryLinks>
-                    <categoryLink id="5300-871e-541f-d795" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="987e-2a10-8740-c0e1" name="Biased Referee" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b8-5570-5228-a71d" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="a81c-b40a-7f5b-5aca" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
-              <description>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
-
-For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
-
-Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:
-
-• If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.
-• If this happens during exhibition play, both teams can use the named Biased Referee – they can dish outharsh rulings to both sides!</description>
-            </rule>
-          </rules>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="29e9-d753-c6d4-adab" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d45-12b4-43ad-aac6" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="17ab-74be-804c-dee3" name="Biased Referee Inducement" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd31-de24-6636-abb9" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="79de-ffb4-1793-e87e" name="Close Scrutiny" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
-                      <description>If any player on the opposing team commits a Foul without rolling a double when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 5+, the Biased Referee spots the Foul and the player is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).
-• On a roll of 1-4, the player manages to avoid the ref’s attention.</description>
-                    </rule>
-                    <rule id="f26c-ab7e-53d9-e8c5" name="&quot;I didn&apos;t see a thing!&quot;" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
-                      <description>When rolling on the Argue the Call table, you may apply a +1 modifier to the dice roll.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9995-0e5b-4706-62f7" name="Jorm the Ogre" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="ffff-7836-9be4-196c" value="80000.0">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2f-82a3-a719-ac16" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="0191-407a-8408-a038" name="Jorm Doesn&apos;t Like Cheaters" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
-                      <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 4+, Jorm has spotted the cheat and rolls up his sleeves to deliver his own form of justice.
-• On a roll of 1-3, the player manages to avoid the ref’s attention.
-
-Once spotted by Jorm in this way (and only in this way), the player that committed the Foul is immediately Knocked Down. When a player is Knocked Down by Jorm, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
-                    </rule>
-                    <rule id="abce-7be2-0c08-0379" name="&quot;Shut it, you hooligans!&quot;" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
-                      <description>If a Get the Ref result is rolled on the Kick-off Event table, the normal effects are ignored – instead, Jorm goes into a rampage and starts tearing through the stands to teach the rowdy fans a lesson! Both teams reduce their Fan Factor for this game by -1 each time a Get the Ref result is rolled on the Kick-off Event table.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="f9e9-5500-a314-dd46" name="Thoron Korensson" publicationId="9118-6c97-8006-93a4" page="34" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1633-0ca9-ab39-759a" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="9ace-0ba0-8f72-6b6e" name="Strict Discipline" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-                      <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 4+, Korensson has spotted the violation.
-• On a roll of 1-3, the player manages to avoid the ref’s attention.
-
-Once spotted by Korensson in this way (and only in this way), the player that committed the Foul is immediately Sent-off. When a player is Sent-off in this way, their coach cannot use a Bribe but may attempt to Argue the Call. However, if a 1 is rolled on the Argue the Call table, not only is the player and the coach Sent-off, but one other randomly selected player belonging to the opposing team and that is currently on the pitch is Sent-off as well.</description>
-                    </rule>
-                    <rule id="f6fd-4920-699c-7ddf" name="&quot;Sit down and keep quiet&quot;" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-                      <description>If a Get the Ref result is rolled on the Kick-off Event table, roll again – it takes a particularly riled-up crowd to want to advance on Korensson.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="fb09-122e-9328-0f98" name="Ranulf &apos;Red&apos; Hokuli" publicationId="9118-6c97-8006-93a4" page="34" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77c7-f0fd-2ddd-6460" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="bd8a-3499-7f2e-5897" name="&apos;Red&apos; Card" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-                      <description>f any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 4+, Ranulf loudly demands that play halt whilst he investigates further.
-• On a roll of 1-3, the player manages to avoid the ref’s attention.
-
-Once spotted by Ranulf in this way (and only in this way), the coach of the player that committed the Foul must choose one of the following options:
-
-• The coach may use a Bribe if one is available.
-• The player that committed the Foul may accept their fate and be Sent-off.
-• The player may attempt to argue with Ranulf! Ranulf will settle the argument with his axe. An Armour roll is made against the player, applying a +2 modifier to the result:
-	- If the roll is higher than the Armour Value of the player, they become Prone and an Injury roll is made against them. The player is not Sent-off and no Turnover is caused.
-	- If the roll is equal to or lower than the Armour Value of the player hit, the attack has no effect. The player is Sent-off and a Turnover caused.</description>
-                    </rule>
-                    <rule id="8814-cfd1-4af1-6b02" name="&quot;I&apos;m not the one arguing!&quot;" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-                      <description>If Ranulf has been Induced for this game, even if he does not take part due to both coaches Inducing him, neither coach can Argue the Call – even the most argumentative of coaches can’t help but have respect for the charismatic Norscan.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5898-e494-ee97-27cd" name="The Trundlefoot Triplets: Bungo, Filbert and Jeph" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="ffff-7836-9be4-196c" value="40000.0">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d380-69a5-8fe4-9d57" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="1a6d-ed29-3144-f1be" name="Heavy Handed Incompetence" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
-                      <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 5+, the player that committed the Foul is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).
-• On a roll of 2-4, the triplets, squabbling amongst themselves, miss the Foul.
-• On a roll of 1, however, the victim of the Foul is Sent-off as if they had committed a Foul and rolled a double!</description>
-                    </rule>
-                    <rule id="7d2b-f202-3d18-f5d9" name="&quot;Smart players are well-behaved players!&quot;" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
-                      <description>At the start of each drive, after both teams are set-up but before the kick-off, roll a D6. On a roll of 6, one randomly selected player on the opposing team that is not being Marked becomes embroiled in a pointless argument with the triplets about their kit. The player is immediately Placed Prone and becomes Stunned, representing the time wasted arguing.</description>
-                    </rule>
-                    <rule id="a1ee-50cf-4724-fa1c" name="&quot;They don&apos;t look happy!&quot;" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
-                      <description>If a Get the Ref result is rolled on the Kick-off Event table, the triplets make themselves scarce and will play no further part in this game. In addition, each team also gets a Bribe as normal.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -2588,7 +986,7 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bc81-b345-de4e-0ec3" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bc81-b345-de4e-0ec3" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="30000.0">
               <conditions>
@@ -2640,97 +1038,6 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="115a-0d0c-d982-1562" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f659-098f-c855-a3c1" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="3285-e534-bf21-64c3" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false">
-              <description>During each Start of Drive sequence, after Step 2 but before Step 3, you can select a single player on your team that is currently on the pitch that does not have the Loner (X+) trait and choose one of the following runes. Then roll a D6:
-
-• On a roll of 4+, the rune takes effect, but you cannot attempt to use the Runesmith again at the start of a later drive.
-• On a roll of 2 or 3, the rune does not work, but you can attempt to use the Runesmith again at the start of a later drive.
-• On a roll of 1, the rune does not work, and you cannot attempt to use the Runesmith again at the start of a later drive.
-
-Dwarven Runes:
-
-Rune of Might: Until the end of this drive, the chosen player gains the Mighty Blow (+1) skill.
-Rune of Fury: Until the end of this drive, the chosen player gains both the Dauntless andFrenzy skills.
-Rune of Speed: Until the end of this drive, the chosen player gains both the Sprint and Sure Feet skills.
-Rune of Iron: Until the end of this drive, the chosen player’s Armour Value is increased by 1 (to a maximum of 11+) and they gain the Stand Firm skill.
-Rune of Impact: Until the end of this drive, the chosen player gains both the Juggernaut and Horns skills.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9d04-167a-f1f8-a826" name="WAAAGH! Drummer" publicationId="9118-6c97-8006-93a4" page="36" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="714c-8867-530d-b568" type="max"/>
-          </constraints>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
@@ -4083,623 +2390,6 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d49-5d66-d431-9840" name="Weather Tables" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="13f2-1f5b-56ef-44c3" type="max"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1a4e-dcab-8e86-61d5" name="Weather Tables" hidden="false" collective="false" import="true" defaultSelectionEntryId="7911-21fb-567d-deb6">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="698f-2611-9116-de22" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ff-7a0f-ed9d-c400" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="efe4-c7e0-c218-fd35" name="Primordial Rainforest Weather (2D6)" publicationId="9118-6c97-8006-93a4" page="79" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c3-b3fd-4aad-8287" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="bbba-02d3-fa43-6674" name="02 - Praise the Sun Gods" publicationId="9118-6c97-8006-93a4" page="79" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The sun beats down upon the jungle canopy, turning the air below into a furnace and turning the ground to rock! If a player Falls Over whilst Rushing, apply a +1 modifier to the Armour roll. Additionally, apply all of the Heat Wave weather condition rules as well.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2638-bf9d-2d17-6970" name="03 - Heat Wave" publicationId="9118-6c97-8006-93a4" page="79" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A glorious day, but as the heat begins to rise, it becomes harder for players to push themselves. Apply a -1 modifier every time a player attempts to Rush an extra square. Players also find it harder to get motivated and get back on the pitch. Additionally, during Step 2 of the End of Drive sequence, apply a -1 modifier when rolling to see if any player in the Knockedout box recovers.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9da2-fb2d-7e26-1d40" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="79" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s muggy and the mosquitos are out, but otherwise it’s
-perfect Blood Bowl weather.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="3546-f9fb-fced-8f1d" name="12 - Tropical Monsoon" publicationId="9118-6c97-8006-93a4" page="79" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s raining those big, fat jungle raindrops, making the ball slippery and difficult to hold. Apply a -1 modifier every time a player makes an Agility test to pick up or catch the ball, or whenever a player attempts to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="74e1-b6c3-e673-27e3" name="11 - Jungle Showers" publicationId="9118-6c97-8006-93a4" page="79" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s raining those big, fat jungle raindrops, making the ball slippery and difficult to hold. Apply a -1 modifier every time a player makes an Agility test to pick up or catch the ball, or whenever a player attempts to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="585a-d1be-c7b8-e1a0" name="Winter Weather (2D6)" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b54-0cb3-8852-c127" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d9a2-67b6-92be-576a" name="12 - Blizzard" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="e20c-3602-c1d0-d2cd" name="11 - Heavy Snow" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The snow is several feet deep, making it very difficult indeed to run up and punch someone! When a player performs a Block action as part of a Blitz action (but not on its own), their Strength characteristic is reduced by 1 when comparing their Strength against the Strength of the target of the Block action.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2ed2-69aa-c14e-1465" name="04-10 Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s rather chilly and it’s threatening to rain (or snow), but considering the time of year, the conditions are almost perfect for Blood Bowl.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="1fb4-110c-94b4-bd4a" name="03 - Freezing" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A sudden cold snap turns the ground as hard as granite (and not the ‘astro’ variety that players are used to). When a player Falls Over or is Knocked Down, the coach of the opposing team must apply a +1 modifier when making an Armour roll against them.
-</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bc56-22a7-ae19-f092" name="02 - Cold Winds" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The fans are shivering in the stands as a viciously cold wind blows steadily down the pitch. Apply a -1 modifier every time a player tests against their Passing Ability. Players also find it harder to get motivated and get back on the pitch. Additionally, during Step 2 of the End of Drive sequence, apply a -1 modifier when rolling to see if any player in the Knockedout box recovers.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="79e1-3c68-5d8e-7537" name="Subterranean Conditions (2D6)" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22a3-2e80-f94c-9960" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="bd52-8629-8ff0-5bed" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The light of the sun might be missing, but the conditions are almost perfect for Blood Bowl</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="a4c1-b599-7a53-93bf" name="11 - Thermal Geysers" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Vapour begins to whistle up from cracks in the ground, followed by forceful gouts of roiling steam. If a player on your team Falls Over or is Knocked Down, roll a D6. On a roll of 1, they crack open a thermal geyser. That player is immediately catapulted through the air. Immediately treat that player as being thrown (as if they had the Right Stuff trait) by another player (with the Throw Team-mate trait), and treat the quality of the throw as terrible.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bcef-ceea-ec84-fc27" name="12 - Seismic Activity" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">“Uh oh… was that a tremor?” Roll a D6 at the end of each team turn, adding 1 to the result for each player on the pitch with a Strength of 5 or more. On a roll of 6+, rocks tumble down from up above. Both coaches roll off. The coach that rolls the lowest randomly selects one of their players from among those on the pitch. That player is struck by a falling rock and Knocked Down.
-If the roll-off results in a tie, do not roll again. Instead, both coaches must randomly select a player to be struck by a falling rock.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="48ae-da38-b57e-7ee1" name="03 - Gloomy" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The torches are in need of replacing, and the shadows are growing long. All Long pass and Long bomb Pass actions suffer an additional -1 modifier.
-Additionally, when a player attempts to Rush for a second or subsequent time during their activation, apply an additional -1 modifier.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9b87-95ce-10fc-b1a5" name="02 - Bubbling Up From Below" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The players are aghast as viscous liquid begins to seep up from below. Whether this is a natural phenomenon, the result of sabotage or a dire warning that stadia have no place being built above sewage pipes, it’s definitely not pleasant. All players on the pitch subtract 1 from their MA.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6a7d-2df0-8b8d-e8e8" name="Autumn Weather (2D6)" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d775-f5ac-404b-a942" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="dbef-2dcb-1a29-f9c0" name="12 - Strong Winds" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If it wasn’t for the winds, it would be a lovely day. The ball does not deviate normally. Instead, after placing the kick, the coach of the kicking team rolls a D8 to determine the direction in which the wind is blowing:
-
-D8 Wind Direction
-1-2 Towards the kicking team’s End Zone.
-3-4 Towards the receiving team’s End Zone.
-5-6 Towards the Sideline to the left of the kicking team.
-7-8 Towards the Sideline to the right of the kicking team.
-
-Next, place the Throw-in template over the square in which the kick was placed, with the central arrow (3-4) pointing in the direction in which the wind is blowing. The kick then deviates in a direction determined by rolling a D6 and referring to the Throw-in template.
-Additionally, the number of squares the ball moves is determined by rolling a D8, rather than a D6.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="ee9a-8206-9459-4751" name="11 - Pouring Rain" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier every time a player makes an Agility test to catch or pick up the ball, or to attempt to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="0b0c-3784-ec70-3ea6" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s not quite warm, but then again it’s not quite cold – ideal Blood Bowl weather! A pleasant autumn afternoon provides perfect conditions for Blood Bowl.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="4efb-5c8f-00b9-f118" name="03 - Autumnal Chill" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Winter is fast approaching and players are reluctant to leave the comfortable warmth of the dugout. During the End of Drive sequence, apply a -1 modifier when rolling to see if a player recovers from being KO’d.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2b91-674e-6bf5-c6e6" name="02 - Leaf-Strewn Pitch" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Huge drifts of leaves have piled up at regular intervals across the pitch. It looks terrible, but they’re soft to land on! When a player Falls Over or is Knocked Down, the coach of the opposing team must apply a -1 modifier when making an Armour roll against them.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e2ba-0460-2d25-5955" name="Spring Weather (2D6)" publicationId="9118-6c97-8006-93a4" page="76" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c04-42b0-4816-e952" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="2736-a1e2-cae3-c2c5" name="12 - High Winds" publicationId="9118-6c97-8006-93a4" page="76" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The winds are whistling through the stadium and the players can barely hear each other. Roll a D6 each time a player on your team wishes to use a team re-roll. On a roll of 2+, you may use a team re-roll as normal. On a 1, a team re-roll cannot be used.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9a08-35fb-d548-25e4" name="11 - Misty Morning" publicationId="9118-6c97-8006-93a4" page="76" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A haze of thick mist has descended upon the pitch, greatly reducing visibility. Players can move only a maximum of six squares, although they may still Rush as normal. Additionally, only Quick and Short pass actions can be performed.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="44db-d274-b578-6531" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="76" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s not quite warm but then again, it’s not quite cold – ideal weather for a game of Blood Bowl!</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="ee47-5209-02ba-9c00" name="03 - Blossoming Flowers" publicationId="9118-6c97-8006-93a4" page="76" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The flowers are blooming, the tree sap is pumping and the pollen count is high, forcing the hay fever-afflicted referee to seek shelter indoors. Whilst this weather condition is in effect, players cannot be Sent-off for committing a Foul, even if they roll a natural double on either the Armour roll or the Injury roll.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="90b9-bc8a-2cfc-7d64" name="02 - Morning Dew" publicationId="9118-6c97-8006-93a4" page="76" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The pitch is dew-covered from the cold of night, making everything a little slippery. Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, apply a -1 modifier every time a player makes an Agility test to pick up the ball.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6ede-7a02-2204-39c6" name="Summer Weather (2D6)" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3502-7fcd-1113-c91b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b5a3-925c-a50c-2c17" name="12 - Monsoon" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A sudden burst of torrential rain and high winds hits the pitch, making the ball slippery and erratic. Apply a -1 modifier every time a player makes an Agility test to catch or pick up the ball, or to attempt to interfere with a pass. Additionally, when the ball scatters, it moves from the square in which it was placed four times before landing, rather than the usual three.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7fd3-49e6-2fad-873e" name="11 - Blinding Rays" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">No cloud cover in the clear, blue skies and the relentless glare of the sun leaves the players squinting and shading their eyes. Apply a -1 modifier every time a player tests against their Passing Ability. Additionally, only Quick and Short pass actions can be performed.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8dba-8b5a-a660-a236" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s still hot, but not as hot as it has been lately! A (tolerably) warm, dry and slightly overcast day provides perfect conditions for Blood Bowl.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="21e5-f5f6-2f00-13d8" name="03 - Melting Astrogranite" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s not just the players that are affected by the hot weather – even the pitch is melting! It might be the heat, or it might be the sticky footing, but the players are certainly struggling to move! The number of squares a player can attempt to Rush is reduced by one (to a minimum of one).</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8a3f-52a8-88a1-ab3b" name="02 - Sweltering Heat" publicationId="9118-6c97-8006-93a4" page="77" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Some players faint in the unbearable heat! D3 randomly selected players from each team that are on the pitch when a drive ends are placed in the Reserves box. They must miss the next drive.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7911-21fb-567d-deb6" name="Default Weather Table (2D6)" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e06-d100-39d2-ceb3" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f500-6083-38ec-31d9" name="03 - Very Sunny" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A glorious day, but the clear skies and bright sunlight interfere with the passing game! Apply a -1 modifier every time a player tests against their Passing Ability.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="2c50-f2a1-a964-0477" name="02 - Sweltering Heat" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Some players faint in the unbearable heat! D3 randomly selected players from each team that are on the pitch when a drive ends are placed in the Reserves box. They must miss the next drive.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9b1c-10c7-7b4f-9f1d" name="12 - Blizzard" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="47b2-a322-044f-e261" name="04-10 - Perfect Conditions" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Neither too cold nor too hot. A warm, dry and slightly overcast day provides perfect conditions for Blood Bowl.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c9b9-4198-3bee-aa40" name="11 - Pouring Rain" publicationId="46da-ba61-6439-83e5" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6310-a007-7fe7-dff3" name="Graveyard Weather Table (2D6)" publicationId="9118-6c97-8006-93a4" page="80" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c72e-6760-df8d-e721" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d935-734d-00ac-33bb" name="03 - Fog" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A real pea-souper has descended, reducing visibility to almost nothing! While the fog persists, only Quick pass or Short pass actions can be attempted and the number of squares a player can attempt to Rush is reduced by one (to a minimum of 1). Additionally, the referee is far less likely to spot any foul play that occurs. Whilst this weather condition is in effect, players cannot be Sent-off for committing a Foul, even if they roll a natural double on either the Armour roll or the Injury roll.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="58bc-7d14-71dd-b500" name="02 - Angry Locals" publicationId="9118-6c97-8006-93a4" page="80" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">An angry mob of locals has arrived at the stadium looking for the town Necromancer. Unable to find the fiend, they decide he’s disguised himself as one of the players! Both coaches roll off. The coach that rolls the lowest randomly selects one of their players from among those on the pitch. That player is immediately removed from the pitch and placed in the Reserves box, where they will hide until the end of the game, or until this weather condition is replaced by another. If the roll-off results in a tie, do not roll again. Instead, both coaches must randomly select a player to hide from the locals.
-If this weather condition is rolled again, this process is repeated; the locals are nothing if not generous in their misplaced suspicion of the players!</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="a24c-49fd-d009-b254" name="12 - Lightning" publicationId="9118-6c97-8006-93a4" page="80" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Thunder rumbles and the night sky is lit up by regular lightning strikes. At the end of every team turn, roll a D6. On a roll of 1, a single randomly selected player on the active team is struck by lightning and immediately Knocked Down. When a player is Knocked Down by lightning, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="fc50-834c-058f-aa6c" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="80" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s a bit gloomy, and there’s a strong suggestion of faint voices whispering too quietly to be heard, but otherwise it’s perfect Blood Bowl weather.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c01f-0f64-2df7-55bc" name="11 - Pouring Rain" publicationId="9118-6c97-8006-93a4" page="80" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2c02-a410-5116-9c56" name="Desolate Wasteland Weather Table (2D6)" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74e-abeb-69d7-051f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="ab39-f02d-bfc3-273a" name="03 - Pouring Rain" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8366-81b1-930e-15f6" name="02 - Tremors" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The ground is constantly shaking and shuddering. At the end of every team turn, roll a D6 for each Standing player on the active team that is currently on the pitch. On a roll of 1, that player loses their balance and is Placed Prone.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7f10-691f-9185-6ebf" name="12 - Strong Winds" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If it wasn’t for the winds, it would be a lovely day. The ball does not deviate normally. Instead, after placing the kick, the coach of the kicking team rolls a D8 to determine the direction in which the wind is blowing:
-
-D8 Wind Direction
-1-2 Towards the kicking team’s End Zone.
-3-4 Towards the receiving team’s End Zone.
-5-6 Towards the Sideline to the left of the kicking team.
-7-8 Towards the Sideline to the right of the kicking team.
-
-Next, place the Throw-in template over the square in which the kick was placed, with the central arrow (3-4) pointing in the direction in which the wind is blowing. The kick then deviates in a direction determined by rolling a D6 and referring to the Throw-in template.
-Additionally, the number of squares the ball moves is determined by rolling a D8, rather than a D6.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="e93c-dc22-dbbd-6693" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s not quite warm but then again, it’s not quite cold – ideal weather for a game of Blood Bowl!</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="89ca-4d95-6d3e-ecd6" name="11 - Lava Bombs" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A local volcano is erupting a bit, causing lumps of volcanic rock to rain down for miles around. Whilst this weather condition is in effect, all players are considered to have the Bone Head trait – representing them constantly looking skyward to avoid being struck by unexpected lumps of falling rock.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="84ad-3603-249f-2322" name="Mountainous Weather Table (2D6)" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06a0-099b-19cd-2811" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="912c-6eb8-5525-9d77" name="03 - Very Sunny" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A glorious day, but the clear skies and bright sunlight interfere with the passing game! Apply a -1 modifier every time a player tests against their Passing Ability.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c951-74cd-c208-b420" name="02 - Gale Force Winds" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The wind is unbelievably strong, making passing play impossible and even affecting the kick-off! Whilst this weather condition is in effect, ignore Step 2 of the Start of Drive sequence – it is not possible for a kick-off to be resolved and a touchback is automatically caused instead.
-Additionally, whilst this weather condition is in effect, no Pass actions or Throw Team-mate actions can be performed..</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="b6b8-a4b0-9762-9f1e" name="11 - Blizzard" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="535a-3a31-a054-9293" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s rather chilly and it’s threatening to rain (or snow), but considering the time of year, the conditions are almost perfect for Blood Bowl.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="b724-7038-4b54-4487" name="12 - Ice Storm" publicationId="9118-6c97-8006-93a4" page="81" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It is extremely cold, so cold in fact that it is raining literal lumps of ice! The ice on the pitch is so treacherous that none of the players are willing to hurry, no matter how much their coach shouts! Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, all players on the pitch subtract 1 from their MA.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="31c6-a72f-89a1-bf54" name="Coastal Weather Table (2D6)" publicationId="9118-6c97-8006-93a4" page="82" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc69-db2f-ff70-e75c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6603-a75b-59d6-550d" name="02 - Gale Force Winds" publicationId="9118-6c97-8006-93a4" page="82" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The wind is unbelievably strong, making passing play impossible and even affecting the kick-off! Whilst this weather condition is in effect, ignore Step 2 of the Start of Drive sequence – it is not possible for a kick-off to be resolved and a Touchback is automatically caused instead. Additionally, whilst this weather condition is in effect, no Pass actions or Throw Team-mate actions can be performed.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="cba7-2cfa-36c4-4c15" name="12 - Blizzard" publicationId="9118-6c97-8006-93a4" page="82" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c745-6244-54bd-8ed0" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="82" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Neither too cold nor too hot. A warm, dry and slightly overcast day provides perfect conditions for Blood Bowl.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="dbb6-8792-2dd7-77a0" name="11 - Torrential Rain" publicationId="9118-6c97-8006-93a4" page="82" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour is making the ball slippery and difficult to hold. Apply a -1 modifier every time a player makes an Agility test to catch or pick up the ball, or to attempt to interfere with a pass. Additionally, the poor visibility means that only Quick and Short passes can be attempted. Finally, all players on the pitch subtract 1 from their MA. However, such extreme downpours seldom last long. During the End of Drive sequence, after Step 2 but before Step 3, roll again on the Weather table.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="274b-0aeb-4761-d5b7" name="03 - Strong Winds" publicationId="9118-6c97-8006-93a4" page="82" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If it wasn’t for the winds, it would be a lovely day. The ball does not deviate normally. Instead, after placing the kick, the coach of the kicking team rolls a D8 to determine the direction in which the wind is blowing:
-
-D8 Wind Direction
-1-2 Towards the kicking team’s End Zone.
-3-4 Towards the receiving team’s End Zone.
-5-6 Towards the Sideline to the left of the kicking team.
-7-8 Towards the Sideline to the right of the kicking team.
-
-Next, place the Throw-in template over the square in which the kick was placed, with the central arrow (3-4) pointing in the direction in which the wind is blowing. The kick then deviates in a direction determined by rolling a D6 and referring to the Throw-in template.
-Additionally, the number of squares the ball moves is determined by rolling a D8, rather than a D6.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="35f3-52bf-8fbc-a70f" name="Desert Weather Table (2D6)" publicationId="9118-6c97-8006-93a4" page="83" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cc4-5bfc-7456-83ed" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="17d3-989f-5848-229d" name="03 - Very Sunny" publicationId="9118-6c97-8006-93a4" page="83" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A glorious day, but the clear skies and bright sunlight interfere with the passing game! Apply a -1 modifier every time a player tests against their Passing Ability.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="7b47-32e7-2d76-c163" name="02 - Sweltering Heat" publicationId="9118-6c97-8006-93a4" page="83" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Some players faint in the unbearable heat! D3 randomly selected players from each team that are on the pitch when a drive ends are placed in the Reserves box. They must miss the next drive.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="df5c-49ce-8bd5-f47f" name="12 - Sandstorm" publicationId="9118-6c97-8006-93a4" page="83" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The shifting sands have been stirred up into a violent sandstorm and visibility is severely affected. Whilst this weather condition is in effect, no Pass actions or Throw Team-mate actions can be performed, and no player can attempt to Rush. Additionally, the referee has retreated indoors and isn’t bothering to even pretend they’re keeping an eye on the action! Whilst this weathercondition is in effect, players cannot be Sent-off for committing a Foul, even if they roll a natural double on either the Armour roll or the Injury roll.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9f35-9270-b9c3-a667" name="04-10 - Perfect Conditions (well, almost)" publicationId="9118-6c97-8006-93a4" page="83" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It’s still hot, but it is bearable! Hot and dry but with a sufficient breeze to take the edge off makes for ideal Blood Bowl conditions.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="c653-fa23-5768-837a" name="11 - Strong Winds" publicationId="9118-6c97-8006-93a4" page="83" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">If it wasn’t for the winds, it would be a lovely day. The ball does not deviate normally. Instead, after placing the kick, the coach of the kicking team rolls a D8 to determine the direction in which the wind is blowing:
-
-D8 Wind Direction
-1-2 Towards the kicking team’s End Zone.
-3-4 Towards the receiving team’s End Zone.
-5-6 Towards the Sideline to the left of the kicking team.
-7-8 Towards the Sideline to the right of the kicking team.
-
-Next, place the Throw-in template over the square in which the kick was placed, with the central arrow (3-4) pointing in the direction in which the wind is blowing. The kick then deviates in a direction determined by rolling a D6 and referring to the Throw-in template.
-Additionally, the number of squares the ball moves is determined by rolling a D8, rather than a D6.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a29a-9e95-402e-649e" name="Wrath of Khorne (2D6)" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90e4-bc42-d307-a47e" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="dc17-ad9b-e1de-4b59" name="12 - Crimson Downpour" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">So impressed with the display of violence, Khorne causes the heavens to rain crimson down upon those on the pitch, drenching them in gallons of blood and making it slippery underfoot. Players attampting to Rush will fail on the roll of a 1 or a 2. Additionally, if a player suffers a Push Back result from a Block, roll a D6. On the roll of a 1, the player is KO&apos;d after the push is made.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="528f-b635-7fff-8070" name="11 - Red Mist" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A red mist descends upon the pitch, coating the players in a thin veil of blood and making visibility worse. Players making a pass action may not perform a Long Pass or Lopng Bomb.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="1961-d7b4-f7c2-b80b" name="04-10 - All is Calm" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Khorne is content to simply watch the game without intervening, making it perfect Blood Bowl weather.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8874-7e48-3c37-6971" name="03 - Losing Patience" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The insufficient spilling of blood, at least in his eyes, is beginning to draw the ire of Khorne - which brings its own risks. At the end of each drive, randomly select one player on the pitch. Immediately make an Armour roll, and an Injury roll if necessary, for that player.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9b0e-a9e7-3ec5-2e7c" name="02 - Khorne&apos;s Fury" publicationId="3637-e2aa-16da-c089" page="10" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Khorne has become incensed that there is not enough carnage to stem his bloodlust, and he demands more bloodshed. To fuel his rage, Khorne plants his wrath within his chosen vessels on the pitch - though it comes with a cost to the players. Randomly select two players form each team. Those players gain +1 to their Strength characteristic and the Frenzy skill until a different result is rolled on the Weather table. When a different result is rolled, these players immediately make an Armour roll, and an Injury roll if necessary.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="519b-1d5b-5c77-ed71" name="Harsh Tundra Weather Table (2D6)" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb02-32c9-356c-5fd5" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c8e8-bde4-513f-1fd8" name="12 - White-out" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It&apos;s snowing so heavily that it&apos;s near impossible for the players to see anything at all! Players maay not perform Pass actions. Additionally, a player may not declare a Blitz action against an opposing player who is more than three squares away.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="b225-3bfe-b884-7224" name="11 - Hail Shower" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">At the start of each of the team&apos;s turn, roll a D6. On a 1, randomly select one player on the pitch from the active team. This player is struck by an unusually large hailstone; make an Armour roll for this player. If the armour roll is successful, do not make an Injury roll; the player is instead automatically Stunned. This will not cause a Turnover, even if the player with the ball is Knocked Down.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="157b-add9-44d1-7d7d" name="04-10 Clear and Calm" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The frequently dangerous climate is unusually calm and warm (for Norscaa at least!) making it perfect (ish - Ed) Blood Bowl weather.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="90cf-d07c-63a2-acac" name="03 - Freezing Fog" publicationId="af11-1772-744f-9a1a" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The weather is so cold it&apos;s causing players&apos; fingers to go numb, which makes catching the ball difficult indeed! Apply a -1 modifier every time a player makes an AG test when attempting to catch the ball, pick up the ball, or to intefere with a Pass action.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="ae77-9bf6-676b-c4a2" name="02 - Wind Chill" publicationId="9118-6c97-8006-93a4" page="78" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The biting wind is enough to force some players to hide from the freezing cold in the dugout! At the end of step 1 of the Start of Drive sequence, both coaches roll a D6. The team that scores the lowest (or both teams in the case of a tie) raandomly selects one of their players on the pitch. That player has had enough of the dreadful wind. Immediately place the selected player in the Reserves box to warm up.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="25b7-1f09-90e5-d029" name="Dark of Night Weather Table (2D6)" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="087e-ff3f-a8bd-cb53" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="119b-a976-d473-1265" name="03 - Pouring Rain" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">A torrential downpour leaves the players soakedd and the ball very slippery! apply a -1 moddifier every time a player makes an Agility test to catch or pick up the ball, or attempts to interfere with a pass.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="d3af-b1a9-eeee-73a9" name="02 - Thunderstorm" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The rain lashes and overhead a freak thunderstorm threatens to cause haavoc on the pitch. Apply a -1 modifier every time a player makes an Agility test to pick up the ball, or attempts to interfere with a pass. Additionally, at the start of each players turn roll a D6. On a 1, randomly select one player on the pitch from the active team. This player is hit by lightning; make an Injury roll for this player. If this causes a Casualty, it will always be treated as a Badly Hurt result. This will not cause a turnover, even if it hits a player with the ball.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="10d4-b109-bbf5-9d2e" name="12 - Can&apos;t see the Hand in Front of your face" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">The fog is so thick that it is all but impossible for a player to see themselves, let alone their team-mates or opponents! Players may not make Pass actions. Additionally, a player may not declare a Blitz action against an opposing model that is more than three squares away from it.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="d6dd-e4f2-6c5b-851a" name="04-10 - A Still Night" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">It may be dark and eerily quiet in Sylvania, but otherwise it is perfect Blood Bowl weather.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="beec-306c-de7e-e1e0" name="11 - Thick Fog" publicationId="8c4c-3037-21a5-355b" page="18" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Details" typeId="b112-aa11-2549-e705">Fog descends on the pitch, making it hard to see past a certain point. Players making a Pass action may not perform a Long pass or a Long Bomb.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0390-715c-b0f8-66f2" name="+PA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
@@ -5367,2068 +3057,6 @@ Additionally, the number of squares the ball moves is determined by rolling a D8
       </constraints>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="78e4-7f45-3449-d00b" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33f2-c8fa-d273-4ceb" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="8030-2a5f-0131-1964" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="42d1-c9e1-8bdb-0c25" name="Star Players" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="7a75-a8e7-a207-6a68" value="1.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5645-0e59-c6c4-1149" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a111-d879-80f3-099d" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a75-a8e7-a207-6a68" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ba1a-2566-0d5d-74a7" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c96-1343-2b0c-c875" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="fe24-d02a-0bdb-ac4e" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">2</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="0907-02b6-6b3e-5fab" name="Reliable" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
-                  <description>If Deeproot fumbles a Throw Team-mate action, the player that was to be thrown will bounce as normal but will automatically land safely.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="ddfa-95aa-5985-bed2" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="5d59-7fba-a44a-ba45" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
-                <infoLink id="386c-dbe5-c922-ac06" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
-                <infoLink id="2a91-4fc9-8113-fff0" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="ae89-5899-ac6c-44a7" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-                <infoLink id="1923-82e8-e682-40f7" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
-                <infoLink id="9a11-4c25-5ed2-1a32" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
-                <infoLink id="dd7e-f15c-bb06-ffcf" name="Timmm-ber!" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="09db-ad2b-19cc-d117" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="c4e7-81af-d37e-3fef" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3618-3a1e-319f-9916" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57fd-1c32-c05b-8b5e" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a008-72ae-1e8f-2a63" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Dodge, Hypnotic Gaze, Loner (4+), Nerves of Steel, On the Ball</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="0c7a-ee8c-fb09-4749" name="Mesmerising Dance" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
-                  <description>Once per game, Eldril may re-roll a failed Agility test when attempting to use the Hypnotic Gaze trait.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="ea52-ebee-5b6a-452d" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="edf2-cbae-2b5b-a7ca" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
-                <infoLink id="512a-eac2-5a0f-de3f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="dd2a-7a6f-8e48-d4eb" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
-                <infoLink id="855e-d56d-2ee5-b78d" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
-                <infoLink id="85dc-f308-2677-45f7" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="4f3e-7a6f-b4ce-3b1a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="07a0-3bff-e756-8223" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ac79-3886-2bac-9c72" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5025-0dfc-7c40-8eda" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="efd8-8144-2861-a23b" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Claw, Grab, Juggernaut, Loner (4+), Stand Firm</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">195000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="9fe3-c4d1-551f-03f9" name="Frenzied Rush" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
-                  <description>Once per game, when Glart performs a Blitz action, he may gain the Frenzy skill. You must declare this special rule is being used when Glart is activated. Glart may not use the Grab skill during a turn in which he uses this special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="7d23-174b-55e3-fbe8" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="e6b4-e33c-904f-afa4" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-                <infoLink id="f3c8-dc2d-1956-ccc0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="221e-d633-cfd4-8c80" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
-                <infoLink id="9b10-9d82-c543-42b4" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-                <infoLink id="ab1a-b3c2-060a-8e75" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="aaf8-13be-aa4a-a4c7" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="6db4-68bb-cc67-7352" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="195000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9d03-30ca-fe05-41ee" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="088a-ef73-42e3-0eb9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f0da-f406-1e24-3b66" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="ae72-1030-9632-8d31" name="“Excuse Me, Are You a Zoat?”" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
-                  <description>Once per game, when Zolcath is activated, he may gain the Hypnotic Gaze trait. You must declare this special rule is being used when Zolcath is activated.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="d466-cedd-ec42-345d" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
-                <infoLink id="403e-92da-0bb1-cfa3" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-                <infoLink id="2db4-6bb1-b771-f337" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="1eed-483e-084d-0461" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="80d8-46a2-0481-ec53" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
-                <infoLink id="c61a-89c2-5fef-fda1" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-                <infoLink id="01f8-a681-5ab2-2c3d" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="d847-0078-d471-9601" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="a3bd-5fa1-03f7-1243" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c956-684e-762f-a763" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f486-674c-50c3-8720" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a19b-d2cf-3316-158e" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Side Step, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="838e-e400-c0dd-9fc3" name="Indomitable" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
-                  <description>Once per game, when Willow successfully rolls to use her Dauntless skill, she may increase her Strength characteristic to double that of the nominated target of her Block action.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="38ca-6ae6-56f3-0ee6" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-                <infoLink id="ec96-c182-ca4f-cdd7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="1b2c-5e27-4439-7123" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
-                <infoLink id="f536-8ac4-c7b5-9a6c" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="3c7d-652b-b2b2-e858" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="18bd-620f-d751-4b60" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="34b0-5ce8-aee1-a105" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac3-89b8-a0a9-04da" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7bd8-8f67-fbd0-f2b9" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Jump Up, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="9041-3091-9f9e-b99b" name="Crushing Blow" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
-                  <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Varag, you may apply an additional +1 modifier to the Armour roll. This modifier may be applied after the roll has been made.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="5276-cec8-422a-54ea" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="4ba9-adb9-4b7f-e388" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-                <infoLink id="1259-9b43-01ae-28e4" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="c42b-0f81-ed9a-bddc" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="6efe-7833-4521-9543" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="1d6c-c2c7-be25-953f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="1e09-b1d5-a511-ebb6" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5645-0e59-c6c4-1149" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="133" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b1-f17a-01bb-8365" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="278f-2574-7637-8c3a" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
-                  <description>The Swift Twins must be hired as a pair and count as two Star Players. However, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
-                </rule>
-              </rules>
-              <categoryLinks>
-                <categoryLink id="8553-790b-03a4-a2bf" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="b91a-fb8c-0be2-0bfc" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c54f-c638-b38b-b605" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="aeba-3bbc-11ab-09a7" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="6969-d09b-53d0-ad1f" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                        <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                        <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                        <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
-                        <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                        <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1), Tackle</characteristic>
-                        <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="6e6d-f384-9a22-20bd" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                    <infoLink id="c38e-6531-643a-163c" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                    <infoLink id="c292-c121-0fd9-59f1" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-                    <infoLink id="3451-029d-b40a-2ac1" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="3400-0770-c09e-d89e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e5f2-fa91-510f-69fe" name="Valen Swift" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fa26-e7f7-4d13-2ce3" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9af9-af5c-def7-58c4" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="3349-00e9-b9fd-f921" name="Valen Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                        <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                        <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                        <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
-                        <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                        <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Safe Pass, Sure Hands</characteristic>
-                        <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="118a-dbe8-4864-062b" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
-                    <infoLink id="8727-37eb-6aed-f6d7" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
-                    <infoLink id="b0e3-93bd-a986-e730" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
-                    <infoLink id="8ea4-4ddb-e02b-2c15" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                    <infoLink id="b2c0-0fc2-ca3b-73fa" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-                    <infoLink id="5b3f-92f6-ac00-4ffc" name="Safe Throw" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="be92-6bd4-7bf6-b2e8" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="416f-d60f-b5b9-f20b" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9933-94bc-8b1b-f532" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="dc0d-e32a-587f-2676" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Side Step, Sneaky Git, Stab, Stunty</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225,000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="806a-85a7-3310-54db" name="Sneakiest of the Lot" publicationId="46da-ba61-6439-83e5" page="192" hidden="false">
-                  <description>If your team includes the Black Gobbo, you may commit two Foul actions per team turn, provided one of your Foul actions is committed by the Black Gobbo himself.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="d103-df2d-1630-9ee1" name="Bombadier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
-                <infoLink id="cac3-d168-aec7-f779" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
-                <infoLink id="584e-67bc-209e-9ea3" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
-                <infoLink id="335b-b194-1893-873b" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
-                <infoLink id="cd44-3c0f-dbc3-1776" name="Loner (3+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="9452-b8f3-1a3f-e6f6" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="36cd-f4a8-0a0b-6fee" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
-                <infoLink id="60f7-baf5-46a5-de71" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="5acf-18b5-98e8-1aca" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="df4e-23e5-bcc1-068d" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="225000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4bfa-2995-744d-69cb" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f62a-d9c5-8d7d-5b88" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b464-ce8c-c049-d507" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="c1cb-43c7-8ff5-f4c0" name="Strong Passing Game" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
-                  <description>Once per game, after making a Passing Ability test to perform a Pass action, Skrull may choose to modify the dice roll by adding his Strength characteristic to it.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="1102-1c95-1f39-f5db" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="42f8-3cc2-9577-6f17" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-                <infoLink id="3e6c-479b-38ad-78d7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="0d45-cdf0-8879-284f" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
-                <infoLink id="fa6d-47f1-6904-0595" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
-                <infoLink id="3162-7718-ca6e-c653" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
-                <infoLink id="af24-174d-141f-db6b" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="9e0c-1bae-21bb-75ba" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="b429-c673-a331-9318" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9a06-6351-e950-8192" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f7-e5be-fa2a-c493" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="2782-827c-0a6d-e05c" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Horns, Juggernaut, Loner (4+), No Hands, Tackle, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="f974-b183-cd3e-9d0b" name="Ram" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
-                  <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Rumbelow, you may apply an additional +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="beb6-98ed-a57e-6a88" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="eea4-9be7-e291-1e2b" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
-                <infoLink id="bbbf-0900-3f29-e79d" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-                <infoLink id="3421-4ff7-9082-3282" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-                <infoLink id="7aa6-d538-d79b-8ce4" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-                <infoLink id="3f1c-4195-fc81-44c9" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="1ddd-f19e-e2da-b797" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="8be8-80fc-24b6-cd52" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="5d3a-2640-9fe0-ad5e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7b68-ea27-9065-d3bd" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3008-52f2-7300-0dc6" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="1528-5451-3e84-ad75" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Frenzy, Jump Up, Juggernaut, Leap, Loner (4+)</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="263c-29f9-cc37-c548" name="Burst of Speed" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
-                  <description>Once per game, Roxanna may attempt to Rush three times, rather than the usual two. You may declare you are using this special rule after Roxanna has Rushed twice.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="3bdd-62e5-53af-77ff" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-                <infoLink id="10af-6f88-5581-18cd" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="3162-4560-8656-94bf" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                <infoLink id="949d-1118-dbdd-7b4e" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-                <infoLink id="ba06-b7fb-7878-157f" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="df00-7730-fadc-90f3" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="6e2d-3b58-32f6-e54a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="af8b-84ad-0c22-a7eb" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5307-b5cf-e03a-31d7" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfb-72d5-8876-078d" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b7b2-0c23-e95e-b2cb" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Thick Skull, Throw Team-mate</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="e755-249c-7156-195c" name="The Ballista" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
-                  <description>Once per game, if Morg fails the Passing Ability test when making a Pass action or a Throw Team-mate action, you may re-roll the D6.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="8dc9-7d57-f392-8668" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="88fd-2750-5d64-daf1" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
-                <infoLink id="941a-66f6-8ab5-7867" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
-                <infoLink id="be54-08ae-895c-a8e1" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="f8e0-545d-acae-84b4" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="d689-41c6-f02f-b7ee" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="74e7-803c-7b09-8009" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="32f0-2424-1089-e979" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6339-36ca-28f7-70b9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d30a-94e6-f082-05a9" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1)</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="0987-a299-a224-6959" name="Crushing Blow" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
-                  <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Zug, you may apply an additional +1 modifier to the Armour roll. This modifier may be applied after the roll has been made.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="7159-e2be-d7a1-7af7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="d2d2-d918-28b8-1d8b" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="1609-a1a9-43c2-74a0" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="480d-53d1-cac6-bebe" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="e3d2-3bdb-86ef-274c" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7cf1-258f-46e9-c173" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97c-1a4f-9d78-e1f2" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3c2d-8a77-e78c-e24d" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dirty Player (+2), Loner (4+), Mighty Blow (+1), Sneaky Git</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="8b75-4da5-de6a-14c9" name="Lord of Chaos" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
-                  <description>A team that includes Lord Borak gains an extra Team re-roll for the first half of the game. If this Team re-roll is not used during the first half, it may be carried over into the second half. However, if Lord Borak is removed from play before this re-roll is used, it is lost.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="861e-c6cf-e32d-c6c4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="0583-72e2-20c8-4b64" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="6c71-0b83-76d3-4166" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="d1b5-854e-8ae9-0227" name="Dirty Player (+2)" hidden="false" targetId="01ba-b7db-48f2-bdb8" type="rule"/>
-                <infoLink id="870b-c4d0-ccba-ed51" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="457c-3a28-54b2-02cd" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="e825-b7d9-63e1-cd82" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1577-5959-b7a2-a301" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfa0-1501-d273-0c71" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7081-7cbb-3f8e-f456" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Dodge, Jump Up, Loner (4+)</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="c2a6-9340-a07f-c8cd" name="Indomitable" hidden="false">
-                  <description>Once per game, when Karla successfully rolls to use her Dauntless skill, she may increase her Strength characteristic to double that of the nominated target of her Block action.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="ce6e-2894-b778-ffc4" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-                <infoLink id="118b-20fa-4743-e172" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="9024-c77c-d180-2202" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-                <infoLink id="42d8-ef67-26a8-5fbc" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="da8d-4c22-4b84-dbb2" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="d2f7-d1aa-4aef-e032" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="af4d-9964-a36e-c003" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7189-2ad7-196a-380d" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9c2-2005-5357-e1d0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="e99a-98c8-1379-1677" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">140000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="e626-2d6a-d48d-02ed" name="Old Pro" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
-                  <description>Once per game, Helmut may use his Pro skill to re-roll a single dice rolled as part of an Armour roll.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="6e5b-a2c5-0d99-879d" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-                <infoLink id="0835-709d-c5d2-61b2" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
-                <infoLink id="0e46-d452-feb4-4cbd" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
-                <infoLink id="0cd7-5567-5505-8ff3" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="e1d1-94fa-306e-769d" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="5e97-d5de-6775-e42e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="73f5-2d81-54cd-0660" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2585-5b02-b102-11b9" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6195-171e-f10c-b43f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="0827-fc28-2bb6-9b9b" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">9</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Extra Arms, Loner (4+), Prehensile Tail, Two Heads</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">180000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="c6d4-af64-ac82-14be" name="Treacherous" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
-                  <description>Once per game, if a team-mate in an adjacent square to Hakflem is in possession of the ball when Hakflem is activated, that player may immediately be Knocked Down and Hakflem may take possession of the ball. No Turnover is caused as a result of using this special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="0eb5-6c49-22d3-4755" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="bc53-7027-a885-1fa3" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
-                <infoLink id="4615-5905-c002-dd5b" name="Extra Arms" hidden="false" targetId="8934-8af7-4015-7b30" type="rule"/>
-                <infoLink id="abcf-8ce2-16c1-235f" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="74b1-4744-36f8-05b4" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="9226-494c-14a7-3048" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="c696-5843-8a27-4f40" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ddf9-db17-e8fb-551c" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c6-1759-4944-9e47" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="58cd-dc82-1bc2-384f" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="0f17-b1b9-c30d-c2fa" name="Slayer" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
-                  <description>Once per game, when an opposition player with a Strength characteristic of 5 or more is Knocked Down as the result of a Block action performed by Grim, you may apply an additional +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="08c4-7f2b-f134-1893" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="cc8b-aed2-3f16-d8b0" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-                <infoLink id="858d-6cb2-9542-285c" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
-                <infoLink id="08da-ae73-76d7-3ac9" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                <infoLink id="4d9f-2288-9c52-f56f" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="6319-dda7-1ef6-1136" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="a45e-b3ad-91a1-40a8" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="a0d4-b3b2-7b8e-8679" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="857d-4446-533b-80cb" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8189-5681-b4c3-144a" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c9a7-3565-09e6-7483" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Fend, Loner (3+), Sprint, Sure Feet</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="18d4-5b01-8ea6-e670" name="Consummate Professional" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
-                  <description>Once per game, Griff may re-roll one dice that was rolled either as a single dice roll, as part of a multiple dice roll or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Injury or Casualty roll).</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="ac1d-ffac-57f3-b59b" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
-                <infoLink id="de29-3673-cd75-bd70" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="9a83-78b4-e224-0e69" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="a704-5500-0b5f-c044" name="Fend" hidden="false" targetId="6683-1874-842d-7423" type="rule"/>
-                <infoLink id="513c-c380-23d8-ed2d" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
-                <infoLink id="533c-73b4-bc18-0476" name="Sprint" hidden="false" targetId="9b52-0018-4d6b-5525" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="65de-6ba9-fd1d-aa44" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="424e-7f21-f9a7-1d20" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9a2f-a890-018b-d8a2" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3879-f9cc-a907-c46c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d449-43ff-f2ad-3d09" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Side Step</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="f926-3548-0385-4726" name="Incorporeal" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
-                  <description>Once per game, after making an Agility test to dodge, Gretchen may choose to modify the dice roll by adding her Strength characteristic to it.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="b1c1-fe99-84e8-83bb" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="599f-02b5-d33e-ce35" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-                <infoLink id="d3e6-3842-852d-ffb1" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="7cc9-cb3b-3ae9-8db0" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-                <infoLink id="de8f-cd60-e87b-10e4" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
-                <infoLink id="a5b2-5793-7fe7-5eb5" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
-                <infoLink id="b5ed-292f-6a35-4259" name="Shadowing" hidden="false" targetId="e52d-083d-8549-3edb" type="rule"/>
-                <infoLink id="1d42-b1fc-ba7b-b5be" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
-                <infoLink id="35cc-160f-f293-00b9" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="dbf8-64a3-b075-72af" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="c105-2266-b30f-a9fa" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a111-d879-80f3-099d" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a7-6b9d-3a14-a880" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="2e3b-9fce-814a-96ca" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
-                  <description>Grak and Crumbleberry must be hired as a pair and count as two Star Players. However, if either Grak or Crumbleberry is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
-                </rule>
-              </rules>
-              <categoryLinks>
-                <categoryLink id="9297-d1bc-ebc3-8b4c" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="9ddb-b2cc-deb6-4d36" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf12-60c5-19ec-3e13" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fbe-a362-5894-baeb" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="ff71-d228-932e-22ef" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                        <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                        <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                        <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                        <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                        <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
-                        <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="c434-7015-e55c-ddc7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                    <infoLink id="811d-56e0-ad9c-0f8d" name="Bone-head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
-                    <infoLink id="3215-9171-64c3-275d" name="Kick Team-Mate" hidden="false" targetId="b527-59bd-ce9e-e45c" type="rule"/>
-                    <infoLink id="fa92-b22c-b0d6-91d3" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                    <infoLink id="136c-09ad-6ea8-d26f" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="a05e-8937-e0bc-ce59" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3ee9-3f56-28e4-89ee" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a23-3b60-719f-7711" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e8f-9eb9-c0fb-8269" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="a6f8-8d1d-cb6d-7698" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                      <characteristics>
-                        <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                        <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-                        <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                        <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
-                        <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                        <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
-                        <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="02eb-4e13-973f-479c" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                    <infoLink id="6a20-4521-d3fe-f2b8" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-                    <infoLink id="f12d-dafd-5203-fa79" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
-                    <infoLink id="8c27-2b7c-87f0-16e3" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-                    <infoLink id="0749-615a-f464-81f2" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="8cc5-659b-f3ac-b494" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0598-ab50-4266-6220" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49a8-711c-7264-06af" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="01b7-3c48-e3b7-8381" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Side Step, Sure Hands</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="8a2c-2ec0-6a1f-4e99" name="Shot to Nothing" hidden="false">
-                  <description>Once per game, when Gloriel performs a Pass action, she may gain the Hail Mary Pass skill. You must declare this special rule is being used when Gloriel is activated.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="d9a6-08b7-a0c8-d19e" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
-                <infoLink id="f046-fce4-8bde-1092" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="ccef-9ae4-7800-8a5f" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
-                <infoLink id="be91-7966-6676-20bb" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
-                <infoLink id="92f4-f70e-6fcf-ea75" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-                <infoLink id="92a7-136c-7125-197c" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="f670-11d3-9f13-f789" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="720c-fdfa-5a9a-ca9d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9bbe-a4fd-2d6c-bbf1" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebca-b30c-53eb-9a1d" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="64db-ed00-55d2-3202" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Loner (4+), Mighty Blow (+1), Stand Firm, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="aaa4-ca65-c301-d9be" name="Wisdom of the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
-                  <description>Once per team turn, when one of Grombrindal’s team-mates that is in an adjacent square is activated, that player gains either the Break Tackle, Dauntless, Mighty Blow (+1) or Sure Feet skill until the end of their activation.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="8c14-ae1e-3b1b-76c1" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="c636-48fe-82d7-e535" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="9a0a-5f30-eaaa-5a27" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="26c9-172d-0554-9a5a" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-                <infoLink id="a86a-3189-74cb-da9a" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="8650-05a8-b96c-b51d" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="2055-343f-6444-76f6" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="5cb0-f3f5-a845-da1c" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ac1b-b0f1-b5b1-4d9d" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f6-3387-2dbc-f6f7" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4040-de09-b320-d12a" name="Akhorne the Squirrel" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">1</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="0431-7ce8-62a7-6053" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false">
-                  <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="19d8-7ec9-6008-83e7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="dee4-5eb3-42b9-04e5" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-                <infoLink id="efaf-d6e6-b7be-27f5" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-                <infoLink id="e18c-5d9a-753d-0d93" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink id="5f98-307f-1b1a-82c0" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-                <infoLink id="514a-21c5-52f3-b9b3" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-                <infoLink id="cfe8-1072-2cab-bebe" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
-                <infoLink id="f477-274e-b8f6-923d" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-                <infoLink id="c234-d261-cb86-1eeb" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
-                <infoLink id="e525-74ff-e78c-3db8" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="8fb2-c518-0098-280c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="016a-f67d-2398-1dfd" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a60a-9e6c-0312-ab5c" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66c-20db-1afa-f2a7" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="95b0-a2e2-89d8-6f29" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchanneled Fury</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">240000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="545d-2612-f26a-68a8" name="Gored by the Bull" publicationId="3637-e2aa-16da-c089" page="11" hidden="false">
-                  <description>Once per game, when Grashnak performs a Blitz action, Grashnak may roll one additional Block dice against the opposition player, regardless of the opposition player&apos;s Strength, to a maximum of 3 Block dice. If Grashnak performs a second Block action due to the Frenzy skill, this second Block action will also benefit from this rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="b272-72db-0254-fef9" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="01b7-4a6f-bea3-f1ae" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="4b30-d6ef-c820-e5b7" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                <infoLink id="dfaf-c195-9d65-6efa" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
-                <infoLink id="d52b-1179-52f9-0320" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="7c84-91c1-af5f-3c91" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="bd67-f496-39a8-e7ab" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="043f-941d-2069-de44" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="240000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c5f9-54c2-2418-a111" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd1b-687f-a426-6c25" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a520-68b1-fa83-bb26" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="b118-1a5f-f669-d109" name="Fury of the Blood God" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
-                  <description>Once per game, if Scyla rolls a 1 for his Unchaanneled Fury roll after declaring a Block action, instead of applying the usual effects of Unchaanneled Fury, Scyla may perform two Block actions instead.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="63e0-52ed-0020-7dc2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="f0bc-c586-d6c8-312f" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="1fca-e9b8-5bd1-b578" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-                <infoLink id="a714-0642-2165-bc01" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                <infoLink id="b8b8-17d1-ecd9-b93f" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
-                <infoLink id="d973-d8bc-f7d0-f9af" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="d67f-1d86-6410-0a74" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="fd6d-ef59-036d-bae5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="720a-a641-89a1-f440" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dc1c-d4a8-1344-9350" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd5-bf8c-8784-196f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5a54-addd-efd5-59c1" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Secret Weapon</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="9991-74c5-9dbc-78d1" name="Maximum Carnage" publicationId="3637-e2aa-16da-c089" page="30" hidden="false">
-                  <description>Once per game, after Max performs a Chainsaw Attack Special action he may immediately perform another Chainsaw Attack Special action that targets a different opposition player.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="343e-1109-31dc-c9c0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="4bd7-48ed-4936-3505" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
-                <infoLink id="de45-732e-97dc-1672" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="5401-5a92-1570-ff8e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="54aa-c74a-3837-2357" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e16f-5778-cdb8-6574" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5655-17b8-d345-5354" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b30e-b57e-8488-35b8" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Guard, Loner (3+), Tackle</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">245000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="097c-0338-0b54-3afa" name="Raiding Party" publicationId="af11-1772-744f-9a1a" page="11" hidden="false">
-                  <description>Once per drive, whenever Ivar begins his activation, he may choose one Open player on his team within five squares. The chosen player may immediately move one square, ignoring Tackle Zones, through they must end this move Marking an opposing player.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="a024-47a5-2b89-d976" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="1db0-62f8-c980-c1a2" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
-                <infoLink id="6ebe-2e7d-a2a6-038f" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
-                <infoLink id="3684-2f7f-6292-38f0" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="11d5-6ffe-3c33-9d72" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="cc9d-0e8d-ff86-364e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="245000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="edd7-34a2-2dd2-1de8" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a775-1248-b184-d8d0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8925-0590-48b6-5b28" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Drunkard, Loner (4+), Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="3fc4-f564-a05d-9420" name="Beer Barrel Bash" publicationId="af11-1772-744f-9a1a" page="30" hidden="false">
-                  <description>Once per drive, at the start of his activation, Thorsson may perform a Throw Keg Special action. When he does, select an opposition player within three squares of Thorsson and roll a D6. On a 3+, the player is immediately Knocked Down. However, on a 1, Thorsson is Knocked Down instead.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="8a77-96fa-6048-88bd" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-                <infoLink id="a7e4-a1c9-05d4-6010" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-                <infoLink id="4629-08b5-220a-f2b2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="a02e-bc90-ef93-9cbb" name="Drunkard" hidden="false" targetId="2fdd-b4b3-a1a4-f3de" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="ee12-7c56-86d0-abdc" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="6604-080d-ab17-e6b7" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="21aa-34d9-073a-8816" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5f8-8d98-fc14-16ff" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4463-1ecd-8b5f-02e3" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1)</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="6dd7-61f4-a23b-844c" name="Pump Up the Crowd" publicationId="af11-1772-744f-9a1a" page="14" hidden="false">
-                  <description>Once per game, when Skrorg causes an opposition player to be removed as a Casualty as a result of a Block action, Skrorg&apos;s controlling coach gains one team re-roll. If this re-roll has not been used by the end of the drive, it is lost.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="553a-da98-07c2-4f78" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="2982-f9cf-974f-d4f4" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-                <infoLink id="8201-d2c8-b183-5d39" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-                <infoLink id="5ba1-578b-1571-553f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="c6a9-6fa5-a249-cc06" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="9377-ae27-0438-e930" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="fce4-989f-92ab-1cf1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cd5c-e792-750b-09a7" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a11-0924-9550-c3bd" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6f30-8cee-d23a-5856" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Breaak Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="da9d-dff9-103c-fb3b" name="Brutal Block" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
-                  <description>Once per game, when Frank &apos;n&apos; Stien makes an Injury roll against an opponent as a result of a Block action, he may choose to add an additional +1 modifier to the Injury roll. This modifier may be applied aafter the roll has been made.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="ffa6-0f48-eb1d-b370" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
-                <infoLink id="ec20-ddc3-cecd-77e5" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-                <infoLink id="2c42-28cf-bc77-6cb6" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="0ee7-536b-3db1-9131" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-                <infoLink id="28c8-c658-6487-b731" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-                <infoLink id="e42a-7b7a-d345-7d23" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="1dcb-a02d-694a-5280" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="fc06-9f8b-28c4-a3f5" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ce65-b75b-ba84-35eb" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64bf-7043-6ed5-6e15" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="038b-2421-8d86-8e62" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Claws, Frenzy, Loner (4+), Mighty Blow (+1), Regeneration, Wrestle</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="fd29-c8e9-62ce-77d4" name="Savage Mauling" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
-                  <description>Once per game, when Wilhelm makes an Injury roll against an opposing player, he may choose to re-roll the result.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="0596-463a-a4d3-93fe" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
-                <infoLink id="d048-435a-4b37-8962" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-                <infoLink id="f782-9647-8fae-f6cb" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="b51b-c23d-bbc4-ee74" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
-                <infoLink id="4ce3-40f7-1ceb-0070" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-                <infoLink id="bcde-c933-7820-abb3" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="cf86-1a18-744b-0bd5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="c4b7-acfa-6457-a8d1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ae7d-e937-79e3-d9fe" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="true" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd0-5f87-f5ae-387a" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4daf-2e5e-45e8-fbd6" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-                  <characteristics>
-                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
-                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
-                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
-                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
-                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Regeneration, Secret Weapon, Stand Firm, Thick Skull</characteristic>
-                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="db0d-f754-f261-b78b" name="Ghostly Flames" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false">
-                  <description>Once per half, when Bryce makes a Chainsaw Attack Special action as part of a Blitz action, he may add +4 to the Armour roll against an opponent rather than +3.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="9d3f-e8fa-a573-05d2" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
-                <infoLink id="43e5-f07a-dd12-0e1b" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-                <infoLink id="9855-7df8-cb34-27bf" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-                <infoLink id="cffc-ad52-7ee2-d641" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
-                <infoLink id="2b2b-9591-9126-101b" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-                <infoLink id="3973-ebb7-a17f-cda0" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="2856-ac6e-eeb4-b7cf" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-                <categoryLink id="a832-bb23-30a1-001d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
@@ -10711,6 +6339,8 @@ If the player was in possession of the ball when they were turned into a frog, i
                       </infoLinks>
                       <costs>
                         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
+                        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -11498,6 +7128,8 @@ If the player was in possession of the ball when they were turned into a frog, i
                       </infoLinks>
                       <costs>
                         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
+                        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="bf32-4574-0f4c-4ee8" name="Frenzy, Unchanneled Fury, Horns, -Throw Team Mate" hidden="false" collective="false" import="true" type="upgrade">
@@ -11531,6 +7163,8 @@ If the player was in possession of the ball when they were turned into a frog, i
                       </infoLinks>
                       <costs>
                         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+                        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="7789-2206-174f-4c18" name="Frenzy, Animal Savagery, Claws, Prehensile Tail, -Throw Team Mate" hidden="false" collective="false" import="true" type="upgrade">
@@ -11572,6 +7206,8 @@ If the player was in possession of the ball when they were turned into a frog, i
                       </infoLinks>
                       <costs>
                         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+                        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="c570-6de7-51ea-f5a6" name="Ball and Chain, No Hands, Really Stupid, Secret Weapon, +2ST, -1MA" hidden="false" collective="false" import="true" type="upgrade">
@@ -11604,6 +7240,8 @@ If the player was in possession of the ball when they were turned into a frog, i
                       </infoLinks>
                       <costs>
                         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+                        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -12155,6 +7793,2270 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="04bb-ba93-9ff6-6230" name="Loner (5+)" hidden="false" targetId="e99d-8433-05f4-f4af" type="rule"/>
       </infoLinks>
       <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5993-677d-8b45-5595" name="Bomber Dribblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9613-f377-9c79-9123" name="Bomber Driblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Bombardier, Dodge, Loner (4+), Right Stuff, Secret Weapon, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">50000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3689-9e36-aa43-959f" name="Kaboom!" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false">
+          <description>Once per game, if an opposition player catches a Bomb thrown by Bomber, you can choose to have it explode immediately rather than rolling to see if the player can throw it again.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="0995-5e1c-7031-3368" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
+        <infoLink id="9a47-93a1-07a2-c689" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="a783-1e83-a270-7f25" name="Bombardier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
+        <infoLink id="48c4-11de-0e19-23c2" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="f1f2-1575-6c21-f109" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
+        <infoLink id="7f79-c8a7-9101-e571" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+        <infoLink id="3d29-cdb0-6c02-50c9" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6d55-d909-59bc-1b1a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="10b5-c75c-61b6-bbb1" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="267d-86b2-036e-64c7" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d5e8-a3cf-58dd-1a83" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Loner (4+), Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="aa9d-c4cb-4194-a8f6" name="I&apos;ll Be Back!" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false">
+          <description>The first time in a game that Kreek Rustgouger would be Sent-off as per the Secret Weapon trait, he is not Sent-off and instead may continue as part of the game.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="72b2-e4c5-e34c-1ca7" name="Ball &amp; Chain" hidden="false" targetId="39d3-e057-e8b4-37a1" type="rule"/>
+        <infoLink id="4350-03d6-c851-308d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="8738-58a0-0ab5-4311" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="cb9a-3024-6a3e-c62f" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+        <infoLink id="c3a6-3b6c-9364-bd5f" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="e4a5-62c1-c529-f2b9" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b714-610d-0414-34d5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="670f-0819-9ed1-a2d1" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3af-a94c-d242-1dc5" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="28a2-ee27-4097-9656" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Mighty Blow (+1), Loner (4+), No Hands, Secret Weapon, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3140-74dc-984d-91ee" name="Whirling Dervish" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false">
+          <description>Once per activation, Fungus may re-roll the D6 when determining which direction he moves in.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="aeb3-6689-6dc6-391d" name="Ball &amp; Chain" hidden="false" targetId="39d3-e057-e8b4-37a1" type="rule"/>
+        <infoLink id="98d9-caf7-8174-07ca" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="6640-6a39-9bca-cb22" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="8cda-7912-94a7-842e" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+        <infoLink id="03d9-cfff-e8b1-c86f" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+        <infoLink id="3a7d-884c-6201-3f21" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="10af-918a-62af-50b4" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="183d-9972-edea-2c27" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a87-241d-2e82-8181" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ecaa-4057-c164-2344" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Hail Mary Pass, Loner (4+), Pass, Secret Weapon, Strong Arm, Sure Hands, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="169c-4d15-1799-5ed4" name="Blast It!" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false">
+          <description>Once per Game, when Barik Farblast makes a Hail Mary Pass, he may re-roll any scatter results for determining where the ball lands, and any friendly player attempting to catch the ball gains an additional +1 modifier to the roll.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="73b3-a267-d53c-e546" name="Hail Mary Pass" hidden="false" targetId="7ac3-b992-f82a-3a9f" type="rule"/>
+        <infoLink id="380d-2fae-91eb-fea4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="8da1-86c6-8d81-ebe4" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
+        <infoLink id="2900-896a-09a7-73d7" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+        <infoLink id="f380-a567-1e39-e11e" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
+        <infoLink id="99df-eec1-709c-cf74" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
+        <infoLink id="dad9-0bc1-ae83-2d3d" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a3a8-878b-d82f-afcc" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="1067-db22-a66c-8d46" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1938-caba-4c33-725c" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad4b-87e1-d197-56a8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d665-b18a-fd02-5e64" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Regeneration, Secret Weapon, Stand Firm, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0536-184a-5f08-0386" name="Ghostly Flames" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false">
+          <description>Once per half, when Bryce makes a Chainsaw Attack Special action as part of a Blitz action, he may add +4 to the Armour roll against an opponent rather than +3.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5f22-d405-daa0-3fea" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+        <infoLink id="2e48-ce14-4e12-07bc" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="fa65-eb93-e281-97d0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="d521-4355-eb69-5cfc" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+        <infoLink id="230d-d461-8387-e98b" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="85e1-4726-412d-e614" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e04f-bf09-5dad-b012" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="86d1-619e-03e3-f2cb" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16be-5f78-7e02-c253" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="949b-3da9-140d-ed6b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="07c0-49b4-57e4-6d9c" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">2</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">7</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="eaab-515d-aafa-2d93" name="Reliable" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
+          <description>If Deeproot fumbles a Throw Team-mate action, the player that was to be thrown will bounce as normal but will automatically land safely.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="48ac-5f6f-21ba-28ad" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="0981-b3e8-c2a8-0c26" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="b5ef-eb79-08aa-a666" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
+        <infoLink id="5bf9-2e4b-a9d9-3c63" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="49ee-ca83-e3fc-3b3d" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="33d7-3a67-fea8-1e7a" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
+        <infoLink id="4a7a-cac9-ae2e-fcf2" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+        <infoLink id="951f-d21e-7b44-382e" name="Timmm-ber!" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f322-3e8c-0eea-c03b" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="ef06-a68a-19a7-4059" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9da4-9779-ae60-1c48" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="307f-9594-145e-326a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6d49-c364-dfbb-e861" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Dodge, Hypnotic Gaze, Loner (4+), Nerves of Steel, On the Ball</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9db9-fa58-33c2-af1c" name="Mesmerising Dance" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
+          <description>Once per game, Eldril may re-roll a failed Agility test when attempting to use the Hypnotic Gaze trait.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ad06-ecf7-6da2-3c06" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="6b0e-c334-a83f-880c" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
+        <infoLink id="638e-3533-f914-d64d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="6931-0e6b-6b75-b3f9" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
+        <infoLink id="1bbd-f4ec-6801-f564" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
+        <infoLink id="fda6-6cac-c361-11b7" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="830d-179e-566d-1373" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="39cb-ceff-0bd6-5039" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4afd-2b3a-5a0c-b249" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2200-93d0-5be6-0a34" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ad87-d2d7-2d93-5b8c" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Breaak Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1db7-1d26-f61f-a432" name="Brutal Block" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
+          <description>Once per game, when Frank &apos;n&apos; Stien makes an Injury roll against an opponent as a result of a Block action, he may choose to add an additional +1 modifier to the Injury roll. This modifier may be applied aafter the roll has been made.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1028-645f-863d-3f5b" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
+        <infoLink id="186e-d841-b3a5-c430" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="8409-9b9b-6b37-678f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="12ed-a520-c38e-4a06" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="4d4b-7745-63f3-4a1a" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="c340-1ab8-2918-883f" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2e8c-8704-b796-a127" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="6948-3ad6-5c94-1d25" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f11a-2b66-4503-d3f8" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2cdf-c6f3-5419-341b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8583-8b4f-3032-e7b0" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Claw, Grab, Juggernaut, Loner (4+), Stand Firm</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">195000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="31e1-8d7c-0262-2793" name="Frenzied Rush" publicationId="46da-ba61-6439-83e5" page="129" hidden="false">
+          <description>Once per game, when Glart performs a Blitz action, he may gain the Frenzy skill. You must declare this special rule is being used when Glart is activated. Glart may not use the Grab skill during a turn in which he uses this special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2359-4c66-beda-e37a" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="0da2-b54a-0b6e-7432" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+        <infoLink id="0267-6e7d-439e-cfbe" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="7099-4355-07bb-adf6" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
+        <infoLink id="a2ba-0401-e438-fc5d" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+        <infoLink id="a64e-d4df-3034-b070" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1c27-e3da-5c63-061c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="04d4-ce98-b62e-9360" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="195000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9934-db67-9c77-27bb" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8452-0f7f-5c14-054e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f49d-5967-47f3-bf5b" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Side Step, Sure Hands</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7e70-8c81-1c8f-8de4" name="Shot to Nothing" hidden="false">
+          <description>Once per game, when Gloriel performs a Pass action, she may gain the Hail Mary Pass skill. You must declare this special rule is being used when Gloriel is activated.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6bc9-04fb-a571-9539" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
+        <infoLink id="04ae-181b-cf50-e22b" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="7bec-362a-86b6-5cdc" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
+        <infoLink id="53e8-ff7c-c3d1-e4ed" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="4abd-cf71-0ced-1e36" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
+        <infoLink id="aa9a-14ed-3ba5-25df" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6ed6-8a61-f224-b062" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="2eae-357e-8735-b255" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="874c-6352-2ead-33fb" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ed4-563d-4900-d29d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d504-729b-65f9-872a" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchanneled Fury</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">240000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="42bc-ab77-0cc2-df4b" name="Gored by the Bull" publicationId="3637-e2aa-16da-c089" page="11" hidden="false">
+          <description>Once per game, when Grashnak performs a Blitz action, Grashnak may roll one additional Block dice against the opposition player, regardless of the opposition player&apos;s Strength, to a maximum of 3 Block dice. If Grashnak performs a second Block action due to the Frenzy skill, this second Block action will also benefit from this rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f3ca-2beb-8406-01f8" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="ecae-8ac8-f106-b210" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="e446-aeae-597b-6580" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="e656-3ef5-9b1c-55eb" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
+        <infoLink id="d33b-8c92-d210-ccfd" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="51c5-22d7-0e70-82c1" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6dc1-2d9c-95d4-9be3" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="defc-fede-49ac-20b1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="240000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1d5b-c35f-836d-d879" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b576-d2e5-bd3e-87be" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3a17-8f51-767c-1ea1" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Side Step</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1899-ec59-c815-7096" name="Incorporeal" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+          <description>Once per game, after making an Agility test to dodge, Gretchen may choose to modify the dice roll by adding her Strength characteristic to it.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1c23-1a3c-3a9d-5abf" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="9cfe-66ff-68b9-938a" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+        <infoLink id="f97f-dd4f-60c2-c8fd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="bbe2-fcd1-3a09-c30c" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="a7b9-c75d-e9ea-494c" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
+        <infoLink id="3156-57b9-a44e-e749" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="acd4-fb34-5f5b-f4de" name="Shadowing" hidden="false" targetId="e52d-083d-8549-3edb" type="rule"/>
+        <infoLink id="d8e2-ee27-e469-a0a5" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="85d7-1e24-fded-0613" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="abbd-d1ce-2c3d-7f38" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="ac94-902c-0f10-8ff5" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ac9-bdfc-a8bb-ad93" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1a9-f159-6799-36ce" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3dfa-2160-ab13-a565" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Fend, Loner (3+), Sprint, Sure Feet</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b2d5-6a45-4979-1775" name="Consummate Professional" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+          <description>Once per game, Griff may re-roll one dice that was rolled either as a single dice roll, as part of a multiple dice roll or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Injury or Casualty roll).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="39dd-d52a-8bf7-04d9" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="9117-47d7-92ed-4f51" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="cb4e-b1e1-2104-e3aa" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="8d32-9ca3-3ad2-2342" name="Fend" hidden="false" targetId="6683-1874-842d-7423" type="rule"/>
+        <infoLink id="20b0-3859-c5a5-1755" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
+        <infoLink id="5c8f-c490-9726-97de" name="Sprint" hidden="false" targetId="9b52-0018-4d6b-5525" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0720-139b-0a15-adef" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="5ba3-d99e-cfdd-69b3" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f980-4ebc-144f-8776" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e38-62fb-2d96-b888" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ce54-b7df-a013-5dad" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8155-c9be-a8df-64c8" name="Slayer" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, when an opposition player with a Strength characteristic of 5 or more is Knocked Down as the result of a Block action performed by Grim, you may apply an additional +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="98ca-0ff1-5448-bacf" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="ed9f-68e8-3c05-128a" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+        <infoLink id="d061-54d4-d569-57ba" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
+        <infoLink id="ac69-60a0-fead-01ee" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="fa19-aa06-95c8-1a56" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="ccd4-aeb1-ffa9-70b2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dd11-21f5-e5c4-7551" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="99af-70c0-26cc-0547" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c402-f09f-2f59-3a7c" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc00-9ed5-25b0-d7c3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6bfc-5e20-998a-0967" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Loner (4+), Mighty Blow (+1), Stand Firm, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7957-ff1c-a3a9-0971" name="Wisdom of the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per team turn, when one of Grombrindal’s team-mates that is in an adjacent square is activated, that player gains either the Break Tackle, Dauntless, Mighty Blow (+1) or Sure Feet skill until the end of their activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="0856-2645-899c-63fa" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="986b-8df6-5e63-7fe4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="32b3-d05e-9927-1b3a" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="198e-17cc-ede2-44d2" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="b589-f0d4-a15f-3669" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="dbfa-4c38-37da-400f" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="de9f-343f-6d2f-af32" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="3c14-246f-63a5-7d70" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e4e-8a0d-7d04-5d9e" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9218-1108-4d41-f482" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="479a-c2e2-0854-36f3" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">9</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Extra Arms, Loner (4+), Prehensile Tail, Two Heads</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">180000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bbc8-0585-0b1e-d43e" name="Treacherous" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, if a team-mate in an adjacent square to Hakflem is in possession of the ball when Hakflem is activated, that player may immediately be Knocked Down and Hakflem may take possession of the ball. No Turnover is caused as a result of using this special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bc61-7d53-1249-92c4" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="b720-2243-17b3-a93a" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="b031-49a0-f82a-81c7" name="Extra Arms" hidden="false" targetId="8934-8af7-4015-7b30" type="rule"/>
+        <infoLink id="6721-6fa8-1503-50fd" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="d38d-8385-594f-6246" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d730-d7c4-edae-916e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="e8a7-7f58-99c9-c63d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b4a4-4dae-4c27-5793" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59e1-4dfb-8a0b-6f6f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4178-dc58-fe17-150b" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Guard, Loner (3+), Tackle</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">245000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="699e-8962-ef3c-9e13" name="Raiding Party" publicationId="af11-1772-744f-9a1a" page="11" hidden="false">
+          <description>Once per drive, whenever Ivar begins his activation, he may choose one Open player on his team within five squares. The chosen player may immediately move one square, ignoring Tackle Zones, through they must end this move Marking an opposing player.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b647-28a9-df2d-6ff4" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="ea1c-51af-c0fc-2ed8" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+        <infoLink id="e4f6-cd0d-53ca-7d3c" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule"/>
+        <infoLink id="bb81-e127-f2c5-0d64" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f0c7-d6cf-3147-0980" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="4547-e382-8839-5094" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="245000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ba9-97ef-2ed0-08f0" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9d-0b58-84f7-ee15" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fbfd-f247-9f0e-22f2" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Dodge, Jump Up, Loner (4+)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="688c-36a9-01d6-5326" name="Indomitable" hidden="false">
+          <description>Once per game, when Karla successfully rolls to use her Dauntless skill, she may increase her Strength characteristic to double that of the nominated target of her Block action.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e93b-3b27-4018-7265" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="afe5-d1cc-52a0-5890" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="1119-d8d5-6469-ffcb" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+        <infoLink id="fc3b-0e3c-b09c-f834" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="721e-c577-94cd-2eb8" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ea7e-f107-4f90-e2b3" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="ebd8-356f-108d-5445" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d101-32eb-1c0f-9405" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b013-b922-3e3f-f077" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="dde9-6a58-a326-ce17" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dirty Player (+2), Loner (4+), Mighty Blow (+1), Sneaky Git</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a3b2-54b3-350f-90c7" name="Lord of Chaos" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>A team that includes Lord Borak gains an extra Team re-roll for the first half of the game. If this Team re-roll is not used during the first half, it may be carried over into the second half. However, if Lord Borak is removed from play before this re-roll is used, it is lost.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="605c-fdd8-ccd1-70bd" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="a936-3235-035d-363d" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="aaf3-ebac-23bf-7e89" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="61f1-c546-3d08-35df" name="Dirty Player (+2)" hidden="false" targetId="01ba-b7db-48f2-bdb8" type="rule"/>
+        <infoLink id="853a-898f-5e53-be5f" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ae73-7134-a8c5-ee49" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="514c-fdf3-bdef-d1d0" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1cd-5a28-a2df-c896" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="666f-ab29-9c67-781d" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Secret Weapon</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7bd9-eb3b-6495-31ba" name="Maximum Carnage" publicationId="3637-e2aa-16da-c089" page="30" hidden="false">
+          <description>Once per game, after Max performs a Chainsaw Attack Special action he may immediately perform another Chainsaw Attack Special action that targets a different opposition player.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a74f-3c4c-aecc-c845" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="a79c-8d8d-16ee-6b40" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+        <infoLink id="a9e7-401e-11c1-8d28" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="41ba-8d60-66bc-7963" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="fa8c-47c3-33ce-6673" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b6b9-e4df-20d7-feb8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7688-b8f0-dba6-d966" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7101-7666-4858-06c8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3351-927e-e98f-c286" name="Crushing Blow" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Zug, you may apply an additional +1 modifier to the Armour roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="493c-3802-d9d8-34ee" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="7d32-2d90-90a0-4d11" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="381d-237b-7acf-919b" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d325-80b4-deb3-f97c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="9fe1-2452-5d66-a03a" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10b5-f4a3-c6e3-704d" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42fe-2b96-925d-a05e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6a1a-6c77-a7ec-5b28" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Thick Skull, Throw Team-mate</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="64e9-0770-dbdb-dcf8" name="The Ballista" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, if Morg fails the Passing Ability test when making a Pass action or a Throw Team-mate action, you may re-roll the D6.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="79ff-bd88-74d5-41dd" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="a0e3-9abf-d546-b4bb" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+        <infoLink id="638f-7547-3ba8-75c8" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
+        <infoLink id="ba24-973e-ed75-96e7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="f6c1-75be-c32c-69dc" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="07ea-eaf6-41e2-8829" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="d7f9-a392-5ddb-721e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2736-a7fd-e2a7-e349" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e785-9ab5-dd9a-c976" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4b46-4bc6-6875-f1cd" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Frenzy, Jump Up, Juggernaut, Leap, Loner (4+)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8887-2113-c8d4-e90c" name="Burst of Speed" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, Roxanna may attempt to Rush three times, rather than the usual two. You may declare you are using this special rule after Roxanna has Rushed twice.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="dd0c-f188-0ec2-a8cd" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+        <infoLink id="f23c-d8fc-8f13-b0a7" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="1934-2971-b5e6-4ea5" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="69d4-870f-802e-9bb7" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="0385-e4bb-49ec-0e38" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="1e39-19d9-b6a5-4304" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="559b-24cc-0c3e-84f5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="6276-8385-fad0-b72f" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0653-e1fd-2776-28d3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea6-603f-e1e4-d47c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a668-ecb4-c605-fbf3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Horns, Juggernaut, Loner (4+), No Hands, Tackle, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2292-5630-1105-8c93" name="Ram" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Rumbelow, you may apply an additional +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="160e-61e6-9d76-639e" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="c06e-162d-99e7-4728" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
+        <infoLink id="0698-aa30-816e-20c3" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+        <infoLink id="395a-e67f-dba5-e6c3" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+        <infoLink id="5274-e117-1ac5-5846" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+        <infoLink id="f094-ab6e-2fe0-b317" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="74fa-f030-5054-51a8" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cd84-7360-f150-6691" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="52ec-a027-4845-12e2" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a1-5ff6-2a14-4885" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9db2-1dfb-aec4-8e74" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="022d-88bf-f284-f96e" name="Fury of the Blood God" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+          <description>Once per game, if Scyla rolls a 1 for his Unchaanneled Fury roll after declaring a Block action, instead of applying the usual effects of Unchaanneled Fury, Scyla may perform two Block actions instead.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="29e1-8a57-1379-61d0" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="4d0e-731c-bc34-5d9f" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="2dd0-d04f-7741-66c4" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+        <infoLink id="0226-c8d5-d8aa-d011" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="611f-2cd6-db42-4916" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="d40e-1c49-f6df-3b9b" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="4666-40ad-1a02-e378" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0d0f-f50c-5dc4-9321" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="6ad0-6793-db88-d853" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9345-2f7a-f236-ddcd" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adc-131c-c9cc-7466" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="08b8-c339-595c-1fef" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a9b0-3b56-49de-9f23" name="Pump Up the Crowd" publicationId="af11-1772-744f-9a1a" page="14" hidden="false">
+          <description>Once per game, when Skrorg causes an opposition player to be removed as a Casualty as a result of a Block action, Skrorg&apos;s controlling coach gains one team re-roll. If this re-roll has not been used by the end of the drive, it is lost.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e179-c2fe-0974-f1c3" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="2bb3-59a3-5390-6907" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+        <infoLink id="c106-ae08-846c-e553" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+        <infoLink id="b03e-cc69-be8c-dc4d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="8f85-fa12-48eb-f513" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="79b4-f470-811f-10c5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="7ea1-12cd-3f99-1503" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e41-d71f-ea2b-27ac" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a507-ea17-8bca-a872" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5f10-92eb-d4f6-c0c6" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="eee1-9a71-afd3-0ea6" name="Strong Passing Game" publicationId="46da-ba61-6439-83e5" page="132" hidden="false">
+          <description>Once per game, after making a Passing Ability test to perform a Pass action, Skrull may choose to modify the dice roll by adding his Strength characteristic to it.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="8ec6-7dac-32de-ae21" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="e0c2-8b7c-e6c4-b10d" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
+        <infoLink id="4378-56a4-0c1b-283c" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="11e5-fe83-6e3a-fdb1" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
+        <infoLink id="4b8d-9070-4617-8881" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
+        <infoLink id="51b1-e741-3c82-8122" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
+        <infoLink id="2021-5930-130e-9c3e" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="23e1-7b79-485c-e303" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="3aed-b19e-ebf2-f696" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9dcd-f21e-18ec-e0e7" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48c6-95e0-5acf-441e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b6a0-8102-cdcd-8348" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Side Step, Sneaky Git, Stab, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225,000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5d2e-f54a-a927-8711" name="Sneakiest of the Lot" publicationId="46da-ba61-6439-83e5" page="192" hidden="false">
+          <description>If your team includes the Black Gobbo, you may commit two Foul actions per team turn, provided one of your Foul actions is committed by the Black Gobbo himself.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="cb8d-c658-3046-b0a7" name="Bombadier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
+        <infoLink id="ae98-f861-bafb-4f4b" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="703e-718d-a80b-f323" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="ee4e-ded6-fc8b-758f" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
+        <infoLink id="a316-2d2d-1f20-bd2f" name="Loner (3+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="0221-9140-4df3-9dae" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="240b-81e9-f9b6-ba14" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
+        <infoLink id="c148-dcd0-452b-c79c" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fc1c-a8ed-481c-bf7b" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="5922-3150-f425-8392" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="225000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ab3-0a11-4223-c529" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c1-a41f-9df7-f1b8" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8d7e-70b1-ec88-e0a4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>The Swift Twins must be hired as a pair and count as two Star Players. However, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3d5d-ecf5-6b5e-920c" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9e86-d814-823f-a270" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f933-0baa-3bff-0d67" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="138f-0ebf-dcc6-5b17" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4956-4853-2734-8cec" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1), Tackle</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a108-5627-9fc2-be2f" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+            <infoLink id="5486-4957-1c4b-e93b" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+            <infoLink id="e21b-9287-5d93-120b" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+            <infoLink id="b80a-0d64-5785-f72a" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8ea4-94da-43bb-9ada" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6722-b16a-0e3f-7bec" name="Valen Swift" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3716-8748-1f18-3842" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8c97-0cea-ca08-dee0" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e59d-8a6e-b173-3cd9" name="Valen Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Safe Pass, Sure Hands</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="386f-5956-679a-836f" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
+            <infoLink id="e306-2061-62d4-5f02" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
+            <infoLink id="36db-4b4e-93f3-d1be" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
+            <infoLink id="6532-1853-5299-4302" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+            <infoLink id="28d1-3ee7-ef04-590e" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
+            <infoLink id="1c24-4c36-ad56-8661" name="Safe Throw" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="da03-5a5d-b0b4-230f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69f2-a7c5-f5d1-64e8" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0c-d4d1-ca31-438d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9124-9eca-a0d3-07cc" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Drunkard, Loner (4+), Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9a12-e0ed-02c2-ec33" name="Beer Barrel Bash" publicationId="af11-1772-744f-9a1a" page="30" hidden="false">
+          <description>Once per drive, at the start of his activation, Thorsson may perform a Throw Keg Special action. When he does, select an opposition player within three squares of Thorsson and roll a D6. On a 3+, the player is immediately Knocked Down. However, on a 1, Thorsson is Knocked Down instead.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4c46-6e95-fc84-4fde" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="8f2c-15a6-7c9d-d048" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="10c0-44f0-dd87-73ce" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="955a-9161-6379-70aa" name="Drunkard" hidden="false" targetId="2fdd-b4b3-a1a4-f3de" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b632-ad0c-f51b-1bcc" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="33d2-7e34-43d1-fc61" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5aed-7128-04f0-bc29" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eea-1018-af16-ce9a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2544-75fb-5e78-d0bc" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Jump Up, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b2fd-9039-5e49-36e3" name="Crushing Blow" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as the result of a Block action performed by Varag, you may apply an additional +1 modifier to the Armour roll. This modifier may be applied after the roll has been made.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f0ca-f31b-3cd9-4325" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+        <infoLink id="8eed-8ab7-f9bc-24e0" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="0dbe-d1e9-91d2-b636" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="3f45-be8c-09e6-84fa" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="f83b-eabe-cf3a-a928" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7e02-0163-5a97-979f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="53eb-4e65-0fdf-6554" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a68e-e39e-46f4-5122" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8845-c818-c3f2-7197" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0083-82d1-fa06-dc56" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Claws, Frenzy, Loner (4+), Mighty Blow (+1), Regeneration, Wrestle</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="10b3-4a85-ae50-d6a7" name="Savage Mauling" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
+          <description>Once per game, when Wilhelm makes an Injury roll against an opposing player, he may choose to re-roll the result.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ef26-a366-acc6-ae60" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
+        <infoLink id="f310-08ab-9147-d7f3" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="d6c4-dc46-4fea-3679" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="d65b-917a-62a9-e4d7" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+        <infoLink id="c45d-59a9-dcea-187c" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="e2a5-6386-404e-6e40" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4743-7e72-bef9-0d90" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="ea7b-1454-a763-fd08" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7796-75b1-61e7-fa43" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d61-54f1-a211-5da9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d7d0-9838-fa2e-85da" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Side Step, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2a27-d3e7-b868-f606" name="Indomitable" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per game, when Willow successfully rolls to use her Dauntless skill, she may increase her Strength characteristic to double that of the nominated target of her Block action.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9ac0-645e-0699-82c8" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+        <infoLink id="0715-3ac8-729a-6273" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="daa3-a851-e14b-c46e" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="8d50-4bd1-23e6-4736" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="794a-69a0-f31a-92ad" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="33e3-7272-86cc-dc29" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b46a-06d8-c171-c7e7" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e55-efa8-6c6a-1842" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f48e-0a56-1c45-ca6f" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a1c3-2982-620c-8b12" name="“Excuse Me, Are You a Zoat?”" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>Once per game, when Zolcath is activated, he may gain the Hypnotic Gaze trait. You must declare this special rule is being used when Zolcath is activated.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="004c-27ba-26c4-fe93" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="7aca-8b46-b95e-e296" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+        <infoLink id="88aa-e78c-d2c6-02b5" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="edcf-d1f6-d0c5-d3e8" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="f6dd-9709-ac2f-0324" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="b271-9742-d2d0-9d9a" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="7ece-2c23-7ec5-b7a3" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1a29-6b1f-64bd-a2da" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="bd08-f031-7632-28e1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86c4-9326-f5dd-ffcd" name="Fink Da Fixer" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36e-9abe-e7e1-3479" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b8b9-485a-e745-0c49" name="&quot;You got it, boss!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
+          <description>Once per game, when your team uses a Bribe, you may re-roll the D6 to see if the Bribe is effective. In addition, when rolling on the Argue the Call table, a coach who has hired Fink treats a roll of 5 or 6 as a “Well, When You Put It Like That…” result and a roll of 2-4 as an “I Don’t Care!” result. However, on a “You’re Outta Here!” result, Fink is Sent-off along with the coach and will play no further part in the game.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="81cd-9c8b-a2a5-4665" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3af8-70a9-614b-3d57" name="Galandril Silverwater" publicationId="9118-6c97-8006-93a4" page="17" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b42-2ea9-ac9f-d788" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c0af-4e19-5591-dbd0" name="&quot;Go Team!&quot;" publicationId="9118-6c97-8006-93a4" page="17" hidden="false">
+          <description>Each time Galandril’s team rolls Cheering Fans on the Kick-off Event table, add D3 to the number of cheerleaders the team has – if the team does not have any cheerleaders, it counts as having one. In addition, each time Galandril’s team makes a roll on the Prayers to Nuffle table, if a natural 15 or 16 is rolled on the D16 (or, if a D8 is being rolled as in exhibition play, if a natural 8 is rolled), the team gains an additional team re-roll.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4bd9-3bdc-4b23-e50d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33b8-1c27-25a2-275e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95fd-2c89-56cb-ae1b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b6ea-50bf-6fd8-f78e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5+</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8+</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5b89-4eeb-cc13-aad6" name="&quot;If you want a job done...&quot;" publicationId="9118-6c97-8006-93a4" page="15" hidden="false">
+          <description>Kari counts as two Temp Agency Cheerleaders. In addition, if her team cannot set up 11 players at the start of a drive, Kari may decide to “show ‘em how it’s done!”. Her team’s coach can choose to set her up as part of the team. If they do so, she counts as part of the team for the duration of the drive, and no longer counts as two Temp Agency Cheerleaders. When the drive ends, Kari is Sent-off. You cannot Argue the Call or use a Bribe to prevent this. She will play no further part in the game – she does not count as any Temp Agency Cheerleaders, and she cannot be used in a later drive.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="56f9-58b9-66b0-2973" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+        <infoLink id="7524-056f-8645-8936" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="971a-c6be-dcad-f09a" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="adac-fe4a-78a5-bfab" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c1d5-25b1-7c66-862d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="56b3-5573-9adb-ad7a" name="Krot Shockwhisker" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9aa-e209-5956-5d91" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="826a-a89b-8714-7144" name="&quot;A new plathi... er, patient!&quot;" publicationId="9118-6c97-8006-93a4" page="18" hidden="false">
+          <description>Once per game, during Step 2 of the End of Drive sequence, Krot can experiment on a player who has been removed from play as a Casualty, in an attempt to get them back out there. Choose a player that is in the Casualty box of Krot’s team dugout (not a Mercenary or a Star Player). This may even be a player that has suffered a Casualty table result of 15-16, DEAD. Roll a D6 on the table opposite and apply the result to the chosen player:
+
+
+1 - There Were… Complications: The player’s condition has worsened. The coach of the opposing team rolls on the Casualty table to determine exactly what has happened to the player. The result of this roll is applied immediately, in addition to any other Casualty table results already applied. Note that multiple Miss Next Game results do not stack.
+2-3 - Useless Flesh-thing!: Krot’s tinkering has no effect and the player remains in the Casualty box.
+4-5 - Flawed Execution: The player is returned to the Reserves box and can be set up with the rest of the team. However, until the end of the next drive, they gain the Really Stupid (4+) trait. If they already have the Really Stupid (4+) trait, it is replaced with the Really Stupid (5+) trait. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.
+6 - Witness Perfection!: The player is returned to the Reserves box and can be set up with the rest of the team. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9075-07ad-237f-f9ce" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe6f-d2cd-7957-9633" name="Mungo Spinecracker" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc2-e441-cd17-bb9c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5254-3bd4-f8ff-78ae" name="&quot;I&apos;m fine thanks, Mungo!&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
+          <description>Whenever a player on your team suffers an Injury result of 8-9, KO’d (or of 7-8, KO’d on the Stunty Injury table), you may roll a D6 before removing them from play:
+
+• On a roll of 1, the player’s protestations fall upon deaf ears and Mungo ‘treats’ his patient. The player becomes a casualty and is immediately removed from play and placed in the Casualty box of their team dugout. No Casualty roll is made. Instead, a Badly Hurt result is automatically applied against them.
+• On a roll of 2-4, the player is badly pummelled but suffers neither lasting harm nor noticeable benefit. The player is removed from play and placed in the Knocked-out box of your team dugout as normal.
+• On a roll of 5 or 6, the player regains their senses remarkably quickly and is able to fend off the ministrations of the Orc. The player remains on the pitch and becomes Stunned.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b76d-f80a-5eb0-83e3" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3eb-6589-f664-cb9e" name="Papa Skullbones" publicationId="9118-6c97-8006-93a4" page="16" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b45-01b6-0b9a-d2f5" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5a9a-a7a9-9019-f799" name="&quot;By the power of the Gods!&quot;" publicationId="9118-6c97-8006-93a4" page="16" hidden="false">
+          <description>At the start of each drive, after the teams have been set up but before the kick-off, Papa Skullbones can attempt to bless one player on his team (not a Mercenary or Star Player) with the power of the Chaos gods. Choose a player on your team from among those on the pitch, and roll a D8 on the table below. Any Skills gained are kept until the end of the drive; if the player already has both Skills, “By the Power of the Gods!” has no effect on them. A player cannot be chosen if a roll has already been made for them during this game.
+
+1 - Unworthy: The player is struck down. The player is immediately removed from play and placed in the Knocked-out box of their team dugout.
+2 - Overlooked: The chosen player is overlooked by the fickle gods. Randomly select another player from the same team, excluding players not on the pitch and players for whom a roll on this
+table has already been made, and roll on this table again.
+3 - Freakish Proportions: The player gains the Big Hand and Very Long Legs skills.
+4 - Grasping Tendrils: The player gains the Tentacles and Prehensile Tail skills.
+5 - Horrific Visage: The player gains the Disturbing Presence and Foul Appearance skills.
+6 - Grisly Bifurcation: The player gains the Extra Arms and Two Heads skills.
+7 - Thorny Protrusions: The player gains the Claws and Horns skills.
+8 - Favour of the Gods: The player gains two Skills of your choice, chosen from the Mutations category.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3395-5bc3-557d-20ee" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f61f-f3ac-6712-ae1d" name="Ranulf &apos;Red&apos; Hokuli" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3a-4844-9907-a5dd" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="439b-363a-f95e-492e" name="&apos;Red&apos; Card" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
+          <description>f any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 4+, Ranulf loudly demands that play halt whilst he investigates further.
+• On a roll of 1-3, the player manages to avoid the ref’s attention.
+
+Once spotted by Ranulf in this way (and only in this way), the coach of the player that committed the Foul must choose one of the following options:
+
+• The coach may use a Bribe if one is available.
+• The player that committed the Foul may accept their fate and be Sent-off.
+• The player may attempt to argue with Ranulf! Ranulf will settle the argument with his axe. An Armour roll is made against the player, applying a +2 modifier to the result:
+	- If the roll is higher than the Armour Value of the player, they become Prone and an Injury roll is made against them. The player is not Sent-off and no Turnover is caused.
+	- If the roll is equal to or lower than the Armour Value of the player hit, the attack has no effect. The player is Sent-off and a Turnover caused.</description>
+        </rule>
+        <rule id="8ef7-6be9-e29c-d8f2" name="&quot;I&apos;m not the one arguing!&quot;" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
+          <description>If Ranulf has been Induced for this game, even if he does not take part due to both coaches Inducing him, neither coach can Argue the Call – even the most argumentative of coaches can’t help but have respect for the charismatic Norscan.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7db9-75b4-696b-2fee" name="Thoron Korensson" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6531-33d7-1177-cc30" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="7727-1d11-7314-c522" name="Strict Discipline" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
+          <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 4+, Korensson has spotted the violation.
+• On a roll of 1-3, the player manages to avoid the ref’s attention.
+
+Once spotted by Korensson in this way (and only in this way), the player that committed the Foul is immediately Sent-off. When a player is Sent-off in this way, their coach cannot use a Bribe but may attempt to Argue the Call. However, if a 1 is rolled on the Argue the Call table, not only is the player and the coach Sent-off, but one other randomly selected player belonging to the opposing team and that is currently on the pitch is Sent-off as well.</description>
+        </rule>
+        <rule id="2eef-5b0a-7e11-48f7" name="&quot;Sit down and keep quiet&quot;" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
+          <description>If a Get the Ref result is rolled on the Kick-off Event table, roll again – it takes a particularly riled-up crowd to want to advance on Korensson.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10b4-695f-9014-4aea" name="Biased Referee" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c4-5b96-45cc-9470" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="7937-938d-b990-2f8a" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
+          <description>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
+
+For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
+
+Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:
+
+• If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the named Biased Referee – they can dish outharsh rulings to both sides!</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b891-67b6-6431-70ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187e-30b1-150e-a1b8" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1391-4eb5-9902-aff9" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
+          <description>At the start of a drive, after both teams have been set up but before the kick-off (between Step 1 and Step 2), randomly select D3 players with the Stunty trait that are currently set up on the pitch. For the remainder of this drive, those players gain the Dauntless and Frenzy skills and the Really Stupid (4+) trait.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6905-bc49-6842-6a0a" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a672-a5e0-59f5-e2d6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3715-7137-768a-638f" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false">
+          <description>At the beginning of the game, a team may increase its Fan Factor by +1 for each swarm of Cavorting Nurglings it has Induced. In addition, for the duration of this game, a team may increase its number of cheerleaders by the number of Cavorting Nurglings Induced.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d481-a4bd-f6dc-c43d" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ec1-2c11-a771-99c6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="206b-a5fa-f17f-a6e1" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false">
+          <description>During each Start of Drive sequence, after Step 2 but before Step 3, you can select a single player on your team that is currently on the pitch that does not have the Loner (X+) trait and choose one of the following runes. Then roll a D6:
+
+• On a roll of 4+, the rune takes effect, but you cannot attempt to use the Runesmith again at the start of a later drive.
+• On a roll of 2 or 3, the rune does not work, but you can attempt to use the Runesmith again at the start of a later drive.
+• On a roll of 1, the rune does not work, and you cannot attempt to use the Runesmith again at the start of a later drive.
+
+Dwarven Runes:
+
+Rune of Might: Until the end of this drive, the chosen player gains the Mighty Blow (+1) skill.
+Rune of Fury: Until the end of this drive, the chosen player gains both the Dauntless andFrenzy skills.
+Rune of Speed: Until the end of this drive, the chosen player gains both the Sprint and Sure Feet skills.
+Rune of Iron: Until the end of this drive, the chosen player’s Armour Value is increased by 1 (to a maximum of 11+) and they gain the Stand Firm skill.
+Rune of Impact: Until the end of this drive, the chosen player gains both the Juggernaut and Horns skills.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74f2-37ae-f8a2-ad5e" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="ffff-7836-9be4-196c" value="60000.0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7035-f38d-a0e0-aa2a" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="5cac-3c64-16b0-c12c" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5564-dcac-1706-7a79" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6938-58c7-c93d-48c3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a86c-8672-6568-bd80" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+          <description>Any team that can normally hire an apothecary may Induce a Wandering Apothecary or two to help during the game. Often these apothecaries are local barber surgeons, present for the game and willing to recoup the price of their ticket by helping out. Others are experts of questionable veracity, hoping to prove the worth of their unorthodox methods. Wandering Apothecaries follow all the rules for normal apothecaries, as described on page 62. However, unlike a normal apothecary, a Wandering Apothecary may attempt to patch-up any Journeymen or Mercenary players the team includes, but cannot attempt to patch up a Star Player.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="54e1-c0ea-1874-f2a9" name="WAAAGH! Drummer" publicationId="9118-6c97-8006-93a4" page="36" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1e5-6265-e988-efa4" type="max"/>
+      </constraints>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4361-1f5a-b2d3-901c" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf20-b832-406f-63a0" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="de3e-5964-23af-4cc2" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+          <description>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b0d-3a3e-dcff-49ce" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8a1-4653-5c12-c0e3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d79d-2f03-026a-20db" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+          <description>The Plague Doctors that accompany Nurgle-aligned teams are well-versed in the care of the many virulent plagues and ailments that infect their charges. Once per game, a Plague Doctor may be used to re-roll one failed Regeneration roll for a player on their team. Alternatively, once per game the Plague Doctor may be used in exactly the same way as an apothecary when any player on their team is Knocked-out (see page 62). Plague Doctors benefit all players currently on the team, including Journeymen, but not including Mercenaries or Star Players.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5f7b-5fc3-e8b6-68e9" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf03-533d-1128-b5c0" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="09f4-6f30-f154-d54b" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
+          <description>Necromancers are always looking for a helping hand with their work, and the local mortuary workers are often eager to earn some extra income. A Mortuary Assistant is a master of needle, thread and twisted wire, connecting hip bone to leg bone, repairing funeral bindings, and so on. They can really get the players shambling back to the pitch! A Mortuary Assistant may be used once per game to re-roll one failed Regeneration roll for any player currently on the team, including Journeymen, but not including Mercenaries or Star Players.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="078a-3b62-aa41-e54b" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="957a-c35a-c684-7623" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2fda-a4fe-29de-a597" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17ee-862e-54e5-3e1c" name="Temporal Distortion" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
+
+You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
+
+• On a roll of 5+, the spell is successful and the turn markers are moved.
+• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fce6-dacd-5f4d-7a2b" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="false">
+          <description>Once per game, an Asur High Mage may cast one of the following spells: Temporal Distortion, Thunderbolt</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="59c8-6240-4d4a-7865" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="1de6-08c4-360b-59bc" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b930-c518-3321-15de" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dfc-1f61-3876-38b2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4e56-b1cd-cb57-65bc" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a68a-afe6-722f-dfec" name="Rampant Mutation" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns. Choose a player on your team from among those on the pitch, and roll a D6:
+
+• On a roll of 2+, until the end of this drive that player gains two Mutation skills of your choice.
+• On a roll of 1, the player becomes a writhing mass of flesh as raw chaos energy flows through them momentarily. The player gains the Disturbing Presence skill until the end of this drive.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="089e-45b8-9765-a63c" name="Chaos Sorcerer" hidden="false">
+          <description>Once per game, a Chaos Sorcerer may cast one of the following spells: Thunderbolt, Rampant Mutation</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4843-fd61-3d61-737a" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="2360-c73e-2153-1a39" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc76-58a5-f36f-1132" name="Druchii Sprots Sorceress" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-54ee-ded4-58b3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="933b-bf96-4eb1-3b5f" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c8d-117f-5ace-5b9d" name="One Thousand Cuts" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player is hit by a swirling storm of incorporeal dark magic.
+• On a roll of 1 or 2, the magic engulfs the player briefly before the spell dissipates harmlessly.
+
+Until the end of this drive, the MA, ST, and AG characteristics of a player hit by One Thousand Cuts are reduced by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ae5c-a264-884c-57f4" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="24" hidden="false">
+          <description>Once per game, a Druchii Sports Sorceress may cast one of the following spells: Thunderbolt, One Thousand Cuts</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="75e2-f768-25ee-6b82" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="bc3c-a3a2-e25b-68f1" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3a41-5515-c820-65d0" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0113-224b-5bd9-46fd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4e4d-5101-8e00-03e2" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose an empty target square anywhere on the pitch and nominate D3 Standing opposition players that are within two squares of the target square. Roll a D6 for each nominated player:
+
+• On a roll of 3+, the player is unexpectedly attacked by daemonic plants of prodigious size that erupt from the loamy earth before rapidly rotting away to nothing.
+• On a roll of 1 or 2, the player manages to duck and avoid the attacking flora.
+
+Any Standing players hit by Strange Flora are Knocked Down. When a player is Knocked Down by Strange Flora, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a033-5f2b-c113-1357" name="Vigorous Growth" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. For the duration of this team turn, there is a -2 modifier applied to the dice roll every time an opposition player attempts to Rush.
+
+Note that this modifier applies alongside any other modifiers that apply to attempts to Rush.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ec24-bb2e-96a6-b912" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
+          <description>Once per game, a Horticulturalist of Nurgle may cast one of the following spells: Vigorous Growth, Strange Flora</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a238-193e-2894-4a8f" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="dc5d-dfc5-f762-7676" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6859-8eed-31c8-ddcb" name="Night Goblin Sports Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1dd-04d8-2445-22fa" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4837-ec4b-07ce-fc72" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 6, the player has been kicked by the Foot of Gork (or Mork)!
+• On a roll of 3-5, the player has been stomped on by the Foot of Gork (or Mork).
+• On a roll of 1 or 2, the player is lucky and the Foot of Gork (or Mork) swings harmlessly over their head.
+
+A Standing player kicked by the Foot of Gork (or Mork) is immediately catapulted through the air. Immediately treat that player as being thrown (as if they had the Right Stuff trait, and as if their Strength is 3 or less should their Strength be 4 or more) by another player (with the Throw Team-mate trait and a Strength of 5 or more), and treat the quality of the throw as terrible.
+
+A Standing player stomped on by the Foot of Gork (or Mork) is Knocked Down. When a player is Knocked Down by the Foot of Gork (or Mork), you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e0ab-bb94-0d8d-df11" name="Spore Cloud" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 2+, the player is engulfed by a cloud of Madcap Mushroom spores. Until the end of this drive, the player gains both the Loner (5+) and Really Stupid traits.
+• On a roll of 1, the player begins to sprout strange fungus from their armour, before the spell dissipates harmlessly.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4edd-50b4-4037-c487" name="Night Goblin Sports Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false">
+          <description>Once per game, a Night Goblin Shaman may cast one of the following spells: Foot of Gork (or Mork), Spore Cloud</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6efb-3356-8b4f-3b30" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d5-c06f-2aa5-e40f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="def7-4b6f-c203-60b2" name="Reality Blinks" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
+          </characteristics>
+        </profile>
+        <profile id="2082-8935-0b8e-5246" name="Tectonic Shift" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
+          </characteristics>
+        </profile>
+        <profile id="f720-369c-23b4-ccf6" name="Temporal Distortion" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
+
+You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
+
+• On a roll of 5+, the spell is successful and the turn markers are moved.
+• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0f23-dac2-0993-ab8a" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="false">
+          <description>Once per game, a Slann Mage-priest may cast one of the
+following spells: Temporal Distortion, Tectonic Shift, Reality Blinks</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3e42-2163-930e-a6c8" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="a02f-96ce-4a2a-673a" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d750-72f1-f687-e668" name="Ogre Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9eb-a60e-d796-12e4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e8a3-ee1e-3b4f-80bd" name="Fireball" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
+
+• On a roll of 4+, the player has been hit by the Fireball.
+• On a roll of 1-3, the player manages to avoid the Fireball.
+
+Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3172-7229-6f62-fa95" name="Column of Fire" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose any square that is adjacent to one of the Sidelines to be the Column of Fire’s starting point. The Column of Fire follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Column of Fire’s path:
+
+• On a roll of 4+, the player has been hit by the Column of Fire.
+• On a roll of 1-3, the player is able to duck and avoid the Column of Fire.
+
+Any Standing players hit by the Column of Fire are Knocked Down. When a player is Knocked Down by the Column of Fire, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a17e-2eb3-60db-868c" name="Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="false">
+          <description>Once per game, a Firebelly may cast one of the following spells: Fireball, Column of Fire</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bb8c-7eba-45e2-2a1b" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="bfc5-bd23-a722-b0c0" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6eff-7dc2-2068-7f88" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4b-393e-62f0-231b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0c53-a62e-e532-9b53" name="Vanhalables Dans Macabre" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Roll a D6:
+
+• On a roll of 3+, your players are suffused with dark vitality. During this team turn, each Lineman positional player on your team that is currently on the pitch (including Journeymen) may improve either their MA, AG or PA by 1. You may choose which of these three bonuses each affected player gains when that player is activated.
+• On a roll of 1 or 2, the sky darkens and the players jerk and spasm furiously, but the spell has no further effect.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b28-eaa4-4cd8-46d8" name="Incorporeal" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player is hit and becomes strangely incorporeal!
+• On a roll of 1 or 2, the player briefly becomes eerily luminous, before the spell dissipates harmlessly.
+
+A player hit by Incorporeal gains the No Hands trait and, if they are in possession of the ball, will immediately drop it, causing it to bounce. Additionally, the player loses their Tackle Zone. The effects of Incorporeal last until the start of the opposition’s next team turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9219-8555-e542-d6d3" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
+          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable,s Danse Macarbe</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="90f9-5bf6-58b7-7f1a" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+        <categoryLink id="e03e-fe88-b1a4-0e04" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c503-8403-44c5-2136" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff5-ae27-42d1-f5cb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9d8d-667c-18ab-8b29" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="613a-6fc1-9630-ec25" name="Warp Lightning" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose any square that is adjacent to one of the Sidelines to be the Warp Lightning’s starting point. The Warp Lightning follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Warp Lightning’s path:
+
+• On a roll of 3+, the player has been hit by the Warp Lightning.
+• On a roll of 1 or 2, the player is lucky and the bolt zips overhead.
+
+Any Standing players hit by the Warp Lightning are Knocked Down. When a player is Knocked Down by Warp Lightning, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.
+
+Finally, when a player is Knocked Down by Warp Lightning, roll a D6. On a roll of 1, the Warp Lightning is earthed through the player. Do not roll to see if any more players are hit. On a roll of 2+, the Warp Lightning continues along its path, as described above.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="aaee-03ef-be1f-6acf" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="false">
+          <description>Once per game, a Warlock Engineer may cast one of the following spells: Warp Lightning, Thunderbolt</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="120d-5941-aaf0-abf3" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="192e-e700-b5f6-48a6" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ece-1731-f4ae-1263" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72e-9b30-adb2-313b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ae6c-3882-efa7-300e" name="Plague of Warts" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player is hit and their skin unexpectedly erupts into a mass of warts.
+• On a roll of 1 or 2, the player develops a few unsightly blemishes, but is otherwise unaffected.
+
+Until the end of this drive, the MA, ST, and AG characteristics of a player hit by Plague of Warts are reduced by 1. Additionally, until the end of this drive, a player hit by Plague of Warts gains the Disturbing Presence and Foul Appearance skills.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="26b2-dfb5-62f5-e886" name="Zap!" publicationId="46da-ba61-6439-83e5" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+          <characteristics>
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
+
+• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
+• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
+
+If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9845-a278-7f71-3458" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false">
+          <description>Once per game, a Wicked Witch may cast one of the following spells:</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="47c6-770d-d36c-6ad0" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+        <categoryLink id="04ed-179a-266e-5db6" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f95e-0a73-310a-9ef6" name="Frog" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c63f-76cb-f179-fdc6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f829-b659-73b7-060c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="2665-19eb-2888-cc7f" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+              <characteristics>
+                <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
+                <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
+                <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
+                <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
+                <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
+                <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+                <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
+                <characteristic name="Cost" typeId="ee01-7448-8c3f-a882"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="fbe1-7b75-aabf-e4c8" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+            <infoLink id="38bf-85a6-7235-39d5" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
+            <infoLink id="32b3-fe2a-61ab-db39" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+            <infoLink id="ead2-6e4c-1d72-2995" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+            <infoLink id="e178-b43c-8547-1f99" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
+            <infoLink id="feac-efdf-b1dc-895c" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8c7c-dfea-d67d-830d" name="Wizard" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfdf-f7ff-ddb6-b301" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8359-392b-678a-d608" name="Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
+          <description>Some Wizards are named, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Wizard:
+
+• If this happens during a game that is part of a league, neither team can use the named Wizard but the named Wizard will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the named Wizard– one team has clearly hired a ringer! 
+
+If a Wizard Inducement is not named, there is no restriction on both teams fielding the same type.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
@@ -13131,6 +11033,477 @@ In addition, the limit of two players per Wide Zone during set-up does not apply
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
           </costs>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9968-d287-e591-aeab" name="Star Players" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="9202-edd7-d521-3032" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ab3-0a11-4223-c529" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7097-369e-23d9-267c" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9202-edd7-d521-3032" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b9b1-102b-f03a-46c4" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7feb-5117-45c9-c067" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a28f-b20d-ccab-15e4" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">140000</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="8b5c-22ae-133e-6a8c" name="Old Pro" publicationId="46da-ba61-6439-83e5" page="131" hidden="false">
+              <description>Once per game, Helmut may use his Pro skill to re-roll a single dice rolled as part of an Armour roll.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="9658-7d52-5d04-ddba" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+            <infoLink id="82aa-0a14-5066-3de2" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+            <infoLink id="971a-77bc-dd22-90a1" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+            <infoLink id="9aab-0bcb-0e6b-166b" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+            <infoLink id="e733-7ca7-7c31-2bd0" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8333-8bdb-49ff-a9cf" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+            <categoryLink id="405d-016f-7115-aaca" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7097-369e-23d9-267c" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b40-6b94-abcf-f523" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="1af9-d43d-4e2f-0541" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
+              <description>Grak and Crumbleberry must be hired as a pair and count as two Star Players. However, if either Grak or Crumbleberry is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="58cb-a11c-af29-f7e4" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="5f34-7581-5626-c1c9" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde0-49ec-6f57-342d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="009f-dad8-956d-8aae" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="f926-8f21-4b4d-ecde" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0609-70b4-2580-9e20" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                <infoLink id="79fe-03ae-57fe-c559" name="Bone-head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
+                <infoLink id="4f9b-bea2-2353-f439" name="Kick Team-Mate" hidden="false" targetId="b527-59bd-ce9e-e45c" type="rule"/>
+                <infoLink id="f6ea-c7b3-3dcf-13b0" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+                <infoLink id="4e8c-b0bd-ef53-0c8a" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="00f5-e666-d9d5-60d9" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3aca-b560-db00-3084" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e1-6473-adcb-91ac" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be10-4331-e298-40b5" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="fa21-7332-eabe-fbc6" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+                  <characteristics>
+                    <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                    <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+                    <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+                    <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+                    <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
+                    <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cefc-fdfa-a688-2f06" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+                <infoLink id="c6f6-c323-8be6-39a4" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
+                <infoLink id="622a-5ad7-d5a9-9c73" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
+                <infoLink id="6028-fe70-8831-e97f" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+                <infoLink id="aa6c-56b7-9e76-ace7" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5a36-0a88-9a62-a2c9" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dc89-8c39-8ab9-0834" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30f7-ce06-80df-564d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ce39-b85d-5e6e-2b59" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">1</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="f206-de65-df85-fd53" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false">
+              <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="533e-8796-2fd1-a183" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+            <infoLink id="1573-a757-1f1e-f44d" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
+            <infoLink id="eec4-5733-f3d2-787e" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+            <infoLink id="138e-53a1-bf53-9deb" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+            <infoLink id="4a7d-7132-276b-488c" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+            <infoLink id="95d9-fddc-9132-f39b" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+            <infoLink id="e80e-2ae7-138b-73cb" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink id="1856-758d-39a0-78d8" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+            <infoLink id="acd1-3916-669e-d5a3" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
+            <infoLink id="6fdc-3359-2c60-9ec4" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3b02-7e5e-83da-f6ef" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+            <categoryLink id="f11a-ed55-096e-05f5" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3a41-d8e0-044c-2580" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e7bc-5454-335f-87ed" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f585-fa14-8c2e-a66c" name="(In)Famous Coaching Staff" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
+          <description>(In)Famous Coaching Staff are available to purchase during the pre-game sequence at the cost listed. You may purchase up to two (In)Famous Coaching Staff who are allowed to assist your team.
+
+As with Star Players, it is possible for both teams to hire the services of the same named (In)Famous Coaching Staff (such as Josef Bugman):
+
+• If this happens during a game that is part of a league, neither team can use the (In)Famous Coaching Staff but the (In)Famous Coaching Staff will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the (In)Famous Coaching Staff – one team has clearly hired a ringer!</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="154a-a2a6-bd93-7d12" name="Josef Bugman" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867d-d736-007b-12f4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a937-9f73-d54a-417f" name="Josef Bugman, Dwarf Master Drinker" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6+</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9+</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (5+), Tackle, Thick Skull, Wrestle</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3419-f709-2f74-ec1c" name="Bugman&apos;s XXXXXX" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
+              <description>Bugman provides players on his team with an ample supply of Bugman’s XXXXXX. This most famous of Dwarf ales is renowned for its recuperative properties. When rolling to see if Knocked-out players recover, rolls of a 1 can be re-rolled.</description>
+            </rule>
+            <rule id="2c31-6ffb-9bbe-e8c0" name="Keen Player" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
+              <description>If Bugman’s team cannot set up 11 players at the start of a drive, Bugman may decide to join in himself! You can choose to set him up as part of your team. If you do so, he counts as part of the team for the duration of the drive. When the drive ends, Bugman is Sent-off for committing a Foul and has no further effect on the game – he cannot be used in a later drive. The Bugman’s XXXXXX, however, is not lost; the players simply refuse to give it up!</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="a9bd-21be-bdeb-c089" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+            <infoLink id="0622-e586-523b-4e5c" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+            <infoLink id="6dee-3c48-463d-d8c4" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
+            <infoLink id="585d-6d87-696f-186d" name="Loner (5+)" hidden="false" targetId="e99d-8433-05f4-f4af" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e405-34c0-2951-359d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1111-10ba-1bc9-f186" name="Ayleen Andar" publicationId="9118-6c97-8006-93a4" page="19" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc44-4254-2ef1-3c08" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="c5fc-29f4-ebdb-7848" name="&quot;This kid has real potential!&quot;" publicationId="9118-6c97-8006-93a4" page="19" hidden="false">
+              <description>Roll a D6 for each, applying a -1 modifier to the roll for each Journeyman taken on:
+
+• On a roll of 1 or less, the Journeyman is a team player, but doesn’t show any particular talent. The Journeyman loses the Loner (4+) trait.
+• On a roll of 2-5, the Journeyman has some potential. The Journeyman gains a single randomly selected Skill from one of their Primary skill categories.
+• On a roll of 6, Ayleen has produced a player with real star quality! The Journeyman gains two randomly selected Skills from one of their Primary skill categories.
+
+Each Journeyman counts towards CTV as normal; their value does not increase for any Skills they may have. Journeymen provided by Ayleen may be permanently hired during Step 4 of the post-game sequence as normal, but doing so will cost an additional 10,000 gold pieces per Skill.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="14cb-c980-a426-c1fc" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f77a-2f68-c4fe-ff64" name="Professor Fronkelheim" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9540-cb93-1f60-5032" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="9865-a3a0-49a8-1cf5" name="&quot;Have you yhought about an upgrade?.&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
+              <description>During the pre-game sequence, after Step 4 but before Step 5, randomly select D3 players on your team that are eligible to play during this game. These players have been modified by the professor.
+
+Until the end of this game, each selected player gains a single randomly selected Skill from the Mutations category. However, at the start of Step 3 of the post-game sequence, roll a D6 for each of these players (unless they suffered, and did not recover from, a Casualty table result of 15-16, DEAD during the game):
+
+• On a roll of 1, the experiment proves a bit of a failure, really. The player immediately loses the Skill. In addition, the player must miss the next game, exactly as if they had suffered a Casualty table result of 7-9, Seriously Hurt, during this game.
+• On a roll of 2-5, the experiment proved only a shortlived success. The player immediately loses the Skill.
+• On a roll of 6, the professor’s experiments have proven a total success! The player retains the Skill without having to spend any SPP (note that you must adjust their Current Value accordingly, as if the player had randomly selected a Secondary skill).</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="7e2d-e6cf-738a-54c6" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1a67-057a-1038-3465" name="Schielund Scharlitan" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc64-928b-a46d-b31d" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="c9ac-60cf-2c30-9a51" name="&quot;I&apos;ll make you a star!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
+              <description>During the pre-game sequence, after Step 4 but before Step 5, randomly select D3 players on your team that are eligible to play during this game. These players have been approached by Scharlitan, and his interest is having a noticeable effect on their attitude!
+
+Until the end of this game, each selected player gains the Pro skill. However, at the start of Step 3 of the post-game sequence, roll a D6 for each of these players (unless they suffered, and did not recover from, a Casualty table result of 15-16, DEAD during the game):
+
+• On a roll of 1, that player has begun to act like they are the next big thing. The agent tires of his client and drops them, but the exposure has gone to their head. The player gains the Loner (2+) trait.
+• On a roll of 2-5, the agent simply drops the player from his books. They might be disappointed, but they’ll get over it.
+• On a roll of 6, the agent tires of his client and drops them, but the exposure has been good for them. The player permanently retains the Pro skill without having to spend any SPP (note that you must adjust their Current Value accordingly, as if the player had chosen a Primary skill).</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="0fe8-713b-dfee-9596" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="cfaf-b84a-8075-1c2f" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b3-0413-f802-e4ae" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="f75a-b950-492d-ab4e" name="Biased Referee Inducement" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7209-78fc-1e27-db51" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="685c-081d-a2e5-4ada" name="Close Scrutiny" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
+              <description>If any player on the opposing team commits a Foul without rolling a double when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 5+, the Biased Referee spots the Foul and the player is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).
+• On a roll of 1-4, the player manages to avoid the ref’s attention.</description>
+            </rule>
+            <rule id="6765-a450-57e4-32c1" name="&quot;I didn&apos;t see a thing!&quot;" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
+              <description>When rolling on the Argue the Call table, you may apply a +1 modifier to the dice roll.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dcaa-7186-6b12-e32f" name="Jorm the Ogre" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="ffff-7836-9be4-196c" value="80000.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e2-af0a-9d17-ed74" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="3772-1aa1-b72e-26c1" name="Jorm Doesn&apos;t Like Cheaters" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
+              <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 4+, Jorm has spotted the cheat and rolls up his sleeves to deliver his own form of justice.
+• On a roll of 1-3, the player manages to avoid the ref’s attention.
+
+Once spotted by Jorm in this way (and only in this way), the player that committed the Foul is immediately Knocked Down. When a player is Knocked Down by Jorm, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
+            </rule>
+            <rule id="47a6-2564-9395-935e" name="&quot;Shut it, you hooligans!&quot;" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
+              <description>If a Get the Ref result is rolled on the Kick-off Event table, the normal effects are ignored – instead, Jorm goes into a rampage and starts tearing through the stands to teach the rowdy fans a lesson! Both teams reduce their Fan Factor for this game by -1 each time a Get the Ref result is rolled on the Kick-off Event table.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f5cc-38f5-25e0-fa72" name="The Trundlefoot Triplets: Bungo, Filbert and Jeph" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="ffff-7836-9be4-196c" value="40000.0">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af3-82d6-ca4d-a014" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="3d64-71c6-40d2-ba3e" name="Heavy Handed Incompetence" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
+              <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 5+, the player that committed the Foul is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).
+• On a roll of 2-4, the triplets, squabbling amongst themselves, miss the Foul.
+• On a roll of 1, however, the victim of the Foul is Sent-off as if they had committed a Foul and rolled a double!</description>
+            </rule>
+            <rule id="193c-0bba-036c-7587" name="&quot;Smart players are well-behaved players!&quot;" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
+              <description>At the start of each drive, after both teams are set-up but before the kick-off, roll a D6. On a roll of 6, one randomly selected player on the opposing team that is not being Marked becomes embroiled in a pointless argument with the triplets about their kit. The player is immediately Placed Prone and becomes Stunned, representing the time wasted arguing.</description>
+            </rule>
+            <rule id="0af5-6d21-5c26-5cca" name="&quot;They don&apos;t look happy!&quot;" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
+              <description>If a Get the Ref result is rolled on the Kick-off Event table, the triplets make themselves scarce and will play no further part in this game. In addition, each team also gets a Bribe as normal.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3ecb-df2a-3712-995d" name="Wizard" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6b-b9ae-bc64-7ce5" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="9653-7797-e648-e9bf" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc0-d822-0b57-7120" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="60b9-7c96-d744-0769" name="&quot;Take this! Ooops...&quot;" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Horatio may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch. The target square is moved D3 squares in a direction determined by rolling a D8 and referring to the Random Direction template. After moving the target square, roll a D6 for each Standing player (from either team) that is either in the target square or a square adjacent to it:
+
+• On a roll of 4+, the player has been hit by the Fireball.
+• On a roll of 1-3, the player manages to avoid the Fireball.
+
+Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="95b4-b9a9-31e7-42bf" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="false">
+              <description>Once per game, Horatio may cast the following spell: &quot;Take this! Ooops...&quot;</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="4422-efd1-fafe-72ff" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
+            <categoryLink id="d1f5-05cb-38c5-c928" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e033-25d6-99cd-32af" name="Hireling Sports-Wizard" hidden="false" collective="false" import="true" targetId="c15c-c163-dae0-bad1" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
