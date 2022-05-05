@@ -321,7 +321,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="2be9-6db6-b8eb-72fb" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="ad93-696b-bee4-f978" name="[Injuries]" hidden="false" collective="false" import="true" targetId="61d6-a5ff-786e-aad7" type="selectionEntry">
+        <entryLink id="ad93-696b-bee4-f978" name="[Injuries]" hidden="false" collective="false" import="true" targetId="aa3f-2144-fd57-5530" type="selectionEntry">
           <selectionEntryGroups>
             <selectionEntryGroup id="985f-6e2a-257c-fd7b" name="Injuries" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -651,7 +651,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="8b24-75e8-5947-d7ac" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="dbc6-96ca-8287-6085" name="[Injuries]" hidden="false" collective="false" import="true" targetId="61d6-a5ff-786e-aad7" type="selectionEntry">
+        <entryLink id="dbc6-96ca-8287-6085" name="[Injuries]" hidden="false" collective="false" import="true" targetId="aa3f-2144-fd57-5530" type="selectionEntry">
           <selectionEntryGroups>
             <selectionEntryGroup id="32d9-857b-7a91-efb5" name="Injuries" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -990,7 +990,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="1f8b-0c3b-d19e-a3c5" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="075f-70bb-fa39-9f2d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="61d6-a5ff-786e-aad7" type="selectionEntry">
+        <entryLink id="075f-70bb-fa39-9f2d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="aa3f-2144-fd57-5530" type="selectionEntry">
           <selectionEntryGroups>
             <selectionEntryGroup id="7089-0400-c35f-2fb6" name="Injuries" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -1320,7 +1320,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="cd82-28e7-8463-d55a" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="c8ee-e73d-e238-1f9f" name="[Injuries]" hidden="false" collective="false" import="true" targetId="61d6-a5ff-786e-aad7" type="selectionEntry">
+        <entryLink id="c8ee-e73d-e238-1f9f" name="[Injuries]" hidden="false" collective="false" import="true" targetId="aa3f-2144-fd57-5530" type="selectionEntry">
           <selectionEntryGroups>
             <selectionEntryGroup id="155c-3ec7-00a3-37bc" name="Injuries" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -1688,7 +1688,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="d33b-ec8e-3c0d-22d5" name="Career" hidden="false" collective="false" import="true" targetId="a9f9-2fd7-71ab-0b5d" type="selectionEntryGroup"/>
-        <entryLink id="f051-f90c-49e0-251d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="61d6-a5ff-786e-aad7" type="selectionEntry">
+        <entryLink id="f051-f90c-49e0-251d" name="[Injuries]" hidden="false" collective="false" import="true" targetId="aa3f-2144-fd57-5530" type="selectionEntry">
           <selectionEntryGroups>
             <selectionEntryGroup id="af63-5621-4570-b583" name="Injuries" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -1734,6 +1734,11 @@
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="aa3f-2144-fd57-5530" name="[Injuries]" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="334a-3768-479f-e40a" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
