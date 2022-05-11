@@ -1612,6 +1612,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       <infoLinks>
         <infoLink id="b14f-ef4e-4ef7-b2da" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ddd9-7664-160e-0a03" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
@@ -1977,6 +1980,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
       <infoLinks>
         <infoLink id="7e22-85c1-d6f3-35ba" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="34a5-73a7-0268-a50e" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
