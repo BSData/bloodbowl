@@ -3815,6 +3815,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="5993-677d-8b45-5595" name="Bomber Dribblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968d-d212-b950-7320" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8874-1576-8b03-d3b7" type="max"/>
       </constraints>
       <profiles>
         <profile id="9613-f377-9c79-9123" name="Bomber Driblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -3871,6 +3872,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="267d-86b2-036e-64c7" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d8e-081c-afe6-510c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe7-73b5-7dfa-7f9e" type="max"/>
       </constraints>
       <profiles>
         <profile id="2126-387c-a9e5-8a90" name="Kreek Rustgouger" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -3926,6 +3928,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="a3af-a94c-d242-1dc5" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecc-f8e5-0312-b860" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ada-c3fe-bf62-9a73" type="max"/>
       </constraints>
       <profiles>
         <profile id="28a2-ee27-4097-9656" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -3981,6 +3984,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="8a87-241d-2e82-8181" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ef-cd2f-64cc-72a8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d6b-2816-22dd-6f20" type="max"/>
       </constraints>
       <profiles>
         <profile id="ecaa-4057-c164-2344" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4037,6 +4041,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="1938-caba-4c33-725c" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3839-1d8f-2b7a-b2b1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc56-9f60-6753-eb51" type="max"/>
       </constraints>
       <profiles>
         <profile id="d665-b18a-fd02-5e64" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4092,6 +4097,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="16be-5f78-7e02-c253" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9a-ec58-09da-e0c2" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bb0-cc35-d69c-0c00" type="max"/>
       </constraints>
       <profiles>
         <profile id="07c0-49b4-57e4-6d9c" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4149,6 +4155,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="9da4-9779-ae60-1c48" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e62-5a4f-2658-6996" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce4-8028-1d7d-dd83" type="max"/>
       </constraints>
       <profiles>
         <profile id="6d49-c364-dfbb-e861" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4204,6 +4211,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="4afd-2b3a-5a0c-b249" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bba1-0339-79e7-5177" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207a-e13f-6299-56c3" type="max"/>
       </constraints>
       <profiles>
         <profile id="ad87-d2d7-2d93-5b8c" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4259,6 +4267,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="f11a-2b66-4503-d3f8" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2b-176d-1c8c-558d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25af-5e60-1bde-55c5" type="max"/>
       </constraints>
       <profiles>
         <profile id="8583-8b4f-3032-e7b0" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4314,6 +4323,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="9934-db67-9c77-27bb" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f735-304e-3ede-716e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a35-c784-bcb4-a83e" type="max"/>
       </constraints>
       <profiles>
         <profile id="f49d-5967-47f3-bf5b" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4369,6 +4379,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="874c-6352-2ead-33fb" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f4-756c-8f81-4428" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b8-df1b-11f3-12c1" type="max"/>
       </constraints>
       <profiles>
         <profile id="d504-729b-65f9-872a" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4424,6 +4435,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="1d5b-c35f-836d-d879" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f542-987c-314d-842d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5852-612c-46ae-91da" type="max"/>
       </constraints>
       <profiles>
         <profile id="3a17-8f51-767c-1ea1" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4482,6 +4494,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="1ac9-bdfc-a8bb-ad93" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50d-1a83-7588-19b9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe3-c800-b8c7-f37f" type="max"/>
       </constraints>
       <profiles>
         <profile id="3dfa-2160-ab13-a565" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4537,6 +4550,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="f980-4ebc-144f-8776" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f61b-29f0-91ea-ea42" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="305b-d67e-c468-0974" type="max"/>
       </constraints>
       <profiles>
         <profile id="ce54-b7df-a013-5dad" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4592,6 +4606,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="c402-f09f-2f59-3a7c" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d7-09cd-5c74-6faa" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d132-3531-1d6b-33c3" type="max"/>
       </constraints>
       <profiles>
         <profile id="6bfc-5e20-998a-0967" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4647,6 +4662,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="6e4e-8a0d-7d04-5d9e" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee43-0e7c-d061-922e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9942-39c6-adbc-4e40" type="max"/>
       </constraints>
       <profiles>
         <profile id="479a-c2e2-0854-36f3" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4701,6 +4717,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="b4a4-4dae-4c27-5793" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9927-de39-3913-296e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63f-6a55-0992-2e0c" type="max"/>
       </constraints>
       <profiles>
         <profile id="4178-dc58-fe17-150b" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4754,6 +4771,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="1ba9-97ef-2ed0-08f0" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ec-d44c-78d5-98dc" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe1-07c8-7c37-60ef" type="max"/>
       </constraints>
       <profiles>
         <profile id="fbfd-f247-9f0e-22f2" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4808,6 +4826,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="d101-32eb-1c0f-9405" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabe-d23f-7cbf-259f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-db17-7ddf-f2b6" type="max"/>
       </constraints>
       <profiles>
         <profile id="dde9-6a58-a326-ce17" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4862,6 +4881,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc35-0ab2-130c-4efd" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db8-60e8-45ce-3feb" type="max"/>
       </constraints>
       <profiles>
         <profile id="666f-ab29-9c67-781d" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4914,6 +4934,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="b6b9-e4df-20d7-feb8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c73-4e51-88c1-9d4b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc9-a967-4a42-8272" type="max"/>
       </constraints>
       <profiles>
         <profile id="7101-7666-4858-06c8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -4966,6 +4987,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="10b5-f4a3-c6e3-704d" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f431-9d36-f783-157b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="663d-1687-c64a-2e71" type="max"/>
       </constraints>
       <profiles>
         <profile id="6a1a-6c77-a7ec-5b28" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5020,6 +5042,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="2736-a7fd-e2a7-e349" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f4-5c58-2b76-92c8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3693-0728-5cf0-a183" type="max"/>
       </constraints>
       <profiles>
         <profile id="4b46-4bc6-6875-f1cd" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5075,6 +5098,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="0653-e1fd-2776-28d3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea27-1973-f51b-e269" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7674-2740-9b1d-6da6" type="max"/>
       </constraints>
       <profiles>
         <profile id="a668-ecb4-c605-fbf3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5131,6 +5155,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941a-de4f-4ec5-61d6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3818-2772-779e-709f" type="max"/>
       </constraints>
       <profiles>
         <profile id="9db2-1dfb-aec4-8e74" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5187,6 +5212,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="9345-2f7a-f236-ddcd" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a307-a275-4510-fc12" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4765-3f28-bb56-1c79" type="max"/>
       </constraints>
       <profiles>
         <profile id="08b8-c339-595c-1fef" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5241,6 +5267,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="2e41-d71f-ea2b-27ac" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6136-e464-77b1-cf75" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5601-a2c3-2c5d-c5ce" type="max"/>
       </constraints>
       <profiles>
         <profile id="5f10-92eb-d4f6-c0c6" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5297,6 +5324,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="9dcd-f21e-18ec-e0e7" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="167c-3c86-de1e-1e10" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa4c-bbd9-cec7-54c2" type="max"/>
       </constraints>
       <profiles>
         <profile id="b6a0-8102-cdcd-8348" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5354,6 +5382,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="3ab3-0a11-4223-c529" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1583-10ea-e975-4402" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3964-fe62-c604-9365" type="max"/>
       </constraints>
       <rules>
         <rule id="8d7e-70b1-ec88-e0a4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
@@ -5472,6 +5501,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="69f2-a7c5-f5d1-64e8" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5db-701a-1618-58f1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1078-3d12-7110-7034" type="max"/>
       </constraints>
       <profiles>
         <profile id="9124-9eca-a0d3-07cc" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5579,6 +5609,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="a68e-e39e-46f4-5122" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7465-b0a8-361b-b9b4" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e6f-0125-42e4-ef5f" type="max"/>
       </constraints>
       <profiles>
         <profile id="0083-82d1-fa06-dc56" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5634,6 +5665,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="7796-75b1-61e7-fa43" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa17-5dbb-111c-3161" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5663-ce3c-2868-98df" type="max"/>
       </constraints>
       <profiles>
         <profile id="d7d0-9838-fa2e-85da" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -5687,6 +5719,7 @@ If the player was in possession of the ball when they were turned into a frog, i
     <selectionEntry id="b46a-06d8-c171-c7e7" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e4-fef5-b9d9-8fe5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-d090-e2c7-1561" type="max"/>
       </constraints>
       <profiles>
         <profile id="f48e-0a56-1c45-ca6f" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -6036,7 +6069,7 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ec1-2c11-a771-99c6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342b-32b6-522c-7a52" type="max"/>
       </constraints>
       <rules>
         <rule id="206b-a5fa-f17f-a6e1" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false">
@@ -6680,7 +6713,8 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
     </selectionEntry>
     <selectionEntry id="e80e-92fe-bfa9-1874" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7531-109e-1728-d778" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7531-109e-1728-d778" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6839-bae2-6197-6cb7" type="max"/>
       </constraints>
       <profiles>
         <profile id="8383-55ee-8870-c7d7" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -6740,6 +6774,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
     <selectionEntry id="5275-5518-f1eb-3bce" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7baf-5d87-bc23-6f15" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a47-525c-f253-ee76" type="max"/>
       </constraints>
       <rules>
         <rule id="8eaf-aaaa-6b37-45b4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
@@ -6858,6 +6893,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
     <selectionEntry id="b607-4486-3180-3306" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a946-d15d-aef9-8577" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1692-0421-494c-55f7" type="max"/>
       </constraints>
       <profiles>
         <profile id="24e6-8854-e8eb-fa97" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
