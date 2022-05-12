@@ -145,6 +145,105 @@
     <categoryEntry id="8fc3-9567-73bd-8337" name="[P]assing" hidden="false"/>
     <categoryEntry id="de55-2b96-2cab-c70d" name="[M]utations" hidden="false"/>
     <categoryEntry id="8f4e-0b58-0fc3-0fa0" name="[G]eneral" hidden="false"/>
+    <categoryEntry id="577c-1de7-4061-9cb2" name="Big Guys" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <modifiers>
+        <modifier type="set" field="42de-0108-37a2-7f25" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42de-0108-37a2-7f25" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="69c1-09d2-2343-99c1" name="Blitzers" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <modifiers>
+        <modifier type="set" field="ae65-135d-e648-23db" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae65-135d-e648-23db" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="7f64-f850-69fa-029b" name="Linemen" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b9-1eac-701f-cd64" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="3e38-d2fe-d3a4-0e29" name="Runners" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <modifiers>
+        <modifier type="set" field="5d3c-2271-3d73-c2a2" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d3c-2271-3d73-c2a2" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="1a8b-ae37-fd71-d978" name="Special" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <modifiers>
+        <modifier type="set" field="c839-cdc6-94e2-a1da" value="4.0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c839-cdc6-94e2-a1da" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="4a24-33a3-0f4b-92b4" name="Throwers" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <modifiers>
+        <modifier type="set" field="ac3a-233c-bc70-c320" value="4.0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3a-233c-bc70-c320" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="d103-58ee-6082-1de9" name="Blockers" publicationId="439d-dc2e-2f7e-c520" hidden="false">
+      <modifiers>
+        <modifier type="set" field="1048-d0c7-da33-2067" value="6.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1048-d0c7-da33-2067" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="eea0-fbe2-d22b-c2bf" name="Standard" hidden="false">
@@ -174,6 +273,12 @@
         <categoryLink id="82e4-2b13-619e-7e6b" name="Missing a Game" hidden="false" targetId="ce3b-e531-b6b3-0b3b" primary="false"/>
         <categoryLink id="2047-0fb5-d551-d894" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
         <categoryLink id="de4e-9b5d-e765-b274" name="Temporarliy Retired" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
+        <categoryLink id="8e89-208e-6091-8fd2" name="Blockers" hidden="false" targetId="d103-58ee-6082-1de9" primary="false"/>
+        <categoryLink id="4d30-a6ca-5758-6186" name="Big Guys" hidden="false" targetId="577c-1de7-4061-9cb2" primary="false"/>
+        <categoryLink id="c694-2eca-c732-6127" name="Blitzers" hidden="false" targetId="69c1-09d2-2343-99c1" primary="false"/>
+        <categoryLink id="c129-299c-7355-54ea" name="Linemen" hidden="false" targetId="7f64-f850-69fa-029b" primary="false"/>
+        <categoryLink id="9fb1-517e-6e62-4b47" name="Throwers" hidden="false" targetId="4a24-33a3-0f4b-92b4" primary="false"/>
+        <categoryLink id="2276-910c-c889-cfca" name="Runners" hidden="false" targetId="3e38-d2fe-d3a4-0e29" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="e070-b4a9-cbf9-7b52" name="Sevens" hidden="false">
@@ -203,6 +308,12 @@
           </constraints>
         </categoryLink>
         <categoryLink id="fdc5-430f-b8d0-6829" name="Drafted Players" hidden="false" targetId="ed73-46c2-9ade-4dc0" primary="false"/>
+        <categoryLink id="7481-b53d-400f-5520" name="Blockers" hidden="false" targetId="d103-58ee-6082-1de9" primary="false"/>
+        <categoryLink id="b8d0-a9cc-be9d-ab05" name="Big Guys" hidden="false" targetId="577c-1de7-4061-9cb2" primary="false"/>
+        <categoryLink id="a3dc-66d9-507c-b5b7" name="Blitzers" hidden="false" targetId="69c1-09d2-2343-99c1" primary="false"/>
+        <categoryLink id="26cd-f4b8-4a5d-5406" name="Linemen" hidden="false" targetId="7f64-f850-69fa-029b" primary="false"/>
+        <categoryLink id="c063-ec6f-95ab-d7b6" name="Throwers" hidden="false" targetId="4a24-33a3-0f4b-92b4" primary="false"/>
+        <categoryLink id="b582-1064-e5fb-3356" name="Runners" hidden="false" targetId="3e38-d2fe-d3a4-0e29" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
