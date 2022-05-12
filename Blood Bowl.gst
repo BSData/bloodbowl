@@ -11,6 +11,7 @@
     <publication id="af11-1772-744f-9a1a" name="Spike #14"/>
     <publication id="8c4c-3037-21a5-355b" name="Spike #11"/>
     <publication id="cdc6-3a6b-6663-f6ea" name="Spike Almanac 2021"/>
+    <publication id="439d-dc2e-2f7e-c520" name="Dungeon Bowl"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -338,8 +339,16 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -520,6 +529,14 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -668,8 +685,16 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -719,6 +744,22 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
       <selectionEntries>
         <selectionEntry id="97ab-2acc-c010-5162" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000.0">
               <conditions>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
@@ -795,6 +836,24 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
           </costs>
         </selectionEntry>
         <selectionEntry id="8e2b-22b4-916e-a32b" name="Bloodweiser Keg" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fe-ee61-74c6-e78c" type="max"/>
           </constraints>
@@ -812,9 +871,21 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
         <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -846,6 +917,22 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f1-a521-8e34-78e6" type="max"/>
@@ -875,6 +962,22 @@ At the end of the game, any Part-time Assistant Coaches will leave the team.</de
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342c-6146-c56b-b26a" type="max"/>
@@ -895,9 +998,21 @@ At the end of the game, any Temp Agency Cheerleaders will leave the team.</descr
         <selectionEntry id="1de9-49d7-e762-1541" name="Weather Mage" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -917,6 +1032,24 @@ You may use a Weather Mage once per game, at the start of any one of your team t
           </costs>
         </selectionEntry>
         <selectionEntry id="5e39-084d-b112-fb83" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb8-5829-41b4-efa0" type="max"/>
           </constraints>
@@ -950,9 +1083,21 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
         <selectionEntry id="2fb6-cb4b-2ad0-ddc5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -1000,9 +1145,21 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
         <selectionEntry id="0818-1c97-2ef9-e897" name="Medicinal Unguent" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -1022,9 +1179,21 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
         <selectionEntry id="faf3-bd7c-1df9-9724" name="Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <profiles>
@@ -2507,8 +2676,16 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2554,8 +2731,16 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3330,8 +3515,16 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
@@ -3420,9 +3613,21 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
     <selectionEntry id="70ee-d59b-c215-b8c6" name="Stadium Trait" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -3497,8 +3702,16 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
@@ -3739,8 +3952,16 @@ If the player was in possession of the ball when they were turned into a frog, i
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7035,6 +7256,70 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ef16-337b-0109-6931" name="Portal Navigator" publicationId="439d-dc2e-2f7e-c520" page="65" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90cf-161e-e1be-4a56" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="1798-280d-5eea-b2fa" name="Portal Navigator" hidden="false" targetId="7289-4649-2bec-993c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e836-2750-dc29-1568" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43e1-85c4-3832-e605" name="Give and Go" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96e-fdf9-4164-8d44" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7b1d-c674-00c4-d842" name="Give and Go" hidden="false" targetId="5132-e617-f652-51ef" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="546f-6369-21e8-e368" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8be3-afaf-8617-9d13" name="Portal Passer" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e5-54f3-2f4d-8401" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="bdda-23b2-585b-ee1d" name="Portal Passer" hidden="false" targetId="28b5-fb9a-e60f-6442" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b5a1-362f-c9b6-8856" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da1a-049a-8559-74db" name="Wall Thrower" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-d5c9-9a7e-f2e2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d4b0-faf5-259d-d825" name="Wall Thrower" hidden="false" targetId="55da-3a97-5ae7-dcbe" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="38b9-acef-e92a-70fd" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -8925,6 +9210,21 @@ they haven’t been sent off themselves.</description>
     </rule>
     <rule id="07ae-bdf3-af59-e097" name="Pick-Me-Up" publicationId="af11-1772-744f-9a1a" page="5" hidden="false">
       <description>At the end of the opponent&apos;s team turn, roll a D6 for each Prone, non-Stunned team-mate within three squares of a Standing player with the Trait. On a 5+, the Prone player may immediately stand up.</description>
+    </rule>
+    <rule id="7289-4649-2bec-993c" name="Portal Navigator" publicationId="439d-dc2e-2f7e-c520" page="65" hidden="false">
+      <description>When this player teleports using a Portal, they may re-roll the D6 to determine which Portal they teleport to.</description>
+    </rule>
+    <rule id="5132-e617-f652-51ef" name="Give and Go" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false">
+      <description>If this player performs a Hand-Off action, their activation does not have to end once the Hand-Off is resolved. If you wish and if this player has not used their full Movement Allowance, they may continue to move after resolving the Hand-Off.</description>
+    </rule>
+    <rule id="28b5-fb9a-e60f-6442" name="Portal Passer" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false">
+      <description>During its activation, when this player teleports through a Portal, it may declare a Pass action after determining which Portal it is teleporting to. This Skill may be used even if the player did not declare a Pass action at the beginning of their activation.</description>
+    </rule>
+    <rule id="55da-3a97-5ae7-dcbe" name="Wall Thrower" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false">
+      <description>When this player throws the ball at the wall, they may apply a +1 modifier when testing for the accuracy of the pass.</description>
+    </rule>
+    <rule id="0ed2-15ff-2470-12c1" name="College Wizard" publicationId="439d-dc2e-2f7e-c520" page="78" hidden="false">
+      <description>A College Wizard may only use their spell once per game.</description>
     </rule>
   </sharedRules>
 </gameSystem>
