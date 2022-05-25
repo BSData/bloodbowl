@@ -437,113 +437,97 @@
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="0b8b-9f46-b7c2-9cf8" name="Increases" hidden="false" collective="false" import="true">
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="86ed-ae9e-05f5-98a1" name="+MA" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a0a-1989-493b-188f" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="025f-8656-5756-4043" name="+1 MA" hidden="false" collective="false" import="true" targetId="5dce-316d-98ff-706b" type="selectionEntry">
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="e0ed-df32-8e05-65bb" name="+2 MA" hidden="false" collective="false" import="true" targetId="0f2e-0a9a-f0b9-24fb" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="hidden" value="true">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                                      </conditions>
-                                      <conditionGroups>
-                                        <conditionGroup type="and">
-                                          <conditions>
-                                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
-                                          </conditions>
-                                        </conditionGroup>
-                                      </conditionGroups>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                        <selectionEntryGroup id="fad3-7488-982d-1071" name="+PA" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2495-9598-ba10-56db" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="f5a0-8f0d-c869-8814" name="+1 PA" hidden="false" collective="false" import="true" targetId="0e17-f9fe-5040-2b44" type="selectionEntry">
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="5260-1535-d1ac-5814" name="+2 PA" hidden="false" collective="false" import="true" targetId="fa85-e05a-7e4b-4aa0" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="hidden" value="false">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                                      </conditions>
-                                      <conditionGroups>
-                                        <conditionGroup type="and">
-                                          <conditions>
-                                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                            <condition field="selections" scope="d4a9-672a-2d22-94d0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                                          </conditions>
-                                        </conditionGroup>
-                                      </conditionGroups>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
                       <entryLinks>
-                        <entryLink id="100c-b56e-e475-5e19" name="+1 AV" hidden="false" collective="false" import="true" targetId="2b67-79c2-1756-5a75" type="selectionEntry">
+                        <entryLink id="100c-b56e-e475-5e19" name="AV +1" hidden="false" collective="false" import="true" targetId="2b67-79c2-1756-5a75" type="selectionEntry">
                           <costs>
                             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
                           </costs>
                         </entryLink>
-                        <entryLink id="7842-6d86-46c6-ed9a" name="+1 AG" hidden="false" collective="false" import="true" targetId="a5a0-25e1-3a7a-ae27" type="selectionEntry">
+                        <entryLink id="7842-6d86-46c6-ed9a" name="AG +1" hidden="false" collective="false" import="true" targetId="a5a0-25e1-3a7a-ae27" type="selectionEntry">
                           <costs>
                             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="49d2-a35b-d04c-05bb" name="MA +1" hidden="false" collective="false" import="true" targetId="5dce-316d-98ff-706b" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="9ecc-917a-d0f2-85c8" name="MA +2" hidden="false" collective="false" import="true" targetId="0f2e-0a9a-f0b9-24fb" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="396b-e87d-dd8a-d5fd" type="atLeast"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="6ce2-fabd-a58d-7ed6" name="PA +1 " hidden="false" collective="false" import="true" targetId="0e17-f9fe-5040-2b44" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="722b-83e0-a37c-bec3" name="PA +2" hidden="false" collective="false" import="true" targetId="fa85-e05a-7e4b-4aa0" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                        <condition field="selections" scope="d4a9-672a-2d22-94d0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -1267,58 +1251,49 @@
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="5dcd-c6a7-68c2-f382" name="Increases" hidden="false" collective="false" import="true">
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="55d7-f210-7ee7-8f0c" name="+MA" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db41-097d-bcf3-37fe" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="cb04-3269-b11a-0eff" name="+1 MA" hidden="false" collective="false" import="true" targetId="5dce-316d-98ff-706b" type="selectionEntry">
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="09cc-d105-a7d2-e0e1" name="+2 MA" hidden="true" collective="false" import="true" targetId="0f2e-0a9a-f0b9-24fb" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="hidden" value="false">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                                      </conditions>
-                                      <conditionGroups>
-                                        <conditionGroup type="and">
-                                          <conditions>
-                                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
-                                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                                          </conditions>
-                                        </conditionGroup>
-                                      </conditionGroups>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
                       <entryLinks>
-                        <entryLink id="8dc0-8fd4-d83e-442a" name="+1 AG" hidden="false" collective="false" import="true" targetId="a5a0-25e1-3a7a-ae27" type="selectionEntry">
+                        <entryLink id="8dc0-8fd4-d83e-442a" name="AG +1" hidden="false" collective="false" import="true" targetId="a5a0-25e1-3a7a-ae27" type="selectionEntry">
                           <costs>
                             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
                           </costs>
                         </entryLink>
-                        <entryLink id="f8da-45a3-8054-09ab" name="+1 AV" hidden="false" collective="false" import="true" targetId="2b67-79c2-1756-5a75" type="selectionEntry">
+                        <entryLink id="f8da-45a3-8054-09ab" name="AV +1" hidden="false" collective="false" import="true" targetId="2b67-79c2-1756-5a75" type="selectionEntry">
                           <costs>
                             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="2a44-0ed0-ffa5-2771" name="MA +1" hidden="false" collective="false" import="true" targetId="5dce-316d-98ff-706b" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="a406-a636-9a1b-f63e" name="MA +2" hidden="true" collective="false" import="true" targetId="0f2e-0a9a-f0b9-24fb" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38d-6ca8-2092-1c48" type="atLeast"/>
+                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -2767,105 +2742,82 @@
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="3a69-fe2a-85c9-a24b" name="Increases" hidden="false" collective="false" import="true">
-                      <selectionEntryGroups>
-                        <selectionEntryGroup id="7d2b-176a-df1f-b1fa" name="+AG" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9286-0d52-cc64-8f0f" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="0765-fd92-935a-52c7" name="+1 AG" hidden="false" collective="false" import="true" targetId="a5a0-25e1-3a7a-ae27" type="selectionEntry">
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="eb18-fa0d-585a-e79f" name="+2 AG" hidden="true" collective="false" import="true" targetId="5953-aa1f-3663-d125" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="hidden" value="false">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                        <selectionEntryGroup id="18cb-56f6-99cf-c0d3" name="+MA" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9673-6084-0200-8d15" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="6b7f-3841-0abe-27d3" name="+1 MA" hidden="false" collective="false" import="true" targetId="5dce-316d-98ff-706b" type="selectionEntry">
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="37e0-2927-260f-b444" name="+2 MA" hidden="true" collective="false" import="true" targetId="0f2e-0a9a-f0b9-24fb" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="hidden" value="false">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                        <selectionEntryGroup id="46bf-8abd-6da7-74e5" name="+PA" hidden="false" collective="false" import="true">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dfc-978b-f13a-251e" type="max"/>
-                          </constraints>
-                          <entryLinks>
-                            <entryLink id="2e63-0798-0dc6-57f3" name="+1 PA" hidden="false" collective="false" import="true" targetId="0e17-f9fe-5040-2b44" type="selectionEntry">
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-                              </costs>
-                            </entryLink>
-                            <entryLink id="96ba-fdbd-3de6-59b3" name="+2 PA" hidden="true" collective="false" import="true" targetId="fa85-e05a-7e4b-4aa0" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="hidden" value="false">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                              <costs>
-                                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
-                              </costs>
-                            </entryLink>
-                          </entryLinks>
-                        </selectionEntryGroup>
-                      </selectionEntryGroups>
                       <entryLinks>
-                        <entryLink id="b7c6-eb57-499e-f291" name="+1 AV" hidden="false" collective="false" import="true" targetId="2b67-79c2-1756-5a75" type="selectionEntry">
+                        <entryLink id="b7c6-eb57-499e-f291" name="AV+1" hidden="false" collective="false" import="true" targetId="2b67-79c2-1756-5a75" type="selectionEntry">
                           <costs>
                             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="589a-ad06-c68a-b699" name="AG +1" hidden="false" collective="false" import="true" targetId="a5a0-25e1-3a7a-ae27" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="7c89-334b-c658-7876" name="AG +2" hidden="true" collective="false" import="true" targetId="5953-aa1f-3663-d125" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="94ae-37b2-bb7c-1948" name="MA +2" hidden="true" collective="false" import="true" targetId="0f2e-0a9a-f0b9-24fb" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="9140-5fc2-3d47-1124" name="+1 MA" hidden="false" collective="false" import="true" targetId="5dce-316d-98ff-706b" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="accc-64ea-4ced-3782" name="+2 PA" hidden="true" collective="false" import="true" targetId="fa85-e05a-7e4b-4aa0" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="7c0b-8af6-38dc-9319" name="+1 PA" hidden="false" collective="false" import="true" targetId="0e17-f9fe-5040-2b44" type="selectionEntry">
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -4127,7 +4079,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a5a0-25e1-3a7a-ae27" name="+1 AG" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a5a0-25e1-3a7a-ae27" name="AG +1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0665-2440-71d3-b792" type="max"/>
       </constraints>
@@ -4137,7 +4089,7 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5dce-316d-98ff-706b" name="+1 MA" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5dce-316d-98ff-706b" name="MA +1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5918-1aa5-5ae7-edea" type="max"/>
       </constraints>
@@ -4147,7 +4099,7 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b67-79c2-1756-5a75" name="+1 AV" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2b67-79c2-1756-5a75" name="AV +1" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c7-db6a-49b5-8586" type="max"/>
       </constraints>
@@ -4157,7 +4109,7 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e17-f9fe-5040-2b44" name="+1 PA" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0e17-f9fe-5040-2b44" name="PA +1 " hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a8-dc56-d886-3477" type="max"/>
       </constraints>
@@ -4167,7 +4119,7 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5953-aa1f-3663-d125" name="+2 AG" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5953-aa1f-3663-d125" name="AG +2" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9241-c0a8-ce0a-cd70" type="max"/>
       </constraints>
@@ -4177,7 +4129,7 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f2e-0a9a-f0b9-24fb" name="+2 MA" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0f2e-0a9a-f0b9-24fb" name="MA +2" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed80-314e-4a83-640e" type="max"/>
       </constraints>
@@ -4187,7 +4139,7 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa85-e05a-7e4b-4aa0" name="+2 PA" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fa85-e05a-7e4b-4aa0" name="PA +2" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fdd-c83a-482c-caf9" type="max"/>
       </constraints>
@@ -4214,6 +4166,9 @@
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="c184-bfc0-7897-1137" name="Decreases" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8ff-7c03-7aa9-a401" type="max"/>
+      </constraints>
       <entryLinks>
         <entryLink id="015a-3465-4cba-49e7" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry">
           <constraints>

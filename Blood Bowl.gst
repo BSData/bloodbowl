@@ -1308,7 +1308,7 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
             </modifier>
           </modifiers>
           <profiles>
-            <profile id="4c37-7996-ee71-f822" name="ScatterGiant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
+            <profile id="4c37-7996-ee71-f822" name="Scatter Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
               <characteristics>
                 <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
                 <characteristic name="ST" typeId="120f-0f56-f450-196c">7</characteristic>
@@ -1325,7 +1325,7 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
               <characteristics>
                 <characteristic name="Details" typeId="b112-aa11-2549-e705">Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
 
-Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies.
+Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies. Whenever a Giant finishes a Move action or followws up after a Block action, they may changes their facing if they wish; though if done as part of following up after a Block action, they must still be Marking the player they madde the Block action against if possible.
 
 Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</characteristic>
               </characteristics>
@@ -4333,7 +4333,7 @@ If the player was in possession of the ball when they were turned into a frog, i
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
             <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
             <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Hail Mary Pass, Loner (4+), Pass, Secret Weapon, Strong Arm, Sure Hands, Thick Skull</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Pass, Secret Weapon, Sure Hands, Thick Skull</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
           </characteristics>
         </profile>
@@ -4356,7 +4356,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         </infoLink>
         <infoLink id="8da1-86c6-8d81-ebe4" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
         <infoLink id="2900-896a-09a7-73d7" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
-        <infoLink id="f380-a567-1e39-e11e" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
+        <infoLink id="f380-a567-1e39-e11e" name="Cannoneer" hidden="false" targetId="988d-1349-9f05-206c" type="rule"/>
         <infoLink id="99df-eec1-709c-cf74" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
         <infoLink id="dad9-0bc1-ae83-2d3d" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
       </infoLinks>
@@ -5041,7 +5041,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="e8a7-7f58-99c9-c63d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
@@ -5210,7 +5210,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc35-0ab2-130c-4efd" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db8-60e8-45ce-3feb" type="max"/>
@@ -5367,7 +5374,7 @@ If the player was in possession of the ball when they were turned into a frog, i
       </categoryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="380000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -5484,7 +5491,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941a-de4f-4ec5-61d6" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3818-2772-779e-709f" type="max"/>
@@ -6542,7 +6556,7 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
       <profiles>
         <profile id="2fda-a4fe-29de-a597" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
 
 • On a roll of 3+, the player has been hit by the Thunderbolt.
 • On a roll of 1 or 2, the player manages to duck or dodge the attack.
@@ -6583,7 +6597,7 @@ You may attempt to move both teams’ turn markers forwards or backwards one spa
       <profiles>
         <profile id="4e56-b1cd-cb57-65bc" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
 
 • On a roll of 3+, the player has been hit by the Thunderbolt.
 • On a roll of 1 or 2, the player manages to duck or dodge the attack.
@@ -6622,7 +6636,7 @@ A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked
       <profiles>
         <profile id="933b-bf96-4eb1-3b5f" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
 
 • On a roll of 3+, the player has been hit by the Thunderbolt.
 • On a roll of 1 or 2, the player manages to duck or dodge the attack.
@@ -6663,7 +6677,7 @@ Until the end of this drive, the MA, ST, and AG characteristics of a player hit 
       <profiles>
         <profile id="4e4d-5101-8e00-03e2" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose an empty target square anywhere on the pitch and nominate D3 Standing opposition players that are within two squares of the target square. Roll a D6 for each nominated player:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose an empty target square anywhere on the pitch and nominate D3 Standing opposition players that are within two squares of the target square. Roll a D6 for each nominated player:
 
 • On a roll of 3+, the player is unexpectedly attacked by daemonic plants of prodigious size that erupt from the loamy earth before rapidly rotting away to nothing.
 • On a roll of 1 or 2, the player manages to duck and avoid the attacking flora.
@@ -6694,14 +6708,14 @@ Note that this modifier applies alongside any other modifiers that apply to atte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6859-8eed-31c8-ddcb" name="Night Goblin Sports Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6859-8eed-31c8-ddcb" name="Night Goblin Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1dd-04d8-2445-22fa" type="max"/>
       </constraints>
       <profiles>
         <profile id="4837-ec4b-07ce-fc72" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
 
 • On a roll of 6, the player has been kicked by the Foot of Gork (or Mork)!
 • On a roll of 3-5, the player has been stomped on by the Foot of Gork (or Mork).
@@ -6781,7 +6795,7 @@ following spells: Temporal Distortion, Tectonic Shift, Reality Blinks</descripti
       <profiles>
         <profile id="e8a3-ee1e-3b4f-80bd" name="Fireball" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
 
 • On a roll of 4+, the player has been hit by the Fireball.
 • On a roll of 1-3, the player manages to avoid the Fireball.
@@ -6791,7 +6805,7 @@ Any Standing players hit by the Fireball are Knocked Down. When a player is Knoc
         </profile>
         <profile id="3172-7229-6f62-fa95" name="Column of Fire" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose any square that is adjacent to one of the Sidelines to be the Column of Fire’s starting point. The Column of Fire follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Column of Fire’s path:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose any square that is adjacent to one of the Sidelines to be the Column of Fire’s starting point. The Column of Fire follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Column of Fire’s path:
 
 • On a roll of 4+, the player has been hit by the Column of Fire.
 • On a roll of 1-3, the player is able to duck and avoid the Column of Fire.
@@ -6861,7 +6875,7 @@ A player hit by Incorporeal gains the No Hands trait and, if they are in possess
       <profiles>
         <profile id="9d8d-667c-18ab-8b29" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
 
 • On a roll of 3+, the player has been hit by the Thunderbolt.
 • On a roll of 1 or 2, the player manages to duck or dodge the attack.
@@ -6871,7 +6885,7 @@ A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked
         </profile>
         <profile id="613a-6fc1-9630-ec25" name="Warp Lightning" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose any square that is adjacent to one of the Sidelines to be the Warp Lightning’s starting point. The Warp Lightning follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Warp Lightning’s path:
+            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose any square that is adjacent to one of the Sidelines to be the Warp Lightning’s starting point. The Warp Lightning follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Warp Lightning’s path:
 
 • On a roll of 3+, the player has been hit by the Warp Lightning.
 • On a roll of 1 or 2, the player is lucky and the bolt zips overhead.
@@ -8667,7 +8681,7 @@ Once spotted by Jorm in this way (and only in this way), the player that committ
           <profiles>
             <profile id="60b9-7c96-d744-0769" name="&quot;Take this! Ooops...&quot;" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
               <characteristics>
-                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">Horatio may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Choose a target square anywhere on the pitch. The target square is moved D3 squares in a direction determined by rolling a D8 and referring to the Random Direction template. After moving the target square, roll a D6 for each Standing player (from either team) that is either in the target square or a square adjacent to it:
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch. The target square is moved D3 squares in a direction determined by rolling a D8 and referring to the Random Direction template. After moving the target square, roll a D6 for each Standing player (from either team) that is either in the target square or a square adjacent to it:
 
 • On a roll of 4+, the player has been hit by the Fireball.
 • On a roll of 1-3, the player manages to avoid the Fireball.
@@ -9139,7 +9153,9 @@ If your team has the ‘Favoured of Nurgle’ special rule, a new ‘Rotter Line
       <description>If this player is thrown by a team-mate, as described on page 52, they do not scatter before landing as they normally would. Instead, you may place the Throw-in template over the player, facing towards either End Zone or either sideline as you wish. The player then moves from the target square D3 squares in a direction determined by rolling a D6 and referring to the Throw-in template.</description>
     </rule>
     <rule id="6746-0f3a-2e8c-b812" name="Swarming" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
-      <description>During each Start of Drive sequence, after Step 2 but before Step 3, you may remove D3 players with this Trait from the Reserves box of your dugout and set them up on the pitch, allowing you to set up more than the usual 11 players. These extra players may not be placed on the Line of Scrimmage or in a Wide Zone.</description>
+      <description>During each Start of Drive sequence, after Step 2 but before Step 3, you may remove D3 players with this Trait from the Reserves box of your dugout and set them up on the pitch, allowing you to set up more than the usual 11 players. These extra players may not be placed on the Line of Scrimmage or in a Wide Zone.
+
+When using Swarming, a coach may not set up more players wwith the Swarming trait onto the pitch than the number of freindly players with the Swarming trait that were already set up. So, if a team had 2 players with the Swarmaing trait already set up on the pitch, and then rolled for 3 more players to enter the pitch via Swarming, only a maximum of two more Swarming players could be set up on the pitch.</description>
     </rule>
     <rule id="c522-cc34-7027-0ca8" name="Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false">
       <description>Until the end of this half, every time any player enters a Trapdoor square, for any reason, roll a D6. On a roll of 1, the trapdoor falls open and the player is immediately removed from play. Treat them exactly as if they had been pushed into the crowd. If the player was in possession of the ball, it bounces from the trapdoor square.</description>
