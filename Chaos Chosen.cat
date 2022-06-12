@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="38" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Blood Bowl is arguably even more popular among the followers of the Chaos gods than it is among civilised folk. Maybe it’s the cult-like supporters’ clubs, the constant violence both on and off the pitch, or just the brightly-coloured strips... Whatever the case, wherever you find a Blood Bowl stadium, you’re guaranteed to find at least one team made up of an assortment of thoroughly debased, dedicated followers of Chaos. Most of the teams’ players tend to be Beastmen, hideous mutants who have given up their forest lairs for the sporting life, but their numbers are bolstered by the presence of superhuman Chosen, and frenzied and blood-crazed Minotaurs, Ogres and Trolls. Such teams are hardly subtle, often forgetting about the ball entirely as they grind their opponents into the turf, all in veneration of the Ruinous Powers they worship.</readme>
   <categoryEntries>
     <categoryEntry id="cb40-5b0a-d25b-0a94" name="Chosen Blocker" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -44,7 +44,7 @@
         <categoryLink id="8574-febb-df38-e90a" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9d44-4dcc-db63-a145" name="Beastman Runner" hidden="false" collective="false" import="true" targetId="c960-16ff-cb74-b172" type="selectionEntry">
+    <entryLink id="9d44-4dcc-db63-a145" name="Beastman Runner Lineman" hidden="false" collective="false" import="true" targetId="c960-16ff-cb74-b172" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a27d-1c65-a896-01d9" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -256,6 +256,7 @@
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="2c87-a7d1-cca4-c810"/>
                 <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -268,6 +269,7 @@
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="2c87-a7d1-cca4-c810"/>
                 <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -288,6 +290,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="2c87-a7d1-cca4-c810"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -298,7 +301,7 @@
         <infoLink id="8a3a-0798-3da8-e204" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
         <infoLink id="5b07-91b8-819e-aa77" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="ffe7-3f00-c31c-7b61" name="Unchanneled Fury" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
-        <infoLink id="8463-7784-a067-6e54" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="8463-7784-a067-6e54" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="6910-b6a0-d8af-07e0" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="ceff-43be-9431-bcce" name="Minotaur" hidden="false" targetId="eeee-6198-4e83-f4ed" type="profile">
           <modifierGroups>
@@ -650,6 +653,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="cb40-5b0a-d25b-0a94"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -661,6 +665,7 @@
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="cb40-5b0a-d25b-0a94"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -681,6 +686,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="cb40-5b0a-d25b-0a94"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1590,6 +1596,7 @@
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="4539-6213-6011-90d3"/>
                 <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1602,6 +1609,7 @@
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="4539-6213-6011-90d3"/>
                 <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1622,6 +1630,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="4539-6213-6011-90d3"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1974,6 +1983,7 @@
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="3179-acbf-50eb-4e0a"/>
                 <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1986,6 +1996,7 @@
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3179-acbf-50eb-4e0a"/>
                 <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -2006,6 +2017,8 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="3179-acbf-50eb-4e0a"/>
+                <modifier type="remove" field="category" value="0b73-fb13-e749-7023"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>

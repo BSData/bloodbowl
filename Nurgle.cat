@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" name="Nurgle Team" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="35" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" name="Nurgle Team" revision="35" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The followers of Chaos have been involved in Blood Bowl since the earliest days of the sport. Although most teams started as a conglomerate of followers of all of the Chaos gods, it didn’t take long for teams to be more selective in their choice of deity. On the field, Nurgle teams are a terrifying prospect to face. What they lack in agility and coordination, they more than make up for with brute strength, a natural resilience to harm and a whole playbook of stomach-churning tactics devised to bring the other team to its knees. Nurgle teams defy conventional definition, being made up of Rotters, players who have contracted one or more of Nurgle’s many blessings; Bloaters, players swollen with disease; Pestigors, Beastmen attracted to the smell; and Rotspawn, players so blessed by the Plague God that they have devolved into hideously mutated beasts.</readme>
   <categoryEntries>
     <categoryEntry id="4946-fa56-50fe-efd4" name="Rotter Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -224,6 +224,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="5b7b-f9ca-dd7b-8cc0"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -235,6 +236,7 @@
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="5b7b-f9ca-dd7b-8cc0"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -255,6 +257,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="b422-b343-ad55-3629"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -321,7 +324,7 @@
         </infoLink>
         <infoLink id="d874-8e53-c2f8-50b0" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
         <infoLink id="d31f-a975-bf06-89d8" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
-        <infoLink id="73a2-5b9b-97fa-47dd" name="Nurgle&apos;s Rot" hidden="false" targetId="bcf5-cfc7-f2fc-873a" type="rule"/>
+        <infoLink id="73a2-5b9b-97fa-47dd" name="Plague Ridden" hidden="false" targetId="bcf5-cfc7-f2fc-873a" type="rule"/>
         <infoLink id="c26b-c18d-4941-0b83" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -849,6 +852,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="3101-3b70-7bb8-72a3"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -860,6 +864,7 @@
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3101-3b70-7bb8-72a3"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -880,6 +885,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="3101-3b70-7bb8-72a3"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -964,9 +970,9 @@
         <infoLink id="9b36-b5c8-1012-dde0" name="Tentacles" hidden="false" targetId="ff10-4ba0-21d5-c6e8" type="rule"/>
         <infoLink id="f730-c0bf-ab7e-cf15" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
         <infoLink id="907a-0d2b-573f-6aa6" name="Really Stupid" hidden="false" targetId="16eb-e633-f003-e916" type="rule"/>
-        <infoLink id="17fe-d1a4-b4a3-2877" name="Nurgle&apos;s Rot" hidden="false" targetId="bcf5-cfc7-f2fc-873a" type="rule"/>
-        <infoLink id="b185-75f6-9c1e-7724" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
-        <infoLink id="9ac1-885e-92b2-19b3" name="Loner" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+        <infoLink id="17fe-d1a4-b4a3-2877" name="Plague Ridden" hidden="false" targetId="bcf5-cfc7-f2fc-873a" type="rule"/>
+        <infoLink id="b185-75f6-9c1e-7724" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="9ac1-885e-92b2-19b3" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="a918-c285-5312-7efb" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
         <infoLink id="7ffc-ee2a-2eff-ca6e" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
       </infoLinks>
@@ -1244,6 +1250,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="b422-b343-ad55-3629"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1255,6 +1262,7 @@
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="b422-b343-ad55-3629"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1275,6 +1283,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="3101-3b70-7bb8-72a3"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>

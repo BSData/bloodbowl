@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4510-4c80-21d1-f1cb" name="College of Life" revision="2" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4510-4c80-21d1-f1cb" name="College of Life" revision="2" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The College of Life has always put great value in things that grow, and the Jade Wizards are known for their use of spells that cultivate the natural world. The likes of Wood Elves, Halflings and Treemen have always been associated with the College of Life, though they are not the only races that have an affinity with the growth and rebirth. In more recent years Snotlings, and even some disciples of Nurgle, have been spotted in the College of Life. It turns out that the Jade Wizards had to concede that even fungi and disease are great examples of things that grow.
 
 The College of Life has had moderate sucess over the years - their most popular team, the Emerald Crusaders, lifted their first Dungeon Bown trophy in 2475. However, this was their only trophy for a number of years; the Crusaders ending up as the bottom team in multiple seasons. It wasn&apos;t untile the college started accepting Snotling and Nurgle players in 2488 that their teams started to rise up the ranks once more. Since then, the Emerald Crusaders have battled through to win the coveted Dungeon Bowl trophy a firther two times.</readme>
@@ -152,6 +152,16 @@ The College of Life has had moderate sucess over the years - their most popular 
         <categoryLink id="6144-aff2-3f24-5607" name="New CategoryLink" hidden="false" targetId="577c-1de7-4061-9cb2" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="1684-38f3-a2b6-c653" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2d6f-0629-000b-14aa" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c8ad-3804-d6e3-a487" name="Team Re-Rolls" hidden="false" collective="false" import="true" targetId="9350-0bc7-c2fc-7af5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="040c-8d45-eca1-192d" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="f70e-7b85-510a-553e" name="Jade Wizard" publicationId="439d-dc2e-2f7e-c520" hidden="false" collective="false" import="true" type="upgrade">
@@ -276,6 +286,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -287,6 +298,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -307,6 +319,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -717,6 +730,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -728,6 +742,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -748,6 +763,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1098,6 +1114,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="d103-58ee-6082-1de9"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1109,6 +1126,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="d103-58ee-6082-1de9"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1129,6 +1147,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="d103-58ee-6082-1de9"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1909,6 +1928,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="d103-58ee-6082-1de9"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1920,6 +1940,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="d103-58ee-6082-1de9"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -1940,6 +1961,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="d103-58ee-6082-1de9"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -2299,6 +2321,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -2310,6 +2333,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -2330,6 +2354,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -3096,6 +3121,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -3107,6 +3133,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -3127,6 +3154,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -3497,6 +3525,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="4a24-33a3-0f4b-92b4"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -3508,6 +3537,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="4a24-33a3-0f4b-92b4"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -3528,6 +3558,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="4a24-33a3-0f4b-92b4"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -3891,6 +3922,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="69c1-09d2-2343-99c1"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -3902,6 +3934,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="69c1-09d2-2343-99c1"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -3922,6 +3955,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="69c1-09d2-2343-99c1"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -4293,6 +4327,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="7f64-f850-69fa-029b"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -4304,6 +4339,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="7f64-f850-69fa-029b"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -4324,6 +4360,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="remove" field="category" value="7f64-f850-69fa-029b"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -4675,6 +4712,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="1a8b-ae37-fd71-d978"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -4686,6 +4724,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="1a8b-ae37-fd71-d978"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -4706,6 +4745,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="1a8b-ae37-fd71-d978"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -5047,6 +5087,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="1a8b-ae37-fd71-d978"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -5058,6 +5099,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="1a8b-ae37-fd71-d978"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -5078,6 +5120,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="1a8b-ae37-fd71-d978"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -5858,6 +5901,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -5869,6 +5913,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -5889,6 +5934,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="3e38-d2fe-d3a4-0e29"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -6230,6 +6276,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -6241,6 +6288,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
             <modifierGroup>
@@ -6261,6 +6309,7 @@ The College of Life has had moderate sucess over the years - their most popular 
                 <modifier type="set-primary" field="category" value="ed73-46c2-9ade-4dc0"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
                 <modifier type="remove" field="category" value="577c-1de7-4061-9cb2"/>
+                <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -6809,7 +6858,7 @@ The College of Life has had moderate sucess over the years - their most popular 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="c142-d877-dd75-8e5a" name="Thick Skull" hidden="true" collective="false" import="true" targetId="9bbd-7844-16a2-c9fe" type="selectionEntry">
+        <entryLink id="c142-d877-dd75-8e5a" name="Thick Skull" hidden="false" collective="false" import="true" targetId="9bbd-7844-16a2-c9fe" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
