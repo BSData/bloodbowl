@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a8c9df66-74bb-4cd8-bc25-f93d737731f5" name="Norse Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a8c9df66-74bb-4cd8-bc25-f93d737731f5" name="Norse Team" revision="32" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Hailing from the frozen north, the Norse are a hardy folk. Their life is one of blood, sweat and toil, with only the occasional raid to break the monotony. At least that was the case until they found out about Blood Bowl. Since then, the frost-rimed hills have rung with the sound of cheering fans and the resounding crunch of breaking bones. In many ways, they are ideal Blood Bowl players; they’re brutal, very tough and always ready for a beer and a brawl. Norse teams are already a daunting prospect, but to make matters worse, they often bring along monstrous allies from their homeland. Ferocious Ulfwerenar with fur as white as snow give blood-curdling howls as they wait for the whistle, while gangle-limbed Yhetees prowl the field in search of fresh meat.</readme>
   <categoryEntries>
     <categoryEntry id="346f-4c63-da1c-3081" name="Norse Raider Lineman" publicationId="af11-1772-744f-9a1a" hidden="false">
@@ -2628,7 +2628,7 @@
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f4e-0b58-0fc3-0fa0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc3-9567-73bd-8337" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6560-e720-c923-72ae" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8179-7288-9a95-6d70" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
@@ -2636,7 +2636,7 @@
             </modifier>
             <modifier type="increment" field="ffff-7836-9be4-196c" value="30000.0">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8179-7288-9a95-6d70" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6560-e720-c923-72ae" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
@@ -2652,7 +2652,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f4e-0b58-0fc3-0fa0" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6560-e720-c923-72ae" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8179-7288-9a95-6d70" type="atLeast"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc3-9567-73bd-8337" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
@@ -2665,7 +2665,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8179-7288-9a95-6d70" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6560-e720-c923-72ae" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
