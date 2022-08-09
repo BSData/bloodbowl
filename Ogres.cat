@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e9ca0-d048-437b-944b-acfe2f8535b7" name="Ogre Team" revision="32" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>At face value, the thought of an Ogre Blood Bowl team is enough to fill most players with dread. Thankfully, the reality never quite lives up to their worst fears. For starters, most Ogres are incredibly dense. Just getting them to all turn up at the same time is a mammoth task. Not to mention that very few coaches can afford to field more than a few Ogres at a time, meaning that most Ogre teams are bulked out with Gnoblars. Then there’s the fact that, no matter how much you train them, the moment the whistle goes, most Ogres forget everything and try to pound their opponents into a bloody mess. Coaches who know what they’re doing can turn this to their advantage, but it’s a rare sight to see an Ogre team performing consistently.</readme>
   <categoryEntries>
     <categoryEntry id="72d9-56a6-76ad-260c" name="Gnoblar Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -724,7 +724,7 @@
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="15000.0">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1654,12 +1654,12 @@
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">5</characteristic>
         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">4</characteristic>
-        <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
+        <characteristic name="PA" typeId="90cd-0493-9510-60b5">4</characteristic>
         <characteristic name="AV" typeId="c77a-49e5-750a-1adc">10</characteristic>
-        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Bone Head, Mighty Blow (+1), Thick Skull, Throw Team-mate</characteristic>
-        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">S</characteristic>
-        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">AGP</characteristic>
-        <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">140000</characteristic>
+        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Bone Head, Kick Team-Mate, Mighty Blow (+1), Thick Skull</characteristic>
+        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">PS</characteristic>
+        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">AG</characteristic>
+        <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">145000</characteristic>
       </characteristics>
     </profile>
     <profile id="c3bb-1f58-8411-160f" name="Gnoblar Lineman" publicationId="46da-ba61-6439-83e5" page="121" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -1667,7 +1667,7 @@
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">3</characteristic>
-        <characteristic name="PA" typeId="90cd-0493-9510-60b5">6</characteristic>
+        <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
         <characteristic name="AV" typeId="c77a-49e5-750a-1adc">6</characteristic>
         <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Right Stuff, Side Step, Stunty, Titchy</characteristic>
         <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">A</characteristic>
@@ -1680,12 +1680,12 @@
         <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
         <characteristic name="ST" typeId="120f-0f56-f450-196c">5</characteristic>
         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">4</characteristic>
-        <characteristic name="PA" typeId="90cd-0493-9510-60b5">4</characteristic>
+        <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
         <characteristic name="AV" typeId="c77a-49e5-750a-1adc">10</characteristic>
-        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Bone Head, Kick Teammate, Mighty Blow (+1), Thick Skull</characteristic>
-        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">PS</characteristic>
-        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">AG</characteristic>
-        <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">145000</characteristic>
+        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Bone Head, Mighty Blow (+1), Thick Skull, Throw Team-Mate,</characteristic>
+        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">S</characteristic>
+        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">AGP</characteristic>
+        <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">140000</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
