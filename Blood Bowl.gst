@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="37" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="38" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -279,6 +279,7 @@
         <categoryLink id="c129-299c-7355-54ea" name="Linemen" hidden="false" targetId="7f64-f850-69fa-029b" primary="false"/>
         <categoryLink id="9fb1-517e-6e62-4b47" name="Throwers" hidden="false" targetId="4a24-33a3-0f4b-92b4" primary="false"/>
         <categoryLink id="2276-910c-c889-cfca" name="Runners" hidden="false" targetId="3e38-d2fe-d3a4-0e29" primary="false"/>
+        <categoryLink id="efc7-3725-72c9-9f65" name="Special" hidden="false" targetId="1a8b-ae37-fd71-d978" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="e070-b4a9-cbf9-7b52" name="Sevens" hidden="false">
@@ -314,6 +315,7 @@
         <categoryLink id="26cd-f4b8-4a5d-5406" name="Linemen" hidden="false" targetId="7f64-f850-69fa-029b" primary="false"/>
         <categoryLink id="c063-ec6f-95ab-d7b6" name="Throwers" hidden="false" targetId="4a24-33a3-0f4b-92b4" primary="false"/>
         <categoryLink id="b582-1064-e5fb-3356" name="Runners" hidden="false" targetId="3e38-d2fe-d3a4-0e29" primary="false"/>
+        <categoryLink id="4025-df3c-b2e6-b065" name="Special" hidden="false" targetId="1a8b-ae37-fd71-d978" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
