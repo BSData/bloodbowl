@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="38" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -12,6 +12,7 @@
     <publication id="8c4c-3037-21a5-355b" name="Spike #11"/>
     <publication id="cdc6-3a6b-6663-f6ea" name="Spike Almanac 2021"/>
     <publication id="439d-dc2e-2f7e-c520" name="Dungeon Bowl"/>
+    <publication id="a98a-aed9-fafb-e69f" name="Spike #15"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -636,7 +637,6 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
@@ -666,6 +666,7 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1560,6 +1561,47 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="3435-1fa5-943b-16fa" name="Ancient Artefact" publicationId="a98a-aed9-fafb-e69f" page="17" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5331-62c5-2e1a-6aaf" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="dc8e-7c7e-9657-71f4" name="Ancient Artefact" publicationId="a98a-aed9-fafb-e69f" page="17" hidden="false">
+              <description>Once per game, at the start of any friendly teams turn, the head coach of a team with an Ancient Artefact can attempt to harness whatever power might be stored within the treasure. They then roll a D6 and consult the chart below.
+
+
+1: The item carries a curse or similarly foul incantation. Randomly select a player on your team from among those on the pitch. The selectedd player is immediately placed in the Knocked-out box of their teams dugout; this will not cause a turnover, even if that player has the ball.
+
+2-5: This item is little more than a trinket, but a seemingly lucky one at that! The team immediately gains a team re-roll until the end of the current half.
+
+6: This artefact clearly posseses a powerful healing aura. Choose one player in either your Knocked-out or casualty box (with the exception of a player that is Dead of Sent-off). The chosen player immediately makes a full recovery and is placed in the Reserves box. If there are no players in either your Knocked-out or Casualty box, treat the roll as a 2-5 instead.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -1647,12 +1689,12 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0aa2-ed3d-a7a8-89b4" name="Side Step" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0aa2-ed3d-a7a8-89b4" name="Sidestep" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca0-bd0e-d110-239a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="9963-a406-1446-343b" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="9963-a406-1446-343b" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b4c9-c353-b9e9-9afc" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
@@ -7475,6 +7517,174 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="96f8-01d2-bef0-cd90" name="Estelle La Veneaux" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc40-18e4-86e9-5eb0" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6175-b291-d40f-5d10" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1fdb-7b16-cfa5-b2e7" name="Estelle La Veneaux" publicationId="a98a-aed9-fafb-e69f" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Dodge, Guard, Sidestep">
+              <conditions>
+                <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Sidestep</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d0c9-819c-a277-4e49" name="Baleful Hex" publicationId="a98a-aed9-fafb-e69f" page="11" hidden="false">
+          <description>Once per game, at the beginning of Estelle&apos;s activation, choose an opposition player within five squares and roll a D6. On a 2+ the chosen player loses their Tackle Zone and cannot be activated until the end of the opposition&apos;s next turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6f4e-81d6-54cf-c102" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="a364-34fd-dd34-2636" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="d943-bb07-585a-9951" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8cb4-4a84-1584-b8df" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
+        <infoLink id="ed29-d355-e643-c1fe" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="023a-9e68-756f-ac00" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="fdbe-e7da-af66-707e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="acf1-5a06-bbaf-54ee" name="Glotl Stop" publicationId="a98a-aed9-fafb-e69f" page="14" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8939-e40e-ee82-a754" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d02-f41f-dd30-85a0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="773a-a883-569e-20bb" name="Glotl Stop" publicationId="a98a-aed9-fafb-e69f" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Animal Savagery, Frenzy, Mighty Blow (+1), Prehensile Tail, Stand Firm, Thick Skull">
+              <conditions>
+                <condition field="selections" scope="acf1-5a06-bbaf-54ee" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Animal Savagery, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Stand Firm, Thick Skull</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">270000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="09ea-5319-25d1-4726" name="Primal Savagery" publicationId="a98a-aed9-fafb-e69f" page="14" hidden="false">
+          <description>Once per game, when Glotl fails an Animal Savagery roll, it may lash out at an opposition player rather than a team-mate.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2360-0c53-041e-f370" name="Animal Savagery" hidden="false" targetId="0c94-b5ce-561e-99f0" type="rule"/>
+        <infoLink id="e89c-7edb-092a-3885" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+        <infoLink id="34c7-0899-4eb7-3440" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="acf1-5a06-bbaf-54ee" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c0f5-106c-3c3c-6937" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="595e-7cb9-fc46-109c" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="fde6-7d2b-5a17-3d6c" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+        <infoLink id="8344-813f-6da2-8382" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6395-fcf8-b302-8084" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="bf8f-a9e3-aaf2-aa79" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="02a0-5253-f8c5-29c0" name="Boa Kon&apos;ssstriktr" publicationId="a98a-aed9-fafb-e69f" page="30" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab7-b155-5372-cb07" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ee-85c6-5f3d-9399" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ed51-f0f0-682e-63df" name="Boa Kon&apos;ssstriktr" publicationId="a98a-aed9-fafb-e69f" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Hypnotic Gaze, Prehensile Tail, Safe Pair of Hands, Sidestep">
+              <conditions>
+                <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Sidestep</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="dc9d-ac66-d72b-b79b" name="Look Into My Eyes" publicationId="a98a-aed9-fafb-e69f" page="30" hidden="false">
+          <description>Once per game, if Boa starts his activation Marking an opposition player with the ball he may roll a D6. On a 1, nothing happens. On a 2+, the opposition player loses possession of the ball, Boa immediately gains possession of the ball, and Boa&apos;s activation immediately ends.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a407-3dd3-1faa-7366" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="8a03-2cee-871a-510a" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
+        <infoLink id="98f7-9b52-a348-4f2d" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="989e-e2c5-ec22-0a12" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="e813-eb92-cdfe-242c" name="Safe Pair of Hands" hidden="false" targetId="f672-176e-7433-41f6" type="rule"/>
+        <infoLink id="2cf9-5587-7da8-cada" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="71e5-da07-7dc1-e777" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="3a58-3795-872d-fc0e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -7536,6 +7746,22 @@ Until the end of this game, each selected player gains a single randomly selecte
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
+            </modifier>
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="5.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -9382,6 +9608,9 @@ they haven’t been sent off themselves.</description>
     </rule>
     <rule id="0ed2-15ff-2470-12c1" name="College Wizard" publicationId="439d-dc2e-2f7e-c520" page="78" hidden="false">
       <description>A College Wizard may only use their spell once per game.</description>
+    </rule>
+    <rule id="c95f-cfcf-8e01-48f3" name="Hit and Run" publicationId="a98a-aed9-fafb-e69f" page="5" hidden="false">
+      <description>After a player with this trait performs a Block action, they may immediately move one free square ignoring Tackle Zones so long as they are still Standing. They must ensure that after this move, they are not Marked by or Marking any opposition players.</description>
     </rule>
   </sharedRules>
 </gameSystem>
