@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @crazydude11" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="40" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -1937,7 +1937,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <infoLink id="b14f-ef4e-4ef7-b2da" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="ddd9-7664-160e-0a03" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
+        <categoryLink id="d58e-2483-f4dd-46c7" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
@@ -7682,6 +7682,120 @@ Until the end of this game, each selected player gains a single randomly selecte
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="630d-615a-fa3a-2ea6" name="Scrappa Sorehead" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb87-d744-c839-9a1e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f86-4dc2-c91c-8326" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5722-6768-b34d-dba6" name="Scrappa Sorehead" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Dodge, Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet">
+              <conditions>
+                <condition field="selections" scope="630d-615a-fa3a-2ea6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1018-8875-ff6e-8237" name="Yoink!" page="" hidden="false">
+          <description>Once per game, when Scrappa attempts to interfere with a Pass action, he may roll a D6. On a 2+, Scrappa does not need to roll to interfere with the Pass action, instead he automatically makes an Interception and gains control of the ball.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f4ff-9137-1812-ae75" name="Dirty Player (+1)" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
+        <infoLink id="9ba0-9584-03fd-dc79" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="ecd0-35c7-d290-eb38" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="630d-615a-fa3a-2ea6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5810-c1c4-4a37-1c17" name="Pogo Stick" hidden="false" targetId="8008-4f05-0fb1-e66d" type="rule"/>
+        <infoLink id="7b86-31d7-aa48-4215" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
+        <infoLink id="9fcd-f330-b986-08ee" name="Sprint" hidden="false" targetId="9b52-0018-4d6b-5525" type="rule"/>
+        <infoLink id="d380-43c5-a25c-ddd5" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+        <infoLink id="9357-0c2a-02af-83c6" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ff16-8ca2-69dd-2866" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="ea36-f65c-7624-3229" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84c4-b59e-00e9-9156" name="Nobbla Blackwart" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dd4-2024-310f-2e43" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf6-b853-7307-df7a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="35bf-1cef-99a7-8eb0" name="Nobbla Blackwart" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Chainsaw, Dodge, Secret Weapon, Stunty">
+              <conditions>
+                <condition field="selections" scope="84c4-b59e-00e9-9156" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Chainsaw, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">120000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3ed3-33d8-e07a-6dbb" name="Kick &apos;em while they&apos;re down!" page="" hidden="false">
+          <description>Once per game, Nobbla may use the Chainsaw Attack Special action against a Prone or Stunned player. This does not count as a Foul action and so Nobbla cannot be Sent-off when using this ability.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6f40-d137-691e-3888" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
+        <infoLink id="854a-51b1-6602-c61c" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="27c9-4121-c4d1-cffe" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="84c4-b59e-00e9-9156" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7636-ee19-eabf-1d30" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+        <infoLink id="eeab-8f62-6213-287a" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="f3b7-a1f0-3437-f154" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9145-45bc-eb27-37a9" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="af09-64d3-c1dd-bd03" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
