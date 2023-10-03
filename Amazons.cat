@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="35" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="36" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The Amazons of Lustria are an enigma and several contradictory stories of their origins exist. One tells that long ago, driven by a desire for adventure, a group of Norse Valkyries set sail for distant shores. After a journey worthy of a saga in its own right, they founded a colony deep within the basin of a great river that wound its way through a massive rainforest. Cut off from the outside world, a new warrior society sprung up, borrowing customs from the native Lizardmen. Another legend claims that the Amazons were created by ancient, god-like beings to serve as the handmaidens of the gods. Perhaps both legends contain something of the truth, but either way, Amazons are natural athletes, and many possess the combination of agility and violence that marks  them out as potential legends of the sport.</readme>
   <categoryEntries>
     <categoryEntry id="cdc2-3210-37c1-9f82" name="Python Warrior Thrower" publicationId="a98a-aed9-fafb-e69f" hidden="false">
@@ -34,7 +34,7 @@
         <categoryLink id="7b75-de55-bb17-601d" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f515-52f7-3f67-c95e" name="Koka Kalim Blitzer" hidden="false" collective="false" import="true" targetId="439f-9608-9f2d-dc93" type="selectionEntry">
+    <entryLink id="f515-52f7-3f67-c95e" name="Pirahna Warrior Blitzer" hidden="false" collective="false" import="true" targetId="439f-9608-9f2d-dc93" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0584-da73-7b2d-d607" name="New CategoryLink" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -1407,6 +1407,7 @@
         </infoLink>
         <infoLink id="81bf-d75a-7207-b818" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
         <infoLink id="a3e2-d4da-e9e7-2dea" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="948e-e825-2aa7-171f" name="Hit and Run" publicationId="a98a-aed9-fafb-e69f" page="5" hidden="false" targetId="c95f-cfcf-8e01-48f3" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b1bb-56fa-9900-d5f1" name="Koka Kalim Blitzer" hidden="false" targetId="8454-7cbf-42bf-e989" primary="false"/>
@@ -1685,7 +1686,7 @@
             <modifierGroup>
               <modifiers>
                 <modifier type="set" field="ee01-7448-8c3f-a882" value="120000"/>
-                <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Dodge, Loner (4+), Jump Up"/>
+                <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Dodge, Loner (4+), Hit and Run, Jump Up"/>
                 <modifier type="set" field="name" value="Mercenary [Pirahna Warrior Blitzer]"/>
               </modifiers>
             </modifierGroup>
@@ -1694,6 +1695,7 @@
         <infoLink id="bad4-a368-a432-b82a" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
         <infoLink id="a519-08fe-d0f2-90c6" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
         <infoLink id="4824-0c19-1d75-5d77" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="b78e-909e-e5aa-b899" name="Hit and Run" publicationId="a98a-aed9-fafb-e69f" page="5" hidden="false" targetId="c95f-cfcf-8e01-48f3" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8bb1-5576-c863-5a4c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
