@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="40" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="41" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -13,6 +13,8 @@
     <publication id="cdc6-3a6b-6663-f6ea" name="Spike Almanac 2021"/>
     <publication id="439d-dc2e-2f7e-c520" name="Dungeon Bowl"/>
     <publication id="a98a-aed9-fafb-e69f" name="Spike #15"/>
+    <publication id="e6c1-775b-d5c7-e5fd" name="Spike Almanac 2022"/>
+    <publication id="5dbd-3c70-d864-0f43" name="Spike #16"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -667,6 +669,7 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -685,7 +688,6 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ef1-a4de-64c9-efd2" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
@@ -5807,9 +5809,6 @@ If the player was in possession of the ball when they were turned into a frog, i
           <description>The Swift Twins must be hired as a pair and count as two Star Players. However, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
         </rule>
       </rules>
-      <categoryLinks>
-        <categoryLink id="3d5d-ecf5-6b5e-920c" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
-      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9e86-d814-823f-a270" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5852,6 +5851,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           </infoLinks>
           <categoryLinks>
             <categoryLink id="8ea4-94da-43bb-9ada" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+            <categoryLink id="1cb5-9818-bd69-19ba" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
@@ -5902,6 +5902,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           </infoLinks>
           <categoryLinks>
             <categoryLink id="da03-5a5d-b0b4-230f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+            <categoryLink id="9f9d-ef82-62bd-aa10" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
@@ -7796,6 +7797,513 @@ Until the end of this game, each selected player gains a single randomly selecte
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ec6-8434-a4a0-1fc6" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c60c-c428-e853-e150" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55a-313b-556c-a3dd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7853-4af0-2362-f1ed" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Bombardier, Dodge, Secret Weapon, Stunty">
+              <conditions>
+                <condition field="selections" scope="9ec6-8434-a4a0-1fc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">5</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Bombardier, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">50000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9f0a-7a5a-846a-a7be" name="All You Can Eat" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+          <description>One per game, Cindy may perform two Throw Bomb Special actions rather than one; though she must commit to doing so before making the first action. If she does, immediately after performing the second Throw Bomb Special action roll a D6. On a 1-3 Cindy is immediately sent off.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ef58-a85d-7885-9660" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="9ec6-8434-a4a0-1fc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f2a9-2afc-3429-1118" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
+        <infoLink id="fc89-67a1-4e96-4348" name="Bombardier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
+        <infoLink id="1d90-031a-69d4-0cd2" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="7553-6d03-3b1e-7680" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+        <infoLink id="3dcc-2947-3186-4c5b" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f69c-f644-7e8b-0c3b" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="8732-bbb0-f18d-390c" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc60-c436-efc1-883e" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e53-0bce-5e27-089f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fb3-9c87-8db7-5e76" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2ad7-92ad-22de-08a4" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Disturbing Presence, Foul Appearance">
+              <conditions>
+                <condition field="selections" scope="dc60-c436-efc1-883e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Disturbing Presence, Foul Appearance, Loner (4+)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="089e-7aec-8202-b5de" name="Purtid Regurgitation" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+          <description>Once per game, Bilerot may use the Projectile Vomit Special action. This may still be used even if Bilerot has already performed a Block actiont his turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b481-d657-4447-f2b8" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="dc60-c436-efc1-883e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3679-8315-687f-5ae7" name="Dirty Player (+1)" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
+        <infoLink id="f2cd-dea6-0c7c-8500" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="34f2-4d2b-eef7-1736" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="867e-499c-1c5d-b54b" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="e601-955e-5ec6-8473" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0b2-1efb-f224-11a1" name="Ivan &apos;The Animal&apos; Deatheshroud" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460d-e1d5-1c89-9e20" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-8f34-b584-2519" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2275-5ee9-c520-2196" name="Ivan &apos;The Animal&apos; Deatheshroud" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Disturbing Presence, Juggernaut, Regeneration, Strip Ball, Tackle">
+              <conditions>
+                <condition field="selections" scope="a0b2-1efb-f224-11a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Disturbing Presence, Juggernaut, Loner (4+), Regeneration, Strip Ball, Tackle</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3ab1-69d2-ac0d-d335" name="Dwarfen Scourge" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false">
+          <description>Once per game, when an opposition player is Knocked Down as a result of a Block action performed by Ivan, you may apply an additional +1 modifier to the Armour roll or Injury roll. If this is against a Dwarfen player from any team, this may instead be a +2 modifier.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6314-c206-8cb0-abf8" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="a0b2-1efb-f224-11a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e024-6dbd-9f88-0bc7" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="fe2e-8fdf-cf6d-a6d5" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="32ad-d432-2493-de37" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+        <infoLink id="c006-eb6a-23c5-d569" name="Strip Ball" hidden="false" targetId="32ed-9065-34b2-86e1" type="rule"/>
+        <infoLink id="fa26-dd52-da3e-46a6" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+        <infoLink id="071e-8b5f-ed84-bdb5" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f157-82af-303e-5c4f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="6d6c-2d7b-8743-87e7" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e305-3078-5475-f863" name="&apos;Captain&apos; Karina von Riesz" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6139-6425-bcd2-e667" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed8d-7681-b6f3-d4dc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2890-4fe9-6fd3-f638" name="&apos;Captain&apos; Karina von Riesz" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Bloodlust (2+), Dodge, Hypnotic Gaze, Jump Up, Regeneration">
+              <conditions>
+                <condition field="selections" scope="e305-3078-5475-f863" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">4</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bloodlust (2+), Dodge, Hypnotic Gaze, Jump Up, Loner (4+), Regeneration</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="050b-f7cc-458f-8c13" name="Tasty Morsel" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false">
+          <description>Once per game, when Karina fails a Bloodlust roll, she may choose to bite an opposition player with a ST of 3 or lower as if they were a Thrall Lineman team-mate. Karina may not bite Star Players with the special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6710-c292-a497-c6e4" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e305-3078-5475-f863" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b911-a7d7-8cb9-54f8" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="fb6f-abcc-932e-3828" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
+        <infoLink id="2902-836a-da4d-7eb2" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="53a4-78c5-485b-99de" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="6949-2f71-2e3a-8dba" name="Bloodlust (2+)" hidden="false" targetId="defc-a36b-9f85-cec5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="031b-874f-8b16-0400" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="6808-2eac-948d-29b6" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e866-fae5-5eb9-b38f" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab69-72e7-694a-a8ae" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c52c-6532-d830-6846" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1fe6-ea2c-7d83-0421" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Hypnotic Gaze, Regeneration, Sidestep">
+              <conditions>
+                <condition field="selections" scope="e866-fae5-5eb9-b38f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">5</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Hypnotic Gaze, Loner (4+) Regeneration, Sidestep</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="954c-9359-9150-2d13" name="Star of the Show" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false">
+          <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.Once per game, when Count Lithor scores a touchdown, his controlling coach may gain one team re-roll. If the re-roll has not been used by the end of the nect drive, it is lost.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="176b-0d27-b8a2-07b1" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e866-fae5-5eb9-b38f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="616a-0ad0-abf0-944c" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="2b18-b85b-b82b-6af7" name="Hypnotic Gaze" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
+        <infoLink id="bcd4-ff7a-7d2c-fe5e" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="5e40-9503-2d1e-8b47" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b48c-128a-4494-94cf" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="5484-e54a-38df-7683" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ea9e-3b91-40f2-6cf1" name="Withergrasp Doubledrool" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b8a-d39b-4c3b-6bfe" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c4a-a097-bd38-d199" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0d0d-3d85-b1a3-db57" name="Withergrasp Doubledrool" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle">
+              <conditions>
+                <condition field="selections" scope="ea9e-3b91-40f2-6cf1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="66d0-cefc-a1e0-3fd9" name="Watch Out!" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+          <description>The first time each half that Withergrasp is the target of an opposition player&apos;s Block action, he counts as having the Dodge skill.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6d44-4a26-728b-36eb" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ea9e-3b91-40f2-6cf1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6516-32d8-8433-fa23" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="41bd-dec9-1f39-370f" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+        <infoLink id="2ea0-9505-d040-5a9e" name="Tentacles" hidden="false" targetId="ff10-4ba0-21d5-c6e8" type="rule"/>
+        <infoLink id="64e7-78a2-ed55-0eaa" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
+        <infoLink id="4a53-e148-4346-b3e3" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1713-50db-72e5-e16a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="8314-d57c-ebf4-41b0" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e446-0c0f-5d11-74dc" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e89-50ba-93e2-0274" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce8-cd44-7f10-c74e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5995-07f1-71e4-ee30" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dodge, Nerves of Steel, Right Stuff, Stunty">
+              <conditions>
+                <condition field="selections" scope="e446-0c0f-5d11-74dc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Loner (3+), Nerves of Steel, Right Stuff, Stunty</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">120000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="c5e5-d037-0fec-cf0b" name="Halfling Luck" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+          <description>Once per game, Puggy mar re-roll one dice that was rolled either as a single dice roll, or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Injury, or Casualty roll).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e21e-9cb9-9c1f-b3e1" name="Loner (3+)" hidden="false" targetId="94c9-1b4e-9077-0316" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e446-0c0f-5d11-74dc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b822-072e-2585-58fb" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+        <infoLink id="f8ee-39a6-33ed-46e4" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
+        <infoLink id="8e80-1b2c-2c79-9cda" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="e7df-758d-8141-7087" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+        <infoLink id="2b8f-d86b-888b-abb6" name="Right Stuff" hidden="false" targetId="08e2-b983-3d58-c50b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8a91-085f-f866-209e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="92e7-453c-ef8f-8a82" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a41f-802f-9a60-3454" name="Dribl and Drull" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c4f-28eb-89d0-3a4b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4a-e9a9-2e51-def4" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="92fc-55fe-112e-b701" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
+          <description>The Swift Twins must be hired as a pair and count as two Star Players. However, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="7e41-bb2e-b018-07ac" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c2-5cf9-9609-414e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="015b-d565-fb2f-794b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1e84-f8e2-b691-5636" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <modifiers>
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Dodge, Sidestep, Sneaky Git, Stunty">
+                  <conditions>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Sidestep, Sneaky Git, Stunty</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8827-5d22-48de-6947" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="5a29-7b42-77e0-dcdb" name="Dirty Player (+1)" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
+            <infoLink id="deb9-6604-585d-51f6" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
+            <infoLink id="4b47-6739-3a30-4297" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+            <infoLink id="36a6-d5c8-cb07-43db" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink id="f8c8-2157-8522-8190" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="092c-2f59-9c5f-2c9f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+            <categoryLink id="d5b2-8fcb-1579-f1a3" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0a05-f3ff-4db5-f460" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d708-705d-bc91-02d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b50-0063-31a0-6ebc" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e040-2ba6-cedf-296d" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+              <modifiers>
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Sidestep, Stab, Stunty">
+                  <conditions>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">8</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Sidestep, Stab, Stunty</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1d32-8874-d7c0-bbfe" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="291c-be02-76fd-9691" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
+            <infoLink id="65fd-fa4d-7577-fe56" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+            <infoLink id="15dd-082f-a329-d433" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink id="aa25-1da9-4c88-3618" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="591a-7aaa-6b3c-fd9c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+            <categoryLink id="1d36-3a9c-7cd8-af49" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9725,6 +10233,16 @@ they haven’t been sent off themselves.</description>
     </rule>
     <rule id="c95f-cfcf-8e01-48f3" name="Hit and Run" publicationId="a98a-aed9-fafb-e69f" page="5" hidden="false">
       <description>After a player with this trait performs a Block action, they may immediately move one free square ignoring Tackle Zones so long as they are still Standing. They must ensure that after this move, they are not Marked by or Marking any opposition players.</description>
+    </rule>
+    <rule id="defc-a36b-9f85-cec5" name="Bloodlust (2+)" publicationId="5dbd-3c70-d864-0f43" hidden="false">
+      <description>To keep control of their wits, Vampires need a supply of fresh blood. Whenever a player with this trait activates, after declaring their action, they must roll a D6, adding 1 to the roll if they declared a Block action or a Blitz action. If they roll equal to or higher than the number shown in brackets, they may act as normal.
+
+If the player rolls lower than the number shown in brackets, or rolls a natural 1, they may continue their activation as normal thogh they may change their declared action to a Move action if they wish. If the player declared an action that can only be performed once per team turn (such as a Blitz action), this will still count as the one of that action for the team turn. At the end of their activation they may bite an adjacent Thrall Lineman team-mate (Standing, Prone or Stunned). If they bite a Thrall, immediately make an injury roll for the Thrall treating any Casualty result as Badly Hurt; this will not cause a Turnover unless the Thrall was holding the ball. If they do not bite a Thrall for any reason then a Turnover is caused, the player will lose their Tackle Zone until they are next activated, and will immediately drop the ball if they were holding it. If the player was in the opposing End Zone, no Touchdown is socred. If a player who failed this roll wants to make a Pass action, Hand-off, or score, then they must bite a Thrall before they perform the action or score.</description>
+    </rule>
+    <rule id="9d2a-efa6-99b2-c61c" name="Bloodlust (3+)" publicationId="5dbd-3c70-d864-0f43" hidden="false">
+      <description>To keep control of their wits, Vampires need a supply of fresh blood. Whenever a player with this trait activates, after declaring their action, they must roll a D6, adding 1 to the roll if they declared a Block action or a Blitz action. If they roll equal to or higher than the number shown in brackets, they may act as normal.
+
+If the player rolls lower than the number shown in brackets, or rolls a natural 1, they may continue their activation as normal thogh they may change their declared action to a Move action if they wish. If the player declared an action that can only be performed once per team turn (such as a Blitz action), this will still count as the one of that action for the team turn. At the end of their activation they may bite an adjacent Thrall Lineman team-mate (Standing, Prone or Stunned). If they bite a Thrall, immediately make an injury roll for the Thrall treating any Casualty result as Badly Hurt; this will not cause a Turnover unless the Thrall was holding the ball. If they do not bite a Thrall for any reason then a Turnover is caused, the player will lose their Tackle Zone until they are next activated, and will immediately drop the ball if they were holding it. If the player was in the opposing End Zone, no Touchdown is socred. If a player who failed this roll wants to make a Pass action, Hand-off, or score, then they must bite a Thrall before they perform the action or score.</description>
     </rule>
   </sharedRules>
 </gameSystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="35" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="36" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The Amazons of Lustria are an enigma and several contradictory stories of their origins exist. One tells that long ago, driven by a desire for adventure, a group of Norse Valkyries set sail for distant shores. After a journey worthy of a saga in its own right, they founded a colony deep within the basin of a great river that wound its way through a massive rainforest. Cut off from the outside world, a new warrior society sprung up, borrowing customs from the native Lizardmen. Another legend claims that the Amazons were created by ancient, god-like beings to serve as the handmaidens of the gods. Perhaps both legends contain something of the truth, but either way, Amazons are natural athletes, and many possess the combination of agility and violence that marks  them out as potential legends of the sport.</readme>
   <categoryEntries>
     <categoryEntry id="cdc2-3210-37c1-9f82" name="Python Warrior Thrower" publicationId="a98a-aed9-fafb-e69f" hidden="false">
@@ -1828,9 +1828,14 @@
         <entryLink id="9ec9-449d-55ef-d4a8" name="Star Players" hidden="false" collective="false" import="true" targetId="952f-eff7-6ea9-812d" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="824b-1a4d-ef1e-a04d" value="1.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a41f-802f-9a60-3454" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2027,6 +2032,7 @@
         <entryLink id="803e-c989-1fc9-9ef2" name="Estelle La Veneaux" hidden="false" collective="false" import="true" targetId="96f8-01d2-bef0-cd90" type="selectionEntry"/>
         <entryLink id="5cbd-7fed-d49f-fc87" name="Boa Kon&apos;ssstriktr" hidden="false" collective="false" import="true" targetId="02a0-5253-f8c5-29c0" type="selectionEntry"/>
         <entryLink id="3f39-f0a5-03a4-861a" name="Glotl Stop" hidden="false" collective="false" import="true" targetId="acf1-5a06-bbaf-54ee" type="selectionEntry"/>
+        <entryLink id="ef30-5c1e-e437-af30" name="Dribl and Drull" hidden="false" collective="false" import="true" targetId="a41f-802f-9a60-3454" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
