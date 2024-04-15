@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="41" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="42" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -15,6 +15,7 @@
     <publication id="a98a-aed9-fafb-e69f" name="Spike #15"/>
     <publication id="e6c1-775b-d5c7-e5fd" name="Spike Almanac 2022"/>
     <publication id="5dbd-3c70-d864-0f43" name="Spike #16"/>
+    <publication id="6630-4973-1ede-2add" name="Spike #17"/>
   </publications>
   <costTypes>
     <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
@@ -8249,6 +8250,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0a05-f3ff-4db5-f460" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
@@ -8298,6 +8300,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -10243,6 +10246,12 @@ If the player rolls lower than the number shown in brackets, or rolls a natural 
       <description>To keep control of their wits, Vampires need a supply of fresh blood. Whenever a player with this trait activates, after declaring their action, they must roll a D6, adding 1 to the roll if they declared a Block action or a Blitz action. If they roll equal to or higher than the number shown in brackets, they may act as normal.
 
 If the player rolls lower than the number shown in brackets, or rolls a natural 1, they may continue their activation as normal thogh they may change their declared action to a Move action if they wish. If the player declared an action that can only be performed once per team turn (such as a Blitz action), this will still count as the one of that action for the team turn. At the end of their activation they may bite an adjacent Thrall Lineman team-mate (Standing, Prone or Stunned). If they bite a Thrall, immediately make an injury roll for the Thrall treating any Casualty result as Badly Hurt; this will not cause a Turnover unless the Thrall was holding the ball. If they do not bite a Thrall for any reason then a Turnover is caused, the player will lose their Tackle Zone until they are next activated, and will immediately drop the ball if they were holding it. If the player was in the opposing End Zone, no Touchdown is socred. If a player who failed this roll wants to make a Pass action, Hand-off, or score, then they must bite a Thrall before they perform the action or score.</description>
+    </rule>
+    <rule id="f128-f60d-5760-761e" name="My Ball" publicationId="6630-4973-1ede-2add" hidden="false">
+      <description>A player with this Trait may not willingly give up the ball when in possession of it, and so may not make Pass actions, Hand-off actions, or use any other Skill or Trait that would allow them to relinquish possession of the ball. The only way they can lose possession of the ball is by being Knockes Down, Placed Prone, Falling Over or by the effect of a Skill, Trait, or special rule of an opposing model.</description>
+    </rule>
+    <rule id="6130-bd43-e29f-3037" name="Trickster" publicationId="6630-4973-1ede-2add" hidden="false">
+      <description>When this player is hit by a Block action or a Special action that replaces a Block action (with the exception of a Block action caused by the Ball and Chain Move Special action), before determining how many dice are rolled, they may be removed from the pitch and placed in any other unoccupied square adjacent to the player performing the Block action. The Block action then takes place as normal. If the player using this Trait is holding the ball and places themselves in the opposition End Zone, the Block action wil still be fully resolved before any touchdown is resolved.</description>
     </rule>
   </sharedRules>
 </gameSystem>
