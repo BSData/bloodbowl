@@ -4209,7 +4209,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5993-677d-8b45-5595" name="Bomber Dribblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5993-677d-8b45-5595" name="Bomber Dribblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968d-d212-b950-7320" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8874-1576-8b03-d3b7" type="max"/>
@@ -4266,7 +4266,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="267d-86b2-036e-64c7" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="267d-86b2-036e-64c7" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d8e-081c-afe6-510c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe7-73b5-7dfa-7f9e" type="max"/>
@@ -4322,7 +4322,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a3af-a94c-d242-1dc5" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a3af-a94c-d242-1dc5" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecc-f8e5-0312-b860" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ada-c3fe-bf62-9a73" type="max"/>
@@ -4378,7 +4378,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a87-241d-2e82-8181" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8a87-241d-2e82-8181" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ef-cd2f-64cc-72a8" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d6b-2816-22dd-6f20" type="max"/>
@@ -7131,7 +7131,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e80e-92fe-bfa9-1874" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e80e-92fe-bfa9-1874" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7531-109e-1728-d778" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6839-bae2-6197-6cb7" type="max"/>
@@ -7801,7 +7801,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ec6-8434-a4a0-1fc6" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9ec6-8434-a4a0-1fc6" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c60c-c428-e853-e150" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55a-313b-556c-a3dd" type="max"/>
@@ -7857,7 +7857,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dc60-c436-efc1-883e" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dc60-c436-efc1-883e" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e53-0bce-5e27-089f" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fb3-9c87-8db7-5e76" type="max"/>
@@ -8024,7 +8024,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e866-fae5-5eb9-b38f" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e866-fae5-5eb9-b38f" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab69-72e7-694a-a8ae" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c52c-6532-d830-6846" type="max"/>
@@ -8079,7 +8079,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ea9e-3b91-40f2-6cf1" name="Withergrasp Doubledrool" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ea9e-3b91-40f2-6cf1" name="Withergrasp Doubledrool" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b8a-d39b-4c3b-6bfe" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c4a-a097-bd38-d199" type="max"/>
@@ -8135,7 +8135,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e446-0c0f-5d11-74dc" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e446-0c0f-5d11-74dc" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e89-50ba-93e2-0274" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce8-cd44-7f10-c74e" type="max"/>
@@ -8306,6 +8306,286 @@ Until the end of this game, each selected player gains a single randomly selecte
       </selectionEntries>
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d479-fca2-f584-5ec6" name="Kiroth Krakeneye" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c38b-fea9-e0af-dcea" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f9-1fa7-0610-ee68" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1369-0ff9-60d1-9685" name="Kiroth Krakeneye" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Foul Appearance, On the Ball, Tackle, Tentacles">
+              <conditions>
+                <condition field="selections" scope="d479-fca2-f584-5ec6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">7</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Foul Appearance, Loner (4+), On the Ball, Tackle, Tentacles</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">160000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9142-28e9-5cad-4b7d" name="Black Ink" page="" hidden="false">
+          <description>Once per game, at the start of any of his activations, Kiroth can choose an opposition player he is marking. The chosen player loses their tackle zone until they are next activated.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="fca3-4dc6-c9a0-cb64" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="d479-fca2-f584-5ec6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="210a-2b44-71e2-69d9" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
+        <infoLink id="6206-0a38-fb3b-9613" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
+        <infoLink id="be40-315f-fcd8-d2d7" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
+        <infoLink id="14da-722d-4124-8c1f" name="Tentacles" hidden="false" targetId="ff10-4ba0-21d5-c6e8" type="rule"/>
+        <infoLink id="3d1e-f9ab-8e0b-2ca0" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="34eb-0404-7d60-ad8a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="3e9f-c760-2db0-8b9f" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac3d-e6df-bfaf-8cef" name="Skitter Stab-Stab" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240e-d503-0790-7846" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a055-41a8-169c-dbc1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c6d6-2900-1178-79e5" name="Skitter Stab-Stab" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Prehensile Tail, Shadowing, Stab">
+              <conditions>
+                <condition field="selections" scope="ac3d-e6df-bfaf-8cef" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">9</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Prehensile Tail, Shadowing, Stab</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="258c-51f3-7446-7e58" name="Master Assassin" page="" hidden="false">
+          <description>Once per game, when Skitter successfully breaks an opposition players armour as a result of a Stab Special action, he may choose to re-roll the injury roll.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="cf20-3220-4903-db62" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ac3d-e6df-bfaf-8cef" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b96a-9390-94bc-5ee1" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="8e51-fc14-348c-c6aa" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
+        <infoLink id="c1b7-4bfd-313c-14c2" name="Stab" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
+        <infoLink id="ea8f-ab26-a130-2e55" name="Shadowing" hidden="false" targetId="e52d-083d-8549-3edb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="94dd-3552-cdb8-c711" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="7c24-2de2-6897-310e" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11ef-0d16-9ff3-b2d9" name="Ripper Bolgrot" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eb2-e624-b340-217d" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5065-a885-04a2-e716" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9800-2d63-4f13-c247" name="Ripper Bolgrot" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Grab, Mighty Blow (+1), Regeneration, Throw Team-Mate">
+              <conditions>
+                <condition field="selections" scope="11ef-0d16-9ff3-b2d9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">4</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">6</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Grab, Loner (4+), Mighty Blow (+1), Regeneration, Throw Team-Mate</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6507-9928-150c-b792" name="Thinking Man&apos;s Troll" page="" hidden="false">
+          <description>Once per half, Ripper may re-roll one dice that was rolled either as a single dice, as part of a multiple sice roll, or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Innjury or Casualty roll).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3c54-c854-4bc2-e688" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="11ef-0d16-9ff3-b2d9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3fa3-3ffc-2fb3-2d2f" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
+        <infoLink id="c2b8-dd10-ee06-dcf4" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="2917-6515-e5fc-3333" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
+        <infoLink id="c9f3-2bb0-4e8d-b35e" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="58e4-32be-8db6-5357" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="c02a-c5ef-9cf3-ea6c" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b720-60fa-2abb-c41b" name="Rowana Forestfoot" publicationId="6630-4973-1ede-2add" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c930-1997-cc43-041f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f015-01aa-0b54-0f73" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="46be-f35b-2920-c998" name="Rowana Forestfoot" publicationId="6630-4973-1ede-2add" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Dump-Off, Guard, Horns, Jump Up, Leap">
+              <conditions>
+                <condition field="selections" scope="b720-60fa-2abb-c41b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">3</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Dump-Off, Guard, Horns, Jump Up, Leap, Loner (4+)</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">160000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="90e9-0d42-7dad-cf54" name="Bounding Leap" publicationId="6630-4973-1ede-2add" page="" hidden="false">
+          <description>Once per game, after declaring that she will Leap but before rolling any dice Rowana may choose to tse this special rule. If she does, Rowana suffers no negative modifiers fir the Agility test to Leap and may choose to re-roll the result.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="761b-436e-784e-cfb2" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="b720-60fa-2abb-c41b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="042e-1dfd-3cc4-f056" name="Dump-Off" hidden="false" targetId="8196-2dca-31a2-0516" type="rule"/>
+        <infoLink id="3e0f-6aaf-6c6a-0011" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
+        <infoLink id="5319-a38a-819f-63f9" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+        <infoLink id="4a9c-a48b-0760-c46a" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="7c3f-460b-3b73-d6d3" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d1ec-385c-0989-d296" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="55a3-78e9-1fab-a6df" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="99e2-0d36-50b6-cdc3" name="Rodney Roachbait" publicationId="6630-4973-1ede-2add" page="" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d8c-5232-667f-67e5" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5273-33c7-d8b1-b1c0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="623f-5494-1a8b-bd43" name="Rodney Roachbait" publicationId="6630-4973-1ede-2add" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+          <modifiers>
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Catch, Diving Catch, Jump Up, On the Ball, Side Step, Stunty, Wrestle">
+              <conditions>
+                <condition field="selections" scope="99e2-0d36-50b6-cdc3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
+            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
+            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Diving Catch, Jump Up, Loner (4+), On the Ball, Side Step, Stunty, Wrestle</characteristic>
+            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">70000</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="cd97-eaf7-ffb4-5b07" name="Catch of the Day" publicationId="6630-4973-1ede-2add" page="" hidden="false">
+          <description>Once per hald, if Rodney is Standing and begins his activation within 3 squaresof a ball which is on the ground he may roll a D6. On a 1-2, nothing happens. On a 3+, Rodney immediately gains possession of the ball.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e51c-fd9d-27ae-9dd1" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="99e2-0d36-50b6-cdc3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1e75-5bea-afb3-e052" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
+        <infoLink id="d5bd-c462-8196-3992" name="Diving Catch" hidden="false" targetId="2938-c9de-0989-24be" type="rule"/>
+        <infoLink id="150e-f047-7e6d-b4e8" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
+        <infoLink id="3534-ef57-eb43-e0de" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
+        <infoLink id="6117-0c15-337e-fdea" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="d028-8dad-18a2-9651" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+        <infoLink id="f642-2521-9225-b57a" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a7e4-391c-4b89-172c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+        <categoryLink id="3acb-e886-78d8-a3ba" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
       </costs>
