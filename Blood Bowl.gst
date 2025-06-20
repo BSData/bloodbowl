@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="42" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry. </readme>
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="43" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+  <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry.</readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
     <publication id="e3e7-0556-2064-f3a9" name="White Dwarf"/>
@@ -16,11 +16,12 @@
     <publication id="e6c1-775b-d5c7-e5fd" name="Spike Almanac 2022"/>
     <publication id="5dbd-3c70-d864-0f43" name="Spike #16"/>
     <publication id="6630-4973-1ede-2add" name="Spike #17"/>
+    <publication name="Spike #18" id="dcf0-4e1e-b304-926a" hidden="false"/>
   </publications>
   <costTypes>
-    <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0.0" hidden="false"/>
-    <costType id="39e2-ec20-0c67-eba6" name=" Total SPP" defaultCostLimit="-1.0" hidden="true"/>
-    <costType id="069c-526e-7481-6bb7" name=" Used SPP" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="ffff-7836-9be4-196c" name=" TV" defaultCostLimit="0" hidden="false"/>
+    <costType id="39e2-ec20-0c67-eba6" name=" Total SPP" defaultCostLimit="-1" hidden="true"/>
+    <costType id="069c-526e-7481-6bb7" name=" Used SPP" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="6abd-9371-31b8-653a" name="Player">
@@ -69,12 +70,12 @@
     <categoryEntry id="8526-a57c-c848-4d31" name="Inducements" hidden="false"/>
     <categoryEntry id="0b84-c59e-fbf9-8c16" name="(In)Famous Coaching Staff" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e124-00c7-545a-4a4a" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e124-00c7-545a-4a4a" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="91a4-082f-7021-eb9a" name="Wizard" publicationId="46da-ba61-6439-83e5" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a510-dc2f-2633-09d6" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a510-dc2f-2633-09d6" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="0b6c-a8b7-7bae-b8f2" name="Total SPP" publicationId="46da-ba61-6439-83e5" hidden="false"/>
@@ -88,15 +89,15 @@
     <categoryEntry id="ce3b-e531-b6b3-0b3b" name="Missing a Game" publicationId="46da-ba61-6439-83e5" hidden="false"/>
     <categoryEntry id="625c-de63-0116-92fb" name="Mercenary" publicationId="46da-ba61-6439-83e5" hidden="false">
       <modifiers>
-        <modifier type="set" field="655b-27e5-6123-680b" value="3.0">
+        <modifier type="set" field="655b-27e5-6123-680b" value="3">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="452f-a089-566c-31a6" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="452f-a089-566c-31a6" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="df9f-1f6a-c09d-3d8d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcad-3fc6-ebc8-af29" type="max"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="655b-27e5-6123-680b" type="max"/>
+        <constraint field="selections" scope="df9f-1f6a-c09d-3d8d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcad-3fc6-ebc8-af29" type="max"/>
+        <constraint field="selections" scope="roster" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="655b-27e5-6123-680b" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1fa9-a9cf-7b89-5a8c" name="Journeymen" publicationId="46da-ba61-6439-83e5" hidden="false"/>
@@ -104,7 +105,7 @@
     <categoryEntry id="4e9e-b0ee-57cb-9b9d" name="Star Player" hidden="false"/>
     <categoryEntry id="a32e-db91-2a7d-8708" name="Biased Referee" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-91d3-1c9a-8f12" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5641-91d3-1c9a-8f12" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="2dff-4e96-3876-0daa" name="1st Advancement" hidden="false"/>
@@ -121,27 +122,27 @@
     <categoryEntry id="ed73-46c2-9ade-4dc0" name="Drafted Players" hidden="false"/>
     <categoryEntry id="1372-d07c-4465-9f66" name="Bona Fide Big Guy" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a6-3233-45d5-d915" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a6-3233-45d5-d915" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="496a-6c79-e1e6-b5de" name="Legendary Linemen" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3548-7b8c-007f-3155" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3548-7b8c-007f-3155" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="afcb-d5d8-3dcd-2bbe" name="Brutal Blockers" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3e-1e30-5b82-7f48" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3e-1e30-5b82-7f48" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="e8e6-1901-1e21-29bc" name="Reliable Ringers" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="228b-9e0a-5cda-d3de" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="228b-9e0a-5cda-d3de" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d78e-2ef7-685f-03a8" name="Stunty Superstars" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e2-5d5d-932f-fc3e" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e2-5d5d-932f-fc3e" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="6560-e720-c923-72ae" name="[S]trength" hidden="false"/>
@@ -151,101 +152,101 @@
     <categoryEntry id="8f4e-0b58-0fc3-0fa0" name="[G]eneral" hidden="false"/>
     <categoryEntry id="577c-1de7-4061-9cb2" name="Big Guys" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <modifiers>
-        <modifier type="set" field="42de-0108-37a2-7f25" value="2.0">
+        <modifier type="set" field="42de-0108-37a2-7f25" value="2">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42de-0108-37a2-7f25" type="max"/>
+        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42de-0108-37a2-7f25" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="69c1-09d2-2343-99c1" name="Blitzers" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <modifiers>
-        <modifier type="set" field="ae65-135d-e648-23db" value="2.0">
+        <modifier type="set" field="ae65-135d-e648-23db" value="2">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae65-135d-e648-23db" type="max"/>
+        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae65-135d-e648-23db" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="7f64-f850-69fa-029b" name="Linemen" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <constraints>
-        <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b9-1eac-701f-cd64" type="max"/>
+        <constraint field="selections" scope="parent" value="16" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b9-1eac-701f-cd64" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="3e38-d2fe-d3a4-0e29" name="Runners" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <modifiers>
-        <modifier type="set" field="5d3c-2271-3d73-c2a2" value="2.0">
+        <modifier type="set" field="5d3c-2271-3d73-c2a2" value="2">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d3c-2271-3d73-c2a2" type="max"/>
+        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d3c-2271-3d73-c2a2" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1a8b-ae37-fd71-d978" name="Special" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <modifiers>
-        <modifier type="set" field="c839-cdc6-94e2-a1da" value="4.0">
+        <modifier type="set" field="c839-cdc6-94e2-a1da" value="4">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c839-cdc6-94e2-a1da" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c839-cdc6-94e2-a1da" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="4a24-33a3-0f4b-92b4" name="Throwers" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <modifiers>
-        <modifier type="set" field="ac3a-233c-bc70-c320" value="4.0">
+        <modifier type="set" field="ac3a-233c-bc70-c320" value="4">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3a-233c-bc70-c320" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3a-233c-bc70-c320" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d103-58ee-6082-1de9" name="Blockers" publicationId="439d-dc2e-2f7e-c520" hidden="false">
       <modifiers>
-        <modifier type="set" field="1048-d0c7-da33-2067" value="6.0">
+        <modifier type="set" field="1048-d0c7-da33-2067" value="6">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1048-d0c7-da33-2067" type="max"/>
+        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1048-d0c7-da33-2067" type="max"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -254,20 +255,20 @@
       <categoryLinks>
         <categoryLink id="45c1-4f47-ed98-db8a" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false">
           <modifiers>
-            <modifier type="increment" field="8ed7-eb63-28ad-1d86" value="1.0">
+            <modifier type="increment" field="8ed7-eb63-28ad-1d86" value="1">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1fa9-a9cf-7b89-5a8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1fa9-a9cf-7b89-5a8c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="8ed7-eb63-28ad-1d86" value="7.0">
+            <modifier type="increment" field="8ed7-eb63-28ad-1d86" value="7">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4361-1f5a-b2d3-901c" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4361-1f5a-b2d3-901c" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="11.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1b6b-7bd9-61b2-363f" type="min"/>
-            <constraint field="selections" scope="roster" value="16.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8ed7-eb63-28ad-1d86" type="max"/>
+            <constraint field="selections" scope="roster" value="11" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1b6b-7bd9-61b2-363f" type="min"/>
+            <constraint field="selections" scope="roster" value="16" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8ed7-eb63-28ad-1d86" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="72bd-80d9-29f8-4636" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="false"/>
@@ -276,7 +277,7 @@
         <categoryLink id="84d0-2989-9b33-ce10" name="Dead Players" hidden="false" targetId="3634-f4ae-b277-30bc" primary="false"/>
         <categoryLink id="82e4-2b13-619e-7e6b" name="Missing a Game" hidden="false" targetId="ce3b-e531-b6b3-0b3b" primary="false"/>
         <categoryLink id="2047-0fb5-d551-d894" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="false"/>
-        <categoryLink id="de4e-9b5d-e765-b274" name="Temporarliy Retired" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
+        <categoryLink id="de4e-9b5d-e765-b274" name="Temporarliy Retired Players" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
         <categoryLink id="8e89-208e-6091-8fd2" name="Blockers" hidden="false" targetId="d103-58ee-6082-1de9" primary="false"/>
         <categoryLink id="4d30-a6ca-5758-6186" name="Big Guys" hidden="false" targetId="577c-1de7-4061-9cb2" primary="false"/>
         <categoryLink id="c694-2eca-c732-6127" name="Blitzers" hidden="false" targetId="69c1-09d2-2343-99c1" primary="false"/>
@@ -290,15 +291,15 @@
       <categoryLinks>
         <categoryLink id="350f-f454-92aa-a288" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false">
           <modifiers>
-            <modifier type="increment" field="f902-4cf8-aa36-9f7b" value="1.0">
+            <modifier type="increment" field="f902-4cf8-aa36-9f7b" value="1">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1fa9-a9cf-7b89-5a8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1fa9-a9cf-7b89-5a8c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="fe38-9bbd-9fbc-5eed" type="min"/>
-            <constraint field="selections" scope="roster" value="11.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="f902-4cf8-aa36-9f7b" type="max"/>
+            <constraint field="selections" scope="roster" value="7" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="fe38-9bbd-9fbc-5eed" type="min"/>
+            <constraint field="selections" scope="roster" value="11" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="f902-4cf8-aa36-9f7b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0637-ea9a-ed25-6911" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="false"/>
@@ -309,7 +310,7 @@
         <categoryLink id="e747-916b-421d-3239" name="Temporarliy Retired Players" hidden="false" targetId="d6f7-c6a3-b998-f51f" primary="false"/>
         <categoryLink id="f2a5-73c3-b701-d464" name="Positionals" hidden="false" targetId="df0d-1d00-1bf7-958f" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b389-0c4e-1af1-a42a" type="max"/>
+            <constraint field="selections" scope="roster" value="4" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b389-0c4e-1af1-a42a" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="fdc5-430f-b8d0-6829" name="Drafted Players" hidden="false" targetId="ed73-46c2-9ade-4dc0" primary="false"/>
@@ -326,62 +327,62 @@
   <entryLinks>
     <entryLink id="d63b-1e42-baa4-9eaf" name="Dedicated Fans" hidden="false" collective="false" import="true" targetId="407e-30a8-ee48-ab2e" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="cd6d-c53b-271b-1eec" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="cd6d-c53b-271b-1eec" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5b80-60f0-251f-a9c7" name="Season Statistics" hidden="false" collective="false" import="true" targetId="3f7f-9d43-5a15-135d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="ca89-41b4-76cf-85d0" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="ca89-41b4-76cf-85d0" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad54-e52b-d79f-9544" name="Cheerleaders" hidden="false" collective="false" import="true" targetId="4358-1d13-b318-ae37" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="eb58-d9a5-cf49-60d4" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="eb58-d9a5-cf49-60d4" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8435-608c-efe1-f84d" name="Team Re-Rolls" hidden="false" collective="false" import="true" targetId="9350-0bc7-c2fc-7af5" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4487-48f5-2fb6-e111" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="4487-48f5-2fb6-e111" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e0af-9f71-e284-80c8" name="Treasury" hidden="false" collective="false" import="true" targetId="19ad-ba99-d331-e16b" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="06ab-43c7-f4b2-8e08" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="06ab-43c7-f4b2-8e08" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="31c7-74d3-c43b-fab0" name="Prayers to Nuffle" hidden="false" collective="false" import="true" targetId="b813-b8f6-47ea-2f87" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="f5b8-d647-eb18-a100" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
+        <categoryLink id="f5b8-d647-eb18-a100" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a0ad-1589-c6e6-1e28" name="Game Type" hidden="false" collective="false" import="true" targetId="4816-c8dd-bffc-3384" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="d7c7-231f-8f16-2158" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
+        <categoryLink id="d7c7-231f-8f16-2158" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f776-e0e2-39bc-14cf" name="Home Stadium" hidden="false" collective="false" import="true" targetId="a93a-5959-e70d-5d22" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4063-7066-6f49-4e40" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="4063-7066-6f49-4e40" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4c00-0552-5714-81af" name="Stadium Trait" hidden="false" collective="false" import="true" targetId="70ee-d59b-c215-b8c6" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="1e66-cefe-c8f7-6f5c" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
+        <categoryLink id="1e66-cefe-c8f7-6f5c" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1b1e-fb58-dad2-14e6" name="Ongoing Sposorships" hidden="false" collective="false" import="true" targetId="29e1-f4c3-b0e1-437a" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="8b49-324a-741f-1566" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="8b49-324a-741f-1566" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="511f-47f8-e42c-9ce5" name="Assistant Coaches" hidden="false" collective="false" import="true" targetId="d2ca-b76d-9258-f261" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="6318-9c43-eaed-c215" name="New CategoryLink" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
+        <categoryLink id="6318-9c43-eaed-c215" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="35bc-85a1-d6c1-ff98" name="Mercenary Type" hidden="false" collective="false" import="true" targetId="2177-2aa7-a977-fd03" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="353e-b57b-7a72-26d6" name="New CategoryLink" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
+        <categoryLink id="353e-b57b-7a72-26d6" name="Pre-Match Setup" hidden="false" targetId="fdc7-89fb-c7d0-4791" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -392,9 +393,9 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -403,93 +404,93 @@
       <selectionEntries>
         <selectionEntry id="3cff-ac20-1010-4ed6" name="Games Forfeited (Didn&apos;t play)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="eaf0-54b6-990e-73f5" name="Games Conceded (Did play)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7d98-36c0-b964-a83e" name="(End of Year) Touchdowns Scored" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dc6e-361a-c7fc-9b0e" name="(End of Year) Casualties Inflicted" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2be2-b4db-7507-314f" name="Games Played (Friendly)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e488-6c06-4db4-c586" name="Games Played (League)" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="407e-30a8-ee48-ab2e" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="407e-30a8-ee48-ab2e" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2e2-2788-1cbd-283c" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2e2-2788-1cbd-283c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="40a1-b2ad-ab32-f9b8" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="40a1-b2ad-ab32-f9b8" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b705-a193-fa8d-4d98" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b705-a193-fa8d-4d98" type="min"/>
           </constraints>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="77da-bfcb-d236-80a8" name="Apothecary" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -498,29 +499,29 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="80000.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="80000">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6a44-0a7d-c8b4-29d6" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6a44-0a7d-c8b4-29d6" type="max"/>
       </constraints>
       <rules>
         <rule id="ef71-6db1-a568-fc06" name="Apothecary" publicationId="46da-ba61-6439-83e5" page="62" hidden="false">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -542,7 +543,7 @@ when a Casualty roll is made against a player:
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -560,23 +561,23 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         </rule>
       </rules>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bfa6-10f6-14cc-b5b1" name="Head Coach" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="24bf-2bc5-6908-7907" value="0.0">
+        <modifier type="set" field="24bf-2bc5-6908-7907" value="0">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4517-a714-7b6b-6869" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24bf-2bc5-6908-7907" type="min"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9254-c2ac-f4a6-0287" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4517-a714-7b6b-6869" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24bf-2bc5-6908-7907" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9254-c2ac-f4a6-0287" type="min"/>
       </constraints>
       <rules>
         <rule id="6178-c27d-a952-acb7" name="Head Coach" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -584,15 +585,15 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         </rule>
       </rules>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c50-a743-1f7e-ce60" name="Necromancer" publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b5c5-fbcc-6636-8e27" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b51c-4862-4316-0b15" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b5c5-fbcc-6636-8e27" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b51c-4862-4316-0b15" type="min"/>
       </constraints>
       <rules>
         <rule id="a51b-4fc7-65b2-1b4e" name="Masters of Undeath" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
@@ -608,9 +609,9 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
         </rule>
       </rules>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9350-0bc7-c2fc-7af5" name="Team Re-Rolls" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -619,160 +620,158 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5d67-ce57-35e8-9f4a" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5d67-ce57-35e8-9f4a" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="a05d-6dd0-ab90-946c" name="Team Re-Rolls (Double Gold Cost Post Creation)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="unit">
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="50000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="50000">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25ea-e9ad-ed4e-09ee" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25ea-e9ad-ed4e-09ee" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="60000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="60000">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="70000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="70000">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ef1-a4de-64c9-efd2" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="set" field="name" value="Team Re-Rolls (Only at team creation)">
               <conditions>
-                <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="100000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="120000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="120000">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="140000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="140000">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="forces" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ef1-a4de-64c9-efd2" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -781,20 +780,20 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f62-e1dd-61b0-21e1" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="28e2-1f93-1ab4-a0a4" type="min"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f62-e1dd-61b0-21e1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="28e2-1f93-1ab4-a0a4" type="min"/>
           </constraints>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4358-1d13-b318-ae37" name="Cheerleaders" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -803,61 +802,61 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c6f9-0384-246a-75af" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c6f9-0384-246a-75af" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="5e0d-1f48-156a-6e6b" name="Cheerleader" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="20000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="20000">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="0e13-9e72-21aa-eae8" value="6.0">
+            <modifier type="set" field="0e13-9e72-21aa-eae8" value="6">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2cf3-d4df-be9e-1dd9" type="min"/>
-            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e13-9e72-21aa-eae8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2cf3-d4df-be9e-1dd9" type="min"/>
+            <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e13-9e72-21aa-eae8" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ad8-6c09-41fd-425c" name="Inducements" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6ad8-6c09-41fd-425c" name="Inducements" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6ab2-112e-0e5c-12c9" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6ab2-112e-0e5c-12c9" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="f809-1ab6-e080-cd50" name="New CategoryLink" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
+        <categoryLink id="f809-1ab6-e080-cd50" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="97ab-2acc-c010-5162" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false" collective="false" import="true" type="upgrade">
@@ -866,26 +865,26 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="100000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedb-a263-56d8-55a4" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedb-a263-56d8-55a4" type="max"/>
           </constraints>
           <rules>
             <rule id="bdcc-bb2a-5eed-8959" name="Halfling Master Chef" publicationId="46da-ba61-6439-83e5" page="92" hidden="false">
@@ -893,21 +892,21 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="300000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="01d3-9cc6-04e0-71cc" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="150000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="150000">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49f0-2c90-1065-7ff9" type="max"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49f0-2c90-1065-7ff9" type="max"/>
           </constraints>
           <rules>
             <rule id="c43f-5f7e-5634-dd98" name="Extra Team Training" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
@@ -915,28 +914,28 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8604-23e5-2fa0-77a3" name="Bribes" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="50000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="50000">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adc-d093-dc54-ed7f" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adc-d093-dc54-ed7f" type="max"/>
           </constraints>
           <rules>
             <rule id="3c11-5abc-fd5c-37c2" name="Bribe" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
@@ -948,9 +947,9 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8e2b-22b4-916e-a32b" name="Bloodweiser Keg" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -959,21 +958,21 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fe-ee61-74c6-e78c" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fe-ee61-74c6-e78c" type="max"/>
           </constraints>
           <rules>
             <rule id="5a90-b76f-783e-559c" name="Bloodweiser Kegs" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
@@ -981,9 +980,9 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -992,22 +991,22 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011e-58d1-5860-31bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011e-58d1-5860-31bf" type="max"/>
           </constraints>
           <rules>
             <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
@@ -1018,42 +1017,42 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="06b6-7113-c30d-00a2" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="c4f1-a521-8e34-78e6" value="1.0">
+            <modifier type="set" field="c4f1-a521-8e34-78e6" value="1">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="30000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="30000">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f1-a521-8e34-78e6" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f1-a521-8e34-78e6" type="max"/>
           </constraints>
           <rules>
             <rule id="7ab4-4dce-18ed-f2a8" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
@@ -1063,42 +1062,42 @@ At the end of the game, any Part-time Assistant Coaches will leave the team.</de
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c0be-227f-2b70-c3fb" name="Temp Agency Cheerleader" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="342c-6146-c56b-b26a" value="2.0">
+            <modifier type="set" field="342c-6146-c56b-b26a" value="2">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="30000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="30000">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342c-6146-c56b-b26a" type="max"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342c-6146-c56b-b26a" type="max"/>
           </constraints>
           <rules>
             <rule id="33fe-7fd4-4cbb-84c6" name="Temp Agency Cheerleader" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
@@ -1108,9 +1107,9 @@ At the end of the game, any Temp Agency Cheerleaders will leave the team.</descr
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1de9-49d7-e762-1541" name="Weather Mage" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -1119,22 +1118,22 @@ At the end of the game, any Temp Agency Cheerleaders will leave the team.</descr
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cfb-01f7-b121-017d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cfb-01f7-b121-017d" type="max"/>
           </constraints>
           <rules>
             <rule id="003f-b159-146b-b010" name="Weather Mage" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
@@ -1144,9 +1143,9 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5e39-084d-b112-fb83" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
@@ -1155,21 +1154,21 @@ You may use a Weather Mage once per game, at the start of any one of your team t
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb8-5829-41b4-efa0" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb8-5829-41b4-efa0" type="max"/>
           </constraints>
           <rules>
             <rule id="5801-e40c-416f-c803" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
@@ -1193,9 +1192,9 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2fb6-cb4b-2ad0-ddc5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -1204,22 +1203,22 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d974-04d8-a502-00c9" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d974-04d8-a502-00c9" type="max"/>
           </constraints>
           <rules>
             <rule id="c2bc-4cef-6ea9-7cd5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
@@ -1233,31 +1232,31 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
               <selectionEntries>
                 <selectionEntry id="c6e3-6eda-4503-4ca9" name="10,000 GP" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b588-3d70-583c-df41" type="max"/>
+                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b588-3d70-583c-df41" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="46ca-4d79-23d4-43ac" name="5,000 GP" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53e-1a2a-dfb0-605c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53e-1a2a-dfb0-605c" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0818-1c97-2ef9-e897" name="Medicinal Unguent" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -1266,22 +1265,22 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc18-50c8-e69f-c84d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc18-50c8-e69f-c84d" type="max"/>
           </constraints>
           <rules>
             <rule id="0c6d-afaf-10cd-d568" name="Medicinal Unguent" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
@@ -1289,9 +1288,9 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="faf3-bd7c-1df9-9724" name="Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" collective="false" import="true" type="upgrade">
@@ -1300,15 +1299,15 @@ If, however, your team loses, the stake is lost (such is the risk of gambling)!<
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1374,8 +1373,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
 1-2-3-4
 5-###-6
 7-###-8
-9-10-11-12
-</characteristic>
+9-10-11-12</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1396,21 +1394,21 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             <infoLink id="7b02-58e7-32d0-740e" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="acc7-77d9-9be3-fc06" name="Desperate Measures" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a83e-09d8-14af-5523" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a83e-09d8-14af-5523" type="max"/>
           </constraints>
           <rules>
             <rule id="84f6-8499-10ed-0c45" name="Desperate Measures" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1420,12 +1418,12 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <selectionEntryGroups>
             <selectionEntryGroup id="a892-37c9-2614-529a" name="Desperate Measures" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a193-939a-25d6-f4c3" type="max"/>
+                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a193-939a-25d6-f4c3" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="ca8d-0def-b903-3867" name="1. You Dope" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3167-e4ca-bc6d-6b68" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3167-e4ca-bc6d-6b68" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="3a80-0337-a186-f9bb" name="You Dope" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1436,14 +1434,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8fdf-f064-967c-61fd" name="2. Razzle-Dazzle" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e3b-2b22-c42d-3345" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e3b-2b22-c42d-3345" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="df85-b694-3f1f-0cf6" name="Razzle-Dazzle" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1451,14 +1449,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="fcd4-e9e5-25af-2c68" name="3. Hangover" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f79-eba5-dfbf-1e67" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f79-eba5-dfbf-1e67" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="4c33-23f0-2525-7369" name="Hangover" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1466,14 +1464,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="685d-586d-1494-9a5e" name="4. Grudge Match" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c0-3e79-8e6e-0f4e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c0-3e79-8e6e-0f4e" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="5ccb-3555-1077-3536" name="Grudge Match" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1481,14 +1479,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e433-9686-5955-624d" name="5. Set Piece" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6466-3692-3ff6-b3a7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6466-3692-3ff6-b3a7" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="f3a6-d681-1569-8def" name="Set Piece" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1496,14 +1494,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="42e7-43c6-fbd0-813c" name="6. Sports Espionage" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b98f-b98f-bd81-858c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b98f-b98f-bd81-858c" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="2c73-c9e0-1f02-9db4" name="Sports Espionage" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1511,14 +1509,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9c5b-e164-9421-0828" name="7. Discarded Banana Skin" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc02-afff-e682-137b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc02-afff-e682-137b" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="f924-deab-2d8a-450b" name="Discarded Banana Skin" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1526,14 +1524,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="19b7-49da-abe5-d90d" name="8. Magic Scroll" publicationId="9118-6c97-8006-93a4" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff3-576a-0496-1765" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff3-576a-0496-1765" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="9463-6551-b50f-498e" name="Magic Scroll" publicationId="9118-6c97-8006-93a4" page="97" hidden="false">
@@ -1543,26 +1541,26 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <entryLinks>
                     <entryLink id="5ab2-a3fc-9691-f4bc" name="Hireling Sports-Wizard" hidden="false" collective="false" import="true" targetId="c15c-c163-dae0-bad1" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0"/>
+                        <modifier type="set" field="ffff-7836-9be4-196c" value="0"/>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b1-818d-7a25-3801" type="min"/>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b1-818d-7a25-3801" type="min"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3435-1fa5-943b-16fa" name="Ancient Artefact" publicationId="a98a-aed9-fafb-e69f" page="17" hidden="false" collective="false" import="true" type="upgrade">
@@ -1571,22 +1569,22 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5331-62c5-2e1a-6aaf" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5331-62c5-2e1a-6aaf" type="max"/>
           </constraints>
           <rules>
             <rule id="dc8e-7c7e-9657-71f4" name="Ancient Artefact" publicationId="a98a-aed9-fafb-e69f" page="17" hidden="false">
@@ -1601,21 +1599,21 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             </rule>
           </rules>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c7a-5e97-01bc-a590" name="Catch" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c1-6fbf-ebca-17ce" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c1-6fbf-ebca-17ce" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="bed8-0faa-b003-4a97" name="Catch" hidden="false" targetId="f6cc-aedd-0191-5ffa" type="rule"/>
@@ -1624,14 +1622,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="00c6-686e-580f-d281" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c329-629e-ecc0-713b" name="Diving Catch" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19af-b575-2437-c81f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19af-b575-2437-c81f" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8b93-8504-381e-8a28" name="Diving Catch" hidden="false" targetId="2938-c9de-0989-24be" type="rule"/>
@@ -1640,14 +1638,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="95ed-9127-137c-a161" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f07b-09f1-9f88-ae6b" name="Diving Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f94-dc40-ce4b-91cb" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f94-dc40-ce4b-91cb" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="4002-cf36-3db3-b81c" name="Diving Tackle" hidden="false" targetId="f8c9-51b2-2560-8072" type="rule"/>
@@ -1656,14 +1654,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="e7f5-afdc-f4bf-011e" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd4c-dac9-e7d1-f47b" name="Jump Up" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b325-82eb-bfcc-7a54" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b325-82eb-bfcc-7a54" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="92c0-21be-5421-5d33" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
@@ -1672,14 +1670,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="eba4-eacf-df67-f082" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ede-2f80-ca60-b608" name="Sprint" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35c-b4cc-6085-2ea5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35c-b4cc-6085-2ea5" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d564-9158-9532-d8ae" name="Sprint" hidden="false" targetId="9b52-0018-4d6b-5525" type="rule"/>
@@ -1688,30 +1686,30 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="1da3-d824-ead1-9bd5" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0aa2-ed3d-a7a8-89b4" name="Sidestep" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca0-bd0e-d110-239a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca0-bd0e-d110-239a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="9963-a406-1446-343b" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="9963-a406-1446-343b" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b4c9-c353-b9e9-9afc" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="286b-137e-d683-c2a3" name="Sure Feet" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30c-5e0f-5402-5865" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30c-5e0f-5402-5865" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3541-9741-0664-d3e8" name="Sure Feet" hidden="false" targetId="1eb8-8728-2860-559a" type="rule"/>
@@ -1720,14 +1718,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="76d1-62ac-271c-3649" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="30df-c110-f163-220c" name="Dodge" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0461-a6b7-a389-03da" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0461-a6b7-a389-03da" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a924-3ab7-4e7a-b4db" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
@@ -1736,14 +1734,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="395a-ff0b-3851-865b" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6685-b4e5-531d-e9d7" name="Sneaky Git" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a8-8eff-c3b5-d32e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a8-8eff-c3b5-d32e" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b6ad-daae-df54-c2f7" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
@@ -1752,14 +1750,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="df05-8b9e-2066-cb93" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="851c-f5dc-38d9-d2e5" name="Leap" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a8-0130-ce8d-81e9" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a8-0130-ce8d-81e9" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="2f27-8bb3-a83d-2aac" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
@@ -1768,14 +1766,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="1b71-c65e-5acc-8e27" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6c6d-47aa-0976-fce0" name="Block" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6c6d-47aa-0976-fce0" name="Block" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae0-9eb7-8b3f-3453" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae0-9eb7-8b3f-3453" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="166f-ae2b-09e9-f73d" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
@@ -1784,14 +1782,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="d0c1-2256-f838-f172" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e36-5cc6-094e-7cd8" name="Dauntless" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2de3-d683-4211-0abf" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2de3-d683-4211-0abf" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a921-a9fb-dbc1-8d44" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
@@ -1800,14 +1798,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="647f-b6ea-e3f7-2b43" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7fa2-3bc2-cc79-aeb1" name="Dirty Player (+1)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0f1-7843-a5ac-ccb2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0f1-7843-a5ac-ccb2" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="c8ac-891a-947b-5bc2" name="Dirty Player (+1)" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
@@ -1816,14 +1814,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="4a78-a099-e32d-2cf9" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e997-6798-c53e-55ad" name="Kick" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade8-159a-ab59-2e48" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade8-159a-ab59-2e48" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="c91b-ac55-5825-701e" name="Kick" hidden="false" targetId="23b9-3de7-99fd-e53b" type="rule"/>
@@ -1832,14 +1830,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="7f1a-7f2f-5d39-08c9" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c48-9997-5ed9-d1f1" name="Fend" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6e6-a99e-3dac-8f81" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6e6-a99e-3dac-8f81" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="712c-bbda-400b-1f60" name="Fend" hidden="false" targetId="6683-1874-842d-7423" type="rule"/>
@@ -1848,14 +1846,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="4c81-e2b1-2f3f-6222" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9f99-32a4-cfb9-3f93" name="Pro" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="383c-7488-b520-b883" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="383c-7488-b520-b883" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8f05-47fd-40b2-2a98" name="Pro" hidden="false" targetId="c68e-5537-cb7c-db47" type="rule"/>
@@ -1864,14 +1862,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="5282-0970-cc7e-dccc" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be32-bc2b-49b7-1c0e" name="Shadowing" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d8-714a-48fd-3b41" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d8-714a-48fd-3b41" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="753e-dd05-296d-2b61" name="Shadowing" hidden="false" targetId="e52d-083d-8549-3edb" type="rule"/>
@@ -1880,14 +1878,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="f3a4-c734-077c-3b85" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e98-5279-b39e-1d73" name="Frenzy" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225c-9346-c3da-6fba" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225c-9346-c3da-6fba" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="2fe8-ab25-2738-0d33" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
@@ -1896,14 +1894,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="4ea9-f758-c0a4-390d" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b6f-3ef9-1fbc-a48f" name="Strip Ball" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649e-2bf4-871b-9071" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649e-2bf4-871b-9071" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="385c-f53e-7fb9-97ab" name="Strip Ball" hidden="false" targetId="32ed-9065-34b2-86e1" type="rule"/>
@@ -1912,14 +1910,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="82e2-db35-48d7-0c4a" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c1cb-44a9-a187-89a1" name="Sure Hands" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="415c-dc29-9884-4a39" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="415c-dc29-9884-4a39" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ac62-616b-3188-adcf" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
@@ -1928,14 +1926,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="3417-8424-523b-b51e" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a16-b887-4ba8-15c6" name="Wrestle" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d79-b9b9-db61-aea8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d79-b9b9-db61-aea8" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b14f-ef4e-4ef7-b2da" name="Wrestle" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
@@ -1944,14 +1942,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="d58e-2483-f4dd-46c7" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="95a9-67ee-0356-2dba" name="Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a890-2d7b-cc93-83da" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a890-2d7b-cc93-83da" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="be5e-74d0-b6f4-eb63" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
@@ -1960,14 +1958,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="5886-546d-089b-3519" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b20-7735-aaf0-700c" name="Big Hand" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a152-51a5-203e-1d00" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a152-51a5-203e-1d00" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ec36-6d50-f7d5-bf02" name="Big Hand" hidden="false" targetId="5cfd-ead0-441b-4cdb" type="rule"/>
@@ -1976,14 +1974,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="29ae-7449-7954-3502" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de8d-44b0-5a3a-5ff6" name="Claws" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e799-d685-2650-2ac1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e799-d685-2650-2ac1" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="50d9-6b86-07a6-5ed9" name="Claws" hidden="false" targetId="09fa-89a5-d1ff-2b4a" type="rule"/>
@@ -1992,14 +1990,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="6d60-9e21-bb59-6ad9" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5e29-2928-7d20-99c3" name="Disturbing Presence" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad95-43e1-ee62-d5c0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad95-43e1-ee62-d5c0" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="80be-d883-3aeb-4948" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
@@ -2008,14 +2006,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="f067-6d4c-16c7-111c" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="64da-eb16-90a8-7fde" name="Safe Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9081-e51c-5374-8790" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9081-e51c-5374-8790" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3414-4462-d96a-f052" name="Safe Pass" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
@@ -2024,14 +2022,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="69c1-6eba-4b48-a639" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5278-4a58-436e-f886" name="Nerves of Steel" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b893-20c9-b482-8dd7" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b893-20c9-b482-8dd7" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8af0-87a5-2ee5-880b" name="Nerves of Steel" hidden="false" targetId="953f-3c5a-e54e-d44b" type="rule"/>
@@ -2040,14 +2038,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="37d9-01bd-236c-9d28" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1dce-1f4d-e2b8-8e2f" name="Grab" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657c-5e9f-5857-9a68" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657c-5e9f-5857-9a68" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="074f-4b86-97e0-cf61" name="Grab" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
@@ -2056,14 +2054,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="a0d0-ce0e-995b-574e" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b6ac-e2c8-e0d7-e092" name="Mighty Blow (+1)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2268-77dd-3797-562d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2268-77dd-3797-562d" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d4c5-22d6-abed-734b" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
@@ -2072,14 +2070,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="c97d-c61e-4bab-cd1b" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6036-f009-d354-0a40" name="Stand Firm" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d19-06a2-3408-7d4d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d19-06a2-3408-7d4d" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b498-677c-e2e3-0217" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
@@ -2088,14 +2086,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="3fb0-8690-40bb-d43a" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9bbd-7844-16a2-c9fe" name="Thick Skull" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b13-f6e7-0e75-5190" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b13-f6e7-0e75-5190" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="73c3-91e9-2186-0362" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
@@ -2104,14 +2102,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="2ad3-2185-df1a-22d1" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ece-9309-c7da-d7a4" name="Break Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="963a-555a-b4cc-4753" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="963a-555a-b4cc-4753" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5723-a656-de9e-f8c2" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
@@ -2120,14 +2118,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="a05c-c7d6-f779-8cbc" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e94-6564-5f79-0128" name="Dump-off" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0667-5e55-310c-8cc2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0667-5e55-310c-8cc2" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ab35-547b-b6d3-a24c" name="Dump-Off" hidden="false" targetId="8196-2dca-31a2-0516" type="rule"/>
@@ -2136,14 +2134,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="c867-b8db-38e0-78fa" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ced-cc9b-1a5a-8874" name="Tentacles" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1150-5f52-8ae2-e983" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1150-5f52-8ae2-e983" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="4e64-32d1-447a-1435" name="Tentacles" hidden="false" targetId="ff10-4ba0-21d5-c6e8" type="rule"/>
@@ -2152,14 +2150,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="6193-ea68-5a10-7825" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b4b-d544-c4b1-e5d1" name="Juggernaut" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc15-b034-1267-d219" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc15-b034-1267-d219" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="f957-03c7-6d32-c741" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
@@ -2168,14 +2166,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="e25e-266e-9b20-4c02" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="12a1-0e6d-edcb-0f8a" name="Hail Mary Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfc-3542-95e9-dd03" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfc-3542-95e9-dd03" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="7e3c-9ab8-616a-7f75" name="Hail Mary Pass" hidden="false" targetId="7ac3-b992-f82a-3a9f" type="rule"/>
@@ -2184,14 +2182,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="9ad5-f243-0e88-5577" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d8ab-3700-1ec7-d59c" name="Accurate" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1496-cfb4-0fb0-e35c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1496-cfb4-0fb0-e35c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a8b7-e51e-9ecd-7320" name="Accurate" hidden="false" targetId="89cc-bb35-47fa-ceab" type="rule"/>
@@ -2200,14 +2198,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="0966-8f3d-7fdf-d4cf" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87dc-1360-433d-baed" name="Guard" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db35-6ea6-0757-6abe" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db35-6ea6-0757-6abe" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b293-f40f-0d67-aaf1" name="Guard" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
@@ -2216,14 +2214,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="1cb4-e1b0-6c54-9da7" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f2a0-5f3b-f43e-13fa" name="Multiple Block" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02b-1e55-a4ea-cdb0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02b-1e55-a4ea-cdb0" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ef52-ff06-fd2c-e16e" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
@@ -2232,14 +2230,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="7ee2-937f-88eb-2cb8" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="828c-bd4a-fd63-8828" name="Strong Arm" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="181f-44c9-c6bd-5a00" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="181f-44c9-c6bd-5a00" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d907-159e-5e3d-d0ab" name="Strong Arm" hidden="false" targetId="7316-48fa-cca5-c42c" type="rule"/>
@@ -2248,14 +2246,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="f63a-9ae3-3a46-2a18" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfde-f0d4-4609-cd57" name="Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c434-cf72-6ec4-10d5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c434-cf72-6ec4-10d5" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="57a2-b6d3-25f2-b9db" name="Pass" hidden="false" targetId="ac12-d5b0-529b-433b" type="rule"/>
@@ -2264,14 +2262,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="6af1-48e5-518a-dce6" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d92-bca6-7d6b-03cd" name="Leader" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="009d-107f-120a-eb5c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="009d-107f-120a-eb5c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3ca8-f3b4-5e19-03d2" name="Leader" hidden="false" targetId="b08e-3323-b828-dfe3" type="rule"/>
@@ -2280,14 +2278,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="a430-8aaa-3e15-a907" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14f3-1ae1-2756-d310" name="Very Long Legs" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="716c-9763-3c25-a617" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="716c-9763-3c25-a617" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="33a8-e22c-3366-8805" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
@@ -2296,14 +2294,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="bfe6-9e8f-57de-81cd" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e06-673b-e8a4-69b9" name="Prehensile Tail" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d2-78bb-41ee-0180" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d2-78bb-41ee-0180" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="7e22-85c1-d6f3-35ba" name="Prehensile Tail" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
@@ -2312,14 +2310,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="34a5-73a7-0268-a50e" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fca-f232-20db-5486" name="Extra Arms" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb7e-ce4c-6207-127c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb7e-ce4c-6207-127c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="fff7-b48e-c9ff-8483" name="Extra Arms" hidden="false" targetId="8934-8af7-4015-7b30" type="rule"/>
@@ -2328,14 +2326,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="370e-2401-429f-2102" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb9c-3ef4-f7a6-9234" name="Foul Appearance" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193b-4031-bf8d-d81c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193b-4031-bf8d-d81c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5a96-5e2a-88e0-9111" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
@@ -2344,14 +2342,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="83b4-f4ea-1b77-b488" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d52e-e727-0ee4-ec85" name="Horns" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b775-0ef7-6981-930d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b775-0ef7-6981-930d" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a694-eb44-db75-f2fd" name="Horns" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
@@ -2360,14 +2358,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="1a7e-0f74-6028-974b" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee92-fa03-9a46-0aa4" name="Two Heads" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4bf-21d2-09b7-9d42" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4bf-21d2-09b7-9d42" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5edf-8ccc-5408-40ef" name="Two Heads" hidden="false" targetId="ac81-c360-7e27-2e0a" type="rule"/>
@@ -2376,89 +2374,89 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="95d5-c27b-db88-7884" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d33f-b5e3-efce-f815" name="+AG" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f140-0619-5717-3123" name="+AV" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e61b-54a7-5c2b-96c5" name="+MA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a192-15aa-5823-f102" name="+ST" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b98d-5b2e-3c9b-4b02" name="-ST" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2467,17 +2465,17 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b3ba-e2fe-664a-fafc" name="-MA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2486,17 +2484,17 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca52-545a-6510-c3a9" name="-AV" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2505,17 +2503,17 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5477-7f75-60f5-b7e5" name="-AG" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2524,24 +2522,24 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86a5-7971-858d-5bf4" name="Niggling Injury" publicationId="46da-ba61-6439-83e5" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="86a5-7971-858d-5bf4" name="Niggling Injury" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2551,9 +2549,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ee8-d98a-5106-523d" name="Miss Next Game" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2562,26 +2560,26 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" field="name" value="Miss Next Game (Reselect Skills/Attributes to Remove TV)">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="584e-62df-74f4-15bb" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="584e-62df-74f4-15bb" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6af2-0ad7-97ea-b3a2" name="Dead!" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2590,26 +2588,26 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" field="name" value="Dead! (Reselect Skills/Attributes to Remove TV)">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0661-a638-ec18-68c3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0661-a638-ec18-68c3" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19ad-ba99-d331-e16b" name="Treasury" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2618,22 +2616,22 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="d2b5-b950-b1e6-8380" value="0.0">
+        <modifier type="set" field="d2b5-b950-b1e6-8380" value="0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0901-1542-9fb1-5d23" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b5-b950-b1e6-8380" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0901-1542-9fb1-5d23" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b5-b950-b1e6-8380" type="min"/>
       </constraints>
       <rules>
         <rule id="92e6-41fc-472b-794f" name="Expensive Mistakes (100k-195k)" publicationId="46da-ba61-6439-83e5" page="73" hidden="false">
@@ -2642,8 +2640,8 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="19" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2660,8 +2658,8 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="49.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="40.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="49" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="40" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2677,8 +2675,8 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="19ad-ba99-d331-e16b" value="50.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
-                <condition field="selections" scope="19ad-ba99-d331-e16b" value="59.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                <condition field="selections" scope="19ad-ba99-d331-e16b" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                <condition field="selections" scope="19ad-ba99-d331-e16b" value="59" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2695,8 +2693,8 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="39.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="30.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="39" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="30" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2714,8 +2712,8 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
-                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="29.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                    <condition field="selections" scope="19ad-ba99-d331-e16b" value="29" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2730,7 +2728,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="19ad-ba99-d331-e16b" value="60.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
+                <condition field="selections" scope="19ad-ba99-d331-e16b" value="60" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc4-c0b2-11b9-e745" type="lessThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2746,68 +2744,68 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <modifiers>
             <modifier type="set" field="name" value="5,000 Treasury Copper">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d87-d8fb-d6bc-ce75" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d87-d8fb-d6bc-ce75" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3dc4-c0b2-11b9-e745" name="10,000 Treasury Gold" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="10,000 Treasury Copper">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8464-1069-bc87-9a58" name="Famous Referee (2D6)" publicationId="46da-ba61-6439-83e5" page="89" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e585-da81-375f-b016" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e585-da81-375f-b016" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0390-715c-b0f8-66f2" name="+PA" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ce0f-f781-1e0e-74e5" name="-PA" hidden="false" collective="false" import="true" type="upgrade">
@@ -2816,17 +2814,17 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="625c-de63-0116-92fb" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d2ca-b76d-9258-f261" name="Assistant Coaches" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -2835,53 +2833,53 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4580-b929-3b2d-4f27" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4580-b929-3b2d-4f27" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="b37b-deba-3eac-479b" name="Assistant Coach" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
           <modifiers>
-            <modifier type="set" field="8d9e-e2e8-0e23-83e6" value="3.0">
+            <modifier type="set" field="8d9e-e2e8-0e23-83e6" value="3">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="20000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="20000">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3459-9f84-5d0e-6c18" type="min"/>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-e2e8-0e23-83e6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3459-9f84-5d0e-6c18" type="min"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-e2e8-0e23-83e6" type="max"/>
           </constraints>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b813-b8f6-47ea-2f87" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="38" hidden="false" collective="false" import="true" type="upgrade">
@@ -2890,129 +2888,129 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea76-072f-2f18-db66" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea76-072f-2f18-db66" type="max"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="33f6-288e-f93b-d153" name="Prayers to Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="5429-5648-33a1-ab2f" name=" 1. Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de2-b496-5f42-1e10" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de2-b496-5f42-1e10" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="ffd1-f902-ef64-b95e" name="Treacherous Trapdoor" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c522-cc34-7027-0ca8" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fa6a-e295-3a0b-5913" name=" 2. Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ca-100e-a9a5-c691" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ca-100e-a9a5-c691" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="bb60-53ff-bec4-c80a" name="Friends with the Ref" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60a9-8bc0-8ef9-beff" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2e98-d1bd-e16d-311f" name=" 3. Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="967b-e49c-21db-af10" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="967b-e49c-21db-af10" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="7634-f036-6b0d-e893" name="Stiletto" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="27c4-20a9-3bfd-57e3" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e2e2-8b82-9fa9-3507" name=" 4. Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3534-72f7-c899-04a6" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3534-72f7-c899-04a6" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="ac6f-a64b-1df8-f3cb" name="Iron Man" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="83df-5319-db47-15fd" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b5c3-8704-d317-1290" name=" 5. Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75a0-93ef-4f71-d04d" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75a0-93ef-4f71-d04d" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="c00a-fd1f-d524-23e6" name="Knuckle Dusters" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="1640-4a49-f269-b0e2" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f895-2aa3-8b4f-66f2" name=" 6. Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4fb-f7a1-d502-1e76" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4fb-f7a1-d502-1e76" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="9697-c291-bcfd-d0ba" name="Bad Habits" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="e973-21a9-5b96-91da" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e1a5-1bf4-d152-88d4" name=" 7. Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf1-4569-e863-c60a" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf1-4569-e863-c60a" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="1481-75a8-20e7-1386" name="Greasy Cleats" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="f1f7-e2ac-d235-67ea" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5533-f103-c112-2c2e" name=" 8. Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0151-1baa-fb77-6b0b" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0151-1baa-fb77-6b0b" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="8e18-41a8-bb9c-ead9" name="Blessed Statue of Nuffle" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="a675-bc5b-de5c-ba30" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8b93-9224-6e24-731f" name=" 9. Moles under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3021,23 +3019,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a4-c6a9-d1b3-7f40" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a4-c6a9-d1b3-7f40" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="e2a3-d5f5-a409-e7fd" name="Moles Under the Pitch" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="46f2-c800-6bfc-120f" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6443-7a62-eaef-229f" name="10. Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3046,23 +3044,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f0-f8e9-785c-8688" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f0-f8e9-785c-8688" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="f7ea-94d2-7d4d-8233" name="Perfect Passing" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="98aa-2fae-0339-03a7" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="eb02-37fa-bcc9-4897" name="11. Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3071,23 +3069,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9594-b65d-81cd-f709" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9594-b65d-81cd-f709" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="9a2d-7f5b-7c0c-f6c1" name="Fan Interaction" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="8b4a-c774-c4fa-409d" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6e96-b673-4ab7-e428" name="12. Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3096,23 +3094,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a16-621d-c604-4d79" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a16-621d-c604-4d79" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="3e96-5818-2274-61ec" name="Necessary Violence" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="60f3-099d-1806-65c2" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3d8b-a58e-3fb1-3753" name="13. Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3121,23 +3119,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63e-a497-db08-a5a3" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63e-a497-db08-a5a3" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="ea35-a2bf-c6e3-2aac" name="Fouling Frenzy" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="965e-595e-a3ab-e19d" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5de2-b2e3-9f8d-a4c3" name="14. Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3146,23 +3144,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a37-eacf-f685-8d2d" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a37-eacf-f685-8d2d" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="26a8-305f-6a42-4b45" name="Throw a Rock" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="4892-aa08-8bfe-1705" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4dbe-ccd5-3dcf-1bd5" name="15. Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3171,23 +3169,23 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680a-161a-7b1b-3cf4" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680a-161a-7b1b-3cf4" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="cd04-9696-89cc-ba7a" name="Under Scrutiny" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="2363-63b1-5480-4d75" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="76a2-93b7-0bcb-81d4" name="16. Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" collective="false" import="true" type="upgrade">
@@ -3196,37 +3194,37 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be6a-ab66-35f0-b9fa" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be6a-ab66-35f0-b9fa" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="d8a9-5f89-47c6-add4" name="Intensive Training" publicationId="46da-ba61-6439-83e5" page="39" hidden="false" targetId="c49c-1549-bfb3-8f6d" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2efa-ed98-bd7d-6ff1" name="Defensive" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef6-2022-e17d-d695" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef6-2022-e17d-d695" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ebf0-2791-140c-6f78" name="Defensive" hidden="false" targetId="2a6a-622c-22f3-4293" type="rule"/>
@@ -3235,14 +3233,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="7a0f-3bce-559b-3efa" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d44d-4a69-ca9f-ef4c" name="Safe Pair of Hands" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b385-2820-56f8-e145" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b385-2820-56f8-e145" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="45e0-d688-0d5d-4107" name="Safe Pair of Hands" hidden="false" targetId="f672-176e-7433-41f6" type="rule"/>
@@ -3251,14 +3249,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="9af0-6daa-ec36-f5c4" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f32f-8e0b-95fc-1ece" name="Iron Hard Skin" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c0e-382d-04b8-e7a5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c0e-382d-04b8-e7a5" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="6358-77ea-1aa2-253e" name="Iron Hard Skin" hidden="false" targetId="1f09-425c-df44-48ec" type="rule"/>
@@ -3267,14 +3265,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="93cb-7a10-bef4-707e" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c37-ab43-92e3-65bd" name="Monstrous Mouth" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1355-2875-4f82-66bd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1355-2875-4f82-66bd" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="90dc-d74f-5f56-4d78" name="Monstrous Mouth" hidden="false" targetId="0a11-33b3-7160-ebd4" type="rule"/>
@@ -3283,14 +3281,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="670f-8932-00e5-1604" name="[M]utations" hidden="false" targetId="de55-2b96-2cab-c70d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b95c-f05a-93f8-edd8" name="Cloud Burster" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54a5-8559-a164-d85c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54a5-8559-a164-d85c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8a29-f625-a402-94ad" name="Cloud Burster" hidden="false" targetId="f37e-6769-0cc8-3ede" type="rule"/>
@@ -3299,14 +3297,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="a55b-05e1-cf16-e3e9" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c4d-cb75-ab15-ad49" name="Cannoneer" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15be-b534-86df-8983" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15be-b534-86df-8983" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b9aa-5423-f76d-f8c4" name="Cannoneer" hidden="false" targetId="988d-1349-9f05-206c" type="rule"/>
@@ -3315,14 +3313,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="49f7-7a81-2489-0d6d" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b5e6-5b6a-02b5-5e27" name="Fumblerooskie" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4865-551b-24e4-2e49" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4865-551b-24e4-2e49" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3415-2841-bb63-7183" name="Fumblerooskie" hidden="false" targetId="bed2-c7d6-9abb-93ce" type="rule"/>
@@ -3331,14 +3329,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="b7ad-4352-505a-862f" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="381c-5cad-621e-8e55" name="On the Ball" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ee6-fed4-bc1b-89f4" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ee6-fed4-bc1b-89f4" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="cb63-96b2-e1ed-3c9b" name="On the Ball" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
@@ -3347,14 +3345,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="a30b-d60d-914b-403d" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b202-6647-1ae5-3c64" name="Running Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1312-c0fa-96df-d043" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1312-c0fa-96df-d043" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="14f9-d34d-26af-6db7" name="Running Pass" hidden="false" targetId="c58b-3cb1-0c9e-fcf3" type="rule"/>
@@ -3363,14 +3361,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="1511-23aa-cd2a-04b6" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="68a7-5f56-92ba-c718" name="Arm Bar" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bb7-d3d6-6ba1-c861" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bb7-d3d6-6ba1-c861" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8732-9a47-490f-3c12" name="Arm Bar" hidden="false" targetId="c8fe-9ea9-6803-14a0" type="rule"/>
@@ -3379,14 +3377,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="d0d0-62fd-003f-3b0f" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fd2-79a1-26f5-bf4d" name="Brawler" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b81a-35d2-acb3-274d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b81a-35d2-acb3-274d" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="c4fe-4401-989e-4c2a" name="Brawler" hidden="false" targetId="3ee1-a55e-60cc-c265" type="rule"/>
@@ -3395,14 +3393,14 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="f023-3caf-195d-2336" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de4d-0c5e-4bb4-7a67" name="Pile Driver" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fee-7da2-e74b-48af" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fee-7da2-e74b-48af" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="6557-e82c-24ac-2ed7" name="Pile Driver" hidden="false" targetId="d788-8100-69cb-6044" type="rule"/>
@@ -3411,182 +3409,182 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <categoryLink id="51ef-f02b-204a-66d8" name="[S]trength" hidden="false" targetId="6560-e720-c923-72ae" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="91ba-cf1f-6fd4-6e37" name="Random Secondary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83d7-f547-143a-abf9" name="Random Primary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f4c-dbf3-d819-a3c7" name="Chosen Primary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="20000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b751-b84a-58f5-8d4a" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="0.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3634-f4ae-b277-30bc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce3b-e531-b6b3-0b3b" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="00a2-6ca0-31c0-e89e" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d283-b08d-bde3-5793" name="Mercenary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b0b-be70-ab30-dbe1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b0b-be70-ab30-dbe1" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b38d-6ca8-2092-1c48" name="Favored of..." hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c159-cf81-d4dc-06c8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c159-cf81-d4dc-06c8" type="max"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="af65-265c-7fdb-44b5" name="Favored of..." publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b0-e563-b6d5-813f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d911-5dab-a5f1-d161" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b0-e563-b6d5-813f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d911-5dab-a5f1-d161" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="a5fe-7821-448b-4132" name="Chaos Undivided" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="436b-94fe-e712-be92" name="Khorne" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="768b-b64b-f982-47e4" name="Nurgle" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1d09-99bf-da51-3f46" name="Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a7fa-9561-5962-0f53" name="Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5752-b3a5-5dc7-4b24" name="Temporarily Retired" hidden="false" collective="false" import="true" type="upgrade">
@@ -3595,26 +3593,26 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" field="name" value="Temproarily Retired (Reselect Skills/Attributes to Remove TV)">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13e-fba9-8f81-fd34" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f13e-fba9-8f81-fd34" type="max"/>
       </constraints>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4816-c8dd-bffc-3384" name="Game Type" hidden="false" collective="false" import="true" type="upgrade">
@@ -3623,49 +3621,49 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="3102-8546-ab24-5edf" value="0.0">
+        <modifier type="set" field="3102-8546-ab24-5edf" value="0">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3102-8546-ab24-5edf" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="547a-b462-1324-8db9" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3102-8546-ab24-5edf" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="547a-b462-1324-8db9" type="max"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="5e2e-cd64-f6dc-efaf" name="Game Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="4eae-210b-b45f-548f">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bca-1b5f-2e53-e2fa" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcde-c924-8b53-5725" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bca-1b5f-2e53-e2fa" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcde-c924-8b53-5725" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="4319-3b55-04c5-2907" name="Exhibition" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4eae-210b-b45f-548f" name="League" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a93a-5959-e70d-5d22" name="Home Stadium" publicationId="9118-6c97-8006-93a4" page="68" hidden="false" collective="false" import="true" type="upgrade">
@@ -3674,17 +3672,17 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3704,20 +3702,20 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
       <selectionEntries>
         <selectionEntry id="2ded-cfe7-fe43-74e9" name="Purchased Stadium" publicationId="9118-6c97-8006-93a4" page="67" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ce2-a525-fea2-051c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ce2-a525-fea2-051c" type="max"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a2f7-60ae-157a-2d5e" name="Stadium Type" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a66a-286d-cd4a-f1e5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8127-f898-57f5-eff6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a66a-286d-cd4a-f1e5" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8127-f898-57f5-eff6" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="11d7-4e68-e8eb-2b63" name="Ununsual Playing Surface" hidden="false" collective="false" import="true" type="upgrade">
@@ -3725,9 +3723,9 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="a237-8756-c598-3587" name="Unusual Playing Surface" hidden="false" collective="false" import="true" targetId="0c4e-7614-3cde-29cd" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="44da-7037-1b21-bb73" name="Rough and Ready Stadium" hidden="false" collective="false" import="true" type="upgrade">
@@ -3735,9 +3733,9 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="8240-7dd2-4fad-49d6" name="Rough and Ready Stadium" hidden="false" collective="false" import="true" targetId="ca94-94ae-5f98-bd68" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="333d-950e-472b-2741" name="Luxury Stadium" hidden="false" collective="false" import="true" type="upgrade">
@@ -3745,9 +3743,9 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="7d38-a89c-34fe-60ce" name="Luxury Stadium" hidden="false" collective="false" import="true" targetId="09a2-971d-51ca-5ab4" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7384-9858-e37e-493e" name="Local Crowd" hidden="false" collective="false" import="true" type="upgrade">
@@ -3755,18 +3753,18 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="17b3-3ec5-9d25-2bb4" name="Local Crowd" hidden="false" collective="false" import="true" targetId="be60-70af-3a08-0f8f" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="70ee-d59b-c215-b8c6" name="Stadium Trait" hidden="false" collective="false" import="true" type="upgrade">
@@ -3775,28 +3773,28 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65e4-2b7f-07c4-f064" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65e4-2b7f-07c4-f064" type="max"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="bbd6-566e-884c-0694" name="Stadium Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="7bc1-d0be-1c8b-7a1d">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3c-a5d6-7d35-a301" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594e-63ae-3ab4-557d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3c-a5d6-7d35-a301" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594e-63ae-3ab4-557d" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="448d-1e1b-079a-bb0a" name="02 -03 Ununsual Playing Surface" hidden="false" collective="false" import="true" type="upgrade">
@@ -3804,9 +3802,9 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="ff0f-c75c-bb1e-76d9" name="Unusual Playing Surface" hidden="false" collective="false" import="true" targetId="0c4e-7614-3cde-29cd" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="55ec-4d3b-510c-1c64" name="05-05 - Rough and Ready Stadium" hidden="false" collective="false" import="true" type="upgrade">
@@ -3814,9 +3812,9 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="ee68-4480-6be3-ff7e" name="Rough and Ready Stadium" hidden="false" collective="false" import="true" targetId="ca94-94ae-5f98-bd68" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="06bf-b0af-1069-4ac4" name="09-10 - Luxury Stadium" hidden="false" collective="false" import="true" type="upgrade">
@@ -3824,9 +3822,9 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="8a05-93ef-a4fe-79e9" name="Luxury Stadium" hidden="false" collective="false" import="true" targetId="09a2-971d-51ca-5ab4" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e38-a00a-6e2f-2d80" name="11-12 - Local Crowd" hidden="false" collective="false" import="true" type="upgrade">
@@ -3834,25 +3832,25 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
                 <entryLink id="87b1-d8f2-2a74-052f" name="Local Crowd" hidden="false" collective="false" import="true" targetId="be60-70af-3a08-0f8f" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7bc1-d0be-1c8b-7a1d" name="06-08 Nothing out of the Ordinary" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="29e1-f4c3-b0e1-437a" name="Ongoing Sposorships" publicationId="9118-6c97-8006-93a4" page="57" hidden="false" collective="false" import="true" type="upgrade">
@@ -3861,24 +3859,24 @@ Finally, if a player from the home team is pushed into the crowd, roll a D6. On 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f07e-991f-e1f2-6806" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f07e-991f-e1f2-6806" type="max"/>
       </constraints>
       <rules>
         <rule id="87e8-7783-560c-fb23" name="Ongoing Sposorship" publicationId="9118-6c97-8006-93a4" page="57" hidden="false">
@@ -3900,21 +3898,21 @@ Immediately after rolling to see whether the Sponsors are happy or not, you can 
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="484f-fca3-d549-b292" name="Major Sposorship" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c53-24f0-8ad0-32cc" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c53-24f0-8ad0-32cc" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="db1d-f2ad-dabd-86fd" name="McMurty&apos;s Burger Emporium" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4046-f2de-299d-95d1" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4046-f2de-299d-95d1" type="max"/>
               </constraints>
               <rules>
                 <rule id="6986-4ee3-203a-ab42" name="McMurty&apos;s Burger Emporium" publicationId="9118-6c97-8006-93a4" page="58" hidden="false">
@@ -3927,9 +3925,9 @@ A coach can choose to end their deal with McMurty’s in the same way as an Ongo
                 </rule>
               </rules>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ec6d-d519-5f96-c22b" name="Farblast and Sons Ordanance Solutions" hidden="false" collective="false" import="true" type="upgrade">
@@ -3938,17 +3936,17 @@ A coach can choose to end their deal with McMurty’s in the same way as an Ongo
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ba-694e-1a1f-8b5c" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ba-694e-1a1f-8b5c" type="max"/>
               </constraints>
               <rules>
                 <rule id="42ad-85e5-4a76-b03d" name="Farblast and Sons Ordanance Solutions" publicationId="9118-6c97-8006-93a4" page="58" hidden="false">
@@ -3961,14 +3959,14 @@ A coach can choose to end their deal with Farblast &amp; Sons in the same way as
                 </rule>
               </rules>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b896-4f0e-5ea3-f3c1" name="Star Insurance Guild" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b7-151a-31cf-0b5f" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b7-151a-31cf-0b5f" type="max"/>
               </constraints>
               <rules>
                 <rule id="e3e1-993a-436b-2633" name="Star Insurance Guild" publicationId="9118-6c97-8006-93a4" page="59" hidden="false">
@@ -3982,14 +3980,14 @@ A coach can choose to end their deal with the Star Insurance Guild in the same w
                 </rule>
               </rules>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b9a6-7016-995e-4be0" name="Steelhelm&apos;s Sporting Emporium" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0e-098c-290b-ff0f" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0e-098c-290b-ff0f" type="max"/>
               </constraints>
               <rules>
                 <rule id="ebcc-a65a-f647-e777" name="Steelhelm&apos;s Sporting Emporium" publicationId="9118-6c97-8006-93a4" page="59" hidden="false">
@@ -4004,33 +4002,33 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
                 </rule>
               </rules>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="396b-e87d-dd8a-d5fd" name="Old World Classic" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1b-7f38-953e-2cb3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1b-7f38-953e-2cb3" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c15c-c163-dae0-bad1" name="Hireling Sports-Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f31-f282-735e-9a73" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f31-f282-735e-9a73" type="max"/>
       </constraints>
       <profiles>
         <profile id="a2f7-c97d-ecf6-5814" name="Fireball" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -4066,8 +4064,8 @@ If the player was in possession of the ball when they were turned into a frog, i
       <selectionEntries>
         <selectionEntry id="678f-a677-bb2b-8859" name="Frog" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1383-b74d-2844-4fa6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9875-9e6e-6d6d-829d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1383-b74d-2844-4fa6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9875-9e6e-6d6d-829d" type="min"/>
           </constraints>
           <profiles>
             <profile id="aa67-5a2a-9554-6462" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -4093,34 +4091,34 @@ If the player was in possession of the ball when they were turned into a frog, i
             <infoLink id="a651-34c3-f7c3-9acf" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2177-2aa7-a977-fd03" name="Mercenary Type" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="354e-ff43-6934-028e" value="0.0">
+        <modifier type="set" field="354e-ff43-6934-028e" value="0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4129,59 +4127,59 @@ If the player was in possession of the ball when they were turned into a frog, i
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ebf7-ac62-7709-38ea" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92ee-515a-b5d6-aaaf" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc02-6d0c-88f1-86b6" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="354e-ff43-6934-028e" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc02-6d0c-88f1-86b6" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="354e-ff43-6934-028e" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="f6b2-9c51-c27a-2364" name="Mercenary Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="f399-7cea-d25a-7d2f">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbd-e8a4-73ed-3163" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a56f-55e0-a8ae-badb" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbd-e8a4-73ed-3163" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a56f-55e0-a8ae-badb" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="f399-7cea-d25a-7d2f" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0c-87e3-ebaf-461a" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0c-87e3-ebaf-461a" type="max"/>
               </constraints>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="452f-a089-566c-31a6" name="Freebooters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0007-dc47-e026-1cdc" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0007-dc47-e026-1cdc" type="max"/>
               </constraints>
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a0c4-7a44-b29a-0423" name="Bombardier, Secret Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -4190,14 +4188,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="fc14-eb28-efbe-a79a" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb05-ba28-e382-52e1" name="Chainsaw, Secret Weapon, No Hands" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad3b-f13b-8878-a2ec" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad3b-f13b-8878-a2ec" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a662-428d-b1dc-8972" name="Chainsaw" hidden="false" targetId="91d4-709b-6b68-d0b7" type="rule"/>
@@ -4205,22 +4203,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <infoLink id="f333-5307-90e3-8fe5" name="Secret Weapon" hidden="false" targetId="0a92-31d7-9522-6618" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5993-677d-8b45-5595" name="Bomber Dribblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968d-d212-b950-7320" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8874-1576-8b03-d3b7" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968d-d212-b950-7320" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8874-1576-8b03-d3b7" type="max"/>
       </constraints>
       <profiles>
         <profile id="9613-f377-9c79-9123" name="Bomber Driblesnot" publicationId="cdc6-3a6b-6663-f6ea" page="136" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Bombardier, Dodge, Right Stuff, Secret Weapon, Stunty">
               <conditions>
-                <condition field="selections" scope="5993-677d-8b45-5595" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="5993-677d-8b45-5595" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4246,7 +4244,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="5993-677d-8b45-5595" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="5993-677d-8b45-5595" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4262,22 +4260,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="10b5-c75c-61b6-bbb1" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="267d-86b2-036e-64c7" name="Kreek Rustgouger" publicationId="cdc6-3a6b-6663-f6ea" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d8e-081c-afe6-510c" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe7-73b5-7dfa-7f9e" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d8e-081c-afe6-510c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe7-73b5-7dfa-7f9e" type="max"/>
       </constraints>
       <profiles>
         <profile id="2126-387c-a9e5-8a90" name="Kreek Rustgouger" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Ball and Chain, Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon">
               <conditions>
-                <condition field="selections" scope="267d-86b2-036e-64c7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="267d-86b2-036e-64c7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4303,7 +4301,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="267d-86b2-036e-64c7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="267d-86b2-036e-64c7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4318,22 +4316,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="670f-0819-9ed1-a2d1" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a3af-a94c-d242-1dc5" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecc-f8e5-0312-b860" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ada-c3fe-bf62-9a73" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecc-f8e5-0312-b860" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ada-c3fe-bf62-9a73" type="max"/>
       </constraints>
       <profiles>
         <profile id="28a2-ee27-4097-9656" name="Fungus the Loon" publicationId="cdc6-3a6b-6663-f6ea" page="134" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Ball and Chain, Mighty Blow (+1), No Hands, Secret Weapon, Stunty">
               <conditions>
-                <condition field="selections" scope="a3af-a94c-d242-1dc5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="a3af-a94c-d242-1dc5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4359,7 +4357,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="a3af-a94c-d242-1dc5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="a3af-a94c-d242-1dc5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4374,22 +4372,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="183d-9972-edea-2c27" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a87-241d-2e82-8181" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ef-cd2f-64cc-72a8" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d6b-2816-22dd-6f20" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ef-cd2f-64cc-72a8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d6b-2816-22dd-6f20" type="max"/>
       </constraints>
       <profiles>
         <profile id="ecaa-4057-c164-2344" name="Barik Farblast" publicationId="cdc6-3a6b-6663-f6ea" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Hail Mary Pass, Pass, Secret Weapon, Strong Arm, Sure Hands, Thick Skull">
               <conditions>
-                <condition field="selections" scope="8a87-241d-2e82-8181" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="8a87-241d-2e82-8181" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4415,7 +4413,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="8a87-241d-2e82-8181" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="8a87-241d-2e82-8181" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4431,22 +4429,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="1067-db22-a66c-8d46" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1938-caba-4c33-725c" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3839-1d8f-2b7a-b2b1" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc56-9f60-6753-eb51" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3839-1d8f-2b7a-b2b1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc56-9f60-6753-eb51" type="max"/>
       </constraints>
       <profiles>
         <profile id="d665-b18a-fd02-5e64" name="Bryce &apos;The Slice&apos; Cambuel" publicationId="8c4c-3037-21a5-355b" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Chainsaw, Regeneration, Secret Weapon, Stand Firm, Thick Skull">
               <conditions>
-                <condition field="selections" scope="1938-caba-4c33-725c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1938-caba-4c33-725c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4473,7 +4471,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="1938-caba-4c33-725c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1938-caba-4c33-725c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4484,25 +4482,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e04f-bf09-5dad-b012" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="86d1-619e-03e3-f2cb" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="86d1-619e-03e3-f2cb" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="16be-5f78-7e02-c253" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9a-ec58-09da-e0c2" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bb0-cc35-d69c-0c00" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9a-ec58-09da-e0c2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bb0-cc35-d69c-0c00" type="max"/>
       </constraints>
       <profiles>
         <profile id="07c0-49b4-57e4-6d9c" name="Deeproot Strongbranch" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!">
               <conditions>
-                <condition field="selections" scope="16be-5f78-7e02-c253" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="16be-5f78-7e02-c253" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4528,7 +4526,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="16be-5f78-7e02-c253" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="16be-5f78-7e02-c253" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4545,22 +4543,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="ef06-a68a-19a7-4059" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9da4-9779-ae60-1c48" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e62-5a4f-2658-6996" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce4-8028-1d7d-dd83" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e62-5a4f-2658-6996" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce4-8028-1d7d-dd83" type="max"/>
       </constraints>
       <profiles>
         <profile id="6d49-c364-dfbb-e861" name="Eldril Sidewinder" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Catch, Dodge, Hypnotic Gaze, Nerves of Steel, On the Ball">
               <conditions>
-                <condition field="selections" scope="9da4-9779-ae60-1c48" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9da4-9779-ae60-1c48" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4587,7 +4585,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="9da4-9779-ae60-1c48" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9da4-9779-ae60-1c48" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4598,25 +4596,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="830d-179e-566d-1373" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="39cb-ceff-0bd6-5039" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="39cb-ceff-0bd6-5039" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4afd-2b3a-5a0c-b249" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bba1-0339-79e7-5177" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207a-e13f-6299-56c3" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bba1-0339-79e7-5177" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207a-e13f-6299-56c3" type="max"/>
       </constraints>
       <profiles>
         <profile id="ad87-d2d7-2d93-5b8c" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Break Tackle, Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull">
               <conditions>
-                <condition field="selections" scope="4afd-2b3a-5a0c-b249" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="4afd-2b3a-5a0c-b249" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4643,7 +4641,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="4afd-2b3a-5a0c-b249" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="4afd-2b3a-5a0c-b249" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4654,25 +4652,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2e8c-8704-b796-a127" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="6948-3ad6-5c94-1d25" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="6948-3ad6-5c94-1d25" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f11a-2b66-4503-d3f8" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2b-176d-1c8c-558d" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25af-5e60-1bde-55c5" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2b-176d-1c8c-558d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25af-5e60-1bde-55c5" type="max"/>
       </constraints>
       <profiles>
         <profile id="8583-8b4f-3032-e7b0" name="Glart Smashrip" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Claw, Grab, Juggernaut, Stand Firm">
               <conditions>
-                <condition field="selections" scope="f11a-2b66-4503-d3f8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="f11a-2b66-4503-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4699,7 +4697,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="f11a-2b66-4503-d3f8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="f11a-2b66-4503-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4710,25 +4708,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1c27-e3da-5c63-061c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="04d4-ce98-b62e-9360" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="04d4-ce98-b62e-9360" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="195000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="195000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9934-db67-9c77-27bb" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f735-304e-3ede-716e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a35-c784-bcb4-a83e" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f735-304e-3ede-716e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a35-c784-bcb4-a83e" type="max"/>
       </constraints>
       <profiles>
         <profile id="f49d-5967-47f3-bf5b" name="Gloriel Summerbloom" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Dodge, Pass, Side Step, Sure Hands">
               <conditions>
-                <condition field="selections" scope="9934-db67-9c77-27bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9934-db67-9c77-27bb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4756,7 +4754,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="9934-db67-9c77-27bb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9934-db67-9c77-27bb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4766,25 +4764,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ed6-8a61-f224-b062" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="2eae-357e-8735-b255" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="2eae-357e-8735-b255" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="874c-6352-2ead-33fb" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f4-756c-8f81-4428" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b8-df1b-11f3-12c1" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f4-756c-8f81-4428" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b8-df1b-11f3-12c1" type="max"/>
       </constraints>
       <profiles>
         <profile id="d504-729b-65f9-872a" name="Grashnak Blackhoof" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Frenzy, Horns, Mighty Blow (+1),  Thick Skull, Unchanneled Fury">
               <conditions>
-                <condition field="selections" scope="874c-6352-2ead-33fb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="874c-6352-2ead-33fb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4809,7 +4807,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="874c-6352-2ead-33fb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="874c-6352-2ead-33fb" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4822,25 +4820,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6dc1-2d9c-95d4-9be3" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="defc-fede-49ac-20b1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="defc-fede-49ac-20b1" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="240000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="240000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d5b-c35f-836d-d879" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f542-987c-314d-842d" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5852-612c-46ae-91da" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f542-987c-314d-842d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5852-612c-46ae-91da" type="max"/>
       </constraints>
       <profiles>
         <profile id="3a17-8f51-767c-1ea1" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Dodge, Foul Appearance, Jump Up, No Hands, Regeneration, Shadowing, Side Step">
               <conditions>
-                <condition field="selections" scope="1d5b-c35f-836d-d879" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1d5b-c35f-836d-d879" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4867,7 +4865,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="1d5b-c35f-836d-d879" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1d5b-c35f-836d-d879" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4881,25 +4879,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="abbd-d1ce-2c3d-7f38" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="ac94-902c-0f10-8ff5" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="ac94-902c-0f10-8ff5" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ac9-bdfc-a8bb-ad93" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50d-1a83-7588-19b9" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe3-c800-b8c7-f37f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50d-1a83-7588-19b9" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe3-c800-b8c7-f37f" type="max"/>
       </constraints>
       <profiles>
         <profile id="3dfa-2160-ab13-a565" name="Griff Oberwald" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dodge, Fend, Sprint, Sure Feet">
               <conditions>
-                <condition field="selections" scope="1ac9-bdfc-a8bb-ad93" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1ac9-bdfc-a8bb-ad93" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4924,7 +4922,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="1ac9-bdfc-a8bb-ad93" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1ac9-bdfc-a8bb-ad93" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4937,25 +4935,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0720-139b-0a15-adef" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="5ba3-d99e-cfdd-69b3" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="5ba3-d99e-cfdd-69b3" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f980-4ebc-144f-8776" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f61b-29f0-91ea-ea42" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="305b-d67e-c468-0974" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f61b-29f0-91ea-ea42" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="305b-d67e-c468-0974" type="max"/>
       </constraints>
       <profiles>
         <profile id="ce54-b7df-a013-5dad" name="Grim Ironjaw" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick SkulBlock, Dauntless, Frenzy, Multiple Block, Thick Skull">
               <conditions>
-                <condition field="selections" scope="f980-4ebc-144f-8776" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="f980-4ebc-144f-8776" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4985,7 +4983,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="f980-4ebc-144f-8776" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="f980-4ebc-144f-8776" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4993,25 +4991,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dd11-21f5-e5c4-7551" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="99af-70c0-26cc-0547" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="99af-70c0-26cc-0547" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c402-f09f-2f59-3a7c" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d7-09cd-5c74-6faa" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d132-3531-1d6b-33c3" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d7-09cd-5c74-6faa" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d132-3531-1d6b-33c3" type="max"/>
       </constraints>
       <profiles>
         <profile id="6bfc-5e20-998a-0967" name="Grombindal, the White Dwarf" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Mighty Blow (+1), Stand Firm, Thick Skull">
               <conditions>
-                <condition field="selections" scope="c402-f09f-2f59-3a7c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="c402-f09f-2f59-3a7c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5037,7 +5035,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="c402-f09f-2f59-3a7c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="c402-f09f-2f59-3a7c" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5052,22 +5050,22 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="3c14-246f-63a5-7d70" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e4e-8a0d-7d04-5d9e" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee43-0e7c-d061-922e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9942-39c6-adbc-4e40" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee43-0e7c-d061-922e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9942-39c6-adbc-4e40" type="max"/>
       </constraints>
       <profiles>
         <profile id="479a-c2e2-0854-36f3" name="Hakflem Skuttlespike" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Extra Arms, Prehensile Tail, Two Heads">
               <conditions>
-                <condition field="selections" scope="6e4e-8a0d-7d04-5d9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="6e4e-8a0d-7d04-5d9e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5095,7 +5093,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="6e4e-8a0d-7d04-5d9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="6e4e-8a0d-7d04-5d9e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5104,25 +5102,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d730-d7c4-edae-916e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="e8a7-7f58-99c9-c63d" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="e8a7-7f58-99c9-c63d" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4a4-4dae-4c27-5793" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9927-de39-3913-296e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63f-6a55-0992-2e0c" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9927-de39-3913-296e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63f-6a55-0992-2e0c" type="max"/>
       </constraints>
       <profiles>
         <profile id="4178-dc58-fe17-150b" name="Ivar Eriksson" publicationId="af11-1772-744f-9a1a" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Guard, Tackle">
               <conditions>
-                <condition field="selections" scope="b4a4-4dae-4c27-5793" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b4a4-4dae-4c27-5793" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5149,7 +5147,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="b4a4-4dae-4c27-5793" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b4a4-4dae-4c27-5793" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5158,25 +5156,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f0c7-d6cf-3147-0980" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="4547-e382-8839-5094" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="4547-e382-8839-5094" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="245000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="245000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ba9-97ef-2ed0-08f0" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ec-d44c-78d5-98dc" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe1-07c8-7c37-60ef" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ec-d44c-78d5-98dc" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe1-07c8-7c37-60ef" type="max"/>
       </constraints>
       <profiles>
         <profile id="fbfd-f247-9f0e-22f2" name="Karla von Kill" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Dodge, Jump Up">
               <conditions>
-                <condition field="selections" scope="1ba9-97ef-2ed0-08f0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1ba9-97ef-2ed0-08f0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5204,7 +5202,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="1ba9-97ef-2ed0-08f0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="1ba9-97ef-2ed0-08f0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5213,25 +5211,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ea7e-f107-4f90-e2b3" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="ebd8-356f-108d-5445" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="ebd8-356f-108d-5445" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="210000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d101-32eb-1c0f-9405" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabe-d23f-7cbf-259f" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-db17-7ddf-f2b6" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabe-d23f-7cbf-259f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-db17-7ddf-f2b6" type="max"/>
       </constraints>
       <profiles>
         <profile id="dde9-6a58-a326-ce17" name="Lord Borak the Despoiler" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dirty Player (+2), Mighty Blow (+1), Sneaky Git">
               <conditions>
-                <condition field="selections" scope="d101-32eb-1c0f-9405" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="d101-32eb-1c0f-9405" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5256,7 +5254,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="d101-32eb-1c0f-9405" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="d101-32eb-1c0f-9405" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5268,12 +5266,12 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ae73-7134-a8c5-ee49" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="514c-fdf3-bdef-d1d0" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="514c-fdf3-bdef-d1d0" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="260000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="true" collective="false" import="true" type="model">
@@ -5282,23 +5280,23 @@ If the player was in possession of the ball when they were turned into a frog, i
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc35-0ab2-130c-4efd" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db8-60e8-45ce-3feb" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc35-0ab2-130c-4efd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db8-60e8-45ce-3feb" type="max"/>
       </constraints>
       <profiles>
         <profile id="666f-ab29-9c67-781d" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Chainsaw, Secret Weapon">
               <conditions>
-                <condition field="selections" scope="19c7-050a-9950-59c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="19c7-050a-9950-59c0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5323,7 +5321,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="19c7-050a-9950-59c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="19c7-050a-9950-59c0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5333,25 +5331,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="41ba-8d60-66bc-7963" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="fa8c-47c3-33ce-6673" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="fa8c-47c3-33ce-6673" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b6b9-e4df-20d7-feb8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c73-4e51-88c1-9d4b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc9-a967-4a42-8272" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c73-4e51-88c1-9d4b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc9-a967-4a42-8272" type="max"/>
       </constraints>
       <profiles>
         <profile id="7101-7666-4858-06c8" name="Mighty Zug" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+1)">
               <conditions>
-                <condition field="selections" scope="b6b9-e4df-20d7-feb8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b6b9-e4df-20d7-feb8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5376,7 +5374,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="b6b9-e4df-20d7-feb8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b6b9-e4df-20d7-feb8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5386,25 +5384,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d325-80b4-deb3-f97c" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="9fe1-2452-5d66-a03a" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="9fe1-2452-5d66-a03a" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10b5-f4a3-c6e3-704d" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f431-9d36-f783-157b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="663d-1687-c64a-2e71" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f431-9d36-f783-157b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="663d-1687-c64a-2e71" type="max"/>
       </constraints>
       <profiles>
         <profile id="6a1a-6c77-a7ec-5b28" name="Morg &apos;n&apos; Thorg" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+2), Thick Skull, Throw Team-mate">
               <conditions>
-                <condition field="selections" scope="10b5-f4a3-c6e3-704d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="10b5-f4a3-c6e3-704d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5432,7 +5430,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="10b5-f4a3-c6e3-704d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="10b5-f4a3-c6e3-704d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5441,25 +5439,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="07ea-eaf6-41e2-8829" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="d7f9-a392-5ddb-721e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="d7f9-a392-5ddb-721e" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="380000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="380000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2736-a7fd-e2a7-e349" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f4-5c58-2b76-92c8" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3693-0728-5cf0-a183" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f4-5c58-2b76-92c8" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3693-0728-5cf0-a183" type="max"/>
       </constraints>
       <profiles>
         <profile id="4b46-4bc6-6875-f1cd" name="Roxanna Darknail" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Frenzy, Jump Up, Juggernaut, Leap">
               <conditions>
-                <condition field="selections" scope="2736-a7fd-e2a7-e349" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="2736-a7fd-e2a7-e349" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5485,7 +5483,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="2736-a7fd-e2a7-e349" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="2736-a7fd-e2a7-e349" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5497,25 +5495,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="559b-24cc-0c3e-84f5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="6276-8385-fad0-b72f" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="6276-8385-fad0-b72f" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0653-e1fd-2776-28d3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea27-1973-f51b-e269" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7674-2740-9b1d-6da6" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea27-1973-f51b-e269" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7674-2740-9b1d-6da6" type="max"/>
       </constraints>
       <profiles>
         <profile id="a668-ecb4-c605-fbf3" name="Rumbelow Sheepskin" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Horns, Juggernaut, No Hands, Tackle, Thick Skull">
               <conditions>
-                <condition field="selections" scope="0653-e1fd-2776-28d3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="0653-e1fd-2776-28d3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5545,7 +5543,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="0653-e1fd-2776-28d3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="0653-e1fd-2776-28d3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5554,12 +5552,12 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd84-7360-f150-6691" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="52ec-a027-4845-12e2" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="52ec-a027-4845-12e2" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="true" collective="false" import="true" type="model">
@@ -5568,23 +5566,23 @@ If the player was in possession of the ball when they were turned into a frog, i
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941a-de4f-4ec5-61d6" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3818-2772-779e-709f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941a-de4f-4ec5-61d6" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3818-2772-779e-709f" type="max"/>
       </constraints>
       <profiles>
         <profile id="9db2-1dfb-aec4-8e74" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Claws, Frenzy, Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury">
               <conditions>
-                <condition field="selections" scope="9007-a6be-1641-e125" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9007-a6be-1641-e125" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5609,7 +5607,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="9007-a6be-1641-e125" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9007-a6be-1641-e125" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5623,25 +5621,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0d0f-f50c-5dc4-9321" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="6ad0-6793-db88-d853" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="6ad0-6793-db88-d853" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9345-2f7a-f236-ddcd" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a307-a275-4510-fc12" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4765-3f28-bb56-1c79" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a307-a275-4510-fc12" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4765-3f28-bb56-1c79" type="max"/>
       </constraints>
       <profiles>
         <profile id="08b8-c339-595c-1fef" name="Skrorg Snowpelt" publicationId="af11-1772-744f-9a1a" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Claws, Disturbing Presence, Juggernaut, Mighty Blow (+1)">
               <conditions>
-                <condition field="selections" scope="9345-2f7a-f236-ddcd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9345-2f7a-f236-ddcd" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5669,7 +5667,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="9345-2f7a-f236-ddcd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9345-2f7a-f236-ddcd" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5678,25 +5676,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="79b4-f470-811f-10c5" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="7ea1-12cd-3f99-1503" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="7ea1-12cd-3f99-1503" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e41-d71f-ea2b-27ac" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6136-e464-77b1-cf75" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5601-a2c3-2c5d-c5ce" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6136-e464-77b1-cf75" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5601-a2c3-2c5d-c5ce" type="max"/>
       </constraints>
       <profiles>
         <profile id="5f10-92eb-d4f6-c0c6" name="Skrull Halfheight" publicationId="46da-ba61-6439-83e5" page="132" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5723,7 +5721,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5735,25 +5733,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="23e1-7b79-485c-e303" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="3aed-b19e-ebf2-f696" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="3aed-b19e-ebf2-f696" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9dcd-f21e-18ec-e0e7" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="167c-3c86-de1e-1e10" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa4c-bbd9-cec7-54c2" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="167c-3c86-de1e-1e10" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa4c-bbd9-cec7-54c2" type="max"/>
       </constraints>
       <profiles>
         <profile id="b6a0-8102-cdcd-8348" name="The Black Gobbo" publicationId="46da-ba61-6439-83e5" page="129" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Bombardier, Disturbing Presence, Dodge, Side Step, Sneaky Git, Stab, Stunty">
               <conditions>
-                <condition field="selections" scope="9dcd-f21e-18ec-e0e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9dcd-f21e-18ec-e0e7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5774,15 +5772,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="cb8d-c658-3046-b0a7" name="Bombadier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
+        <infoLink id="cb8d-c658-3046-b0a7" name="Bombardier" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
         <infoLink id="ae98-f861-bafb-4f4b" name="Disturbing Presence" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
-        <infoLink id="703e-718d-a80b-f323" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="703e-718d-a80b-f323" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
         <infoLink id="ee4e-ded6-fc8b-758f" name="Sneaky Git" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
         <infoLink id="a316-2d2d-1f20-bd2f" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="9dcd-f21e-18ec-e0e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9dcd-f21e-18ec-e0e7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5796,15 +5794,15 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="5922-3150-f425-8392" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="225000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="225000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ab3-0a11-4223-c529" name="The Swift Twins" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1583-10ea-e975-4402" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3964-fe62-c604-9365" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1583-10ea-e975-4402" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3964-fe62-c604-9365" type="max"/>
       </constraints>
       <rules>
         <rule id="8d7e-70b1-ec88-e0a4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
@@ -5814,15 +5812,15 @@ If the player was in possession of the ball when they were turned into a frog, i
       <selectionEntries>
         <selectionEntry id="9e86-d814-823f-a270" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f933-0baa-3bff-0d67" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="138f-0ebf-dcc6-5b17" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f933-0baa-3bff-0d67" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="138f-0ebf-dcc6-5b17" type="max"/>
           </constraints>
           <profiles>
             <profile id="4956-4853-2734-8cec" name="Lucien Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
                 <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Mighty Blow (+1), TackleBlock, Loner (4+), Mighty Blow (+1), Tackle">
                   <conditions>
-                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5839,13 +5837,13 @@ If the player was in possession of the ball when they were turned into a frog, i
           </profiles>
           <infoLinks>
             <infoLink id="a108-5627-9fc2-be2f" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-            <infoLink id="5486-4957-1c4b-e93b" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+            <infoLink id="5486-4957-1c4b-e93b" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
             <infoLink id="e21b-9287-5d93-120b" name="Tackle" hidden="false" targetId="533f-b83b-e4eb-42a5" type="rule"/>
             <infoLink id="b80a-0d64-5785-f72a" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5856,22 +5854,22 @@ If the player was in possession of the ball when they were turned into a frog, i
             <categoryLink id="1cb5-9818-bd69-19ba" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6722-b16a-0e3f-7bec" name="Valen Swift" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3716-8748-1f18-3842" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8c97-0cea-ca08-dee0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3716-8748-1f18-3842" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8c97-0cea-ca08-dee0" type="min"/>
           </constraints>
           <profiles>
             <profile id="e59d-8a6e-b173-3cd9" name="Valen Swift" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
                 <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Nerves of Steel, Pass, Safe Pass, Sure Hands">
                   <conditions>
-                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5894,42 +5892,42 @@ If the player was in possession of the ball when they were turned into a frog, i
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="3ab3-0a11-4223-c529" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
             <infoLink id="28d1-3ee7-ef04-590e" name="Sure Hands" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-            <infoLink id="1c24-4c36-ad56-8661" name="Safe Throw" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
+            <infoLink id="1c24-4c36-ad56-8661" name="Safe Pass" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="da03-5a5d-b0b4-230f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
             <categoryLink id="9f9d-ef82-62bd-aa10" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="69f2-a7c5-f5d1-64e8" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5db-701a-1618-58f1" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1078-3d12-7110-7034" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5db-701a-1618-58f1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1078-3d12-7110-7034" type="max"/>
       </constraints>
       <profiles>
         <profile id="9124-9eca-a0d3-07cc" name="Thorsson Stoutmead" publicationId="af11-1772-744f-9a1a" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Drunkard, Thick Skull">
               <conditions>
-                <condition field="selections" scope="69f2-a7c5-f5d1-64e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="69f2-a7c5-f5d1-64e8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5956,7 +5954,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="69f2-a7c5-f5d1-64e8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="69f2-a7c5-f5d1-64e8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5965,24 +5963,24 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b632-ad0c-f51b-1bcc" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="33d2-7e34-43d1-fc61" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="33d2-7e34-43d1-fc61" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5aed-7128-04f0-bc29" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b291-bd11-4d47-5a1e" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b291-bd11-4d47-5a1e" type="max"/>
       </constraints>
       <profiles>
         <profile id="2544-75fb-5e78-d0bc" name="Varag Ghoul-Chewer" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Jump Up, Mighty Blow (+1), Thick Skull">
               <conditions>
-                <condition field="selections" scope="5aed-7128-04f0-bc29" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="5aed-7128-04f0-bc29" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6005,13 +6003,13 @@ If the player was in possession of the ball when they were turned into a frog, i
       <infoLinks>
         <infoLink id="f0ca-f31b-3cd9-4325" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
         <infoLink id="8eed-8ab7-f9bc-24e0" name="Jump Up" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-        <infoLink id="0dbe-d1e9-91d2-b636" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+        <infoLink id="0dbe-d1e9-91d2-b636" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
         <infoLink id="3f45-be8c-09e6-84fa" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="f83b-eabe-cf3a-a928" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="5aed-7128-04f0-bc29" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="5aed-7128-04f0-bc29" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6019,25 +6017,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7e02-0163-5a97-979f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="53eb-4e65-0fdf-6554" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="53eb-4e65-0fdf-6554" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="280000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a68e-e39e-46f4-5122" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7465-b0a8-361b-b9b4" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e6f-0125-42e4-ef5f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7465-b0a8-361b-b9b4" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e6f-0125-42e4-ef5f" type="max"/>
       </constraints>
       <profiles>
         <profile id="0083-82d1-fa06-dc56" name="Wilhelm Chaney" publicationId="8c4c-3037-21a5-355b" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Catch, Claws, Frenzy, Mighty Blow (+1), Regeneration, Wrestle">
               <conditions>
-                <condition field="selections" scope="a68e-e39e-46f4-5122" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="a68e-e39e-46f4-5122" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6064,7 +6062,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="a68e-e39e-46f4-5122" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="a68e-e39e-46f4-5122" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6075,25 +6073,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4743-7e72-bef9-0d90" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="ea7b-1454-a763-fd08" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="ea7b-1454-a763-fd08" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="220000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7796-75b1-61e7-fa43" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa17-5dbb-111c-3161" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5663-ce3c-2868-98df" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa17-5dbb-111c-3161" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5663-ce3c-2868-98df" type="max"/>
       </constraints>
       <profiles>
         <profile id="d7d0-9838-fa2e-85da" name="Willow Rosebark" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dauntless, Side Step, Thick Skull">
               <conditions>
-                <condition field="selections" scope="7796-75b1-61e7-fa43" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="7796-75b1-61e7-fa43" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6119,7 +6117,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="7796-75b1-61e7-fa43" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="7796-75b1-61e7-fa43" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6129,25 +6127,25 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="794a-69a0-f31a-92ad" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="33e3-7272-86cc-dc29" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="33e3-7272-86cc-dc29" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b46a-06d8-c171-c7e7" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e4-fef5-b9d9-8fe5" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-d090-e2c7-1561" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e4-fef5-b9d9-8fe5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b9-d090-e2c7-1561" type="max"/>
       </constraints>
       <profiles>
         <profile id="f48e-0a56-1c45-ca6f" name="Zolcath the Zoat" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Juggernaut, Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet">
               <conditions>
-                <condition field="selections" scope="b46a-06d8-c171-c7e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b46a-06d8-c171-c7e7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6174,7 +6172,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="b46a-06d8-c171-c7e7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b46a-06d8-c171-c7e7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6186,17 +6184,17 @@ If the player was in possession of the ball when they were turned into a frog, i
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1a29-6b1f-64bd-a2da" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="bd08-f031-7632-28e1" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="bd08-f031-7632-28e1" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="86c4-9326-f5dd-ffcd" name="Fink Da Fixer" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36e-9abe-e7e1-3479" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36e-9abe-e7e1-3479" type="max"/>
       </constraints>
       <rules>
         <rule id="b8b9-485a-e745-0c49" name="&quot;You got it, boss!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
@@ -6207,14 +6205,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="81cd-9c8b-a2a5-4665" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3af8-70a9-614b-3d57" name="Galandril Silverwater" publicationId="9118-6c97-8006-93a4" page="17" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b42-2ea9-ac9f-d788" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b42-2ea9-ac9f-d788" type="max"/>
       </constraints>
       <rules>
         <rule id="c0af-4e19-5591-dbd0" name="&quot;Go Team!&quot;" publicationId="9118-6c97-8006-93a4" page="17" hidden="false">
@@ -6225,21 +6223,21 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="4bd9-3bdc-4b23-e50d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="33b8-1c27-25a2-275e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761b-fce6-2eb5-025c" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761b-fce6-2eb5-025c" type="max"/>
       </constraints>
       <profiles>
         <profile id="b6ea-50bf-6fd8-f78e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Frenzy">
               <conditions>
-                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6267,7 +6265,7 @@ If the player was in possession of the ball when they were turned into a frog, i
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6277,14 +6275,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="c1d5-25b1-7c66-862d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="56b3-5573-9adb-ad7a" name="Krot Shockwhisker" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9aa-e209-5956-5d91" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9aa-e209-5956-5d91" type="max"/>
       </constraints>
       <rules>
         <rule id="826a-a89b-8714-7144" name="&quot;A new plathi... er, patient!&quot;" publicationId="9118-6c97-8006-93a4" page="18" hidden="false">
@@ -6301,14 +6299,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="9075-07ad-237f-f9ce" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe6f-d2cd-7957-9633" name="Mungo Spinecracker" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f37-1e28-57be-6258" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f37-1e28-57be-6258" type="max"/>
       </constraints>
       <rules>
         <rule id="5254-3bd4-f8ff-78ae" name="&quot;I&apos;m fine thanks, Mungo!&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
@@ -6323,14 +6321,14 @@ If the player was in possession of the ball when they were turned into a frog, i
         <categoryLink id="b76d-f80a-5eb0-83e3" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d3eb-6589-f664-cb9e" name="Papa Skullbones" publicationId="9118-6c97-8006-93a4" page="16" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b45-01b6-0b9a-d2f5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b45-01b6-0b9a-d2f5" type="max"/>
       </constraints>
       <rules>
         <rule id="5a9a-a7a9-9019-f799" name="&quot;By the power of the Gods!&quot;" publicationId="9118-6c97-8006-93a4" page="16" hidden="false">
@@ -6351,14 +6349,14 @@ table has already been made, and roll on this table again.
         <categoryLink id="3395-5bc3-557d-20ee" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f61f-f3ac-6712-ae1d" name="Ranulf &apos;Red&apos; Hokuli" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3a-4844-9907-a5dd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3a-4844-9907-a5dd" type="max"/>
       </constraints>
       <rules>
         <rule id="439b-363a-f95e-492e" name="&apos;Red&apos; Card" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
@@ -6380,14 +6378,14 @@ Once spotted by Ranulf in this way (and only in this way), the coach of the play
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7db9-75b4-696b-2fee" name="Thoron Korensson" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc6f-7afb-eb77-762a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc6f-7afb-eb77-762a" type="max"/>
       </constraints>
       <rules>
         <rule id="7727-1d11-7314-c522" name="Strict Discipline" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
@@ -6403,21 +6401,21 @@ Once spotted by Korensson in this way (and only in this way), the player that co
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10b4-695f-9014-4aea" name="Biased Referee" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c4-5b96-45cc-9470" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c4-5b96-45cc-9470" type="max"/>
       </constraints>
       <rules>
         <rule id="7937-938d-b990-2f8a" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
@@ -6432,21 +6430,21 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b891-67b6-6431-70ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187e-30b1-150e-a1b8" type="max"/>
+        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187e-30b1-150e-a1b8" type="max"/>
       </constraints>
       <rules>
         <rule id="1391-4eb5-9902-aff9" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
@@ -6454,21 +6452,21 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6905-bc49-6842-6a0a" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a672-a5e0-59f5-e2d6" type="max"/>
+        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a672-a5e0-59f5-e2d6" type="max"/>
       </constraints>
       <rules>
         <rule id="3715-7137-768a-638f" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false">
@@ -6476,21 +6474,21 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d481-a4bd-f6dc-c43d" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342b-32b6-522c-7a52" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342b-32b6-522c-7a52" type="max"/>
       </constraints>
       <rules>
         <rule id="206b-a5fa-f17f-a6e1" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false">
@@ -6510,39 +6508,39 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74f2-37ae-f8a2-ad5e" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="60000.0">
+        <modifier type="set" field="ffff-7836-9be4-196c" value="60000">
           <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7035-f38d-a0e0-aa2a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7035-f38d-a0e0-aa2a" type="max"/>
       </constraints>
       <rules>
-        <rule id="5cac-3c64-16b0-c12c" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="" hidden="false"/>
+        <rule id="5cac-3c64-16b0-c12c" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" hidden="false"/>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5564-dcac-1706-7a79" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6938-58c7-c93d-48c3" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6938-58c7-c93d-48c3" type="max"/>
       </constraints>
       <rules>
         <rule id="a86c-8672-6568-bd80" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
@@ -6550,38 +6548,38 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
         </rule>
       </rules>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="54e1-c0ea-1874-f2a9" name="WAAAGH! Drummer" publicationId="9118-6c97-8006-93a4" page="36" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1e5-6265-e988-efa4" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1e5-6265-e988-efa4" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4361-1f5a-b2d3-901c" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf20-b832-406f-63a0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf20-b832-406f-63a0" type="max"/>
       </constraints>
       <rules>
         <rule id="de3e-5964-23af-4cc2" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
@@ -6589,14 +6587,14 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b0d-3a3e-dcff-49ce" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8a1-4653-5c12-c0e3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8a1-4653-5c12-c0e3" type="max"/>
       </constraints>
       <rules>
         <rule id="d79d-2f03-026a-20db" name="Plague Doctor" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
@@ -6604,14 +6602,14 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5f7b-5fc3-e8b6-68e9" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf03-533d-1128-b5c0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf03-533d-1128-b5c0" type="max"/>
       </constraints>
       <rules>
         <rule id="09f4-6f30-f154-d54b" name="Mortuary Assistant" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
@@ -6619,14 +6617,14 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
         </rule>
       </rules>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="078a-3b62-aa41-e54b" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="957a-c35a-c684-7623" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="957a-c35a-c684-7623" type="max"/>
       </constraints>
       <profiles>
         <profile id="2fda-a4fe-29de-a597" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6660,14 +6658,14 @@ You may attempt to move both teams’ turn markers forwards or backwards one spa
         <categoryLink id="1de6-08c4-360b-59bc" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b930-c518-3321-15de" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dfc-1f61-3876-38b2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dfc-1f61-3876-38b2" type="max"/>
       </constraints>
       <profiles>
         <profile id="4e56-b1cd-cb57-65bc" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6699,14 +6697,14 @@ A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked
         <categoryLink id="2360-c73e-2153-1a39" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc76-58a5-f36f-1132" name="Druchii Sprots Sorceress" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-54ee-ded4-58b3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-54ee-ded4-58b3" type="max"/>
       </constraints>
       <profiles>
         <profile id="933b-bf96-4eb1-3b5f" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6740,14 +6738,14 @@ Until the end of this drive, the MA, ST, and AG characteristics of a player hit 
         <categoryLink id="bc3c-a3a2-e25b-68f1" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3a41-5515-c820-65d0" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0113-224b-5bd9-46fd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0113-224b-5bd9-46fd" type="max"/>
       </constraints>
       <profiles>
         <profile id="4e4d-5101-8e00-03e2" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6778,14 +6776,14 @@ Note that this modifier applies alongside any other modifiers that apply to atte
         <categoryLink id="dc5d-dfc5-f762-7676" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6859-8eed-31c8-ddcb" name="Night Goblin Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1dd-04d8-2445-22fa" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1dd-04d8-2445-22fa" type="max"/>
       </constraints>
       <profiles>
         <profile id="4837-ec4b-07ce-fc72" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6816,14 +6814,14 @@ A Standing player stomped on by the Foot of Gork (or Mork) is Knocked Down. When
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6efb-3356-8b4f-3b30" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d5-c06f-2aa5-e40f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d5-c06f-2aa5-e40f" type="max"/>
       </constraints>
       <profiles>
         <profile id="def7-4b6f-c203-60b2" name="Reality Blinks" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6858,14 +6856,14 @@ following spells: Temporal Distortion, Tectonic Shift, Reality Blinks</descripti
         <categoryLink id="a02f-96ce-4a2a-673a" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d750-72f1-f687-e668" name="Ogre Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9eb-a60e-d796-12e4" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9eb-a60e-d796-12e4" type="max"/>
       </constraints>
       <profiles>
         <profile id="e8a3-ee1e-3b4f-80bd" name="Fireball" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6899,14 +6897,14 @@ Any Standing players hit by the Column of Fire are Knocked Down. When a player i
         <categoryLink id="bfc5-bd23-a722-b0c0" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6eff-7dc2-2068-7f88" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4b-393e-62f0-231b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4b-393e-62f0-231b" type="max"/>
       </constraints>
       <profiles>
         <profile id="0c53-a62e-e532-9b53" name="Vanhalables Dans Macabre" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6938,14 +6936,14 @@ A player hit by Incorporeal gains the No Hands trait and, if they are in possess
         <categoryLink id="e03e-fe88-b1a4-0e04" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c503-8403-44c5-2136" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff5-ae27-42d1-f5cb" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff5-ae27-42d1-f5cb" type="max"/>
       </constraints>
       <profiles>
         <profile id="9d8d-667c-18ab-8b29" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -6981,14 +6979,14 @@ Finally, when a player is Knocked Down by Warp Lightning, roll a D6. On a roll o
         <categoryLink id="192e-e700-b5f6-48a6" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ece-1731-f4ae-1263" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72e-9b30-adb2-313b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72e-9b30-adb2-313b" type="max"/>
       </constraints>
       <profiles>
         <profile id="ae6c-3882-efa7-300e" name="Plague of Warts" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -7024,8 +7022,8 @@ If the player was in possession of the ball when they were turned into a frog, i
       <selectionEntries>
         <selectionEntry id="f95e-0a73-310a-9ef6" name="Frog" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c63f-76cb-f179-fdc6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f829-b659-73b7-060c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c63f-76cb-f179-fdc6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f829-b659-73b7-060c" type="min"/>
           </constraints>
           <profiles>
             <profile id="2665-19eb-2888-cc7f" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -7051,28 +7049,28 @@ If the player was in possession of the ball when they were turned into a frog, i
             <infoLink id="feac-efdf-b1dc-895c" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c7c-dfea-d67d-830d" name="Wizard" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfdf-f7ff-ddb6-b301" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfdf-f7ff-ddb6-b301" type="max"/>
       </constraints>
       <rules>
         <rule id="8359-392b-678a-d608" name="Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
@@ -7085,9 +7083,9 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a90-db4e-14cd-b9b2" name="[Advancements]" hidden="true" collective="false" import="true" type="upgrade">
@@ -7096,53 +7094,53 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="39e2-ec20-0c67-eba6" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="eb67-aa21-976b-1799" value="1.0">
+        <modifier type="increment" field="eb67-aa21-976b-1799" value="1">
           <repeats>
-            <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
+            <repeat field="39e2-ec20-0c67-eba6" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b6c-a8b7-7bae-b8f2" repeats="1" roundUp="false"/>
           </repeats>
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="lessThan"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="eb67-aa21-976b-1799" value="-1.0">
+        <modifier type="set" field="eb67-aa21-976b-1799" value="-1">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8ec-cafc-a901-5a18" type="max"/>
-        <constraint field="069c-526e-7481-6bb7" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb67-aa21-976b-1799" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8ec-cafc-a901-5a18" type="max"/>
+        <constraint field="069c-526e-7481-6bb7" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb67-aa21-976b-1799" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e80e-92fe-bfa9-1874" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7531-109e-1728-d778" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6839-bae2-6197-6cb7" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7531-109e-1728-d778" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6839-bae2-6197-6cb7" type="max"/>
       </constraints>
       <profiles>
         <profile id="8383-55ee-8870-c7d7" name="Akhorne the Squirrel" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Claws, Dauntless, Dodge, Frenzy, Jump Up, No Hands, Sidestep, Stunty, Titchy">
               <conditions>
-                <condition field="selections" scope="e80e-92fe-bfa9-1874" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e80e-92fe-bfa9-1874" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7158,7 +7156,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         </profile>
       </profiles>
       <rules>
-        <rule id="d5ef-785c-dffb-56c7" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" page="" hidden="false">
+        <rule id="d5ef-785c-dffb-56c7" name="Blind Rage" publicationId="e3e7-0556-2064-f3a9" hidden="false">
           <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.</description>
         </rule>
       </rules>
@@ -7167,7 +7165,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="e80e-92fe-bfa9-1874" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e80e-92fe-bfa9-1874" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7187,15 +7185,15 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <categoryLink id="e847-ed0c-1a61-8819" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5275-5518-f1eb-3bce" name="Grak and Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7baf-5d87-bc23-6f15" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a47-525c-f253-ee76" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7baf-5d87-bc23-6f15" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a47-525c-f253-ee76" type="max"/>
       </constraints>
       <rules>
         <rule id="8eaf-aaaa-6b37-45b4" name="Two for One" publicationId="46da-ba61-6439-83e5" page="130" hidden="false">
@@ -7203,20 +7201,20 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="b23a-c12a-4334-f2da" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="b23a-c12a-4334-f2da" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c718-8598-f61f-f6b1" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6e3-871c-d5d1-a1ad" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045d-8f5b-38cc-7f84" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6e3-871c-d5d1-a1ad" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045d-8f5b-38cc-7f84" type="min"/>
           </constraints>
           <profiles>
             <profile id="b9b0-ad6f-a5ca-e175" name="Grak" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
                 <modifier type="set" field="10f2-d8c7-4011-270d" value="Bone Head, Kick Team-mate, Mighty Blow (+1), Thick Skull">
                   <conditions>
-                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7236,36 +7234,36 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
             <infoLink id="22ba-c4f6-4ea0-8dec" name="Bone-head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
             <infoLink id="3c60-fde2-54b5-4364" name="Kick Team-Mate" hidden="false" targetId="b527-59bd-ce9e-e45c" type="rule"/>
-            <infoLink id="47f7-d1fc-0315-2e1f" name="Mighty Blow" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
+            <infoLink id="47f7-d1fc-0315-2e1f" name="Mighty Blow (+1)" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
             <infoLink id="0b42-2dc9-b018-a45b" name="Thick Skull" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="f6f5-70c1-7d31-ec7e" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f4b7-b704-a513-7b8b" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a8-6fdb-6d21-c275" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b06-44e6-8aec-f469" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a8-6fdb-6d21-c275" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b06-44e6-8aec-f469" type="min"/>
           </constraints>
           <profiles>
             <profile id="3fd7-2435-8c89-3621" name="Crumbleberry" publicationId="46da-ba61-6439-83e5" page="130" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
                 <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Right Stuff, Stunty, Sure Hands">
                   <conditions>
-                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7289,7 +7287,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="5275-5518-f1eb-3bce" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7299,29 +7297,29 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
             <categoryLink id="c0cd-03b8-71c7-f265" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b607-4486-3180-3306" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a946-d15d-aef9-8577" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1692-0421-494c-55f7" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a946-d15d-aef9-8577" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1692-0421-494c-55f7" type="max"/>
       </constraints>
       <profiles>
         <profile id="24e6-8854-e8eb-fa97" name="Helmut Wulf" publicationId="46da-ba61-6439-83e5" page="131" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Chainsaw, Pro, Secret Weapon, Stand Firm">
               <conditions>
-                <condition field="selections" scope="b607-4486-3180-3306" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b607-4486-3180-3306" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7349,7 +7347,7 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="b607-4486-3180-3306" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b607-4486-3180-3306" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7358,24 +7356,24 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e8ab-bb95-c7eb-6f37" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="7c34-5a85-1f39-b132" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="7c34-5a85-1f39-b132" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="140000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="157f-649b-9c97-9e54" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686a-6527-1419-0916" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686a-6527-1419-0916" type="max"/>
       </constraints>
       <rules>
         <rule id="7cda-7db6-798f-5720" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false">
@@ -7383,24 +7381,23 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
 
 1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
 2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
-3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).
-</description>
+3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).</description>
         </rule>
       </rules>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d8e-1440-b9b8-a2b5" name="Familiar Face" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="639c-a6a5-0448-b3d6" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="639c-a6a5-0448-b3d6" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="abf8-8540-fcfe-2a2c" name="Drafted" hidden="true" collective="false" import="true" type="upgrade">
@@ -7409,32 +7406,32 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="lessThan"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="lessThan"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="lessThan"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5752-b3a5-5dc7-4b24" type="lessThan"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ee8-d98a-5106-523d" type="lessThan"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6af2-0ad7-97ea-b3a2" type="lessThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" field="name" value="Drafted (Reselect Skills/Attributes to Remove TV)">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf8-8540-fcfe-2a2c" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89c-528b-8787-6a85" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89c-528b-8787-6a85" type="max"/>
       </constraints>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b271-e78e-eae2-ab80" name="Professor Fronkelheim" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fbb-5b56-5c84-dd85" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fbb-5b56-5c84-dd85" type="max"/>
       </constraints>
       <rules>
         <rule id="b992-53b7-5cf8-01ed" name="&quot;Have you yhought about an upgrade?.&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
@@ -7451,14 +7448,14 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="1948-f05b-d7d0-57d2" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef16-337b-0109-6931" name="Portal Navigator" publicationId="439d-dc2e-2f7e-c520" page="65" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90cf-161e-e1be-4a56" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90cf-161e-e1be-4a56" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1798-280d-5eea-b2fa" name="Portal Navigator" hidden="false" targetId="7289-4649-2bec-993c" type="rule"/>
@@ -7467,14 +7464,14 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="e836-2750-dc29-1568" name="[G]eneral" hidden="false" targetId="8f4e-0b58-0fc3-0fa0" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="43e1-85c4-3832-e605" name="Give and Go" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96e-fdf9-4164-8d44" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96e-fdf9-4164-8d44" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="7b1d-c674-00c4-d842" name="Give and Go" hidden="false" targetId="5132-e617-f652-51ef" type="rule"/>
@@ -7483,14 +7480,14 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="546f-6369-21e8-e368" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8be3-afaf-8617-9d13" name="Portal Passer" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e5-54f3-2f4d-8401" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e5-54f3-2f4d-8401" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="bdda-23b2-585b-ee1d" name="Portal Passer" hidden="false" targetId="28b5-fb9a-e60f-6442" type="rule"/>
@@ -7499,14 +7496,14 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="b5a1-362f-c9b6-8856" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da1a-049a-8559-74db" name="Wall Thrower" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-d5c9-9a7e-f2e2" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-d5c9-9a7e-f2e2" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d4b0-faf5-259d-d825" name="Wall Thrower" hidden="false" targetId="55da-3a97-5ae7-dcbe" type="rule"/>
@@ -7515,22 +7512,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="38b9-acef-e92a-70fd" name="[P]assing" hidden="false" targetId="8fc3-9567-73bd-8337" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="96f8-01d2-bef0-cd90" name="Estelle La Veneaux" publicationId="3637-e2aa-16da-c089" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc40-18e4-86e9-5eb0" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6175-b291-d40f-5d10" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc40-18e4-86e9-5eb0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6175-b291-d40f-5d10" type="max"/>
       </constraints>
       <profiles>
         <profile id="1fdb-7b16-cfa5-b2e7" name="Estelle La Veneaux" publicationId="a98a-aed9-fafb-e69f" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Dodge, Guard, Sidestep">
               <conditions>
-                <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7557,7 +7554,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7567,25 +7564,25 @@ Until the end of this game, each selected player gains a single randomly selecte
       </infoLinks>
       <categoryLinks>
         <categoryLink id="023a-9e68-756f-ac00" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="fdbe-e7da-af66-707e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="fdbe-e7da-af66-707e" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="acf1-5a06-bbaf-54ee" name="Glotl Stop" publicationId="a98a-aed9-fafb-e69f" page="14" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8939-e40e-ee82-a754" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d02-f41f-dd30-85a0" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8939-e40e-ee82-a754" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d02-f41f-dd30-85a0" type="max"/>
       </constraints>
       <profiles>
         <profile id="773a-a883-569e-20bb" name="Glotl Stop" publicationId="a98a-aed9-fafb-e69f" page="14" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Animal Savagery, Frenzy, Mighty Blow (+1), Prehensile Tail, Stand Firm, Thick Skull">
               <conditions>
-                <condition field="selections" scope="acf1-5a06-bbaf-54ee" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="acf1-5a06-bbaf-54ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7612,7 +7609,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="acf1-5a06-bbaf-54ee" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="acf1-5a06-bbaf-54ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7624,25 +7621,25 @@ Until the end of this game, each selected player gains a single randomly selecte
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6395-fcf8-b302-8084" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="bf8f-a9e3-aaf2-aa79" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="bf8f-a9e3-aaf2-aa79" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="270000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="02a0-5253-f8c5-29c0" name="Boa Kon&apos;ssstriktr" publicationId="a98a-aed9-fafb-e69f" page="30" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab7-b155-5372-cb07" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ee-85c6-5f3d-9399" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab7-b155-5372-cb07" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ee-85c6-5f3d-9399" type="max"/>
       </constraints>
       <profiles>
         <profile id="ed51-f0f0-682e-63df" name="Boa Kon&apos;ssstriktr" publicationId="a98a-aed9-fafb-e69f" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Hypnotic Gaze, Prehensile Tail, Safe Pair of Hands, Sidestep">
               <conditions>
-                <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7669,7 +7666,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7680,25 +7677,25 @@ Until the end of this game, each selected player gains a single randomly selecte
       </infoLinks>
       <categoryLinks>
         <categoryLink id="71e5-da07-7dc1-e777" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="3a58-3795-872d-fc0e" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="3a58-3795-872d-fc0e" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="630d-615a-fa3a-2ea6" name="Scrappa Sorehead" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="630d-615a-fa3a-2ea6" name="Scrappa Sorehead" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb87-d744-c839-9a1e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f86-4dc2-c91c-8326" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb87-d744-c839-9a1e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f86-4dc2-c91c-8326" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5722-6768-b34d-dba6" name="Scrappa Sorehead" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="5722-6768-b34d-dba6" name="Scrappa Sorehead" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Dodge, Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet">
               <conditions>
-                <condition field="selections" scope="630d-615a-fa3a-2ea6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="630d-615a-fa3a-2ea6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7714,7 +7711,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="1018-8875-ff6e-8237" name="Yoink!" page="" hidden="false">
+        <rule id="1018-8875-ff6e-8237" name="Yoink!" hidden="false">
           <description>Once per game, when Scrappa attempts to interfere with a Pass action, he may roll a D6. On a 2+, Scrappa does not need to roll to interfere with the Pass action, instead he automatically makes an Interception and gains control of the ball.</description>
         </rule>
       </rules>
@@ -7725,7 +7722,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="630d-615a-fa3a-2ea6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="630d-615a-fa3a-2ea6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7738,25 +7735,25 @@ Until the end of this game, each selected player gains a single randomly selecte
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ff16-8ca2-69dd-2866" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="ea36-f65c-7624-3229" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="ea36-f65c-7624-3229" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="84c4-b59e-00e9-9156" name="Nobbla Blackwart" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="84c4-b59e-00e9-9156" name="Nobbla Blackwart" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dd4-2024-310f-2e43" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf6-b853-7307-df7a" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dd4-2024-310f-2e43" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf6-b853-7307-df7a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="35bf-1cef-99a7-8eb0" name="Nobbla Blackwart" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="35bf-1cef-99a7-8eb0" name="Nobbla Blackwart" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Chainsaw, Dodge, Secret Weapon, Stunty">
               <conditions>
-                <condition field="selections" scope="84c4-b59e-00e9-9156" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="84c4-b59e-00e9-9156" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7772,7 +7769,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="3ed3-33d8-e07a-6dbb" name="Kick &apos;em while they&apos;re down!" page="" hidden="false">
+        <rule id="3ed3-33d8-e07a-6dbb" name="Kick &apos;em while they&apos;re down!" hidden="false">
           <description>Once per game, Nobbla may use the Chainsaw Attack Special action against a Prone or Stunned player. This does not count as a Foul action and so Nobbla cannot be Sent-off when using this ability.</description>
         </rule>
       </rules>
@@ -7783,7 +7780,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="84c4-b59e-00e9-9156" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="84c4-b59e-00e9-9156" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7794,25 +7791,25 @@ Until the end of this game, each selected player gains a single randomly selecte
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9145-45bc-eb27-37a9" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
-        <categoryLink id="af09-64d3-c1dd-bd03" name=".Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+        <categoryLink id="af09-64d3-c1dd-bd03" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ec6-8434-a4a0-1fc6" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9ec6-8434-a4a0-1fc6" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c60c-c428-e853-e150" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55a-313b-556c-a3dd" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c60c-c428-e853-e150" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55a-313b-556c-a3dd" type="max"/>
       </constraints>
       <profiles>
-        <profile id="7853-4af0-2362-f1ed" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="7853-4af0-2362-f1ed" name="Cindy Piewhistle" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Accurate, Bombardier, Dodge, Secret Weapon, Stunty">
               <conditions>
-                <condition field="selections" scope="9ec6-8434-a4a0-1fc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9ec6-8434-a4a0-1fc6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7828,7 +7825,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="9f0a-7a5a-846a-a7be" name="All You Can Eat" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+        <rule id="9f0a-7a5a-846a-a7be" name="All You Can Eat" publicationId="e6c1-775b-d5c7-e5fd" hidden="false">
           <description>One per game, Cindy may perform two Throw Bomb Special actions rather than one; though she must commit to doing so before making the first action. If she does, immediately after performing the second Throw Bomb Special action roll a D6. On a 1-3 Cindy is immediately sent off.</description>
         </rule>
       </rules>
@@ -7837,7 +7834,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="9ec6-8434-a4a0-1fc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="9ec6-8434-a4a0-1fc6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7853,22 +7850,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="8732-bbb0-f18d-390c" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dc60-c436-efc1-883e" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="dc60-c436-efc1-883e" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e53-0bce-5e27-089f" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fb3-9c87-8db7-5e76" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e53-0bce-5e27-089f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fb3-9c87-8db7-5e76" type="max"/>
       </constraints>
       <profiles>
-        <profile id="2ad7-92ad-22de-08a4" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="2ad7-92ad-22de-08a4" name="Bilerot Vomitflesh" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Disturbing Presence, Foul Appearance">
               <conditions>
-                <condition field="selections" scope="dc60-c436-efc1-883e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="dc60-c436-efc1-883e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7884,7 +7881,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="089e-7aec-8202-b5de" name="Purtid Regurgitation" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+        <rule id="089e-7aec-8202-b5de" name="Purtid Regurgitation" publicationId="e6c1-775b-d5c7-e5fd" hidden="false">
           <description>Once per game, Bilerot may use the Projectile Vomit Special action. This may still be used even if Bilerot has already performed a Block actiont his turn.</description>
         </rule>
       </rules>
@@ -7893,7 +7890,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="dc60-c436-efc1-883e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="dc60-c436-efc1-883e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7907,22 +7904,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="e601-955e-5ec6-8473" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="180000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a0b2-1efb-f224-11a1" name="Ivan &apos;The Animal&apos; Deatheshroud" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a0b2-1efb-f224-11a1" name="Ivan &apos;The Animal&apos; Deatheshroud" publicationId="5dbd-3c70-d864-0f43" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460d-e1d5-1c89-9e20" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-8f34-b584-2519" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460d-e1d5-1c89-9e20" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a22b-8f34-b584-2519" type="max"/>
       </constraints>
       <profiles>
-        <profile id="2275-5ee9-c520-2196" name="Ivan &apos;The Animal&apos; Deatheshroud" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="2275-5ee9-c520-2196" name="Ivan &apos;The Animal&apos; Deatheshroud" publicationId="5dbd-3c70-d864-0f43" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Disturbing Presence, Juggernaut, Regeneration, Strip Ball, Tackle">
               <conditions>
-                <condition field="selections" scope="a0b2-1efb-f224-11a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="a0b2-1efb-f224-11a1" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7938,7 +7935,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="3ab1-69d2-ac0d-d335" name="Dwarfen Scourge" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false">
+        <rule id="3ab1-69d2-ac0d-d335" name="Dwarfen Scourge" publicationId="5dbd-3c70-d864-0f43" hidden="false">
           <description>Once per game, when an opposition player is Knocked Down as a result of a Block action performed by Ivan, you may apply an additional +1 modifier to the Armour roll or Injury roll. If this is against a Dwarfen player from any team, this may instead be a +2 modifier.</description>
         </rule>
       </rules>
@@ -7947,7 +7944,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="a0b2-1efb-f224-11a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="a0b2-1efb-f224-11a1" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7964,22 +7961,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="6d6c-2d7b-8743-87e7" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e305-3078-5475-f863" name="&apos;Captain&apos; Karina von Riesz" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e305-3078-5475-f863" name="&apos;Captain&apos; Karina von Riesz" publicationId="5dbd-3c70-d864-0f43" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6139-6425-bcd2-e667" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed8d-7681-b6f3-d4dc" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6139-6425-bcd2-e667" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed8d-7681-b6f3-d4dc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="2890-4fe9-6fd3-f638" name="&apos;Captain&apos; Karina von Riesz" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="2890-4fe9-6fd3-f638" name="&apos;Captain&apos; Karina von Riesz" publicationId="5dbd-3c70-d864-0f43" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Bloodlust (2+), Dodge, Hypnotic Gaze, Jump Up, Regeneration">
               <conditions>
-                <condition field="selections" scope="e305-3078-5475-f863" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e305-3078-5475-f863" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7995,7 +7992,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="050b-f7cc-458f-8c13" name="Tasty Morsel" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false">
+        <rule id="050b-f7cc-458f-8c13" name="Tasty Morsel" publicationId="5dbd-3c70-d864-0f43" hidden="false">
           <description>Once per game, when Karina fails a Bloodlust roll, she may choose to bite an opposition player with a ST of 3 or lower as if they were a Thrall Lineman team-mate. Karina may not bite Star Players with the special rule.</description>
         </rule>
       </rules>
@@ -8004,7 +8001,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="e305-3078-5475-f863" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e305-3078-5475-f863" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8020,22 +8017,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="6808-2eac-948d-29b6" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="230000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e866-fae5-5eb9-b38f" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e866-fae5-5eb9-b38f" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab69-72e7-694a-a8ae" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c52c-6532-d830-6846" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab69-72e7-694a-a8ae" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c52c-6532-d830-6846" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1fe6-ea2c-7d83-0421" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="1fe6-ea2c-7d83-0421" name="Count Luthor von Drakenborg" publicationId="5dbd-3c70-d864-0f43" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Hypnotic Gaze, Regeneration, Sidestep">
               <conditions>
-                <condition field="selections" scope="e866-fae5-5eb9-b38f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e866-fae5-5eb9-b38f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8051,7 +8048,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="954c-9359-9150-2d13" name="Star of the Show" publicationId="5dbd-3c70-d864-0f43" page="" hidden="false">
+        <rule id="954c-9359-9150-2d13" name="Star of the Show" publicationId="5dbd-3c70-d864-0f43" hidden="false">
           <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.Once per game, when Count Lithor scores a touchdown, his controlling coach may gain one team re-roll. If the re-roll has not been used by the end of the nect drive, it is lost.</description>
         </rule>
       </rules>
@@ -8060,7 +8057,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="e866-fae5-5eb9-b38f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e866-fae5-5eb9-b38f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8075,22 +8072,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="5484-e54a-38df-7683" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="340000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ea9e-3b91-40f2-6cf1" name="Withergrasp Doubledrool" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ea9e-3b91-40f2-6cf1" name="Withergrasp Doubledrool" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b8a-d39b-4c3b-6bfe" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c4a-a097-bd38-d199" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b8a-d39b-4c3b-6bfe" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c4a-a097-bd38-d199" type="max"/>
       </constraints>
       <profiles>
         <profile id="0d0d-3d85-b1a3-db57" name="Withergrasp Doubledrool" publicationId="cdc6-3a6b-6663-f6ea" page="128" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle">
               <conditions>
-                <condition field="selections" scope="ea9e-3b91-40f2-6cf1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="ea9e-3b91-40f2-6cf1" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8106,7 +8103,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="66d0-cefc-a1e0-3fd9" name="Watch Out!" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+        <rule id="66d0-cefc-a1e0-3fd9" name="Watch Out!" publicationId="e6c1-775b-d5c7-e5fd" hidden="false">
           <description>The first time each half that Withergrasp is the target of an opposition player&apos;s Block action, he counts as having the Dodge skill.</description>
         </rule>
       </rules>
@@ -8115,7 +8112,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ea9e-3b91-40f2-6cf1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="ea9e-3b91-40f2-6cf1" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8131,22 +8128,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="8314-d57c-ebf4-41b0" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="170000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e446-0c0f-5d11-74dc" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e89-50ba-93e2-0274" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce8-cd44-7f10-c74e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e89-50ba-93e2-0274" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce8-cd44-7f10-c74e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5995-07f1-71e4-ee30" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="5995-07f1-71e4-ee30" name="Puggy Baconbreath" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dodge, Nerves of Steel, Right Stuff, Stunty">
               <conditions>
-                <condition field="selections" scope="e446-0c0f-5d11-74dc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e446-0c0f-5d11-74dc" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8162,7 +8159,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="c5e5-d037-0fec-cf0b" name="Halfling Luck" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false">
+        <rule id="c5e5-d037-0fec-cf0b" name="Halfling Luck" publicationId="e6c1-775b-d5c7-e5fd" hidden="false">
           <description>Once per game, Puggy mar re-roll one dice that was rolled either as a single dice roll, or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Injury, or Casualty roll).</description>
         </rule>
       </rules>
@@ -8171,7 +8168,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="e446-0c0f-5d11-74dc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="e446-0c0f-5d11-74dc" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8187,15 +8184,15 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="92e7-453c-ef8f-8a82" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a41f-802f-9a60-3454" name="Dribl and Drull" publicationId="46da-ba61-6439-83e5" page="133" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c4f-28eb-89d0-3a4b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4a-e9a9-2e51-def4" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c4f-28eb-89d0-3a4b" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4a-e9a9-2e51-def4" type="max"/>
       </constraints>
       <rules>
         <rule id="92fc-55fe-112e-b701" name="Two for One" publicationId="46da-ba61-6439-83e5" page="133" hidden="false">
@@ -8203,17 +8200,17 @@ Until the end of this game, each selected player gains a single randomly selecte
         </rule>
       </rules>
       <selectionEntries>
-        <selectionEntry id="7e41-bb2e-b018-07ac" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7e41-bb2e-b018-07ac" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c2-5cf9-9609-414e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="015b-d565-fb2f-794b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c2-5cf9-9609-414e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="015b-d565-fb2f-794b" type="min"/>
           </constraints>
           <profiles>
-            <profile id="1e84-f8e2-b691-5636" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="1e84-f8e2-b691-5636" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
                 <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Dodge, Sidestep, Sneaky Git, Stunty">
                   <conditions>
-                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8233,7 +8230,7 @@ Until the end of this game, each selected player gains a single randomly selecte
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8249,22 +8246,22 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink id="d5b2-8fcb-1579-f1a3" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0a05-f3ff-4db5-f460" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0a05-f3ff-4db5-f460" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d708-705d-bc91-02d7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b50-0063-31a0-6ebc" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d708-705d-bc91-02d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b50-0063-31a0-6ebc" type="min"/>
           </constraints>
           <profiles>
-            <profile id="e040-2ba6-cedf-296d" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+            <profile id="e040-2ba6-cedf-296d" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
                 <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Sidestep, Stab, Stunty">
                   <conditions>
-                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8284,7 +8281,7 @@ Until the end of this game, each selected player gains a single randomly selecte
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                    <condition field="selections" scope="a41f-802f-9a60-3454" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8299,29 +8296,29 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink id="1d36-3a9c-7cd8-af49" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="190000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d479-fca2-f584-5ec6" name="Kiroth Krakeneye" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d479-fca2-f584-5ec6" name="Kiroth Krakeneye" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c38b-fea9-e0af-dcea" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f9-1fa7-0610-ee68" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c38b-fea9-e0af-dcea" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f9-1fa7-0610-ee68" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1369-0ff9-60d1-9685" name="Kiroth Krakeneye" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="1369-0ff9-60d1-9685" name="Kiroth Krakeneye" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Foul Appearance, On the Ball, Tackle, Tentacles">
               <conditions>
-                <condition field="selections" scope="d479-fca2-f584-5ec6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="d479-fca2-f584-5ec6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8337,7 +8334,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="9142-28e9-5cad-4b7d" name="Black Ink" page="" hidden="false">
+        <rule id="9142-28e9-5cad-4b7d" name="Black Ink" hidden="false">
           <description>Once per game, at the start of any of his activations, Kiroth can choose an opposition player he is marking. The chosen player loses their tackle zone until they are next activated.</description>
         </rule>
       </rules>
@@ -8346,7 +8343,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="d479-fca2-f584-5ec6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="d479-fca2-f584-5ec6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8362,22 +8359,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="3e9f-c760-2db0-8b9f" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ac3d-e6df-bfaf-8cef" name="Skitter Stab-Stab" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ac3d-e6df-bfaf-8cef" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240e-d503-0790-7846" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a055-41a8-169c-dbc1" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240e-d503-0790-7846" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a055-41a8-169c-dbc1" type="max"/>
       </constraints>
       <profiles>
-        <profile id="c6d6-2900-1178-79e5" name="Skitter Stab-Stab" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="c6d6-2900-1178-79e5" name="Skitter Stab-Stab" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Prehensile Tail, Shadowing, Stab">
               <conditions>
-                <condition field="selections" scope="ac3d-e6df-bfaf-8cef" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="ac3d-e6df-bfaf-8cef" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8393,7 +8390,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="258c-51f3-7446-7e58" name="Master Assassin" page="" hidden="false">
+        <rule id="258c-51f3-7446-7e58" name="Master Assassin" hidden="false">
           <description>Once per game, when Skitter successfully breaks an opposition players armour as a result of a Stab Special action, he may choose to re-roll the injury roll.</description>
         </rule>
       </rules>
@@ -8402,7 +8399,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ac3d-e6df-bfaf-8cef" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="ac3d-e6df-bfaf-8cef" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8417,22 +8414,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="7c24-2de2-6897-310e" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="11ef-0d16-9ff3-b2d9" name="Ripper Bolgrot" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="11ef-0d16-9ff3-b2d9" name="Ripper Bolgrot" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eb2-e624-b340-217d" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5065-a885-04a2-e716" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eb2-e624-b340-217d" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5065-a885-04a2-e716" type="max"/>
       </constraints>
       <profiles>
-        <profile id="9800-2d63-4f13-c247" name="Ripper Bolgrot" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="9800-2d63-4f13-c247" name="Ripper Bolgrot" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Grab, Mighty Blow (+1), Regeneration, Throw Team-Mate">
               <conditions>
-                <condition field="selections" scope="11ef-0d16-9ff3-b2d9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="11ef-0d16-9ff3-b2d9" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8448,7 +8445,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="6507-9928-150c-b792" name="Thinking Man&apos;s Troll" page="" hidden="false">
+        <rule id="6507-9928-150c-b792" name="Thinking Man&apos;s Troll" hidden="false">
           <description>Once per half, Ripper may re-roll one dice that was rolled either as a single dice, as part of a multiple sice roll, or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Innjury or Casualty roll).</description>
         </rule>
       </rules>
@@ -8457,7 +8454,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="11ef-0d16-9ff3-b2d9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="11ef-0d16-9ff3-b2d9" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8472,22 +8469,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="c02a-c5ef-9cf3-ea6c" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b720-60fa-2abb-c41b" name="Rowana Forestfoot" publicationId="6630-4973-1ede-2add" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b720-60fa-2abb-c41b" name="Rowana Forestfoot" publicationId="6630-4973-1ede-2add" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c930-1997-cc43-041f" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f015-01aa-0b54-0f73" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c930-1997-cc43-041f" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f015-01aa-0b54-0f73" type="max"/>
       </constraints>
       <profiles>
-        <profile id="46be-f35b-2920-c998" name="Rowana Forestfoot" publicationId="6630-4973-1ede-2add" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="46be-f35b-2920-c998" name="Rowana Forestfoot" publicationId="6630-4973-1ede-2add" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Dump-Off, Guard, Horns, Jump Up, Leap">
               <conditions>
-                <condition field="selections" scope="b720-60fa-2abb-c41b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b720-60fa-2abb-c41b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8503,7 +8500,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="90e9-0d42-7dad-cf54" name="Bounding Leap" publicationId="6630-4973-1ede-2add" page="" hidden="false">
+        <rule id="90e9-0d42-7dad-cf54" name="Bounding Leap" publicationId="6630-4973-1ede-2add" hidden="false">
           <description>Once per game, after declaring that she will Leap but before rolling any dice Rowana may choose to tse this special rule. If she does, Rowana suffers no negative modifiers fir the Agility test to Leap and may choose to re-roll the result.</description>
         </rule>
       </rules>
@@ -8512,7 +8509,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="b720-60fa-2abb-c41b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="b720-60fa-2abb-c41b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8528,22 +8525,22 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="55a3-78e9-1fab-a6df" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="160000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="99e2-0d36-50b6-cdc3" name="Rodney Roachbait" publicationId="6630-4973-1ede-2add" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="99e2-0d36-50b6-cdc3" name="Rodney Roachbait" publicationId="6630-4973-1ede-2add" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d8c-5232-667f-67e5" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5273-33c7-d8b1-b1c0" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d8c-5232-667f-67e5" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5273-33c7-d8b1-b1c0" type="max"/>
       </constraints>
       <profiles>
-        <profile id="623f-5494-1a8b-bd43" name="Rodney Roachbait" publicationId="6630-4973-1ede-2add" page="" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="623f-5494-1a8b-bd43" name="Rodney Roachbait" publicationId="6630-4973-1ede-2add" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Catch, Diving Catch, Jump Up, On the Ball, Side Step, Stunty, Wrestle">
               <conditions>
-                <condition field="selections" scope="99e2-0d36-50b6-cdc3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="99e2-0d36-50b6-cdc3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8559,7 +8556,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </profile>
       </profiles>
       <rules>
-        <rule id="cd97-eaf7-ffb4-5b07" name="Catch of the Day" publicationId="6630-4973-1ede-2add" page="" hidden="false">
+        <rule id="cd97-eaf7-ffb4-5b07" name="Catch of the Day" publicationId="6630-4973-1ede-2add" hidden="false">
           <description>Once per hald, if Rodney is Standing and begins his activation within 3 squaresof a ball which is on the ground he may roll a D6. On a 1-2, nothing happens. On a 3+, Rodney immediately gains possession of the ball.</description>
         </rule>
       </rules>
@@ -8568,7 +8565,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="99e2-0d36-50b6-cdc3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
+                <condition field="selections" scope="99e2-0d36-50b6-cdc3" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8586,220 +8583,221 @@ Until the end of this game, each selected player gains a single randomly selecte
         <categoryLink id="3acb-e886-78d8-a3ba" name="Star Player" hidden="false" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000.0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000"/>
+        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Breathe Fire" hidden="false" id="4d7a-6919-7659-fee8" publicationId="dcf0-4e1e-b304-926a"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="6fa2-0920-eabe-29d1" name="Casualties (Blocks)" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink id="05d6-6acc-e78d-e3ac" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
+            <categoryLink id="05d6-6acc-e78d-e3ac" name="Total SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="2.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="2"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="af0c-27b2-29cb-8a37" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink id="10cb-90ed-b4cc-06f4" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
+            <categoryLink id="10cb-90ed-b4cc-06f4" name="Total SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5827-052f-0008-75aa" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink id="e8ee-b633-da17-481e" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
+            <categoryLink id="e8ee-b633-da17-481e" name="Total SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="2.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="2"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3f74-a03e-139b-3f6c" name="Touchdowns" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="5.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="5">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink id="1381-021b-ab0b-7bf7" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
+            <categoryLink id="1381-021b-ab0b-7bf7" name="Total SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="3.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="3"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3314-4344-40e2-e8ba" name="MVPs Awarded" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink id="1294-758d-3589-5ce3" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
+            <categoryLink id="1294-758d-3589-5ce3" name="Total SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="4.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="4"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac10-7c1e-92f4-773f" name="[Exhibition Statistics]" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394a-2ca4-e503-f339" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="394a-2ca4-e503-f339" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="15d2-0c8d-ed13-024c" name="Touchdowns" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b401-e420-661d-b5ca" name="Completions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7c5e-0049-54eb-b28b" name="Interceptions" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9a09-aa13-26cc-f41a" name="Casualties" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fafa-ace7-ce6c-48a4" name="MVPs Awarded" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1941-4b53-b632-692c" name="Fouls Committed" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0def-cc44-77c0-6c1b" name="Games Won" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="name" value="1x Game Won">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5621-4576-70e7-480c" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5621-4576-70e7-480c" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1d85-d360-7d83-cfd8" name="Deflections" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fa0c-925d-0a2b-cf60" name="Fouls Committed" hidden="false" collective="false" import="true" type="upgrade">
           <categoryLinks>
-            <categoryLink id="7e4d-b905-116c-b0f6" name="SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
+            <categoryLink id="7e4d-b905-116c-b0f6" name="Total SPP" hidden="false" targetId="0b6c-a8b7-7bae-b8f2" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e32a-3d3d-1e26-d508" name="Deflections" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0.0">
+            <modifier type="set" field="39e2-ec20-0c67-eba6" value="0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="1"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="04dc-8381-cbe6-100e" name="Casualties (Other)" publicationId="46da-ba61-6439-83e5" page="70" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8808,7 +8806,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1fa9-a9cf-7b89-5a8c" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1fa9-a9cf-7b89-5a8c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8817,21 +8815,21 @@ Until the end of this game, each selected player gains a single randomly selecte
               <modifiers>
                 <modifier type="set" field="name" value="1x Season Played">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23d0-1585-fbbb-b623" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="23d0-1585-fbbb-b623" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5621-4576-70e7-480c" name="Games Won" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
-                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8844,12 +8842,12 @@ Until the end of this game, each selected player gains a single randomly selecte
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4edc-ec0a-99b2-12cd" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4edc-ec0a-99b2-12cd" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="0d2a-fab5-5a99-e7b3" name="Random Primary Skill" hidden="false" collective="false" import="true" targetId="83d7-f547-143a-abf9" type="selectionEntry">
@@ -8857,7 +8855,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="6c0f-1879-c9ff-2642" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="3.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="3"/>
               </costs>
             </entryLink>
             <entryLink id="056b-82a9-022d-153f" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -8865,7 +8863,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="e8d0-d94c-0791-1f28" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6"/>
               </costs>
             </entryLink>
             <entryLink id="04a0-d667-8818-3ce9" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -8873,7 +8871,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="6ea8-35db-47f4-bdde" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6"/>
               </costs>
             </entryLink>
             <entryLink id="b3d5-8eeb-9d70-0d91" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -8881,7 +8879,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="e54b-4b3f-8697-c8b7" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12"/>
               </costs>
             </entryLink>
             <entryLink id="11d5-6edc-4858-b536" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -8889,7 +8887,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="28cb-d69d-e0f6-0bd0" name="1st Advancement" hidden="false" targetId="2dff-4e96-3876-0daa" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="18.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="18"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -8900,15 +8898,15 @@ Until the end of this game, each selected player gains a single randomly selecte
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dff-4e96-3876-0daa" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dff-4e96-3876-0daa" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="779c-499e-f051-772a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="779c-499e-f051-772a" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="ad04-3548-0bbb-f941" name="Random Primary Skill" hidden="false" collective="false" import="true" targetId="83d7-f547-143a-abf9" type="selectionEntry">
@@ -8916,7 +8914,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="c1dd-8398-5940-e1b4" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="4.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="4"/>
               </costs>
             </entryLink>
             <entryLink id="ff60-fee4-6976-7547" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -8924,8 +8922,8 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="3b27-08ce-3409-112a" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="8.0"/>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8.0"/>
+                <cost name=" SPP" typeId="39e2-ec20-0c67-eba6" value="8"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8"/>
               </costs>
             </entryLink>
             <entryLink id="c583-d5a0-89d1-1b10" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -8933,7 +8931,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="a04f-ad74-e2b2-5256" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8"/>
               </costs>
             </entryLink>
             <entryLink id="b1c7-d0ba-886c-6276" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -8941,7 +8939,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="9a0c-44c9-ca6b-5fda" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="14.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="14"/>
               </costs>
             </entryLink>
             <entryLink id="be86-454a-174b-b7c8" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -8949,7 +8947,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="9203-3f3e-148b-7e06" name="2nd Advancement" hidden="false" targetId="fb34-a3e1-625c-ce09" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -8960,15 +8958,15 @@ Until the end of this game, each selected player gains a single randomly selecte
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb34-a3e1-625c-ce09" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27fe-27f3-c43d-fb03" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27fe-27f3-c43d-fb03" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="768a-f9ed-2a5f-1677" name="Random Primary Skill" hidden="false" collective="false" import="true" targetId="83d7-f547-143a-abf9" type="selectionEntry">
@@ -8976,7 +8974,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="f8e4-73d1-5f32-dbba" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="6"/>
               </costs>
             </entryLink>
             <entryLink id="d9de-6211-cc14-7981" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -8984,7 +8982,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="7474-b629-cb01-f240" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12"/>
               </costs>
             </entryLink>
             <entryLink id="c6dc-10dd-3e8e-7f35" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -8992,7 +8990,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="698f-9f90-aa62-39e6" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="12"/>
               </costs>
             </entryLink>
             <entryLink id="8fab-ac68-ad30-6dd6" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -9000,7 +8998,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="ddea-a754-d946-8a14" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="18.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="18"/>
               </costs>
             </entryLink>
             <entryLink id="3fb7-4b6e-09ce-9243" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -9008,7 +9006,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="afe0-f22d-9265-3247" name="3rd Advancement" hidden="false" targetId="b74c-721d-73af-2385" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="24.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="24"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -9019,15 +9017,15 @@ Until the end of this game, each selected player gains a single randomly selecte
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b74c-721d-73af-2385" type="atLeast"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b74c-721d-73af-2385" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9cb-c158-f1d7-87d8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9cb-c158-f1d7-87d8" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="57b3-7d2f-513c-2c64" name="Random Primary Skill" hidden="false" collective="false" import="true" targetId="83d7-f547-143a-abf9" type="selectionEntry">
@@ -9035,7 +9033,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="d096-c0c2-1023-7f24" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="8"/>
               </costs>
             </entryLink>
             <entryLink id="18c1-6583-d678-5acd" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -9043,7 +9041,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="f929-5c53-71af-7e71" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="16.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="16"/>
               </costs>
             </entryLink>
             <entryLink id="8278-f3f3-5dec-9dc1" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -9051,7 +9049,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="bf8c-0047-2b82-a746" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="16.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="16"/>
               </costs>
             </entryLink>
             <entryLink id="d547-d52a-6536-edab" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -9059,7 +9057,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="3677-554d-e328-16ec" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="22.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="22"/>
               </costs>
             </entryLink>
             <entryLink id="7e8e-8946-d776-da91" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -9067,7 +9065,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="9092-269f-1b97-6e5a" name="4th Advancement" hidden="false" targetId="e570-96d7-59e7-85e3" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="28.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="28"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -9078,15 +9076,15 @@ Until the end of this game, each selected player gains a single randomly selecte
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e570-96d7-59e7-85e3" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d616-43ef-bebf-9217" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d616-43ef-bebf-9217" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="6a0c-a8b0-4805-1ae9" name="Random Primary Skill" hidden="false" collective="false" import="true" targetId="83d7-f547-143a-abf9" type="selectionEntry">
@@ -9094,7 +9092,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="496c-2791-72ad-f736" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="10.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="10"/>
               </costs>
             </entryLink>
             <entryLink id="fc7b-30a5-7d1e-f26e" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -9102,7 +9100,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="9b4d-a52c-2dad-7fec" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20"/>
               </costs>
             </entryLink>
             <entryLink id="3f7b-e129-9044-10de" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -9110,7 +9108,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="282c-89d2-26c6-820c" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="20"/>
               </costs>
             </entryLink>
             <entryLink id="7067-7115-9ccf-cfbe" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -9118,7 +9116,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="4444-75fd-7e67-cdfb" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="26.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="26"/>
               </costs>
             </entryLink>
             <entryLink id="dcb6-cebe-9847-8145" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -9126,7 +9124,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="58bd-a5a6-1e1f-d410" name="5th Advancement" hidden="false" targetId="3422-c18e-f8f0-d540" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="32.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="32"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -9137,15 +9135,15 @@ Until the end of this game, each selected player gains a single randomly selecte
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3422-c18e-f8f0-d540" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ccc-17f4-10a3-29c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ccc-17f4-10a3-29c5" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="50ba-1501-7f6e-81b5" name="Random Primary Skill" hidden="false" collective="false" import="true" targetId="83d7-f547-143a-abf9" type="selectionEntry">
@@ -9153,7 +9151,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="9beb-d170-9d40-5277" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="15.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="15"/>
               </costs>
             </entryLink>
             <entryLink id="6b3c-167b-d7cd-b3da" name="Random Secondary Skill" hidden="false" collective="false" import="true" targetId="91ba-cf1f-6fd4-6e37" type="selectionEntry">
@@ -9161,7 +9159,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="4555-3ad2-469f-d2dc" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="30.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="30"/>
               </costs>
             </entryLink>
             <entryLink id="7316-2557-e233-829d" name="Chosen Primary Skill" hidden="false" collective="false" import="true" targetId="1f4c-dbf3-d819-a3c7" type="selectionEntry">
@@ -9169,7 +9167,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="0a1e-f1b7-97b2-e1ea" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="30.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="30"/>
               </costs>
             </entryLink>
             <entryLink id="237a-2bc7-b03b-423b" name="Chosen Secondary Skill" hidden="false" collective="false" import="true" targetId="b751-b84a-58f5-8d4a" type="selectionEntry">
@@ -9177,7 +9175,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="df1a-613f-7e6a-2d47" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="40.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="40"/>
               </costs>
             </entryLink>
             <entryLink id="5c3d-9e29-d4aa-10fa" name="Random Characteristic Improvement" hidden="false" collective="false" import="true" targetId="00a2-6ca0-31c0-e89e" type="selectionEntry">
@@ -9185,7 +9183,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink id="039c-178b-e6cd-bb77" name="6th Advancement" hidden="false" targetId="89d0-343a-ea42-482d" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="50.0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="50"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -9198,86 +9196,86 @@ Until the end of this game, each selected player gains a single randomly selecte
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="00c8-2374-951a-570d" value="1.0">
+        <modifier type="increment" field="00c8-2374-951a-570d" value="1">
           <repeats>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="af24-1ac7-b6b9-82da" value="1.0">
+        <modifier type="increment" field="af24-1ac7-b6b9-82da" value="1">
           <repeats>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="83d7-f547-143a-abf9" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f4c-dbf3-d819-a3c7" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="00c8-2374-951a-570d" value="-1.0">
+        <modifier type="set" field="00c8-2374-951a-570d" value="-1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="af24-1ac7-b6b9-82da" value="-1.0">
+        <modifier type="set" field="af24-1ac7-b6b9-82da" value="-1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00c8-2374-951a-570d" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af24-1ac7-b6b9-82da" type="min"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00c8-2374-951a-570d" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af24-1ac7-b6b9-82da" type="min"/>
       </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup id="d785-45e4-f9a9-ba02" name="Secondary Skills" hidden="true" collective="false" import="true">
       <modifiers>
-        <modifier type="increment" field="2151-cf0d-f6a2-05f6" value="1.0">
+        <modifier type="increment" field="2151-cf0d-f6a2-05f6" value="1">
           <repeats>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" type="atLeast"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" field="a9dc-ca66-62a5-c521" value="1.0">
+        <modifier type="increment" field="a9dc-ca66-62a5-c521" value="1">
           <repeats>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91ba-cf1f-6fd4-6e37" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b751-b84a-58f5-8d4a" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="2151-cf0d-f6a2-05f6" value="-1.0">
+        <modifier type="set" field="2151-cf0d-f6a2-05f6" value="-1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="a9dc-ca66-62a5-c521" value="-1.0">
+        <modifier type="set" field="a9dc-ca66-62a5-c521" value="-1">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9dc-ca66-62a5-c521" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2151-cf0d-f6a2-05f6" type="min"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9dc-ca66-62a5-c521" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2151-cf0d-f6a2-05f6" type="min"/>
       </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup id="be60-70af-3a08-0f8f" name="Local Crowd" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a2-cbe0-2c5c-1d8e" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6092-24b5-4978-7684" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a2-cbe0-2c5c-1d8e" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6092-24b5-4978-7684" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="fc31-5387-aacb-96bd" name="1 - Ale-fuelled Maniacs" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true" type="upgrade">
@@ -9291,9 +9289,9 @@ Until the end of this game, each selected player gains a single randomly selecte
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="79e8-8603-8541-3fae" name="2 - Boistrous Rabble" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true" type="upgrade">
@@ -9303,9 +9301,9 @@ Until the end of this game, each selected player gains a single randomly selecte
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5045-c45b-79ce-8037" name="3 - Know-it-all Hecklers" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true" type="upgrade">
@@ -9317,9 +9315,9 @@ Until the end of this game, each selected player gains a single randomly selecte
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bae6-0877-db51-4a9c" name="4 - Bunch of Pacifists" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true" type="upgrade">
@@ -9332,9 +9330,9 @@ In addition, if a player is pushed into the crowd, roll a D6:
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="40a4-c601-0ff2-9025" name="5 - Fickle Fans" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true" type="upgrade">
@@ -9349,9 +9347,9 @@ Note that neither team’s Fan Factor can fall below 0. In addition, if the ball
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="de6b-0d1a-96d4-00ef" name="6 - Solemn and Silent" publicationId="9118-6c97-8006-93a4" page="65" hidden="false" collective="false" import="true" type="upgrade">
@@ -9363,17 +9361,17 @@ b. As close as possible to the square they last occupied when pushed off the pit
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="09a2-971d-51ca-5ab4" name="Luxury Stadium" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f1-e320-3a6d-814e" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="314b-72ea-f3f0-79a6" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f1-e320-3a6d-814e" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="314b-72ea-f3f0-79a6" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="4de7-555b-f918-b804" name="1 - Integrated Merchendise Stalls" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true" type="upgrade">
@@ -9383,9 +9381,9 @@ b. As close as possible to the square they last occupied when pushed off the pit
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0331-0f6f-00ae-dcf8" name="2 - Reputation for Spectacle" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true" type="upgrade">
@@ -9395,9 +9393,9 @@ b. As close as possible to the square they last occupied when pushed off the pit
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6130-f053-ef87-6115" name="3 - Broadcast Studio" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true" type="upgrade">
@@ -9407,9 +9405,9 @@ b. As close as possible to the square they last occupied when pushed off the pit
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1a19-d976-50b4-e57c" name="4 - On Site Apothecaries" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true" type="upgrade">
@@ -9421,9 +9419,9 @@ b. As close as possible to the square they last occupied when pushed off the pit
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0e90-2364-b916-32ef" name="5 - Enclosed Pitch" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true" type="upgrade">
@@ -9434,9 +9432,9 @@ Note that thrown players can land in the crowd as normal.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9f00-ca77-5df7-a217" name="6 - Deluxe Seating" publicationId="9118-6c97-8006-93a4" page="64" hidden="false" collective="false" import="true" type="upgrade">
@@ -9446,17 +9444,17 @@ Note that thrown players can land in the crowd as normal.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="0c4e-7614-3cde-29cd" name="Unusual Playing Surface" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be09-5d64-afd2-02fc" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1305-7668-8c4d-03c6" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be09-5d64-afd2-02fc" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1305-7668-8c4d-03c6" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="348a-ed05-450f-107f" name="1 - Ankle-deep Water" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -9466,9 +9464,9 @@ Note that thrown players can land in the crowd as normal.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8ea9-e05e-74d5-171c" name="2 - Sloping Pitch" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -9483,9 +9481,9 @@ After half-time, the pitch will slope the other way, representing the teams chan
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dbbd-7d34-03d6-9871" name="3 - Ice" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -9496,9 +9494,9 @@ Note that the players are assumed to have been issued with appropriate kit to tr
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="70b2-6cc6-71a8-3270" name="4 - Astrogranite" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -9510,9 +9508,9 @@ Note that the players are assumed to have been issued with appropriate kit to tr
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c11d-8ca6-1f0f-4ca8" name="5 - Uneven Footing" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -9523,9 +9521,9 @@ However, players can attempt to Rush one extra square during their activation. T
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="608a-240f-e043-c2da" name="6 - Solid Stone" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -9535,17 +9533,17 @@ However, players can attempt to Rush one extra square during their activation. T
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="ca94-94ae-5f98-bd68" name="Rough and Ready Stadium" publicationId="9118-6c97-8006-93a4" page="62" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7338-2fea-b04f-0153" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ba-c320-1141-af5a" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7338-2fea-b04f-0153" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ba-c320-1141-af5a" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="b358-a638-e17d-dfb7" name="1 - Apathetic Officials" publicationId="9118-6c97-8006-93a4" page="63" hidden="false" collective="false" import="true" type="upgrade">
@@ -9555,23 +9553,23 @@ However, players can attempt to Rush one extra square during their activation. T
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b72b-8bf4-8180-7f17" name="2 - Apalling Stnads" publicationId="9118-6c97-8006-93a4" page="63" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="12f9-3425-8fb5-05f6" name="Apalling Stnads" publicationId="9118-6c97-8006-93a4" page="63" hidden="false">
-              <description> At the end of each drive, both coaches roll a D6 to determine if their fans have started leaving:
+              <description>At the end of each drive, both coaches roll a D6 to determine if their fans have started leaving:
 • On a roll of 2+, the fans are willing to put up with the discomfort.
 • On a roll of 1, fans have started leaving and the team must reduce its Fan Factor by 1. Note that neither team’s Fan Factor can fall below 0.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a3b1-debc-b4da-3765" name="3 - Uncovered Trapdoors" publicationId="9118-6c97-8006-93a4" page="63" hidden="false" collective="false" import="true" type="upgrade">
@@ -9581,9 +9579,9 @@ However, players can attempt to Rush one extra square during their activation. T
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3954-e658-9085-7a95" name="4 -  Unclear Markings" publicationId="9118-6c97-8006-93a4" page="63" hidden="false" collective="false" import="true" type="upgrade">
@@ -9598,9 +9596,9 @@ In addition, the limit of two players per Wide Zone during set-up does not apply
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="11d9-ab3f-3b5f-4da5" name="5 -  Desperate for Exposure" publicationId="9118-6c97-8006-93a4" page="63" hidden="false" collective="false" import="true" type="upgrade">
@@ -9610,9 +9608,9 @@ In addition, the limit of two players per Wide Zone during set-up does not apply
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e8a3-bf6a-1cfb-353b" name="6 - Poorly-built Dungeons" publicationId="9118-6c97-8006-93a4" page="63" hidden="false" collective="false" import="true" type="upgrade">
@@ -9622,16 +9620,16 @@ In addition, the limit of two players per Wide Zone during set-up does not apply
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="3a41-d8e0-044c-2580" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e7bc-5454-335f-87ed" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e7bc-5454-335f-87ed" type="max"/>
       </constraints>
       <rules>
         <rule id="f585-fa14-8c2e-a66c" name="(In)Famous Coaching Staff" publicationId="46da-ba61-6439-83e5" page="93" hidden="false">
@@ -9646,7 +9644,7 @@ As with Star Players, it is possible for both teams to hire the services of the 
       <selectionEntries>
         <selectionEntry id="154a-a2a6-bd93-7d12" name="Josef Bugman" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867d-d736-007b-12f4" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867d-d736-007b-12f4" type="max"/>
           </constraints>
           <profiles>
             <profile id="a937-9f73-d54a-417f" name="Josef Bugman, Dwarf Master Drinker" publicationId="46da-ba61-6439-83e5" page="93" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
@@ -9679,14 +9677,14 @@ As with Star Players, it is possible for both teams to hire the services of the 
             <categoryLink id="e405-34c0-2951-359d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1111-10ba-1bc9-f186" name="Ayleen Andar" publicationId="9118-6c97-8006-93a4" page="19" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc44-4254-2ef1-3c08" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc44-4254-2ef1-3c08" type="max"/>
           </constraints>
           <rules>
             <rule id="c5fc-29f4-ebdb-7848" name="&quot;This kid has real potential!&quot;" publicationId="9118-6c97-8006-93a4" page="19" hidden="false">
@@ -9703,14 +9701,14 @@ Each Journeyman counts towards CTV as normal; their value does not increase for 
             <categoryLink id="14cb-c980-a426-c1fc" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1a67-057a-1038-3465" name="Schielund Scharlitan" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc64-928b-a46d-b31d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc64-928b-a46d-b31d" type="max"/>
           </constraints>
           <rules>
             <rule id="c9ac-60cf-2c30-9a51" name="&quot;I&apos;ll make you a star!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
@@ -9727,21 +9725,21 @@ Until the end of this game, each selected player gains the Pro skill. However, a
             <categoryLink id="0fe8-713b-dfee-9596" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="cfaf-b84a-8075-1c2f" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b3-0413-f802-e4ae" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b3-0413-f802-e4ae" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="f75a-b950-492d-ab4e" name="Biased Referee Inducement" publicationId="46da-ba61-6439-83e5" page="95" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7209-78fc-1e27-db51" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7209-78fc-1e27-db51" type="max"/>
           </constraints>
           <rules>
             <rule id="685c-081d-a2e5-4ada" name="Close Scrutiny" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
@@ -9755,28 +9753,28 @@ Until the end of this game, each selected player gains the Pro skill. However, a
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dcaa-7186-6b12-e32f" name="Jorm the Ogre" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="80000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="80000">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e2-af0a-9d17-ed74" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e2-af0a-9d17-ed74" type="max"/>
           </constraints>
           <rules>
             <rule id="3772-1aa1-b72e-26c1" name="Jorm Doesn&apos;t Like Cheaters" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
@@ -9792,21 +9790,21 @@ Once spotted by Jorm in this way (and only in this way), the player that committ
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f5cc-38f5-25e0-fa72" name="The Trundlefoot Triplets: Bungo, Filbert and Jeph" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="40000.0">
+            <modifier type="set" field="ffff-7836-9be4-196c" value="40000">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af3-82d6-ca4d-a014" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af3-82d6-ca4d-a014" type="max"/>
           </constraints>
           <rules>
             <rule id="3d64-71c6-40d2-ba3e" name="Heavy Handed Incompetence" publicationId="9118-6c97-8006-93a4" page="35" hidden="false">
@@ -9824,21 +9822,21 @@ Once spotted by Jorm in this way (and only in this way), the player that committ
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="3ecb-df2a-3712-995d" name="Wizard" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6b-b9ae-bc64-7ce5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6b-b9ae-bc64-7ce5" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="9653-7797-e648-e9bf" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc0-d822-0b57-7120" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc0-d822-0b57-7120" type="max"/>
           </constraints>
           <profiles>
             <profile id="60b9-7c96-d744-0769" name="&quot;Take this! Ooops...&quot;" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
@@ -9862,9 +9860,9 @@ Any Standing players hit by the Fireball are Knocked Down. When a player is Knoc
             <categoryLink id="d1f5-05cb-38c5-c928" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0.0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000.0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0.0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9876,42 +9874,42 @@ Any Standing players hit by the Fireball are Knocked Down. When a player is Knoc
       <entryLinks>
         <entryLink id="4425-613e-8eba-69c0" name="-AG" hidden="false" collective="false" import="true" targetId="5477-7f75-60f5-b7e5" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e7-2b0e-3b3e-95a3" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e7-2b0e-3b3e-95a3" type="max"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000"/>
           </costs>
         </entryLink>
         <entryLink id="e414-850e-9b5c-4d48" name="-AV" hidden="false" collective="false" import="true" targetId="ca52-545a-6510-c3a9" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0a4-606a-c61c-ac9f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0a4-606a-c61c-ac9f" type="max"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000"/>
           </costs>
         </entryLink>
         <entryLink id="a813-4f63-15ed-514e" name="-MA" hidden="false" collective="false" import="true" targetId="b3ba-e2fe-664a-fafc" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b4-44e0-13d3-9c17" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b4-44e0-13d3-9c17" type="max"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000"/>
           </costs>
         </entryLink>
         <entryLink id="21d2-5d57-3d7c-e986" name="-PA" hidden="false" collective="false" import="true" targetId="ce0f-f781-1e0e-74e5" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af6d-f9de-b33d-23be" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af6d-f9de-b33d-23be" type="max"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000"/>
           </costs>
         </entryLink>
         <entryLink id="9f79-c614-581c-3508" name="-ST" hidden="false" collective="false" import="true" targetId="b98d-5b2e-3c9b-4b02" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6251-a1e0-6fdb-5ca6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6251-a1e0-6fdb-5ca6" type="max"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000.0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="-10000"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -9924,8 +9922,7 @@ Any Standing players hit by the Fireball are Knocked Down. When a player is Knoc
 If this player has another Skill that allows them to perform more than one Block action, such as Frenzy, they must make a Dauntless roll before each separate Block action is performed.</description>
     </rule>
     <rule id="09fa-89a5-d1ff-2b4a" name="Claws" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
-      <description>When you make an Armour roll against an opposition player that was Knocked Down as the result of a Block action performed by this player, a roll of 8+ before applying any modifiers will break their armour, regardless of their actual Armour Value.
-</description>
+      <description>When you make an Armour roll against an opposition player that was Knocked Down as the result of a Block action performed by this player, a roll of 8+ before applying any modifiers will break their armour, regardless of their actual Armour Value.</description>
     </rule>
     <rule id="6afb-681d-b05b-b2a4" name="Bombardier" publicationId="46da-ba61-6439-83e5" page="83" hidden="false">
       <description>When activated and if they are Standing, this player can perform a ‘Throw Bomb’ Special action. This Special action is neither a Pass action nor a Throw Team-mate action, so does not prevent another player performing one of those actions during the same team turn. However, only a single player with this Trait may perform this Special action each team turn.
@@ -9954,8 +9951,7 @@ When a Bomb comes to rest on the ground, in either an unoccupied square, in a sq
 - On a roll of 1-3, the player manages to avoid the explosion.
 • Any Standing players hit by the explosion are Placed Prone.
 • An Armour roll (and possibly an Injury roll as well) is made against any player hit by the explosion, even if they were already Prone or Stunned. 
-• You may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.
-</description>
+• You may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</description>
     </rule>
     <rule id="e759-d3b3-3def-bc79" name="Break Tackle" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
       <description>Once during their activation, after making an Agility test in order to Dodge, this player may modify the dice roll by +1 if their Strength characteristic is 4 or less, or by +2 if their Strength characteristic is 5 or more.</description>
@@ -10027,8 +10023,7 @@ This player may Rush. Declare that the player will Rush before placing the Throw
 
 If this player ever Falls Over, is Knocked Down or is Placed Prone, an Injury roll is immediately made against them (no Armour roll is required), treating a Stunned result as a KO’d result.
 
-A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills. This Trait must still be used if the player is Prone or has lost their Tackle Zone.
-</description>
+A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills. This Trait must still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="f408-610b-756c-c5c0" name="Animosity" publicationId="46da-ba61-6439-83e5" page="81" hidden="false">
       <comment>Need to split this a lot... some better way than just duplicating it?</comment>
@@ -10059,8 +10054,7 @@ A player with this Skill cannot also have the Frenzy skill.</description>
       <description>When this player performs a Block action as part of a Blitz action (but not on its own), they may choose to treat a Both Down result as a Push Back result. In addition, when this player performs a Block action as part of a Blitz action, the target of the Block action may not use the Fend, Stand Firm or Wrestle skills.</description>
     </rule>
     <rule id="fcd2-8777-28d8-fdd7" name="Foul Appearance" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
-      <description>When an opposition player declares a Block action targeting this player (on its own or as part of a Blitz action), or any Special action that targets this player, their coach must first roll a D6, even if this player has lost their Tackle Zone. On a roll of 1, the player cannot perform the declared action and the action is wasted. This Skill may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.
-</description>
+      <description>When an opposition player declares a Block action targeting this player (on its own or as part of a Blitz action), or any Special action that targets this player, their coach must first roll a D6, even if this player has lost their Tackle Zone. On a roll of 1, the player cannot perform the declared action and the action is wasted. This Skill may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</description>
     </rule>
     <rule id="997c-d0f0-8262-dea7" name="Guard" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
       <description>This player can offer both offensive and defensive assists regardless of how many opposition players are Marking them.</description>
@@ -10159,12 +10153,10 @@ Note that if you declared that this player would perform an action which can onl
     <rule id="3ed7-31d8-4977-92b9" name="Jump Up" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
       <description>If this player is Prone they may stand up for free (i.e., standing up does not cost this player three (3) squares of their Movement Allowance, as it normally would).
 
-Additionally, if this player is Prone when activated, they may attempt to Jump Up and perform a Block action. This player makes an Agility test, applying a +1 modifier. If this test is passed, they stand up and may perform a Block action. If the test is failed, they remain Prone and their activation ends. This Skill may still be used if the player is Prone or has lost their Tackle Zone.
-</description>
+Additionally, if this player is Prone when activated, they may attempt to Jump Up and perform a Block action. This player makes an Agility test, applying a +1 modifier. If this test is passed, they stand up and may perform a Block action. If the test is failed, they remain Prone and their activation ends. This Skill may still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="a1d7-cbde-7dee-aa12" name="Disturbing Presence" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
-      <description>When an opposition player performs either a Pass action, a Throw Teammate action or a Throw Bomb Special action, or attempts to either interfere with a pass or to catch the ball, they must apply a -1 modifier to the test for each player on your team with this Skill that is within three squares of them, even if the player with this Skill is Prone, Stunned or has lost their Tackle Zone.
-</description>
+      <description>When an opposition player performs either a Pass action, a Throw Teammate action or a Throw Bomb Special action, or attempts to either interfere with a pass or to catch the ball, they must apply a -1 modifier to the test for each player on your team with this Skill that is within three squares of them, even if the player with this Skill is Prone, Stunned or has lost their Tackle Zone.</description>
     </rule>
     <rule id="d381-001e-f77b-c9a5" name="Dirty Player (+1)" publicationId="46da-ba61-6439-83e5" page="76" hidden="false">
       <description>When this player commits a Foul action, either the Armour roll or Injury roll made against the victim may be modified by the amount shown in brackets. This modifier may be applied after the roll has been made.</description>
@@ -10533,6 +10525,9 @@ If the player rolls lower than the number shown in brackets, or rolls a natural 
     </rule>
     <rule id="6130-bd43-e29f-3037" name="Trickster" publicationId="6630-4973-1ede-2add" hidden="false">
       <description>When this player is hit by a Block action or a Special action that replaces a Block action (with the exception of a Block action caused by the Ball and Chain Move Special action), before determining how many dice are rolled, they may be removed from the pitch and placed in any other unoccupied square adjacent to the player performing the Block action. The Block action then takes place as normal. If the player using this Trait is holding the ball and places themselves in the opposition End Zone, the Block action wil still be fully resolved before any touchdown is resolved.</description>
+    </rule>
+    <rule name="Breathe Fire" id="7a43-6417-a87d-a315" hidden="false" publicationId="dcf0-4e1e-b304-926a">
+      <description>Once per activation, instead of performing a Block action (either on its own or as part of a Blitz action), this player may perform a Breathe Fire Special action. When a player makes a Breathe Fire Special action they may choose one Standing opposition player they are Marking and roll a D6, applying a -1 modifier if the target has a ST of 5 or higher. On a 1, the player gets overeager, engulfing themself in flame and is immediately Knocked Down. On a 2-3, the opposition player ducks the gout of flame and nothing happens. On a 4+, the opposition player takes a ball of fire straight to the face and is immediately Placed Prone. However, if the roll is a natural 6, the potent pyro has taken its toll and the opposition player is Knocked Down instead. After the Breathe Fire Special action has been resolved, this player&apos;s activation immediately ends.</description>
     </rule>
   </sharedRules>
 </gameSystem>
