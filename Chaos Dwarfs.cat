@@ -1485,7 +1485,7 @@
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0"/>
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="3634-f4ae-b277-30bc"/>
-                <modifier type="remove" field="category" value="a308-0cd0-5622-4690"/>
+                <modifier type="remove" field="category" value="108e-32d7-df38-c44c"/>
                 <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
@@ -1497,7 +1497,7 @@
                 <modifier type="remove" field="category" value="ef36-92eb-8b79-1a1f"/>
                 <modifier type="set-primary" field="category" value="ce3b-e531-b6b3-0b3b"/>
                 <modifier type="set" field="ffff-7836-9be4-196c" value="0"/>
-                <modifier type="remove" field="category" value="a308-0cd0-5622-4690"/>
+                <modifier type="remove" field="category" value="108e-32d7-df38-c44c"/>
                 <modifier type="remove" field="category" value="df0d-1d00-1bf7-958f"/>
               </modifiers>
             </modifierGroup>
@@ -2863,7 +2863,7 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a308-0cd0-5622-4690" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a308-0cd0-5622-4690" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2893,15 +2893,7 @@
         </entryLink>
         <entryLink id="25de-982c-e456-32c4" name="Strip Ball" hidden="false" collective="false" import="true" targetId="9b6f-3ef9-1fbc-a48f" type="selectionEntry"/>
         <entryLink id="279c-4690-b436-a91e" name="Sure Hands" hidden="false" collective="false" import="true" targetId="c1cb-44a9-a187-89a1" type="selectionEntry"/>
-        <entryLink id="2678-e3ee-61e7-1b31" name="Tackle" hidden="false" collective="false" import="true" targetId="95a9-67ee-0356-2dba" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a308-0cd0-5622-4690" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="2678-e3ee-61e7-1b31" name="Tackle" hidden="false" collective="false" import="true" targetId="95a9-67ee-0356-2dba" type="selectionEntry"/>
         <entryLink id="bdd3-c08d-47e6-9533" name="Wrestle" hidden="false" collective="false" import="true" targetId="9a16-b887-4ba8-15c6" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -2909,7 +2901,15 @@
       <entryLinks>
         <entryLink id="b13b-5d62-2e14-6472" name="Big Hand" hidden="false" collective="false" import="true" targetId="3b20-7735-aaf0-700c" type="selectionEntry"/>
         <entryLink id="84c4-c616-5010-6d46" name="Claws" hidden="false" collective="false" import="true" targetId="de8d-44b0-5a3a-5ff6" type="selectionEntry"/>
-        <entryLink id="fa1c-d317-480e-919a" name="Disturbing Presence" hidden="false" collective="false" import="true" targetId="5e29-2928-7d20-99c3" type="selectionEntry"/>
+        <entryLink id="fa1c-d317-480e-919a" name="Disturbing Presence" hidden="false" collective="false" import="true" targetId="5e29-2928-7d20-99c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9dad-ff97-a721-5cc5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="6980-8341-74dd-01df" name="Extra Arms" hidden="false" collective="false" import="true" targetId="0fca-f232-20db-5486" type="selectionEntry"/>
         <entryLink id="d6be-4256-0db0-c534" name="Foul Appearance" hidden="false" collective="false" import="true" targetId="bb9c-3ef4-f7a6-9234" type="selectionEntry"/>
         <entryLink id="f731-e737-fb59-df3a" name="Horns" hidden="false" collective="false" import="true" targetId="d52e-e727-0ee4-ec85" type="selectionEntry">
@@ -2926,7 +2926,15 @@
         <entryLink id="a925-30bc-23a2-262a" name="Two Heads" hidden="false" collective="false" import="true" targetId="ee92-fa03-9a46-0aa4" type="selectionEntry"/>
         <entryLink id="3f60-1b4e-9f37-e314" name="Very Long Legs" hidden="false" collective="false" import="true" targetId="14f3-1ae1-2756-d310" type="selectionEntry"/>
         <entryLink id="f4d7-81fd-8220-4cb8" name="Monstrous Mouth" hidden="false" collective="false" import="true" targetId="5c37-ab43-92e3-65bd" type="selectionEntry"/>
-        <entryLink id="796b-b510-1cf5-d97e" name="Iron Hard Skin" hidden="false" collective="false" import="true" targetId="f32f-8e0b-95fc-1ece" type="selectionEntry"/>
+        <entryLink id="796b-b510-1cf5-d97e" name="Iron Hard Skin" hidden="false" collective="false" import="true" targetId="f32f-8e0b-95fc-1ece" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a308-0cd0-5622-4690" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="be53-77ad-ea8b-0824" name="[S]trength" hidden="false" collective="false" import="true">
@@ -2956,6 +2964,7 @@
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a308-0cd0-5622-4690" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="108e-32d7-df38-c44c" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e6c8-bcec-1783-dfd2" type="instanceOf"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9dad-ff97-a721-5cc5" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2963,7 +2972,15 @@
           </modifiers>
         </entryLink>
         <entryLink id="7db9-878b-7f40-9cf9" name="Arm Bar" hidden="false" collective="false" import="true" targetId="68a7-5f56-92ba-c718" type="selectionEntry"/>
-        <entryLink id="1642-0503-ca13-04b9" name="Brawler" hidden="false" collective="false" import="true" targetId="5fd2-79a1-26f5-bf4d" type="selectionEntry"/>
+        <entryLink id="1642-0503-ca13-04b9" name="Brawler" hidden="false" collective="false" import="true" targetId="5fd2-79a1-26f5-bf4d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9dad-ff97-a721-5cc5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="a414-165f-1c8e-c88f" name="Pile Driver" hidden="false" collective="false" import="true" targetId="de4d-0c5e-4bb4-7a67" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
