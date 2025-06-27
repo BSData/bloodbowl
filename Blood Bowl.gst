@@ -8250,9 +8250,6 @@ Until the end of this game, each selected player gains a single randomly selecte
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Familiar Face" hidden="false" id="b006-d108-c980-8ec9" collective="false" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry id="0a05-f3ff-4db5-f460" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -8303,9 +8300,6 @@ Until the end of this game, each selected player gains a single randomly selecte
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Familiar Face" hidden="false" id="aa7f-0b94-509e-1b80" collective="false" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8934,7 +8928,7 @@ Until the end of this game, each selected player gains a single randomly selecte
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Jordell Freshbreeze" hidden="false" id="0dcd-1a5a-a66d-ed2d">
       <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250"/>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="250000"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
