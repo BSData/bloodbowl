@@ -4604,13 +4604,13 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4afd-2b3a-5a0c-b249" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4afd-2b3a-5a0c-b249" name="Frank &apos;n&apos; Stein" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bba1-0339-79e7-5177" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207a-e13f-6299-56c3" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ad87-d2d7-2d93-5b8c" name="Frank &apos;n&apos; Stien" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
+        <profile id="ad87-d2d7-2d93-5b8c" name="Frank &apos;n&apos; Stein" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
             <modifier type="set" field="10f2-d8c7-4011-270d" value="Break Tackle, Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull">
               <conditions>
@@ -4631,7 +4631,7 @@ If the player was in possession of the ball when they were turned into a frog, i
       </profiles>
       <rules>
         <rule id="1db7-1d26-f61f-a432" name="Brutal Block" publicationId="8c4c-3037-21a5-355b" page="11" hidden="false">
-          <description>Once per game, when Frank &apos;n&apos; Stien makes an Injury roll against an opponent as a result of a Block action, he may choose to add an additional +1 modifier to the Injury roll. This modifier may be applied aafter the roll has been made.</description>
+          <description>Once per game, when Frank &apos;n&apos; Stein makes an Injury roll against an opponent as a result of a Block action, he may choose to add an additional +1 modifier to the Injury roll. This modifier may be applied after the roll has been made.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5275,18 +5275,6 @@ If the player was in possession of the ball when they were turned into a frog, i
       </costs>
     </selectionEntry>
     <selectionEntry id="19c7-050a-9950-59c0" name="Max Spleenripper" publicationId="3637-e2aa-16da-c089" page="30" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
-                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc35-0ab2-130c-4efd" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db8-60e8-45ce-3feb" type="max"/>
@@ -5561,18 +5549,6 @@ If the player was in possession of the ball when they were turned into a frog, i
       </costs>
     </selectionEntry>
     <selectionEntry id="9007-a6be-1641-e125" name="Scyla Anfingrimm" publicationId="3637-e2aa-16da-c089" page="14" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="436b-94fe-e712-be92" type="atLeast"/>
-                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="941a-de4f-4ec5-61d6" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3818-2772-779e-709f" type="max"/>
@@ -7525,7 +7501,7 @@ Until the end of this game, each selected player gains a single randomly selecte
       <profiles>
         <profile id="1fdb-7b16-cfa5-b2e7" name="Estelle La Veneaux" publicationId="a98a-aed9-fafb-e69f" page="11" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
-            <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Dodge, Guard, Sidestep">
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Disturbing Presence, Dodge, Guard, Side Step">
               <conditions>
                 <condition field="selections" scope="96f8-01d2-bef0-cd90" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
@@ -7537,7 +7513,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
             <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
             <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Sidestep</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Side Step</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
           </characteristics>
         </profile>
@@ -7637,7 +7613,7 @@ Until the end of this game, each selected player gains a single randomly selecte
       <profiles>
         <profile id="ed51-f0f0-682e-63df" name="Boa Kon&apos;ssstriktr" publicationId="a98a-aed9-fafb-e69f" page="30" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
           <modifiers>
-            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Hypnotic Gaze, Prehensile Tail, Safe Pair of Hands, Sidestep">
+            <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Hypnotic Gaze, Prehensile Tail, Safe Pair of Hands, Side Step">
               <conditions>
                 <condition field="selections" scope="02a0-5253-f8c5-29c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
               </conditions>
@@ -7649,7 +7625,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
             <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
             <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Sidestep</characteristic>
+            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Side Step</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
           </characteristics>
         </profile>
@@ -8208,7 +8184,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <profiles>
             <profile id="1e84-f8e2-b691-5636" name="Dribl" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
-                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Dodge, Sidestep, Sneaky Git, Stunty">
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dirty Player (+1), Dodge, Side Step, Sneaky Git, Stunty">
                   <conditions>
                     <condition field="selections" scope="a41f-802f-9a60-3454" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
@@ -8220,7 +8196,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Sidestep, Sneaky Git, Stunty</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Side Step, Sneaky Git, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
               </characteristics>
             </profile>
@@ -8259,7 +8235,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <profiles>
             <profile id="e040-2ba6-cedf-296d" name="Drull" publicationId="e6c1-775b-d5c7-e5fd" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
               <modifiers>
-                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Sidestep, Stab, Stunty">
+                <modifier type="set" field="10f2-d8c7-4011-270d" value="Dodge, Side Step, Stab, Stunty">
                   <conditions>
                     <condition field="selections" scope="a41f-802f-9a60-3454" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
                   </conditions>
@@ -8271,7 +8247,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Sidestep, Stab, Stunty</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Side Step, Stab, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
               </characteristics>
             </profile>

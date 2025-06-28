@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Chaos Dwarfs are evil creatures, famed weaponsmiths whose creations are as twisted and as cruel as they are. They are the sworn enemies of their distant kin, but if there’s one thing the two races agree on, it is Blood Bowl. Chaos Dwarf teams have long been a fixture of the sport, even though they were excluded from official play by the NAF until its collapse. Most Chaos Dwarf coaches realise that their chief weakness is their race’s inherent ponderousness, so Hobgoblin slaves fulfil a vital role as Runners and Throwers. A few lucky teams can even boast the presence of Bull Centaurs, mighty warriors who have been blessed with the gift of mutation. Chaos Dwarf teams might not be quick, but you’d be a fool to stand in their way!</readme>
   <categoryEntries>
     <categoryEntry id="108e-32d7-df38-c44c" name="Renegade Minotaur" publicationId="dcf0-4e1e-b304-926a" hidden="false">
@@ -3032,15 +3032,13 @@
     <selectionEntryGroup id="db10-eab9-1beb-e55f" name="Star Players" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="753b-4190-0a42-cb49" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry"/>
-        <entryLink id="836a-b0e1-d893-aae0" name="Max Spleenripper" hidden="false" collective="false" import="true" targetId="19c7-050a-9950-59c0" type="selectionEntry"/>
         <entryLink id="5168-15dd-9f42-66cb" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
         <entryLink id="15ff-fdcc-268f-925e" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry"/>
         <entryLink id="971e-8f6c-3de2-6e89" name="Barik Farblast" hidden="false" collective="false" import="true" targetId="8a87-241d-2e82-8181" type="selectionEntry"/>
         <entryLink id="a1e2-d10d-7baa-8479" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
         <entryLink id="ec5f-d3fa-c85e-fd40" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
         <entryLink id="5036-548e-7dd4-023a" name="Grashnak Blackhoof" hidden="false" collective="false" import="true" targetId="874c-6352-2ead-33fb" type="selectionEntry"/>
-        <entryLink id="aba0-5456-752e-1c04" name="Kreek Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
-        <entryLink id="b97b-6704-ea57-4604" name="Scyla Anfingrimm" hidden="false" collective="false" import="true" targetId="9007-a6be-1641-e125" type="selectionEntry"/>
+        <entryLink id="aba0-5456-752e-1c04" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
         <entryLink id="2b76-cdec-4958-1eeb" name="Lord Borak the Despoiler" hidden="false" collective="false" import="true" targetId="d101-32eb-1c0f-9405" type="selectionEntry"/>
         <entryLink id="1b1c-1a62-33d5-d5d3" name="Bomber Dribblesnot" hidden="false" collective="false" import="true" targetId="5993-677d-8b45-5595" type="selectionEntry"/>
         <entryLink id="8b55-12fb-9818-5f9b" name="Fungus the Loon" hidden="false" collective="false" import="true" targetId="a3af-a94c-d242-1dc5" type="selectionEntry"/>
@@ -3053,18 +3051,12 @@
         <entryLink id="1f48-dcff-f214-5bd9" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
         <entryLink id="1bfc-068e-3b71-e317" name="Scrappa Sorehead" hidden="false" collective="false" import="true" targetId="630d-615a-fa3a-2ea6" type="selectionEntry"/>
         <entryLink id="919b-400d-6f09-b723" name="Nobbla Blackwart" hidden="false" collective="false" import="true" targetId="84c4-b59e-00e9-9156" type="selectionEntry"/>
-        <entryLink id="f22d-e412-ce48-af49" name="Bilerot Vomitflesh" hidden="true" collective="false" import="true" targetId="dc60-c436-efc1-883e" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="768b-b64b-f982-47e4" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink id="f07b-f58a-d1e2-b4ae" name="Withergrasp Doubledrool" hidden="false" collective="false" import="true" targetId="ea9e-3b91-40f2-6cf1" type="selectionEntry"/>
         <entryLink id="dbf9-3cb2-d1d5-fc1e" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" targetId="ac3d-e6df-bfaf-8cef" type="selectionEntry"/>
         <entryLink id="0421-b687-121f-f857" name="Ripper Bolgrot" hidden="false" collective="false" import="true" targetId="11ef-0d16-9ff3-b2d9" type="selectionEntry"/>
+        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="false" id="2ac7-4640-ba25-91b0" type="selectionEntry" targetId="12b7-6345-144a-2046"/>
+        <entryLink import="true" name="Rashnak Backstabber" hidden="false" id="0e84-91ed-2424-3e4d" type="selectionEntry" targetId="e918-d819-7edd-36e0"/>
+        <entryLink import="true" name="Zzharg Madeye" hidden="false" id="af74-9dec-b988-4046" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
