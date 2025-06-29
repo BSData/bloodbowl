@@ -4841,7 +4841,20 @@
     <selectionEntryGroup id="5a16-19d3-67d0-b647" name="Star Players" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="c8b3-641c-ac5e-da90" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry"/>
-        <entryLink id="10e1-6d04-24a2-0771" name="Max Spleenripper" hidden="false" collective="false" import="true" targetId="19c7-050a-9950-59c0" type="selectionEntry"/>
+        <entryLink id="10e1-6d04-24a2-0771" name="Max Spleenripper" hidden="true" collective="false" import="true" targetId="19c7-050a-9950-59c0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="436b-94fe-e712-be92" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="b4cd-ed70-5abd-19f6" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
         <entryLink id="1b36-aba9-08bb-78be" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry"/>
         <entryLink id="60c8-8682-69c4-d81b" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
@@ -4849,22 +4862,79 @@
         <entryLink id="6980-42a8-3e35-968b" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
         <entryLink id="4510-f13c-d866-7b45" name="Grashnak Blackhoof" hidden="false" collective="false" import="true" targetId="874c-6352-2ead-33fb" type="selectionEntry"/>
         <entryLink id="4922-baab-0ee4-9b35" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
-        <entryLink id="c1ad-686b-f749-1ded" name="Scyla Anfingrimm" hidden="false" collective="false" import="true" targetId="9007-a6be-1641-e125" type="selectionEntry"/>
+        <entryLink id="c1ad-686b-f749-1ded" name="Scyla Anfingrimm" hidden="true" collective="false" import="true" targetId="9007-a6be-1641-e125" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="436b-94fe-e712-be92" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="ae6b-23ed-ecfb-6b5f" name="Lord Borak the Despoiler" hidden="false" collective="false" import="true" targetId="d101-32eb-1c0f-9405" type="selectionEntry"/>
         <entryLink id="170f-2a30-5d9c-aa12" name="Bilerot Vomitflesh" hidden="true" collective="false" import="true" targetId="dc60-c436-efc1-883e" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="768b-b64b-f982-47e4" type="equalTo"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="182a-e0e6-f2f9-64fa" name="Withergrasp Doubledrool" hidden="false" collective="false" import="true" targetId="ea9e-3b91-40f2-6cf1" type="selectionEntry"/>
         <entryLink id="ce25-4d4e-0387-8853" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" targetId="ac3d-e6df-bfaf-8cef" type="selectionEntry"/>
-        <entryLink import="true" name="Guffle Pussmaw" hidden="false" id="52a8-74f7-b892-96a3" type="selectionEntry" targetId="97f1-41ea-eb05-e636"/>
-        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="false" id="8ca1-f280-9dec-1e9e" type="selectionEntry" targetId="12b7-6345-144a-2046"/>
-        <entryLink import="true" name="Zzharg Madeye" hidden="false" id="e6bf-10b5-973a-898e" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff"/>
+        <entryLink import="true" name="Guffle Pussmaw" hidden="true" id="52a8-74f7-b892-96a3" type="selectionEntry" targetId="97f1-41ea-eb05-e636">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="true" id="8ca1-f280-9dec-1e9e" type="selectionEntry" targetId="12b7-6345-144a-2046">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bcc7-ccb4-a677-347c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Zzharg Madeye" hidden="true" id="e6bf-10b5-973a-898e" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bcc7-ccb4-a677-347c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

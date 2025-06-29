@@ -3578,6 +3578,15 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hashut" hidden="false" id="bcc7-ccb4-a677-347c">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
