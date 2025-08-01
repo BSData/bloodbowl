@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="736e07b6-4458-426e-8cf9-d33860c0c7a7" name="Halfling Team" revision="30" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="736e07b6-4458-426e-8cf9-d33860c0c7a7" name="Halfling Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>The technical deficiency of Halfling teams is legendary. They’re too short to throw or catch, they run at half pace, and it goes without saying that their blocking game leaves something to be desired. Most Halfling coaches, aware of the material that they have to work with, make up for quality with quantity. After all, if you can get half a dozen players in the opposing team’s End Zone and, by some miracle, manage to end up with the ball, then there is a small chance that one or two of them won’t be jelly by the time you throw the thing! Probably the only real point in the Halflings’ favour is their long-held alliance with the Treemen who guard the forests of their realm, and a team that can tempt one (or two!) of them along to a game suddenly doesn’t look so pathetic!</readme>
   <categoryEntries>
     <categoryEntry id="993d-b293-4970-f335" name="Halfling Hopeful Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -143,11 +143,7 @@
         <categoryLink id="9f45-70d7-cd34-ff1b" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ad2c-af90-1c11-13f7" name="Star Players" hidden="false" collective="false" import="true" targetId="b021-fe2a-36d0-6fb3" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ba53-6b1d-1ca8-30b7" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="d0e4-0f0f-22cf-c0c1" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0b16-40df-59c8-556e" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -1886,30 +1882,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b021-fe2a-36d0-6fb3" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3604-a72e-4720-a5fe" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="1b1f-b2d7-c06d-5b6b" name="Star Players" hidden="false" collective="false" import="true" targetId="d840-59f2-6ed7-0334" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="631d-7204-b719-fef7" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="631d-7204-b719-fef7" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7af0-1a98-6091-cf36" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2085,32 +2057,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="d840-59f2-6ed7-0334" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="6e56-de68-40ec-7f29" name="Barik Farblast" hidden="false" collective="false" import="true" targetId="8a87-241d-2e82-8181" type="selectionEntry"/>
-        <entryLink id="5d39-5457-8bde-e8a6" name="Deeproot Strongbranch" hidden="false" collective="false" import="true" targetId="16be-5f78-7e02-c253" type="selectionEntry"/>
-        <entryLink id="a646-3efa-77c9-f2f4" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="fb08-6a01-a515-f8ef" name="Griff Oberwald" hidden="false" collective="false" import="true" targetId="1ac9-bdfc-a8bb-ad93" type="selectionEntry"/>
-        <entryLink id="3169-31d5-4a4a-64f6" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="4595-b8af-6124-7508" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="ca36-0b6a-929f-0472" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="3998-b5fe-6bda-2b3d" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry"/>
-        <entryLink id="0511-c173-29b4-b0f8" name="Grim Ironjaw" hidden="false" collective="false" import="true" targetId="f980-4ebc-144f-8776" type="selectionEntry"/>
-        <entryLink id="ee48-a45a-89f4-06f6" name="Karla von Kill" hidden="false" collective="false" import="true" targetId="1ba9-97ef-2ed0-08f0" type="selectionEntry"/>
-        <entryLink id="263f-d3f3-557c-4455" name="Mighty Zug" hidden="false" collective="false" import="true" targetId="b6b9-e4df-20d7-feb8" type="selectionEntry"/>
-        <entryLink id="846e-5bb6-550a-1b07" name="Rumbelow Sheepskin" hidden="false" collective="false" import="true" targetId="0653-e1fd-2776-28d3" type="selectionEntry"/>
-        <entryLink id="fa26-ea32-f27c-7c91" name="Cindy Piewhistle" hidden="false" collective="false" import="true" targetId="9ec6-8434-a4a0-1fc6" type="selectionEntry"/>
-        <entryLink id="d87d-6d64-7ba8-f7f7" name="Puggy Baconbreath" hidden="false" collective="false" import="true" targetId="e446-0c0f-5d11-74dc" type="selectionEntry"/>
-        <entryLink id="1471-af77-243f-d907" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry"/>
-        <entryLink id="df8f-dfc6-362a-df46" name="Ivar Eriksson" hidden="false" collective="false" import="true" targetId="b4a4-4dae-4c27-5793" type="selectionEntry"/>
-        <entryLink id="ee9c-d7e2-b9b6-efb5" name="Skrorg Snowpelt" hidden="false" collective="false" import="true" targetId="9345-2f7a-f236-ddcd" type="selectionEntry"/>
-        <entryLink id="66b4-745d-888c-2da4" name="Thorsson Stoutmead" hidden="false" collective="false" import="true" targetId="69f2-a7c5-f5d1-64e8" type="selectionEntry"/>
-        <entryLink id="b249-fe79-bbc0-3f19" name="Rowana Forestfoot" hidden="false" collective="false" import="true" targetId="b720-60fa-2abb-c41b" type="selectionEntry"/>
-        <entryLink id="3356-14d1-a5c4-fdd4" name="Rodney Roachbait" hidden="false" collective="false" import="true" targetId="99e2-0d36-50b6-cdc3" type="selectionEntry"/>
-        <entryLink import="true" name="Maple Highgrove" hidden="false" id="ec89-75d6-db67-81c8" type="selectionEntry" targetId="ba67-26b2-e2ed-31f6"/>
-        <entryLink import="true" name="Swiftvine Glimmershard" hidden="false" id="4788-040b-006c-bb2c" type="selectionEntry" targetId="a802-117f-4e2b-73cd"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="5500-86f9-6a6f-f97e" name="Halfling Catcher" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2166,4 +2112,39 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="4711-8c0c-42f9-8683">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="4056-c8d4-1507-54df" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Old World Classic" hidden="false" id="dc6d-36fd-65bf-146a" type="selectionEntry" targetId="4003-dd1b-d594-1051">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e37c-7413-df54-0c47" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="a69e-aa33-8e76-66cc" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Halfling Thimble Cup" hidden="false" id="7cf3-8eec-0b26-5603" type="selectionEntry" targetId="43d1-827e-3932-1857">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be06-b205-8379-0f91" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="e0fb-55cd-4435-181b" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4025-8900-b2b2-c9de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="526f-20d9-2d00-780b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

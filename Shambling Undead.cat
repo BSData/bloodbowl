@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" name="Shambling Undead Team" revision="31" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" name="Shambling Undead Team" revision="32" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>The first Shambling Undead teams took to the gridiron a mere half century ago, and it has taken much of that time for the Undead to become accepted by the establishment. Today, they are a popular sight on the pitch. Fans love to see the reanimated dead shambling about, oblivious to all but the most debilitating of injuries, even as they dish out punishment to the opposition! Be it dry as dust Skeletons, their marionette movements mocking the living, or fresh Zombies, their moans and groans echoing around the pitch, accompanied by the fans&apos; laughter at their awkward and stilted movements. Or from enraged Mummies, their unearthly roars of anger setting pulses racing, to sinister Ghouls stalking the wide zones, eyeing the crowds hungrily, Undead teams are a feast of sensations for eager fans!</readme>
   <categoryEntries>
     <categoryEntry id="21fa-d633-336a-a8c3" name="Skeleton Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -94,11 +94,6 @@
         <categoryLink id="3b38-69a6-4659-c455" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6e9b-df86-50f5-f638" name="Star Players" hidden="false" collective="false" import="true" targetId="bcce-fa4f-6fc9-37e1" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="63c4-b024-a45c-f83b" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="67bc-c32f-9616-233f" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0be4-d38f-021f-d758" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
@@ -148,6 +143,7 @@
         <entryLink id="010b-2267-b7fe-00d9" name="Mortuary Assistant" hidden="false" collective="false" import="true" targetId="5f7b-5fc3-e8b6-68e9" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="b5ed-9930-8dab-5416" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5b95-860e-7497-4f0c" name="Skeleton Lineman" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -2350,30 +2346,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bcce-fa4f-6fc9-37e1" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d70-bbf8-5bdf-29e2" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="b31b-cd10-bd2b-5ffe" name="Star Players" hidden="false" collective="false" import="true" targetId="b060-a81e-fc11-4424" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="cecc-95d3-3710-7c7e" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cecc-95d3-3710-7c7e" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="807c-b7d9-ddee-59d0" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2517,21 +2489,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b060-a81e-fc11-4424" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="1abb-78dd-7606-62c2" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry"/>
-        <entryLink id="1d5c-304a-726b-79f8" name="Skrull Halfheight" hidden="false" collective="false" import="true" targetId="2e41-d71f-ea2b-27ac" type="selectionEntry"/>
-        <entryLink id="d5fd-56f0-d9c6-42b9" name="Wilhelm Chaney" hidden="false" collective="false" import="true" targetId="a68e-e39e-46f4-5122" type="selectionEntry"/>
-        <entryLink id="efae-8c29-2468-22c0" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="8008-404c-6e47-6654" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="6d05-2ad9-784b-edfc" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="ec01-af00-c089-f746" name="Bryce &apos;The Slice&apos; Cambuel" hidden="false" collective="false" import="true" targetId="1938-caba-4c33-725c" type="selectionEntry"/>
-        <entryLink id="7d12-8e0e-9cf9-76c8" name="&apos;Captain&apos; Karina von Riesz" hidden="false" collective="false" import="true" targetId="e305-3078-5475-f863" type="selectionEntry"/>
-        <entryLink id="6ea7-f8ed-e848-5db8" name="Count Luthor von Drakenborg" hidden="false" collective="false" import="true" targetId="e866-fae5-5eb9-b38f" type="selectionEntry"/>
-        <entryLink id="925e-f103-b9d1-5282" name="Ivan &apos;The Animal&apos; Deathshroud" hidden="false" collective="false" import="true" targetId="a0b2-1efb-f224-11a1" type="selectionEntry"/>
-        <entryLink import="true" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" hidden="false" id="b655-943d-c91d-b0fd" type="selectionEntry" targetId="1d5b-c35f-836d-d879"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="7d2d-48ca-9959-ff1c" name="Skeleton Lineman" publicationId="46da-ba61-6439-83e5" page="124" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2600,4 +2557,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="f2d9-9083-64fd-9a89">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="a89a-aa41-f88b-681e" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sylvanian Spotlight" hidden="false" id="01fc-5d31-f0fd-c2b3" type="selectionEntry" targetId="bf62-4437-3f84-7611">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b10-39aa-8552-c69f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="09bb-4b71-82ff-9052" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c39-e0d0-41ac-eef1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faa6-5a7f-978a-1e50" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" name="Wood Elves Team" revision="33" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" name="Wood Elves Team" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Wood Elves make natural Blood Bowl players, although their refusal to wear heavy armour does leave them vulnerable to some of the more hard hitting teams. Generally, the Wood Elves’ natural athletic ability is enough to keep them out of trouble – it takes a fast or cunning foe to catch a Wood Elf player. In any case, no decent Wood Elf wants to wear bulky, shapeless armour, let alone be seen in it! For Wood Elves the long pass is everything, even more so than for their High Elf cousins, and all of their effort goes into becoming experts at throwing or receiving. The one exception to this is the Wood Elf Wardancers. These athletic warriors are trained in the deadly arts of hand-to-hand combat and are a match for almost any foe.</readme>
   <categoryEntries>
     <categoryEntry id="1e8c-d660-270c-ec99" name="Wood Elf Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -144,11 +144,7 @@
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink id="a498-8f96-2dee-8d4e" name="Star Players" hidden="false" collective="false" import="true" targetId="e9c8-0266-c6fa-d09f" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="90ca-8011-7385-8ca0" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="ab16-d16d-2475-0b92" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ea7f-4b2f-2416-bb1a" name="Catcher" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -2416,35 +2412,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e9c8-0266-c6fa-d09f" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c94-16b2-aa64-bc4d" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="b528-767d-4dce-4ecc" name="Star Players" hidden="false" collective="false" import="true" targetId="a747-d808-f43f-dcbb" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="bbaa-e580-de15-6708" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ab3-0a11-4223-c529" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbaa-e580-de15-6708" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="8e5f-25dd-55cf-0731" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2618,25 +2585,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a747-d808-f43f-dcbb" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="9206-2be5-b284-aa11" name="Eldril Sidewinder" hidden="false" collective="false" import="true" targetId="9da4-9779-ae60-1c48" type="selectionEntry"/>
-        <entryLink id="ffb2-4574-1a56-9e42" name="Zolcath the Zoat" hidden="false" collective="false" import="true" targetId="b46a-06d8-c171-c7e7" type="selectionEntry"/>
-        <entryLink id="cff0-87e2-372c-38cf" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="986b-c386-6101-a7de" name="Roxanna Darknail" hidden="false" collective="false" import="true" targetId="2736-a7fd-e2a7-e349" type="selectionEntry"/>
-        <entryLink id="6bf5-bbe3-19d3-0071" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="b382-6aeb-0b56-5208" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="6d2d-3ad7-d7ac-028e" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="27d8-51ac-61f2-ef3b" name="Gloriel Summerbloom" hidden="false" collective="false" import="true" targetId="9934-db67-9c77-27bb" type="selectionEntry"/>
-        <entryLink id="9afe-0001-adee-64f9" name="The Swift Twins" hidden="false" collective="false" import="true" targetId="3ab3-0a11-4223-c529" type="selectionEntry"/>
-        <entryLink id="b6f5-86e0-dfc3-27a0" name="Willow Rosebark" hidden="false" collective="false" import="true" targetId="7796-75b1-61e7-fa43" type="selectionEntry"/>
-        <entryLink id="7499-d2f9-fe89-0a6c" name="Kiroth Krakeneye" hidden="false" collective="false" import="true" targetId="d479-fca2-f584-5ec6" type="selectionEntry"/>
-        <entryLink import="true" name="Jeremiah Kool" hidden="false" id="8f3b-46ea-0a0d-3dd4" type="selectionEntry" targetId="61db-37a0-4264-8d23"/>
-        <entryLink import="true" name="Jordell Freshbreeze" hidden="false" id="80eb-d685-70af-bfb4" type="selectionEntry" targetId="0dcd-1a5a-a66d-ed2d"/>
-        <entryLink import="true" name="Maple Highgrove" hidden="false" id="d0e6-79c2-62f3-2b64" type="selectionEntry" targetId="ba67-26b2-e2ed-31f6"/>
-        <entryLink import="true" name="Swiftvine Glimmershard" hidden="false" id="cd9b-cb00-e3ad-b76c" type="selectionEntry" targetId="a802-117f-4e2b-73cd"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="226b-524f-99e9-2c01" name="Catcher" publicationId="46da-ba61-6439-83e5" page="128" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2705,4 +2653,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="55d3-77c8-3198-3be1">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="b88c-316f-2550-c3ce" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Elven Kingdoms League" hidden="false" id="fd9f-6fb3-408a-4160" type="selectionEntry" targetId="595b-11f0-1786-ca72">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a291-97d6-4900-eefa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="0ea3-3e02-4a04-5543" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcb2-19e4-7ecf-04ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40e4-18b3-7172-49c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

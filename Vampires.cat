@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="36" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="85cbe880-09fd-49fd-a77c-5f10b8986bc5" name="Vampire Team" revision="37" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Vampires are just one of the many Undead nightmares that stalk the shadows on moonless nights, but never let it be said that they aren’t the most civilised. Unlike the Skeletons, Zombies and Wights that are held together by necromancy, Vampires are noble creatures, capable of existing among human society with little fear of discovery. Since Blood Bowl took the world by storm, a great number have stepped out of the shadows to involve themselves in the sport – the most famous being star commentator Jim Johnson – whilst many others make use of modern sun protection fetishes to allow them to play in daylight. Teams made up exclusively of Vampires are almost unheard of, and most pad out their numbers with Thralls, who gladly give up free will in exchange for the life of a Blood Bowl player!</readme>
   <categoryEntries>
     <categoryEntry id="cd18-d181-3017-ee27" name="Thrall Lineman" publicationId="5dbd-3c70-d864-0f43" hidden="false">
@@ -52,11 +52,6 @@
     <entryLink id="b79c-b2e7-b883-d995" name="Mercenary [Vampire Runner]" hidden="false" collective="false" import="true" targetId="8004-d5d3-bde2-c61a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3d3a-95c1-725d-2eca" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="325f-03a5-37cf-aebf" name="Star Players" hidden="false" collective="false" import="true" targetId="382d-616b-9500-7b8d" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="9bd5-1719-0a23-6dad" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="03f6-86ff-2a1b-0072" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
@@ -149,6 +144,7 @@
         <categoryLink id="829a-4782-3a81-e6cd" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="b84d-5c16-7051-1507" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="10a3-0488-0446-cd41" name="Thrall Lineman" publicationId="5dbd-3c70-d864-0f43" hidden="false" collective="false" import="true" type="model">
@@ -667,30 +663,6 @@
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="382d-616b-9500-7b8d" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b0b-25c1-b06d-9970" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="c210-51d4-7eb8-8551" name="Star Players" hidden="false" collective="false" import="true" targetId="787f-193f-545f-df64" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="5076-8c5b-b02c-fed0" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5076-8c5b-b02c-fed0" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
@@ -2572,21 +2544,6 @@ Additionally, just like the Head Coach of any other team, a Vampire Lord can Arg
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="787f-193f-545f-df64" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="cafd-d279-275e-d9d9" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry"/>
-        <entryLink id="55db-850b-8fbc-0e6f" name="Skrull Halfheight" hidden="false" collective="false" import="true" targetId="2e41-d71f-ea2b-27ac" type="selectionEntry"/>
-        <entryLink id="9eeb-0eeb-6f8e-b41d" name="Wilhelm Chaney" hidden="false" collective="false" import="true" targetId="a68e-e39e-46f4-5122" type="selectionEntry"/>
-        <entryLink id="78e6-57c3-957f-bd1c" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="9052-c4bf-42a1-7976" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="f43a-bac5-b0fa-ed16" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="e85e-a722-f60f-fbd6" name="Bryce &apos;The Slice&apos; Cambuel" hidden="false" collective="false" import="true" targetId="1938-caba-4c33-725c" type="selectionEntry"/>
-        <entryLink id="1e80-75ea-2d12-e3bf" name="&apos;Captain&apos; Karina von Riesz" hidden="false" collective="false" import="true" targetId="e305-3078-5475-f863" type="selectionEntry"/>
-        <entryLink id="4abf-4ac4-1b43-1492" name="Count Luthor von Drakenborg" hidden="false" collective="false" import="true" targetId="e866-fae5-5eb9-b38f" type="selectionEntry"/>
-        <entryLink id="0d18-8e60-a254-fb5d" name="Ivan &apos;The Animal&apos; Deathshroud" hidden="false" collective="false" import="true" targetId="a0b2-1efb-f224-11a1" type="selectionEntry"/>
-        <entryLink import="true" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" hidden="false" id="4291-5172-a733-9f43" type="selectionEntry" targetId="1d5b-c35f-836d-d879"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="afe2-6c51-1ad8-3f83" name="Thrall Lineman" publicationId="440b-48bb-12dd-90e4" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2655,4 +2612,28 @@ Additionally, just like the Head Coach of any other team, a Vampire Lord can Arg
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="7977-e17e-f0e2-939f">
+      <categoryLinks>
+        <categoryLink targetId="a6b7-0663-b308-f599" id="6e72-3603-a338-1384" primary="true" name="Team Management"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sylvanian Spotlight" hidden="false" id="b956-5049-84f5-19a5" type="selectionEntry" targetId="bf62-4437-3f84-7611">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cae-0d66-ba6b-df3b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="a6b7-0663-b308-f599" id="d1d1-73be-c2ef-0f0d" primary="true" name="Team Management"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64c9-8fe8-99b5-9bd5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9c2-058a-65e8-6d21" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

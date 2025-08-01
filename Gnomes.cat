@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25ea-e9ad-ed4e-09ee" name="Gnomes Team" revision="2" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25ea-e9ad-ed4e-09ee" name="Gnomes Team" revision="3" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>To the majority of folk in the Old World, Gnomes are nothing more than a myth. Gnomes are not only very real, but they live in the Old World; their settlements hidden away in the various mountains and moors, and cloaked by magics. To many, the assumption is that Gnomes have only recently taken up the sport of Blood Bowl; however this isn&apos;t the case. Truth is, Gnomes have long played their own brand of Nuffle&apos;s great game, though they have kept almost exclusively to themselves; playing games in their hidden burrows and forest groves, protected by a weave of illusion, in case any pesky ramblers happen to cross into their lands. In more recent years, Gnome teams have started to come out of the woodwork, proving themselve&apos;s to be more than simply figments of Children&apos;s stories and actually very real.</readme>
   <categoryEntries>
     <categoryEntry id="de00-e09c-2d77-a66e" name="Gnome Lineman" publicationId="6630-4973-1ede-2add" hidden="false">
@@ -94,11 +94,6 @@
         <categoryLink id="4791-d9a0-1312-48e1" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e122-77e7-aaf3-184d" name="Star Players" hidden="false" collective="false" import="true" targetId="3fd5-87d6-079f-b24f" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink targetId="8526-a57c-c848-4d31" id="4d78-ea52-593e-fc33" primary="true" name="Inducements"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="dc67-a97d-9b5f-3899" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a362-8456-5e4c-2c41" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
@@ -117,6 +112,7 @@
         <entryLink id="cb32-09e1-e8de-ed38" name="Wandering Apothecaries" hidden="false" collective="false" import="true" targetId="5564-dcac-1706-7a79" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="6045-43d2-25ad-e6c7" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1864-478f-f39e-73cf" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -2188,30 +2184,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3fd5-87d6-079f-b24f" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd1-20e4-fcc4-7c22" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="85f6-31e5-a7e1-371f" name="Star Players" hidden="false" collective="false" import="true" targetId="20f2-5d09-1059-b216" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="2190-5709-ac1e-0587" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2190-5709-ac1e-0587" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0772-8c83-d39a-891d" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2392,28 +2364,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="20f2-5d09-1059-b216" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="3279-7b8e-116a-3551" name="Barik Farblast" hidden="false" collective="false" import="true" targetId="8a87-241d-2e82-8181" type="selectionEntry"/>
-        <entryLink id="7690-3443-f2fc-ae03" name="Deeproot Strongbranch" hidden="false" collective="false" import="true" targetId="16be-5f78-7e02-c253" type="selectionEntry"/>
-        <entryLink id="038f-8f4b-b1da-cc65" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="7139-79c5-8c8d-1a85" name="Griff Oberwald" hidden="false" collective="false" import="true" targetId="1ac9-bdfc-a8bb-ad93" type="selectionEntry"/>
-        <entryLink id="1e3e-a158-1c4b-6e55" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="640a-5209-fd26-ffb6" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="a95f-0798-c7af-8bb8" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="1765-c3bd-0576-062b" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry"/>
-        <entryLink id="8bec-4b3e-a429-b362" name="Grim Ironjaw" hidden="false" collective="false" import="true" targetId="f980-4ebc-144f-8776" type="selectionEntry"/>
-        <entryLink id="3e0b-4242-171c-c1d3" name="Karla von Kill" hidden="false" collective="false" import="true" targetId="1ba9-97ef-2ed0-08f0" type="selectionEntry"/>
-        <entryLink id="29ac-5e9b-d465-a4b1" name="Mighty Zug" hidden="false" collective="false" import="true" targetId="b6b9-e4df-20d7-feb8" type="selectionEntry"/>
-        <entryLink id="6426-a690-a9e6-0098" name="Rumbelow Sheepskin" hidden="false" collective="false" import="true" targetId="0653-e1fd-2776-28d3" type="selectionEntry"/>
-        <entryLink id="1227-142d-9344-59a2" name="Cindy Piewhistle" hidden="false" collective="false" import="true" targetId="9ec6-8434-a4a0-1fc6" type="selectionEntry"/>
-        <entryLink id="9812-0d22-ba0a-a13b" name="Puggy Baconbreath" hidden="false" collective="false" import="true" targetId="e446-0c0f-5d11-74dc" type="selectionEntry"/>
-        <entryLink id="c109-032e-52f5-eab7" name="Rowana Forestfoot" hidden="false" collective="false" import="true" targetId="b720-60fa-2abb-c41b" type="selectionEntry"/>
-        <entryLink id="95d4-de50-4443-b476" name="Rodney Roachbait" hidden="false" collective="false" import="true" targetId="99e2-0d36-50b6-cdc3" type="selectionEntry"/>
-        <entryLink import="true" name="Maple Highgrove" hidden="false" id="a191-84bf-1354-1abc" type="selectionEntry" targetId="ba67-26b2-e2ed-31f6"/>
-        <entryLink import="true" name="Swiftvine Glimmershard" hidden="false" id="47c1-568e-9aaf-e372" type="selectionEntry" targetId="a802-117f-4e2b-73cd"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="c034-eae1-a92d-995f" name="Woodland Fox" publicationId="6630-4973-1ede-2add" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2482,4 +2432,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="2b07-a6d0-ff88-77a2">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="fe3b-5509-6894-5c91" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Halfling Thimble Cup" hidden="false" id="880c-a62b-eb1c-43d7" type="selectionEntry" targetId="43d1-827e-3932-1857">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e94-897a-5496-e4a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="6b62-322b-4f72-709b" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaad-f46d-39fd-fe4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dea7-1f2c-6513-b701" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

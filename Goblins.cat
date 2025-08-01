@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="38" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="de6eab1a-e3fd-478d-a2cb-2fe495d63138" name="Goblin Team" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Goblins are cruel and uncouth, with a juvenile sense of humour and a wicked imagination dedicated to discovering new ways of hurting others without getting hurt themselves. This tends to make them better Blood Bowl fans than players, and indeed Goblin fans have a solid reputation throughout the Old World for turning up hours before the game, getting drunk, starting fights, singing lewd and insulting songs, and generally causing trouble wherever they go. Unsurprisingly, Goblin teams don’t tend to do amazingly well on the pitch, but by Nuffle are they entertaining! Their play style revolves around a seemingly endless arsenal of ‘secret’ weapons which the Gobbos sneak onto the pitch at every opportunity, and the assistance of lumbering Trolls who alternate between flinging their smaller team-mates up the pitch and absent-mindedly chewing on them instead!</readme>
   <categoryEntries>
     <categoryEntry id="36f9-41c5-0bac-d7ca" name="Trained Troll" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -196,11 +196,7 @@
         <entryLink id="1d95-c7ad-ca5c-a71a" name="WAAAGH! Drummer" hidden="false" collective="false" import="true" targetId="54e1-c0ea-1874-f2a9" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
-    <entryLink id="55f0-3957-4ec9-f026" name="Star Players" hidden="false" collective="false" import="true" targetId="532f-19a3-a5aa-1150" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="14d2-793b-3985-18bb" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="426b-e850-cb86-27b7" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="3de7-816c-0970-f5d9" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -3675,30 +3671,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="532f-19a3-a5aa-1150" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cab-353d-ce04-e8cb" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="01a6-16c2-422e-8e99" name="Star Players" hidden="false" collective="false" import="true" targetId="3c1e-4039-0459-604f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="3541-c6b9-6d9d-de15" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3541-c6b9-6d9d-de15" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7202-217b-ff0b-e506" name="[S]trength" hidden="false" collective="false" import="true">
@@ -3836,28 +3808,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3c1e-4039-0459-604f" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="cdb2-83bf-14a0-1d09" name="Fungus the Loon" hidden="false" collective="false" import="true" targetId="a3af-a94c-d242-1dc5" type="selectionEntry"/>
-        <entryLink id="1474-63da-37f7-4449" name="The Black Gobbo" hidden="false" collective="false" import="true" targetId="9dcd-f21e-18ec-e0e7" type="selectionEntry"/>
-        <entryLink id="5542-c8f2-e122-254c" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry"/>
-        <entryLink id="5d52-9c9b-0692-5f69" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="d04a-a1ca-82f9-a257" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="84c8-d50e-f149-a647" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="274d-0207-752c-b7ad" name="Bomber Dribblesnot" hidden="false" collective="false" import="true" targetId="5993-677d-8b45-5595" type="selectionEntry"/>
-        <entryLink id="0bb8-18e8-6b15-af15" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
-        <entryLink id="1e54-f6c9-3c1d-c7bc" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="80b1-a5ff-853d-fa35" name="Varag Ghoul-Chewer" hidden="false" collective="false" import="true" targetId="5aed-7128-04f0-bc29" type="selectionEntry"/>
-        <entryLink id="18ae-3ce3-d631-295b" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry"/>
-        <entryLink id="4bfd-d0b9-9072-2b9d" name="Nobbla Blackwart" hidden="false" collective="false" import="true" targetId="84c4-b59e-00e9-9156" type="selectionEntry"/>
-        <entryLink id="abba-cbcc-0e10-cf01" name="Scrappa Sorehead" hidden="false" collective="false" import="true" targetId="630d-615a-fa3a-2ea6" type="selectionEntry"/>
-        <entryLink id="4480-e544-0261-52d6" name="Ripper Bolgrot" hidden="false" collective="false" import="true" targetId="11ef-0d16-9ff3-b2d9" type="selectionEntry"/>
-        <entryLink id="3319-cf3a-3841-7061" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" targetId="ac3d-e6df-bfaf-8cef" type="selectionEntry"/>
-        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="false" id="95f1-6502-0345-4c3c" type="selectionEntry" targetId="12b7-6345-144a-2046"/>
-        <entryLink import="true" name="Rashnak Backstabber" hidden="false" id="e196-d768-80e6-439a" type="selectionEntry" targetId="e918-d819-7edd-36e0"/>
-        <entryLink import="true" name="Zzharg Madeye" hidden="false" id="51cb-7a03-a940-f66e" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="93de-bc1d-6a30-2750" name="Goblin Lineman" publicationId="46da-ba61-6439-83e5" page="114" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -3965,4 +3915,39 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="39cb-adc7-d48d-d54c">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="a3bc-9cd2-791c-1009" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Underworld Challenge" hidden="false" id="4b81-d0ed-8267-4178" type="selectionEntry" targetId="8ae0-7abc-07a0-e07b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1ec-9ecf-b3b7-2447" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="803e-ec18-f911-457f" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Badlands Brawl" hidden="false" id="3a8a-8c5d-e625-e01b" type="selectionEntry" targetId="c605-2010-fb97-0f51">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec14-41ee-49cc-95ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="70cf-3806-7dc8-3bb0" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9d4-e849-ca15-da97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dc5-15a9-469c-ecff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

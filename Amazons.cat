@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="38" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="137e4c81-9c6f-43f5-86a9-c75a218cab0f" name="Amazon Team" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>The Amazons of Lustria are an enigma and several contradictory stories of their origins exist. One tells that long ago, driven by a desire for adventure, a group of Norse Valkyries set sail for distant shores. After a journey worthy of a saga in its own right, they founded a colony deep within the basin of a great river that wound its way through a massive rainforest. Cut off from the outside world, a new warrior society sprung up, borrowing customs from the native Lizardmen. Another legend claims that the Amazons were created by ancient, god-like beings to serve as the handmaidens of the gods. Perhaps both legends contain something of the truth, but either way, Amazons are natural athletes, and many possess the combination of agility and violence that marks  them out as potential legends of the sport.</readme>
   <categoryEntries>
     <categoryEntry id="cdc2-3210-37c1-9f82" name="Python Warrior Thrower" publicationId="a98a-aed9-fafb-e69f" hidden="false">
@@ -131,9 +131,9 @@
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink id="f58b-b2c1-1c01-9f73" name="Star Players" hidden="false" collective="false" import="true" targetId="e41b-2204-b598-14d9" type="selectionEntry">
+    <entryLink import="true" name="Star Players" hidden="false" id="8f98-1dbf-702e-b17d" type="selectionEntry" targetId="5ab0-a25e-669e-c9da">
       <categoryLinks>
-        <categoryLink id="0e70-b82d-11ca-538b" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
+        <categoryLink targetId="8526-a57c-c848-4d31" id="92b7-14ec-e16f-e162" primary="true" name="Inducements"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1822,35 +1822,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e41b-2204-b598-14d9" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5549-a052-bad7-0ead" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="9ec9-449d-55ef-d4a8" name="Star Players" hidden="false" collective="false" import="true" targetId="952f-eff7-6ea9-812d" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="824b-1a4d-ef1e-a04d" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a41f-802f-9a60-3454" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="824b-1a4d-ef1e-a04d" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="aa3f-2144-fd57-5530" name="[Injuries]" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="334a-3768-479f-e40a" type="max"/>
@@ -2021,23 +1992,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="952f-eff7-6ea9-812d" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="df84-37e2-3cab-d611" name="Karla von Kill" hidden="false" collective="false" import="true" targetId="1ba9-97ef-2ed0-08f0" type="selectionEntry"/>
-        <entryLink id="b2cf-0eab-6100-23b1" name="Mighty Zug" hidden="false" collective="false" import="true" targetId="b6b9-e4df-20d7-feb8" type="selectionEntry"/>
-        <entryLink id="2425-610f-7d9e-5695" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="5182-7b6e-c154-0a58" name="Zolcath the Zoat" hidden="false" collective="false" import="true" targetId="b46a-06d8-c171-c7e7" type="selectionEntry"/>
-        <entryLink id="5b3d-1e8b-e538-0697" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="0296-ace7-c09b-aa33" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="7455-85c9-6dc4-f0d1" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="65a5-63c8-7e7a-960b" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry"/>
-        <entryLink id="803e-c989-1fc9-9ef2" name="Estelle La Veneaux" hidden="false" collective="false" import="true" targetId="96f8-01d2-bef0-cd90" type="selectionEntry"/>
-        <entryLink id="5cbd-7fed-d49f-fc87" name="Boa Kon&apos;ssstriktr" hidden="false" collective="false" import="true" targetId="02a0-5253-f8c5-29c0" type="selectionEntry"/>
-        <entryLink id="3f39-f0a5-03a4-861a" name="Glotl Stop" hidden="false" collective="false" import="true" targetId="acf1-5a06-bbaf-54ee" type="selectionEntry"/>
-        <entryLink id="ef30-5c1e-e437-af30" name="Dribl and Drull" hidden="false" collective="false" import="true" targetId="a41f-802f-9a60-3454" type="selectionEntry"/>
-        <entryLink import="true" name="Anqi Panqi" hidden="false" id="9449-93ae-04a9-b037" type="selectionEntry" targetId="be50-5df0-f141-333c"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="2f03-a96e-d7f8-632c" name="Eagle Warrior Linewoman" publicationId="a98a-aed9-fafb-e69f" page="5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2093,4 +2047,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="21be-c48c-8a98-98c1">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="70cc-8b1b-2355-c0a0" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lustrian Superleague" hidden="false" id="529e-d7ca-29c2-2bf0" type="selectionEntry" targetId="5581-bb5e-6d85-79d8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="722b-a2fd-6c57-ad22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="f265-bd0a-e15f-f6ca" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5257-8df3-0ee0-19b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d00-43f9-895d-2a1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

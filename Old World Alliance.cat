@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5ca8-cd92-27fb-6d55" name="Old World Alliance" revision="12" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="5ca8-cd92-27fb-6d55" name="Old World Alliance" revision="13" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>The cities of the Old World are bustling metropoles, populated by all manner of different races. From Kislev in the cold north, to Estalia in the sweltering south, Humans build their homes, and to these flock Dwarfs, Halflings and more. Many Dwarfs come to build the tall towers and maintain the high walls of these great cities, whilst Halflings come to cook, eat and steal any small items they happen upon. Indeed, in these more enlightened times when warfare is considered a thing of the past, ever more varied races flock to these urban centres, so that today even Ogres are an increasingly common sight. Old World Alliance teams, though relatively uncommon, tend to form in the largest of cities, where cosmopolitan players of various races are drawn together to enjoy Nuffle’s great game.</readme>
   <categoryEntries>
     <categoryEntry id="0ca9-2f56-9850-2340" name="Old World Human Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -245,11 +245,7 @@
         <categoryLink id="5593-db6f-46dc-ea7f" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ec9f-2f2b-b1e7-ac80" name="Star Players" hidden="false" collective="false" import="true" targetId="1dbe-8ed1-12e1-3618" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="e505-510a-6480-bd13" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="3c90-7f7a-3fe3-6e09" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2fdf-e786-746e-c543" name="[Injuries]" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
@@ -4986,30 +4982,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1dbe-8ed1-12e1-3618" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2557-fc80-df03-046a" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="c0d1-7b4d-ddf7-70ea" name="Star Players" hidden="false" collective="false" import="true" targetId="9956-7d86-3cb1-1fb3" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="98a5-5951-4e02-d78f" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a5-5951-4e02-d78f" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="147b-7715-dc25-00a9" name="[A]gility" hidden="false" collective="false" import="true">
@@ -5249,29 +5221,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9956-7d86-3cb1-1fb3" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="5f36-15ba-8162-7599" name="Barik Farblast" hidden="false" collective="false" import="true" targetId="8a87-241d-2e82-8181" type="selectionEntry"/>
-        <entryLink id="038c-a3e8-0f01-460b" name="Deeproot Strongbranch" hidden="false" collective="false" import="true" targetId="16be-5f78-7e02-c253" type="selectionEntry"/>
-        <entryLink id="a5b7-e9f8-4ed5-46a4" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="5a89-541e-9d39-69c1" name="Griff Oberwald" hidden="false" collective="false" import="true" targetId="1ac9-bdfc-a8bb-ad93" type="selectionEntry"/>
-        <entryLink id="801d-92a0-3029-ad1a" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="3d94-f26f-a5fe-6b8e" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="ecf2-4501-c23c-c527" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="bda8-3285-c58c-c572" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry"/>
-        <entryLink id="3bf9-5c53-ceab-aeec" name="Grim Ironjaw" hidden="false" collective="false" import="true" targetId="f980-4ebc-144f-8776" type="selectionEntry"/>
-        <entryLink id="5a0a-3ca3-33d3-b0c8" name="Ivar Eriksson" hidden="false" collective="false" import="true" targetId="b4a4-4dae-4c27-5793" type="selectionEntry"/>
-        <entryLink id="f41e-33ef-6215-e4e4" name="Karla von Kill" hidden="false" collective="false" import="true" targetId="1ba9-97ef-2ed0-08f0" type="selectionEntry"/>
-        <entryLink id="bf72-7901-996d-c502" name="Mighty Zug" hidden="false" collective="false" import="true" targetId="b6b9-e4df-20d7-feb8" type="selectionEntry"/>
-        <entryLink id="e3b7-6db9-947a-f1e0" name="Rumbelow Sheepskin" hidden="false" collective="false" import="true" targetId="0653-e1fd-2776-28d3" type="selectionEntry"/>
-        <entryLink id="bfa3-3d79-88c4-b370" name="Skrorg Snowpelt" hidden="false" collective="false" import="true" targetId="9345-2f7a-f236-ddcd" type="selectionEntry"/>
-        <entryLink id="327b-320f-dbab-b13a" name="Thorsson Stoutmead" hidden="false" collective="false" import="true" targetId="69f2-a7c5-f5d1-64e8" type="selectionEntry"/>
-        <entryLink id="3445-2dfd-c7ee-12ee" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry"/>
-        <entryLink id="85a2-3eb6-30dd-2275" name="Cindy Piewhistle" hidden="false" collective="false" import="true" targetId="9ec6-8434-a4a0-1fc6" type="selectionEntry"/>
-        <entryLink id="7450-c864-ae83-31b4" name="Puggy Baconbreath" hidden="false" collective="false" import="true" targetId="e446-0c0f-5d11-74dc" type="selectionEntry"/>
-        <entryLink import="true" name="Maple Highgrove" hidden="false" id="4b27-553a-f04e-976a" type="selectionEntry" targetId="ba67-26b2-e2ed-31f6"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="8683-cc39-57b6-65ca" name="Old World Human Blitzer" publicationId="46da-ba61-6439-83e5" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -5418,4 +5367,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="02db-b753-e305-1daa">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="1459-e4dd-bd33-ffae" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Old World Classic" hidden="false" id="6e27-a512-8f22-ffbf" type="selectionEntry" targetId="4003-dd1b-d594-1051">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c3b-f156-2d69-2f88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="07bc-4f9c-415e-c81e" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f52-2640-0ae2-b96d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f2-8ce4-03cc-31eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

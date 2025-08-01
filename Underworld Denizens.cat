@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" name="Underworld Denizens Team" revision="39" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" name="Underworld Denizens Team" revision="40" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Ask any Goblinoid and they’ll tell you that it’s not easy being a low-down sneaky git! Similarly, if you managed to corner a Skaven long enough to get an answer out of them, they’d probably tell you that living in the sewers is less fun than it looks. It’s not entirely clear when these very different races first joined forces, but there’s a good chance that the Underworld Creepers were the first such team to take to the pitch. Fuelled by a heady elixir of warpstone infused mushrooms, Underworld Denizens teams combine the sneakiness of Snotlings and Goblins with the speed of Skaven; most are despised, but some of them have garnered a cult following! The most popular tend to be those who field a Troll or Rat Ogre, hideous and pallid mountains of slab-like muscle that serve as enforcers for their smaller team-mates.</readme>
   <categoryEntries>
     <categoryEntry id="6cf0-f5dd-7345-e934" name="Gutter Runner" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -139,11 +139,6 @@
         <categoryLink id="21b7-50f5-f475-5bb6" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="67c0-546b-e1f6-8c6e" name="Star Players" hidden="false" collective="false" import="true" targetId="6aa5-2cf3-0748-1b70" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="b77b-2ab8-af77-c988" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="1ad9-ed7c-d06e-7c90" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="51c5-7947-a36f-290e" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
@@ -203,6 +198,7 @@
         <categoryLink id="f1f7-8144-fe4d-9164" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="8704-5f08-be09-8954" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9286-2079-9db7-b567" name="Underworld Troll" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -3823,30 +3819,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6aa5-2cf3-0748-1b70" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cee-d0e4-ac7c-cf94" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="00c4-4d77-5c0e-2cb5" name="Star Players" hidden="false" collective="false" import="true" targetId="8949-5119-3826-0931" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="4242-df74-d30b-7b98" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4242-df74-d30b-7b98" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e309-df3a-e5d9-9111" name="[A]gility" hidden="false" collective="false" import="true">
@@ -4034,25 +4006,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8949-5119-3826-0931" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="9d85-a5ef-403c-987c" name="Fungus the Loon" hidden="false" collective="false" import="true" targetId="a3af-a94c-d242-1dc5" type="selectionEntry"/>
-        <entryLink id="61df-7d4d-2081-d25c" name="The Black Gobbo" hidden="false" collective="false" import="true" targetId="9dcd-f21e-18ec-e0e7" type="selectionEntry"/>
-        <entryLink id="c672-2fe8-a8e3-ca58" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry"/>
-        <entryLink id="7e55-56a7-b9cc-2f40" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="270a-43d9-0bd9-73af" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="77f6-f8d8-4b9e-08e6" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="d912-6151-65df-7fa7" name="Bomber Dribblesnot" hidden="false" collective="false" import="true" targetId="5993-677d-8b45-5595" type="selectionEntry"/>
-        <entryLink id="df32-f23e-e564-3c0d" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
-        <entryLink id="679a-7137-fa62-3fc1" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="cc92-f075-d76b-cb6a" name="Varag Ghoul-Chewer" hidden="false" collective="false" import="true" targetId="5aed-7128-04f0-bc29" type="selectionEntry"/>
-        <entryLink id="af74-0999-a04b-0b08" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry"/>
-        <entryLink id="7a85-a9ed-a3d8-9fdc" name="Nobbla Blackwart" hidden="false" collective="false" import="true" targetId="84c4-b59e-00e9-9156" type="selectionEntry"/>
-        <entryLink id="e8ac-9875-0d0a-3a41" name="Scrappa Sorehead" hidden="false" collective="false" import="true" targetId="630d-615a-fa3a-2ea6" type="selectionEntry"/>
-        <entryLink id="0b00-e49e-3933-e0aa" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" targetId="ac3d-e6df-bfaf-8cef" type="selectionEntry"/>
-        <entryLink import="true" name="Ripper Bolgrot" hidden="false" id="6eea-cd07-4536-23da" type="selectionEntry" targetId="11ef-0d16-9ff3-b2d9"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="b579-d842-6877-52fe" name="Underworld Goblin Lineman" publicationId="46da-ba61-6439-83e5" page="127" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -4160,4 +4113,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="db05-52cc-6797-35c4">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="294e-4a4c-10d9-1aab" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Underworld Challenge" hidden="false" id="eb70-e9df-f581-87ed" type="selectionEntry" targetId="8ae0-7abc-07a0-e07b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d750-07da-43b8-464b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="2014-4a6c-b69a-c8b5" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d29c-b80c-9fec-af23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e089-811c-8cab-a3ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

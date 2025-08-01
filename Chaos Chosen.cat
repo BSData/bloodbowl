@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="42" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0a3a386d-4b6a-4389-a18b-772e4a005a12" name="Chaos Chosen Team" revision="43" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Blood Bowl is arguably even more popular among the followers of the Chaos gods than it is among civilised folk. Maybe it’s the cult-like supporters’ clubs, the constant violence both on and off the pitch, or just the brightly-coloured strips... Whatever the case, wherever you find a Blood Bowl stadium, you’re guaranteed to find at least one team made up of an assortment of thoroughly debased, dedicated followers of Chaos. Most of the teams’ players tend to be Beastmen, hideous mutants who have given up their forest lairs for the sporting life, but their numbers are bolstered by the presence of superhuman Chosen, and frenzied and blood-crazed Minotaurs, Ogres and Trolls. Such teams are hardly subtle, often forgetting about the ball entirely as they grind their opponents into the turf, all in veneration of the Ruinous Powers they worship.</readme>
   <categoryEntries>
     <categoryEntry id="cb40-5b0a-d25b-0a94" name="Chosen Blocker" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -89,14 +89,6 @@
         <categoryLink id="60db-5dff-e831-ff96" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="dc55-7f90-e1b5-781f" name="Favored of..." hidden="false" collective="false" import="true" targetId="b38d-6ca8-2092-1c48" type="selectionEntry">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39bc-ca29-b546-6080" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="ba16-7fb5-aa6e-3bad" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="68d9-49e1-48b9-f3d1" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="bfc3-453d-2802-c51c" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
@@ -156,11 +148,7 @@
         <categoryLink id="db2c-ea79-e666-d94f" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5a05-7fef-ebfe-4072" name="Star Players" hidden="false" collective="false" import="true" targetId="75bb-21b4-8c8d-1e5c" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="da6c-b75d-62a1-7dc8" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="982d-aaec-a070-d923" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c1bf-df96-30ee-9fb2" name="Minotaur" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -2382,30 +2370,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75bb-21b4-8c8d-1e5c" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9176-3672-702c-ff27" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="a64a-72eb-4ed1-3af5" name="Star Players" hidden="false" collective="false" import="true" targetId="3ce8-4557-2307-6330" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="a013-9960-caa2-5562" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a013-9960-caa2-5562" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cf71-3c61-b494-b44a" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2575,105 +2539,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3ce8-4557-2307-6330" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="23c6-ee50-9888-34d7" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry"/>
-        <entryLink id="158e-a0b2-8f79-c029" name="Max Spleenripper" hidden="true" collective="false" import="true" targetId="19c7-050a-9950-59c0" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="436b-94fe-e712-be92" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="f7b7-7a47-f894-cc18" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="7d7c-1930-b142-52d0" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry"/>
-        <entryLink id="1a52-3b74-6923-4545" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="6526-ac11-350b-6243" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="2c35-6929-0799-3712" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="0d1a-2b77-5dbb-f8ab" name="Grashnak Blackhoof" hidden="false" collective="false" import="true" targetId="874c-6352-2ead-33fb" type="selectionEntry"/>
-        <entryLink id="e1c3-9e24-4915-48fa" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
-        <entryLink id="f8fa-66f4-2d7a-39d7" name="Scyla Anfingrimm" hidden="true" collective="false" import="true" targetId="9007-a6be-1641-e125" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="436b-94fe-e712-be92" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="ed9f-8507-4f9c-3d3f" name="Lord Borak the Despoiler" hidden="false" collective="false" import="true" targetId="d101-32eb-1c0f-9405" type="selectionEntry"/>
-        <entryLink id="292c-502c-d42b-612e" name="Bilerot Vomitflesh" hidden="true" collective="false" import="true" targetId="dc60-c436-efc1-883e" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="f25f-79e5-1c8e-ecec" name="Withergrasp Doubledrool" hidden="false" collective="false" import="true" targetId="ea9e-3b91-40f2-6cf1" type="selectionEntry"/>
-        <entryLink id="9059-559f-20dc-d9bb" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" targetId="ac3d-e6df-bfaf-8cef" type="selectionEntry"/>
-        <entryLink import="true" name="Guffle Pussmaw" hidden="true" id="2c86-8dae-206f-7df8" type="selectionEntry" targetId="97f1-41ea-eb05-e636">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="true" id="178a-e886-e5b2-7318" type="selectionEntry" targetId="12b7-6345-144a-2046">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bcc7-ccb4-a677-347c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Zzharg Madeye" hidden="true" id="a165-8a15-4e9b-2915" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="af65-265c-7fdb-44b5" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bcc7-ccb4-a677-347c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="a4b5-ae86-51c8-3f80" name="Beastman Runner Lineman" publicationId="46da-ba61-6439-83e5" page="109" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2742,4 +2607,25 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="1117-8ca3-f58b-ede9">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="cdc4-7a2d-f5e0-a547" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Favored of..." hidden="false" id="dc55-7f90-e1b5-781f" collective="false" targetId="b38d-6ca8-2092-1c48" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39bc-ca29-b546-6080" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="ba16-7fb5-aa6e-3bad" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a29-160e-5b64-e8c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c849-8b64-448f-1622" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec1f-b097-71ea-f8d3" name="Black Orc Team" revision="9" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="ec1f-b097-71ea-f8d3" name="Black Orc Team" revision="10" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@crazydude11" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Black Orcs are the biggest and strongest of all Orcs. Many believe they draw their name from their dark green skin, although the title is more likely derived from their dour demeanour and bleak sense of humour! Grim and singularly focused on violence, it’s no wonder so many flock to the Blood Bowl pitch! Black Orcs treat other Greenskins as little more than frivolous amateurs, largely because lesser Orcs are likely to squabble amongst themselves and focus too much on beating up the opposition, instead of concentrating on the game. Consequently, many Black Orcs refuse to play alongside other Orcs, choosing instead to form their own teams. Yet Black Orcs aren’t stupid – they know the importance of speed and agility. As a result, Black Orc teams make great use of Goblins, many of whom they become quite fond of, treating them as favourite pets and training them to be tough with regular clumps about the noggin!</readme>
   <categoryEntries>
     <categoryEntry id="696d-9217-aa0a-9765" name="Goblin Bruiser Lineman" hidden="false">
@@ -115,11 +115,7 @@
         <entryLink id="4a02-7c69-4892-a5b7" name="WAAAGH! Drummer" hidden="false" collective="false" import="true" targetId="54e1-c0ea-1874-f2a9" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
-    <entryLink id="6768-f7aa-85f1-dcb5" name="Star Players" hidden="false" collective="false" import="true" targetId="3820-b37e-4a98-d937" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink targetId="8526-a57c-c848-4d31" id="c3a0-d522-c4bf-f38c" primary="true" name="Inducements"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="8046-fe1b-8f55-b1a4" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="16d4-45f0-7d53-b9ea" name="Goblin Bruiser Lineman" publicationId="46da-ba61-6439-83e5" page="108" hidden="false" collective="false" import="true" type="model">
@@ -1451,30 +1447,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3820-b37e-4a98-d937" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd7-05f0-3154-b7f0" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="c44c-0d85-44ee-8bfc" name="Star Players" hidden="false" collective="false" import="true" targetId="5b8f-c371-5eae-0b20" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="8c9d-c4b4-4aa9-4cbd" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c9d-c4b4-4aa9-4cbd" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="2b60-32ff-bebb-d66e" name="[A]gility" hidden="false" collective="false" import="true">
@@ -1626,24 +1598,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5b8f-c371-5eae-0b20" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="d1a6-5ec8-3dd6-4d3d" name="Fungus the Loon" hidden="false" collective="false" import="true" targetId="a3af-a94c-d242-1dc5" type="selectionEntry"/>
-        <entryLink id="e219-17c0-c485-6282" name="The Black Gobbo" hidden="false" collective="false" import="true" targetId="9dcd-f21e-18ec-e0e7" type="selectionEntry"/>
-        <entryLink id="09e1-7533-1b85-03e5" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="686e-8d72-930c-5f78" name="Varag Ghoul-Chewer" hidden="false" collective="false" import="true" targetId="5aed-7128-04f0-bc29" type="selectionEntry"/>
-        <entryLink id="a0bb-c5e5-bd71-0517" name="Nobbla Blackwart" hidden="false" collective="false" import="true" targetId="84c4-b59e-00e9-9156" type="selectionEntry"/>
-        <entryLink id="aa84-e59d-e9a1-4c38" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="5141-452b-ada9-02cf" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="8642-32db-1896-2e7d" name="Bomber Dribblesnot" hidden="false" collective="false" import="true" targetId="5993-677d-8b45-5595" type="selectionEntry"/>
-        <entryLink id="d66f-81ed-022a-b165" name="Scrappa Sorehead" hidden="false" collective="false" import="true" targetId="630d-615a-fa3a-2ea6" type="selectionEntry"/>
-        <entryLink id="5521-82ed-31f5-0f8e" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="e19d-28f3-f0d5-afa7" name="Ripper Bolgrot" hidden="false" collective="false" import="true" targetId="11ef-0d16-9ff3-b2d9" type="selectionEntry"/>
-        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="false" id="42f4-afc6-fef4-0a13" type="selectionEntry" targetId="12b7-6345-144a-2046"/>
-        <entryLink import="true" name="Rashnak Backstabber" hidden="false" id="426b-6223-11f1-b338" type="selectionEntry" targetId="e918-d819-7edd-36e0"/>
-        <entryLink import="true" name="Zzharg Madeye" hidden="false" id="bcd9-66cd-7d36-d7a1" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="0e10-a498-b60b-e24a" name="Goblin Bruiser Lineman" publicationId="46da-ba61-6439-83e5" page="108" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -1686,4 +1640,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="c783-cfbb-7105-e581">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="fd65-c151-432e-84fe" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Badlands Brawl" hidden="false" id="4d16-93e7-b214-9c9a" type="selectionEntry" targetId="c605-2010-fb97-0f51">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44a4-5732-e0ac-e006" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="3113-92a1-1fd9-845f" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="305f-9ed8-e0af-a001" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53f8-139f-2d13-ec7d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

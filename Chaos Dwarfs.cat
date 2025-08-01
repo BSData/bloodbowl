@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="34" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4cd2a796-0d89-443b-af4d-7f0a471ed90e" name="Chaos Dwarf Team" revision="35" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Chaos Dwarfs are evil creatures, famed weaponsmiths whose creations are as twisted and as cruel as they are. They are the sworn enemies of their distant kin, but if there’s one thing the two races agree on, it is Blood Bowl. Chaos Dwarf teams have long been a fixture of the sport, even though they were excluded from official play by the NAF until its collapse. Most Chaos Dwarf coaches realise that their chief weakness is their race’s inherent ponderousness, so Hobgoblin slaves fulfil a vital role as Runners and Throwers. A few lucky teams can even boast the presence of Bull Centaurs, mighty warriors who have been blessed with the gift of mutation. Chaos Dwarf teams might not be quick, but you’d be a fool to stand in their way!</readme>
   <categoryEntries>
     <categoryEntry id="108e-32d7-df38-c44c" name="Renegade Minotaur" publicationId="dcf0-4e1e-b304-926a" hidden="false">
@@ -79,14 +79,6 @@
         <categoryLink id="b573-bb19-92cc-f0a0" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="52d2-ef5c-4908-3fdb" name="Favored of..." hidden="false" collective="false" import="true" targetId="b38d-6ca8-2092-1c48" type="selectionEntry">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79f8-58c0-2156-9697" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="0b34-9f62-a9b8-ff14" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="83d2-cf61-f0d2-9d28" name="Head Coach" hidden="false" collective="false" import="true" targetId="bfa6-10f6-14cc-b5b1" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="58da-615c-2f64-b74c" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
@@ -150,11 +142,6 @@
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink id="187d-75e7-cefa-6542" name="Star Players" hidden="false" collective="false" import="true" targetId="8b2d-e6bf-817f-a38f" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="36ff-5e28-e809-db1f" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="0dc9-1cf1-a1b5-f5b1" name="Apothecary" hidden="false" collective="false" import="true" targetId="77da-bfcb-d236-80a8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9fa7-eb25-490c-422c" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
@@ -178,6 +165,11 @@
     <entryLink import="true" name="Mercenary [Chaos Dwarf Flamesmith]" hidden="false" id="ee30-7fa8-b48d-87e2" type="selectionEntry" targetId="ba70-bdee-f6ba-fce8">
       <categoryLinks>
         <categoryLink targetId="8526-a57c-c848-4d31" id="edf6-76aa-37d5-ed4f" primary="true" name="Inducements"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="431b-873a-8887-3891" type="selectionEntry" targetId="5ab0-a25e-669e-c9da">
+      <categoryLinks>
+        <categoryLink targetId="8526-a57c-c848-4d31" id="5402-dc63-f6a0-a6ae" primary="true" name="Inducements"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1963,30 +1955,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8b2d-e6bf-817f-a38f" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5abf-db1d-6913-5d2f" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="8ab3-463b-b3cb-06e3" name="Star Players" hidden="false" collective="false" import="true" targetId="db10-eab9-1beb-e55f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="44da-adbb-7383-d400" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44da-adbb-7383-d400" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry type="model" import="true" name="Hobgoblin Sneaky Stabba" hidden="false" id="9e06-7a74-d54d-e4e6" publicationId="dcf0-4e1e-b304-926a">
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000"/>
@@ -3029,36 +2997,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="db10-eab9-1beb-e55f" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="753b-4190-0a42-cb49" name="Glart Smashrip" hidden="false" collective="false" import="true" targetId="f11a-2b66-4503-d3f8" type="selectionEntry"/>
-        <entryLink id="5168-15dd-9f42-66cb" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="15ff-fdcc-268f-925e" name="Hakflem Skuttlespike" hidden="false" collective="false" import="true" targetId="6e4e-8a0d-7d04-5d9e" type="selectionEntry"/>
-        <entryLink id="971e-8f6c-3de2-6e89" name="Barik Farblast" hidden="false" collective="false" import="true" targetId="8a87-241d-2e82-8181" type="selectionEntry"/>
-        <entryLink id="a1e2-d10d-7baa-8479" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="ec5f-d3fa-c85e-fd40" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="5036-548e-7dd4-023a" name="Grashnak Blackhoof" hidden="false" collective="false" import="true" targetId="874c-6352-2ead-33fb" type="selectionEntry"/>
-        <entryLink id="aba0-5456-752e-1c04" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="false" collective="false" import="true" targetId="267d-86b2-036e-64c7" type="selectionEntry"/>
-        <entryLink id="2b76-cdec-4958-1eeb" name="Lord Borak the Despoiler" hidden="false" collective="false" import="true" targetId="d101-32eb-1c0f-9405" type="selectionEntry"/>
-        <entryLink id="1b1c-1a62-33d5-d5d3" name="Bomber Dribblesnot" hidden="false" collective="false" import="true" targetId="5993-677d-8b45-5595" type="selectionEntry"/>
-        <entryLink id="8b55-12fb-9818-5f9b" name="Fungus the Loon" hidden="false" collective="false" import="true" targetId="a3af-a94c-d242-1dc5" type="selectionEntry"/>
-        <entryLink id="cee3-046d-ae3f-92c1" name="The Black Gobbo" hidden="false" collective="false" import="true" targetId="9dcd-f21e-18ec-e0e7" type="selectionEntry"/>
-        <entryLink id="66a4-3b44-b7b7-aa8e" name="Grim Ironjaw" hidden="false" collective="false" import="true" targetId="f980-4ebc-144f-8776" type="selectionEntry"/>
-        <entryLink id="d53e-1886-dcf4-6043" name="Rumbelow Sheepskin" hidden="false" collective="false" import="true" targetId="0653-e1fd-2776-28d3" type="selectionEntry"/>
-        <entryLink id="217b-91e2-2166-ecac" name="Skrull Halfheight" hidden="false" collective="false" import="true" targetId="2e41-d71f-ea2b-27ac" type="selectionEntry"/>
-        <entryLink id="354f-3084-3c49-3fe4" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry"/>
-        <entryLink id="bb4c-4538-e294-4f23" name="Varag Ghoul-Chewer" hidden="false" collective="false" import="true" targetId="5aed-7128-04f0-bc29" type="selectionEntry"/>
-        <entryLink id="1f48-dcff-f214-5bd9" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="1bfc-068e-3b71-e317" name="Scrappa Sorehead" hidden="false" collective="false" import="true" targetId="630d-615a-fa3a-2ea6" type="selectionEntry"/>
-        <entryLink id="919b-400d-6f09-b723" name="Nobbla Blackwart" hidden="false" collective="false" import="true" targetId="84c4-b59e-00e9-9156" type="selectionEntry"/>
-        <entryLink id="f07b-f58a-d1e2-b4ae" name="Withergrasp Doubledrool" hidden="false" collective="false" import="true" targetId="ea9e-3b91-40f2-6cf1" type="selectionEntry"/>
-        <entryLink id="dbf9-3cb2-d1d5-fc1e" name="Skitter Stab-Stab" hidden="false" collective="false" import="true" targetId="ac3d-e6df-bfaf-8cef" type="selectionEntry"/>
-        <entryLink id="0421-b687-121f-f857" name="Ripper Bolgrot" hidden="false" collective="false" import="true" targetId="11ef-0d16-9ff3-b2d9" type="selectionEntry"/>
-        <entryLink import="true" name="H&apos;thark the Unstoppable" hidden="false" id="2ac7-4640-ba25-91b0" type="selectionEntry" targetId="12b7-6345-144a-2046"/>
-        <entryLink import="true" name="Rashnak Backstabber" hidden="false" id="0e84-91ed-2424-3e4d" type="selectionEntry" targetId="e918-d819-7edd-36e0"/>
-        <entryLink import="true" name="Zzharg Madeye" hidden="false" id="af74-9dec-b988-4046" type="selectionEntry" targetId="7d6f-bb31-9f6e-78ff"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="ec51-ed18-a571-f99c" name="Hobgoblin Lineman" publicationId="dcf0-4e1e-b304-926a" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -3140,4 +3078,47 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="515c-d096-0fb3-4854">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="398d-034e-5438-2404" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Favored of..." hidden="false" id="c03a-5681-a771-09ec" collective="false" targetId="b38d-6ca8-2092-1c48" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e42f-7be1-93a3-9fac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="290d-20ee-4893-4413" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Worlds Edge Superleague" hidden="false" id="007c-f67f-968c-19bd" type="selectionEntry" targetId="d5be-b66d-7065-f9af">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d46-4938-200a-1890" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="366e-d6b2-cc35-b6f9" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Badlands Brawl" hidden="false" id="3e06-786d-548c-9baa" type="selectionEntry" targetId="c605-2010-fb97-0f51">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="013d-ebf5-305d-d083" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="4a6f-51cb-068d-648e" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c108-06cd-9b63-0fd1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a864-d4f5-4052-5c16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

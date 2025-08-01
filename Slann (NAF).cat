@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="892d-8606-ea5e-03f2" name="Slann (NAF)" revision="8" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="892d-8606-ea5e-03f2" name="Slann (NAF)" revision="9" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>The Slann are an ancient race of space travellers stranded on our planet many ages ago. After realising that rescue was never coming, they settled down in Lustria and enslaved their Lizardman neighbours. While most Slann prefer to become fat and lazy while reptilian thralls do their bidding, a few of the younger generation still enjoy a bit of Blood Bowl. The Slann have no passing game to speak of, but their ability to leap, dive and intercept are second to none.</readme>
   <categoryEntries>
     <categoryEntry id="2b13-2004-78de-007c" name="Lineman" publicationId="de23-a2d4-c567-535a" hidden="false">
@@ -131,9 +131,9 @@
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink id="7ab2-d333-b814-0408" name="Star Players" hidden="false" collective="false" import="true" targetId="afdf-a9af-ebd5-7e4e" type="selectionEntry">
+    <entryLink import="true" name="Star Players" hidden="false" id="fccf-88ae-6f66-521d" type="selectionEntry" targetId="5ab0-a25e-669e-c9da">
       <categoryLinks>
-        <categoryLink id="af5f-d905-863d-53a4" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
+        <categoryLink name="Inducements" hidden="false" id="59b4-3c22-ac38-d82e" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1909,35 +1909,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="afdf-a9af-ebd5-7e4e" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48bf-1427-945c-e3dc" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="f08d-4b7b-0175-bd4d" name="Star Players" hidden="false" collective="false" import="true" targetId="321c-7da3-5136-ae30" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="ce50-9b99-b787-7a70" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a41f-802f-9a60-3454" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce50-9b99-b787-7a70" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="85ea-d5a5-d12b-1941" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2092,23 +2063,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="321c-7da3-5136-ae30" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="b3f9-fb71-914d-bb74" name="Karla von Kill" hidden="false" collective="false" import="true" targetId="1ba9-97ef-2ed0-08f0" type="selectionEntry"/>
-        <entryLink id="e668-5cbe-e5ab-080c" name="Mighty Zug" hidden="false" collective="false" import="true" targetId="b6b9-e4df-20d7-feb8" type="selectionEntry"/>
-        <entryLink id="a887-9076-5253-1680" name="Morg &apos;n&apos; Thorg" hidden="false" collective="false" import="true" targetId="10b5-f4a3-c6e3-704d" type="selectionEntry"/>
-        <entryLink id="7653-bd21-f3a1-2863" name="Zolcath the Zoat" hidden="false" collective="false" import="true" targetId="b46a-06d8-c171-c7e7" type="selectionEntry"/>
-        <entryLink id="d877-ad17-caed-0573" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="525d-a33e-1e7f-88b0" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="9119-028f-55df-b887" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="9f6e-45bd-3fcc-ec67" name="Grombindal, the White Dwarf" hidden="false" collective="false" import="true" targetId="c402-f09f-2f59-3a7c" type="selectionEntry"/>
-        <entryLink id="4623-1ff0-90e2-f375" name="Dribl and Drull" hidden="false" collective="false" import="true" targetId="a41f-802f-9a60-3454" type="selectionEntry"/>
-        <entryLink import="true" name="Anqi Panqi" hidden="false" id="021c-70dd-b5d5-a177" type="selectionEntry" targetId="be50-5df0-f141-333c"/>
-        <entryLink import="true" name="Boa Kon&apos;ssstriktr" hidden="false" id="66f5-eb4e-cdff-5c2d" type="selectionEntry" targetId="02a0-5253-f8c5-29c0"/>
-        <entryLink import="true" name="Estelle La Veneaux" hidden="false" id="e020-ecfd-6cbe-93bb" type="selectionEntry" targetId="96f8-01d2-bef0-cd90"/>
-        <entryLink import="true" name="Glotl Stop" hidden="false" id="ef4f-4a56-ec10-d2e6" type="selectionEntry" targetId="acf1-5a06-bbaf-54ee"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="abf3-3517-a5b3-e381" name="Lineman" publicationId="de23-a2d4-c567-535a" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2164,4 +2118,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="ea81-301d-7a2e-22c0">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="c3db-5d83-b8c6-ba33" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lustrian Superleague" hidden="false" id="fe3f-3d20-971e-ebe1" type="selectionEntry" targetId="5581-bb5e-6d85-79d8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c549-2a3b-e0fd-51c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="1eec-70f9-ad5d-d66e" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d06e-e396-8d5a-5966" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6af-dbee-932a-c654" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

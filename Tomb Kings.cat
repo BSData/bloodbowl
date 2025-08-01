@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="453fbaaf-fb2b-4c78-923a-382c232a2779" name="Tomb Kings Team" revision="36" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="453fbaaf-fb2b-4c78-923a-382c232a2779" name="Tomb Kings Team" revision="37" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Once upon a time, Undead teams were few and far between, but that’s not the case these days. Relative newcomers to the sport, Tomb Kings teams hail from the scorching deserts far to the south, and travel from game to game on great barges that are bedecked with all the finery of their ancient kingdoms. Each team is led by a liche priest, an ancient wizard who holds the team together, quite literally, as well as fulfilling all the normal roles you’d expect from a head coach. The team itself is mostly made up of the Skeletons of long-dead players who were sealed into the tombs alongside their deceased sponsors in millennia past, fulfilling the terms of their eternal contracts, rounded out with mighty Tomb Guardians, dauntless revenants who are an utter terror in the midfield.</readme>
   <categoryEntries>
     <categoryEntry id="6ac8-fa86-8ff8-9522" name="Skeleton Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -74,11 +74,6 @@
         <categoryLink id="6a62-f14e-097c-3939" name="Team Management" hidden="false" targetId="a6b7-0663-b308-f599" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="645b-52d0-1443-772c" name="Star Players" hidden="false" collective="false" import="true" targetId="09bf-52b8-419a-e3a0" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="4a64-7bbe-0f91-1a97" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="4f47-7c2c-0000-6fb2" name="Inducements" hidden="false" collective="false" import="true" targetId="6ad8-6c09-41fd-425c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5fd4-8fd9-cfc8-e495" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
@@ -128,6 +123,7 @@
         <entryLink id="0fd4-4349-25ae-80d6" name="Mortuary Assistant" hidden="false" collective="false" import="true" targetId="5f7b-5fc3-e8b6-68e9" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Star Players" hidden="false" id="5763-9a7b-ebef-81c2" type="selectionEntry" targetId="5ab0-a25e-669e-c9da"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8919-3f04-24b8-63d8" name="Anointed Blitzer" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
@@ -1861,30 +1857,6 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="09bf-52b8-419a-e3a0" name="Star Players" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="446e-000e-ba1d-6078" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="fa1b-4049-fc52-4daa" name="Star Players" hidden="false" collective="false" import="true" targetId="cfe4-e6eb-91e8-60fd" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="79b4-f2ba-46f3-8824" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5275-5518-f1eb-3bce" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79b4-f2ba-46f3-8824" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="8154-3997-e08d-47d9" name="[A]gility" hidden="false" collective="false" import="true">
@@ -2020,21 +1992,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cfe4-e6eb-91e8-60fd" name="Star Players" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="7503-0e6d-2d0a-7543" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry"/>
-        <entryLink id="b0f1-9c04-23ef-1caa" name="Skrull Halfheight" hidden="false" collective="false" import="true" targetId="2e41-d71f-ea2b-27ac" type="selectionEntry"/>
-        <entryLink id="6a63-66a1-63ac-a374" name="Wilhelm Chaney" hidden="false" collective="false" import="true" targetId="a68e-e39e-46f4-5122" type="selectionEntry"/>
-        <entryLink id="8dd9-810e-807e-ad04" name="Akhorne the Squirrel" hidden="false" collective="false" import="true" targetId="e80e-92fe-bfa9-1874" type="selectionEntry"/>
-        <entryLink id="0293-6157-f0ac-3623" name="Helmut Wulf" hidden="false" collective="false" import="true" targetId="b607-4486-3180-3306" type="selectionEntry"/>
-        <entryLink id="c474-1a8b-c8d0-9452" name="Grak and Crumbleberry" hidden="false" collective="false" import="true" targetId="5275-5518-f1eb-3bce" type="selectionEntry"/>
-        <entryLink id="2383-4605-ea16-8e52" name="Bryce &apos;The Slice&apos; Cambuel" hidden="false" collective="false" import="true" targetId="1938-caba-4c33-725c" type="selectionEntry"/>
-        <entryLink id="fc56-1125-2d05-ce5f" name="&apos;Captain&apos; Karina von Riesz" hidden="false" collective="false" import="true" targetId="e305-3078-5475-f863" type="selectionEntry"/>
-        <entryLink id="0ef0-2978-6694-48b0" name="Count Luthor von Drakenborg" hidden="false" collective="false" import="true" targetId="e866-fae5-5eb9-b38f" type="selectionEntry"/>
-        <entryLink id="8a61-e4bc-719d-f42e" name="Ivan &apos;The Animal&apos; Deathshroud" hidden="false" collective="false" import="true" targetId="a0b2-1efb-f224-11a1" type="selectionEntry"/>
-        <entryLink import="true" name="Gretchen Wächter &apos;The Blood Bowl Widow&apos;" hidden="false" id="4cd0-0e49-4b02-3a5b" type="selectionEntry" targetId="1d5b-c35f-836d-d879"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="8c16-efb2-8143-a36c" name="Skeleton Lineman" publicationId="440b-48bb-12dd-90e4" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
@@ -2090,4 +2047,28 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="c4c8-17dd-d6a1-5966">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="ec10-0ef7-580d-9af0" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sylvanian Spotlight" hidden="false" id="e527-db77-5b0c-ef1b" type="selectionEntry" targetId="bf62-4437-3f84-7611">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee6f-b84a-06de-de0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="491c-9b25-5d1a-8e5d" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="994b-744d-0023-0a52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62f7-ce81-9aac-e9c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
