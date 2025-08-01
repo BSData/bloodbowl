@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="44" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="45" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry.</readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -8034,7 +8034,7 @@ Until the end of this game, each selected player gains a single randomly selecte
       </profiles>
       <rules>
         <rule id="954c-9359-9150-2d13" name="Star of the Show" publicationId="5dbd-3c70-d864-0f43" hidden="false">
-          <description>Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill.Once per game, when Count Lithor scores a touchdown, his controlling coach may gain one team re-roll. If the re-roll has not been used by the end of the nect drive, it is lost.</description>
+          <description>Once per game, when Count Luthor scores a touchdown, his controlling coach may gain one team re-roll. If this re-roll has not been used by the end of the next drive, it is lost.</description>
         </rule>
       </rules>
       <infoLinks>
