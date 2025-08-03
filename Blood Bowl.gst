@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="47" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="48" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry.</readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -1394,7 +1394,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             <infoLink id="cff0-6465-7b1e-cc60" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
             <infoLink id="4028-da22-b702-0850" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
             <infoLink id="d68c-c8b9-a85e-9e75" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-            <infoLink id="7b02-58e7-32d0-740e" name="Throw Team-Mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+            <infoLink id="7b02-58e7-32d0-740e" name="Throw Team-mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000"/>
@@ -5909,7 +5909,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           </rules>
           <infoLinks>
             <infoLink name="Thick Skull" id="79ff-bd88-74d5-41dd" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-            <infoLink name="Throw Team-Mate" id="a0e3-9abf-d546-b4bb" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+            <infoLink name="Throw Team-mate" id="a0e3-9abf-d546-b4bb" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
             <infoLink name="Mighty Blow (+2)" id="638f-7547-3ba8-75c8" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
             <infoLink name="Loner (4+)" id="ba24-973e-ed75-96e7" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
               <modifiers>
@@ -8496,11 +8496,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Grab, Loner (4+), Mighty Blow (+1), Regeneration, Throw Team-Mate</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Grab, Loner (4+), Mighty Blow (+1), Regeneration, Throw Team-mate</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Grab, Mighty Blow (+1), Regeneration, Throw Team-Mate" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Grab, Mighty Blow (+1), Regeneration, Throw Team-mate" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="11ef-0d16-9ff3-b2d9" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -8526,7 +8526,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Grab" id="3fa3-3ffc-2fb3-2d2f" hidden="false" targetId="2720-ba6f-8616-62de" type="rule"/>
             <infoLink name="Mighty Blow (+1)" id="c2b8-dd10-ee06-dcf4" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
             <infoLink name="Regeneration" id="2917-6515-e5fc-3333" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-            <infoLink name="Throw Team-Mate" id="c9f3-2bb0-4e8d-b35e" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+            <infoLink name="Throw Team-mate" id="c9f3-2bb0-4e8d-b35e" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="58e4-32be-8db6-5357" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -9124,7 +9124,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Thick Skull" id="5bf9-2e4b-a9d9-3c63" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
             <infoLink name="Stand Firm" id="49ee-ca83-e3fc-3b3d" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
             <infoLink name="Mighty Blow (+2)" id="33d7-3a67-fea8-1e7a" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
-            <infoLink name="Throw Team-Mate" id="4a7a-cac9-ae2e-fcf2" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+            <infoLink name="Throw Team-mate" id="4a7a-cac9-ae2e-fcf2" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
             <infoLink name="Timmm-ber!" id="951f-d21e-7b44-382e" hidden="false" targetId="4e5b-8b02-c9de-11bc" type="rule"/>
           </infoLinks>
           <categoryLinks>
@@ -11321,7 +11321,7 @@ Note that if you declared that this player would perform an action which can onl
 Additionally, if this player is Prone when activated, they may attempt to Jump Up and perform a Block action. This player makes an Agility test, applying a +1 modifier. If this test is passed, they stand up and may perform a Block action. If the test is failed, they remain Prone and their activation ends. This Skill may still be used if the player is Prone or has lost their Tackle Zone.</description>
     </rule>
     <rule id="a1d7-cbde-7dee-aa12" name="Disturbing Presence" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
-      <description>When an opposition player performs either a Pass action, a Throw Teammate action or a Throw Bomb Special action, or attempts to either interfere with a pass or to catch the ball, they must apply a -1 modifier to the test for each player on your team with this Skill that is within three squares of them, even if the player with this Skill is Prone, Stunned or has lost their Tackle Zone.</description>
+      <description>When an opposition player performs either a Pass action, a Throw Team-mate action or a Throw Bomb Special action, or attempts to either interfere with a pass or to catch the ball, they must apply a -1 modifier to the test for each player on your team with this Skill that is within three squares of them, even if the player with this Skill is Prone, Stunned or has lost their Tackle Zone.</description>
     </rule>
     <rule id="d381-001e-f77b-c9a5" name="Dirty Player (+1)" publicationId="46da-ba61-6439-83e5" page="76" hidden="false">
       <description>When this player commits a Foul action, either the Armour roll or Injury roll made against the victim may be modified by the amount shown in brackets. This modifier may be applied after the roll has been made.</description>
@@ -11377,7 +11377,7 @@ To perform a Stab Special action, make an unmodified Armour roll against the tar
 
 If you declared that this player would perform any action that includes movement (Pass, Hand-off, Blitz or Foul) prior to them becoming Rooted, they may complete the action if possible. If they cannot, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</description>
     </rule>
-    <rule id="72d9-6b27-4fa9-02ef" name="Throw Team-Mate" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
+    <rule id="72d9-6b27-4fa9-02ef" name="Throw Team-mate" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
       <description>If this player also has a Strength characteristic of 5 or more, they may perform a Throw Team-mate action, as described on page 52, allowing them to throw a teammate with the Right Stuff trait.</description>
     </rule>
     <rule id="ac81-c360-7e27-2e0a" name="Two Heads" publicationId="46da-ba61-6439-83e5" page="78" hidden="false">
