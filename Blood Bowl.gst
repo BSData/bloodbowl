@@ -4979,7 +4979,7 @@ Any Standing players hit by the Column of Fire are Knocked Down. When a player i
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4b-393e-62f0-231b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="0c53-a62e-e532-9b53" name="Vanhalables Dans Macabre" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
+        <profile id="0c53-a62e-e532-9b53" name="Vanhalable&apos;s Danse Macabre" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
           <characteristics>
             <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Roll a D6:
 
