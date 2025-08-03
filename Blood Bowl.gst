@@ -5000,7 +5000,7 @@ A player hit by Incorporeal gains the No Hands trait and, if they are in possess
       </profiles>
       <rules>
         <rule id="9219-8555-e542-d6d3" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable,s Danse Macarbe</description>
+          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable's Danse Macabre</description>
         </rule>
       </rules>
       <categoryLinks>
