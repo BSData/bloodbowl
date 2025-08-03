@@ -4357,7 +4357,7 @@ If the player was in possession of the ball when they were turned into a frog, i
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9aa-e209-5956-5d91" type="max"/>
       </constraints>
       <rules>
-        <rule id="826a-a89b-8714-7144" name="&quot;A new plathi... er, patient!&quot;" publicationId="9118-6c97-8006-93a4" page="18" hidden="false">
+        <rule id="826a-a89b-8714-7144" name="&quot;A new playthi... er, patient!&quot;" publicationId="9118-6c97-8006-93a4" page="18" hidden="false">
           <description>Once per game, during Step 2 of the End of Drive sequence, Krot can experiment on a player who has been removed from play as a Casualty, in an attempt to get them back out there. Choose a player that is in the Casualty box of Krot’s team dugout (not a Mercenary or a Star Player). This may even be a player that has suffered a Casualty table result of 15-16, DEAD. Roll a D6 on the table opposite and apply the result to the chosen player:
 
 
@@ -4774,7 +4774,7 @@ A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cc76-58a5-f36f-1132" name="Druchii Sprots Sorceress" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cc76-58a5-f36f-1132" name="Druchii Sports Sorceress" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-54ee-ded4-58b3" type="max"/>
       </constraints>
