@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="46" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="bfef4c13-8961-4056-a7ab-30a35cfaf51c" name="Blood Bowl" revision="47" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@xerus101, @Dr. Toboggan, or @SansCommonSense" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Welcome to Blood Bowl Season 2. To get started, pick a team, add a &quot;Standard&quot; force of that team, and hire your players!  TV is tracked for your Team Roster automatically. Treasury Gold is tracked manually through a Treasury Gold entry.</readme>
   <publications>
     <publication id="46da-ba61-6439-83e5" name="Core Rules Book"/>
@@ -1699,7 +1699,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca0-bd0e-d110-239a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="9963-a406-1446-343b" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="9963-a406-1446-343b" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b4c9-c353-b9e9-9afc" name="[A]gility" hidden="false" targetId="8179-7288-9a95-6d70" primary="false"/>
@@ -5656,11 +5656,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Side Step, Stunty, Titchy</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Claws, Dauntless, Dodge, Frenzy, Jump Up, No Hands, Side Step, Stunty, Titchy" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Claws, Dauntless, Dodge, Frenzy, Jump Up, No Hands, Sidestep, Stunty, Titchy" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="e80e-92fe-bfa9-1874" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -5688,7 +5688,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Dodge" id="7347-cf26-f5d6-fbfe" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
             <infoLink name="Jump Up" id="dafe-3b24-9197-e0c5" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
             <infoLink name="No Hands" id="59c8-04f0-21f8-854a" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-            <infoLink name="Side Step" id="6507-eec3-f0ab-debf" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="6507-eec3-f0ab-debf" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
             <infoLink name="Stunty" id="44d1-ae51-88c6-3fb9" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
             <infoLink name="Titchy" id="1de6-fb1b-a2c5-848e" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
             <infoLink name="Frenzy" id="7881-3e48-829c-5205" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
@@ -6471,11 +6471,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Side Step</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Dodge, Hypnotic Gaze, Prehensile Tail, Safe Pair of Hands, Side Step" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Dodge, Hypnotic Gaze, Prehensile Tail, Safe Pair of Hands, Sidestep" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="02a0-5253-f8c5-29c0" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
@@ -6502,7 +6502,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             </infoLink>
             <infoLink name="Prehensile Tail" id="989e-e2c5-ec22-0a12" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
             <infoLink name="Safe Pair of Hands" id="e813-eb92-cdfe-242c" hidden="false" targetId="f672-176e-7433-41f6" type="rule"/>
-            <infoLink name="Side Step" id="2cf9-5587-7da8-cada" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="2cf9-5587-7da8-cada" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="71e5-da07-7dc1-e777" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -6545,11 +6545,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Side Step, Sneaky Git, Stunty</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Sidestep, Sneaky Git, Stunty</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
                   </characteristics>
                   <modifiers>
-                    <modifier type="set" value="Dirty Player (+1), Dodge, Side Step, Sneaky Git, Stunty" field="10f2-d8c7-4011-270d">
+                    <modifier type="set" value="Dirty Player (+1), Dodge, Sidestep, Sneaky Git, Stunty" field="10f2-d8c7-4011-270d">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="a41f-802f-9a60-3454" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
@@ -6570,7 +6570,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <infoLink name="Dirty Player (+1)" id="5a29-7b42-77e0-dcdb" hidden="false" targetId="d381-001e-f77b-c9a5" type="rule"/>
                 <infoLink name="Sneaky Git" id="deb9-6604-585d-51f6" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
                 <infoLink name="Dodge" id="4b47-6739-3a30-4297" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink name="Side Step" id="36a6-d5c8-cb07-43db" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+                <infoLink name="Sidestep" id="36a6-d5c8-cb07-43db" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
                 <infoLink name="Stunty" id="f8c8-2157-8522-8190" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
               </infoLinks>
               <categoryLinks>
@@ -6596,11 +6596,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Side Step, Stab, Stunty</characteristic>
+                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Sidestep, Stab, Stunty</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
                   </characteristics>
                   <modifiers>
-                    <modifier type="set" value="Dodge, Side Step, Stab, Stunty" field="10f2-d8c7-4011-270d">
+                    <modifier type="set" value="Dodge, Sidestep, Stab, Stunty" field="10f2-d8c7-4011-270d">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="a41f-802f-9a60-3454" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
@@ -6620,7 +6620,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 </infoLink>
                 <infoLink name="Stab" id="291c-be02-76fd-9691" hidden="false" targetId="5c7a-5a05-18d5-0d13" type="rule"/>
                 <infoLink name="Dodge" id="65fd-fa4d-7577-fe56" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-                <infoLink name="Side Step" id="15dd-082f-a329-d433" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+                <infoLink name="Sidestep" id="15dd-082f-a329-d433" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
                 <infoLink name="Stunty" id="aa25-1da9-4c88-3618" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
               </infoLinks>
               <categoryLinks>
@@ -6660,11 +6660,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Side Step</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Disturbing Presence, Dodge, Guard, Side Step" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Disturbing Presence, Dodge, Guard, Sidestep" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="96f8-01d2-bef0-cd90" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
@@ -6690,7 +6690,7 @@ Until the end of this game, each selected player gains a single randomly selecte
               </modifiers>
             </infoLink>
             <infoLink name="Guard" id="8cb4-4a84-1584-b8df" hidden="false" targetId="997c-d0f0-8262-dea7" type="rule"/>
-            <infoLink name="Side Step" id="ed29-d355-e643-c1fe" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="ed29-d355-e643-c1fe" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="023a-9e68-756f-ac00" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -7072,7 +7072,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             </infoLink>
             <infoLink name="Disturbing Presence" id="8aa8-425e-96d2-9ac1" hidden="false" type="rule" targetId="a1d7-cbde-7dee-aa12"/>
             <infoLink name="Fend" id="e003-93c1-b396-e883" hidden="false" type="rule" targetId="6683-1874-842d-7423"/>
-            <infoLink name="Side Step" id="6666-923a-6119-0a56" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
+            <infoLink name="Sidestep" id="6666-923a-6119-0a56" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
             <infoLink name="Stab" id="ed0f-a660-c523-b59e" hidden="false" type="rule" targetId="5c7a-5a05-18d5-0d13"/>
             <infoLink name="Stunty" id="64ce-1430-8e89-54b3" hidden="false" type="rule" targetId="877b-48d3-5f89-ddfb"/>
           </infoLinks>
@@ -7084,11 +7084,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Fend, Loner (4+), Side Step, Stab, Stunty, Furious Outburst</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Fend, Loner (4+), Sidestep, Stab, Stunty, Furious Outburst</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">110000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Disturbing Presence, Fend, Side Step, Stab, Stunty, Furious Outburst" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Disturbing Presence, Fend, Sidestep, Stab, Stunty, Furious Outburst" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="a802-117f-4e2b-73cd" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -7127,11 +7127,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Side Step, Sneaky Git, Stab, Stunty</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Sidestep, Sneaky Git, Stab, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225,000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Bombardier, Disturbing Presence, Dodge, Side Step, Sneaky Git, Stab, Stunty" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Bombardier, Disturbing Presence, Dodge, Sidestep, Sneaky Git, Stab, Stunty" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="9dcd-f21e-18ec-e0e7" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -7147,7 +7147,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           <infoLinks>
             <infoLink name="Bombardier" id="cb8d-c658-3046-b0a7" hidden="false" targetId="6afb-681d-b05b-b2a4" type="rule"/>
             <infoLink name="Disturbing Presence" id="ae98-f861-bafb-4f4b" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
-            <infoLink name="Side Step" id="703e-718d-a80b-f323" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="703e-718d-a80b-f323" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
             <infoLink name="Sneaky Git" id="ee4e-ded6-fc8b-758f" hidden="false" targetId="8b5f-8ca4-c955-4fed" type="rule"/>
             <infoLink name="Loner (4+)" id="a316-2d2d-1f20-bd2f" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
               <modifiers>
@@ -7512,11 +7512,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Side Step, Thick Skull</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Sidestep, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Dauntless, Side Step, Thick Skull" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Dauntless, Sidestep, Thick Skull" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="7796-75b1-61e7-fa43" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -7540,7 +7540,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink name="Side Step" id="daa3-a851-e14b-c46e" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="daa3-a851-e14b-c46e" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
             <infoLink name="Thick Skull" id="8d50-4bd1-23e6-4736" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
           </infoLinks>
           <categoryLinks>
@@ -8177,11 +8177,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Diving Catch, Jump Up, Loner (4+), On the Ball, Side Step, Stunty, Wrestle</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Diving Catch, Jump Up, Loner (4+), On the Ball, Sidestep, Stunty, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">70000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Catch, Diving Catch, Jump Up, On the Ball, Side Step, Stunty, Wrestle" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Catch, Diving Catch, Jump Up, On the Ball, Sidestep, Stunty, Wrestle" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="99e2-0d36-50b6-cdc3" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -8208,7 +8208,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Diving Catch" id="d5bd-c462-8196-3992" hidden="false" targetId="2938-c9de-0989-24be" type="rule"/>
             <infoLink name="On the Ball" id="150e-f047-7e6d-b4e8" hidden="false" targetId="ddf3-2f1e-8bb4-f465" type="rule"/>
             <infoLink name="Jump Up" id="3534-ef57-eb43-e0de" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
-            <infoLink name="Side Step" id="6117-0c15-337e-fdea" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="6117-0c15-337e-fdea" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
             <infoLink name="Stunty" id="d028-8dad-18a2-9651" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
             <infoLink name="Wrestle" id="f642-2521-9225-b57a" hidden="false" targetId="c008-450e-4ccf-cde2" type="rule"/>
           </infoLinks>
@@ -8320,7 +8320,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Diving Catch" id="294f-5b75-72c3-3d21" hidden="false" type="rule" targetId="2938-c9de-0989-24be"/>
             <infoLink name="Dodge" id="ec59-238e-03cc-4b21" hidden="false" type="rule" targetId="8067-56fd-9601-7895"/>
             <infoLink name="Leap" id="1e05-03f8-0522-9e2b" hidden="false" type="rule" targetId="62a8-1e29-091e-39a0"/>
-            <infoLink name="Side Step" id="2c43-0cdd-a59f-d465" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
+            <infoLink name="Sidestep" id="2c43-0cdd-a59f-d465" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
           </infoLinks>
           <profiles>
             <profile name="Jordell Freshbreeze" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="5941-424f-7b2e-ec20">
@@ -8330,11 +8330,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Leap, Loner (4+), Side Step, Swift as the Breeze</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Leap, Loner (4+), Sidestep, Swift as the Breeze</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Block, Diving Catch, Dodge, Leap, Side Step, Swift as the Breeze" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Block, Diving Catch, Dodge, Leap, Sidestep, Swift as the Breeze" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="0dcd-1a5a-a66d-ed2d" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8386,7 +8386,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Nerves of Steel" id="420c-5f11-a412-ac7b" hidden="false" type="rule" targetId="953f-3c5a-e54e-d44b"/>
             <infoLink name="On the Ball" id="bad8-a4c1-bf24-2964" hidden="false" type="rule" targetId="ddf3-2f1e-8bb4-f465"/>
             <infoLink name="Pass" id="f733-7c55-7f96-f884" hidden="false" type="rule" targetId="ac12-d5b0-529b-433b"/>
-            <infoLink name="Side Step" id="ce11-169f-9fb3-2549" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
+            <infoLink name="Sidestep" id="ce11-169f-9fb3-2549" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
           </infoLinks>
           <profiles>
             <profile name="Jeremiah Kool" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="9a68-1b8d-6138-082e">
@@ -8396,11 +8396,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Dump-Off, Loner (4+), Nerves of Steel, On the Ball, Pass, Side Step, The Flashing Blade</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Dump-Off, Loner (4+), Nerves of Steel, On the Ball, Pass, Sidestep, The Flashing Blade</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">320000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Block, Diving Catch, Dodge, Dump-Off, Nerves of Steel, On the Ball, Pass, Side Step, The Flashing Blade" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Block, Diving Catch, Dodge, Dump-Off, Nerves of Steel, On the Ball, Pass, Sidestep, The Flashing Blade" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="61db-37a0-4264-8d23" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8446,7 +8446,7 @@ Until the end of this game, each selected player gains a single randomly selecte
               </modifiers>
             </infoLink>
             <infoLink name="Shadowing" id="1067-245b-8cf3-ea99" hidden="false" type="rule" targetId="e52d-083d-8549-3edb"/>
-            <infoLink name="Side Step" id="6541-ea57-d2dc-52ba" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
+            <infoLink name="Sidestep" id="6541-ea57-d2dc-52ba" hidden="false" type="rule" targetId="e75c-91e8-51f1-4837"/>
             <infoLink name="Sneaky Git" id="4ba3-9b1e-905d-adae" hidden="false" type="rule" targetId="8b5f-8ca4-c955-4fed"/>
             <infoLink name="Stab" id="1457-c2c3-34eb-4559" hidden="false" type="rule" targetId="5c7a-5a05-18d5-0d13"/>
           </infoLinks>
@@ -8458,11 +8458,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Shadowing, Side Step, Sneaky Git, Stab, Toxin Connoisseur</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Shadowing, Sidestep, Sneaky Git, Stab, Toxin Connoisseur</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Shadowing, Side Step, Sneaky Git, Stab, Toxin Connoisseur" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Shadowing, Sidestep, Sneaky Git, Stab, Toxin Connoisseur" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="e918-d819-7edd-36e0" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8958,11 +8958,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Side Step</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Disturbing Presence, Dodge, Foul Appearance, Jump Up, No Hands, Regeneration, Shadowing, Side Step" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Disturbing Presence, Dodge, Foul Appearance, Jump Up, No Hands, Regeneration, Shadowing, Sidestep" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="1d5b-c35f-836d-d879" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -8989,7 +8989,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             </infoLink>
             <infoLink name="Jump Up" id="bbe2-fcd1-3a09-c30c" hidden="false" targetId="3ed7-31d8-4977-92b9" type="rule"/>
             <infoLink name="Foul Appearance" id="a7b9-c75d-e9ea-494c" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
-            <infoLink name="Side Step" id="3156-57b9-a44e-e749" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="3156-57b9-a44e-e749" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
             <infoLink name="Shadowing" id="acd4-fb34-5f5b-f4de" hidden="false" targetId="e52d-083d-8549-3edb" type="rule"/>
             <infoLink name="Disturbing Presence" id="d8e2-ee27-e469-a0a5" hidden="false" targetId="a1d7-cbde-7dee-aa12" type="rule"/>
             <infoLink name="Regeneration" id="85d7-1e24-fded-0613" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
@@ -9162,11 +9162,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Side Step, Sure Hands</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Sidestep, Sure Hands</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Accurate, Dodge, Pass, Side Step, Sure Hands" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Accurate, Dodge, Pass, Sidestep, Sure Hands" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="9934-db67-9c77-27bb" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -9193,7 +9193,7 @@ Until the end of this game, each selected player gains a single randomly selecte
               </modifiers>
             </infoLink>
             <infoLink name="Sure Hands" id="4abd-cf71-0ced-1e36" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
-            <infoLink name="Side Step" id="aa9a-14ed-3ba5-25df" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="aa9a-14ed-3ba5-25df" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="6ed6-8a61-f224-b062" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -9656,7 +9656,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Block" id="616a-0ad0-abf0-944c" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
             <infoLink name="Hypnotic Gaze" id="2b18-b85b-b82b-6af7" hidden="false" targetId="c7a6-d9c2-dcfc-3ecc" type="rule"/>
             <infoLink name="Regeneration" id="bcd4-ff7a-7d2c-fe5e" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
-            <infoLink name="Side Step" id="5e40-9503-2d1e-8b47" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+            <infoLink name="Sidestep" id="5e40-9503-2d1e-8b47" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="b48c-128a-4494-94cf" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -11209,7 +11209,7 @@ When this player wishes to perform a Hand-off action to a team-mate of the type 
       <description>This player may ignore any modifier(s) for being Marked when they attempt to perform a Pass action, attempt to catch the ball or attempt to interfere with a pass.</description>
     </rule>
     <rule id="2720-ba6f-8616-62de" name="Grab" publicationId="46da-ba61-6439-83e5" page="80" hidden="false">
-      <description>When this player performs a Block action (on its own or as part of a Blitz action), using this Skill prevents the target of the Block action from using the Side Step skill.
+      <description>When this player performs a Block action (on its own or as part of a Blitz action), using this Skill prevents the target of the Block action from using the Sidestep skill.
 
 Additionally, when this player performs a Block Action on its own (but not as part of a Blitz action), if the target is pushed back, this player may choose any unoccupied square adjacent to the target to push that player into. If there are no unoccupied squares, this Skill cannot be used.
 
@@ -11332,7 +11332,7 @@ Additionally, if this player is Prone when activated, they may attempt to Jump U
     <rule id="08e2-b983-3d58-c50b" name="Right Stuff" publicationId="46da-ba61-6439-83e5" page="86" hidden="false">
       <description>If this player also has a Strength characteristic of 3 or less, they can be thrown by a team-mate with the Throw Team-mate skill, as described on page 52. This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</description>
     </rule>
-    <rule id="e75c-91e8-51f1-4837" name="Side Step" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
+    <rule id="e75c-91e8-51f1-4837" name="Sidestep" publicationId="46da-ba61-6439-83e5" page="75" hidden="false">
       <description>If this player is pushed back for any reason, they are not moved into a square chosen by the opposing coach. Instead you may choose any unoccupied square adjacent to this player. This player is pushed back into that square instead. If there are no unoccupied squares adjacent to this player, this Skill cannot be used.</description>
     </rule>
     <rule id="eae2-bc9d-032e-29e0" name="Safe Pass" publicationId="46da-ba61-6439-83e5" page="79" hidden="false">

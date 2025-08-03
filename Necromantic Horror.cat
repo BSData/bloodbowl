@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0d8490b-f414-41e1-b42c-cde6936fa34c" name="Necromantic Horror Team" revision="37" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c0d8490b-f414-41e1-b42c-cde6936fa34c" name="Necromantic Horror Team" revision="38" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@SansCommonSense" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="bfef4c13-8961-4056-a7ab-30a35cfaf51c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>The dead do not rest easy. From haunted castles to sinister forests, Undead creatures prowl the night, snatching unwary villagers from their beds. Well, some of them do. For the rest,  there’s Blood Bowl! Many Necromancers, proficient at corpse-raising and flesh-crafting but lacking a real plan of how to use their skills, realise that warm dugouts are a lovely alternative to musty tombs and dank barrows, and therefore decide to assemble a team of players (quite literally!). Interestingly, a schism of sorts seems to have occurred, leading to two competing philosophies when it comes to coaching an Undead team. Some Necromancers put their trust in the ancient dead. Other Necromancers prefer a little more life in their team, buying the services of Werewolves with promises of fresh meat and stitching together hulking Flesh Golems from an assortment of cadavers.</readme>
   <categoryEntries>
     <categoryEntry id="43bf-0a62-5eb2-6b5b" name="Zombie Lineman" publicationId="46da-ba61-6439-83e5" hidden="false">
@@ -866,7 +866,7 @@
         <infoLink id="983a-4c1d-b00f-77b5" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
         <infoLink id="6eb5-7d02-df84-78e9" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
         <infoLink id="8793-12a2-a832-3b2b" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="1213-efd8-2134-dee7" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="1213-efd8-2134-dee7" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0e6b-86ac-5278-12d9" name="Wraith" hidden="false" targetId="a02b-2e68-4e34-5a6b" primary="false"/>
@@ -2361,7 +2361,7 @@
             <modifierGroup>
               <modifiers>
                 <modifier type="set" field="ee01-7448-8c3f-a882" value="125000"/>
-                <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Block, Foul Appearance, Loner (4+), No Hands, Regeneration, Side Step"/>
+                <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Block, Foul Appearance, Loner (4+), No Hands, Regeneration, Sidestep"/>
                 <modifier type="set" field="name" value="Mercenary [Wraith]"/>
               </modifiers>
             </modifierGroup>
@@ -2370,7 +2370,7 @@
         <infoLink id="2f21-a6f8-9b7b-798c" name="Regeneration" hidden="false" targetId="37d5-cd69-9f1e-5433" type="rule"/>
         <infoLink id="a84b-5705-442a-b717" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
         <infoLink id="1038-7c03-07ba-6aec" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-        <infoLink id="c2a0-f990-b5ce-9584" name="Side Step" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
+        <infoLink id="c2a0-f990-b5ce-9584" name="Sidestep" hidden="false" targetId="e75c-91e8-51f1-4837" type="rule"/>
         <infoLink id="d04d-1dca-27e0-bd82" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
         <infoLink id="5b54-7981-50d8-3830" name="Foul Appearance" hidden="false" targetId="fcd2-8777-28d8-fdd7" type="rule"/>
       </infoLinks>
@@ -2586,7 +2586,7 @@
         <characteristic name="AG" typeId="29f4-c9a2-f996-4723">3</characteristic>
         <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
         <characteristic name="AV" typeId="c77a-49e5-750a-1adc">9</characteristic>
-        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Block, Foul Appearance, No Hands, Regeneration, Side Step</characteristic>
+        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Block, Foul Appearance, No Hands, Regeneration, Sidestep</characteristic>
         <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">GS</characteristic>
         <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">A</characteristic>
         <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">95000</characteristic>
