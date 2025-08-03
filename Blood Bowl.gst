@@ -6081,11 +6081,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchanneled Fury</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchannelled Fury</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">240000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Frenzy, Horns, Mighty Blow (+1),  Thick Skull, Unchanneled Fury" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Frenzy, Horns, Mighty Blow (+1),  Thick Skull, Unchannelled Fury" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="874c-6352-2ead-33fb" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -6112,7 +6112,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Frenzy" id="e446-aeae-597b-6580" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
             <infoLink name="Horns" id="e656-3ef5-9b1c-55eb" hidden="false" targetId="e8dc-51af-cfa7-2f74" type="rule"/>
             <infoLink name="Thick Skull" id="d33b-8c92-d210-ccfd" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-            <infoLink name="Unchanneled Fury" id="51c5-22d7-0e70-82c1" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
+            <infoLink name="Unchannelled Fury" id="51c5-22d7-0e70-82c1" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="6dc1-2d9c-95d4-9be3" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -7704,11 +7704,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury</characteristic>
+                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchannelled Fury</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Claws, Frenzy, Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchanneled Fury" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Claws, Frenzy, Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchannelled Fury" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="9007-a6be-1641-e125" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
@@ -7736,7 +7736,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <infoLink name="Frenzy" id="0226-c8d5-d8aa-d011" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
             <infoLink name="Prehensile Tail" id="611f-2cd6-db42-4916" hidden="false" targetId="68b3-2a38-56b1-dc1f" type="rule"/>
             <infoLink name="Thick Skull" id="d40e-1c49-f6df-3b9b" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
-            <infoLink name="Unchanneled Fury" id="4666-40ad-1a02-e378" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
+            <infoLink name="Unchannelled Fury" id="4666-40ad-1a02-e378" hidden="false" targetId="ba33-dff1-315b-ddbb" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink name="Players" hidden="false" id="0d0f-f50c-5dc4-9321" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -11584,7 +11584,7 @@ To perform a Projectile Vomit Special action, roll a D6:
 
 A player can only perform this Special action once per turn (i.e., Projectile Vomit cannot be used with Frenzy or Multiple Block).</description>
     </rule>
-    <rule id="ba33-dff1-315b-ddbb" name="Unchanneled Fury" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
+    <rule id="ba33-dff1-315b-ddbb" name="Unchannelled Fury" publicationId="46da-ba61-6439-83e5" page="87" hidden="false">
       <description>When this player is activated, even if they are Prone or have lost their Tackle Zone, immediately after declaring the action they will perform but before performing the action, roll a D6, applying a +2 modifier to the dice roll if you declared the player would perform a Block or Blitz action (or a Special action granted by a Skill or Trait that can be performed instead of a Block action):
 
 • On a roll of 1-3, this player rages incoherently at others but achieves little else. Their activation ends immediately.
