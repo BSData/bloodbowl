@@ -882,7 +882,7 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
             </modifier>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                <condition field="selections" scope="a6b7-0663-b308-f599" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43d1-827e-3932-1857" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5000,7 +5000,7 @@ A player hit by Incorporeal gains the No Hands trait and, if they are in possess
       </profiles>
       <rules>
         <rule id="9219-8555-e542-d6d3" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable's Danse Macabre</description>
+          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable&apos;s Danse Macabre</description>
         </rule>
       </rules>
       <categoryLinks>
