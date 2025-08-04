@@ -9755,6 +9755,7 @@ Until the end of this game, each selected player gains a single randomly selecte
     <selectionEntry type="upgrade" import="true" name="Underworld Challenge" hidden="false" id="8ae0-7abc-07a0-e07b"/>
     <selectionEntry type="upgrade" import="true" name="Worlds Edge Superleague" hidden="false" id="d5be-b66d-7065-f9af"/>
     <selectionEntry type="upgrade" import="true" name="Masters of Undeath" hidden="false" id="61e4-f3be-1bc0-a63f"/>
+    <selectionEntry type="upgrade" import="true" name="Vampire Lord" hidden="false" id="cabe-6683-3d3e-42c1"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
