@@ -1387,7 +1387,7 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           </rules>
           <infoLinks>
             <infoLink id="f1e2-f601-8639-f9fe" name="Always Hungry" hidden="false" targetId="3634-31d4-5d56-9743" type="rule"/>
-            <infoLink id="2289-3488-9d4b-b76c" name="Bone-head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
+            <infoLink id="2289-3488-9d4b-b76c" name="Bone Head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
             <infoLink id="adc6-bc19-f650-c2c1" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
             <infoLink id="94d4-b4a8-317f-8591" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
             <infoLink id="2fba-4d3e-6528-9626" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
@@ -5752,7 +5752,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     </modifier>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Bone-head" id="22ba-c4f6-4ea0-8dec" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
+                <infoLink name="Bone Head" id="22ba-c4f6-4ea0-8dec" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
                 <infoLink name="Kick Team-Mate" id="3c60-fde2-54b5-4364" hidden="false" targetId="b527-59bd-ce9e-e45c" type="rule"/>
                 <infoLink name="Mighty Blow (+1)" id="47f7-d1fc-0315-2e1f" hidden="false" targetId="d133-5e45-be15-1644" type="rule"/>
                 <infoLink name="Thick Skull" id="0b42-2dc9-b018-a45b" hidden="false" targetId="da2d-3c64-d565-feb3" type="rule"/>
