@@ -44,7 +44,7 @@
         <characteristicType id="602a-49ce-fcda-8909" name="AG"/>
         <characteristicType id="698d-46bb-7d1c-b7ac" name="PA"/>
         <characteristicType id="7d2d-d7f0-ad66-113a" name="AV"/>
-        <characteristicType id="10f2-d8c7-4011-270d" name="Skils &amp; Traits"/>
+        <characteristicType id="10f2-d8c7-4011-270d" name="Skills &amp; Traits"/>
         <characteristicType id="7ae2-1388-c0bb-3e56" name="Cost"/>
       </characteristicTypes>
     </profileType>
@@ -4319,7 +4319,7 @@ If the player was in possession of the ball when they were turned into a frog, i
             <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
             <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5+</characteristic>
             <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8+</characteristic>
-            <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+)</characteristic>
+            <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+)</characteristic>
             <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
           </characteristics>
         </profile>
@@ -5397,7 +5397,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Nerves of Steel, Secret Weapon, Sure Hands, Thick Skull, Then I Started Blastin&apos;!</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Nerves of Steel, Secret Weapon, Sure Hands, Thick Skull, Then I Started Blastin&apos;!</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
               <modifiers>
@@ -5452,7 +5452,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Break Tackle, Defensive, Juggernaut, Loner (4+), Sprint, Sure Feet, Thick Skull, Unstoppable Momentum</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Break Tackle, Defensive, Juggernaut, Loner (4+), Sprint, Sure Feet, Thick Skull, Unstoppable Momentum</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">300000</characteristic>
               </characteristics>
               <modifiers>
@@ -5524,7 +5524,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Disturbing Presence, Foul Appearance, Loner (4+)</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Disturbing Presence, Foul Appearance, Loner (4+)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
               </characteristics>
               <modifiers>
@@ -5613,7 +5613,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Foul Appearance, Loner (4+), Monstrous Mouth, Plague Ridden, Quick Bite</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Foul Appearance, Loner (4+), Monstrous Mouth, Plague Ridden, Quick Bite</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">180000</characteristic>
               </characteristics>
               <modifiers>
@@ -5656,7 +5656,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">6</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Dauntless, Dodge, Frenzy, Jump Up, Loner (4+), No Hands, Sidestep, Stunty, Titchy</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
               </characteristics>
               <modifiers>
@@ -5730,7 +5730,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Bone Head, Kick Team-mate, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
                   </characteristics>
                   <modifiers>
@@ -5779,7 +5779,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Right Stuff, Stunty, Sure Hands</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
                   </characteristics>
                   <modifiers>
@@ -5835,7 +5835,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Pro, Secret Weapon, Stand Firm</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">140000</characteristic>
               </characteristics>
               <modifiers>
@@ -5890,7 +5890,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Thick Skull, Throw Team-mate</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Thick Skull, Throw Team-mate</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
               </characteristics>
               <modifiers>
@@ -5961,7 +5961,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Grab, Loner (4+), Stand Firm</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Grab, Loner (4+), Stand Firm</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
               </characteristics>
               <modifiers>
@@ -6013,7 +6013,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Claw, Grab, Juggernaut, Loner (4+), Stand Firm</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Claw, Grab, Juggernaut, Loner (4+), Stand Firm</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">195000</characteristic>
               </characteristics>
               <modifiers>
@@ -6081,7 +6081,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchannelled Fury</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Frenzy, Horns, Loner (4+), Mighty Blow (+1),  Thick Skull, Unchannelled Fury</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">240000</characteristic>
               </characteristics>
               <modifiers>
@@ -6144,7 +6144,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Extra Arms, Loner (4+), Prehensile Tail, Two Heads</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Extra Arms, Loner (4+), Prehensile Tail, Two Heads</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">180000</characteristic>
               </characteristics>
               <modifiers>
@@ -6211,7 +6211,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Loner (4+), Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Loner (4+), Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
               </characteristics>
               <modifiers>
@@ -6279,7 +6279,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dirty Player (+2), Loner (4+), Mighty Blow (+1), Sneaky Git</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dirty Player (+2), Loner (4+), Mighty Blow (+1), Sneaky Git</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
               </characteristics>
               <modifiers>
@@ -6341,7 +6341,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Prehensile Tail, Shadowing, Stab</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Prehensile Tail, Shadowing, Stab</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
               </characteristics>
               <modifiers>
@@ -6408,7 +6408,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
               </characteristics>
               <modifiers>
@@ -6471,7 +6471,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Sidestep</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Hypnotic Gaze, Loner (4+), Prehensile Tail, Safe Pair of Hands, Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
               </characteristics>
               <modifiers>
@@ -6545,7 +6545,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Sidestep, Sneaky Git, Stunty</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Sidestep, Sneaky Git, Stunty</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
                   </characteristics>
                   <modifiers>
@@ -6596,7 +6596,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Sidestep, Stab, Stunty</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Sidestep, Stab, Stunty</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">85000</characteristic>
                   </characteristics>
                   <modifiers>
@@ -6660,7 +6660,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Sidestep</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Guard, Loner (4+), Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
               </characteristics>
               <modifiers>
@@ -6722,7 +6722,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Animal Savagery, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Stand Firm, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Animal Savagery, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Stand Firm, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">270000</characteristic>
               </characteristics>
               <modifiers>
@@ -6786,7 +6786,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
               </characteristics>
               <modifiers>
@@ -6855,7 +6855,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Loner (4+), Mighty Blow (+1), Stand Firm, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Loner (4+), Mighty Blow (+1), Stand Firm, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
               </characteristics>
               <modifiers>
@@ -6925,7 +6925,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Dodge, Jump Up, Loner (4+)</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Dodge, Jump Up, Loner (4+)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
               </characteristics>
               <modifiers>
@@ -6993,7 +6993,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1)</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
               </characteristics>
               <modifiers>
@@ -7084,7 +7084,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Fend, Loner (4+), Sidestep, Stab, Stunty, Furious Outburst</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Fend, Loner (4+), Sidestep, Stab, Stunty, Furious Outburst</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">110000</characteristic>
               </characteristics>
               <modifiers>
@@ -7127,7 +7127,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Sidestep, Sneaky Git, Stab, Stunty</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Sidestep, Sneaky Git, Stab, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225,000</characteristic>
               </characteristics>
               <modifiers>
@@ -7208,7 +7208,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1), Tackle</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1), Tackle</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
                   </characteristics>
                   <modifiers>
@@ -7257,7 +7257,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                     <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                    <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Safe Pass, Sure Hands</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Safe Pass, Sure Hands</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
                   </characteristics>
                   <modifiers>
@@ -7322,7 +7322,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Drunkard, Loner (4+), Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Drunkard, Loner (4+), Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
               </characteristics>
               <modifiers>
@@ -7382,7 +7382,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Jump Up, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Jump Up, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
               </characteristics>
               <modifiers>
@@ -7449,7 +7449,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Claws, Frenzy, Loner (4+), Mighty Blow (+1), Regeneration, Wrestle</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Claws, Frenzy, Loner (4+), Mighty Blow (+1), Regeneration, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
               </characteristics>
               <modifiers>
@@ -7512,7 +7512,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Sidestep, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Sidestep, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
               </characteristics>
               <modifiers>
@@ -7573,7 +7573,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
               </characteristics>
               <modifiers>
@@ -7642,7 +7642,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1)</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
               </characteristics>
               <modifiers>
@@ -7704,7 +7704,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchannelled Fury</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchannelled Fury</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
               </characteristics>
               <modifiers>
@@ -7773,7 +7773,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Secret Weapon</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Secret Weapon</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
               </characteristics>
               <modifiers>
@@ -7838,7 +7838,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
               </characteristics>
               <modifiers>
@@ -7908,7 +7908,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Horns, Juggernaut, Loner (4+), No Hands, Tackle, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Horns, Juggernaut, Loner (4+), No Hands, Tackle, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
               </characteristics>
               <modifiers>
@@ -7978,7 +7978,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Frenzy, Jump Up, Juggernaut, Leap, Loner (4+)</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Frenzy, Jump Up, Juggernaut, Leap, Loner (4+)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
               <modifiers>
@@ -8041,7 +8041,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Fend, Loner (3+), Sprint, Sure Feet</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Fend, Loner (3+), Sprint, Sure Feet</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
               </characteristics>
               <modifiers>
@@ -8109,7 +8109,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Loner (3+), Nerves of Steel, Right Stuff, Stunty</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Loner (3+), Nerves of Steel, Right Stuff, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">120000</characteristic>
               </characteristics>
               <modifiers>
@@ -8177,7 +8177,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Diving Catch, Jump Up, Loner (4+), On the Ball, Sidestep, Stunty, Wrestle</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Diving Catch, Jump Up, Loner (4+), On the Ball, Sidestep, Stunty, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">70000</characteristic>
               </characteristics>
               <modifiers>
@@ -8242,7 +8242,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Dump-Off, Guard, Horns, Jump Up, Leap, Loner (4+)</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Dump-Off, Guard, Horns, Jump Up, Leap, Loner (4+)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">160000</characteristic>
               </characteristics>
               <modifiers>
@@ -8330,7 +8330,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Leap, Loner (4+), Sidestep, Swift as the Breeze</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Leap, Loner (4+), Sidestep, Swift as the Breeze</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
               </characteristics>
               <modifiers>
@@ -8396,7 +8396,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Dump-Off, Loner (4+), Nerves of Steel, On the Ball, Pass, Sidestep, The Flashing Blade</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Dump-Off, Loner (4+), Nerves of Steel, On the Ball, Pass, Sidestep, The Flashing Blade</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">320000</characteristic>
               </characteristics>
               <modifiers>
@@ -8458,7 +8458,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Shadowing, Sidestep, Sneaky Git, Stab, Toxin Connoisseur</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Shadowing, Sidestep, Sneaky Git, Stab, Toxin Connoisseur</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
               </characteristics>
               <modifiers>
@@ -8496,7 +8496,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Grab, Loner (4+), Mighty Blow (+1), Regeneration, Throw Team-mate</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Grab, Loner (4+), Mighty Blow (+1), Regeneration, Throw Team-mate</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
               </characteristics>
               <modifiers>
@@ -8563,7 +8563,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Chainsaw, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Chainsaw, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">120000</characteristic>
               </characteristics>
               <modifiers>
@@ -8631,7 +8631,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Disturbing Presence, Juggernaut, Loner (4+), Regeneration, Strip Ball, Tackle</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Disturbing Presence, Juggernaut, Loner (4+), Regeneration, Strip Ball, Tackle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">190000</characteristic>
               </characteristics>
               <modifiers>
@@ -8695,7 +8695,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Guard, Loner (3+), Tackle</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Guard, Loner (3+), Tackle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">245000</characteristic>
               </characteristics>
               <modifiers>
@@ -8782,7 +8782,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Brawler, Grab, Loner (4+), Mighty Blow (+1), Stand Firm, Tentacles, Thick Skull, Vicious Vines</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Brawler, Grab, Loner (4+), Mighty Blow (+1), Stand Firm, Tentacles, Thick Skull, Vicious Vines</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
               </characteristics>
               <modifiers>
@@ -8826,7 +8826,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+), Multiple Block, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
               </characteristics>
               <modifiers>
@@ -8895,7 +8895,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Foul Appearance, Loner (4+), On the Ball, Tackle, Tentacles</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Foul Appearance, Loner (4+), On the Ball, Tackle, Tentacles</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">160000</characteristic>
               </characteristics>
               <modifiers>
@@ -8958,7 +8958,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Sidestep</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Dodge, Foul Appearance, Jump Up, Loner (4+), No Hands, Regeneration, Shadowing, Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
               </characteristics>
               <modifiers>
@@ -9024,7 +9024,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Mighty Blow (+1), Loner (4+), No Hands, Secret Weapon, Stunty</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Mighty Blow (+1), Loner (4+), No Hands, Secret Weapon, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
               </characteristics>
               <modifiers>
@@ -9092,7 +9092,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Stand Firm, Strong Arm, Thick Skull, Throw Team-mate, Timmm-ber!</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
               </characteristics>
               <modifiers>
@@ -9162,7 +9162,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Sidestep, Sure Hands</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Dodge, Loner (3+), Pass, Sidestep, Sure Hands</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
               </characteristics>
               <modifiers>
@@ -9225,7 +9225,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Dodge, Hypnotic Gaze, Loner (4+), Nerves of Steel, On the Ball</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Dodge, Hypnotic Gaze, Loner (4+), Nerves of Steel, On the Ball</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
               </characteristics>
               <modifiers>
@@ -9288,7 +9288,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Pass, Secret Weapon, Sure Hands, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Pass, Secret Weapon, Sure Hands, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">80000</characteristic>
               </characteristics>
               <modifiers>
@@ -9358,7 +9358,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Bombardier, Dodge, Loner (4+), Right Stuff, Secret Weapon, Stunty</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Bombardier, Dodge, Loner (4+), Right Stuff, Secret Weapon, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">50000</characteristic>
               </characteristics>
               <modifiers>
@@ -9427,7 +9427,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Break Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Break Tackle, Loner (4+), Mighty Blow (+1), Regeneration, Stand Firm, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
               </characteristics>
               <modifiers>
@@ -9495,7 +9495,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Bombardier, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Bombardier, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">50000</characteristic>
               </characteristics>
               <modifiers>
@@ -9563,7 +9563,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">-</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Regeneration, Secret Weapon, Stand Firm, Thick Skull</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Regeneration, Secret Weapon, Stand Firm, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
               </characteristics>
               <modifiers>
@@ -9626,7 +9626,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Hypnotic Gaze, Loner (4+) Regeneration, Sidestep</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Hypnotic Gaze, Loner (4+) Regeneration, Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
               </characteristics>
               <modifiers>
@@ -9688,7 +9688,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">2</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Bloodlust (2+), Dodge, Hypnotic Gaze, Jump Up, Loner (4+), Regeneration</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Bloodlust (2+), Dodge, Hypnotic Gaze, Jump Up, Loner (4+), Regeneration</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
               </characteristics>
               <modifiers>
@@ -10819,7 +10819,7 @@ As with Star Players, it is possible for both teams to hire the services of the 
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">6+</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9+</characteristic>
-                <characteristic name="Skils &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (5+), Tackle, Thick Skull, Wrestle</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (5+), Tackle, Thick Skull, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
               </characteristics>
             </profile>
