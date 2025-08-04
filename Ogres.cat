@@ -1666,6 +1666,14 @@
             <categoryLink name="Team Management" hidden="false" id="d030-3e26-9bec-dd98" targetId="a6b7-0663-b308-f599" primary="true"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Low Cost Linemen" hidden="false" id="b8bc-73d0-14dc-a751" type="selectionEntry" targetId="2426-a99f-190a-ef03">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="314e-a717-eeb4-3c7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="517a-e6b2-5294-df77" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
