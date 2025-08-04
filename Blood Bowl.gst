@@ -5000,7 +5000,7 @@ A player hit by Incorporeal gains the No Hands trait and, if they are in possess
       </profiles>
       <rules>
         <rule id="9219-8555-e542-d6d3" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable's Danse Macabre</description>
+          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable&apos;s Danse Macabre</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -9754,6 +9754,7 @@ Until the end of this game, each selected player gains a single randomly selecte
     <selectionEntry type="upgrade" import="true" name="Sylvanian Spotlight" hidden="false" id="bf62-4437-3f84-7611"/>
     <selectionEntry type="upgrade" import="true" name="Underworld Challenge" hidden="false" id="8ae0-7abc-07a0-e07b"/>
     <selectionEntry type="upgrade" import="true" name="Worlds Edge Superleague" hidden="false" id="d5be-b66d-7065-f9af"/>
+    <selectionEntry type="upgrade" import="true" name="Masters of Undeath" hidden="false" id="61e4-f3be-1bc0-a63f"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
