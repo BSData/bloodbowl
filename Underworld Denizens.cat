@@ -4130,6 +4130,14 @@
             <categoryLink name="Team Management" hidden="false" id="2014-4a6c-b69a-c8b5" targetId="a6b7-0663-b308-f599" primary="true"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Bribery and Corruption" hidden="false" id="396c-6ce2-3df5-a90a" type="selectionEntry" targetId="172c-824e-bd16-0edf">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e355-6009-c561-2f65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d29c-b80c-9fec-af23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
