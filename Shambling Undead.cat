@@ -113,7 +113,7 @@
           <entryLinks>
             <entryLink id="7155-ebbc-3fb1-3628" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" targetId="3a41-d8e0-044c-2580" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink id="c413-0f04-29ec-eb3f" name="Professor Fronkelheim" hidden="false" collective="false" import="true" targetId="b271-e78e-eae2-ab80" type="selectionEntry"/>
+                <entryLink id="c413-0f04-29ec-eb3f" name="Professor Frönkelheim" hidden="false" collective="false" import="true" targetId="b271-e78e-eae2-ab80" type="selectionEntry"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -2573,6 +2573,14 @@
           <categoryLinks>
             <categoryLink name="Team Management" hidden="false" id="09bb-4b71-82ff-9052" targetId="a6b7-0663-b308-f599" primary="true"/>
           </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Masters of Undeath" hidden="false" id="2806-db3d-ec9f-0052" type="selectionEntry" targetId="61e4-f3be-1bc0-a63f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2783-e485-6b01-dfa9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>

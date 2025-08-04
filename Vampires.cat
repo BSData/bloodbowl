@@ -73,7 +73,7 @@
           <entryLinks>
             <entryLink id="5607-f2f5-9ea6-9532" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" targetId="3a41-d8e0-044c-2580" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink id="8aa9-150c-7cb0-5c4f" name="Professor Fronkelheim" hidden="false" collective="false" import="true" targetId="b271-e78e-eae2-ab80" type="selectionEntry"/>
+                <entryLink id="8aa9-150c-7cb0-5c4f" name="Professor Frönkelheim" hidden="false" collective="false" import="true" targetId="b271-e78e-eae2-ab80" type="selectionEntry"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
@@ -2628,6 +2628,14 @@ Additionally, just like the Head Coach of any other team, a Vampire Lord can Arg
           <categoryLinks>
             <categoryLink targetId="a6b7-0663-b308-f599" id="d1d1-73be-c2ef-0f0d" primary="true" name="Team Management"/>
           </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Vampire Lord" hidden="false" id="d9ca-4894-6beb-d696" type="selectionEntry" targetId="cabe-6683-3d3e-42c1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f98-2a6c-bf28-d95e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>

@@ -3021,6 +3021,22 @@
             <categoryLink name="Team Management" hidden="false" id="05d8-dd80-add5-e181" targetId="a6b7-0663-b308-f599" primary="true"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Low Cost Linemen" hidden="false" id="9ef9-1c58-fc54-cde9" type="selectionEntry" targetId="2426-a99f-190a-ef03">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f692-6a0a-df5f-fc21" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Bribery and Corruption" hidden="false" id="34b9-f53d-f9c6-d122" type="selectionEntry" targetId="172c-824e-bd16-0edf">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e82b-eb64-a696-9cb6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4769-bc69-0903-f198" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
