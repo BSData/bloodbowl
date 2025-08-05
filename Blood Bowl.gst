@@ -882,7 +882,7 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
             </modifier>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43d1-827e-3932-1857" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
