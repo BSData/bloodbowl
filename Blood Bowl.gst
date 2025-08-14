@@ -5880,8 +5880,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Morg &apos;n&apos; Thorg" hidden="false" id="10b5-f4a3-c6e3-704d" publicationId="46da-ba61-6439-83e5" page="132" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f431-9d36-f783-157b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="663d-1687-c64a-2e71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f431-9d36-f783-157b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Morg &apos;n&apos; Thorg" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="6a1a-6c77-a7ec-5b28" publicationId="46da-ba61-6439-83e5" page="132">
@@ -5893,7 +5892,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+2), Thick Skull, Throw Team-mate</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">340000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">The Ballista</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Mighty Blow (+2), Thick Skull, Throw Team-mate" field="10f2-d8c7-4011-270d">
@@ -6202,8 +6201,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Kreek &apos;the Verminator&apos; Rustgouger" hidden="true" id="267d-86b2-036e-64c7" publicationId="cdc6-3a6b-6663-f6ea" page="132" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6d8e-081c-afe6-510c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe7-73b5-7dfa-7f9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6d8e-081c-afe6-510c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Kreek &apos;the Verminator&apos; Rustgouger" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="2126-387c-a9e5-8a90">
@@ -6215,7 +6213,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Ball and Chain, Loner (4+), Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">I&apos;ll Be Back!</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Ball and Chain, Mighty Blow (+1), No Hands, Prehensile Tail, Secret Weapon" field="10f2-d8c7-4011-270d">
@@ -6271,8 +6269,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Lord Borak the Despoiler" hidden="true" id="d101-32eb-1c0f-9405" publicationId="46da-ba61-6439-83e5" page="131" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="eabe-d23f-7cbf-259f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86a1-db17-7ddf-f2b6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="eabe-d23f-7cbf-259f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Lord Borak the Despoiler" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="dde9-6a58-a326-ce17" publicationId="46da-ba61-6439-83e5" page="131">
@@ -6284,7 +6281,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dirty Player (+2), Loner (4+), Mighty Blow (+1), Sneaky Git</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">260000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Lord of Chaos</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Dirty Player (+2), Mighty Blow (+1), Sneaky Git" field="10f2-d8c7-4011-270d">
@@ -6919,8 +6916,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Karla von Kill" hidden="true" id="1ba9-97ef-2ed0-08f0" publicationId="46da-ba61-6439-83e5" page="131" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="56ec-d44c-78d5-98dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fe1-07c8-7c37-60ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="56ec-d44c-78d5-98dc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Karla von Kill" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="fbfd-f247-9f0e-22f2" publicationId="46da-ba61-6439-83e5" page="131">
@@ -6932,7 +6928,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Dodge, Jump Up, Loner (4+)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Indomitable</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Dauntless, Dodge, Jump Up" field="10f2-d8c7-4011-270d">
@@ -6988,8 +6984,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Mighty Zug" hidden="true" id="b6b9-e4df-20d7-feb8" publicationId="46da-ba61-6439-83e5" page="132" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7c73-4e51-88c1-9d4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcc9-a967-4a42-8272" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7c73-4e51-88c1-9d4b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Mighty Zug" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="7101-7666-4858-06c8" publicationId="46da-ba61-6439-83e5" page="132">
@@ -7001,7 +6996,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Crushing Blow</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Mighty Blow (+1)" field="10f2-d8c7-4011-270d">
@@ -7780,8 +7775,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Max Spleenripper" hidden="true" id="19c7-050a-9950-59c0" publicationId="3637-e2aa-16da-c089" page="30" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dc35-0ab2-130c-4efd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2db8-60e8-45ce-3feb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dc35-0ab2-130c-4efd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Max Spleenripper" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="666f-ab29-9c67-781d" publicationId="3637-e2aa-16da-c089" page="30">
@@ -7793,7 +7787,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Chainsaw, Loner (4+), Secret Weapon</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Maximum Carnage</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Chainsaw, Secret Weapon" field="10f2-d8c7-4011-270d">
@@ -8120,8 +8114,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Puggy Baconbreath" hidden="true" id="e446-0c0f-5d11-74dc" publicationId="e6c1-775b-d5c7-e5fd" page="0" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e89-50ba-93e2-0274" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9ce8-cd44-7f10-c74e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9ce8-cd44-7f10-c74e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Puggy Baconbreath" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="5995-07f1-71e4-ee30" publicationId="e6c1-775b-d5c7-e5fd">
@@ -8133,7 +8126,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dodge, Loner (3+), Nerves of Steel, Right Stuff, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">120000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Halfling Luck</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Dodge, Nerves of Steel, Right Stuff, Stunty" field="10f2-d8c7-4011-270d">
@@ -8328,8 +8321,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink name="Star Player" hidden="false" id="daba-f5cb-9b8f-cdfb" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bec6-6457-2f8c-bf76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6330-4b75-4f55-a2d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bec6-6457-2f8c-bf76" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Loner (4+)" id="8985-3663-dda8-d74e" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
@@ -8355,12 +8347,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Leap, Loner (4+), Sidestep, Swift as the Breeze</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Leap, Loner (4+), Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Swift as the Breeze</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Block, Diving Catch, Dodge, Leap, Sidestep, Swift as the Breeze" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Block, Diving Catch, Dodge, Leap, Sidestep" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="0dcd-1a5a-a66d-ed2d" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8392,8 +8384,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink name="Star Player" hidden="false" id="14b0-741a-ce28-9543" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f008-8475-34c8-b8b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="790e-4e37-63d3-13f7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f008-8475-34c8-b8b3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Loner (4+)" id="3f87-4edf-9f4f-70cf" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
@@ -8422,12 +8413,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">1</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">2</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Dump-Off, Loner (4+), Nerves of Steel, On the Ball, Pass, Sidestep, The Flashing Blade</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Diving Catch, Dodge, Dump-Off, Loner (4+), Nerves of Steel, On the Ball, Pass, Sidestep</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">320000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">The Flashing Blade</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Block, Diving Catch, Dodge, Dump-Off, Nerves of Steel, On the Ball, Pass, Sidestep, The Flashing Blade" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Block, Diving Catch, Dodge, Dump-Off, Nerves of Steel, On the Ball, Pass, Sidestep" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="61db-37a0-4264-8d23" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8581,8 +8572,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Nobbla Blackwart" hidden="true" id="84c4-b59e-00e9-9156" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3dd4-2024-310f-2e43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cf6-b853-7307-df7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3dd4-2024-310f-2e43" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Nobbla Blackwart" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="35bf-1cef-99a7-8eb0">
@@ -8594,7 +8584,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Chainsaw, Dodge, Loner (4+), Secret Weapon, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">120000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Kick &apos;em while they&apos;re down!</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Chainsaw, Dodge, Secret Weapon, Stunty" field="10f2-d8c7-4011-270d">
@@ -8784,8 +8774,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink name="Star Player" hidden="false" id="6d7a-2f8c-3152-b87a" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6c75-9b2e-9d18-fb66" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9123-5d6c-4bb9-5219" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6c75-9b2e-9d18-fb66" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Loner (4+)" id="5b0e-cd47-188d-4147" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
@@ -8812,12 +8801,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">5</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">11</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Brawler, Grab, Loner (4+), Mighty Blow (+1), Stand Firm, Tentacles, Thick Skull, Vicious Vines</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Brawler, Grab, Loner (4+), Mighty Blow (+1), Stand Firm, Tentacles, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">210000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Vicious Vines</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Brawler, Grab, Mighty Blow (+1), Stand Firm, Tentacles, Thick Skull, Vicious Vines" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Brawler, Grab, Mighty Blow (+1), Stand Firm, Tentacles, Thick Skull" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="ba67-26b2-e2ed-31f6" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8915,8 +8904,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Kiroth Krakeneye" hidden="true" id="d479-fca2-f584-5ec6" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c38b-fea9-e0af-dcea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="24f9-1fa7-0610-ee68" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="24f9-1fa7-0610-ee68" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Kiroth Krakeneye" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="1369-0ff9-60d1-9685">
@@ -8928,7 +8916,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Foul Appearance, Loner (4+), On the Ball, Tackle, Tentacles</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">160000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Black Ink</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Disturbing Presence, Foul Appearance, On the Ball, Tackle, Tentacles" field="10f2-d8c7-4011-270d">
