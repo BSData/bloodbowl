@@ -583,16 +583,14 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24bf-2bc5-6908-7907" type="min"/>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9254-c2ac-f4a6-0287" type="min"/>
       </constraints>
-      <rules>
-        <rule id="6178-c27d-a952-acb7" name="Head Coach" publicationId="46da-ba61-6439-83e5" hidden="false">
-          <description>Any time a player is sent off for committing a foul or using a Secret Weapon, you can ‘Argue the call’. Roll a D6. On a roll of 6, the player in question is only sent to the Reserves box. On a roll of a 1, For the rest of the game you cannot argue any calls, and if the ‘Brilliant Coaching’ result is rolled on the Kick-off table, subtract 1 from your dice roll. A turnover is still caused if argue the call is successful. Argue the call may be used in before or after a Bribe, however the Bribe only applies for the player, not the Head Coach.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Argue the Call" id="b5ad-cadb-731f-98c9" hidden="false" type="rule" targetId="1866-8a97-f7be-bea9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="7c50-a743-1f7e-ce60" name="Necromancer" publicationId="46da-ba61-6439-83e5" page="106" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -603,13 +601,9 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         <rule id="a51b-4fc7-65b2-1b4e" name="Masters of Undeath" publicationId="46da-ba61-6439-83e5" page="106" hidden="false">
           <description>The Head Coach of this team is replaced by a Necromancer. Once per game, they can ‘Raise the Dead’:
 
-• If a player on the opposing team with a Strength characteristic of 4 or less and that does not have the Regeneration or Stunty traits suffers a Casualty result of 15-16, DEAD, and if they cannot be saved by an apothecary, a new rookie Zombie Lineman player can be placed immediately in the Reserves box of this team’s dugout. Note that this may cause the team to have more than 16 players for the remainder of
-the game.
+• If a player on the opposing team with a Strength characteristic of 4 or less and that does not have the Regeneration or Stunty traits suffers a Casualty result of 15-16, DEAD, and if they cannot be saved by an apothecary, a new rookie Zombie Lineman player can be placed immediately in the Reserves box of this team’s dugout. Note that this may cause the team to have more than 16 players for the remainder of the game.
 • During Step 4 of the post-game sequence, this player may be permanently hired for free if the team has fewer than 16 players on its Team Draft list, otherwise it will be lost. The player’s full value still counts towards the Team Value.
-
-Additionally, just like the Head Coach of any other team, a Necromancer can Argue the Call when one of their players is Sent-off for committing a Foul, as long as they haven’t been sent off themselves.
-
-Any time a player is sent off for committing a foul or using a Secret Weapon, you can ‘Argue the call’. Roll a D6. On a roll of 6, the player in question is only sent to the Reserves box. On a roll of a 1, For the rest of the game you cannot argue any calls, and if the ‘Brilliant Coaching’ result is rolled on the Kick-off table, subtract 1 from your dice roll. A turnover is still caused if argue the call is successful. Argue the call may be used in before or after a Bribe, however the Bribe only applies for the player, not the Head Coach.</description>
+</description>
         </rule>
       </rules>
       <costs>
@@ -617,6 +611,9 @@ Any time a player is sent off for committing a foul or using a Secret Weapon, yo
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Argue the Call" id="bbd0-cccd-5823-0218" hidden="false" type="rule" targetId="1866-8a97-f7be-bea9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="9350-0bc7-c2fc-7af5" name="Team Re-Rolls" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -11719,6 +11716,14 @@ If the player rolls lower than the number shown in brackets, or rolls a natural 
     </rule>
     <rule name="Breathe Fire" id="7a43-6417-a87d-a315" hidden="false" publicationId="dcf0-4e1e-b304-926a">
       <description>Once per activation, instead of performing a Block action (either on its own or as part of a Blitz action), this player may perform a Breathe Fire Special action. When a player makes a Breathe Fire Special action they may choose one Standing opposition player they are Marking and roll a D6, applying a -1 modifier if the target has a ST of 5 or higher. On a 1, the player gets overeager, engulfing themself in flame and is immediately Knocked Down. On a 2-3, the opposition player ducks the gout of flame and nothing happens. On a 4+, the opposition player takes a ball of fire straight to the face and is immediately Placed Prone. However, if the roll is a natural 6, the potent pyro has taken its toll and the opposition player is Knocked Down instead. After the Breathe Fire Special action has been resolved, this player&apos;s activation immediately ends.</description>
+    </rule>
+    <rule name="Argue the Call" id="1866-8a97-f7be-bea9" hidden="false">
+      <description>Any time a player is sent off for committing a foul or using a Secret Weapon, you can ‘Argue the Call’: 
+Roll a D6. 
+• 1 - The player is sent off, a turnover is caused and for the rest of the game you cannot argue any calls. Furthermore if the ‘Brilliant Coaching’ result is rolled on the Kick-off table, subtract 1 from your dice roll.
+• 2-5 - The player is sent off and a turnover is caused.
+• 6 - The player in question stays on the field if Argue the Call was used when a foul was committed, a turnover is still caused. If used when a player is sent of for using a Secret Weapon, the player is put in the reserves box.
+After the Argue the Call roll, unless a 1 was rolled, you may use a bribe to try to keep the player in play (and not cause a turnover).</description>
     </rule>
     <rule name="A Sneaky Pair" id="c912-6011-cbe3-574e" hidden="false">
       <description>Dribl &amp; Drull must be hired as a pair but only counts as one Star Player choice. However, they will still take up two spaces on a team&apos;s Team Roster.  Additionally, whenever Dribl or Drull perform either a Stab or Foul action against an opposition player marked by both Dribl &amp; Drull, they may apply a +1 modifier to the Injury roll.</description>
