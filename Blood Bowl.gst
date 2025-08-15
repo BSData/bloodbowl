@@ -5367,8 +5367,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f971-1cea-fe39-6a93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f265-295f-a092-461a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f971-1cea-fe39-6a93" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Loner (4+)" id="a4b6-7f6c-2cfa-706e" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
@@ -5395,12 +5394,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">4</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Nerves of Steel, Secret Weapon, Sure Hands, Thick Skull, Then I Started Blastin&apos;!</characteristic>
-                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Cannoneer, Hail Mary Pass, Loner (4+), Nerves of Steel, Secret Weapon, Sure Hands, Thick Skull</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Then I Started Blastin&apos;!</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Cannoneer, Hail Mary Pass, Nerves of Steel, Secret Weapon, Sure Hands, Thick Skull, Then I Started Blastin&apos;!" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Cannoneer, Hail Mary Pass, Nerves of Steel, Secret Weapon, Sure Hands, Thick Skull" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="7d6f-bb31-9f6e-78ff" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -6394,8 +6393,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Withergrasp Doubledrool" hidden="true" id="ea9e-3b91-40f2-6cf1" publicationId="e6c1-775b-d5c7-e5fd" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b8a-d39b-4c3b-6bfe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3c4a-a097-bd38-d199" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3c4a-a097-bd38-d199" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Withergrasp Doubledrool" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="0d0d-3d85-b1a3-db57" publicationId="cdc6-3a6b-6663-f6ea" page="128">
@@ -6407,7 +6405,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Watch Out!</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Loner (4+), Prehensile Tail, Tackle, Tentacles, Two Heads, Wrestle" field="10f2-d8c7-4011-270d">
@@ -6771,8 +6769,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Zolcath the Zoat" hidden="true" id="b46a-06d8-c171-c7e7" publicationId="46da-ba61-6439-83e5" page="133" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b2e4-fef5-b9d9-8fe5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29b9-d090-e2c7-1561" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b2e4-fef5-b9d9-8fe5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Zolcath the Zoat" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="f48e-0a56-1c45-ca6f" publicationId="46da-ba61-6439-83e5" page="133">
@@ -6784,7 +6781,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">230000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">“Excuse Me, Are You a Zoat?”</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Disturbing Presence, Juggernaut, Mighty Blow (+1), Prehensile Tail, Regeneration, Sure Feet" field="10f2-d8c7-4011-270d">
@@ -7185,11 +7182,6 @@ Until the end of this game, each selected player gains a single randomly selecte
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1583-10ea-e975-4402" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
-          <rules>
-            <rule name="Two for One" id="8d7e-70b1-ec88-e0a4" hidden="false" publicationId="46da-ba61-6439-83e5" page="133">
-              <description>The Swift Twins must be hired as a pair and count as two Star Players. However, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
-            </rule>
-          </rules>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Lucien Swift" hidden="false" id="9e86-d814-823f-a270" publicationId="46da-ba61-6439-83e5" page="12" collective="false">
               <constraints>
@@ -7319,8 +7311,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Thorsson Stoutmead" hidden="true" id="69f2-a7c5-f5d1-64e8" publicationId="af11-1772-744f-9a1a" page="30" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e5db-701a-1618-58f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1078-3d12-7110-7034" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e5db-701a-1618-58f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Thorsson Stoutmead" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="9124-9eca-a0d3-07cc" publicationId="af11-1772-744f-9a1a" page="30">
@@ -7332,7 +7323,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Drunkard, Loner (4+), Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Beer Barrel Bash</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Drunkard, Thick Skull" field="10f2-d8c7-4011-270d">
@@ -7381,7 +7372,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Varag Ghoul-Chewer" hidden="true" id="5aed-7128-04f0-bc29" publicationId="46da-ba61-6439-83e5" page="133" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b291-bd11-4d47-5a1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b291-bd11-4d47-5a1e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Varag Ghoul-Chewer" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="2544-75fb-5e78-d0bc" publicationId="46da-ba61-6439-83e5" page="133">
@@ -7393,7 +7384,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Jump Up, Loner (4+), Mighty Blow (+1), Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">280000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Crushing Blow</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Jump Up, Mighty Blow (+1), Thick Skull" field="10f2-d8c7-4011-270d">
@@ -7448,8 +7439,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Wilhelm Chaney" hidden="true" id="a68e-e39e-46f4-5122" publicationId="8c4c-3037-21a5-355b" page="14" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7465-b0a8-361b-b9b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e6f-0125-42e4-ef5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7465-b0a8-361b-b9b4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Wilhelm Chaney" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="0083-82d1-fa06-dc56" publicationId="8c4c-3037-21a5-355b" page="14">
@@ -7461,7 +7451,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Claws, Frenzy, Loner (4+), Mighty Blow (+1), Regeneration, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">220000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Savage Mauling</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Catch, Claws, Frenzy, Mighty Blow (+1), Regeneration, Wrestle" field="10f2-d8c7-4011-270d">
@@ -7512,8 +7502,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Willow Rosebark" hidden="true" id="7796-75b1-61e7-fa43" publicationId="46da-ba61-6439-83e5" page="133" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="aa17-5dbb-111c-3161" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5663-ce3c-2868-98df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="aa17-5dbb-111c-3161" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Willow Rosebark" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="d7d0-9838-fa2e-85da" publicationId="46da-ba61-6439-83e5" page="133">
@@ -7525,7 +7514,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dauntless, Loner (4+), Sidestep, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Indomitable</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Dauntless, Sidestep, Thick Skull" field="10f2-d8c7-4011-270d">
