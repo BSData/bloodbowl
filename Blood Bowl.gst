@@ -602,8 +602,7 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
           <description>The Head Coach of this team is replaced by a Necromancer. Once per game, they can ‘Raise the Dead’:
 
 • If a player on the opposing team with a Strength characteristic of 4 or less and that does not have the Regeneration or Stunty traits suffers a Casualty result of 15-16, DEAD, and if they cannot be saved by an apothecary, a new rookie Zombie Lineman player can be placed immediately in the Reserves box of this team’s dugout. Note that this may cause the team to have more than 16 players for the remainder of the game.
-• During Step 4 of the post-game sequence, this player may be permanently hired for free if the team has fewer than 16 players on its Team Draft list, otherwise it will be lost. The player’s full value still counts towards the Team Value.
-</description>
+• During Step 4 of the post-game sequence, this player may be permanently hired for free if the team has fewer than 16 players on its Team Draft list, otherwise it will be lost. The player’s full value still counts towards the Team Value.</description>
         </rule>
       </rules>
       <costs>
@@ -6328,8 +6327,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Skitter Stab-Stab" hidden="true" id="ac3d-e6df-bfaf-8cef" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="240e-d503-0790-7846" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a055-41a8-169c-dbc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a055-41a8-169c-dbc1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Skitter Stab-Stab" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="c6d6-2900-1178-79e5">
@@ -6341,7 +6339,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Loner (4+), Prehensile Tail, Shadowing, Stab</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Master Assassin</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Dodge, Prehensile Tail, Shadowing, Stab" field="10f2-d8c7-4011-270d">
@@ -7056,8 +7054,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink name="Star Player" hidden="false" id="b1f5-d5ba-21ac-1699" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0eaf-66b6-ef3a-c8ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3078-df40-d7d7-1440" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0eaf-66b6-ef3a-c8ce" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Loner (4+)" id="2996-2358-9c01-f27c" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
@@ -7083,12 +7080,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Fend, Loner (4+), Sidestep, Stab, Stunty, Furious Outburst</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Disturbing Presence, Fend, Loner (4+), Sidestep, Stab, Stunty</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">110000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Furious Outburst</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Disturbing Presence, Fend, Sidestep, Stab, Stunty, Furious Outburst" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Disturbing Presence, Fend, Sidestep, Stab, Stunty" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="a802-117f-4e2b-73cd" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -7116,8 +7113,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="The Black Gobbo" hidden="true" id="9dcd-f21e-18ec-e0e7" publicationId="46da-ba61-6439-83e5" page="129" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="167c-3c86-de1e-1e10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa4c-bbd9-cec7-54c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="167c-3c86-de1e-1e10" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="The Black Gobbo" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="b6a0-8102-cdcd-8348" publicationId="46da-ba61-6439-83e5" page="129">
@@ -7128,8 +7124,8 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">3</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Bombardier, Disturbing Presence, Dodge, Loner (3+), Sidestep, Sneaky Git, Stab, Stunty</characteristic>
-                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225,000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">225000</characteristic>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Sneakiest of the Lot</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Bombardier, Disturbing Presence, Dodge, Sidestep, Sneaky Git, Stab, Stunty" field="10f2-d8c7-4011-270d">
@@ -7187,8 +7183,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="The Swift Twins" hidden="true" id="3ab3-0a11-4223-c529" publicationId="46da-ba61-6439-83e5" page="133" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1583-10ea-e975-4402" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3964-fe62-c604-9365" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1583-10ea-e975-4402" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <rules>
             <rule name="Two for One" id="8d7e-70b1-ec88-e0a4" hidden="false" publicationId="46da-ba61-6439-83e5" page="133">
@@ -7211,7 +7206,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                     <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Loner (4+), Mighty Blow (+1), Tackle</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                    <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                    <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Two for One</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="set" value="Block, Mighty Blow (+1), TackleBlock, Loner (4+), Mighty Blow (+1), Tackle" field="10f2-d8c7-4011-270d">
@@ -7233,6 +7228,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                         <condition type="atLeast" value="1" field="selections" scope="3ab3-0a11-4223-c529" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Two for One" id="bd2c-763f-0bda-9c6d" hidden="false" type="rule" targetId="8eaf-aaaa-6b37-45b4">
+                  <modifiers>
+                    <modifier type="set" value="The Swift Twins must be hired as a pair but only counts as one Star Player choice. However, they will still take up two spaces on a team&apos;s Team Roster. Additionally, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait." field="description"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -7261,7 +7261,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                     <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Safe Pass, Sure Hands</characteristic>
                     <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                    <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                    <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Two for One</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="set" value="Accurate, Nerves of Steel, Pass, Safe Pass, Sure Hands" field="10f2-d8c7-4011-270d">
@@ -7287,6 +7287,11 @@ Until the end of this game, each selected player gains a single randomly selecte
                 </infoLink>
                 <infoLink name="Sure Hands" id="28d1-3ee7-ef04-590e" hidden="false" targetId="0097-de00-8a00-255e" type="rule"/>
                 <infoLink name="Safe Pass" id="1c24-4c36-ad56-8661" hidden="false" targetId="eae2-bc9d-032e-29e0" type="rule"/>
+                <infoLink name="Two for One" id="bc04-1616-aec8-8f15" hidden="false" type="rule" targetId="8eaf-aaaa-6b37-45b4">
+                  <modifiers>
+                    <modifier type="set" value="The Swift Twins must be hired as a pair but only counts as one Star Player choice. However, they will still take up two spaces on a team&apos;s Team Roster. Additionally, if either Lucien or Valen is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait." field="description"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <categoryLinks>
                 <categoryLink name="Players" hidden="false" id="da03-5a5d-b0b4-230f" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
@@ -7569,8 +7574,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Skrull Halfheight" hidden="true" id="2e41-d71f-ea2b-27ac" publicationId="46da-ba61-6439-83e5" page="132" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6136-e464-77b1-cf75" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5601-a2c3-2c5d-c5ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6136-e464-77b1-cf75" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Skrull Halfheight" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="5f10-92eb-d4f6-c0c6" publicationId="46da-ba61-6439-83e5" page="132">
@@ -7582,7 +7586,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Accurate, Loner (4+), Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">150000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Strong Passing Game</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Accurate, Nerves of Steel, Pass, Regeneration, Sure Hands, Thick Skull" field="10f2-d8c7-4011-270d">
@@ -7639,8 +7643,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Skrorg Snowpelt" hidden="true" id="9345-2f7a-f236-ddcd" publicationId="af11-1772-744f-9a1a" page="14" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a307-a275-4510-fc12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4765-3f28-bb56-1c79" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a307-a275-4510-fc12" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Skrorg Snowpelt" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="08b8-c339-595c-1fef" publicationId="af11-1772-744f-9a1a" page="14">
@@ -7652,7 +7655,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">9</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Disturbing Presence, Juggernaut, Loner (4+), Mighty Blow (+1)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Pump Up the Crowd</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Claws, Disturbing Presence, Juggernaut, Mighty Blow (+1)" field="10f2-d8c7-4011-270d">
@@ -7702,8 +7705,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Scyla Anfingrimm" hidden="true" id="9007-a6be-1641-e125" publicationId="3637-e2aa-16da-c089" page="14" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="941a-de4f-4ec5-61d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3818-2772-779e-709f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="941a-de4f-4ec5-61d6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Scyla Anfingrimm" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="9db2-1dfb-aec4-8e74" publicationId="3637-e2aa-16da-c089" page="14">
@@ -7715,7 +7717,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Claws, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchannelled Fury</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">200000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Fury of the Blood God</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Claws, Frenzy, Mighty Blow (+1), Prehensile Tail, Thick Skull, Unchannelled Fury" field="10f2-d8c7-4011-270d">
@@ -7728,7 +7730,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           </profiles>
           <rules>
             <rule name="Fury of the Blood God" id="022d-88bf-f284-f96e" hidden="false" publicationId="46da-ba61-6439-83e5" page="131">
-              <description>Once per game, if Scyla rolls a 1 for his Unchaanneled Fury roll after declaring a Block action, instead of applying the usual effects of Unchaanneled Fury, Scyla may perform two Block actions instead.</description>
+              <description>Once per game, if Scyla rolls a 1 for his Unchannelled Fury roll after declaring a Block action, instead of applying the usual effects of Unchannelled Fury, Scyla may perform two Block actions instead.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -7837,8 +7839,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Scrappa Sorehead" hidden="true" id="630d-615a-fa3a-2ea6" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fb87-d744-c839-9a1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f86-4dc2-c91c-8326" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fb87-d744-c839-9a1e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Scrappa Sorehead" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="5722-6768-b34d-dba6">
@@ -7850,7 +7851,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dirty Player (+1), Dodge, Loner (4+), Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Yoink!</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Dirty Player (+1), Dodge, Pogo Stick, Right Stuff, Sprint, Stunty, Sure Feet" field="10f2-d8c7-4011-270d">
@@ -7908,8 +7909,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Rumbelow Sheepskin" hidden="true" id="0653-e1fd-2776-28d3" publicationId="46da-ba61-6439-83e5" page="132" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea27-1973-f51b-e269" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7674-2740-9b1d-6da6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea27-1973-f51b-e269" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Rumbelow Sheepskin" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="a668-ecb4-c605-fbf3" publicationId="46da-ba61-6439-83e5" page="132">
@@ -7921,7 +7921,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Horns, Juggernaut, Loner (4+), No Hands, Tackle, Thick Skull</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">170000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Ram</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Block, Horns, Juggernaut, No Hands, Tackle, Thick Skull" field="10f2-d8c7-4011-270d">
@@ -7979,8 +7979,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Roxanna Darknail" hidden="true" id="2736-a7fd-e2a7-e349" publicationId="46da-ba61-6439-83e5" page="132" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="57f4-5c58-2b76-92c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3693-0728-5cf0-a183" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="57f4-5c58-2b76-92c8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Roxanna Darknail" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="4b46-4bc6-6875-f1cd" publicationId="46da-ba61-6439-83e5" page="132">
@@ -7991,8 +7990,8 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">4</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Frenzy, Jump Up, Juggernaut, Leap, Loner (4+)</characteristic>
-                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">270000</characteristic>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Burst of Speed</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Dodge, Frenzy, Jump Up, Juggernaut, Leap" field="10f2-d8c7-4011-270d">
@@ -8179,8 +8178,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Rodney Roachbait" hidden="true" id="99e2-0d36-50b6-cdc3" publicationId="6630-4973-1ede-2add" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d8c-5232-667f-67e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5273-33c7-d8b1-b1c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5273-33c7-d8b1-b1c0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Rodney Roachbait" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="623f-5494-1a8b-bd43" publicationId="6630-4973-1ede-2add">
@@ -8192,7 +8190,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">7</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Catch, Diving Catch, Jump Up, Loner (4+), On the Ball, Sidestep, Stunty, Wrestle</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">70000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Catch of the Day</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Catch, Diving Catch, Jump Up, On the Ball, Sidestep, Stunty, Wrestle" field="10f2-d8c7-4011-270d">
@@ -8205,7 +8203,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           </profiles>
           <rules>
             <rule name="Catch of the Day" id="cd97-eaf7-ffb4-5b07" hidden="false" publicationId="6630-4973-1ede-2add">
-              <description>Once per hald, if Rodney is Standing and begins his activation within 3 squaresof a ball which is on the ground he may roll a D6. On a 1-2, nothing happens. On a 3+, Rodney immediately gains possession of the ball.</description>
+              <description>Once per half, if Rodney is Standing and begins his activation within 3 squares of a ball which is on the ground he may roll a D6. On a 1-2, nothing happens. On a 3+, Rodney immediately gains possession of the ball.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -8245,8 +8243,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Rowana Forestfoot" hidden="true" id="b720-60fa-2abb-c41b" publicationId="6630-4973-1ede-2add" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c930-1997-cc43-041f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f015-01aa-0b54-0f73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f015-01aa-0b54-0f73" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Rowana Forestfoot" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="46be-f35b-2920-c998" publicationId="6630-4973-1ede-2add">
@@ -8258,7 +8255,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Dodge, Dump-Off, Guard, Horns, Jump Up, Leap, Loner (4+)</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">160000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Bounding Leap</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Dodge, Dump-Off, Guard, Horns, Jump Up, Leap" field="10f2-d8c7-4011-270d">
@@ -8271,7 +8268,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           </profiles>
           <rules>
             <rule name="Bounding Leap" id="90e9-0d42-7dad-cf54" hidden="false" publicationId="6630-4973-1ede-2add">
-              <description>Once per game, after declaring that she will Leap but before rolling any dice Rowana may choose to tse this special rule. If she does, Rowana suffers no negative modifiers fir the Agility test to Leap and may choose to re-roll the result.</description>
+              <description>Once per game, after declaring that she will Leap but before rolling any dice, Rowana may choose to use this special rule. If she does, Rowana suffers no negative modifiers for the Agility test to Leap and may choose to re-roll the result.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -8447,8 +8444,7 @@ Until the end of this game, each selected player gains a single randomly selecte
             <categoryLink name="Star Player" hidden="false" id="1bb7-3f54-d97b-970c" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b0-0e40-3c07-fe85" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c53b-f770-b485-818d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c53b-f770-b485-818d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Loner (4+)" id="5a7b-2015-65f5-7fd8" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
@@ -8473,12 +8469,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AG" typeId="602a-49ce-fcda-8909">3</characteristic>
                 <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5</characteristic>
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Shadowing, Sidestep, Sneaky Git, Stab, Toxin Connoisseur</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Loner (4+), Shadowing, Sidestep, Sneaky Git, Stab</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">130000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Toxin Connoisseur</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Shadowing, Sidestep, Sneaky Git, Stab, Toxin Connoisseur" field="10f2-d8c7-4011-270d">
+                <modifier type="set" value="Shadowing, Sidestep, Sneaky Git, Stab" field="10f2-d8c7-4011-270d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="e918-d819-7edd-36e0" childId="4d8e-1440-b9b8-a2b5" shared="true"/>
                   </conditions>
@@ -8501,8 +8497,7 @@ Until the end of this game, each selected player gains a single randomly selecte
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Ripper Bolgrot" hidden="true" id="11ef-0d16-9ff3-b2d9" collective="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8eb2-e624-b340-217d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5065-a885-04a2-e716" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5065-a885-04a2-e716" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile name="Ripper Bolgrot" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="9800-2d63-4f13-c247">
@@ -8514,7 +8509,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">10</characteristic>
                 <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Grab, Loner (4+), Mighty Blow (+1), Regeneration, Throw Team-mate</characteristic>
                 <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56">250000</characteristic>
-                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+                <characteristic name="Special Rules" typeId="8747-87f7-0c53-5744">Thinking Man&apos;s Troll</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="set" value="Grab, Mighty Blow (+1), Regeneration, Throw Team-mate" field="10f2-d8c7-4011-270d">
@@ -8527,7 +8522,7 @@ Until the end of this game, each selected player gains a single randomly selecte
           </profiles>
           <rules>
             <rule name="Thinking Man&apos;s Troll" id="6507-9928-150c-b792" hidden="false">
-              <description>Once per half, Ripper may re-roll one dice that was rolled either as a single dice, as part of a multiple sice roll, or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Innjury or Casualty roll).</description>
+              <description>Once per half, Ripper may re-roll one dice that was rolled either as a single dice roll, as part of a multiple dice roll or as part of a dice pool (this cannot be a dice that was rolled as part of an Armour, Injury or Casualty roll).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -9759,9 +9754,6 @@ Until the end of this game, each selected player gains a single randomly selecte
       <categoryLinks>
         <categoryLink targetId="8526-a57c-c848-4d31" id="11ed-4b79-920a-1689" primary="true" name="Inducements"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6d9f-2c4a-b296-c493" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="699b-1221-d1b1-2c47" flatten="false"/>
     <selectionEntry type="upgrade" import="true" name="Badlands Brawl" hidden="false" id="c605-2010-fb97-0f51"/>
