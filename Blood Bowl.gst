@@ -1650,6 +1650,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Catch" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c329-629e-ecc0-713b" name="Diving Catch" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1666,6 +1669,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Diving Catch" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f07b-09f1-9f88-ae6b" name="Diving Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1682,6 +1688,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Diving Tackle" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bd4c-dac9-e7d1-f47b" name="Jump Up" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1698,6 +1707,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Jump Up" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4ede-2f80-ca60-b608" name="Sprint" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1714,6 +1726,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Sprint" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0aa2-ed3d-a7a8-89b4" name="Sidestep" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1730,6 +1745,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Sidestep" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="286b-137e-d683-c2a3" name="Sure Feet" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1746,6 +1764,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Sure Feet" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="30df-c110-f163-220c" name="Dodge" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1762,6 +1783,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Dodge" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6685-b4e5-531d-e9d7" name="Sneaky Git" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1778,6 +1802,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Sneaky Git" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="851c-f5dc-38d9-d2e5" name="Leap" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1794,6 +1821,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Leap" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6c6d-47aa-0976-fce0" name="Block" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1810,6 +1840,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Block" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2e36-5cc6-094e-7cd8" name="Dauntless" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1826,6 +1859,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Dauntless" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7fa2-3bc2-cc79-aeb1" name="Dirty Player (+1)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1842,6 +1878,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Dirty Player(+1)" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e997-6798-c53e-55ad" name="Kick" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1858,6 +1897,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Kick" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7c48-9997-5ed9-d1f1" name="Fend" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1874,6 +1916,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Fend" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9f99-32a4-cfb9-3f93" name="Pro" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1890,6 +1935,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Pro" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="be32-bc2b-49b7-1c0e" name="Shadowing" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1906,6 +1954,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Shadowing" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7e98-5279-b39e-1d73" name="Frenzy" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1922,6 +1973,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Frenzy" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9b6f-3ef9-1fbc-a48f" name="Strip Ball" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1938,6 +1992,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Strip Ball" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c1cb-44a9-a187-89a1" name="Sure Hands" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1954,6 +2011,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Sure Hands" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9a16-b887-4ba8-15c6" name="Wrestle" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1970,6 +2030,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Wrestle" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="95a9-67ee-0356-2dba" name="Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1986,6 +2049,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Tackle" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3b20-7735-aaf0-700c" name="Big Hand" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2002,6 +2068,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Big Hand" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="de8d-44b0-5a3a-5ff6" name="Claws" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2018,6 +2087,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Claws" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5e29-2928-7d20-99c3" name="Disturbing Presence" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2034,6 +2106,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Disturbing Presence" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="64da-eb16-90a8-7fde" name="Safe Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2050,6 +2125,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Safe Pass" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5278-4a58-436e-f886" name="Nerves of Steel" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2066,6 +2144,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Nerves of Steel" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1dce-1f4d-e2b8-8e2f" name="Grab" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2082,6 +2163,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Grab" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b6ac-e2c8-e0d7-e092" name="Mighty Blow (+1)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2098,6 +2182,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Mighty Blow (+1)" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6036-f009-d354-0a40" name="Stand Firm" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2114,6 +2201,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Stand Firm" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9bbd-7844-16a2-c9fe" name="Thick Skull" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2130,6 +2220,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Thick Skull" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0ece-9309-c7da-d7a4" name="Break Tackle" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2146,6 +2239,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Break Tackle" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8e94-6564-5f79-0128" name="Dump-off" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2162,6 +2258,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Dump-Off" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4ced-cc9b-1a5a-8874" name="Tentacles" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2178,6 +2277,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Tentacles" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5b4b-d544-c4b1-e5d1" name="Juggernaut" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2194,6 +2296,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Juggernaut" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="12a1-0e6d-edcb-0f8a" name="Hail Mary Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2210,6 +2315,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Hail Mary Pass" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d8ab-3700-1ec7-d59c" name="Accurate" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2226,6 +2334,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Accurate" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="87dc-1360-433d-baed" name="Guard" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2242,6 +2353,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Guard" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f2a0-5f3b-f43e-13fa" name="Multiple Block" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2258,6 +2372,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Multiple Block" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="828c-bd4a-fd63-8828" name="Strong Arm" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2274,6 +2391,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Strong Arm" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="cfde-f0d4-4609-cd57" name="Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2290,6 +2410,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Pass" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5d92-bca6-7d6b-03cd" name="Leader" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2306,6 +2429,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Leader" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="14f3-1ae1-2756-d310" name="Very Long Legs" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2322,6 +2448,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Very Long Legs" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8e06-673b-e8a4-69b9" name="Prehensile Tail" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2338,6 +2467,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Prehensile Tail" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0fca-f232-20db-5486" name="Extra Arms" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2354,6 +2486,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Extra Arms" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bb9c-3ef4-f7a6-9234" name="Foul Appearance" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2370,6 +2505,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Foul Appearance" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d52e-e727-0ee4-ec85" name="Horns" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2386,6 +2524,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Horns" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ee92-fa03-9a46-0aa4" name="Two Heads" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -2402,6 +2543,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Two Heads" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d33f-b5e3-efce-f815" name="+AG" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -3261,6 +3405,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Defensive" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d44d-4a69-ca9f-ef4c" name="Safe Pair of Hands" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3277,6 +3424,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Safe Pair of Hands" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f32f-8e0b-95fc-1ece" name="Iron Hard Skin" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3293,6 +3443,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Iron Hard Skin" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5c37-ab43-92e3-65bd" name="Monstrous Mouth" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3309,6 +3462,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Monstrous Mouth" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b95c-f05a-93f8-edd8" name="Cloud Burster" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3325,6 +3481,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Cloud Burster" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5c4d-cb75-ab15-ad49" name="Cannoneer" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3341,6 +3500,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Cannoneer" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b5e6-5b6a-02b5-5e27" name="Fumblerooskie" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3357,6 +3519,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Fumblerooskie" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="381c-5cad-621e-8e55" name="On the Ball" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3373,6 +3538,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="On the Ball" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b202-6647-1ae5-3c64" name="Running Pass" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3389,6 +3557,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Running Pass" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="68a7-5f56-92ba-c718" name="Arm Bar" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3405,6 +3576,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Arm Bar" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5fd2-79a1-26f5-bf4d" name="Brawler" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3421,6 +3595,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Brawler" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="de4d-0c5e-4bb4-7a67" name="Pile Driver" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -3437,6 +3614,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Pile Driver" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="91ba-cf1f-6fd4-6e37" name="Random Secondary Skill" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -5328,6 +5508,9 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Portal Navigator" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="43e1-85c4-3832-e605" name="Give and Go" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -5344,6 +5527,9 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Give and Go" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8be3-afaf-8617-9d13" name="Portal Passer" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -5360,6 +5546,9 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Portal Passer" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="da1a-049a-8559-74db" name="Wall Thrower" publicationId="439d-dc2e-2f7e-c520" page="67" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -5376,6 +5565,9 @@ Until the end of this game, each selected player gains a single randomly selecte
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value="Wall Thrower" field="aa6d-1678-d4d2-a97d" affects="ef36-92eb-8b79-1a1f.profiles.Player" scope="root-entry" join=", "/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Breathe Fire" hidden="false" id="4d7a-6919-7659-fee8" publicationId="dcf0-4e1e-b304-926a"/>
     <selectionEntry type="unit" import="true" name="Star Players" hidden="false" id="5ab0-a25e-669e-c9da" subType="unit-group">
