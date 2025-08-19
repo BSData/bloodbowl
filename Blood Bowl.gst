@@ -496,6 +496,30 @@
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Dedicated Fans" id="1196-705c-590d-720a" hidden="false" type="rule" targetId="64d9-b3d6-5320-f834">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4319-3b55-04c5-2907" shared="true" includeChildSelections="true">
+                  <comment>Hide the Exhibition version of Dedicated Fans rules text if Game Type is set to Exhibition</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Dedicated Fans (Exhibition)" id="6790-db26-84ac-386a" hidden="false" type="rule" targetId="6e37-fdf0-5760-0927">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4eae-210b-b45f-548f" shared="true" includeChildSelections="true">
+                  <comment>Hide the Exhibition version of Dedicated Fans rules text if Game Type is set to League</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="77da-bfcb-d236-80a8" name="Apothecary" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -11915,6 +11939,21 @@ After the Argue the Call roll, unless a 1 was rolled, you may use a bribe to try
     <rule name="Two for One" id="8eaf-aaaa-6b37-45b4" hidden="false" publicationId="46da-ba61-6439-83e5" page="130">
       <description>Grak and Crumbleberry must be hired as a pair but only counts as one Star Player choice. However, they will still take up two spaces on a team&apos;s Team Roster. Additionally, if either Grak or Crumbleberry is removed from play due to suffering a KO’d or Casualty! result on the Injury table, the other replaces the Loner (4+) trait with the Loner (2+) trait.</description>
       <comment>The Two for One rule was changed in FAQ May 2025</comment>
+    </rule>
+    <rule name="Dedicated Fans (League)" id="64d9-b3d6-5320-f834" hidden="false" publicationId="46da-ba61-6439-83e5" page="35">
+      <description>Every Blood Bowl team is supported by a strong following of Dedicated Fans, those loyal supporters that will follow their team in good times and bad. This dedicated fan base is made both of those eager to show their support for a local franchise and those from further afield who support the team for less easily identified reasons. Many dedicated fans support a team because their parents did. Others do so simply because they find the team colours fetching.
+
+
+When a team is drafted, it will have a Dedicated Fans characteristic of 1 recorded on the Team Draft list (representing roughly 1,000 Dedicated Fans). Over the course of a league season, this characteristic will increase and decrease, though it will never fall below 1.
+
+
+Additionally, when a team is drafted it can improve its Dedicated Fans characteristic by 1, up to a maximum of 6, at a cost of 10,000 gold pieces per improvement. For example, a team may improve its Dedicated Fans characteristic from 1 to 3 at a cost of 20,000 gold pieces from its Team Draft budget.</description>
+    </rule>
+    <rule name="Dedicated Fans (Exhibition)" id="6e37-fdf0-5760-0927" hidden="false" publicationId="46da-ba61-6439-83e5" page="101">
+      <description>Unlike a team drafted for league play, a team drafted for exhibition play will have a Dedicated Fans characteristic of 0.
+
+
+However, teams drafted for exhibition play can still improve this up to a maximum of 6, at a cost of 10,000 gold pieces per improvement, as described on page 35. For example, an exhibition team may purchase a Dedicated Fans characteristic of 3 at a cost of 30,000 gold pieces.</description>
     </rule>
   </sharedRules>
 </gameSystem>
