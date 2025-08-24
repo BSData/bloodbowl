@@ -497,7 +497,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Dedicated Fans" id="1196-705c-590d-720a" hidden="false" type="rule" targetId="64d9-b3d6-5320-f834">
+        <infoLink name="Dedicated Fans (League)" id="1196-705c-590d-720a" hidden="false" type="rule" targetId="64d9-b3d6-5320-f834">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -903,7 +903,9 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
             </modifier>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43d1-827e-3932-1857" type="atLeast"/>
+                <condition field="forces" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf">
+                  <comment>As of May 2025 errata, Halfling Master Chef is only 100,000 for Halfling teams, 300,000 for all others</comment>
+                </condition>
               </conditions>
             </modifier>
           </modifiers>
