@@ -980,6 +980,7 @@
             <modifier type="increment" field="ffff-7836-9be4-196c" value="20000">
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8179-7288-9a95-6d70" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="8fc3-9567-73bd-8337" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
@@ -989,7 +990,6 @@
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6560-e720-c923-72ae" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f4e-0b58-0fc3-0fa0" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc3-9567-73bd-8337" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
@@ -1014,12 +1014,12 @@
                 <entryLink id="4f69-1d5a-5474-c8e5" name="Primary Skills" hidden="false" collective="false" import="true" targetId="968e-d5f0-3736-bf3e" type="selectionEntryGroup">
                   <entryLinks>
                     <entryLink id="011e-b1f6-480e-80db" name="[A]gility" hidden="false" collective="false" import="true" targetId="79de-c235-bfc5-de8b" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="[P]asssing" hidden="false" id="a701-34c3-2d48-c4c0" collective="false" targetId="5560-9934-18c8-47ed" type="selectionEntryGroup"/>
                   </entryLinks>
                 </entryLink>
                 <entryLink id="8b97-e624-e89a-fb41" name="Secondary Skills" hidden="false" collective="false" import="true" targetId="d785-45e4-f9a9-ba02" type="selectionEntryGroup">
                   <entryLinks>
                     <entryLink id="e221-2c8d-1eb7-30fb" name="[G]eneral" hidden="false" collective="false" import="true" targetId="45d4-02a0-b7b2-b9df" type="selectionEntryGroup"/>
-                    <entryLink id="a701-34c3-2d48-c4c0" name="[P]asssing" hidden="false" collective="false" import="true" targetId="5560-9934-18c8-47ed" type="selectionEntryGroup"/>
                     <entryLink id="2048-d30f-57f5-e9ac" name="[S]trength" hidden="false" collective="false" import="true" targetId="7202-217b-ff0b-e506" type="selectionEntryGroup"/>
                   </entryLinks>
                 </entryLink>
@@ -3441,7 +3441,7 @@
               <modifiers>
                 <modifier type="set" field="ee01-7448-8c3f-a882" value="75000"/>
                 <modifier type="set" field="aa6d-1678-d4d2-a97d" value="Bombardier, Dodge, Loner (4+), Secret Weapon, Stunty"/>
-                <modifier type="set" field="name" value="Mercenary [Bombardier]"/>
+                <modifier type="set" field="name" value="Mercenary [Bomma]"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -3465,6 +3465,7 @@
           </constraints>
           <entryLinks>
             <entryLink id="4c2d-3ad9-5b36-b840" name="[A]gility" hidden="false" collective="false" import="true" targetId="79de-c235-bfc5-de8b" type="selectionEntryGroup"/>
+            <entryLink import="true" name="[P]asssing" hidden="false" id="1f21-05ca-6348-5a0b" collective="false" targetId="5560-9934-18c8-47ed" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3826,8 +3827,8 @@
         <characteristic name="PA" typeId="90cd-0493-9510-60b5">4</characteristic>
         <characteristic name="AV" typeId="c77a-49e5-750a-1adc">8</characteristic>
         <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Bombardier, Dodge, Secret Weapon, Stunty</characteristic>
-        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">A</characteristic>
-        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">GPS</characteristic>
+        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">AP</characteristic>
+        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">GS</characteristic>
         <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">45000</characteristic>
       </characteristics>
     </profile>
