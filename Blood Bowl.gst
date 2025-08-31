@@ -903,7 +903,7 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
             </modifier>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditions>
-                <condition field="forces" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf">
+                <condition field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf">
                   <comment>As of May 2025 errata, Halfling Master Chef is only 100,000 for Halfling teams, 300,000 for all others</comment>
                 </condition>
               </conditions>
@@ -948,16 +948,9 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         <selectionEntry id="8604-23e5-2fa0-77a3" name="Bribes" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="50000">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="172c-824e-bd16-0edf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -1629,6 +1622,38 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Biased Referee" hidden="false" id="10b4-695f-9014-4aea" collective="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c4-5b96-45cc-9470" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Biased Referee" id="7937-938d-b990-2f8a" hidden="false" publicationId="46da-ba61-6439-83e5" page="95">
+              <description>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
+
+For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
+
+Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:
+
+• If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.
+• If this happens during exhibition play, both teams can use the named Biased Referee – they can dish out harsh rulings to both sides!</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Biased Referee" hidden="false" id="d0d3-9cfa-05d1-162e" type="selectionEntryGroup" targetId="cfaf-b84a-8075-1c2f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4627,87 +4652,6 @@ table has already been made, and roll on this table again.
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f61f-f3ac-6712-ae1d" name="Ranulf &apos;Red&apos; Hokuli" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3a-4844-9907-a5dd" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="439b-363a-f95e-492e" name="&apos;Red&apos; Card" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-          <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 4+, Ranulf loudly demands that play halt whilst he investigates further.
-• On a roll of 1-3, the player manages to avoid the ref’s attention.
-
-Once spotted by Ranulf in this way (and only in this way), the coach of the player that committed the Foul must choose one of the following options:
-
-• The coach may use a Bribe if one is available.
-• The player that committed the Foul may accept their fate and be Sent-off.
-• The player may attempt to argue with Ranulf! Ranulf will settle the argument with his axe. An Armour roll is made against the player, applying a +2 modifier to the result:
-- If the roll is higher than the Armour Value of the player, they become Prone and an Injury roll is made against them. The player is not Sent-off and no Turnover is caused.
-- If the roll is equal to or lower than the Armour Value of the player hit, the attack has no effect. The player is Sent-off and a Turnover caused.</description>
-        </rule>
-        <rule id="8ef7-6be9-e29c-d8f2" name="&quot;I&apos;m not the one arguing!&quot;" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-          <description>If Ranulf has been Induced for this game, even if he does not take part due to both coaches Inducing him, neither coach can Argue the Call – even the most argumentative of coaches can’t help but have respect for the charismatic Norscan.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7db9-75b4-696b-2fee" name="Thoron Korensson" publicationId="9118-6c97-8006-93a4" page="34" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc6f-7afb-eb77-762a" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="7727-1d11-7314-c522" name="Strict Discipline" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-          <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
-
-• On a roll of 4+, Korensson has spotted the violation.
-• On a roll of 1-3, the player manages to avoid the ref’s attention.
-
-Once spotted by Korensson in this way (and only in this way), the player that committed the Foul is immediately Sent-off. When a player is Sent-off in this way, their coach cannot use a Bribe but may attempt to Argue the Call. However, if a 1 is rolled on the Argue the Call table, not only is the player and the coach Sent-off, but one other randomly selected player belonging to the opposing team and that is currently on the pitch is Sent-off as well.</description>
-        </rule>
-        <rule id="2eef-5b0a-7e11-48f7" name="&quot;Sit down and keep quiet&quot;" publicationId="9118-6c97-8006-93a4" page="34" hidden="false">
-          <description>If a Get the Ref result is rolled on the Kick-off Event table, roll again – it takes a particularly riled-up crowd to want to advance on Korensson.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="10b4-695f-9014-4aea" name="Biased Referee" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c4-5b96-45cc-9470" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="7937-938d-b990-2f8a" name="Biased Referee" publicationId="46da-ba61-6439-83e5" page="95" hidden="false">
-          <description>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
-
-For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
-
-Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:
-
-• If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.
-• If this happens during exhibition play, both teams can use the named Biased Referee – they can dish out harsh rulings to both sides!</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
@@ -11154,20 +11098,20 @@ Until the end of this game, each selected player gains the Pro skill. However, a
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="80000" field="ffff-7836-9be4-196c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="172c-824e-bd16-0edf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="dcaa-7186-6b12-e32f" name="Jorm the Ogre" publicationId="9118-6c97-8006-93a4" page="35" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="80000">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="172c-824e-bd16-0edf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -11196,7 +11140,7 @@ Once spotted by Jorm in this way (and only in this way), the player that committ
           <modifiers>
             <modifier type="set" field="ffff-7836-9be4-196c" value="40000">
               <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43d1-827e-3932-1857" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11223,6 +11167,77 @@ Once spotted by Jorm in this way (and only in this way), the player that committ
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ranulf &apos;Red&apos; Hokuli" hidden="true" id="f61f-f3ac-6712-ae1d" publicationId="9118-6c97-8006-93a4" page="34" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd3a-4844-9907-a5dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&apos;Red&apos; Card" id="439b-363a-f95e-492e" hidden="false" publicationId="9118-6c97-8006-93a4" page="34">
+              <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 4+, Ranulf loudly demands that play halt whilst he investigates further.
+• On a roll of 1-3, the player manages to avoid the ref’s attention.
+
+Once spotted by Ranulf in this way (and only in this way), the coach of the player that committed the Foul must choose one of the following options:
+
+• The coach may use a Bribe if one is available.
+• The player that committed the Foul may accept their fate and be Sent-off.
+• The player may attempt to argue with Ranulf! Ranulf will settle the argument with his axe. An Armour roll is made against the player, applying a +2 modifier to the result:
+- If the roll is higher than the Armour Value of the player, they become Prone and an Injury roll is made against them. The player is not Sent-off and no Turnover is caused.
+- If the roll is equal to or lower than the Armour Value of the player hit, the attack has no effect. The player is Sent-off and a Turnover caused.</description>
+            </rule>
+            <rule name="&quot;I&apos;m not the one arguing!&quot;" id="8ef7-6be9-e29c-d8f2" hidden="false" publicationId="9118-6c97-8006-93a4" page="34">
+              <description>If Ranulf has been Induced for this game, even if he does not take part due to both coaches Inducing him, neither coach can Argue the Call – even the most argumentative of coaches can’t help but have respect for the charismatic Norscan.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5581-bb5e-6d85-79d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Thoron Korensson" hidden="true" id="7db9-75b4-696b-2fee" publicationId="9118-6c97-8006-93a4" page="34" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc6f-7afb-eb77-762a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Strict Discipline" id="7727-1d11-7314-c522" hidden="false" publicationId="9118-6c97-8006-93a4" page="34">
+              <description>If any player on the opposing team commits a Foul but a double is not rolled when making either the Armour roll or Injury roll, roll a D6:
+
+• On a roll of 4+, Korensson has spotted the violation.
+• On a roll of 1-3, the player manages to avoid the ref’s attention.
+
+Once spotted by Korensson in this way (and only in this way), the player that committed the Foul is immediately Sent-off. When a player is Sent-off in this way, their coach cannot use a Bribe but may attempt to Argue the Call. However, if a 1 is rolled on the Argue the Call table, not only is the player and the coach Sent-off, but one other randomly selected player belonging to the opposing team and that is currently on the pitch is Sent-off as well.</description>
+            </rule>
+            <rule name="&quot;Sit down and keep quiet&quot;" id="2eef-5b0a-7e11-48f7" hidden="false" publicationId="9118-6c97-8006-93a4" page="34">
+              <description>If a Get the Ref result is rolled on the Kick-off Event table, roll again – it takes a particularly riled-up crowd to want to advance on Korensson.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="120000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
