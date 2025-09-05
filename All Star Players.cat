@@ -50,7 +50,7 @@
         <entryLink id="536a-6c5f-851a-0113" name="Familiar Face" hidden="false" collective="false" import="true" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
-    <entryLink id="71df-e2e7-78ca-5d3b" name="Frank &apos;n&apos; Stien" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry">
+    <entryLink id="71df-e2e7-78ca-5d3b" name="Frank &apos;n&apos; Stein" hidden="false" collective="false" import="true" targetId="4afd-2b3a-5a0c-b249" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4f32-0890-6d34-2fee" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
@@ -425,7 +425,7 @@
     </entryLink>
     <entryLink import="true" name="Dribl and Drull" hidden="false" id="1680-b1dd-4449-f483" type="selectionEntry" targetId="a41f-802f-9a60-3454">
       <categoryLinks>
-        <categoryLink targetId="ef36-92eb-8b79-1a1f" id="f7ed-1382-1701-22ac" primary="true" name="Players"/>
+        <categoryLink targetId="ef36-92eb-8b79-1a1f" id="bbc0-7566-868b-8818" primary="true" name="Players"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Familiar Face" hidden="false" id="ccc7-21d1-04bc-bf0b" collective="false" targetId="4d8e-1440-b9b8-a2b5" type="selectionEntry"/>
@@ -520,4 +520,116 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="c5fa-6cef-dad9-400c">
+      <categoryLinks>
+        <categoryLink name="Team Management" hidden="false" id="1699-879b-cf49-7237" targetId="a6b7-0663-b308-f599" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Badlands Brawl" hidden="false" id="8392-9128-c58d-9c45" type="selectionEntry" targetId="c605-2010-fb97-0f51">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c7e-3d85-be34-85d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="fb7c-d402-d241-b619" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Elven Kingdoms League" hidden="false" id="1105-98c4-c587-7a64" type="selectionEntry" targetId="595b-11f0-1786-ca72">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccf6-52df-dfd3-cc00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="2c49-0dec-f694-dab8" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Halfling Thimble Cup" hidden="false" id="d1c1-380d-3223-5b21" type="selectionEntry" targetId="43d1-827e-3932-1857">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd8d-51d2-9ab4-b2a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="c3ab-8218-704c-8ab6" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Lustrian Superleague" hidden="false" id="7a35-fa2c-0d37-fea1" type="selectionEntry" targetId="5581-bb5e-6d85-79d8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77c3-5754-59a3-46e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="1420-ec17-fd3f-838d" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Old World Classic" hidden="false" id="594d-1f35-4557-a3b6" type="selectionEntry" targetId="4003-dd1b-d594-1051">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71d6-e63d-27bb-0835" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="2fd1-07c5-4136-b661" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Sylvanian Spotlight" hidden="false" id="30fd-db78-c3a1-f729" type="selectionEntry" targetId="bf62-4437-3f84-7611">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a48-6dfb-a204-b032" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="eca9-4e06-098a-e04e" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Underworld Challenge" hidden="false" id="eb7e-7c53-618c-6156" type="selectionEntry" targetId="8ae0-7abc-07a0-e07b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18a-e6d2-ef31-01cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="b662-9ed5-2e9b-a2cf" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Worlds Edge Superleague" hidden="false" id="3203-ce26-c6ae-9e92" type="selectionEntry" targetId="d5be-b66d-7065-f9af">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96db-f858-cee5-6aa5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="0aa4-857b-47bf-f8b1" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Favored of..." hidden="false" id="1893-efc5-4cb7-cbd6" type="selectionEntry" targetId="b38d-6ca8-2092-1c48">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcff-50b2-411d-027e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="1953-f9b6-bf27-d3be" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21f8-8f7a-1a39-689f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1c0-13dc-3952-2ed8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
