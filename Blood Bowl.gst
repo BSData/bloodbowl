@@ -2819,9 +2819,15 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
           </conditionGroups>
         </modifier>
         <modifier type="set" field="d2b5-b950-b1e6-8380" value="0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="ebf7-ac62-7709-38ea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4319-3b55-04c5-2907" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -3772,6 +3778,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57fe-43be-caff-d46a"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="436b-94fe-e712-be92" name="Khorne" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
@@ -3791,6 +3800,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3768-e6d6-7b99-c8c7"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="768b-b64b-f982-47e4" name="Nurgle" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3811,6 +3823,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5bf-23d1-b33b-d5ee"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="1d09-99bf-da51-3f46" name="Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3832,6 +3847,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0043-c73c-299d-cda2"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry id="a7fa-9561-5962-0f53" name="Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3853,6 +3871,9 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b49a-d4b5-2a2b-505f"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hashut" hidden="false" id="bcc7-ccb4-a677-347c">
               <modifiers>
@@ -3868,8 +3889,23 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a20-4938-ae37-5579"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="6" field="a1b0-e563-b6d5-813f">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="d911-5dab-a5f1-d161">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3943,6 +3979,13 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
                 <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                 <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="1" field="defaultAmount">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="4eae-210b-b45f-548f" name="League" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
@@ -6317,12 +6360,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Dribl and Drull" hidden="true" id="a41f-802f-9a60-3454" publicationId="46da-ba61-6439-83e5" page="133" collective="false">
+            <selectionEntry type="unit" import="true" name="Dribl and Drull" hidden="true" id="a41f-802f-9a60-3454" publicationId="46da-ba61-6439-83e5" page="133" collective="false" collapsible="false" subType="unit-group">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8c4f-28eb-89d0-3a4b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Dribl" hidden="false" id="7e41-bb2e-b018-07ac" publicationId="e6c1-775b-d5c7-e5fd" collective="false">
+                <selectionEntry type="model" import="true" name="Dribl" hidden="false" id="7e41-bb2e-b018-07ac" publicationId="e6c1-775b-d5c7-e5fd" collective="false" collapsible="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9c2-5cf9-9609-414e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="015b-d565-fb2f-794b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6366,8 +6409,8 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <infoLink name="A Sneaky Pair" id="f949-378d-3b5a-ef54" hidden="false" type="rule" targetId="c912-6011-cbe3-574e"/>
                   </infoLinks>
                   <categoryLinks>
-                    <categoryLink name="Players" hidden="false" id="092c-2f59-9c5f-2c9f" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
                     <categoryLink name="Star Player" hidden="false" id="d5b2-8fcb-1579-f1a3" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+                    <categoryLink targetId="ef36-92eb-8b79-1a1f" id="943c-67dc-aec4-cf0e" primary="false" name="Players"/>
                   </categoryLinks>
                   <costs>
                     <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
@@ -6375,7 +6418,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Drull" hidden="false" id="0a05-f3ff-4db5-f460" publicationId="e6c1-775b-d5c7-e5fd" collective="false">
+                <selectionEntry type="model" import="true" name="Drull" hidden="false" id="0a05-f3ff-4db5-f460" publicationId="e6c1-775b-d5c7-e5fd" collective="false" collapsible="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d708-705d-bc91-02d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b50-0063-31a0-6ebc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6418,14 +6461,21 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <infoLink name="A Sneaky Pair" id="16df-bef6-fe5c-d980" hidden="false" type="rule" targetId="c912-6011-cbe3-574e"/>
                   </infoLinks>
                   <categoryLinks>
-                    <categoryLink name="Players" hidden="false" id="591a-7aaa-6b3c-fd9c" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
                     <categoryLink name="Star Player" hidden="false" id="1d36-3a9c-7cd8-af49" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+                    <categoryLink targetId="ef36-92eb-8b79-1a1f" id="43d6-eb15-7470-988e" primary="false" name="Players"/>
                   </categoryLinks>
                   <costs>
                     <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                     <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                     <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="remove" value="ef36-92eb-8b79-1a1f" field="category">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -6897,7 +6947,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Grak and Crumbleberry" hidden="false" id="5275-5518-f1eb-3bce" publicationId="46da-ba61-6439-83e5" page="130" collective="false">
+            <selectionEntry type="model" import="true" name="Grak and Crumbleberry" hidden="false" id="5275-5518-f1eb-3bce" publicationId="46da-ba61-6439-83e5" page="130" collective="false" subType="mount" flatten="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7baf-5d87-bc23-6f15" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
@@ -6905,7 +6955,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                 <categoryLink name="Star Player" hidden="false" id="b23a-c12a-4334-f2da" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
               </categoryLinks>
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Grak" hidden="false" id="c718-8598-f61f-f6b1" publicationId="46da-ba61-6439-83e5" page="130" collective="false">
+                <selectionEntry type="model" import="true" name="Grak" hidden="false" id="c718-8598-f61f-f6b1" publicationId="46da-ba61-6439-83e5" page="130" collective="false" flatten="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e3-871c-d5d1-a1ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="045d-8f5b-38cc-7f84" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6956,7 +7006,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="model" import="true" name="Crumbleberry" hidden="false" id="f4b7-b704-a513-7b8b" publicationId="46da-ba61-6439-83e5" page="130" collective="false">
+                <selectionEntry type="model" import="true" name="Crumbleberry" hidden="false" id="f4b7-b704-a513-7b8b" publicationId="46da-ba61-6439-83e5" page="130" collective="false" flatten="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a8-6fdb-6d21-c275" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b06-44e6-8aec-f469" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -6999,13 +7049,20 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <infoLink name="Two for One" id="a639-3826-63d3-e89e" hidden="false" type="rule" targetId="8eaf-aaaa-6b37-45b4"/>
                   </infoLinks>
                   <categoryLinks>
-                    <categoryLink name="Players" hidden="false" id="c0cd-03b8-71c7-f265" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
+                    <categoryLink targetId="ef36-92eb-8b79-1a1f" id="3bec-d916-ece9-dd5a" primary="false" name="Players"/>
                   </categoryLinks>
                   <costs>
                     <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                     <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
                     <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="remove" value="ef36-92eb-8b79-1a1f" field="category">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -8387,9 +8444,14 @@ Until the end of this game, each selected player gains a single randomly selecte
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bf62-4437-3f84-7611" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="bf62-4437-3f84-7611" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -9394,12 +9456,12 @@ Until the end of this game, each selected player gains a single randomly selecte
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="The Swift Twins" hidden="true" id="3ab3-0a11-4223-c529" publicationId="46da-ba61-6439-83e5" page="133" collective="false">
+            <selectionEntry type="model" import="true" name="The Swift Twins" hidden="true" id="3ab3-0a11-4223-c529" publicationId="46da-ba61-6439-83e5" page="133" collective="false" subType="crew">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1583-10ea-e975-4402" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Lucien Swift" hidden="false" id="9e86-d814-823f-a270" publicationId="46da-ba61-6439-83e5" page="12" collective="false">
+                <selectionEntry type="model" import="true" name="Lucien Swift" hidden="false" id="9e86-d814-823f-a270" publicationId="46da-ba61-6439-83e5" page="12" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f933-0baa-3bff-0d67" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="138f-0ebf-dcc6-5b17" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -9454,7 +9516,7 @@ Until the end of this game, each selected player gains a single randomly selecte
                     <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Valen Swift" hidden="false" id="6722-b16a-0e3f-7bec" publicationId="46da-ba61-6439-83e5" collective="false">
+                <selectionEntry type="model" import="true" name="Valen Swift" hidden="false" id="6722-b16a-0e3f-7bec" publicationId="46da-ba61-6439-83e5" collective="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3716-8748-1f18-3842" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8c97-0cea-ca08-dee0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -9502,14 +9564,21 @@ Until the end of this game, each selected player gains a single randomly selecte
                     </infoLink>
                   </infoLinks>
                   <categoryLinks>
-                    <categoryLink name="Players" hidden="false" id="da03-5a5d-b0b4-230f" targetId="ef36-92eb-8b79-1a1f" primary="false"/>
                     <categoryLink name="Star Player" hidden="false" id="9f9d-ef82-62bd-aa10" targetId="4e9e-b0ee-57cb-9b9d" primary="false"/>
+                    <categoryLink targetId="ef36-92eb-8b79-1a1f" id="b328-03ac-dcf7-6c4b" primary="false" name="Players"/>
                   </categoryLinks>
                   <costs>
                     <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
                     <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
                     <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="remove" value="ef36-92eb-8b79-1a1f" field="category">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="92ee-515a-b5d6-aaaf" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
