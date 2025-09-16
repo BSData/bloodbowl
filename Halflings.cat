@@ -2084,6 +2084,17 @@
             <categoryLink name="Team Management" hidden="false" id="e0fb-55cd-4435-181b" targetId="a6b7-0663-b308-f599" primary="true"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Tier 3" hidden="false" id="a056-295d-78dc-b55f" type="selectionEntry" targetId="a895-b624-e202-2da8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3281-bbbc-4ef4-839b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="499a-b2b9-9f02-a504" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4025-8900-b2b2-c9de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>

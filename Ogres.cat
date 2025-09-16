@@ -1624,6 +1624,17 @@
             <modifier type="set" value="1" field="defaultAmount"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Tier 3" hidden="false" id="c050-22d8-e786-86c7" type="selectionEntry" targetId="a895-b624-e202-2da8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12cf-e894-a276-45c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="c74d-506d-8e92-b8bb" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="517a-e6b2-5294-df77" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
