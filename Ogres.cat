@@ -63,51 +63,7 @@
       <categoryLinks>
         <categoryLink id="84ae-0083-8771-84eb" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d394-7928-7083-8374" name="(In)famous Coaching Staff" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="931d-dd0e-f52a-9f70" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c4e7-9d2e-6511-9f13" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" targetId="3a41-d8e0-044c-2580" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="3180-2eb4-fe4b-a7aa" name="Mungo Spinecracker" hidden="false" collective="false" import="true" targetId="fe6f-d2cd-7957-9633" type="selectionEntry"/>
-                <entryLink id="2600-ee05-f77a-da3f" name="Fink Da Fixer" hidden="false" collective="false" import="true" targetId="86c4-9326-f5dd-ffcd" type="selectionEntry"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="20a2-0212-228c-332c" name="Bottles of Heady Brew" hidden="false" collective="false" import="true" targetId="b891-67b6-6431-70ce" type="selectionEntry"/>
-        <entryLink id="7c76-1807-390d-7f7b" name="Wizard" hidden="false" collective="false" import="true" targetId="8c7c-dfea-d67d-830d" type="selectionEntry">
-          <entryLinks>
-            <entryLink id="27ca-ea10-1937-dbcf" name="Wizard" hidden="false" collective="false" import="true" targetId="3ecb-df2a-3712-995d" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="e8b8-d61c-45eb-17a8" name="Ogre Firebelly" hidden="false" collective="false" import="true" targetId="d750-72f1-f687-e668" type="selectionEntry"/>
-                <entryLink id="30b1-d63c-3d12-db3a" name="Wicked Witch" hidden="false" collective="false" import="true" targetId="0ece-1731-f4ae-1263" type="selectionEntry"/>
-                <entryLink id="a6b9-10eb-f108-08fb" name="Night Goblin Shaman" hidden="false" collective="false" import="true" targetId="6859-8eed-31c8-ddcb" type="selectionEntry"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="e8bd-918c-14b7-0f58" name="WAAAGH! Drummer" hidden="false" collective="false" import="true" targetId="54e1-c0ea-1874-f2a9" type="selectionEntry"/>
-        <entryLink id="6b03-10cd-b163-eba1" name="Dwarfen Runesmith" hidden="false" collective="false" import="true" targetId="d481-a4bd-f6dc-c43d" type="selectionEntry"/>
-        <entryLink id="2504-c8d4-5787-fabc" name="Halfling Hot Pot" hidden="false" collective="false" import="true" targetId="74f2-37ae-f8a2-ad5e" type="selectionEntry"/>
-        <entryLink id="95bc-2fde-429d-542d" name="Master of Ballistics" hidden="false" collective="false" import="true" targetId="157f-649b-9c97-9e54" type="selectionEntry"/>
-        <entryLink id="3b67-9c0b-9029-819a" name="Riotous Rookies" hidden="false" collective="false" import="true" targetId="4361-1f5a-b2d3-901c" type="selectionEntry"/>
         <entryLink id="ee55-1b5e-5345-4c66" name="Wandering Apothecaries" hidden="false" collective="false" import="true" targetId="5564-dcac-1706-7a79" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
@@ -1667,6 +1623,17 @@
           <modifiers>
             <modifier type="set" value="1" field="defaultAmount"/>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Tier 3" hidden="false" id="c050-22d8-e786-86c7" type="selectionEntry" targetId="a895-b624-e202-2da8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12cf-e894-a276-45c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="c74d-506d-8e92-b8bb" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>

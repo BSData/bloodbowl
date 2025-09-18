@@ -108,51 +108,8 @@
       <categoryLinks>
         <categoryLink id="be8e-a4c5-749c-81d0" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f526-b103-5f78-655c" name="(In)famous Coaching Staff" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06f-18b3-8e82-47a0" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="9945-4a2d-010d-3d26" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" targetId="3a41-d8e0-044c-2580" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="666f-91fd-f8b5-49b5" name="Papa Skullbones" hidden="false" collective="false" import="true" targetId="d3eb-6589-f664-cb9e" type="selectionEntry"/>
-                <entryLink id="a80a-13cc-5192-3ea0" name="Krot Shockwhisker" hidden="false" collective="false" import="true" targetId="56b3-5573-9adb-ad7a" type="selectionEntry"/>
-                <entryLink id="f4a6-a69f-4f58-d540" name="Mungo Spinecracker" hidden="false" collective="false" import="true" targetId="fe6f-d2cd-7957-9633" type="selectionEntry"/>
-                <entryLink id="c576-2878-37b8-4b15" name="Fink Da Fixer" hidden="false" collective="false" import="true" targetId="86c4-9326-f5dd-ffcd" type="selectionEntry"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="7c43-8e56-db39-1366" name="Wizard" hidden="false" collective="false" import="true" targetId="8c7c-dfea-d67d-830d" type="selectionEntry">
-          <entryLinks>
-            <entryLink id="4d47-ec31-c340-c639" name="Wizard" hidden="false" collective="false" import="true" targetId="3ecb-df2a-3712-995d" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="6a43-0540-f11c-bfd8" name="Warlock Engineer" hidden="false" collective="false" import="true" targetId="c503-8403-44c5-2136" type="selectionEntry"/>
-                <entryLink id="f81b-03b3-b5f9-3da0" name="Wicked Witch" hidden="false" collective="false" import="true" targetId="0ece-1731-f4ae-1263" type="selectionEntry"/>
-                <entryLink id="463c-a08c-2a06-a651" name="Chaos Sorcerer" hidden="false" collective="false" import="true" targetId="b930-c518-3321-15de" type="selectionEntry"/>
-                <entryLink id="fc8a-ec6d-98ab-f3fd" name="Night Goblin Shaman" hidden="false" collective="false" import="true" targetId="6859-8eed-31c8-ddcb" type="selectionEntry"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
         <entryLink id="06d5-c231-c818-c716" name="Wandering Apothecaries" hidden="false" collective="false" import="true" targetId="5564-dcac-1706-7a79" type="selectionEntry"/>
-        <entryLink id="e4a5-532e-1e0f-b68e" name="Bottles of Heady Brew" hidden="false" collective="false" import="true" targetId="b891-67b6-6431-70ce" type="selectionEntry"/>
-        <entryLink id="2565-1ca0-442b-4517" name="Riotous Rookies" hidden="false" collective="false" import="true" targetId="4361-1f5a-b2d3-901c" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
     <entryLink id="16eb-3fe5-f3c6-0695" name="Apothecary" hidden="false" collective="false" import="true" targetId="77da-bfcb-d236-80a8" type="selectionEntry">
@@ -3031,6 +2988,17 @@
           <modifiers>
             <modifier type="set" value="1" field="defaultAmount"/>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Tier 3" hidden="false" id="4bdd-32e5-341c-090f" type="selectionEntry" targetId="a895-b624-e202-2da8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc52-7c6f-e16a-2c9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="1691-48ee-4882-796f" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>

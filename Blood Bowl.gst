@@ -1004,43 +1004,6 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011e-58d1-5860-31bf" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-              <description>A team that includes a Team Mascot gains an extra team re-roll (a suitable model should be placed on your team reroll tracker). However, to use the Team Mascot re-roll you must first roll a D6:
-
-• On a roll of 1-4, the Team Mascot proves ineffective and, pelted by food wrappers and worse, retreats to the locker room. The Team Mascot re-roll is lost for this half of the game. However, you may use a normal team re-roll instead.
-• On a roll of 5+, the Team Mascot re-roll can be used, just like a normal team re-roll.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="06b6-7113-c30d-00a2" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="c4f1-a521-8e34-78e6" value="1">
@@ -1164,257 +1127,6 @@ You may use a Weather Mage once per game, at the start of any one of your team t
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5e39-084d-b112-fb83" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb8-5829-41b4-efa0" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="5801-e40c-416f-c803" name="Special Plays" publicationId="46da-ba61-6439-83e5" page="90" hidden="false">
-              <description>Each Special Plays Inducement purchased gives you one Special Plays card to use during the game ahead. Cards are drawn from one or more of the Special Plays card decks during the Inducements step of the pregame sequence:
-
-• Each Special Plays Inducement purchased allows you to draw cards from a single deck.
-• The deck from which cards are drawn is determined by rolling a D6 and consulting the table below.
-• For each separate Special Plays Inducement purchased, roll again on the table below.
-• There is no limit to how many cards may be drawn from each deck, but if the second roll or any subsequent rolls give a duplicated result, you may re-roll the D6. If the D6 is re-rolled, you must accept the result of the re-roll.
-
-SPECIAL PLAYS CARDS
-D6 	DECK
-1. 	Random Events
-2. 	Dirty Tricks
-3. 	Magical Memorabilia
-4. 	Heroic Feats
-5.  	Benefits of Training
-6.  	Miscellaneous Mayhem
-
-CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card deck is shuffled and two cards are drawn from the top. You may then read both cards before choosing one to keep and one to discard.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2fb6-cb4b-2ad0-ddc5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d974-04d8-a502-00c9" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="c2bc-4cef-6ea9-7cd5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-              <description>After Step 4, but before Step 5 of the pre-game sequence, you may place a bet of between 10,000 and 100,000 gold pieces that your team will win the game. Simply inform your opponent that the bet has been placed, and how much you are betting. Should your team win the game, you will receive double your stake back during Step 1 of the post-game sequence (for example, if you bet 20,000 gold pieces that your team would win, you will win 40,000 gold pieces if it does win).
-
-If, however, your team loses, the stake is lost (such is the risk of gambling)!</description>
-            </rule>
-          </rules>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9341-0c4a-f09d-2f9c" name="Bet" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="c6e3-6eda-4503-4ca9" name="10,000 GP" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b588-3d70-583c-df41" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="46ca-4d79-23d4-43ac" name="5,000 GP" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53e-1a2a-dfb0-605c" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0818-1c97-2ef9-e897" name="Medicinal Unguent" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc18-50c8-e69f-c84d" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="0c6d-afaf-10cd-d568" name="Medicinal Unguent" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-              <description>Should a player on your team be removed from play having suffered a 10-12, Serious Injury result on the Casualty table, after any other attempts to heal that player have been made and have failed, you may use this Inducement. The player is immediately removed from the Casualty box and placed in the Reserves box of your dugout, having been miraculously healed by the liberal application of something that smells extremely suspicious. However, at the end of this game, the result of the Casualty roll is applied as normal.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="faf3-bd7c-1df9-9724" name="Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="4c37-7996-ee71-f822" name="Scatter Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-              <characteristics>
-                <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
-                <characteristic name="ST" typeId="120f-0f56-f450-196c">7</characteristic>
-                <characteristic name="AG" typeId="29f4-c9a2-f996-4723">5</characteristic>
-                <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
-                <characteristic name="AV" typeId="c77a-49e5-750a-1adc">11</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Always Hungry, Bone Head, Break Tackle, Juggernaut, Loner (4+), Mighty Blow (+2), Multiple Block, Stand Firm, Throw Team-mate</characteristic>
-                <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">N/A</characteristic>
-                <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">N/A</characteristic>
-                <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">350,000</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="b682-de4f-2805-5e2b" name="Base Size and Tackle Zones" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
-
-Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies. Whenever a Giant finishes a Move action or follows up after a Block action, they may changes their facing if they wish; though if done as part of following up after a Block action, they must still be Marking the player they made the Block action against if possible.
-
-Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="3558-400a-8bd0-a723" name="A Giant Obstruction" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants do tend to get in the way of other teams’ passing plays. When a Giant interferes with a pass, it reduces any negative modifiers that would normally apply by 2.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0ef2-960b-121c-c0ef" name="Movement" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">When a Giant moves it does so just like any other player, moving a number of squares equal to its Movement Allowance. A Giant may move forward, backward, to either side, or diagonally, as long as they do not enter a square occupied by another standing player (from either team).
-
-If any of the four squares a Giant occupies is within the Tackle Zone of an opposition player, the Giant is considered to be Marked by that player and must dodge to leave that square, just like any other player. If when dodging any part of a Giant’s base moves into a square in which it is being Marked, apply a -1 modifier per player Marking them as normal.
-
-STEPPING OVER PRONE OR STUNNED PLAYERS: Unlike other players, a Giant is large enough to simply step over downed players that would block the path of other players. A Giant does not need to Jump Over a Prone or Stunned player; it may instead move freely over Prone or Stunned players if it has sufficient Movement Allowance to do so.
-
-However, a Giant may not end its movement with any part of its base occupying a square that contains a Prone or Stunned player. Therefore, should a Giant Fall Over whilst stepping over a Prone or Stunned player, that player is pushed back one square in a direction chosen by the coach of the team the Giant belongs to, exactly as if a Push Back block dice result had been applied against them.
-
-SURROUNDED!: Coaches should note that, due to the large size of Giants, they may find it impossible to move through small gaps. If at any point during its movement a Giant finds one or more of the four squares its base occupies obstructed by a Standing player, it cannot move into that square.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="3e6a-8946-9606-e26e" name="Push Backs" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Just like any other player, a Giant must be pushed back into empty squares. If this is not possible, then the Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are chain-pushed in turn.
-
-PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn’t matter how big they are, a Giant cannot be half on and half off the pitch. They are either entirely on the pitch, or they are off it!</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0c48-de49-2dfc-e992" name="Throwing Other Players" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants are particularly effective at throwing smaller players. When a Giant attempts to throw a team-mate, you may re-roll a Fumbled throw.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="ff97-7f02-02d9-b513" name="Scatter" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.
-
-1-2-3-4
-5-###-6
-7-###-8
-9-10-11-12</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="2c51-e3a9-94dc-2c5e" name="Scatter" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
-              <description>As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="f1e2-f601-8639-f9fe" name="Always Hungry" hidden="false" targetId="3634-31d4-5d56-9743" type="rule"/>
-            <infoLink id="2289-3488-9d4b-b76c" name="Bone Head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
-            <infoLink id="adc6-bc19-f650-c2c1" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
-            <infoLink id="94d4-b4a8-317f-8591" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-            <infoLink id="2fba-4d3e-6528-9626" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-            <infoLink id="cff0-6465-7b1e-cc60" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
-            <infoLink id="4028-da22-b702-0850" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
-            <infoLink id="d68c-c8b9-a85e-9e75" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-            <infoLink id="7b02-58e7-32d0-740e" name="Throw Team-mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
@@ -1581,8 +1293,9 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+          <comment>7s only inducement</comment>
         </selectionEntry>
-        <selectionEntry id="3435-1fa5-943b-16fa" name="Ancient Artefact" publicationId="a98a-aed9-fafb-e69f" page="17" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3435-1fa5-943b-16fa" name="Ancient Artefact" publicationId="a98a-aed9-fafb-e69f" page="17" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -1622,38 +1335,500 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+          <comment>This is an inducement from a spike magazine</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Biased Referee" hidden="false" id="10b4-695f-9014-4aea" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Death Zone Inducements" hidden="false" id="755d-9de9-d8e1-0b77">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0449-1957-3646-fc3d" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="" id="15d6-cbaf-11b0-ec4f" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bottles of Heady Brew" hidden="true" id="b891-67b6-6431-70ce" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a895-b624-e202-2da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="187e-30b1-150e-a1b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Bottles of Heady Brew" id="1391-4eb5-9902-aff9" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>At the start of a drive, after both teams have been set up but before the kick-off (between Step 1 and Step 2), randomly select D3 players with the Stunty trait that are currently set up on the pitch. For the remainder of this drive, those players gain the Dauntless and Frenzy skills and the Really Stupid (4+) trait.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Cavorting Nurglings" hidden="true" id="6905-bc49-6842-6a0a" publicationId="9118-6c97-8006-93a4" page="36" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a672-a5e0-59f5-e2d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Cavorting Nurglings" id="3715-7137-768a-638f" hidden="false" publicationId="9118-6c97-8006-93a4" page="36">
+                      <description>At the beginning of the game, a team may increase its Fan Factor by +1 for each swarm of Cavorting Nurglings it has Induced. In addition, for the duration of this game, a team may increase its number of cheerleaders by the number of Cavorting Nurglings Induced.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dwarfen Runesmith" hidden="true" id="d481-a4bd-f6dc-c43d" publicationId="9118-6c97-8006-93a4" page="37" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342b-32b6-522c-7a52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Dwarfen Runesmith" id="206b-a5fa-f17f-a6e1" hidden="false" publicationId="9118-6c97-8006-93a4" page="37">
+                      <description>During each Start of Drive sequence, after Step 2 but before Step 3, you can select a single player on your team that is currently on the pitch that does not have the Loner (X+) trait and choose one of the following runes. Then roll a D6:
+
+• On a roll of 4+, the rune takes effect, but you cannot attempt to use the Runesmith again at the start of a later drive.
+• On a roll of 2 or 3, the rune does not work, but you can attempt to use the Runesmith again at the start of a later drive.
+• On a roll of 1, the rune does not work, and you cannot attempt to use the Runesmith again at the start of a later drive.
+
+Dwarfen Runes:
+
+Rune of Might: Until the end of this drive, the chosen player gains the Mighty Blow (+1) skill.
+Rune of Fury: Until the end of this drive, the chosen player gains both the Dauntless andFrenzy skills.
+Rune of Speed: Until the end of this drive, the chosen player gains both the Sprint and Sure Feet skills.
+Rune of Iron: Until the end of this drive, the chosen player’s Armour Value is increased by 1 (to a maximum of 11+) and they gain the Stand Firm skill.
+Rune of Impact: Until the end of this drive, the chosen player gains both the Juggernaut and Horns skills.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Giant Mercenary Player" hidden="false" id="faf3-bd7c-1df9-9724" publicationId="9118-6c97-8006-93a4" page="54" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e55f-acc6-9ebe-acdf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="3c2c-b7d2-ac49-69f9" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4510-4c80-21d1-f1cb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b1ee-eb5d-8cfc-452e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a8c-5f3a-b94f-c4c0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="f387-644b-6950-1c33" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e667-5e33-7680-43f7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4eb7-ddcb-a9fa-c1d7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Scatter Giant Mercenary Player" typeId="6abd-9371-31b8-653a" typeName="Player" hidden="false" id="4c37-7996-ee71-f822" publicationId="9118-6c97-8006-93a4" page="54">
+                      <characteristics>
+                        <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
+                        <characteristic name="ST" typeId="120f-0f56-f450-196c">7</characteristic>
+                        <characteristic name="AG" typeId="29f4-c9a2-f996-4723">5</characteristic>
+                        <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
+                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc">11</characteristic>
+                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Always Hungry, Bone Head, Break Tackle, Juggernaut, Loner (4+), Mighty Blow (+2), Multiple Block, Stand Firm, Throw Team-mate</characteristic>
+                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">N/A</characteristic>
+                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">N/A</characteristic>
+                        <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">350,000</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Base Size and Tackle Zones" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="b682-de4f-2805-5e2b" publicationId="9118-6c97-8006-93a4" page="54">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
+
+Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies. Whenever a Giant finishes a Move action or follows up after a Block action, they may changes their facing if they wish; though if done as part of following up after a Block action, they must still be Marking the player they made the Block action against if possible.
+
+Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="A Giant Obstruction" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="3558-400a-8bd0-a723" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants do tend to get in the way of other teams’ passing plays. When a Giant interferes with a pass, it reduces any negative modifiers that would normally apply by 2.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Movement" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="0ef2-960b-121c-c0ef" publicationId="9118-6c97-8006-93a4" page="54">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">When a Giant moves it does so just like any other player, moving a number of squares equal to its Movement Allowance. A Giant may move forward, backward, to either side, or diagonally, as long as they do not enter a square occupied by another standing player (from either team).
+
+If any of the four squares a Giant occupies is within the Tackle Zone of an opposition player, the Giant is considered to be Marked by that player and must dodge to leave that square, just like any other player. If when dodging any part of a Giant’s base moves into a square in which it is being Marked, apply a -1 modifier per player Marking them as normal.
+
+STEPPING OVER PRONE OR STUNNED PLAYERS: Unlike other players, a Giant is large enough to simply step over downed players that would block the path of other players. A Giant does not need to Jump Over a Prone or Stunned player; it may instead move freely over Prone or Stunned players if it has sufficient Movement Allowance to do so.
+
+However, a Giant may not end its movement with any part of its base occupying a square that contains a Prone or Stunned player. Therefore, should a Giant Fall Over whilst stepping over a Prone or Stunned player, that player is pushed back one square in a direction chosen by the coach of the team the Giant belongs to, exactly as if a Push Back block dice result had been applied against them.
+
+SURROUNDED!: Coaches should note that, due to the large size of Giants, they may find it impossible to move through small gaps. If at any point during its movement a Giant finds one or more of the four squares its base occupies obstructed by a Standing player, it cannot move into that square.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Push Backs" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="3e6a-8946-9606-e26e" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Just like any other player, a Giant must be pushed back into empty squares. If this is not possible, then the Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are chain-pushed in turn.
+
+PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn’t matter how big they are, a Giant cannot be half on and half off the pitch. They are either entirely on the pitch, or they are off it!</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Throwing Other Players" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="0c48-de49-2dfc-e992" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants are particularly effective at throwing smaller players. When a Giant attempts to throw a team-mate, you may re-roll a Fumbled throw.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Scatter" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="ff97-7f02-02d9-b513" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.
+
+1-2-3-4
+5-###-6
+7-###-8
+9-10-11-12</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Scatter" id="2c51-e3a9-94dc-2c5e" hidden="false" publicationId="9118-6c97-8006-93a4" page="55">
+                      <description>As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink name="Always Hungry" id="f1e2-f601-8639-f9fe" hidden="false" targetId="3634-31d4-5d56-9743" type="rule"/>
+                    <infoLink name="Bone Head" id="2289-3488-9d4b-b76c" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
+                    <infoLink name="Break Tackle" id="adc6-bc19-f650-c2c1" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
+                    <infoLink name="Juggernaut" id="94d4-b4a8-317f-8591" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+                    <infoLink name="Loner (4+)" id="2fba-4d3e-6528-9626" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                    <infoLink name="Mighty Blow (+2)" id="cff0-6465-7b1e-cc60" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
+                    <infoLink name="Multiple Block" id="4028-da22-b702-0850" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
+                    <infoLink name="Stand Firm" id="d68c-c8b9-a85e-9e75" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+                    <infoLink name="Throw Team-mate" id="7b02-58e7-32d0-740e" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Halfling Hot Pot" hidden="true" id="74f2-37ae-f8a2-ad5e" publicationId="9118-6c97-8006-93a4" page="37" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="60000" field="ffff-7836-9be4-196c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7035-f38d-a0e0-aa2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Halfling Hot Pot" id="5cac-3c64-16b0-c12c" hidden="false" publicationId="9118-6c97-8006-93a4"/>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master of Ballistics" hidden="true" id="157f-649b-9c97-9e54" publicationId="9118-6c97-8006-93a4" page="38" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="30000" field="ffff-7836-9be4-196c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="686a-6527-1419-0916" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Master of Ballistics" id="7cda-7db6-798f-5720" hidden="false" publicationId="9118-6c97-8006-93a4" page="38">
+                      <description>During Step 2 of every Start of Drive sequence, the Master of Ballistics can attempt to advise the kicker. After placing the ball but before rolling for deviation, roll a D3 on the following table:
+
+1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
+2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
+3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Medicinal Unguent" hidden="true" id="0818-1c97-2ef9-e897" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc18-50c8-e69f-c84d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Medicinal Unguent" id="0c6d-afaf-10cd-d568" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>Should a player on your team be removed from play having suffered a 10-12, Serious Injury result on the Casualty table, after any other attempts to heal that player have been made and have failed, you may use this Inducement. The player is immediately removed from the Casualty box and placed in the Reserves box of your dugout, having been miraculously healed by the liberal application of something that smells extremely suspicious. However, at the end of this game, the result of the Casualty roll is applied as normal.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Team Mascot" hidden="true" id="2946-e700-f64c-db4a" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="011e-58d1-5860-31bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Team Mascot" id="0404-d65c-83cf-a865" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>A team that includes a Team Mascot gains an extra team re-roll (a suitable model should be placed on your team reroll tracker). However, to use the Team Mascot re-roll you must first roll a D6:
+
+• On a roll of 1-4, the Team Mascot proves ineffective and, pelted by food wrappers and worse, retreats to the locker room. The Team Mascot re-roll is lost for this half of the game. However, you may use a normal team re-roll instead.
+• On a roll of 5+, the Team Mascot re-roll can be used, just like a normal team re-roll.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="WAAAGH! Drummer" hidden="true" id="54e1-c0ea-1874-f2a9" publicationId="9118-6c97-8006-93a4" page="36" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1e5-6265-e988-efa4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Side Bet" hidden="true" id="2fb6-cb4b-2ad0-ddc5" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d974-04d8-a502-00c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Side Bet" id="c2bc-4cef-6ea9-7cd5" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>After Step 4, but before Step 5 of the pre-game sequence, you may place a bet of between 10,000 and 100,000 gold pieces that your team will win the game. Simply inform your opponent that the bet has been placed, and how much you are betting. Should your team win the game, you will receive double your stake back during Step 1 of the post-game sequence (for example, if you bet 20,000 gold pieces that your team would win, you will win 40,000 gold pieces if it does win).
+
+If, however, your team loses, the stake is lost (such is the risk of gambling)!</description>
+                    </rule>
+                  </rules>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Bet" id="9341-0c4a-f09d-2f9c" hidden="false" collective="false" import="true">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="10,000 GP" hidden="false" id="c6e3-6eda-4503-4ca9" collective="false">
+                          <constraints>
+                            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b588-3d70-583c-df41" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+                            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="5,000 GP" hidden="false" id="46ca-4d79-23d4-43ac" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a53e-1a2a-dfb0-605c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000"/>
+                            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Plays" hidden="false" id="5e39-084d-b112-fb83" publicationId="46da-ba61-6439-83e5" page="90" collective="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e55f-acc6-9ebe-acdf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="3c2c-b7d2-ac49-69f9" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4510-4c80-21d1-f1cb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b1ee-eb5d-8cfc-452e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a8c-5f3a-b94f-c4c0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="f387-644b-6950-1c33" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e667-5e33-7680-43f7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4eb7-ddcb-a9fa-c1d7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c4-5b96-45cc-9470" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="1bb8-5829-41b4-efa0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <rules>
-            <rule name="Biased Referee" id="7937-938d-b990-2f8a" hidden="false" publicationId="46da-ba61-6439-83e5" page="95">
-              <description>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.
+            <rule name="Special Plays" id="5801-e40c-416f-c803" hidden="false" publicationId="46da-ba61-6439-83e5" page="90">
+              <description>Each Special Plays Inducement purchased gives you one Special Plays card to use during the game ahead. Cards are drawn from one or more of the Special Plays card decks during the Inducements step of the pregame sequence:
 
-For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on page 63. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee’s description.
+• Each Special Plays Inducement purchased allows you to draw cards from a single deck.
+• The deck from which cards are drawn is determined by rolling a D6 and consulting the table below.
+• For each separate Special Plays Inducement purchased, roll again on the table below.
+• There is no limit to how many cards may be drawn from each deck, but if the second roll or any subsequent rolls give a duplicated result, you may re-roll the D6. If the D6 is re-rolled, you must accept the result of the re-roll.
 
-Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:
+SPECIAL PLAYS CARDS
+D6 	DECK
+1. 	Random Events
+2. 	Dirty Tricks
+3. 	Magical Memorabilia
+4. 	Heroic Feats
+5.  	Benefits of Training
+6.  	Miscellaneous Mayhem
 
-• If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.
-• If this happens during exhibition play, both teams can use the named Biased Referee – they can dish out harsh rulings to both sides!</description>
+CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card deck is shuffled and two cards are drawn from the top. You may then read both cards before choosing one to keep and one to discard.</description>
             </rule>
           </rules>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Biased Referee" hidden="false" id="d0d3-9cfa-05d1-162e" type="selectionEntryGroup" targetId="cfaf-b84a-8075-1c2f"/>
-          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Riotous Rookies" hidden="true" id="4361-1f5a-b2d3-901c" publicationId="46da-ba61-6439-83e5" page="91" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="2426-a99f-190a-ef03" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf20-b832-406f-63a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Riotous Rookies" id="de3e-5964-23af-4cc2" hidden="false" publicationId="46da-ba61-6439-83e5" page="91">
+              <description>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1661,6 +1836,35 @@ Many Biased Referees are named celebrities, although most are not. As with Star 
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Biased Referee" hidden="false" id="61a1-89d8-a350-c805" type="selectionEntryGroup" targetId="cfaf-b84a-8075-1c2f">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="(In)Famous Coaching Staff" hidden="false" id="b6a4-df02-ae3f-8b8b" type="selectionEntryGroup" targetId="3a41-d8e0-044c-2580">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Wizard" hidden="false" id="9498-0e4b-8284-c6e6" type="selectionEntryGroup" targetId="3ecb-df2a-3712-995d">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="8c7a-5e97-01bc-a590" name="Catch" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -4353,83 +4557,6 @@ A coach can choose to end their deal with Steelhelm’s Sporting Emporium in the
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c15c-c163-dae0-bad1" name="Hireling Sports-Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f31-f282-735e-9a73" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="a2f7-c97d-ecf6-5814" name="Fireball" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
-
-• On a roll of 4+, the player has been hit by the Fireball.
-• On a roll of 1-3, the player manages to avoid the Fireball.
-
-Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c317-9290-36ba-80d8" name="Zap!" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
-
-• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
-• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
-
-If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="101a-4a56-1928-d3bc" name="Hireling Sports-Wizard" publicationId="46da-ba61-6439-83e5" page="94" hidden="false">
-          <description>Once per game, a Hireling Sports-Wizard may cast one of the following spells: Fireball, Zap!</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="c52b-5044-c780-bc8c" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="9a71-f2bb-3b43-4b6f" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="678f-a677-bb2b-8859" name="Frog" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1383-b74d-2844-4fa6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9875-9e6e-6d6d-829d" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="aa67-5a2a-9554-6462" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-              <characteristics>
-                <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
-                <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
-                <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
-                <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
-                <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
-                <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
-                <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
-                <characteristic name="Cost" typeId="ee01-7448-8c3f-a882"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="3ebf-4797-1bb9-6fd2" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-            <infoLink id="b546-2ee9-6e1f-d56c" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
-            <infoLink id="2920-baf6-c8b5-7fcb" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-            <infoLink id="ae18-3254-9c41-e9bc" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-            <infoLink id="2c46-7051-037c-00d4" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
-            <infoLink id="a651-34c3-f7c3-9acf" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2177-2aa7-a977-fd03" name="Mercenary Type" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="354e-ff43-6934-028e" value="0">
@@ -4535,272 +4662,6 @@ If the player was in possession of the ball when they were turned into a frog, i
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86c4-9326-f5dd-ffcd" name="Fink Da Fixer" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36e-9abe-e7e1-3479" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="b8b9-485a-e745-0c49" name="&quot;You got it, boss!&quot;" publicationId="9118-6c97-8006-93a4" page="21" hidden="false">
-          <description>Once per game, when your team uses a Bribe, you may re-roll the D6 to see if the Bribe is effective. In addition, when rolling on the Argue the Call table, a coach who has hired Fink treats a roll of 5 or 6 as a “Well, When You Put It Like That…” result and a roll of 2-4 as an “I Don’t Care!” result. However, on a “You’re Outta Here!” result, Fink is Sent-off along with the coach and will play no further part in the game.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="81cd-9c8b-a2a5-4665" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3af8-70a9-614b-3d57" name="Galandril Silverwater" publicationId="9118-6c97-8006-93a4" page="17" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b42-2ea9-ac9f-d788" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="c0af-4e19-5591-dbd0" name="&quot;Go Team!&quot;" publicationId="9118-6c97-8006-93a4" page="17" hidden="false">
-          <description>Each time Galandril’s team rolls Cheering Fans on the Kick-off Event table, add D3 to the number of cheerleaders the team has – if the team does not have any cheerleaders, it counts as having one. In addition, each time Galandril’s team makes a roll on the Prayers to Nuffle table, if a natural 15 or 16 is rolled on the D16 (or, if a D8 is being rolled as in exhibition play, if a natural 8 is rolled), the team gains an additional team re-roll.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="4bd9-3bdc-4b23-e50d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="33b8-1c27-25a2-275e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761b-fce6-2eb5-025c" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="b6ea-50bf-6fd8-f78e" name="Kari Coldsteel" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" typeId="dd08-3a03-4a51-680f" typeName="Star Player">
-          <modifiers>
-            <modifier type="set" field="10f2-d8c7-4011-270d" value="Block, Dauntless, Frenzy">
-              <conditions>
-                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
-            <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
-            <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
-            <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5+</characteristic>
-            <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8+</characteristic>
-            <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+)</characteristic>
-            <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
-            <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="5b89-4eeb-cc13-aad6" name="&quot;If you want a job done...&quot;" publicationId="9118-6c97-8006-93a4" page="15" hidden="false">
-          <description>Kari counts as two Temp Agency Cheerleaders. In addition, if her team cannot set up 11 players at the start of a drive, Kari may decide to “show ‘em how it’s done!”. Her team’s coach can choose to set her up as part of the team. If they do so, she counts as part of the team for the duration of the drive, and no longer counts as two Temp Agency Cheerleaders. When the drive ends, Kari is Sent-off. You cannot Argue the Call or use a Bribe to prevent this. She will play no further part in the game – she does not count as any Temp Agency Cheerleaders, and she cannot be used in a later drive.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="56f9-58b9-66b0-2973" name="Dauntless" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
-        <infoLink id="7524-056f-8645-8936" name="Frenzy" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
-        <infoLink id="971a-c6be-dcad-f09a" name="Block" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
-        <infoLink id="adac-fe4a-78a5-bfab" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="33b8-1c27-25a2-275e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d8e-1440-b9b8-a2b5" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="c1d5-25b1-7c66-862d" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="56b3-5573-9adb-ad7a" name="Krot Shockwhisker" publicationId="9118-6c97-8006-93a4" page="15" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9aa-e209-5956-5d91" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="826a-a89b-8714-7144" name="&quot;A new playthi... er, patient!&quot;" publicationId="9118-6c97-8006-93a4" page="18" hidden="false">
-          <description>Once per game, during Step 2 of the End of Drive sequence, Krot can experiment on a player who has been removed from play as a Casualty, in an attempt to get them back out there. Choose a player that is in the Casualty box of Krot’s team dugout (not a Mercenary or a Star Player). This may even be a player that has suffered a Casualty table result of 15-16, DEAD. Roll a D6 on the table opposite and apply the result to the chosen player:
-
-
-1 - There Were… Complications: The player’s condition has worsened. The coach of the opposing team rolls on the Casualty table to determine exactly what has happened to the player. The result of this roll is applied immediately, in addition to any other Casualty table results already applied. Note that multiple Miss Next Game results do not stack.
-2-3 - Useless Flesh-thing!: Krot’s tinkering has no effect and the player remains in the Casualty box.
-4-5 - Flawed Execution: The player is returned to the Reserves box and can be set up with the rest of the team. However, until the end of the next drive, they gain the Really Stupid (4+) trait. If they already have the Really Stupid (4+) trait, it is replaced with the Really Stupid (5+) trait. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.
-6 - Witness Perfection!: The player is returned to the Reserves box and can be set up with the rest of the team. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="9075-07ad-237f-f9ce" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fe6f-d2cd-7957-9633" name="Mungo Spinecracker" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f37-1e28-57be-6258" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="5254-3bd4-f8ff-78ae" name="&quot;I&apos;m fine thanks, Mungo!&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
-          <description>Whenever a player on your team suffers an Injury result of 8-9, KO’d (or of 7-8, KO’d on the Stunty Injury table), you may roll a D6 before removing them from play:
-
-• On a roll of 1, the player’s protestations fall upon deaf ears and Mungo ‘treats’ his patient. The player becomes a casualty and is immediately removed from play and placed in the Casualty box of their team dugout. No Casualty roll is made. Instead, a Badly Hurt result is automatically applied against them.
-• On a roll of 2-4, the player is badly pummelled but suffers neither lasting harm nor noticeable benefit. The player is removed from play and placed in the Knocked-out box of your team dugout as normal.
-• On a roll of 5 or 6, the player regains their senses remarkably quickly and is able to fend off the ministrations of the Orc. The player remains on the pitch and becomes Stunned.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="b76d-f80a-5eb0-83e3" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d3eb-6589-f664-cb9e" name="Papa Skullbones" publicationId="9118-6c97-8006-93a4" page="16" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b45-01b6-0b9a-d2f5" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="5a9a-a7a9-9019-f799" name="&quot;By the power of the Gods!&quot;" publicationId="9118-6c97-8006-93a4" page="16" hidden="false">
-          <description>At the start of each drive, after the teams have been set up but before the kick-off, Papa Skullbones can attempt to bless one player on his team (not a Mercenary or Star Player) with the power of the Chaos gods. Choose a player on your team from among those on the pitch, and roll a D8 on the table below. Any Skills gained are kept until the end of the drive; if the player already has both Skills, “By the Power of the Gods!” has no effect on them. A player cannot be chosen if a roll has already been made for them during this game.
-
-1 - Unworthy: The player is struck down. The player is immediately removed from play and placed in the Knocked-out box of their team dugout.
-2 - Overlooked: The chosen player is overlooked by the fickle gods. Randomly select another player from the same team, excluding players not on the pitch and players for whom a roll on this
-table has already been made, and roll on this table again.
-3 - Freakish Proportions: The player gains the Big Hand and Very Long Legs skills.
-4 - Grasping Tendrils: The player gains the Tentacles and Prehensile Tail skills.
-5 - Horrific Visage: The player gains the Disturbing Presence and Foul Appearance skills.
-6 - Grisly Bifurcation: The player gains the Extra Arms and Two Heads skills.
-7 - Thorny Protrusions: The player gains the Claws and Horns skills.
-8 - Favour of the Gods: The player gains two Skills of your choice, chosen from the Mutations category.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="3395-5bc3-557d-20ee" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b891-67b6-6431-70ce" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187e-30b1-150e-a1b8" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="1391-4eb5-9902-aff9" name="Bottles of Heady Brew" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-          <description>At the start of a drive, after both teams have been set up but before the kick-off (between Step 1 and Step 2), randomly select D3 players with the Stunty trait that are currently set up on the pitch. For the remainder of this drive, those players gain the Dauntless and Frenzy skills and the Really Stupid (4+) trait.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6905-bc49-6842-6a0a" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a672-a5e0-59f5-e2d6" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="3715-7137-768a-638f" name="Cavorting Nurglings" publicationId="9118-6c97-8006-93a4" page="36" hidden="false">
-          <description>At the beginning of the game, a team may increase its Fan Factor by +1 for each swarm of Cavorting Nurglings it has Induced. In addition, for the duration of this game, a team may increase its number of cheerleaders by the number of Cavorting Nurglings Induced.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d481-a4bd-f6dc-c43d" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342b-32b6-522c-7a52" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="206b-a5fa-f17f-a6e1" name="Dwarfen Runesmith" publicationId="9118-6c97-8006-93a4" page="37" hidden="false">
-          <description>During each Start of Drive sequence, after Step 2 but before Step 3, you can select a single player on your team that is currently on the pitch that does not have the Loner (X+) trait and choose one of the following runes. Then roll a D6:
-
-• On a roll of 4+, the rune takes effect, but you cannot attempt to use the Runesmith again at the start of a later drive.
-• On a roll of 2 or 3, the rune does not work, but you can attempt to use the Runesmith again at the start of a later drive.
-• On a roll of 1, the rune does not work, and you cannot attempt to use the Runesmith again at the start of a later drive.
-
-Dwarfen Runes:
-
-Rune of Might: Until the end of this drive, the chosen player gains the Mighty Blow (+1) skill.
-Rune of Fury: Until the end of this drive, the chosen player gains both the Dauntless andFrenzy skills.
-Rune of Speed: Until the end of this drive, the chosen player gains both the Sprint and Sure Feet skills.
-Rune of Iron: Until the end of this drive, the chosen player’s Armour Value is increased by 1 (to a maximum of 11+) and they gain the Stand Firm skill.
-Rune of Impact: Until the end of this drive, the chosen player gains both the Juggernaut and Horns skills.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="74f2-37ae-f8a2-ad5e" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" page="37" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="ffff-7836-9be4-196c" value="60000">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7035-f38d-a0e0-aa2a" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="5cac-3c64-16b0-c12c" name="Halfling Hot Pot" publicationId="9118-6c97-8006-93a4" hidden="false"/>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5564-dcac-1706-7a79" name="Wandering Apothecaries" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6938-58c7-c93d-48c3" type="max"/>
@@ -4813,45 +4674,6 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="54e1-c0ea-1874-f2a9" name="WAAAGH! Drummer" publicationId="9118-6c97-8006-93a4" page="36" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1e5-6265-e988-efa4" type="max"/>
-      </constraints>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4361-1f5a-b2d3-901c" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf20-b832-406f-63a0" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="de3e-5964-23af-4cc2" name="Riotous Rookies" publicationId="46da-ba61-6439-83e5" page="91" hidden="false">
-          <description>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
@@ -4882,445 +4704,6 @@ Rune of Impact: Until the end of this drive, the chosen player gains both the Ju
       <costs>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="078a-3b62-aa41-e54b" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="957a-c35a-c684-7623" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="2fda-a4fe-29de-a597" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="17ee-862e-54e5-3e1c" name="Temporal Distortion" publicationId="9118-6c97-8006-93a4" page="25" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
-
-You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
-
-• On a roll of 5+, the spell is successful and the turn markers are moved.
-• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="fce6-dacd-5f4d-7a2b" name="Asur High Mage" publicationId="9118-6c97-8006-93a4" page="25" hidden="false">
-          <description>Once per game, an Asur High Mage may cast one of the following spells: Temporal Distortion, Thunderbolt</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="59c8-6240-4d4a-7865" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="1de6-08c4-360b-59bc" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b930-c518-3321-15de" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dfc-1f61-3876-38b2" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="4e56-b1cd-cb57-65bc" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a68a-afe6-722f-dfec" name="Rampant Mutation" publicationId="9118-6c97-8006-93a4" page="23" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns. Choose a player on your team from among those on the pitch, and roll a D6:
-
-• On a roll of 2+, until the end of this drive that player gains two Mutation skills of your choice.
-• On a roll of 1, the player becomes a writhing mass of flesh as raw chaos energy flows through them momentarily. The player gains the Disturbing Presence skill until the end of this drive.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="089e-45b8-9765-a63c" name="Chaos Sorcerer" hidden="false">
-          <description>Once per game, a Chaos Sorcerer may cast one of the following spells: Thunderbolt, Rampant Mutation</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="4843-fd61-3d61-737a" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="2360-c73e-2153-1a39" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="cc76-58a5-f36f-1132" name="Druchii Sports Sorceress" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-54ee-ded4-58b3" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="933b-bf96-4eb1-3b5f" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="6c8d-117f-5ace-5b9d" name="One Thousand Cuts" publicationId="9118-6c97-8006-93a4" page="24" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player is hit by a swirling storm of incorporeal dark magic.
-• On a roll of 1 or 2, the magic engulfs the player briefly before the spell dissipates harmlessly.
-
-Until the end of this drive, the MA, ST, and AG characteristics of a player hit by One Thousand Cuts are reduced by 1.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="ae5c-a264-884c-57f4" name="Chaos Sorcerer" publicationId="9118-6c97-8006-93a4" page="24" hidden="false">
-          <description>Once per game, a Druchii Sports Sorceress may cast one of the following spells: Thunderbolt, One Thousand Cuts</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="75e2-f768-25ee-6b82" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="bc3c-a3a2-e25b-68f1" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3a41-5515-c820-65d0" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0113-224b-5bd9-46fd" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="4e4d-5101-8e00-03e2" name="Strange Fauna" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose an empty target square anywhere on the pitch and nominate D3 Standing opposition players that are within two squares of the target square. Roll a D6 for each nominated player:
-
-• On a roll of 3+, the player is unexpectedly attacked by daemonic plants of prodigious size that erupt from the loamy earth before rapidly rotting away to nothing.
-• On a roll of 1 or 2, the player manages to duck and avoid the attacking flora.
-
-Any Standing players hit by Strange Flora are Knocked Down. When a player is Knocked Down by Strange Flora, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a033-5f2b-c113-1357" name="Vigorous Growth" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. For the duration of this team turn, there is a -2 modifier applied to the dice roll every time an opposition player attempts to Rush.
-
-Note that this modifier applies alongside any other modifiers that apply to attempts to Rush.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="ec24-bb2e-96a6-b912" name="Horticulturalist of Nurgle" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-          <description>Once per game, a Horticulturalist of Nurgle may cast one of the following spells: Vigorous Growth, Strange Flora</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="a238-193e-2894-4a8f" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="dc5d-dfc5-f762-7676" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6859-8eed-31c8-ddcb" name="Night Goblin Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1dd-04d8-2445-22fa" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="4837-ec4b-07ce-fc72" name="Foot of Gork (or Mork)" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 6, the player has been kicked by the Foot of Gork (or Mork)!
-• On a roll of 3-5, the player has been stomped on by the Foot of Gork (or Mork).
-• On a roll of 1 or 2, the player is lucky and the Foot of Gork (or Mork) swings harmlessly over their head.
-
-A Standing player kicked by the Foot of Gork (or Mork) is immediately catapulted through the air. Immediately treat that player as being thrown (as if they had the Right Stuff trait, and as if their Strength is 3 or less should their Strength be 4 or more) by another player (with the Throw Team-mate trait and a Strength of 5 or more), and treat the quality of the throw as terrible.
-
-A Standing player stomped on by the Foot of Gork (or Mork) is Knocked Down. When a player is Knocked Down by the Foot of Gork (or Mork), you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e0ab-bb94-0d8d-df11" name="Spore Cloud" publicationId="9118-6c97-8006-93a4" page="31" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 2+, the player is engulfed by a cloud of Madcap Mushroom spores. Until the end of this drive, the player gains both the Loner (5+) and Really Stupid traits.
-• On a roll of 1, the player begins to sprout strange fungus from their armour, before the spell dissipates harmlessly.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="4edd-50b4-4037-c487" name="Night Goblin Sports Shaman" publicationId="9118-6c97-8006-93a4" page="31" hidden="false">
-          <description>Once per game, a Night Goblin Shaman may cast one of the following spells: Foot of Gork (or Mork), Spore Cloud</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6efb-3356-8b4f-3b30" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d5-c06f-2aa5-e40f" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="def7-4b6f-c203-60b2" name="Reality Blinks" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
-          </characteristics>
-        </profile>
-        <profile id="2082-8935-0b8e-5246" name="Tectonic Shift" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
-          </characteristics>
-        </profile>
-        <profile id="f720-369c-23b4-ccf6" name="Temporal Distortion" publicationId="9118-6c97-8006-93a4" page="26" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
-
-You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
-
-• On a roll of 5+, the spell is successful and the turn markers are moved.
-• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="0f23-dac2-0993-ab8a" name="Slann Mage-Priest" publicationId="9118-6c97-8006-93a4" page="26" hidden="false">
-          <description>Once per game, a Slann Mage-priest may cast one of the
-following spells: Temporal Distortion, Tectonic Shift, Reality Blinks</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="3e42-2163-930e-a6c8" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="a02f-96ce-4a2a-673a" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d750-72f1-f687-e668" name="Ogre Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9eb-a60e-d796-12e4" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="e8a3-ee1e-3b4f-80bd" name="Fireball" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
-
-• On a roll of 4+, the player has been hit by the Fireball.
-• On a roll of 1-3, the player manages to avoid the Fireball.
-
-Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3172-7229-6f62-fa95" name="Column of Fire" publicationId="9118-6c97-8006-93a4" page="30" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose any square that is adjacent to one of the Sidelines to be the Column of Fire’s starting point. The Column of Fire follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Column of Fire’s path:
-
-• On a roll of 4+, the player has been hit by the Column of Fire.
-• On a roll of 1-3, the player is able to duck and avoid the Column of Fire.
-
-Any Standing players hit by the Column of Fire are Knocked Down. When a player is Knocked Down by the Column of Fire, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="a17e-2eb3-60db-868c" name="Firebelly" publicationId="9118-6c97-8006-93a4" page="30" hidden="false">
-          <description>Once per game, a Firebelly may cast one of the following spells: Fireball, Column of Fire</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="bb8c-7eba-45e2-2a1b" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="bfc5-bd23-a722-b0c0" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6eff-7dc2-2068-7f88" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef4b-393e-62f0-231b" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="0c53-a62e-e532-9b53" name="Vanhalable&apos;s Danse Macabre" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Roll a D6:
-
-• On a roll of 3+, your players are suffused with dark vitality. During this team turn, each Lineman positional player on your team that is currently on the pitch (including Journeymen) may improve either their MA, AG or PA by 1. You may choose which of these three bonuses each affected player gains when that player is activated.
-• On a roll of 1 or 2, the sky darkens and the players jerk and spasm furiously, but the spell has no further effect.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7b28-eaa4-4cd8-46d8" name="Incorporeal" publicationId="9118-6c97-8006-93a4" page="27" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player is hit and becomes strangely incorporeal!
-• On a roll of 1 or 2, the player briefly becomes eerily luminous, before the spell dissipates harmlessly.
-
-A player hit by Incorporeal gains the No Hands trait and, if they are in possession of the ball, will immediately drop it, causing it to bounce. Additionally, the player loses their Tackle Zone. The effects of Incorporeal last until the start of the opposition’s next team turn.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="9219-8555-e542-d6d3" name="Sports Necrotheurge" publicationId="9118-6c97-8006-93a4" page="27" hidden="false">
-          <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable&apos;s Danse Macabre</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="90f9-5bf6-58b7-7f1a" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-        <categoryLink id="e03e-fe88-b1a4-0e04" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c503-8403-44c5-2136" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff5-ae27-42d1-f5cb" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="9d8d-667c-18ab-8b29" name="Thunderbolt" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player has been hit by the Thunderbolt.
-• On a roll of 1 or 2, the player manages to duck or dodge the attack.
-
-A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="613a-6fc1-9630-ec25" name="Warp Lightning" publicationId="9118-6c97-8006-93a4" page="29" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose any square that is adjacent to one of the Sidelines to be the Warp Lightning’s starting point. The Warp Lightning follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Warp Lightning’s path:
-
-• On a roll of 3+, the player has been hit by the Warp Lightning.
-• On a roll of 1 or 2, the player is lucky and the bolt zips overhead.
-
-Any Standing players hit by the Warp Lightning are Knocked Down. When a player is Knocked Down by Warp Lightning, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.
-
-Finally, when a player is Knocked Down by Warp Lightning, roll a D6. On a roll of 1, the Warp Lightning is earthed through the player. Do not roll to see if any more players are hit. On a roll of 2+, the Warp Lightning continues along its path, as described above.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="aaee-03ef-be1f-6acf" name="Warlock Engineer" publicationId="9118-6c97-8006-93a4" page="29" hidden="false">
-          <description>Once per game, a Warlock Engineer may cast one of the following spells: Warp Lightning, Thunderbolt</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="120d-5941-aaf0-abf3" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="192e-e700-b5f6-48a6" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0ece-1731-f4ae-1263" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72e-9b30-adb2-313b" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="ae6c-3882-efa7-300e" name="Plague of Warts" publicationId="9118-6c97-8006-93a4" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
-
-• On a roll of 3+, the player is hit and their skin unexpectedly erupts into a mass of warts.
-• On a roll of 1 or 2, the player develops a few unsightly blemishes, but is otherwise unaffected.
-
-Until the end of this drive, the MA, ST, and AG characteristics of a player hit by Plague of Warts are reduced by 1. Additionally, until the end of this drive, a player hit by Plague of Warts gains the Disturbing Presence and Foul Appearance skills.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="26b2-dfb5-62f5-e886" name="Zap!" publicationId="46da-ba61-6439-83e5" page="28" hidden="false" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell">
-          <characteristics>
-            <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
-
-• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
-• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
-
-If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="9845-a278-7f71-3458" name="Wicked Witch" publicationId="9118-6c97-8006-93a4" page="28" hidden="false">
-          <description>Once per game, a Wicked Witch may cast one of the following spells:</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="47c6-770d-d36c-6ad0" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-        <categoryLink id="04ed-179a-266e-5db6" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f95e-0a73-310a-9ef6" name="Frog" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c63f-76cb-f179-fdc6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f829-b659-73b7-060c" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="2665-19eb-2888-cc7f" name="Frog" publicationId="46da-ba61-6439-83e5" page="94" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-              <characteristics>
-                <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
-                <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
-                <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
-                <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
-                <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
-                <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
-                <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
-                <characteristic name="Cost" typeId="ee01-7448-8c3f-a882"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="fbe1-7b75-aabf-e4c8" name="Dodge" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
-            <infoLink id="38bf-85a6-7235-39d5" name="Leap" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
-            <infoLink id="32b3-fe2a-61ab-db39" name="Stunty" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
-            <infoLink id="ead2-6e4c-1d72-2995" name="No Hands" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
-            <infoLink id="e178-b43c-8547-1f99" name="Titchy" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
-            <infoLink id="feac-efdf-b1dc-895c" name="Very Long Legs" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
@@ -5393,32 +4776,6 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="157f-649b-9c97-9e54" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686a-6527-1419-0916" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="7cda-7db6-798f-5720" name="Master of Ballistics" publicationId="9118-6c97-8006-93a4" page="38" hidden="false">
-          <description>During Step 2 of every Start of Drive sequence, the Master of Ballistics can attempt to advise the kicker. After placing the ball but before rolling for deviation, roll a D3 on the following table:
-
-1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
-2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
-3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="4d8e-1440-b9b8-a2b5" name="Familiar Face" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="639c-a6a5-0448-b3d6" type="max"/>
@@ -5455,30 +4812,6 @@ If a Wizard Inducement is not named, there is no restriction on both teams field
       <costs>
         <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
         <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b271-e78e-eae2-ab80" name="Professor Frönkelheim" publicationId="9118-6c97-8006-93a4" page="20" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fbb-5b56-5c84-dd85" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="b992-53b7-5cf8-01ed" name="&quot;Have you thought about an upgrade?.&quot;" publicationId="9118-6c97-8006-93a4" page="20" hidden="false">
-          <description>During the pre-game sequence, after Step 4 but before Step 5, randomly select D3 players on your team that are eligible to play during this game. These players have been modified by the professor.
-
-Until the end of this game, each selected player gains a single randomly selected Skill from the Mutations category. However, at the start of Step 3 of the post-game sequence, roll a D6 for each of these players (unless they suffered, and did not recover from, a Casualty table result of 15-16, DEAD during the game):
-
-• On a roll of 1, the experiment proves a bit of a failure, really. The player immediately loses the Skill. In addition, the player must miss the next game, exactly as if they had suffered a Casualty table result of 7-9, Seriously Hurt, during this game.
-• On a roll of 2-5, the experiment proved only a short-lived success. The player immediately loses the Skill.
-• On a roll of 6, the professor’s experiments have proven a total success! The player retains the Skill without having to spend any SPP (note that you must adjust their Current Value accordingly, as if the player had randomly selected a Secondary skill).</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="1948-f05b-d7d0-57d2" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
@@ -9984,6 +9317,13 @@ Until the end of this game, each selected player gains a single randomly selecte
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9a91-05c8-41d2-cb56" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Special Rules" hidden="false" id="699b-1221-d1b1-2c47" flatten="false"/>
     <selectionEntry type="upgrade" import="true" name="Badlands Brawl" hidden="false" id="c605-2010-fb97-0f51"/>
@@ -9998,6 +9338,7 @@ Until the end of this game, each selected player gains a single randomly selecte
     <selectionEntry type="upgrade" import="true" name="Worlds Edge Superleague" hidden="false" id="d5be-b66d-7065-f9af"/>
     <selectionEntry type="upgrade" import="true" name="Masters of Undeath" hidden="false" id="61e4-f3be-1bc0-a63f"/>
     <selectionEntry type="upgrade" import="true" name="Vampire Lord" hidden="false" id="cabe-6683-3d3e-42c1"/>
+    <selectionEntry type="upgrade" import="true" name="Tier 3" hidden="false" id="a895-b624-e202-2da8"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="a9f9-2fd7-71ab-0b5d" name="Career" hidden="false" collective="false" import="true">
@@ -11115,6 +10456,13 @@ Each Journeyman counts towards CTV as normal; their value does not increase for 
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="1a67-057a-1038-3465" name="Schielund Scharlitan" publicationId="9118-6c97-8006-93a4" page="21" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -11139,6 +10487,333 @@ Until the end of this game, each selected player gains the Pro skill. However, a
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kari Coldsteel" hidden="true" id="33b8-1c27-25a2-275e" publicationId="9118-6c97-8006-93a4" page="15" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="761b-fce6-2eb5-025c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Kari Coldsteel" typeId="dd08-3a03-4a51-680f" typeName="Star Player" hidden="false" id="b6ea-50bf-6fd8-f78e" publicationId="9118-6c97-8006-93a4" page="15">
+              <characteristics>
+                <characteristic name="MA" typeId="c479-66cc-841d-ebbc">6</characteristic>
+                <characteristic name="ST" typeId="0d07-dc3f-bf2a-fca6">2</characteristic>
+                <characteristic name="AG" typeId="602a-49ce-fcda-8909">3+</characteristic>
+                <characteristic name="PA" typeId="698d-46bb-7d1c-b7ac">5+</characteristic>
+                <characteristic name="AV" typeId="7d2d-d7f0-ad66-113a">8+</characteristic>
+                <characteristic name="Skills &amp; Traits" typeId="10f2-d8c7-4011-270d">Block, Dauntless, Frenzy, Loner (4+)</characteristic>
+                <characteristic name="Cost" typeId="7ae2-1388-c0bb-3e56"/>
+                <characteristic typeId="8747-87f7-0c53-5744" name="Special Rules"/>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Block, Dauntless, Frenzy" field="10f2-d8c7-4011-270d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="33b8-1c27-25a2-275e" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="&quot;If you want a job done...&quot;" id="5b89-4eeb-cc13-aad6" hidden="false" publicationId="9118-6c97-8006-93a4" page="15">
+              <description>Kari counts as two Temp Agency Cheerleaders. In addition, if her team cannot set up 11 players at the start of a drive, Kari may decide to “show ‘em how it’s done!”. Her team’s coach can choose to set her up as part of the team. If they do so, she counts as part of the team for the duration of the drive, and no longer counts as two Temp Agency Cheerleaders. When the drive ends, Kari is Sent-off. You cannot Argue the Call or use a Bribe to prevent this. She will play no further part in the game – she does not count as any Temp Agency Cheerleaders, and she cannot be used in a later drive.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Dauntless" id="56f9-58b9-66b0-2973" hidden="false" targetId="cc62-f3d9-8892-3221" type="rule"/>
+            <infoLink name="Frenzy" id="7524-056f-8645-8936" hidden="false" targetId="ada1-ad9a-4cb6-7d25" type="rule"/>
+            <infoLink name="Block" id="971a-c6be-dcad-f09a" hidden="false" targetId="85d6-6762-259b-ff52" type="rule"/>
+            <infoLink name="Loner (4+)" id="adac-fe4a-78a5-bfab" hidden="false" targetId="b448-c8db-4598-1aab" type="rule">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="33b8-1c27-25a2-275e" childId="4d8e-1440-b9b8-a2b5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="c1d5-25b1-7c66-862d" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="5581-bb5e-6d85-79d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="595b-11f0-1786-ca72" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Papa Skullbones" hidden="true" id="d3eb-6589-f664-cb9e" publicationId="9118-6c97-8006-93a4" page="16" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b45-01b6-0b9a-d2f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&quot;By the power of the Gods!&quot;" id="5a9a-a7a9-9019-f799" hidden="false" publicationId="9118-6c97-8006-93a4" page="16">
+              <description>At the start of each drive, after the teams have been set up but before the kick-off, Papa Skullbones can attempt to bless one player on his team (not a Mercenary or Star Player) with the power of the Chaos gods. Choose a player on your team from among those on the pitch, and roll a D8 on the table below. Any Skills gained are kept until the end of the drive; if the player already has both Skills, “By the Power of the Gods!” has no effect on them. A player cannot be chosen if a roll has already been made for them during this game.
+
+1 - Unworthy: The player is struck down. The player is immediately removed from play and placed in the Knocked-out box of their team dugout.
+2 - Overlooked: The chosen player is overlooked by the fickle gods. Randomly select another player from the same team, excluding players not on the pitch and players for whom a roll on this
+table has already been made, and roll on this table again.
+3 - Freakish Proportions: The player gains the Big Hand and Very Long Legs skills.
+4 - Grasping Tendrils: The player gains the Tentacles and Prehensile Tail skills.
+5 - Horrific Visage: The player gains the Disturbing Presence and Foul Appearance skills.
+6 - Grisly Bifurcation: The player gains the Extra Arms and Two Heads skills.
+7 - Thorny Protrusions: The player gains the Claws and Horns skills.
+8 - Favour of the Gods: The player gains two Skills of your choice, chosen from the Mutations category.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="3395-5bc3-557d-20ee" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b38d-6ca8-2092-1c48" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Galandril Silverwater" hidden="true" id="3af8-70a9-614b-3d57" publicationId="9118-6c97-8006-93a4" page="17" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b42-2ea9-ac9f-d788" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&quot;Go Team!&quot;" id="c0af-4e19-5591-dbd0" hidden="false" publicationId="9118-6c97-8006-93a4" page="17">
+              <description>Each time Galandril’s team rolls Cheering Fans on the Kick-off Event table, add D3 to the number of cheerleaders the team has – if the team does not have any cheerleaders, it counts as having one. In addition, each time Galandril’s team makes a roll on the Prayers to Nuffle table, if a natural 15 or 16 is rolled on the D16 (or, if a D8 is being rolled as in exhibition play, if a natural 8 is rolled), the team gains an additional team re-roll.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="4bd9-3bdc-4b23-e50d" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="595b-11f0-1786-ca72" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Krot Shockwhisker" hidden="true" id="56b3-5573-9adb-ad7a" publicationId="9118-6c97-8006-93a4" page="15" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9aa-e209-5956-5d91" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&quot;A new playthi... er, patient!&quot;" id="826a-a89b-8714-7144" hidden="false" publicationId="9118-6c97-8006-93a4" page="18">
+              <description>Once per game, during Step 2 of the End of Drive sequence, Krot can experiment on a player who has been removed from play as a Casualty, in an attempt to get them back out there. Choose a player that is in the Casualty box of Krot’s team dugout (not a Mercenary or a Star Player). This may even be a player that has suffered a Casualty table result of 15-16, DEAD. Roll a D6 on the table opposite and apply the result to the chosen player:
+
+
+1 - There Were… Complications: The player’s condition has worsened. The coach of the opposing team rolls on the Casualty table to determine exactly what has happened to the player. The result of this roll is applied immediately, in addition to any other Casualty table results already applied. Note that multiple Miss Next Game results do not stack.
+2-3 - Useless Flesh-thing!: Krot’s tinkering has no effect and the player remains in the Casualty box.
+4-5 - Flawed Execution: The player is returned to the Reserves box and can be set up with the rest of the team. However, until the end of the next drive, they gain the Really Stupid (4+) trait. If they already have the Really Stupid (4+) trait, it is replaced with the Really Stupid (5+) trait. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.
+6 - Witness Perfection!: The player is returned to the Reserves box and can be set up with the rest of the team. At the end of this drive, the player is returned to the Casualty box, where the effects of the Casualty roll that was previously made against them are applied as normal.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="9075-07ad-237f-f9ce" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="70000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Professor Frönkelheim" hidden="true" id="b271-e78e-eae2-ab80" publicationId="9118-6c97-8006-93a4" page="20" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fbb-5b56-5c84-dd85" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&quot;Have you thought about an upgrade?.&quot;" id="b992-53b7-5cf8-01ed" hidden="false" publicationId="9118-6c97-8006-93a4" page="20">
+              <description>During the pre-game sequence, after Step 4 but before Step 5, randomly select D3 players on your team that are eligible to play during this game. These players have been modified by the professor.
+
+Until the end of this game, each selected player gains a single randomly selected Skill from the Mutations category. However, at the start of Step 3 of the post-game sequence, roll a D6 for each of these players (unless they suffered, and did not recover from, a Casualty table result of 15-16, DEAD during the game):
+
+• On a roll of 1, the experiment proves a bit of a failure, really. The player immediately loses the Skill. In addition, the player must miss the next game, exactly as if they had suffered a Casualty table result of 7-9, Seriously Hurt, during this game.
+• On a roll of 2-5, the experiment proved only a short-lived success. The player immediately loses the Skill.
+• On a roll of 6, the professor’s experiments have proven a total success! The player retains the Skill without having to spend any SPP (note that you must adjust their Current Value accordingly, as if the player had randomly selected a Secondary skill).</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="1948-f05b-d7d0-57d2" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="130000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="bf62-4437-3f84-7611" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mungo Spinecracker" hidden="true" id="fe6f-d2cd-7957-9633" publicationId="9118-6c97-8006-93a4" page="20" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f37-1e28-57be-6258" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&quot;I&apos;m fine thanks, Mungo!&quot;" id="5254-3bd4-f8ff-78ae" hidden="false" publicationId="9118-6c97-8006-93a4" page="20">
+              <description>Whenever a player on your team suffers an Injury result of 8-9, KO’d (or of 7-8, KO’d on the Stunty Injury table), you may roll a D6 before removing them from play:
+
+• On a roll of 1, the player’s protestations fall upon deaf ears and Mungo ‘treats’ his patient. The player becomes a casualty and is immediately removed from play and placed in the Casualty box of their team dugout. No Casualty roll is made. Instead, a Badly Hurt result is automatically applied against them.
+• On a roll of 2-4, the player is badly pummelled but suffers neither lasting harm nor noticeable benefit. The player is removed from play and placed in the Knocked-out box of your team dugout as normal.
+• On a roll of 5 or 6, the player regains their senses remarkably quickly and is able to fend off the ministrations of the Orc. The player remains on the pitch and becomes Stunned.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="b76d-f80a-5eb0-83e3" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fink Da Fixer" hidden="true" id="86c4-9326-f5dd-ffcd" publicationId="9118-6c97-8006-93a4" page="21" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36e-9abe-e7e1-3479" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="&quot;You got it, boss!&quot;" id="b8b9-485a-e745-0c49" hidden="false" publicationId="9118-6c97-8006-93a4" page="21">
+              <description>Once per game, when your team uses a Bribe, you may re-roll the D6 to see if the Bribe is effective. In addition, when rolling on the Argue the Call table, a coach who has hired Fink treats a roll of 5 or 6 as a “Well, When You Put It Like That…” result and a roll of 2-4 as an “I Don’t Care!” result. However, on a “You’re Outta Here!” result, Fink is Sent-off along with the coach and will play no further part in the game.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="(In)Famous Coaching Staff" hidden="false" id="81cd-9c8b-a2a5-4665" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="90000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -11182,6 +10857,11 @@ Until the end of this game, each selected player gains the Pro skill. However, a
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="172c-824e-bd16-0edf" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e2-af0a-9d17-ed74" type="max"/>
@@ -11210,6 +10890,11 @@ Once spotted by Jorm in this way (and only in this way), the player that committ
             <modifier type="set" field="ffff-7836-9be4-196c" value="40000">
               <conditions>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="43d1-827e-3932-1857" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -11268,10 +10953,17 @@ Once spotted by Ranulf in this way (and only in this way), the coach of the play
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="5581-bb5e-6d85-79d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5581-bb5e-6d85-79d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -11302,9 +10994,14 @@ Once spotted by Korensson in this way (and only in this way), the player that co
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -11315,7 +11012,7 @@ Once spotted by Korensson in this way (and only in this way), the player that co
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6b-b9ae-bc64-7ce5" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="9653-7797-e648-e9bf" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9653-7797-e648-e9bf" name="Horatio X. Schottenheim" publicationId="9118-6c97-8006-93a4" page="32" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc0-d822-0b57-7120" type="max"/>
           </constraints>
@@ -11338,18 +11035,686 @@ Any Standing players hit by the Fireball are Knocked Down. When a player is Knoc
           </rules>
           <categoryLinks>
             <categoryLink id="4422-efd1-fafe-72ff" name="Wizard" hidden="false" targetId="91a4-082f-7021-eb9a" primary="false"/>
-            <categoryLink id="d1f5-05cb-38c5-c928" name="(In)Famous Coaching Staff" hidden="false" targetId="0b84-c59e-fbf9-8c16" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chaos Sorcerer" hidden="true" id="b930-c518-3321-15de" publicationId="9118-6c97-8006-93a4" page="23" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dfc-1f61-3876-38b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thunderbolt" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="4e56-b1cd-cb57-65bc" publicationId="9118-6c97-8006-93a4" page="23">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rampant Mutation" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="a68a-afe6-722f-dfec" publicationId="9118-6c97-8006-93a4" page="23">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns. Choose a player on your team from among those on the pitch, and roll a D6:
+
+• On a roll of 2+, until the end of this drive that player gains two Mutation skills of your choice.
+• On a roll of 1, the player becomes a writhing mass of flesh as raw chaos energy flows through them momentarily. The player gains the Disturbing Presence skill until the end of this drive.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Chaos Sorcerer" id="089e-45b8-9765-a63c" hidden="false">
+              <description>Once per game, a Chaos Sorcerer may cast one of the following spells: Thunderbolt, Rampant Mutation</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="4843-fd61-3d61-737a" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b38d-6ca8-2092-1c48" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Druchii Sports Sorceress" hidden="true" id="cc76-58a5-f36f-1132" publicationId="9118-6c97-8006-93a4" page="24" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a042-54ee-ded4-58b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thunderbolt" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="933b-bf96-4eb1-3b5f" publicationId="9118-6c97-8006-93a4" page="24">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="One Thousand Cuts" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="6c8d-117f-5ace-5b9d" publicationId="9118-6c97-8006-93a4" page="24">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player is hit by a swirling storm of incorporeal dark magic.
+• On a roll of 1 or 2, the magic engulfs the player briefly before the spell dissipates harmlessly.
+
+Until the end of this drive, the MA, ST, and AG characteristics of a player hit by One Thousand Cuts are reduced by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Druchii Sports Sorceress" id="ae5c-a264-884c-57f4" hidden="false" publicationId="9118-6c97-8006-93a4" page="24">
+              <description>Once per game, a Druchii Sports Sorceress may cast one of the following spells: Thunderbolt, One Thousand Cuts</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="75e2-f768-25ee-6b82" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b38d-6ca8-2092-1c48" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="595b-11f0-1786-ca72" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Asur High Mage" hidden="true" id="078a-3b62-aa41-e54b" publicationId="9118-6c97-8006-93a4" page="25" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="957a-c35a-c684-7623" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thunderbolt" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="2fda-a4fe-29de-a597" publicationId="9118-6c97-8006-93a4" page="25">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Temporal Distortion" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="17ee-862e-54e5-3e1c" publicationId="9118-6c97-8006-93a4" page="25">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
+
+You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
+
+• On a roll of 5+, the spell is successful and the turn markers are moved.
+• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Asur High Mage" id="fce6-dacd-5f4d-7a2b" hidden="false" publicationId="9118-6c97-8006-93a4" page="25">
+              <description>Once per game, an Asur High Mage may cast one of the following spells: Temporal Distortion, Thunderbolt</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="59c8-6240-4d4a-7865" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="595b-11f0-1786-ca72" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Slann Mage-Priest" hidden="true" id="6efb-3356-8b4f-3b30" publicationId="9118-6c97-8006-93a4" page="26" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d5-c06f-2aa5-e40f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Reality Blinks" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="def7-4b6f-c203-60b2" publicationId="9118-6c97-8006-93a4" page="26">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
+              </characteristics>
+            </profile>
+            <profile name="Tectonic Shift" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="2082-8935-0b8e-5246" publicationId="9118-6c97-8006-93a4" page="26">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e"/>
+              </characteristics>
+            </profile>
+            <profile name="Temporal Distortion" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="f720-369c-23b4-ccf6" publicationId="9118-6c97-8006-93a4" page="26">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Magical energy fills the stadium, causing the passage of time to slow down or speed up as the High Mage wishes.
+
+You may attempt to move both teams’ turn markers forwards or backwards one space, effectively causing both teams to gain an extra turn this half or lose one of the remaining turns. Both turn markers must move in the same direction. Declare whether you wish to move the turn markers forwards one space or backwards one space and roll a D6:
+
+• On a roll of 5+, the spell is successful and the turn markers are moved.
+• On a roll of 1-4, the stadium fills with light and the strangely localised effects cause the High Mage to rapidly age or become unexpectedly more youthful, but otherwise the spell has no effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Slann Mage-Priest" id="0f23-dac2-0993-ab8a" hidden="false" publicationId="9118-6c97-8006-93a4" page="26">
+              <description>Once per game, a Slann Mage-priest may cast one of the
+following spells: Temporal Distortion, Tectonic Shift, Reality Blinks</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="3e42-2163-930e-a6c8" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="200000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5581-bb5e-6d85-79d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Horticulturalist of Nurgle" hidden="true" id="3a41-5515-c820-65d0" publicationId="9118-6c97-8006-93a4" page="27" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0113-224b-5bd9-46fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Strange Fauna" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="4e4d-5101-8e00-03e2" publicationId="9118-6c97-8006-93a4" page="27">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose an empty target square anywhere on the pitch and nominate D3 Standing opposition players that are within two squares of the target square. Roll a D6 for each nominated player:
+
+• On a roll of 3+, the player is unexpectedly attacked by daemonic plants of prodigious size that erupt from the loamy earth before rapidly rotting away to nothing.
+• On a roll of 1 or 2, the player manages to duck and avoid the attacking flora.
+
+Any Standing players hit by Strange Flora are Knocked Down. When a player is Knocked Down by Strange Flora, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Vigorous Growth" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="a033-5f2b-c113-1357" publicationId="9118-6c97-8006-93a4" page="27">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. For the duration of this team turn, there is a -2 modifier applied to the dice roll every time an opposition player attempts to Rush.
+
+Note that this modifier applies alongside any other modifiers that apply to attempts to Rush.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Horticulturalist of Nurgle" id="ec24-bb2e-96a6-b912" hidden="false" publicationId="9118-6c97-8006-93a4" page="27">
+              <description>Once per game, a Horticulturalist of Nurgle may cast one of the following spells: Vigorous Growth, Strange Flora</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="a238-193e-2894-4a8f" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sports Necrotheurge" hidden="true" id="6eff-7dc2-2068-7f88" publicationId="9118-6c97-8006-93a4" page="27" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef4b-393e-62f0-231b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Vanhalable&apos;s Danse Macabre" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="0c53-a62e-e532-9b53" publicationId="9118-6c97-8006-93a4" page="27">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell immediately after any of the opposition’s team turns has ended. Roll a D6:
+
+• On a roll of 3+, your players are suffused with dark vitality. During this team turn, each Lineman positional player on your team that is currently on the pitch (including Journeymen) may improve either their MA, AG or PA by 1. You may choose which of these three bonuses each affected player gains when that player is activated.
+• On a roll of 1 or 2, the sky darkens and the players jerk and spasm furiously, but the spell has no further effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Incorporeal" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="7b28-eaa4-4cd8-46d8" publicationId="9118-6c97-8006-93a4" page="27">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player is hit and becomes strangely incorporeal!
+• On a roll of 1 or 2, the player briefly becomes eerily luminous, before the spell dissipates harmlessly.
+
+A player hit by Incorporeal gains the No Hands trait and, if they are in possession of the ball, will immediately drop it, causing it to bounce. Additionally, the player loses their Tackle Zone. The effects of Incorporeal last until the start of the opposition’s next team turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Sports Necrotheurge" id="9219-8555-e542-d6d3" hidden="false" publicationId="9118-6c97-8006-93a4" page="27">
+              <description>Once per game, a Sports Necrotheurge may cast one of the following spells: Incorporeal, Vanhalable&apos;s Danse Macabre</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="e03e-fe88-b1a4-0e04" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bf62-4437-3f84-7611" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wicked Witch" hidden="true" id="0ece-1731-f4ae-1263" publicationId="9118-6c97-8006-93a4" page="28" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b72e-9b30-adb2-313b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Plague of Warts" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="ae6c-3882-efa7-300e" publicationId="9118-6c97-8006-93a4" page="28">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player is hit and their skin unexpectedly erupts into a mass of warts.
+• On a roll of 1 or 2, the player develops a few unsightly blemishes, but is otherwise unaffected.
+
+Until the end of this drive, the MA, ST, and AG characteristics of a player hit by Plague of Warts are reduced by 1. Additionally, until the end of this drive, a player hit by Plague of Warts gains the Disturbing Presence and Foul Appearance skills.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Zap!" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="26b2-dfb5-62f5-e886" publicationId="46da-ba61-6439-83e5" page="28">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
+
+• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
+• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
+
+If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Wicked Witch" id="9845-a278-7f71-3458" hidden="false" publicationId="9118-6c97-8006-93a4" page="28">
+              <description>Once per game, a Wicked Witch may cast one of the following spells:</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="47c6-770d-d36c-6ad0" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frog" hidden="false" id="f95e-0a73-310a-9ef6" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c63f-76cb-f179-fdc6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f829-b659-73b7-060c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Frog" typeId="6abd-9371-31b8-653a" typeName="Player" hidden="false" id="2665-19eb-2888-cc7f" publicationId="46da-ba61-6439-83e5" page="94">
+                  <characteristics>
+                    <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
+                    <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
+                    <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
+                    <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
+                    <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
+                    <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+                    <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
+                    <characteristic name="Cost" typeId="ee01-7448-8c3f-a882"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dodge" id="fbe1-7b75-aabf-e4c8" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+                <infoLink name="Leap" id="38bf-85a6-7235-39d5" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
+                <infoLink name="Stunty" id="32b3-fe2a-61ab-db39" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+                <infoLink name="No Hands" id="ead2-6e4c-1d72-2995" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+                <infoLink name="Titchy" id="e178-b43c-8547-1f99" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
+                <infoLink name="Very Long Legs" id="feac-efdf-b1dc-895c" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="bf62-4437-3f84-7611" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warlock Engineer" hidden="true" id="c503-8403-44c5-2136" publicationId="9118-6c97-8006-93a4" page="29" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cff5-ae27-42d1-f5cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thunderbolt" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="9d8d-667c-18ab-8b29" publicationId="9118-6c97-8006-93a4" page="29">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 3+, the player has been hit by the Thunderbolt.
+• On a roll of 1 or 2, the player manages to duck or dodge the attack.
+
+A Standing player hit by a Thunderbolt is Knocked Down. When a player is Knocked Down by a Thunderbolt, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Warp Lightning" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="613a-6fc1-9630-ec25" publicationId="9118-6c97-8006-93a4" page="29">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose any square that is adjacent to one of the Sidelines to be the Warp Lightning’s starting point. The Warp Lightning follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Warp Lightning’s path:
+
+• On a roll of 3+, the player has been hit by the Warp Lightning.
+• On a roll of 1 or 2, the player is lucky and the bolt zips overhead.
+
+Any Standing players hit by the Warp Lightning are Knocked Down. When a player is Knocked Down by Warp Lightning, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.
+
+Finally, when a player is Knocked Down by Warp Lightning, roll a D6. On a roll of 1, the Warp Lightning is earthed through the player. Do not roll to see if any more players are hit. On a roll of 2+, the Warp Lightning continues along its path, as described above.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Warlock Engineer" id="aaee-03ef-be1f-6acf" hidden="false" publicationId="9118-6c97-8006-93a4" page="29">
+              <description>Once per game, a Warlock Engineer may cast one of the following spells: Warp Lightning, Thunderbolt</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="120d-5941-aaf0-abf3" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ogre Firebelly" hidden="true" id="d750-72f1-f687-e668" publicationId="9118-6c97-8006-93a4" page="30" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9eb-a60e-d796-12e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Fireball" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="e8a3-ee1e-3b4f-80bd" publicationId="9118-6c97-8006-93a4" page="30">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
+
+• On a roll of 4+, the player has been hit by the Fireball.
+• On a roll of 1-3, the player manages to avoid the Fireball.
+
+Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Column of Fire" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="3172-7229-6f62-fa95" publicationId="9118-6c97-8006-93a4" page="30">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose any square that is adjacent to one of the Sidelines to be the Column of Fire’s starting point. The Column of Fire follows a path from one Sideline to the other, moving in a straight line from its starting point directly towards the opposite Sideline. Roll a D6 for every Standing player (from either team) that occupies a square in the Column of Fire’s path:
+
+• On a roll of 4+, the player has been hit by the Column of Fire.
+• On a roll of 1-3, the player is able to duck and avoid the Column of Fire.
+
+Any Standing players hit by the Column of Fire are Knocked Down. When a player is Knocked Down by the Column of Fire, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Firebelly" id="a17e-2eb3-60db-868c" hidden="false" publicationId="9118-6c97-8006-93a4" page="30">
+              <description>Once per game, a Firebelly may cast one of the following spells: Fireball, Column of Fire</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="bb8c-7eba-45e2-2a1b" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Night Goblin Shaman" hidden="true" id="6859-8eed-31c8-ddcb" publicationId="9118-6c97-8006-93a4" page="31" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1dd-04d8-2445-22fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Foot of Gork (or Mork)" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="4837-ec4b-07ce-fc72" publicationId="9118-6c97-8006-93a4" page="31">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 6, the player has been kicked by the Foot of Gork (or Mork)!
+• On a roll of 3-5, the player has been stomped on by the Foot of Gork (or Mork).
+• On a roll of 1 or 2, the player is lucky and the Foot of Gork (or Mork) swings harmlessly over their head.
+
+A Standing player kicked by the Foot of Gork (or Mork) is immediately catapulted through the air. Immediately treat that player as being thrown (as if they had the Right Stuff trait, and as if their Strength is 3 or less should their Strength be 4 or more) by another player (with the Throw Team-mate trait and a Strength of 5 or more), and treat the quality of the throw as terrible.
+
+A Standing player stomped on by the Foot of Gork (or Mork) is Knocked Down. When a player is Knocked Down by the Foot of Gork (or Mork), you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Spore Cloud" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="e0ab-bb94-0d8d-df11" publicationId="9118-6c97-8006-93a4" page="31">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the start of any of the opposition’s team turns, before any player is activated. Target any Standing opposition player anywhere on the pitch, and roll a D6:
+
+• On a roll of 2+, the player is engulfed by a cloud of Madcap Mushroom spores. Until the end of this drive, the player gains both the Loner (5+) and Really Stupid traits.
+• On a roll of 1, the player begins to sprout strange fungus from their armour, before the spell dissipates harmlessly.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Night Goblin Sports Shaman" id="4edd-50b4-4037-c487" hidden="false" publicationId="9118-6c97-8006-93a4" page="31">
+              <description>Once per game, a Night Goblin Shaman may cast one of the following spells: Foot of Gork (or Mork), Spore Cloud</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae0-7abc-07a0-e07b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="91a4-082f-7021-eb9a" id="5b46-49c3-126b-ff4f" primary="false" name="Wizard"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hireling Sports-Wizard" hidden="false" id="c15c-c163-dae0-bad1" publicationId="46da-ba61-6439-83e5" page="94" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f31-f282-735e-9a73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Fireball" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="a2f7-c97d-ecf6-5814" publicationId="46da-ba61-6439-83e5" page="94">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell at the end of either player’s team turn, before the next team turn begins. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:
+
+• On a roll of 4+, the player has been hit by the Fireball.
+• On a roll of 1-3, the player manages to avoid the Fireball.
+
+Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Zap!" typeId="cb3f-e686-5d53-4922" typeName="Wizard Spell" hidden="false" id="c317-9290-36ba-80d8" publicationId="46da-ba61-6439-83e5" page="94">
+              <characteristics>
+                <characteristic name="Spell Details" typeId="5dfd-e237-bb00-d97e">You may cast this spell either at the start of any of the opposition’s team turns, before any player is activated, or immediately after any of the opposition’s team turns has ended. Target any opposition player and roll a D6:
+
+• If the roll is equal to or higher than the player’s Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.
+• If the roll is lower than the player’s Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.
+
+If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it&apos;s a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Hireling Sports-Wizard" id="101a-4a56-1928-d3bc" hidden="false" publicationId="46da-ba61-6439-83e5" page="94">
+              <description>Once per game, a Hireling Sports-Wizard may cast one of the following spells: Fireball, Zap!</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Wizard" hidden="false" id="c52b-5044-c780-bc8c" targetId="91a4-082f-7021-eb9a" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frog" hidden="false" id="678f-a677-bb2b-8859" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1383-b74d-2844-4fa6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9875-9e6e-6d6d-829d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Frog" typeId="6abd-9371-31b8-653a" typeName="Player" hidden="false" id="aa67-5a2a-9554-6462" publicationId="46da-ba61-6439-83e5" page="94">
+                  <characteristics>
+                    <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">5</characteristic>
+                    <characteristic name="ST" typeId="120f-0f56-f450-196c">1</characteristic>
+                    <characteristic name="AG" typeId="29f4-c9a2-f996-4723">2+</characteristic>
+                    <characteristic name="PA" typeId="90cd-0493-9510-60b5">-</characteristic>
+                    <characteristic name="AV" typeId="c77a-49e5-750a-1adc">5+</characteristic>
+                    <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</characteristic>
+                    <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d"/>
+                    <characteristic name="Secondary" typeId="9491-8b10-7b30-9358"/>
+                    <characteristic name="Cost" typeId="ee01-7448-8c3f-a882"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dodge" id="3ebf-4797-1bb9-6fd2" hidden="false" targetId="8067-56fd-9601-7895" type="rule"/>
+                <infoLink name="Leap" id="b546-2ee9-6e1f-d56c" hidden="false" targetId="62a8-1e29-091e-39a0" type="rule"/>
+                <infoLink name="Stunty" id="2920-baf6-c8b5-7fcb" hidden="false" targetId="877b-48d3-5f89-ddfb" type="rule"/>
+                <infoLink name="No Hands" id="ae18-3254-9c41-e9bc" hidden="false" targetId="d13f-1261-cf85-e142" type="rule"/>
+                <infoLink name="Titchy" id="2c46-7051-037c-00d4" hidden="false" targetId="d2c2-10f5-4f6c-4788" type="rule"/>
+                <infoLink name="Very Long Legs" id="a651-34c3-f7c3-9acf" hidden="false" targetId="6cdf-5485-bd58-3509" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="150000"/>
+            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="e033-25d6-99cd-32af" name="Hireling Sports-Wizard" hidden="false" collective="false" import="true" targetId="c15c-c163-dae0-bad1" type="selectionEntry"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7555-d4b7-c416-0bc9" name="Decreases" hidden="false" collective="false" import="true">
       <entryLinks>

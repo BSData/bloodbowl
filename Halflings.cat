@@ -78,54 +78,7 @@
       <categoryLinks>
         <categoryLink id="09b9-7e66-9883-7bcf" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5a2a-1e5f-0bfe-ba22" name="(In)famous Coaching Staff" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04f2-1d73-b8ac-391c" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="55f5-4690-7cd1-946a" name="(In)Famous Coaching Staff" hidden="false" collective="false" import="true" targetId="3a41-d8e0-044c-2580" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="5b69-c998-e794-c4ce" name="Kari Coldsteel" hidden="false" collective="false" import="true" targetId="33b8-1c27-25a2-275e" type="selectionEntry"/>
-                <entryLink id="40c6-bf66-d73e-1056" name="Mungo Spinecracker" hidden="false" collective="false" import="true" targetId="fe6f-d2cd-7957-9633" type="selectionEntry"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="67a7-421a-b071-128c" name="Dwarfen Runesmith" hidden="false" collective="false" import="true" targetId="d481-a4bd-f6dc-c43d" type="selectionEntry"/>
-        <entryLink id="4697-dfc9-da28-9347" name="Wizard" hidden="false" collective="false" import="true" targetId="8c7c-dfea-d67d-830d" type="selectionEntry">
-          <entryLinks>
-            <entryLink id="62ba-e40d-b15c-b0e9" name="Wizard" hidden="false" collective="false" import="true" targetId="3ecb-df2a-3712-995d" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink id="789c-0385-8d9c-405b" name="Wicked Witch" hidden="false" collective="false" import="true" targetId="0ece-1731-f4ae-1263" type="selectionEntry"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="9971-7c3a-8d00-d349" name="Halfling Hot Pot" hidden="false" collective="false" import="true" targetId="74f2-37ae-f8a2-ad5e" type="selectionEntry">
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
-          </costs>
-        </entryLink>
-        <entryLink id="e979-d92d-271a-c7a8" name="Master of Ballistics" hidden="false" collective="false" import="true" targetId="157f-649b-9c97-9e54" type="selectionEntry">
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-          </costs>
-        </entryLink>
         <entryLink id="5453-8996-f689-5135" name="Wandering Apothecaries" hidden="false" collective="false" import="true" targetId="5564-dcac-1706-7a79" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
@@ -2129,6 +2082,17 @@
           </modifiers>
           <categoryLinks>
             <categoryLink name="Team Management" hidden="false" id="e0fb-55cd-4435-181b" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Tier 3" hidden="false" id="a056-295d-78dc-b55f" type="selectionEntry" targetId="a895-b624-e202-2da8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3281-bbbc-4ef4-839b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Team Management" hidden="false" id="499a-b2b9-9f02-a504" targetId="a6b7-0663-b308-f599" primary="true"/>
           </categoryLinks>
         </entryLink>
       </entryLinks>

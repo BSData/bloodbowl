@@ -99,16 +99,6 @@
         <categoryLink id="a362-8456-5e4c-2c41" name="Inducements" hidden="false" targetId="8526-a57c-c848-4d31" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a100-88d5-92d3-9490" name="Halfling Hot Pot" hidden="false" collective="false" import="true" targetId="74f2-37ae-f8a2-ad5e" type="selectionEntry">
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
-          </costs>
-        </entryLink>
-        <entryLink id="009f-9bcb-562d-bf4f" name="Master of Ballistics" hidden="false" collective="false" import="true" targetId="157f-649b-9c97-9e54" type="selectionEntry">
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-          </costs>
-        </entryLink>
         <entryLink id="cb32-09e1-e8de-ed38" name="Wandering Apothecaries" hidden="false" collective="false" import="true" targetId="5564-dcac-1706-7a79" type="selectionEntry"/>
       </entryLinks>
     </entryLink>
@@ -2447,6 +2437,17 @@
           </modifiers>
           <categoryLinks>
             <categoryLink name="Team Management" hidden="false" id="6b62-322b-4f72-709b" targetId="a6b7-0663-b308-f599" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Tier 3" hidden="false" id="7935-32ed-a828-5f3f" type="selectionEntry" targetId="a895-b624-e202-2da8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44e0-3b31-1e38-5f11" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="a6b7-0663-b308-f599" id="43ac-8ef7-8073-c739" primary="true" name="Team Management"/>
           </categoryLinks>
         </entryLink>
       </entryLinks>
