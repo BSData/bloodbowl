@@ -1004,31 +1004,6 @@ A single Bribe may be used after an attempt to Argue the Call has been made. How
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2946-e700-f64c-db4a" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011e-58d1-5860-31bf" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="0404-d65c-83cf-a865" name="Team Mascot" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-              <description>A team that includes a Team Mascot gains an extra team re-roll (a suitable model should be placed on your team reroll tracker). However, to use the Team Mascot re-roll you must first roll a D6:
-
-• On a roll of 1-4, the Team Mascot proves ineffective and, pelted by food wrappers and worse, retreats to the locker room. The Team Mascot re-roll is lost for this half of the game. However, you may use a normal team re-roll instead.
-• On a roll of 5+, the Team Mascot re-roll can be used, just like a normal team re-roll.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="06b6-7113-c30d-00a2" name="Part Time Assistant Coaches" publicationId="46da-ba61-6439-83e5" page="90" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="c4f1-a521-8e34-78e6" value="1">
@@ -1152,163 +1127,6 @@ You may use a Weather Mage once per game, at the start of any one of your team t
           <costs>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2fb6-cb4b-2ad0-ddc5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d974-04d8-a502-00c9" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="c2bc-4cef-6ea9-7cd5" name="Side Bet" publicationId="9118-6c97-8006-93a4" page="39" hidden="false">
-              <description>After Step 4, but before Step 5 of the pre-game sequence, you may place a bet of between 10,000 and 100,000 gold pieces that your team will win the game. Simply inform your opponent that the bet has been placed, and how much you are betting. Should your team win the game, you will receive double your stake back during Step 1 of the post-game sequence (for example, if you bet 20,000 gold pieces that your team would win, you will win 40,000 gold pieces if it does win).
-
-If, however, your team loses, the stake is lost (such is the risk of gambling)!</description>
-            </rule>
-          </rules>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9341-0c4a-f09d-2f9c" name="Bet" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="c6e3-6eda-4503-4ca9" name="10,000 GP" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b588-3d70-583c-df41" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="46ca-4d79-23d4-43ac" name="5,000 GP" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53e-1a2a-dfb0-605c" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000"/>
-                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="faf3-bd7c-1df9-9724" name="Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-                    <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="4c37-7996-ee71-f822" name="Scatter Giant Mercenary Player" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="6abd-9371-31b8-653a" typeName="Player">
-              <characteristics>
-                <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
-                <characteristic name="ST" typeId="120f-0f56-f450-196c">7</characteristic>
-                <characteristic name="AG" typeId="29f4-c9a2-f996-4723">5</characteristic>
-                <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
-                <characteristic name="AV" typeId="c77a-49e5-750a-1adc">11</characteristic>
-                <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Always Hungry, Bone Head, Break Tackle, Juggernaut, Loner (4+), Mighty Blow (+2), Multiple Block, Stand Firm, Throw Team-mate</characteristic>
-                <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">N/A</characteristic>
-                <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">N/A</characteristic>
-                <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">350,000</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="b682-de4f-2805-5e2b" name="Base Size and Tackle Zones" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
-
-Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies. Whenever a Giant finishes a Move action or follows up after a Block action, they may changes their facing if they wish; though if done as part of following up after a Block action, they must still be Marking the player they made the Block action against if possible.
-
-Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="3558-400a-8bd0-a723" name="A Giant Obstruction" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants do tend to get in the way of other teams’ passing plays. When a Giant interferes with a pass, it reduces any negative modifiers that would normally apply by 2.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0ef2-960b-121c-c0ef" name="Movement" publicationId="9118-6c97-8006-93a4" page="54" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">When a Giant moves it does so just like any other player, moving a number of squares equal to its Movement Allowance. A Giant may move forward, backward, to either side, or diagonally, as long as they do not enter a square occupied by another standing player (from either team).
-
-If any of the four squares a Giant occupies is within the Tackle Zone of an opposition player, the Giant is considered to be Marked by that player and must dodge to leave that square, just like any other player. If when dodging any part of a Giant’s base moves into a square in which it is being Marked, apply a -1 modifier per player Marking them as normal.
-
-STEPPING OVER PRONE OR STUNNED PLAYERS: Unlike other players, a Giant is large enough to simply step over downed players that would block the path of other players. A Giant does not need to Jump Over a Prone or Stunned player; it may instead move freely over Prone or Stunned players if it has sufficient Movement Allowance to do so.
-
-However, a Giant may not end its movement with any part of its base occupying a square that contains a Prone or Stunned player. Therefore, should a Giant Fall Over whilst stepping over a Prone or Stunned player, that player is pushed back one square in a direction chosen by the coach of the team the Giant belongs to, exactly as if a Push Back block dice result had been applied against them.
-
-SURROUNDED!: Coaches should note that, due to the large size of Giants, they may find it impossible to move through small gaps. If at any point during its movement a Giant finds one or more of the four squares its base occupies obstructed by a Standing player, it cannot move into that square.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="3e6a-8946-9606-e26e" name="Push Backs" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Just like any other player, a Giant must be pushed back into empty squares. If this is not possible, then the Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are chain-pushed in turn.
-
-PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn’t matter how big they are, a Giant cannot be half on and half off the pitch. They are either entirely on the pitch, or they are off it!</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="0c48-de49-2dfc-e992" name="Throwing Other Players" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants are particularly effective at throwing smaller players. When a Giant attempts to throw a team-mate, you may re-roll a Fumbled throw.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="ff97-7f02-02d9-b513" name="Scatter" publicationId="9118-6c97-8006-93a4" page="55" hidden="false" typeId="7764-b467-1053-a5fe" typeName="Ability">
-              <characteristics>
-                <characteristic name="Details" typeId="b112-aa11-2549-e705">As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.
-
-1-2-3-4
-5-###-6
-7-###-8
-9-10-11-12</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="2c51-e3a9-94dc-2c5e" name="Scatter" publicationId="9118-6c97-8006-93a4" page="55" hidden="false">
-              <description>As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="f1e2-f601-8639-f9fe" name="Always Hungry" hidden="false" targetId="3634-31d4-5d56-9743" type="rule"/>
-            <infoLink id="2289-3488-9d4b-b76c" name="Bone Head" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
-            <infoLink id="adc6-bc19-f650-c2c1" name="Break Tackle" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
-            <infoLink id="94d4-b4a8-317f-8591" name="Juggernaut" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
-            <infoLink id="2fba-4d3e-6528-9626" name="Loner (4+)" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
-            <infoLink id="cff0-6465-7b1e-cc60" name="Mighty Blow (+2)" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
-            <infoLink id="4028-da22-b702-0850" name="Multiple Block" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
-            <infoLink id="d68c-c8b9-a85e-9e75" name="Stand Firm" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
-            <infoLink id="7b02-58e7-32d0-740e" name="Throw Team-mate" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
         </selectionEntry>
@@ -1523,28 +1341,418 @@ PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0449-1957-3646-fc3d" includeChildSelections="true"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Medicinal Unguent" hidden="true" id="0818-1c97-2ef9-e897" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc18-50c8-e69f-c84d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Medicinal Unguent" id="0c6d-afaf-10cd-d568" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
-              <description>Should a player on your team be removed from play having suffered a 10-12, Serious Injury result on the Casualty table, after any other attempts to heal that player have been made and have failed, you may use this Inducement. The player is immediately removed from the Casualty box and placed in the Reserves box of your dugout, having been miraculously healed by the liberal application of something that smells extremely suspicious. However, at the end of this game, the result of the Casualty roll is applied as normal.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="" id="15d6-cbaf-11b0-ec4f" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bottles of Heady Brew" hidden="true" id="b891-67b6-6431-70ce" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a895-b624-e202-2da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="187e-30b1-150e-a1b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Bottles of Heady Brew" id="1391-4eb5-9902-aff9" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>At the start of a drive, after both teams have been set up but before the kick-off (between Step 1 and Step 2), randomly select D3 players with the Stunty trait that are currently set up on the pitch. For the remainder of this drive, those players gain the Dauntless and Frenzy skills and the Really Stupid (4+) trait.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Cavorting Nurglings" hidden="true" id="6905-bc49-6842-6a0a" publicationId="9118-6c97-8006-93a4" page="36" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a672-a5e0-59f5-e2d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Cavorting Nurglings" id="3715-7137-768a-638f" hidden="false" publicationId="9118-6c97-8006-93a4" page="36">
+                      <description>At the beginning of the game, a team may increase its Fan Factor by +1 for each swarm of Cavorting Nurglings it has Induced. In addition, for the duration of this game, a team may increase its number of cheerleaders by the number of Cavorting Nurglings Induced.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dwarfen Runesmith" hidden="true" id="d481-a4bd-f6dc-c43d" publicationId="9118-6c97-8006-93a4" page="37" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342b-32b6-522c-7a52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Dwarfen Runesmith" id="206b-a5fa-f17f-a6e1" hidden="false" publicationId="9118-6c97-8006-93a4" page="37">
+                      <description>During each Start of Drive sequence, after Step 2 but before Step 3, you can select a single player on your team that is currently on the pitch that does not have the Loner (X+) trait and choose one of the following runes. Then roll a D6:
+
+• On a roll of 4+, the rune takes effect, but you cannot attempt to use the Runesmith again at the start of a later drive.
+• On a roll of 2 or 3, the rune does not work, but you can attempt to use the Runesmith again at the start of a later drive.
+• On a roll of 1, the rune does not work, and you cannot attempt to use the Runesmith again at the start of a later drive.
+
+Dwarfen Runes:
+
+Rune of Might: Until the end of this drive, the chosen player gains the Mighty Blow (+1) skill.
+Rune of Fury: Until the end of this drive, the chosen player gains both the Dauntless andFrenzy skills.
+Rune of Speed: Until the end of this drive, the chosen player gains both the Sprint and Sure Feet skills.
+Rune of Iron: Until the end of this drive, the chosen player’s Armour Value is increased by 1 (to a maximum of 11+) and they gain the Stand Firm skill.
+Rune of Impact: Until the end of this drive, the chosen player gains both the Juggernaut and Horns skills.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Giant Mercenary Player" hidden="false" id="faf3-bd7c-1df9-9724" publicationId="9118-6c97-8006-93a4" page="54" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e55f-acc6-9ebe-acdf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="3c2c-b7d2-ac49-69f9" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4510-4c80-21d1-f1cb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b1ee-eb5d-8cfc-452e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a8c-5f3a-b94f-c4c0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="f387-644b-6950-1c33" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e667-5e33-7680-43f7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4eb7-ddcb-a9fa-c1d7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="0" field="selections" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Scatter Giant Mercenary Player" typeId="6abd-9371-31b8-653a" typeName="Player" hidden="false" id="4c37-7996-ee71-f822" publicationId="9118-6c97-8006-93a4" page="54">
+                      <characteristics>
+                        <characteristic name="MA" typeId="d248-b05f-7c74-d8e3">6</characteristic>
+                        <characteristic name="ST" typeId="120f-0f56-f450-196c">7</characteristic>
+                        <characteristic name="AG" typeId="29f4-c9a2-f996-4723">5</characteristic>
+                        <characteristic name="PA" typeId="90cd-0493-9510-60b5">5</characteristic>
+                        <characteristic name="AV" typeId="c77a-49e5-750a-1adc">11</characteristic>
+                        <characteristic name="Skills &amp; Traits" typeId="aa6d-1678-d4d2-a97d">Always Hungry, Bone Head, Break Tackle, Juggernaut, Loner (4+), Mighty Blow (+2), Multiple Block, Stand Firm, Throw Team-mate</characteristic>
+                        <characteristic name="Primary" typeId="fda4-6261-f0d2-ba0d">N/A</characteristic>
+                        <characteristic name="Secondary" typeId="9491-8b10-7b30-9358">N/A</characteristic>
+                        <characteristic name="Cost" typeId="ee01-7448-8c3f-a882">350,000</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Base Size and Tackle Zones" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="b682-de4f-2805-5e2b" publicationId="9118-6c97-8006-93a4" page="54">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Unlike other players, a Giant occupies not one but four squares on the pitch. A Giant will always occupy four squares; when they are standing up, when they are Prone and when they are Stunned.
+
+Additionally, the direction in which a Giant faces is important as, due to their immense size, a Giant’s Tackle Zone does not extend to every square adjacent to the four squares they occupy. Like other players, the Tackle Zone of a Giant covers eight squares; those to the Giant’s front and sides. A Giant’s Tackle Zone does not extend to the four squares directly behind the Giant, as shown in the diagram below. The controlling player must make it clear to their opponent which direction the Giant is facing and where its rear lies. Whenever a Giant finishes a Move action or follows up after a Block action, they may changes their facing if they wish; though if done as part of following up after a Block action, they must still be Marking the player they made the Block action against if possible.
+
+Finally, should any of the four squares occupied by a Giant’s base be targeted by an in-game effect (such as a spell cast by a Wizard or by the effects of a Special Plays card), the player is considered to have been hit by the effect just as any other player would be.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="A Giant Obstruction" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="3558-400a-8bd0-a723" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants do tend to get in the way of other teams’ passing plays. When a Giant interferes with a pass, it reduces any negative modifiers that would normally apply by 2.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Movement" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="0ef2-960b-121c-c0ef" publicationId="9118-6c97-8006-93a4" page="54">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">When a Giant moves it does so just like any other player, moving a number of squares equal to its Movement Allowance. A Giant may move forward, backward, to either side, or diagonally, as long as they do not enter a square occupied by another standing player (from either team).
+
+If any of the four squares a Giant occupies is within the Tackle Zone of an opposition player, the Giant is considered to be Marked by that player and must dodge to leave that square, just like any other player. If when dodging any part of a Giant’s base moves into a square in which it is being Marked, apply a -1 modifier per player Marking them as normal.
+
+STEPPING OVER PRONE OR STUNNED PLAYERS: Unlike other players, a Giant is large enough to simply step over downed players that would block the path of other players. A Giant does not need to Jump Over a Prone or Stunned player; it may instead move freely over Prone or Stunned players if it has sufficient Movement Allowance to do so.
+
+However, a Giant may not end its movement with any part of its base occupying a square that contains a Prone or Stunned player. Therefore, should a Giant Fall Over whilst stepping over a Prone or Stunned player, that player is pushed back one square in a direction chosen by the coach of the team the Giant belongs to, exactly as if a Push Back block dice result had been applied against them.
+
+SURROUNDED!: Coaches should note that, due to the large size of Giants, they may find it impossible to move through small gaps. If at any point during its movement a Giant finds one or more of the four squares its base occupies obstructed by a Standing player, it cannot move into that square.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Push Backs" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="3e6a-8946-9606-e26e" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Just like any other player, a Giant must be pushed back into empty squares. If this is not possible, then the Giant is pushed into one or more occupied squares and any players that originally occupied the square or squares are chain-pushed in turn.
+
+PUSHED INTO THE CROWD: If any part of a Giant’s base is pushed off the pitch, the player is pushed into the crowd and removed from play. In other words, it doesn’t matter how big they are, a Giant cannot be half on and half off the pitch. They are either entirely on the pitch, or they are off it!</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Throwing Other Players" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="0c48-de49-2dfc-e992" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">Giants are particularly effective at throwing smaller players. When a Giant attempts to throw a team-mate, you may re-roll a Fumbled throw.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Scatter" typeId="7764-b467-1053-a5fe" typeName="Ability" hidden="false" id="ff97-7f02-02d9-b513" publicationId="9118-6c97-8006-93a4" page="55">
+                      <characteristics>
+                        <characteristic name="Details" typeId="b112-aa11-2549-e705">As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.
+
+1-2-3-4
+5-###-6
+7-###-8
+9-10-11-12</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Scatter" id="2c51-e3a9-94dc-2c5e" hidden="false" publicationId="9118-6c97-8006-93a4" page="55">
+                      <description>As Giants occupy four squares rather than the usual one, the normal Random Direction template cannot be used for them. Instead, Giants use the Random Direction template shown below. To use this template, simply roll a D16 rather than a D8, re-rolling any rolls of 13 or above.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink name="Always Hungry" id="f1e2-f601-8639-f9fe" hidden="false" targetId="3634-31d4-5d56-9743" type="rule"/>
+                    <infoLink name="Bone Head" id="2289-3488-9d4b-b76c" hidden="false" targetId="c518-e56f-411e-0b8d" type="rule"/>
+                    <infoLink name="Break Tackle" id="adc6-bc19-f650-c2c1" hidden="false" targetId="e759-d3b3-3def-bc79" type="rule"/>
+                    <infoLink name="Juggernaut" id="94d4-b4a8-317f-8591" hidden="false" targetId="d0f1-1e4b-fcbd-50fb" type="rule"/>
+                    <infoLink name="Loner (4+)" id="2fba-4d3e-6528-9626" hidden="false" targetId="b448-c8db-4598-1aab" type="rule"/>
+                    <infoLink name="Mighty Blow (+2)" id="cff0-6465-7b1e-cc60" hidden="false" targetId="85fb-2a18-64bd-7492" type="rule"/>
+                    <infoLink name="Multiple Block" id="4028-da22-b702-0850" hidden="false" targetId="1e82-1653-062c-c9d2" type="rule"/>
+                    <infoLink name="Stand Firm" id="d68c-c8b9-a85e-9e75" hidden="false" targetId="a5cb-c319-ffd3-7a6a" type="rule"/>
+                    <infoLink name="Throw Team-mate" id="7b02-58e7-32d0-740e" hidden="false" targetId="72d9-6b27-4fa9-02ef" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="350000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Halfling Hot Pot" hidden="true" id="74f2-37ae-f8a2-ad5e" publicationId="9118-6c97-8006-93a4" page="37" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="60000" field="ffff-7836-9be4-196c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7035-f38d-a0e0-aa2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Halfling Hot Pot" id="5cac-3c64-16b0-c12c" hidden="false" publicationId="9118-6c97-8006-93a4"/>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master of Ballistics" hidden="true" id="157f-649b-9c97-9e54" publicationId="9118-6c97-8006-93a4" page="38" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="30000" field="ffff-7836-9be4-196c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="686a-6527-1419-0916" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Master of Ballistics" id="7cda-7db6-798f-5720" hidden="false" publicationId="9118-6c97-8006-93a4" page="38">
+                      <description>During Step 2 of every Start of Drive sequence, the Master of Ballistics can attempt to advise the kicker. After placing the ball but before rolling for deviation, roll a D3 on the following table:
+
+1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
+2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
+3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Medicinal Unguent" hidden="true" id="0818-1c97-2ef9-e897" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc18-50c8-e69f-c84d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Medicinal Unguent" id="0c6d-afaf-10cd-d568" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>Should a player on your team be removed from play having suffered a 10-12, Serious Injury result on the Casualty table, after any other attempts to heal that player have been made and have failed, you may use this Inducement. The player is immediately removed from the Casualty box and placed in the Reserves box of your dugout, having been miraculously healed by the liberal application of something that smells extremely suspicious. However, at the end of this game, the result of the Casualty roll is applied as normal.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="60000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Team Mascot" hidden="true" id="2946-e700-f64c-db4a" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="011e-58d1-5860-31bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Team Mascot" id="0404-d65c-83cf-a865" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>A team that includes a Team Mascot gains an extra team re-roll (a suitable model should be placed on your team reroll tracker). However, to use the Team Mascot re-roll you must first roll a D6:
+
+• On a roll of 1-4, the Team Mascot proves ineffective and, pelted by food wrappers and worse, retreats to the locker room. The Team Mascot re-roll is lost for this half of the game. However, you may use a normal team re-roll instead.
+• On a roll of 5+, the Team Mascot re-roll can be used, just like a normal team re-roll.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="WAAAGH! Drummer" hidden="true" id="54e1-c0ea-1874-f2a9" publicationId="9118-6c97-8006-93a4" page="36" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1e5-6265-e988-efa4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Side Bet" hidden="true" id="2fb6-cb4b-2ad0-ddc5" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d974-04d8-a502-00c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Side Bet" id="c2bc-4cef-6ea9-7cd5" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
+                      <description>After Step 4, but before Step 5 of the pre-game sequence, you may place a bet of between 10,000 and 100,000 gold pieces that your team will win the game. Simply inform your opponent that the bet has been placed, and how much you are betting. Should your team win the game, you will receive double your stake back during Step 1 of the post-game sequence (for example, if you bet 20,000 gold pieces that your team would win, you will win 40,000 gold pieces if it does win).
+
+If, however, your team loses, the stake is lost (such is the risk of gambling)!</description>
+                    </rule>
+                  </rules>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Bet" id="9341-0c4a-f09d-2f9c" hidden="false" collective="false" import="true">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="10,000 GP" hidden="false" id="c6e3-6eda-4503-4ca9" collective="false">
+                          <constraints>
+                            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b588-3d70-583c-df41" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+                            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="5,000 GP" hidden="false" id="46ca-4d79-23d4-43ac" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a53e-1a2a-dfb0-605c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="5000"/>
+                            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
+                    <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
+                    <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Special Plays" hidden="false" id="5e39-084d-b112-fb83" publicationId="46da-ba61-6439-83e5" page="90" collective="false">
           <modifiers>
@@ -1618,208 +1826,6 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
           </rules>
           <costs>
             <cost name=" TV" typeId="ffff-7836-9be4-196c" value="100000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="WAAAGH! Drummer" hidden="true" id="54e1-c0ea-1874-f2a9" publicationId="9118-6c97-8006-93a4" page="36" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c605-2010-fb97-0f51" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1e5-6265-e988-efa4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cavorting Nurglings" hidden="true" id="6905-bc49-6842-6a0a" publicationId="9118-6c97-8006-93a4" page="36" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="768b-b64b-f982-47e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a672-a5e0-59f5-e2d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Cavorting Nurglings" id="3715-7137-768a-638f" hidden="false" publicationId="9118-6c97-8006-93a4" page="36">
-              <description>At the beginning of the game, a team may increase its Fan Factor by +1 for each swarm of Cavorting Nurglings it has Induced. In addition, for the duration of this game, a team may increase its number of cheerleaders by the number of Cavorting Nurglings Induced.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="30000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Dwarfen Runesmith" hidden="true" id="d481-a4bd-f6dc-c43d" publicationId="9118-6c97-8006-93a4" page="37" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5be-b66d-7065-f9af" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342b-32b6-522c-7a52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Dwarfen Runesmith" id="206b-a5fa-f17f-a6e1" hidden="false" publicationId="9118-6c97-8006-93a4" page="37">
-              <description>During each Start of Drive sequence, after Step 2 but before Step 3, you can select a single player on your team that is currently on the pitch that does not have the Loner (X+) trait and choose one of the following runes. Then roll a D6:
-
-• On a roll of 4+, the rune takes effect, but you cannot attempt to use the Runesmith again at the start of a later drive.
-• On a roll of 2 or 3, the rune does not work, but you can attempt to use the Runesmith again at the start of a later drive.
-• On a roll of 1, the rune does not work, and you cannot attempt to use the Runesmith again at the start of a later drive.
-
-Dwarfen Runes:
-
-Rune of Might: Until the end of this drive, the chosen player gains the Mighty Blow (+1) skill.
-Rune of Fury: Until the end of this drive, the chosen player gains both the Dauntless andFrenzy skills.
-Rune of Speed: Until the end of this drive, the chosen player gains both the Sprint and Sure Feet skills.
-Rune of Iron: Until the end of this drive, the chosen player’s Armour Value is increased by 1 (to a maximum of 11+) and they gain the Stand Firm skill.
-Rune of Impact: Until the end of this drive, the chosen player gains both the Juggernaut and Horns skills.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="50000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Halfling Hot Pot" hidden="true" id="74f2-37ae-f8a2-ad5e" publicationId="9118-6c97-8006-93a4" page="37" collective="false">
-          <modifiers>
-            <modifier type="set" value="60000" field="ffff-7836-9be4-196c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7035-f38d-a0e0-aa2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Halfling Hot Pot" id="5cac-3c64-16b0-c12c" hidden="false" publicationId="9118-6c97-8006-93a4"/>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="80000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Master of Ballistics" hidden="true" id="157f-649b-9c97-9e54" publicationId="9118-6c97-8006-93a4" page="38" collective="false">
-          <modifiers>
-            <modifier type="set" value="30000" field="ffff-7836-9be4-196c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4003-dd1b-d594-1051" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="43d1-827e-3932-1857" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="686a-6527-1419-0916" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Master of Ballistics" id="7cda-7db6-798f-5720" hidden="false" publicationId="9118-6c97-8006-93a4" page="38">
-              <description>During Step 2 of every Start of Drive sequence, the Master of Ballistics can attempt to advise the kicker. After placing the ball but before rolling for deviation, roll a D3 on the following table:
-
-1: Complete Misunderstanding: The kicker has rather missed the point, and the kick-off deviates as normal.
-2: Interesting Theory... The Master of Ballistics becomes side-tracked explaining the theory and runs out of time before the whistle. The distance the ball deviates is reduced by one square, from D6 squares to D6-1 squares (meaning there is a chance it won’t deviate at all if a 1 is rolled).
-3: Successful Practical Application: By Nuffle, the kicker’s grasped it! After rolling the dice for deviation, the kicking team’s coach can choose to modify the roll of either the D6 or the D8 by +1 or +2, or -1 or -2 as they wish, to a minimum of 1, and a maximum of 6 (for the D6) and 8 (for the D8).</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bottles of Heady Brew" hidden="true" id="b891-67b6-6431-70ce" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="755d-9de9-d8e1-0b77" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="a895-b624-e202-2da8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="187e-30b1-150e-a1b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Bottles of Heady Brew" id="1391-4eb5-9902-aff9" hidden="false" publicationId="9118-6c97-8006-93a4" page="39">
-              <description>At the start of a drive, after both teams have been set up but before the kick-off (between Step 1 and Step 2), randomly select D3 players with the Stunty trait that are currently set up on the pitch. For the remainder of this drive, those players gain the Dauntless and Frenzy skills and the Really Stupid (4+) trait.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="40000"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
