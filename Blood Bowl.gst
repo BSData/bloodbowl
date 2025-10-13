@@ -485,12 +485,17 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b705-a193-fa8d-4d98" type="min"/>
           </constraints>
           <costs>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="10000"/>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
           </costs>
           <modifiers>
             <modifier type="set" value="0" field="b705-a193-fa8d-4d98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4319-3b55-04c5-2907" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10000" field="ffff-7836-9be4-196c">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="4319-3b55-04c5-2907" shared="true" includeChildSelections="true"/>
               </conditions>
