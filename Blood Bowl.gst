@@ -455,7 +455,7 @@
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="407e-30a8-ee48-ab2e" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="407e-30a8-ee48-ab2e" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -480,15 +480,27 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2e2-2788-1cbd-283c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="40a1-b2ad-ab32-f9b8" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="40a1-b2ad-ab32-f9b8" name="Dedicated Fans" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b705-a193-fa8d-4d98" type="min"/>
           </constraints>
           <costs>
+            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
             <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
             <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="b705-a193-fa8d-4d98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4319-3b55-04c5-2907" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10000" field="ffff-7836-9be4-196c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4319-3b55-04c5-2907" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -655,147 +667,145 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5d67-ce57-35e8-9f4a" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="a05d-6dd0-ab90-946c" name="Team Re-Rolls (Double Gold Cost Post Creation)" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry type="model" import="true" name="Team Re-Rolls" hidden="false" id="2bd1-7ef4-41e1-a14a">
+          <constraints>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="4f62-e1dd-61b0-21e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
           <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="50000">
+            <modifier type="set" value="50000" field="ffff-7836-9be4-196c">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f387-644b-6950-1c33" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e667-5e33-7680-43f7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4eb7-ddcb-a9fa-c1d7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25ea-e9ad-ed4e-09ee" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1ee-eb5d-8cfc-452e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e55f-acc6-9ebe-acdf" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a8c-5f3a-b94f-c4c0" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4510-4c80-21d1-f1cb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c2c-b7d2-ac49-69f9" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="153dcec4-73de-437d-b877-f419c9c2d50f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="892d-8606-ea5e-03f2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="f387-644b-6950-1c33" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e667-5e33-7680-43f7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4eb7-ddcb-a9fa-c1d7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="25ea-e9ad-ed4e-09ee" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b1ee-eb5d-8cfc-452e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e55f-acc6-9ebe-acdf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a8c-5f3a-b94f-c4c0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4510-4c80-21d1-f1cb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="3c2c-b7d2-ac49-69f9" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="60000">
+            <modifier type="set" value="60000" field="ffff-7836-9be4-196c">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="ec1f-b097-71ea-f8d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="16fa-fd44-878a-e35b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="719a-7840-1238-6100" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="70000">
+            <modifier type="set" value="70000" field="ffff-7836-9be4-196c">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="fa92-a086-1144-f157" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="5ca8-cd92-27fb-6d55" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="name" value="Team Re-Rolls (Only at team creation)">
-              <conditions>
-                <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
+            <modifier type="set" value="100000" field="ffff-7836-9be4-196c">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="forces" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153dcec4-73de-437d-b877-f419c9c2d50f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="892d-8606-ea5e-03f2" type="instanceOf"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="c2ef8ed7-7579-4c7d-bd3e-60e4624e7b1d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b666b61b-33cc-42b1-99e0-f06e24197e96" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="153dcec4-73de-437d-b877-f419c9c2d50f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="5e8a17ba-e3b5-4e2d-bdb7-8ef646640f8c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="137e4c81-9c6f-43f5-86a9-c75a218cab0f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="641d7e90-8271-47b2-a437-ccab1c28b7ae" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="7eeb8e89-5a1b-4a67-bd39-d4add95f95c5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="3996813e-c141-4ae8-8bac-aa8969a6dc4c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="892d-8606-ea5e-03f2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="120000">
+            <modifier type="set" value="120000" field="ffff-7836-9be4-196c">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="forces" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec1f-b097-71ea-f8d3" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16fa-fd44-878a-e35b" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719a-7840-1238-6100" type="instanceOf"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="a8c9df66-74bb-4cd8-bc25-f93d737731f5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="de6eab1a-e3fd-478d-a2cb-2fe495d63138" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="0a3a386d-4b6a-4389-a18b-772e4a005a12" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="05b4301e-e0a9-4f5c-a9f0-69c7189e5ead" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="ec1f-b097-71ea-f8d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="16fa-fd44-878a-e35b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="719a-7840-1238-6100" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="140000">
+            <modifier type="set" value="140000" field="ffff-7836-9be4-196c">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="forces" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e070-b4a9-cbf9-7b52" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="forces" scope="force" childId="e070-b4a9-cbf9-7b52" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa92-a086-1144-f157" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ca8-cd92-27fb-6d55" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" type="instanceOf"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="fa92-a086-1144-f157" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="4cd2a796-0d89-443b-af4d-7f0a471ed90e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="f23e9ca0-d048-437b-944b-acfe2f8535b7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="50604bc1-0bc5-4f33-bd0e-fa87fe3209d4" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="a4ff4a11-c0fc-490e-b1ed-89ac6469327c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="5ca8-cd92-27fb-6d55" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="453fbaaf-fb2b-4c78-923a-382c232a2779" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="c0d8490b-f414-41e1-b42c-cde6936fa34c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="85cbe880-09fd-49fd-a77c-5f10b8986bc5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="e9482b58-edc3-4edb-a2d3-c07110883bfb" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="b807a583-d1b4-4029-b81b-b14c3ad69064" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="ab80a28e-58b5-4507-8d15-b56fe8bc6f84" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -803,15 +813,6 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
               </conditionGroups>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f62-e1dd-61b0-21e1" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="28e2-1f93-1ab4-a0a4" type="min"/>
-          </constraints>
-          <costs>
-            <cost name=" Total SPP" typeId="39e2-ec20-0c67-eba6" value="0"/>
-            <cost name=" TV" typeId="ffff-7836-9be4-196c" value="0"/>
-            <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -820,7 +821,7 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4358-1d13-b318-ae37" name="Cheerleaders" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4358-1d13-b318-ae37" name="Cheerleaders" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -859,7 +860,6 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2cf3-d4df-be9e-1dd9" type="min"/>
             <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e13-9e72-21aa-eae8" type="max"/>
           </constraints>
           <costs>
@@ -903,7 +903,7 @@ An apothecary can be used when a player suffers a Badly Hurt, Seriously Hurt or 
             </modifier>
             <modifier type="set" field="ffff-7836-9be4-196c" value="100000">
               <conditions>
-                <condition field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" type="instanceOf">
+                <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="736e07b6-4458-426e-8cf9-d33860c0c7a7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false">
                   <comment>As of May 2025 errata, Halfling Master Chef is only 100,000 for Halfling teams, 300,000 for all others</comment>
                 </condition>
               </conditions>
@@ -1342,7 +1342,7 @@ You may use a Weather Mage once per game, at the start of any one of your team t
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0449-1957-3646-fc3d" includeChildSelections="true"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="" id="15d6-cbaf-11b0-ec4f" hidden="false">
+            <selectionEntryGroup id="15d6-cbaf-11b0-ec4f" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Bottles of Heady Brew" hidden="true" id="b891-67b6-6431-70ce" publicationId="9118-6c97-8006-93a4" page="39" collective="false">
                   <modifiers>
@@ -3232,7 +3232,7 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
         <cost name=" Used SPP" typeId="069c-526e-7481-6bb7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d2ca-b76d-9258-f261" name="Assistant Coaches" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="d2ca-b76d-9258-f261" name="Assistant Coaches" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3271,7 +3271,6 @@ CARD SELECTION: Once the D6 has been rolled, the appropriate Special Plays card 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3459-9f84-5d0e-6c18" type="min"/>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-e2e8-0e23-83e6" type="max"/>
           </constraints>
           <costs>
