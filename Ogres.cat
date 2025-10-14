@@ -43,6 +43,16 @@
       <categoryLinks>
         <categoryLink id="0a00-b012-e50e-de24" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="ffff-7836-9be4-196c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4eae-210b-b45f-548f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="15000"/>
+      </costs>
     </entryLink>
     <entryLink id="8f67-43e2-73ac-5ff6" name="Mercenary [Ogre Runt Punter]" hidden="false" collective="false" import="true" targetId="1cf5-7098-d665-cb41" type="selectionEntry">
       <categoryLinks>
@@ -667,13 +677,6 @@
       <comment>TV is set to 0 due to Disposable Skill.</comment>
       <modifierGroups>
         <modifierGroup>
-          <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="15000">
-              <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <conditionGroups>
