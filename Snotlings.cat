@@ -38,6 +38,16 @@
       <categoryLinks>
         <categoryLink id="8d5a-0df7-3188-045f" name="Players" hidden="false" targetId="ef36-92eb-8b79-1a1f" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name=" TV" typeId="ffff-7836-9be4-196c" value="15000"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="ffff-7836-9be4-196c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4eae-210b-b45f-548f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="9946-f726-76cc-0e24" name="Stilty Runna" hidden="false" collective="false" import="true" targetId="7b7e-f43d-e10e-ea7b" type="selectionEntry">
       <categoryLinks>
@@ -1754,13 +1764,6 @@
     <selectionEntry id="9c47-64b4-6722-3cf9" name="Snotling Lineman" publicationId="46da-ba61-6439-83e5" hidden="false" collective="false" import="true" type="model">
       <modifierGroups>
         <modifierGroup>
-          <modifiers>
-            <modifier type="set" field="ffff-7836-9be4-196c" value="15000">
-              <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4319-3b55-04c5-2907" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <conditionGroups>
